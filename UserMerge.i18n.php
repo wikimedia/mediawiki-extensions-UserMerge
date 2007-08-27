@@ -22,4 +22,7 @@ $allMessages = array(
         'de' => array( 
                 'usermerge' => 'Benutzerkonten zusammenführen und löschen'
         ),
+        'nl' => array( 
+                'usermerge' => 'Bewerkingen gebruikers samenvoegen en verwijderen'
+        ),
 );
