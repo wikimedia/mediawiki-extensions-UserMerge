@@ -24,7 +24,13 @@ $allMessages = array(
 		'usermerge-badolduser' => 'اسم المستخدم القديم غير صحيح',
 		'usermerge-badnewuser' => 'المستخدم الجديد غير صحيح',
 		'usermerge-noolduser' => 'اسم المستخدم القديم فارغ',
+		'usermerge-olduser' => 'مستخدم قديم(دمج من)',
+		'usermerge-newuser' => 'مستخدم جديد(دمج إلى)',
+		'usermerge-deleteolduser' => 'حذف المستخدم القديم؟',
 		'usermerge-submit' => 'دمج المستخدم',
+		'usermerge-badtoken' => 'نص تعديل غير صحيح',
+		'usermerge-userdeleted' => '$1($2) تم حذفه.',
+		'usermerge-success' => 'الدمج من $1($2) إلى $3($4) اكتمل.',
 	),
 	'de' => array(
 		'usermerge' => 'Benutzerkonten zusammenführen und löschen',
