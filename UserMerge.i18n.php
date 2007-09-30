@@ -19,6 +19,13 @@ $allMessages = array(
 		'usermerge-updating' => 'Updating $1 table ($2 to $3)',
 		'usermerge-success' => 'Merge from $1($2) to $3($4) is complete.'
 	),
+	'ar' => array(
+		'usermerge' => 'دمج وحذف المستخدم',
+		'usermerge-badolduser' => 'اسم المستخدم القديم غير صحيح',
+		'usermerge-badnewuser' => 'المستخدم الجديد غير صحيح',
+		'usermerge-noolduser' => 'اسم المستخدم القديم فارغ',
+		'usermerge-submit' => 'دمج المستخدم',
+	),
 	'de' => array(
 		'usermerge' => 'Benutzerkonten zusammenführen und löschen',
 	),
