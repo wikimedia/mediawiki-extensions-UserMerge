@@ -23,6 +23,7 @@ $allMessages = array(
 		'usermerge' => 'دمج وحذف المستخدم',
 		'usermerge-badolduser' => 'اسم المستخدم القديم غير صحيح',
 		'usermerge-badnewuser' => 'المستخدم الجديد غير صحيح',
+		'usermerge-nonewuser' => 'اسم مستخدم جديد فارغ - افتراض الدمج إلى $1.<br />اضغط <u>دمج المستخدم</u> للقبول.',
 		'usermerge-noolduser' => 'اسم المستخدم القديم فارغ',
 		'usermerge-olduser' => 'مستخدم قديم(دمج من)',
 		'usermerge-newuser' => 'مستخدم جديد(دمج إلى)',
@@ -30,6 +31,7 @@ $allMessages = array(
 		'usermerge-submit' => 'دمج المستخدم',
 		'usermerge-badtoken' => 'نص تعديل غير صحيح',
 		'usermerge-userdeleted' => '$1($2) تم حذفه.',
+		'usermerge-updating' => 'تحديث $1 جدول ($2 إلى $3)',
 		'usermerge-success' => 'الدمج من $1($2) إلى $3($4) اكتمل.',
 	),
 	'de' => array(
