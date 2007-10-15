@@ -67,6 +67,21 @@ $allMessages = array(
 		'usermerge-updating' => 'Tabel $1 aan het bijwerken ($2 naar $3)',
 		'usermerge-success' => 'Samenvoegen van $1($2) naar $3($4) is afgerond.'
 	),
+	'sk' => array(
+		'usermerge' => 'Zlúčenie a zmazanie používateľov',
+		'usermerge-badolduser' => 'Neplatné staré používateľské meno',
+		'usermerge-badnewuser' => 'Neplatné nové používateľské meno',
+		'usermerge-nonewuser' => 'Prázdne nové používateľské meno - Predpokladá sa zlúčenie do $1.<br />Kliknutím na <u>Zlúčiť používateľov</u> prijmete.',
+		'usermerge-noolduser' => 'Prázdne staré používateľské meno',
+		'usermerge-olduser' => 'Starý používateľ(zlúčiť odtiaľto)',
+		'usermerge-newuser' => 'Nový používate(zlúčiť sem)',
+		'usermerge-deleteolduser' => 'Zmazať starého používateľa?',
+		'usermerge-submit' => 'Zlúčiť používateľov',
+		'usermerge-badtoken' => 'Neplatný token úprav',
+		'usermerge-userdeleted' => '$1($2) bol zmazaný.',
+		'usermerge-updating' => 'Aktualizuje sa tabuľka $1 ($2 na $3)',
+		'usermerge-success' => 'Zlúčenie z $1($2) do $3($4) je dokončené.',
+	),
 	'yue' => array(
 		'usermerge' => '用戶合併同刪除',
 		'usermerge-badolduser' => '無效嘅舊用戶名',
