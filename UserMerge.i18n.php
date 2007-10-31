@@ -37,6 +37,21 @@ $allMessages = array(
 	'de' => array(
 		'usermerge' => 'Benutzerkonten zusammenführen und löschen',
 	),
+	'gl' => array(
+		'usermerge' => 'Fusionar e Eliminar usuario',
+		'usermerge-badolduser' => 'Antigo Nome de usuario non válido',
+		'usermerge-badnewuser' => 'Novo Usuario non válido',
+		'usermerge-nonewuser' => 'Novo Nome de usuario baleiro - Asumindo que se fusionan para $1.<br />Prema <u>Fusionar Usuario</u> para aceptar.',
+		'usermerge-noolduser' => 'Antigo Nome de usuario baleiro',
+		'usermerge-olduser' => 'Antigo Usuario(Fusionar Para)',
+		'usermerge-newuser' => 'Novo Usuario(Fusionar A)',
+		'usermerge-deleteolduser' => 'Eliminar Antigo Usuario?',
+		'usermerge-submit' => 'Fusionar Usuario',
+		'usermerge-badtoken' => 'Sinal de Edición non válida',
+		'usermerge-userdeleted' => '$1($2) foi eliminado.',
+		'usermerge-updating' => 'Actualizando táboa $1 ($2 a $3)',
+		'usermerge-success' => 'A fusión de $1($2) a $3($4) está completa.',
+	),
 	'hsb' => array(
 		'usermerge' => 'Wužiwarske konta zjednoćić a zničić',
 		'usermerge-badolduser' => 'Njepłaćiwe stare wužiwarske mjeno',
@@ -65,7 +80,7 @@ $allMessages = array(
 		'usermerge-badtoken' => 'Ongeldig bewerkingstoken',
 		'usermerge-userdeleted' => '$1($2) is verwijderd.',
 		'usermerge-updating' => 'Tabel $1 aan het bijwerken ($2 naar $3)',
-		'usermerge-success' => 'Samenvoegen van $1($2) naar $3($4) is afgerond.'
+		'usermerge-success' => 'Samenvoegen van $1($2) naar $3($4) is afgerond.',
 	),
 	'sk' => array(
 		'usermerge' => 'Zlúčenie a zmazanie používateľov',
