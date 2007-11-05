@@ -37,6 +37,23 @@ $allMessages = array(
 	'de' => array(
 		'usermerge' => 'Benutzerkonten zusammenführen und löschen',
 	),
+	'fr' => array(
+		'usermerge' => 'Fusionner utilisateur et détruire',
+		'usermerge-badolduser' => 'Vieux nom d\'utilisateur invalide',
+		'usermerge-badnewuser' => 'Nouveau nom d\'utilisateur invalide',
+		'usermerge-nonewuser' => 'Nouveau nom d\'utilisateur vide. Nous faisons l\'hypothèse que vous voulez fusionner dans $1.
+
+Cliquez sur \'\'Fusionner utilisateur\'\' pour accepter.',
+		'usermerge-noolduser' => 'Vieux nom d\'utilisateur vide',
+		'usermerge-olduser' => 'Vieil utilisateur(fusionner depuis)',
+		'usermerge-newuser' => 'Nouvel utilisateur(fusionner dans)',
+		'usermerge-deleteolduser' => 'Détruire vieil utilisateur ?',
+		'usermerge-submit' => 'Fusionner utilisateur',
+		'usermerge-badtoken' => 'Token d\'édition invalide',
+		'usermerge-userdeleted' => '$1($2) est détruit.',
+		'usermerge-updating' => 'Mise à jour de la table $1 (de $2 à $3)',
+		'usermerge-success' => 'La fusion de $1($2) à $3($4) est complétée.',
+	),
 	'gl' => array(
 		'usermerge' => 'Fusionar e Eliminar usuario',
 		'usermerge-badolduser' => 'Antigo Nome de usuario non válido',
