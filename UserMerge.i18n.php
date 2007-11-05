@@ -4,7 +4,7 @@
 */
 
 $allMessages = array(
-'en' => array(
+	'en' => array(
 		'usermerge' => 'User Merge and Delete',
 		'usermerge-badolduser' => 'Invalid Old Username',
 		'usermerge-badnewuser' => 'Invalid New User',
@@ -81,6 +81,21 @@ $allMessages = array(
 		'usermerge-userdeleted' => '$1($2) is verwijderd.',
 		'usermerge-updating' => 'Tabel $1 aan het bijwerken ($2 naar $3)',
 		'usermerge-success' => 'Samenvoegen van $1($2) naar $3($4) is afgerond.',
+	),
+	'pms' => array(
+		'usermerge' => 'Union e scancelament d\'utent',
+		'usermerge-badolduser' => 'Vej stranòm nen bon',
+		'usermerge-badnewuser' => 'Neuv stranòm nen bon',
+		'usermerge-nonewuser' => 'Neuv stranòm veujd - i la tnisoma bon për n\'union a $1.<br />de-ie \'n colp ansima a <u>Unì Utent</u> për aceté.',
+		'usermerge-noolduser' => 'Vej stranòm veujd',
+		'usermerge-olduser' => 'Vej stranòm (Unì da)',
+		'usermerge-newuser' => 'Neuv stranòm (Unì a)',
+		'usermerge-deleteolduser' => 'Veul-lo scancelé l\'utent vej?',
+		'usermerge-submit' => 'Unì Utent',
+		'usermerge-badtoken' => 'Geton d\'edission nen bon',
+		'usermerge-userdeleted' => '$1($2) a l\'é stàit scancelà.',
+		'usermerge-updating' => 'Antramentr ch\'i agiornoma la tàola $1 ($2 a $3)',
+		'usermerge-success' => 'Union da $1($2) a $3($4) completà.',
 	),
 	'sk' => array(
 		'usermerge' => 'Zlúčenie a zmazanie používateľov',
