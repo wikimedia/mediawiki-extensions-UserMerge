@@ -1,4 +1,5 @@
-<?php
+<?php 
+#coding: utf-8
 /** \file
 * \brief Internationalization file for the User Merge and Delete Extension.
 */
