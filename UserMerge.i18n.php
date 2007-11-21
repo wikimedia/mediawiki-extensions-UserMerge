@@ -196,9 +196,9 @@ Cliquez sur \'\'Fusionner utilisateur\'\' pour accepter.',
 	),
 );
 
-$allMessages['zh'] = $allMessages['zh-hans'];
-$allMessages['zh-cn'] = $allMessages['zh-hans'];
-$allMessages['zh-hk'] = $allMessages['zh-hant'];
-$allMessages['zh-sg'] = $allMessages['zh-hans'];
-$allMessages['zh-tw'] = $allMessages['zh-hant'];
-$allMessages['zh-yue'] = $allMessages['yue'];
+$usermergeMessages['zh'] = $usermergeMessages['zh-hans'];
+$usermergeMessages['zh-cn'] = $usermergeMessages['zh-hans'];
+$usermergeMessages['zh-hk'] = $usermergeMessages['zh-hant'];
+$usermergeMessages['zh-sg'] = $usermergeMessages['zh-hans'];
+$usermergeMessages['zh-tw'] = $usermergeMessages['zh-hant'];
+$usermergeMessages['zh-yue'] = $usermergeMessages['yue'];
