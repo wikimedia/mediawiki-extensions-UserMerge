@@ -16,10 +16,10 @@ $usermergeMessages = array(
 		'usermerge-submit' 				=> 'Merge User',
 		'usermerge-badtoken' 			=> 'Invalid Edit Token',
 		'usermerge-userdeleted' 		=> '$1($2) has been deleted.',
-		'usermerge-userdeleted-log' 	=> 'Deleted user: $2($3).',
+		'usermerge-userdeleted-log' 	=> 'Deleted user: $2($3)',
 		'usermerge-updating' 			=> 'Updating $1 table ($2 to $3)',
 		'usermerge-success' 			=> 'Merge from $1($2) to $3($4) is complete.',
-		'usermerge-success-log' 		=> 'User $2($3) merged to $4($5).',
+		'usermerge-success-log' 		=> 'User $2($3) merged to $4($5)',
 		'usermerge-logpage'           	=> 'User Merge log',
 		'usermerge-logpagetext'       	=> 'This is a log of user merge actions' 
 	),
