@@ -3,21 +3,25 @@
 * \brief Internationalization file for the User Merge and Delete Extension.
 */
 
-$allMessages = array(
+$usermergeMessages = array(
 	'en' => array(
 		'usermerge' => 'User Merge and Delete',
-		'usermerge-badolduser' => 'Invalid Old Username',
-		'usermerge-badnewuser' => 'Invalid New User',
-		'usermerge-nonewuser' => 'Empty New Username - Assuming merge to $1.<br />Click <u>Merge User</u> to accept.',
-		'usermerge-noolduser' => 'Empty Old Username',
-		'usermerge-olduser' => 'Old User(Merge From)',
-		'usermerge-newuser' => 'New User(Merge To)',
-		'usermerge-deleteolduser' => 'Delete Old User?',
-		'usermerge-submit' => 'Merge User',
-		'usermerge-badtoken' => 'Invalid Edit Token',
-		'usermerge-userdeleted' => '$1($2) has been deleted.',
-		'usermerge-updating' => 'Updating $1 table ($2 to $3)',
-		'usermerge-success' => 'Merge from $1($2) to $3($4) is complete.'
+		'usermerge-badolduser' 			=> 'Invalid Old Username',
+		'usermerge-badnewuser' 			=> 'Invalid New User',
+		'usermerge-nonewuser' 			=> 'Empty New Username - Assuming merge to $1.<br />Click <u>Merge User</u> to accept.',
+		'usermerge-noolduser' 			=> 'Empty Old Username',
+		'usermerge-olduser' 			=> 'Old User(Merge From)',
+		'usermerge-newuser' 			=> 'New User(Merge To)',
+		'usermerge-deleteolduser' 		=> 'Delete Old User?',
+		'usermerge-submit' 				=> 'Merge User',
+		'usermerge-badtoken' 			=> 'Invalid Edit Token',
+		'usermerge-userdeleted' 		=> '$1($2) has been deleted.',
+		'usermerge-userdeleted-log' 	=> 'Deleted user: $2($3).',
+		'usermerge-updating' 			=> 'Updating $1 table ($2 to $3)',
+		'usermerge-success' 			=> 'Merge from $1($2) to $3($4) is complete.',
+		'usermerge-success-log' 		=> 'User $2($3) merged to $4($5).',
+		'usermerge-logpage'           	=> 'User Merge log',
+		'usermerge-logpagetext'       	=> 'This is a log of user merge actions' 
 	),
 	'ar' => array(
 		'usermerge' => 'دمج وحذف المستخدم',

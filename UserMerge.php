@@ -8,21 +8,34 @@ if (!defined('MEDIAWIKI')) {
         echo "User Merge and Delete extension";
         exit(1);
 }
- 
+
+$wgExtensionFunctions[] = 'efUserMerge';
 $wgExtensionCredits['specialpage'][] = array(
     'name'=>'User Merge and Delete',
     'url'=>'http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete',
     'author'=>'Tim Laqua',
     'description'=>"Merges references from one user to another user in the Wiki database - will also delete old users following merge.  Requires 'userrights' privileges.",
-    'version'=>'1.1'
+    'version'=>'1.2'
 );
 
 $wgAutoloadClasses['UserMerge'] = dirname(__FILE__) . '/UserMerge_body.php';
 $wgSpecialPages['UserMerge'] = 'UserMerge';
- 
-if ( version_compare( $wgVersion, '1.10.0', '<' ) ) {
-    //Extension designed for 1.10.0+, but will work on some older versions
-    //LoadAllMessages hook throws errors before 1.10.0
-} else {
-    $wgHooks['LoadAllMessages'][] = 'UserMerge::loadMessages';
+
+require( dirname( __FILE__ ) . '/UserMerge.i18n.php' );
+
+function efUserMerge() {
+	#Add Messages
+	global $wgMessageCache, $usermergeMessages;
+	foreach( $usermergeMessages as $key => $value ) {
+		$wgMessageCache->addMessages( $usermergeMessages[$key], $key );
+	}
+	
+	# Add a new log type
+	global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
+	$wgLogTypes[]                 		= 'usermerge';
+	$wgLogNames['usermerge']            = 'usermerge-logpage';
+	$wgLogHeaders['usermerge']          = 'usermerge-logpagetext';
+	$wgLogActions['usermerge/mergeuser'] 	= 'usermerge-success-log';
+	$wgLogActions['usermerge/deleteuser']	= 'usermerge-userdeleted-log';
 }
+

@@ -15,8 +15,7 @@
 class UserMerge extends SpecialPage
 {
         function UserMerge() {
-                SpecialPage::SpecialPage("UserMerge","userrights");
-                self::loadMessages();
+                SpecialPage::SpecialPage("UserMerge","usermerge");
         }
  
         function execute( $par ) {
@@ -24,8 +23,8 @@ class UserMerge extends SpecialPage
  
                 $this->setHeaders();
  
-                if ( !$wgUser->isAllowed( 'userrights' ) ) {
-                        $wgOut->permissionRequired( 'userrights' );
+                if ( !$wgUser->isAllowed( 'usermerge' ) ) {
+                        $wgOut->permissionRequired( 'usermerge' );
                         return;
                 }
  
@@ -130,12 +129,16 @@ class UserMerge extends SpecialPage
 		 * @return Always returns true - throws exceptions on failure.
 		 */
         private function deleteUser ($olduserID, $olduser_text) {
-                global $wgOut;
+                global $wgOut,$wgUser;
  
                 $dbw =& wfGetDB( DB_MASTER );
                 $dbw->delete( 'user_groups', array( 'ug_user' => $olduserID ));
                 $dbw->delete( 'user', array( 'user_id' => $olduserID ));
                 $wgOut->addHTML(wfMsgForContent('usermerge-userdeleted', $olduser_text, $olduserID));
+				
+				$log = new LogPage( 'usermerge' );
+				$log->addEntry( 'deleteuser', $wgUser->getUserPage(),'',array($olduser_text,$olduserID) );
+				
 				return true;
         }
  
@@ -152,7 +155,7 @@ class UserMerge extends SpecialPage
 		 * @return Always returns true - throws exceptions on failure.
 		 */
 		 private function mergeUser ($newuser_text, $newuserID, $olduser_text, $olduserID) {
-                global $wgOut;
+                global $wgOut, $wgUser;
  
                 $textUpdateFields = array(array('archive','ar_user_text'),
                                           array('revision','rev_user_text'),
@@ -186,20 +189,10 @@ class UserMerge extends SpecialPage
                 $dbw->delete( 'user_newtalk', array( 'user_ip' => $olduserID ));
  
                 $wgOut->addHTML("<hr />\n" . wfMsgForContent('usermerge-success',$olduser_text,$olduserID,$newuser_text,$newuserID) . "\n<br>");
+				
+				$log = new LogPage( 'usermerge' );
+				$log->addEntry( 'mergeuser', $wgUser->getUserPage(),'',array($olduser_text,$olduserID,$newuser_text,$newuserID) );
+				
 				return true;
-        }
- 
-        function loadMessages() {
-                static $messagesLoaded = false;
-                global $wgMessageCache;
-                if ( $messagesLoaded ) return true;
-                $messagesLoaded = true;
- 
-                require( dirname( __FILE__ ) . '/UserMerge.i18n.php' );
-                foreach ( $allMessages as $lang => $langMessages ) {
-                        $wgMessageCache->addMessages( $langMessages, $lang );
-                }
- 
-                                return true;
         }
 }
