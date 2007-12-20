@@ -43,9 +43,15 @@ $usermergeMessages = array(
 		'usermerge-logpage' => 'سجل دمج المستخدم',
 		'usermerge-logpagetext' => 'هذا سجل بعمليات دمج المستخدمين',
 	),
+
+/** Bulgarian (Български)
+ * @author DCLXVI
+ */
 	'bg' => array(
 		'usermerge-userdeleted-log' => 'Изтрит потребител: $2($3)',
+		'usermerge-logpage'         => 'Дневник на потребителските сливания',
 	),
+
 	'de' => array(
 		'usermerge' => 'Benutzerkonten zusammenführen und löschen',
 	),
