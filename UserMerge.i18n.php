@@ -48,6 +48,7 @@ $usermergeMessages = array(
  * @author DCLXVI
  */
 	'bg' => array(
+		'usermerge-userdeleted'     => '$1($2) беше изтрит.',
 		'usermerge-userdeleted-log' => 'Изтрит потребител: $2($3)',
 		'usermerge-logpage'         => 'Дневник на потребителските сливания',
 	),
@@ -117,6 +118,7 @@ Cliquez sur \'\'Fusionner utilisateur\'\' pour accepter.',
 		'usermerge-logpage' => 'Protokol wužiwarskich zjednoćenjow',
 		'usermerge-logpagetext' => 'To je protokol wužiwarskich zjednoćenjow',
 	),
+
 	'nl' => array(
 		'usermerge' => 'Gebruikers samenvoegen en verwijderen',
 		'usermerge-badolduser' => 'Verkeerde oude gebruiker',
@@ -136,6 +138,7 @@ Cliquez sur \'\'Fusionner utilisateur\'\' pour accepter.',
 		'usermerge-logpage' => 'Logboek gebruikerssamenvoegingen',
 		'usermerge-logpagetext' => 'Dit is het logboek van gebruikerssamenvoegingen.',
 	),
+
 	'no' => array(
 		'usermerge' => 'Brukersammenslåing og -sletting',
 		'usermerge-badolduser' => 'Gammelt brukernavn ugyldig',
