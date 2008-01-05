@@ -48,6 +48,10 @@ $usermergeMessages = array(
  * @author DCLXVI
  */
 	'bg' => array(
+		'usermerge'                 => 'Сливане и изтриване на потребители',
+		'usermerge-badolduser'      => 'Невалиден стар потребител',
+		'usermerge-badnewuser'      => 'Невалиден нов потребител',
+		'usermerge-deleteolduser'   => 'Изтриване на стария потребител?',
 		'usermerge-userdeleted'     => '$1($2) беше изтрит.',
 		'usermerge-userdeleted-log' => 'Изтрит потребител: $2($3)',
 		'usermerge-logpage'         => 'Дневник на потребителските сливания',
