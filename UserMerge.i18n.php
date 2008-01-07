@@ -123,6 +123,13 @@ Cliquez sur \'\'Fusionner utilisateur\'\' pour accepter.',
 		'usermerge-logpagetext' => 'To je protokol wužiwarskich zjednoćenjow',
 	),
 
+/** Luxembourgish (Lëtzebuergesch)
+ * @author Robby
+ */
+	'lb' => array(
+		'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
+	),
+
 	'nl' => array(
 		'usermerge' => 'Gebruikers samenvoegen en verwijderen',
 		'usermerge-badolduser' => 'Verkeerde oude gebruiker',
