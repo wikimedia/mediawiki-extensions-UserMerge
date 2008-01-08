@@ -18,17 +18,15 @@ $wgExtensionCredits['specialpage'][] = array(
     'version'=>'1.3'
 );
 
-$wgAutoloadClasses['UserMerge'] = dirname(__FILE__) . '/UserMerge_body.php';
-$wgSpecialPages['UserMerge'] = 'UserMerge';
+$dir = dirname(__FILE__) . '/';
+$wgAutoloadClasses['UserMerge'] = $dir . 'UserMerge_body.php';
 
-require( dirname( __FILE__ ) . '/UserMerge.i18n.php' );
+$wgExtensionMessagesFiles['UserMerge'] = $dir . 'UserMerge.i18n.php';
+$wgSpecialPages['UserMerge'] = 'UserMerge';
 
 function efUserMerge() {
 	#Add Messages
-	global $wgMessageCache, $usermergeMessages;
-	foreach( $usermergeMessages as $key => $value ) {
-		$wgMessageCache->addMessages( $usermergeMessages[$key], $key );
-	}
+	wfLoadExtensionMessages('UserMerge');
 	
 	# Add a new log type
 	global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
