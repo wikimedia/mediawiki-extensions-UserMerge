@@ -5,6 +5,7 @@
 */
 
 $messages = array();
+
 $messages['en'] = array(
 	'usermerge' => 'User Merge and Delete',
 	'usermerge-badolduser' 		=> 'Invalid Old Username',
@@ -23,7 +24,8 @@ $messages['en'] = array(
 	'usermerge-success-log' 	=> 'User $2($3) merged to $4($5)',
 	'usermerge-logpage'           	=> 'User Merge log',
 	'usermerge-logpagetext'       	=> 'This is a log of user merge actions'
-	);
+);
+
 $messages['ar'] = array(
 	'usermerge' => 'دمج وحذف المستخدم',
 	'usermerge-badolduser' => 'اسم المستخدم القديم غير صحيح',
@@ -42,7 +44,7 @@ $messages['ar'] = array(
 	'usermerge-success-log' => 'المستخدم $2($3) تم دمجه مع $4($5)',
 	'usermerge-logpage' => 'سجل دمج المستخدم',
 	'usermerge-logpagetext' => 'هذا سجل بعمليات دمج المستخدمين',
-	);
+);
 
 /** Bulgarian (Български)
  * @author DCLXVI
@@ -55,11 +57,11 @@ $messages['bg'] = array(
 	'usermerge-userdeleted'     => '$1($2) беше изтрит.',
 	'usermerge-userdeleted-log' => 'Изтрит потребител: $2($3)',
 	'usermerge-logpage'         => 'Дневник на потребителските сливания',
-	);
+);
 
 $messages['de'] = array(
 	'usermerge' => 'Benutzerkonten zusammenführen und löschen',
-	);
+);
 $messages['fr'] = array(
 	'usermerge' => 'Fusionner utilisateur et détruire',
 	'usermerge-badolduser' => 'Ancien nom d\'utilisateur invalide',
@@ -80,7 +82,7 @@ Cliquez sur \'\'Fusionner utilisateur\'\' pour accepter.',
 	'usermerge-success-log' => 'Contributeur $2($3) fusionné avec $4($5)',
 	'usermerge-logpage' => 'Journal des fusions de contributeurs',
 	'usermerge-logpagetext' => 'Ceci est un journal des actions de fusions des contributeurs',
-	);
+);
 /** Galician (Galego)
  * @author Alma
  */
@@ -121,14 +123,40 @@ $messages['hsb'] = array(
 	'usermerge-success-log' => 'Wužiwar $2($3) je so z $4 ($5) zjednoćił',
 	'usermerge-logpage' => 'Protokol wužiwarskich zjednoćenjow',
 	'usermerge-logpagetext' => 'To je protokol wužiwarskich zjednoćenjow',
-	);
+);
+
+/** French (Français)
+ * @author Sherbrooke
+ * @author Grondin
+ */
+$messages['fr'] = array(
+	'usermerge'                 => 'Fusionner utilisateur et détruire',
+	'usermerge-badolduser'      => "Ancien nom d'utilisateur invalide",
+	'usermerge-badnewuser'      => "Nouveau nom d'utilisateur invalide",
+	'usermerge-nonewuser'       => "Nouveau nom d'utilisateur vide. Nous faisons l'hypothèse que vous voulez fusionner dans $1.
+
+Cliquez sur ''Fusionner utilisateur'' pour accepter.",
+	'usermerge-noolduser'       => "Ancien nom d'utilisateur vide",
+	'usermerge-olduser'         => 'Ancien utilisateur (fusionner depuis)',
+	'usermerge-newuser'         => 'Nouvel utilisateur(fusionner dans)',
+	'usermerge-deleteolduser'   => 'Détruire l’ancien utilisateur ?',
+	'usermerge-submit'          => 'Fusionner utilisateur',
+	'usermerge-badtoken'        => "Token d'édition invalide",
+	'usermerge-userdeleted'     => '$1($2) est détruit.',
+	'usermerge-userdeleted-log' => 'Contributeur effacé : $2($3)',
+	'usermerge-updating'        => 'Mise à jour de la table $1 (de $2 à $3)',
+	'usermerge-success'         => 'La fusion de $1($2) à $3($4) est complétée.',
+	'usermerge-success-log'     => 'Contributeur $2($3) fusionné avec $4($5)',
+	'usermerge-logpage'         => 'Journal des fusions de contributeurs',
+	'usermerge-logpagetext'     => 'Ceci est un journal des actions de fusions de contributeurs',
+);
 
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
 $messages['lb'] = array(
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
-	);
+);
 
 $messages['nl'] = array(
 	'usermerge' => 'Gebruikers samenvoegen en verwijderen',
@@ -148,7 +176,7 @@ $messages['nl'] = array(
 	'usermerge-success-log' => 'Gebruiker $2($3) samengevoegd naar $3($5)',
 	'usermerge-logpage' => 'Logboek gebruikerssamenvoegingen',
 	'usermerge-logpagetext' => 'Dit is het logboek van gebruikerssamenvoegingen.',
-	);
+);
 
 $messages['no'] = array(
 	'usermerge' => 'Brukersammenslåing og -sletting',
@@ -168,7 +196,7 @@ $messages['no'] = array(
 	'usermerge-success-log' => 'Brukeren $2 ($3) slått sammen med $4 ($5)',
 	'usermerge-logpage' => 'Brukersammenslåingslogg',
 	'usermerge-logpagetext' => 'Dette er en logg over brukersammenslåinger.',
-	);
+);
 
 /** Occitan (Occitan)
  * @author Cedric31
@@ -191,7 +219,7 @@ $messages['oc'] = array(
 	'usermerge-success-log'     => 'Contributor $2($3) fusionat amb $4($5)',
 	'usermerge-logpage'         => 'Jornal de las fusions de contributors',
 	'usermerge-logpagetext'     => 'Aquò es un jornal de las accions de fusions de contributors',
-	);
+);
 
 $messages['pms'] = array(
 	'usermerge' => 'Union e scancelament d\'utent',
@@ -207,7 +235,8 @@ $messages['pms'] = array(
 	'usermerge-userdeleted' => '$1($2) a l\'é stàit scancelà.',
 	'usermerge-updating' => 'Antramentr ch\'i agiornoma la tàola $1 ($2 a $3)',
 	'usermerge-success' => 'Union da $1($2) a $3($4) completà.',
-	);
+);
+
 $messages['sk'] = array(
 	'usermerge' => 'Zlúčenie a zmazanie používateľov',
 	'usermerge-badolduser' => 'Neplatné staré používateľské meno',
@@ -222,7 +251,8 @@ $messages['sk'] = array(
 	'usermerge-userdeleted' => '$1($2) bol zmazaný.',
 	'usermerge-updating' => 'Aktualizuje sa tabuľka $1 ($2 na $3)',
 	'usermerge-success' => 'Zlúčenie z $1($2) do $3($4) je dokončené.',
-	);
+);
+
 $messages['yue'] = array(
 	'usermerge' => '用戶合併同刪除',
 	'usermerge-badolduser' => '無效嘅舊用戶名',
@@ -237,7 +267,8 @@ $messages['yue'] = array(
 	'usermerge-userdeleted' => '$1($2) 已經刪除咗。',
 	'usermerge-updating' => '更新緊 $1 表 ($2 到 $3)',
 	'usermerge-success' => '由 $1($2) 到 $3($4) 嘅合併已經完成。'
-	);
+);
+
 $messages['zh-hans'] = array(
 	'usermerge' => '用户合并和删除',
 	'usermerge-badolduser' => '无效的旧用户名',
@@ -252,7 +283,8 @@ $messages['zh-hans'] = array(
 	'usermerge-userdeleted' => '$1($2) 已删除。',
 	'usermerge-updating' => '正在更新 $1 表格 ($2 到 $3)',
 	'usermerge-success' => '由 $1($2) 到 $3($4) 的合并已经完成。'
-	);
+);
+
 $messages['zh-hant'] = array(
 	'usermerge' => '用戶合併和刪除',
 	'usermerge-badolduser' => '無效的舊用戶名',
@@ -267,7 +299,8 @@ $messages['zh-hant'] = array(
 	'usermerge-userdeleted' => '$1($2) 已刪除。',
 	'usermerge-updating' => '正在更新 $1 表格 ($2 到 $3)',
 	'usermerge-success' => '由 $1($2) 到 $3($4) 的合併已經完成。'
-	);
+);
+
 $messages['zh'] = $messages['zh-hans'];
 $messages['zh-cn'] = $messages['zh-hans'];
 $messages['zh-hk'] = $messages['zh-hant'];
