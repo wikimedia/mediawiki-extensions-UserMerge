@@ -237,20 +237,27 @@ $messages['pms'] = array(
 	'usermerge-success' => 'Union da $1($2) a $3($4) completà.',
 );
 
+/** Slovak (Slovenčina)
+ * @author Helix84
+ */
 $messages['sk'] = array(
-	'usermerge' => 'Zlúčenie a zmazanie používateľov',
-	'usermerge-badolduser' => 'Neplatné staré používateľské meno',
-	'usermerge-badnewuser' => 'Neplatné nové používateľské meno',
-	'usermerge-nonewuser' => 'Prázdne nové používateľské meno - Predpokladá sa zlúčenie do $1.<br />Kliknutím na <u>Zlúčiť používateľov</u> prijmete.',
-	'usermerge-noolduser' => 'Prázdne staré používateľské meno',
-	'usermerge-olduser' => 'Starý používateľ(zlúčiť odtiaľto)',
-	'usermerge-newuser' => 'Nový používate(zlúčiť sem)',
-	'usermerge-deleteolduser' => 'Zmazať starého používateľa?',
-	'usermerge-submit' => 'Zlúčiť používateľov',
-	'usermerge-badtoken' => 'Neplatný token úprav',
-	'usermerge-userdeleted' => '$1($2) bol zmazaný.',
-	'usermerge-updating' => 'Aktualizuje sa tabuľka $1 ($2 na $3)',
-	'usermerge-success' => 'Zlúčenie z $1($2) do $3($4) je dokončené.',
+	'usermerge'                 => 'Zlúčenie a zmazanie používateľov',
+	'usermerge-badolduser'      => 'Neplatné staré používateľské meno',
+	'usermerge-badnewuser'      => 'Neplatné nové používateľské meno',
+	'usermerge-nonewuser'       => 'Prázdne nové používateľské meno - Predpokladá sa zlúčenie do $1.<br />Kliknutím na <u>Zlúčiť používateľov</u> prijmete.',
+	'usermerge-noolduser'       => 'Prázdne staré používateľské meno',
+	'usermerge-olduser'         => 'Starý používateľ(zlúčiť odtiaľto)',
+	'usermerge-newuser'         => 'Nový používate(zlúčiť sem)',
+	'usermerge-deleteolduser'   => 'Zmazať starého používateľa?',
+	'usermerge-submit'          => 'Zlúčiť používateľov',
+	'usermerge-badtoken'        => 'Neplatný token úprav',
+	'usermerge-userdeleted'     => '$1($2) bol zmazaný.',
+	'usermerge-userdeleted-log' => 'Zmazaný používateľ: $2($3)',
+	'usermerge-updating'        => 'Aktualizuje sa tabuľka $1 ($2 na $3)',
+	'usermerge-success'         => 'Zlúčenie z $1($2) do $3($4) je dokončené.',
+	'usermerge-success-log'     => 'Používateľ $2($3) bol zlúčený do $4($5)',
+	'usermerge-logpage'         => 'Záznam zlúčení používateľov',
+	'usermerge-logpagetext'     => 'Toto je záznam zlúčení používateľov',
 );
 
 $messages['yue'] = array(
