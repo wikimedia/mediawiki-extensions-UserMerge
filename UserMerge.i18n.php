@@ -54,6 +54,7 @@ $messages['bg'] = array(
 	'usermerge-badolduser'      => 'Невалиден стар потребител',
 	'usermerge-badnewuser'      => 'Невалиден нов потребител',
 	'usermerge-deleteolduser'   => 'Изтриване на стария потребител?',
+	'usermerge-submit'          => 'Сливане',
 	'usermerge-userdeleted'     => '$1($2) беше изтрит.',
 	'usermerge-userdeleted-log' => 'Изтрит потребител: $2($3)',
 	'usermerge-logpage'         => 'Дневник на потребителските сливания',
