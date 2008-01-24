@@ -261,6 +261,13 @@ $messages['sk'] = array(
 	'usermerge-logpagetext'     => 'Toto je záznam zlúčení používateľov',
 );
 
+/** Seeltersk (Seeltersk)
+ * @author Pyt
+ */
+$messages['stq'] = array(
+	'usermerge' => 'Benutserkonten touhoopefiere un läskje',
+);
+
 $messages['yue'] = array(
 	'usermerge' => '用戶合併同刪除',
 	'usermerge-badolduser' => '無效嘅舊用戶名',
