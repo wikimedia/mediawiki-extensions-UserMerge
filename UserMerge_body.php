@@ -27,6 +27,12 @@ class UserMerge extends SpecialPage
                         $wgOut->permissionRequired( 'usermerge' );
                         return;
                 }
+				
+				// init variables
+				$olduser_text = '';
+				$newuser_text = '';
+				$deleteUserCheck = '';
+				$validNewUser = false;
  
                 if (strlen($wgRequest->getText('olduser').$wgRequest->getText('newuser'))>0 || $wgRequest->getText( 'deleteuser' )) {
                     //POST data found
