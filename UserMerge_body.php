@@ -144,7 +144,12 @@ class UserMerge extends SpecialPage
 				
 				$log = new LogPage( 'usermerge' );
 				$log->addEntry( 'deleteuser', $wgUser->getUserPage(),'',array($olduser_text,$olduserID) );
-				
+
+				$users = $dbw->selectField( 'user', 'COUNT(*)', array() );
+				$admins = $dbw->selectField( 'user_groups', 'COUNT(*)', array( 'ug_group' => 'sysop' ) );
+				$dbw->update( 'site_stats', 
+							  array( 'ss_users' => $users, 'ss_admins' => $admins ), 
+							  array( 'ss_row_id' => 1 ) );
 				return true;
         }
  
