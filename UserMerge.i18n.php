@@ -268,6 +268,24 @@ $messages['stq'] = array(
 	'usermerge' => 'Benutserkonten touhoopefiere un läskje',
 );
 
+/** Swedish (Svenska)
+ * @author Lejonel
+ */
+$messages['sv'] = array(
+	'usermerge'               => 'Slå ihop och radera användarkonton',
+	'usermerge-badolduser'    => 'Ogiltigt gammalt användarnamn',
+	'usermerge-badnewuser'    => 'Ogiltigt nytt användarnamn',
+	'usermerge-nonewuser'     => 'Inget nytt användarnamn angavs. Antar att det gamla kontot ska slås ihop till $1.<br />Tryck på <u>Slå ihop konton</u> för att godkänna sammanslagningen.',
+	'usermerge-noolduser'     => 'Inget gammalt användarnamn angavs',
+	'usermerge-olduser'       => 'Gammalt användarnamn (slås ihop från)',
+	'usermerge-newuser'       => 'Nytt användarnamn (slås ihop till)',
+	'usermerge-deleteolduser' => 'Ta bort det gamla användarkontot?',
+	'usermerge-submit'        => 'Slå ihop konton',
+	'usermerge-success-log'   => 'Användare $2($3) sammanfogades med $4($5)',
+	'usermerge-logpage'       => 'Användarsammanslagningslogg',
+	'usermerge-logpagetext'   => 'Det här är en logg över sammanslagningar av användarkonton.',
+);
+
 $messages['yue'] = array(
 	'usermerge' => '用戶合併同刪除',
 	'usermerge-badolduser' => '無效嘅舊用戶名',
