@@ -152,6 +152,29 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'usermerge-logpagetext'     => 'Ceci est un journal des actions de fusions de contributeurs',
 );
 
+/** Galician (Galego)
+ * @author Alma
+ */
+$messages['gl'] = array(
+	'usermerge'                 => 'Fusionar e Eliminar usuario',
+	'usermerge-badolduser'      => 'Antigo Nome de usuario non válido',
+	'usermerge-badnewuser'      => 'Novo Usuario non válido',
+	'usermerge-nonewuser'       => 'Novo Nome de usuario baleiro - Asumindo que se fusionan para $1.<br />Prema <u>Fusionar Usuario</u> para aceptar.',
+	'usermerge-noolduser'       => 'Antigo Nome de usuario baleiro',
+	'usermerge-olduser'         => 'Antigo Usuario(Fusionar Para)',
+	'usermerge-newuser'         => 'Novo Usuario(Fusionar A)',
+	'usermerge-deleteolduser'   => 'Eliminar Antigo Usuario?',
+	'usermerge-submit'          => 'Fusionar Usuario',
+	'usermerge-badtoken'        => 'Sinal de Edición non válida',
+	'usermerge-userdeleted'     => '$1($2) foi eliminado.',
+	'usermerge-userdeleted-log' => 'Eliminado usuario: $2($3)',
+	'usermerge-updating'        => 'Actualizando táboa $1 ($2 a $3)',
+	'usermerge-success'         => 'A fusión de $1($2) a $3($4) está completa.',
+	'usermerge-success-log'     => 'Usuario $2($3) fusionado a $4($5)',
+	'usermerge-logpage'         => 'Rexistro da Fusión de usuarios',
+	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -272,18 +295,20 @@ $messages['stq'] = array(
  * @author Lejonel
  */
 $messages['sv'] = array(
-	'usermerge'               => 'Slå ihop och radera användarkonton',
-	'usermerge-badolduser'    => 'Ogiltigt gammalt användarnamn',
-	'usermerge-badnewuser'    => 'Ogiltigt nytt användarnamn',
-	'usermerge-nonewuser'     => 'Inget nytt användarnamn angavs. Antar att det gamla kontot ska slås ihop till $1.<br />Tryck på <u>Slå ihop konton</u> för att godkänna sammanslagningen.',
-	'usermerge-noolduser'     => 'Inget gammalt användarnamn angavs',
-	'usermerge-olduser'       => 'Gammalt användarnamn (slås ihop från)',
-	'usermerge-newuser'       => 'Nytt användarnamn (slås ihop till)',
-	'usermerge-deleteolduser' => 'Ta bort det gamla användarkontot?',
-	'usermerge-submit'        => 'Slå ihop konton',
-	'usermerge-success-log'   => 'Användare $2($3) sammanfogades med $4($5)',
-	'usermerge-logpage'       => 'Användarsammanslagningslogg',
-	'usermerge-logpagetext'   => 'Det här är en logg över sammanslagningar av användarkonton.',
+	'usermerge'                 => 'Slå ihop och radera användarkonton',
+	'usermerge-badolduser'      => 'Ogiltigt gammalt användarnamn',
+	'usermerge-badnewuser'      => 'Ogiltigt nytt användarnamn',
+	'usermerge-nonewuser'       => 'Inget nytt användarnamn angavs. Antar att det gamla kontot ska slås ihop till $1.<br />Tryck på <u>Slå ihop konton</u> för att godkänna sammanslagningen.',
+	'usermerge-noolduser'       => 'Inget gammalt användarnamn angavs',
+	'usermerge-olduser'         => 'Gammalt användarnamn (slås ihop från)',
+	'usermerge-newuser'         => 'Nytt användarnamn (slås ihop till)',
+	'usermerge-deleteolduser'   => 'Ta bort det gamla användarkontot?',
+	'usermerge-submit'          => 'Slå ihop konton',
+	'usermerge-userdeleted'     => '$1($2) har raderats.',
+	'usermerge-userdeleted-log' => 'raderade användare $2 ($3)',
+	'usermerge-success-log'     => 'Användare $2($3) sammanfogades med $4($5)',
+	'usermerge-logpage'         => 'Användarsammanslagningslogg',
+	'usermerge-logpagetext'     => 'Det här är en logg över sammanslagningar av användarkonton.',
 );
 
 $messages['yue'] = array(
