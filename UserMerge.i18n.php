@@ -261,6 +261,13 @@ $messages['pms'] = array(
 	'usermerge-success' => 'Union da $1($2) a $3($4) completà.',
 );
 
+/** Portuguese (Português)
+ * @author Malafaya
+ */
+$messages['pt'] = array(
+	'usermerge-deleteolduser' => 'Apagar Utilizador Antigo?',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
