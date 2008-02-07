@@ -7,25 +7,25 @@
 $messages = array();
 
 $messages['en'] = array(
-	'usermerge'                     => 'User Merge and Delete',
-	'usermerge-desc'                => "Merges references from one user to another user in the Wiki database - will also delete old users following merge.  Requires 'usermerge' privileges.",
-	'usermerge-badolduser' 		=> 'Invalid Old Username',
-	'usermerge-badnewuser' 		=> 'Invalid New User',
-	'usermerge-nonewuser' 		=> 'Empty New Username - Assuming merge to $1.<br />Click <u>Merge User</u> to accept.',
-	'usermerge-noolduser' 		=> 'Empty Old Username',
-	'usermerge-olduser' 		=> 'Old User(Merge From)',
-	'usermerge-newuser' 		=> 'New User(Merge To)',
-	'usermerge-deleteolduser' 	=> 'Delete Old User?',
-	'usermerge-submit' 		=> 'Merge User',
-	'usermerge-badtoken' 		=> 'Invalid Edit Token',
-	'usermerge-userdeleted' 	=> '$1($2) has been deleted.',
-	'usermerge-userdeleted-log' 	=> 'Deleted user: $2($3)',
+	'usermerge'                     => 'User merge and delete',
+	'usermerge-desc'                => "Merges references from one user to another user in the wiki database - will also delete old users following merge. Requires ''usermerge'' privileges.",
+	'usermerge-badolduser' 		=> 'Invalid old username',
+	'usermerge-badnewuser' 		=> 'Invalid new username',
+	'usermerge-nonewuser' 		=> 'Empty new username - assuming merge to $1.<br />Click <u>Merge User</u> to accept.',
+	'usermerge-noolduser' 		=> 'Empty old username',
+	'usermerge-olduser' 		=> 'Old user (merge from)',
+	'usermerge-newuser' 		=> 'New user (merge to)',
+	'usermerge-deleteolduser' 	=> 'Delete old user?',
+	'usermerge-submit' 		=> 'Merge user',
+	'usermerge-badtoken' 		=> 'Invalid edit token',
+	'usermerge-userdeleted' 	=> '$1 ($2) has been deleted.',
+	'usermerge-userdeleted-log' 	=> 'Deleted user: $2 ($3)',
 	'usermerge-updating' 		=> 'Updating $1 table ($2 to $3)',
-	'usermerge-success' 		=> 'Merge from $1($2) to $3($4) is complete.',
-	'usermerge-success-log' 	=> 'User $2($3) merged to $4($5)',
-	'usermerge-logpage'           	=> 'User Merge log',
+	'usermerge-success' 		=> 'Merge from $1 ($2) to $3 ($4) is complete.',
+	'usermerge-success-log' 	=> 'User $2 ($3) merged to $4 ($5)',
+	'usermerge-logpage'           	=> 'User merge log',
 	'usermerge-logpagetext'       	=> 'This is a log of user merge actions',
-	'usermerge-noselfdelete'       	=> 'You cannot delete or merge from yourself!'	
+	'usermerge-noselfdelete'       	=> 'You cannot delete or merge from yourself!',
 );
 
 $messages['ar'] = array(
