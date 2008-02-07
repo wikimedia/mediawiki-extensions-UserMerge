@@ -319,6 +319,16 @@ $messages['sv'] = array(
 	'usermerge-logpagetext'     => 'Det här är en logg över sammanslagningar av användarkonton.',
 );
 
+/** Turkish (Türkçe)
+ * @author Karduelis
+ */
+$messages['tr'] = array(
+	'usermerge-badolduser'    => 'Geçersiz eski kullanıcı adı',
+	'usermerge-badnewuser'    => 'Geçersiz yeni kullanıcı',
+	'usermerge-noolduser'     => 'Boş eski kullanıcı adı',
+	'usermerge-deleteolduser' => 'Eski kullanıcı sil ?',
+);
+
 $messages['yue'] = array(
 	'usermerge' => '用戶合併同刪除',
 	'usermerge-badolduser' => '無效嘅舊用戶名',
