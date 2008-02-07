@@ -51,7 +51,7 @@ class UserMerge extends SpecialPage
                       $olduserID = $objOldUser->idForName();
 						
 					  global $wgUser;
-                      if ( !is_object( $objOldUser ) || $olduserID == 0 ) {
+                      if ( !is_object( $objOldUser ) || $olduserID < 2 ) {
                         $validOldUser = false;
                         $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-badolduser') . "</span><br>\n" );
 					  } elseif ( $objOldUser = $wgUser->getID() ) {
