@@ -8,7 +8,7 @@ $messages = array();
 
 $messages['en'] = array(
 	'usermerge'                     => 'User merge and delete',
-	'usermerge-desc'                => "Merges references from one user to another user in the wiki database - will also delete old users following merge. Requires ''usermerge'' privileges.",
+	'usermerge-desc'                => "[[UserMerge|Merges references from one user to another user]] in the wiki database - will also delete old users following merge. Requires ''usermerge'' privileges",
 	'usermerge-badolduser' 		=> 'Invalid old username',
 	'usermerge-badnewuser' 		=> 'Invalid new username',
 	'usermerge-nonewuser' 		=> 'Empty new username - assuming merge to $1.<br />Click <u>Merge User</u> to accept.',
