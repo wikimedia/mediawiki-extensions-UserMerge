@@ -23,7 +23,8 @@ $messages['en'] = array(
 	'usermerge-success' 		=> 'Merge from $1($2) to $3($4) is complete.',
 	'usermerge-success-log' 	=> 'User $2($3) merged to $4($5)',
 	'usermerge-logpage'           	=> 'User Merge log',
-	'usermerge-logpagetext'       	=> 'This is a log of user merge actions'
+	'usermerge-logpagetext'       	=> 'This is a log of user merge actions',
+	'usermerge-noselfdelete'       	=> 'You cannot delete or merge from yourself!'	
 );
 
 $messages['ar'] = array(

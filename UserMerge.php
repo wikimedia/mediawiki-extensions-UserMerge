@@ -15,7 +15,7 @@ $wgExtensionCredits['specialpage'][] = array(
     'url'=>'http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete',
     'author'=>'Tim Laqua',
     'description'=>"Merges references from one user to another user in the Wiki database - will also delete old users following merge.  Requires 'usermerge' privileges.",
-    'version'=>'1.3.2'
+    'version'=>'1.4'
 );
 
 $dir = dirname(__FILE__) . '/';

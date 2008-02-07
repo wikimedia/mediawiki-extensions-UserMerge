@@ -49,10 +49,14 @@ class UserMerge extends SpecialPage
                     if (strlen($olduser_text)>0) {
                       $objOldUser = User::newFromName( $olduser_text );
                       $olduserID = $objOldUser->idForName();
- 
+						
+					  global $wgUser;
                       if ( !is_object( $objOldUser ) || $olduserID == 0 ) {
                         $validOldUser = false;
-                        $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsgForContent('usermerge-badolduser') . "</span><br>\n" );
+                        $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-badolduser') . "</span><br>\n" );
+					  } elseif ( $objOldUser = $wgUser->getID() ) {
+                        $validOldUser = false;
+                        $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-noselfdelete') . "</span><br>\n" );
                       } else {
                         $validOldUser = true;
  
@@ -64,7 +68,7 @@ class UserMerge extends SpecialPage
                           if ( !is_object( $objNewUser ) || $newuserID == 0 ) {
                             //invalid newuser entered
                             $validNewUser = false;
-                            $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsgForContent('usermerge-badnewuser') . "</span><br>\n" );
+                            $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-badnewuser') . "</span><br>\n" );
                           } else {
                             //newuser looks good
                             $validNewUser = true;
@@ -73,12 +77,12 @@ class UserMerge extends SpecialPage
                           //empty newuser string
                           $validNewUser = false;
                           $newuser_text = User::whoIs(1);
-                          $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsgForContent('usermerge-nonewuser', $newuser_text) . "</span><br>\n" );
+                          $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-nonewuser', $newuser_text) . "</span><br>\n" );
                         }
                       }
                     } else {
                       $validOldUser = false;
-                      $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsgForContent('usermerge-noolduser') . "</span><br>\n" );
+                      $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-noolduser') . "</span><br>\n" );
                     }
                 } else {
                     //NO POST data found
@@ -91,20 +95,20 @@ class UserMerge extends SpecialPage
 <form id='usermergeform' method='post' action=\"$action\">
 <table>
         <tr>
-                <td align='right'>" . wfMsgForContent('usermerge-olduser') . "</td>
+                <td align='right'>" . wfMsg('usermerge-olduser') . "</td>
                 <td align='left'><input tabindex='1' type='text' size='20' name='olduser' id='olduser' value=\"$olduser_text\" onFocus=\"document.getElementById('olduser').select;\" /></td>
         </tr>
         <tr>
-                <td align='right'>" . wfMsgForContent('usermerge-newuser') . "</td>
+                <td align='right'>" . wfMsg('usermerge-newuser') . "</td>
                 <td align='left'><input tabindex='2' type='text' size='20' name='newuser' id='newuser' value=\"$newuser_text\" onFocus=\"document.getElementById('newuser').select;\" /></td>
         </tr>
         <tr>
-                <td align='right'>" . wfMsgForContent('usermerge-deleteolduser') . "</td>
+                <td align='right'>" . wfMsg('usermerge-deleteolduser') . "</td>
                 <td align='left'><input tabindex='3' type='checkbox' name='deleteuser' id='deleteuser' $deleteUserCheck/></td>
         </tr>
         <tr>
                 <td>&nbsp;</td>
-                <td align='right'><input type='submit' name='submit' value=\"" . wfMsgForContent('usermerge-submit') . "\" /></td>
+                <td align='right'><input type='submit' name='submit' value=\"" . wfMsg('usermerge-submit') . "\" /></td>
         </tr>
 </table>
 <input type='hidden' name='token' value='$token' />
@@ -114,7 +118,7 @@ class UserMerge extends SpecialPage
                   //go time, baby
                   if (!$wgUser->matchEditToken( $wgRequest->getVal( 'token' ) ) ) {
                     //bad editToken
-                    $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsgForContent('usermerge-badtoken') . "</span><br>\n" );
+                    $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-badtoken') . "</span><br>\n" );
                   } else {
                     //good editToken
                     $this->mergeUser($newuser_text,$newuserID,$olduser_text,$olduserID);
@@ -140,7 +144,7 @@ class UserMerge extends SpecialPage
                 $dbw =& wfGetDB( DB_MASTER );
                 $dbw->delete( 'user_groups', array( 'ug_user' => $olduserID ));
                 $dbw->delete( 'user', array( 'user_id' => $olduserID ));
-                $wgOut->addHTML(wfMsgForContent('usermerge-userdeleted', $olduser_text, $olduserID));
+                $wgOut->addHTML(wfMsg('usermerge-userdeleted', $olduser_text, $olduserID));
 				
 				$log = new LogPage( 'usermerge' );
 				$log->addEntry( 'deleteuser', $wgUser->getUserPage(),'',array($olduser_text,$olduserID) );
@@ -188,18 +192,18 @@ class UserMerge extends SpecialPage
  
                 foreach ($idUpdateFields as $idUpdateField) {
                   $dbw->update($idUpdateField[0], array( $idUpdateField[1] => $newuserID ), array( $idUpdateField[1] => $olduserID ));
-                  $wgOut->addHTML(wfMsgForContent('usermerge-updating', $idUpdateField[0], $olduserID, $newuserID) . "<br>\n");
+                  $wgOut->addHTML(wfMsg('usermerge-updating', $idUpdateField[0], $olduserID, $newuserID) . "<br>\n");
                 }
  
                 foreach ($textUpdateFields as $textUpdateField) {
                   $dbw->update($textUpdateField[0], array( $textUpdateField[1] => $newuser_text ), array( $textUpdateField[1] => $olduser_text ));
-                  $wgOut->addHTML(wfMsgForContent('usermerge-updating', $textUpdateField[0], $olduser_text, $newuser_text) . "<br>\n");
+                  $wgOut->addHTML(wfMsg('usermerge-updating', $textUpdateField[0], $olduser_text, $newuser_text) . "<br>\n");
                 }
  
  
                 $dbw->delete( 'user_newtalk', array( 'user_ip' => $olduserID ));
  
-                $wgOut->addHTML("<hr />\n" . wfMsgForContent('usermerge-success',$olduser_text,$olduserID,$newuser_text,$newuserID) . "\n<br>");
+                $wgOut->addHTML("<hr />\n" . wfMsg('usermerge-success',$olduser_text,$olduserID,$newuser_text,$newuserID) . "\n<br>");
 				
 				$log = new LogPage( 'usermerge' );
 				$log->addEntry( 'mergeuser', $wgUser->getUserPage(),'',array($olduser_text,$olduserID,$newuser_text,$newuserID) );
