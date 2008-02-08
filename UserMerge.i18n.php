@@ -29,24 +29,28 @@ $messages['en'] = array(
 	'usermerge-unmergable'		=> 'Unable to merge from user - id or name has been defined as unmergable.',
 );
 
+/** Arabic (العربية)
+ * @author Meno25
+ */
 $messages['ar'] = array(
-	'usermerge' => 'دمج وحذف المستخدم',
-	'usermerge-badolduser' => 'اسم المستخدم القديم غير صحيح',
-	'usermerge-badnewuser' => 'المستخدم الجديد غير صحيح',
-	'usermerge-nonewuser' => 'اسم مستخدم جديد فارغ - افتراض الدمج إلى $1.<br />اضغط <u>دمج المستخدم</u> للقبول.',
-	'usermerge-noolduser' => 'اسم المستخدم القديم فارغ',
-	'usermerge-olduser' => 'مستخدم قديم(دمج من)',
-	'usermerge-newuser' => 'مستخدم جديد(دمج إلى)',
-	'usermerge-deleteolduser' => 'حذف المستخدم القديم؟',
-	'usermerge-submit' => 'دمج المستخدم',
-	'usermerge-badtoken' => 'نص تعديل غير صحيح',
-	'usermerge-userdeleted' => '$1($2) تم حذفه.',
+	'usermerge'                 => 'دمج وحذف المستخدم',
+	'usermerge-badolduser'      => 'اسم المستخدم القديم غير صحيح',
+	'usermerge-badnewuser'      => 'المستخدم الجديد غير صحيح',
+	'usermerge-nonewuser'       => 'اسم مستخدم جديد فارغ - افتراض الدمج إلى $1.<br />اضغط <u>دمج المستخدم</u> للقبول.',
+	'usermerge-noolduser'       => 'اسم المستخدم القديم فارغ',
+	'usermerge-olduser'         => 'مستخدم قديم(دمج من)',
+	'usermerge-newuser'         => 'مستخدم جديد(دمج إلى)',
+	'usermerge-deleteolduser'   => 'حذف المستخدم القديم؟',
+	'usermerge-submit'          => 'دمج المستخدم',
+	'usermerge-badtoken'        => 'نص تعديل غير صحيح',
+	'usermerge-userdeleted'     => '$1($2) تم حذفه.',
 	'usermerge-userdeleted-log' => 'حذف المستخدم: $2($3)',
-	'usermerge-updating' => 'تحديث $1 جدول ($2 إلى $3)',
-	'usermerge-success' => 'الدمج من $1($2) إلى $3($4) اكتمل.',
-	'usermerge-success-log' => 'المستخدم $2($3) تم دمجه مع $4($5)',
-	'usermerge-logpage' => 'سجل دمج المستخدم',
-	'usermerge-logpagetext' => 'هذا سجل بعمليات دمج المستخدمين',
+	'usermerge-updating'        => 'تحديث $1 جدول ($2 إلى $3)',
+	'usermerge-success'         => 'الدمج من $1($2) إلى $3($4) اكتمل.',
+	'usermerge-success-log'     => 'المستخدم $2($3) تم دمجه مع $4($5)',
+	'usermerge-logpage'         => 'سجل دمج المستخدم',
+	'usermerge-logpagetext'     => 'هذا سجل بعمليات دمج المستخدمين',
+	'usermerge-noselfdelete'    => 'لا يمكنك حذف أو دمج من نفسك!',
 );
 
 /** Bulgarian (Български)
@@ -116,8 +120,9 @@ $messages['gl'] = array(
 	'usermerge-success'         => 'A fusión de $1($2) a $3($4) está completa.',
 	'usermerge-success-log'     => 'Usuario $2($3) fusionado a $4($5)',
 	'usermerge-logpage'         => 'Rexistro da Fusión de usuarios',
-
+	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
 );
+
 $messages['hsb'] = array(
 	'usermerge' => 'Wužiwarske konta zjednoćić a zničić',
 	'usermerge-badolduser' => 'Njepłaćiwe stare wužiwarske mjeno',
@@ -164,29 +169,7 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'usermerge-logpagetext'     => 'Ceci est un journal des actions de fusions de contributeurs',
 );
 
-/** Galician (Galego)
- * @author Alma
- */
-$messages['gl'] = array(
-	'usermerge'                 => 'Fusionar e Eliminar usuario',
-	'usermerge-badolduser'      => 'Antigo Nome de usuario non válido',
-	'usermerge-badnewuser'      => 'Novo Usuario non válido',
-	'usermerge-nonewuser'       => 'Novo Nome de usuario baleiro - Asumindo que se fusionan para $1.<br />Prema <u>Fusionar Usuario</u> para aceptar.',
-	'usermerge-noolduser'       => 'Antigo Nome de usuario baleiro',
-	'usermerge-olduser'         => 'Antigo Usuario(Fusionar Para)',
-	'usermerge-newuser'         => 'Novo Usuario(Fusionar A)',
-	'usermerge-deleteolduser'   => 'Eliminar Antigo Usuario?',
-	'usermerge-submit'          => 'Fusionar Usuario',
-	'usermerge-badtoken'        => 'Sinal de Edición non válida',
-	'usermerge-userdeleted'     => '$1($2) foi eliminado.',
-	'usermerge-userdeleted-log' => 'Eliminado usuario: $2($3)',
-	'usermerge-updating'        => 'Actualizando táboa $1 ($2 a $3)',
-	'usermerge-success'         => 'A fusión de $1($2) a $3($4) está completa.',
-	'usermerge-success-log'     => 'Usuario $2($3) fusionado a $4($5)',
-	'usermerge-logpage'         => 'Rexistro da Fusión de usuarios',
-	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
 );
-
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -194,24 +177,31 @@ $messages['lb'] = array(
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
 );
 
+/** Dutch (Nederlands)
+ * @author SPQRobin
+ * @author Siebrand
+ */
 $messages['nl'] = array(
-	'usermerge' => 'Gebruikers samenvoegen en verwijderen',
-	'usermerge-badolduser' => 'Verkeerde oude gebruiker',
-	'usermerge-badnewuser' => 'Verkeerde nieuwe gebruiker',
-	'usermerge-nonewuser' => 'Nieuwe gebruiker is niet ingegeven - er wordt aangenomen dat er samengevoegd moet worden naar $1.<br />Klik <u>Gebruiker samenvoegen</u> om te aanvaarden.',
-	'usermerge-noolduser' => 'Oude gebruiker is niet ingegeven',
-	'usermerge-olduser' => 'Oude gebruiker (samenvoegen van)',
-	'usermerge-newuser' => 'Nieuwe gebruiker (samenvoegen naar)',
-	'usermerge-deleteolduser' => 'Oude gebruiker verwijderen?',
-	'usermerge-submit' => 'Gebruiker samenvoegen',
-	'usermerge-badtoken' => 'Ongeldig bewerkingstoken',
-	'usermerge-userdeleted' => '$1($2) is verwijderd.',
+	'usermerge'                 => 'Gebruikers samenvoegen en verwijderen',
+	'usermerge-desc'            => "[[Special:UserMerge|Voegt referenties van de ene gebruikers toe aan een andere gebruiker]]; verwijdert ook de oude gebruikers na het samenvoegen. Hiervoor is de rol ''usermerge'' nodig",
+	'usermerge-badolduser'      => 'Verkeerde oude gebruiker',
+	'usermerge-badnewuser'      => 'Verkeerde nieuwe gebruiker',
+	'usermerge-nonewuser'       => 'Nieuwe gebruiker is niet ingegeven - er wordt aangenomen dat er samengevoegd moet worden naar $1.<br />Klik <u>Gebruiker samenvoegen</u> om te aanvaarden.',
+	'usermerge-noolduser'       => 'Oude gebruiker is niet ingegeven',
+	'usermerge-olduser'         => 'Oude gebruiker (samenvoegen van)',
+	'usermerge-newuser'         => 'Nieuwe gebruiker (samenvoegen naar)',
+	'usermerge-deleteolduser'   => 'Oude gebruiker verwijderen?',
+	'usermerge-submit'          => 'Gebruiker samenvoegen',
+	'usermerge-badtoken'        => 'Ongeldig bewerkingstoken',
+	'usermerge-userdeleted'     => '$1($2) is verwijderd.',
 	'usermerge-userdeleted-log' => 'Verwijderde gebruiker: $2($3)',
-	'usermerge-updating' => 'Tabel $1 aan het bijwerken ($2 naar $3)',
-	'usermerge-success' => 'Samenvoegen van $1($2) naar $3($4) is afgerond.',
-	'usermerge-success-log' => 'Gebruiker $2($3) samengevoegd naar $3($5)',
-	'usermerge-logpage' => 'Logboek gebruikerssamenvoegingen',
-	'usermerge-logpagetext' => 'Dit is het logboek van gebruikerssamenvoegingen.',
+	'usermerge-updating'        => 'Tabel $1 aan het bijwerken ($2 naar $3)',
+	'usermerge-success'         => 'Samenvoegen van $1($2) naar $3($4) is afgerond.',
+	'usermerge-success-log'     => 'Gebruiker $2($3) samengevoegd naar $3($5)',
+	'usermerge-logpage'         => 'Logboek gebruikerssamenvoegingen',
+	'usermerge-logpagetext'     => 'Dit is het logboek van gebruikerssamenvoegingen.',
+	'usermerge-noselfdelete'    => 'U kan uzelf niet verwijderen of samenvoegen!',
+	'usermerge-unmergable'      => 'Deze gebruiker kan niet samengevoegd worden. De gebruikersnaam of het gebruikers-ID is ingesteld als niet samen te voegen.',
 );
 
 $messages['no'] = array(
@@ -301,6 +291,7 @@ $messages['sk'] = array(
 	'usermerge-success-log'     => 'Používateľ $2($3) bol zlúčený do $4($5)',
 	'usermerge-logpage'         => 'Záznam zlúčení používateľov',
 	'usermerge-logpagetext'     => 'Toto je záznam zlúčení používateľov',
+	'usermerge-noselfdelete'    => 'Nemôžete zmazať alebo zlúčiť svoj účet!',
 );
 
 /** Seeltersk (Seeltersk)
@@ -387,3 +378,4 @@ $messages['zh-hant'] = array(
 	'usermerge-updating' => '正在更新 $1 表格 ($2 到 $3)',
 	'usermerge-success' => '由 $1($2) 到 $3($4) 的合併已經完成。'
 );
+
