@@ -66,27 +66,36 @@ $messages['bg'] = array(
 $messages['de'] = array(
 	'usermerge' => 'Benutzerkonten zusammenführen und löschen',
 );
-$messages['fr'] = array(
-	'usermerge' => 'Fusionner utilisateur et détruire',
-	'usermerge-badolduser' => 'Ancien nom d\'utilisateur invalide',
-	'usermerge-badnewuser' => 'Nouveau nom d\'utilisateur invalide',
-	'usermerge-nonewuser' => 'Nouveau nom d\'utilisateur vide. Nous faisons l\'hypothèse que vous voulez fusionner dans $1.
 
-Cliquez sur \'\'Fusionner utilisateur\'\' pour accepter.',
-	'usermerge-noolduser' => 'Ancien nom d\'utilisateur vide',
-	'usermerge-olduser' => 'Ancien utilisateur(fusionner depuis)',
-	'usermerge-newuser' => 'Nouvel utilisateur(fusionner dans)',
-	'usermerge-deleteolduser' => 'Détruire l’ancien utilisateur ?',
-	'usermerge-submit' => 'Fusionner utilisateur',
-	'usermerge-badtoken' => 'Token d\'édition invalide',
-	'usermerge-userdeleted' => '$1($2) est détruit.',
+/** French (Français)
+ * @author Sherbrooke
+ * @author Grondin
+ */
+$messages['fr'] = array(
+	'usermerge'                 => 'Fusionner utilisateur et détruire',
+	'usermerge-desc'            => "[[Special:UserMerge|Fusionne les références d'un utilisatieur vers un autre]] dans la base de donnée wiki - supprimera aussi les anciennes fusions d'utilisateurs suivantes.",
+	'usermerge-badolduser'      => "Ancien nom d'utilisateur invalide",
+	'usermerge-badnewuser'      => "Nouveau nom d'utilisateur invalide",
+	'usermerge-nonewuser'       => "Nouveau nom d'utilisateur vide. Nous faisons l'hypothèse que vous voulez fusionner dans $1.
+
+Cliquez sur ''Fusionner utilisateur'' pour accepter.",
+	'usermerge-noolduser'       => "Ancien nom d'utilisateur vide",
+	'usermerge-olduser'         => 'Ancien utilisateur (fusionner depuis)',
+	'usermerge-newuser'         => 'Nouvel utilisateur(fusionner dans)',
+	'usermerge-deleteolduser'   => 'Détruire l’ancien utilisateur ?',
+	'usermerge-submit'          => 'Fusionner utilisateur',
+	'usermerge-badtoken'        => "Token d'édition invalide",
+	'usermerge-userdeleted'     => '$1($2) est détruit.',
 	'usermerge-userdeleted-log' => 'Contributeur effacé : $2($3)',
-	'usermerge-updating' => 'Mise à jour de la table $1 (de $2 à $3)',
-	'usermerge-success' => 'La fusion de $1($2) à $3($4) est complétée.',
-	'usermerge-success-log' => 'Contributeur $2($3) fusionné avec $4($5)',
-	'usermerge-logpage' => 'Journal des fusions de contributeurs',
-	'usermerge-logpagetext' => 'Ceci est un journal des actions de fusions des contributeurs',
+	'usermerge-updating'        => 'Mise à jour de la table $1 (de $2 à $3)',
+	'usermerge-success'         => 'La fusion de $1($2) à $3($4) est complétée.',
+	'usermerge-success-log'     => 'Contributeur $2($3) fusionné avec $4($5)',
+	'usermerge-logpage'         => 'Journal des fusions de contributeurs',
+	'usermerge-logpagetext'     => 'Ceci est un journal des actions de fusions de contributeurs',
+	'usermerge-noselfdelete'    => 'Vous ne pouvez pas, vous-même, vous supprimer ni vous fusionner !',
+	'usermerge-unmergable'      => "Ne peut fusionner à partir d'un utilisateur, d'un numéro d'identification ou un nom qui ont été définis comme non fusionnables.",
 );
+
 /** Galician (Galego)
  * @author Alma
  */
