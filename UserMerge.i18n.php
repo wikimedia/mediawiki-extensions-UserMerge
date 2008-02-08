@@ -26,6 +26,7 @@ $messages['en'] = array(
 	'usermerge-logpage'           	=> 'User merge log',
 	'usermerge-logpagetext'       	=> 'This is a log of user merge actions',
 	'usermerge-noselfdelete'       	=> 'You cannot delete or merge from yourself!',
+	'usermerge-unmergable'		=> 'Unable to merge from user - id or name has been defined as unmergable.',
 );
 
 $messages['ar'] = array(

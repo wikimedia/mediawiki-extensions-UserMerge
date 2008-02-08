@@ -16,7 +16,7 @@ $wgExtensionCredits['specialpage'][] = array(
     'author'         => 'Tim Laqua',
     'description'    => "Merges references from one user to another user in the Wiki database - will also delete old users following merge.  Requires 'usermerge' privileges.",
     'descriptionmsg' => 'usermerge-desc',
-    'version'        => '1.4'
+    'version'        => '1.4.1'
 );
 
 $dir = dirname(__FILE__) . '/';
@@ -24,6 +24,8 @@ $wgAutoloadClasses['UserMerge'] = $dir . 'UserMerge_body.php';
 
 $wgExtensionMessagesFiles['UserMerge'] = $dir . 'UserMerge.i18n.php';
 $wgSpecialPages['UserMerge'] = 'UserMerge';
+
+$wgUserMergeUnmergeable = array( 1 );
 
 function efUserMerge() {
 	#Add Messages

@@ -50,10 +50,14 @@ class UserMerge extends SpecialPage
                       $objOldUser = User::newFromName( $olduser_text );
                       $olduserID = $objOldUser->idForName();
 						
-					  global $wgUser;
-                      if ( !is_object( $objOldUser ) || $olduserID < 2 ) {
+					  global $wgUser, $wgUserMergeUnmergeable;
+					  
+                      if ( !is_object( $objOldUser ) ) {
                         $validOldUser = false;
                         $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-badolduser') . "</span><br>\n" );
+					  } elseif ( in_array( $olduserID, $wgUserMergeUnmergeable ) || in_array( $olduser_text, $wgUserMergeUnmergeable ) ) {
+                        $validOldUser = false;
+                        $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-unmergable') . "</span><br>\n" );
 					  } elseif ( $objOldUser = $wgUser->getID() ) {
                         $validOldUser = false;
                         $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-noselfdelete') . "</span><br>\n" );
