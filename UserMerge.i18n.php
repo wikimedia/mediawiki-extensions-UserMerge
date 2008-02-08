@@ -169,7 +169,6 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'usermerge-logpagetext'     => 'Ceci est un journal des actions de fusions de contributeurs',
 );
 
-);
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
