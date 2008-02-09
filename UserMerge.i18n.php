@@ -143,32 +143,6 @@ $messages['hsb'] = array(
 	'usermerge-logpagetext' => 'To je protokol wužiwarskich zjednoćenjow',
 );
 
-/** French (Français)
- * @author Sherbrooke
- * @author Grondin
- */
-$messages['fr'] = array(
-	'usermerge'                 => 'Fusionner utilisateur et détruire',
-	'usermerge-badolduser'      => "Ancien nom d'utilisateur invalide",
-	'usermerge-badnewuser'      => "Nouveau nom d'utilisateur invalide",
-	'usermerge-nonewuser'       => "Nouveau nom d'utilisateur vide. Nous faisons l'hypothèse que vous voulez fusionner dans $1.
-
-Cliquez sur ''Fusionner utilisateur'' pour accepter.",
-	'usermerge-noolduser'       => "Ancien nom d'utilisateur vide",
-	'usermerge-olduser'         => 'Ancien utilisateur (fusionner depuis)',
-	'usermerge-newuser'         => 'Nouvel utilisateur(fusionner dans)',
-	'usermerge-deleteolduser'   => 'Détruire l’ancien utilisateur ?',
-	'usermerge-submit'          => 'Fusionner utilisateur',
-	'usermerge-badtoken'        => "Token d'édition invalide",
-	'usermerge-userdeleted'     => '$1($2) est détruit.',
-	'usermerge-userdeleted-log' => 'Contributeur effacé : $2($3)',
-	'usermerge-updating'        => 'Mise à jour de la table $1 (de $2 à $3)',
-	'usermerge-success'         => 'La fusion de $1($2) à $3($4) est complétée.',
-	'usermerge-success-log'     => 'Contributeur $2($3) fusionné avec $4($5)',
-	'usermerge-logpage'         => 'Journal des fusions de contributeurs',
-	'usermerge-logpagetext'     => 'Ceci est un journal des actions de fusions de contributeurs',
-);
-
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
@@ -182,7 +156,7 @@ $messages['lb'] = array(
  */
 $messages['nl'] = array(
 	'usermerge'                 => 'Gebruikers samenvoegen en verwijderen',
-	'usermerge-desc'            => "[[Special:UserMerge|Voegt referenties van de ene gebruikers toe aan een andere gebruiker]]; verwijdert ook de oude gebruikers na het samenvoegen. Hiervoor is de rol ''usermerge'' nodig",
+	'usermerge-desc'            => "Voegt een [[Special:UserMerge|speciale pagina]] toe om gebruikers samen te voegen en de oude gebruiker(s) te verwijderen (hiervoor is het recht ''usermerge'' nodig)",
 	'usermerge-badolduser'      => 'Verkeerde oude gebruiker',
 	'usermerge-badnewuser'      => 'Verkeerde nieuwe gebruiker',
 	'usermerge-nonewuser'       => 'Nieuwe gebruiker is niet ingegeven - er wordt aangenomen dat er samengevoegd moet worden naar $1.<br />Klik <u>Gebruiker samenvoegen</u> om te aanvaarden.',
@@ -200,7 +174,7 @@ $messages['nl'] = array(
 	'usermerge-logpage'         => 'Logboek gebruikerssamenvoegingen',
 	'usermerge-logpagetext'     => 'Dit is het logboek van gebruikerssamenvoegingen.',
 	'usermerge-noselfdelete'    => 'U kan uzelf niet verwijderen of samenvoegen!',
-	'usermerge-unmergable'      => 'Deze gebruiker kan niet samengevoegd worden. De gebruikersnaam of het gebruikers-ID is ingesteld als niet samen te voegen.',
+	'usermerge-unmergable'      => 'Deze gebruiker kan niet samengevoegd worden. De gebruikersnaam of het gebruikersnummer is ingesteld als niet samen te voegen.',
 );
 
 $messages['no'] = array(
@@ -274,6 +248,7 @@ $messages['pt'] = array(
  */
 $messages['sk'] = array(
 	'usermerge'                 => 'Zlúčenie a zmazanie používateľov',
+	'usermerge-desc'            => "[[Special:UserMerge|Zlučuje odkazy na jedného používateľa na odkazy na druhého]] v databáze wiki; tiež následne zmaže starého používateľa. Vyžaduje oprávnenie ''usermerge''.",
 	'usermerge-badolduser'      => 'Neplatné staré používateľské meno',
 	'usermerge-badnewuser'      => 'Neplatné nové používateľské meno',
 	'usermerge-nonewuser'       => 'Prázdne nové používateľské meno - Predpokladá sa zlúčenie do $1.<br />Kliknutím na <u>Zlúčiť používateľov</u> prijmete.',
@@ -291,6 +266,7 @@ $messages['sk'] = array(
 	'usermerge-logpage'         => 'Záznam zlúčení používateľov',
 	'usermerge-logpagetext'     => 'Toto je záznam zlúčení používateľov',
 	'usermerge-noselfdelete'    => 'Nemôžete zmazať alebo zlúčiť svoj účet!',
+	'usermerge-unmergable'      => 'Nebolo možné vykonať zlúčenie používateľa - zdrojové meno alebo ID bolo definované ako nezlúčiteľné.',
 );
 
 /** Seeltersk (Seeltersk)
