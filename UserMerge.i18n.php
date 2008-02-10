@@ -34,6 +34,7 @@ $messages['en'] = array(
  */
 $messages['ar'] = array(
 	'usermerge'                 => 'دمج وحذف المستخدم',
+	'usermerge-desc'            => "[[Special:UserMerge|يدمج المراجع من مستخدم إلى آخر]] في قاعدة بيانات الويكي - سيحذف أيضا المستخدمين القدامى بعد الدمج. يتطلب صلاحيات ''usermerge''",
 	'usermerge-badolduser'      => 'اسم المستخدم القديم غير صحيح',
 	'usermerge-badnewuser'      => 'المستخدم الجديد غير صحيح',
 	'usermerge-nonewuser'       => 'اسم مستخدم جديد فارغ - افتراض الدمج إلى $1.<br />اضغط <u>دمج المستخدم</u> للقبول.',
@@ -51,6 +52,7 @@ $messages['ar'] = array(
 	'usermerge-logpage'         => 'سجل دمج المستخدم',
 	'usermerge-logpagetext'     => 'هذا سجل بعمليات دمج المستخدمين',
 	'usermerge-noselfdelete'    => 'لا يمكنك حذف أو دمج من نفسك!',
+	'usermerge-unmergable'      => 'غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.',
 );
 
 /** Bulgarian (Български)
@@ -65,6 +67,32 @@ $messages['bg'] = array(
 	'usermerge-userdeleted'     => '$1($2) беше изтрит.',
 	'usermerge-userdeleted-log' => 'Изтрит потребител: $2($3)',
 	'usermerge-logpage'         => 'Дневник на потребителските сливания',
+);
+
+/** Breton (Brezhoneg)
+ * @author Fulup
+ */
+$messages['br'] = array(
+	'usermerge'                 => 'Kendeuziñ an implijer ha diverkañ',
+	'usermerge-desc'            => "[[Special:UserMerge|Kendeuziñ a ra daveennoù un implijer gant re unan bennak all]] e diaz titouroù ar wiki - diverkañ a raio ivez ar c'hendeuzadennoù implijer kozh da zont. Rekis eo kaout aotreoù ''kendeuziñ''",
+	'usermerge-badolduser'      => 'Anv implijer kozh direizh',
+	'usermerge-badnewuser'      => 'Anv implijer nevez direizh',
+	'usermerge-nonewuser'       => "Anv implijer nevez goullo - soñjal a ra deomp e fell deoc'h kendeuziñ davet $1.<br />Klikañ war <u>Kendeuziñ implijer</u> evit asantiñ.",
+	'usermerge-noolduser'       => 'Anv implijer kozh goullo',
+	'usermerge-olduser'         => 'Implijer kozh (kendeuziñ adal)',
+	'usermerge-newuser'         => 'Implijer nevez (kendeuziñ davet)',
+	'usermerge-deleteolduser'   => 'Diverkañ an implijer kozh ?',
+	'usermerge-submit'          => 'Kendeuziñ implijer',
+	'usermerge-badtoken'        => 'Jedouer aozañ direizh',
+	'usermerge-userdeleted'     => 'Diverket eo bet $1 ($2).',
+	'usermerge-userdeleted-log' => 'Implijer diverket : $2($3)',
+	'usermerge-updating'        => "Oc'h hizivaat an daolenn $1 (eus $2 da $3)",
+	'usermerge-success'         => 'Kendeuzadenn adal $1 ($2) davet $3 ($4) kaset da benn vat.',
+	'usermerge-success-log'     => 'Implijer $2 ($3) kendeuzet davet $4 ($5)',
+	'usermerge-logpage'         => 'Marilh kendeuzadennoù an implijerien',
+	'usermerge-logpagetext'     => 'Setu aze marilh kendeuzadennoù an implijerien',
+	'usermerge-noselfdelete'    => "N'hallit ket diverkañ pe kendeuziñ adal pe davedoc'h hoc'h-unan",
+	'usermerge-unmergable'      => 'Dibosupl kendeuziñ adal un implijer - un niv. anaout pe un anv bet termenet evel digendeuzadus.',
 );
 
 $messages['de'] = array(
