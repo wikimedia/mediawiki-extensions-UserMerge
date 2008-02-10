@@ -16,7 +16,7 @@ $wgExtensionCredits['specialpage'][] = array(
     'author'         => 'Tim Laqua',
     'description'    => "Merges references from one user to another user in the Wiki database - will also delete old users following merge.  Requires 'usermerge' privileges.",
     'descriptionmsg' => 'usermerge-desc',
-    'version'        => '1.4.1'
+    'version'        => '1.4.2'
 );
 
 $dir = dirname(__FILE__) . '/';

@@ -58,7 +58,7 @@ class UserMerge extends SpecialPage
 					  } elseif ( in_array( $olduserID, $wgUserMergeUnmergeable ) || in_array( $olduser_text, $wgUserMergeUnmergeable ) ) {
                         $validOldUser = false;
                         $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-unmergable') . "</span><br>\n" );
-					  } elseif ( $objOldUser = $wgUser->getID() ) {
+					  } elseif ( $olduserID == $wgUser->getID() ) {
                         $validOldUser = false;
                         $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-noselfdelete') . "</span><br>\n" );
                       } else {
