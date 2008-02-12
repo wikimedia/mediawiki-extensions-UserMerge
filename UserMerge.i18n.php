@@ -27,6 +27,7 @@ $messages['en'] = array(
 	'usermerge-logpagetext'       	=> 'This is a log of user merge actions',
 	'usermerge-noselfdelete'       	=> 'You cannot delete or merge from yourself!',
 	'usermerge-unmergable'		=> 'Unable to merge from user - id or name has been defined as unmergable.',
+	'usermerge-protectedgroup'	=> 'Unable to merge from user - user is in a protected group.',
 );
 
 /** Arabic (العربية)

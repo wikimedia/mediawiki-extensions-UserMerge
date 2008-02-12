@@ -50,39 +50,56 @@ class UserMerge extends SpecialPage
                       $objOldUser = User::newFromName( $olduser_text );
                       $olduserID = $objOldUser->idForName();
 						
-					  global $wgUser, $wgUserMergeUnmergeable;
+					  global $wgUser;
 					  
                       if ( !is_object( $objOldUser ) ) {
                         $validOldUser = false;
                         $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-badolduser') . "</span><br>\n" );
-					  } elseif ( in_array( $olduserID, $wgUserMergeUnmergeable ) || in_array( $olduser_text, $wgUserMergeUnmergeable ) ) {
-                        $validOldUser = false;
-                        $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-unmergable') . "</span><br>\n" );
 					  } elseif ( $olduserID == $wgUser->getID() ) {
                         $validOldUser = false;
                         $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-noselfdelete') . "</span><br>\n" );
                       } else {
-                        $validOldUser = true;
- 
-                        if (strlen($newuser_text)>0) {
- 
-                          $objNewUser = User::newFromName( $newuser_text );
-                          $newuserID = $objNewUser->idForName();
- 
-                          if ( !is_object( $objNewUser ) || $newuserID == 0 ) {
-                            //invalid newuser entered
-                            $validNewUser = false;
-                            $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-badnewuser') . "</span><br>\n" );
-                          } else {
-                            //newuser looks good
-                            $validNewUser = true;
-                          }
-                        } else {
-                          //empty newuser string
-                          $validNewUser = false;
-                          $newuser_text = User::whoIs(1);
-                          $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-nonewuser', $newuser_text) . "</span><br>\n" );
-                        }
+						global $wgUserMergeProtectedGroups;
+						
+						$boolProtected = false;
+						foreach ( $objOldUser->getGroups() as $userGroup ) {
+							if ( in_array( $userGroup, $wgUserMergeProtectedGroups ) ) {
+								$boolProtected = true;
+							}
+						}
+						
+						if ( $boolProtected ) {
+							$validOldUser = false;
+							$wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-protectedgroup') . "</span><br>\n" );
+						} else {
+	                        $validOldUser = true;
+	 
+	                        if (strlen($newuser_text)>0) {
+	 
+	                          $objNewUser = User::newFromName( $newuser_text );
+	                          $newuserID = $objNewUser->idForName();
+	 
+	                          if ( !is_object( $objNewUser ) || $newuserID == 0 ) {
+								if ( $newuser_text == 'Anonymous' ) {
+									// Merge to anonymous
+									$validNewUser = true;
+									$newuserID = 0;
+								} else {
+									//invalid newuser entered
+									$validNewUser = false;
+									$wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-badnewuser') . "</span><br>\n" );
+								}
+	                          } else {
+	                            //newuser looks good
+	                            $validNewUser = true;
+	                          }
+	                        } else {
+	                          //empty newuser string
+	                          $validNewUser = false;
+							  $newuser_text = "Anonymous";
+	                          $wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg('usermerge-nonewuser', $newuser_text) . "</span><br>\n" );
+	                        }
+						}
                       }
                     } else {
                       $validOldUser = false;
