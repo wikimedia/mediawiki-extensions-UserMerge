@@ -68,6 +68,7 @@ $messages['bg'] = array(
 	'usermerge-userdeleted'     => '$1($2) беше изтрит.',
 	'usermerge-userdeleted-log' => 'Изтрит потребител: $2($3)',
 	'usermerge-logpage'         => 'Дневник на потребителските сливания',
+	'usermerge-logpagetext'     => 'Тази страница съдържа дневник на потребителските сливания',
 );
 
 /** Breton (Brezhoneg)
@@ -310,6 +311,7 @@ $messages['stq'] = array(
  */
 $messages['sv'] = array(
 	'usermerge'                 => 'Slå ihop och radera användarkonton',
+	'usermerge-desc'            => "Ger möjlighet att [[Special:UserMerge|slå samman användarkonton]] genom att alla referenser till en användare byts ut till en annan användare i databasen, samt att efter sammanslagning radera gamla konton. Kräver behörigheten ''usermerge''.",
 	'usermerge-badolduser'      => 'Ogiltigt gammalt användarnamn',
 	'usermerge-badnewuser'      => 'Ogiltigt nytt användarnamn',
 	'usermerge-nonewuser'       => 'Inget nytt användarnamn angavs. Antar att det gamla kontot ska slås ihop till $1.<br />Tryck på <u>Slå ihop konton</u> för att godkänna sammanslagningen.',
