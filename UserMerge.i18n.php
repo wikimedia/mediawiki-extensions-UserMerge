@@ -54,6 +54,7 @@ $messages['ar'] = array(
 	'usermerge-logpagetext'     => 'هذا سجل بعمليات دمج المستخدمين',
 	'usermerge-noselfdelete'    => 'لا يمكنك حذف أو دمج من نفسك!',
 	'usermerge-unmergable'      => 'غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.',
+	'usermerge-protectedgroup'  => 'غير قادر على الدمج من المستخدم - المستخدم في مجموعة محمية.',
 );
 
 /** Bulgarian (Български)
@@ -151,6 +152,7 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'usermerge-logpagetext'     => 'Ceci est un journal des actions de fusions de contributeurs',
 	'usermerge-noselfdelete'    => 'Vous ne pouvez pas, vous-même, vous supprimer ni vous fusionner !',
 	'usermerge-unmergable'      => "Ne peut fusionner à partir d'un utilisateur, d'un numéro d'identification ou un nom qui ont été définis comme non fusionnables.",
+	'usermerge-protectedgroup'  => "Impossible de fusionner à partir d'un utilisateur - l'utilisateur se trouve dans un groupe protégé.",
 );
 
 /** Galician (Galego)
@@ -255,6 +257,7 @@ $messages['no'] = array(
  */
 $messages['oc'] = array(
 	'usermerge'                 => 'Fusionar utilizaire e destruire',
+	'usermerge-desc'            => "[[Special:UserMerge|Fusiona las referéncias d'un utilizaire vèrs un autre]] dins la banca de donadas wiki - suprimirà tanben las fusions d'utilizaires ancianas seguentas.",
 	'usermerge-badolduser'      => "Nom d'utilizaire ancian invalid",
 	'usermerge-badnewuser'      => "Nom d'utilizaire novèl invalid",
 	'usermerge-nonewuser'       => "Nom d'utilizaire novèl void. Fasèm l'ipotèsi que volètz fusionar dins $1. Clicatz sus ''Fusionar utilizaire'' per acceptar.",
@@ -271,6 +274,9 @@ $messages['oc'] = array(
 	'usermerge-success-log'     => 'Contributor $2($3) fusionat amb $4($5)',
 	'usermerge-logpage'         => 'Jornal de las fusions de contributors',
 	'usermerge-logpagetext'     => 'Aquò es un jornal de las accions de fusions de contributors',
+	'usermerge-noselfdelete'    => 'Podètz pas, vos-meteis, vos suprimir ni vos fusionar !',
+	'usermerge-unmergable'      => "Pòt pas fusionar a partir d'un utilizaire, d'un numèro d'identificacion o un nom que son estats definits coma non fusionables.",
+	'usermerge-protectedgroup'  => "Impossible de fusionar a partir d'un utilizaire - l'utilizaire se tròba dins un grop protegit.",
 );
 
 $messages['pms'] = array(
