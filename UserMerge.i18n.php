@@ -97,8 +97,31 @@ $messages['br'] = array(
 	'usermerge-unmergable'      => 'Dibosupl kendeuziñ adal un implijer - un niv. anaout pe un anv bet termenet evel digendeuzadus.',
 );
 
+/** German (Deutsch)
+ * @author Raimond Spekking
+ */
 $messages['de'] = array(
-	'usermerge' => 'Benutzerkonten zusammenführen und löschen',
+	'usermerge'                     => 'Benutzerkonten zusammenführen und löschen',
+	'usermerge-desc'                => "[[Special:UserMerge|Führt Benutzerkonten in der Wiki-Datenbank zusammen]] - das alte Benutzerkonto wird nach der Zusammenführung gelöscht. Erfordert das ''usermerge''-Recht.",
+	'usermerge-badolduser' 		=> 'Ungültiger alter Benutzername',
+	'usermerge-badnewuser' 		=> 'Ungültiger neuer Benutzername',
+	'usermerge-nonewuser' 		=> 'Leerer neuer Benutzername - es wird eine Zusammenführung mit $1 vermutet.<br />Klicke <u>Benutzerkonten zusammenführen</u> zum Ausführen.',
+	'usermerge-noolduser' 		=> 'Leerer alter Benutzername',
+	'usermerge-olduser' 		=> 'Alter Benutzername (zusammenführen von)',
+	'usermerge-newuser' 		=> 'Neuer Benutzername (zusammenführen nach)',
+	'usermerge-deleteolduser' 	=> 'Alten Benutzernamen löschen?',
+	'usermerge-submit' 		=> 'Benutzerkonten zusammenführen',
+	'usermerge-badtoken' 		=> 'Ungültiges Bearbeiten-Token',
+	'usermerge-userdeleted' 	=> '$1 ($2) wurde gelöscht.',
+	'usermerge-userdeleted-log' 	=> 'Gelöschter Benutzername: $2 ($3)',
+	'usermerge-updating' 		=> 'Aktualisierung $1 Tabelle ($2 nach $3)',
+	'usermerge-success' 		=> 'Die Zusammenführung von $1 ($2) nach $3 ($4) ist vollständig.',
+	'usermerge-success-log' 	=> 'Benutzername $2 ($3) zusammengeführt mit $4 ($5)',
+	'usermerge-logpage'           	=> 'Logbuch der Benutzerkonten-Zusammenführungen',
+	'usermerge-logpagetext'       	=> 'Dies ist das Logbuch der Benutzerkonten-Zusammenführungen.',
+	'usermerge-noselfdelete'       	=> 'Zusammenführung mit sich selber ist nicht möglich!',
+	'usermerge-unmergable'		=> 'Zusammenführung nicht möglich - ID oder Benutzername wurde als nicht zusammenführbar definiert.',
+	'usermerge-protectedgroup'	=> 'Zusammenführung nicht möglich - Benutzername ist in einer geschützen Gruppe.',
 );
 
 /** French (Français)
