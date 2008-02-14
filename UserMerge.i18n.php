@@ -64,6 +64,8 @@ $messages['bg'] = array(
 	'usermerge'                 => 'Сливане и изтриване на потребители',
 	'usermerge-badolduser'      => 'Невалиден стар потребител',
 	'usermerge-badnewuser'      => 'Невалиден нов потребител',
+	'usermerge-olduser'         => 'Стар потребител (за сливане от)',
+	'usermerge-newuser'         => 'Нов потребител (за сливане в)',
 	'usermerge-deleteolduser'   => 'Изтриване на стария потребител?',
 	'usermerge-submit'          => 'Сливане',
 	'usermerge-userdeleted'     => '$1($2) беше изтрит.',
@@ -230,6 +232,7 @@ $messages['nl'] = array(
 	'usermerge-logpagetext'     => 'Dit is het logboek van gebruikerssamenvoegingen.',
 	'usermerge-noselfdelete'    => 'U kan uzelf niet verwijderen of samenvoegen!',
 	'usermerge-unmergable'      => 'Deze gebruiker kan niet samengevoegd worden. De gebruikersnaam of het gebruikersnummer is ingesteld als niet samen te voegen.',
+	'usermerge-protectedgroup'  => 'Het is niet mogelijk de gebruikers samen te voegen. De gebruiker zit in een beschermde groep.',
 );
 
 $messages['no'] = array(
@@ -326,6 +329,7 @@ $messages['sk'] = array(
 	'usermerge-logpagetext'     => 'Toto je záznam zlúčení používateľov',
 	'usermerge-noselfdelete'    => 'Nemôžete zmazať alebo zlúčiť svoj účet!',
 	'usermerge-unmergable'      => 'Nebolo možné vykonať zlúčenie používateľa - zdrojové meno alebo ID bolo definované ako nezlúčiteľné.',
+	'usermerge-protectedgroup'  => 'Nebolo možné zlúčiť uvedeného používateľa - používateľ je v chránenej skupine.',
 );
 
 /** Seeltersk (Seeltersk)
