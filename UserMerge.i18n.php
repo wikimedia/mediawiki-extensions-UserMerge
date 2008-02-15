@@ -353,11 +353,17 @@ $messages['sv'] = array(
 	'usermerge-newuser'         => 'Nytt användarnamn (slås ihop till)',
 	'usermerge-deleteolduser'   => 'Ta bort det gamla användarkontot?',
 	'usermerge-submit'          => 'Slå ihop konton',
-	'usermerge-userdeleted'     => '$1($2) har raderats.',
+	'usermerge-badtoken'        => 'Ogiltigt redigerings-token',
+	'usermerge-userdeleted'     => '$1 ($2) har raderats.',
 	'usermerge-userdeleted-log' => 'raderade användare $2 ($3)',
-	'usermerge-success-log'     => 'Användare $2($3) sammanfogades med $4($5)',
+	'usermerge-updating'        => 'Uppdaterar tabellen $1 (från $2 till $3)',
+	'usermerge-success'         => 'Sammanslagningen av $1 ($2) till $3 ($4) har genomförts.',
+	'usermerge-success-log'     => 'sammanfogade användare $2 ($3) till $4 ($5)',
 	'usermerge-logpage'         => 'Användarsammanslagningslogg',
 	'usermerge-logpagetext'     => 'Det här är en logg över sammanslagningar av användarkonton.',
+	'usermerge-noselfdelete'    => 'Du kan inte radera eller slå samman ditt eget konto!',
+	'usermerge-unmergable'      => 'Kan inte sammanfoga det gamla kontot. ID:t eller namnet har angetts som icke-sammanslagningsbart.',
+	'usermerge-protectedgroup'  => 'Kan inte sammanfoga det gamla kontot. Användaren är medlem i en skyddad användargrupp.',
 );
 
 /** Turkish (Türkçe)
