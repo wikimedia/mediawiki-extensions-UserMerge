@@ -227,6 +227,17 @@ $messages['hsb'] = array(
 	'usermerge-logpagetext' => 'To je protokol wužiwarskich zjednoćenjow',
 );
 
+/** Khmer (ភាសាខ្មែរ)
+ * @author Chhorran
+ */
+$messages['km'] = array(
+	'usermerge-badolduser'      => 'ឈ្មោះអ្នកប្រើប្រាស់ ចាស់ គ្មានសុពលភាព',
+	'usermerge-badnewuser'      => 'ឈ្មោះអ្នកប្រើប្រាស់ ថ្មី គ្មានសុពលភាព',
+	'usermerge-deleteolduser'   => 'លុបចេញ អ្នកប្រើប្រាស់ ចាស់ ឬ ?',
+	'usermerge-userdeleted-log' => 'អ្នកប្រើប្រាស់ ត្រូវបានលុបចេញ ៖ $2 ($3)',
+	'usermerge-noselfdelete'    => 'អ្នកមិនអាច លុបចេញ ឬ បញ្ចូលរួមគ្នា ពីខ្លួនអ្នកផ្ទាល់ !',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
