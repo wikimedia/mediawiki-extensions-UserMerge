@@ -157,10 +157,11 @@ $messages['de'] = array(
 /** French (Français)
  * @author Sherbrooke
  * @author Grondin
+ * @author Urhixidur
  */
 $messages['fr'] = array(
 	'usermerge'                 => 'Fusionner utilisateur et détruire',
-	'usermerge-desc'            => "[[Special:UserMerge|Fusionne les références d'un utilisatieur vers un autre]] dans la base de donnée wiki - supprimera aussi les anciennes fusions d'utilisateurs suivantes.",
+	'usermerge-desc'            => '[[Special:UserMerge|Fusionne les références d’un utilisateur vers un autre]] dans la base de données wiki - supprimera aussi les anciennes fusions d’utilisateurs suivantes.',
 	'usermerge-badolduser'      => "Ancien nom d'utilisateur invalide",
 	'usermerge-badnewuser'      => "Nouveau nom d'utilisateur invalide",
 	'usermerge-nonewuser'       => "Nouveau nom d'utilisateur vide. Nous faisons l'hypothèse que vous voulez fusionner dans $1.
@@ -171,7 +172,7 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'usermerge-newuser'         => 'Nouvel utilisateur(fusionner dans)',
 	'usermerge-deleteolduser'   => 'Détruire l’ancien utilisateur ?',
 	'usermerge-submit'          => 'Fusionner utilisateur',
-	'usermerge-badtoken'        => "Token d'édition invalide",
+	'usermerge-badtoken'        => 'Jeton d’édition invalide',
 	'usermerge-userdeleted'     => '$1($2) est détruit.',
 	'usermerge-userdeleted-log' => 'Contributeur effacé : $2($3)',
 	'usermerge-updating'        => 'Mise à jour de la table $1 (de $2 à $3)',
