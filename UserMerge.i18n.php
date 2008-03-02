@@ -70,6 +70,8 @@ $messages['bg'] = array(
 	'usermerge-submit'          => 'Сливане',
 	'usermerge-userdeleted'     => '$1($2) беше изтрит.',
 	'usermerge-userdeleted-log' => 'Изтрит потребител: $2($3)',
+	'usermerge-success'         => 'Сливането от $1 ($2) към $3 ($4) приключи.',
+	'usermerge-success-log'     => 'Потребител $2 ($3) беше слят с $4 ($5)',
 	'usermerge-logpage'         => 'Дневник на потребителските сливания',
 	'usermerge-logpagetext'     => 'Тази страница съдържа дневник на потребителските сливания',
 );
@@ -232,9 +234,13 @@ $messages['hsb'] = array(
  * @author Chhorran
  */
 $messages['km'] = array(
+	'usermerge'                 => 'បញ្ចូលរួមគ្នា និង​ លុបចេញ អ្នកប្រើប្រាស់',
 	'usermerge-badolduser'      => 'ឈ្មោះអ្នកប្រើប្រាស់ ចាស់ គ្មានសុពលភាព',
 	'usermerge-badnewuser'      => 'ឈ្មោះអ្នកប្រើប្រាស់ ថ្មី គ្មានសុពលភាព',
+	'usermerge-olduser'         => 'អ្នកប្រើប្រាស់ ចាស់ (បញ្ចូលរួមគ្នា ពី)',
+	'usermerge-newuser'         => 'អ្នកប្រើប្រាស់ ថ្មី (បញ្ចូលរួមគ្នា ទៅ)',
 	'usermerge-deleteolduser'   => 'លុបចេញ អ្នកប្រើប្រាស់ ចាស់ ឬ ?',
+	'usermerge-submit'          => 'បញ្ចូលរួមគ្នា អ្នកប្រើប្រាស់',
 	'usermerge-userdeleted-log' => 'អ្នកប្រើប្រាស់ ត្រូវបានលុបចេញ ៖ $2 ($3)',
 	'usermerge-noselfdelete'    => 'អ្នកមិនអាច លុបចេញ ឬ បញ្ចូលរួមគ្នា ពីខ្លួនអ្នកផ្ទាល់ !',
 );
