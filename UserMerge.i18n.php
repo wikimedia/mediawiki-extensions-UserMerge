@@ -418,6 +418,16 @@ $messages['sv'] = array(
 	'usermerge-protectedgroup'  => 'Kan inte sammanfoga det gamla kontot. Användaren är medlem i en skyddad användargrupp.',
 );
 
+/** Telugu (తెలుగు)
+ * @author Veeven
+ */
+$messages['te'] = array(
+	'usermerge-badolduser'    => 'తప్పుడు పాత వాడుకరిపేరు',
+	'usermerge-badnewuser'    => 'తప్పుడు కొత్త వాడుకరిపేరు',
+	'usermerge-noolduser'     => 'పాత వాడుకరిపేరు ఖాళీగా ఉంది',
+	'usermerge-deleteolduser' => 'పాత వాడుకరిని తొలగించాలా?',
+);
+
 /** Turkish (Türkçe)
  * @author Karduelis
  */
