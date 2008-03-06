@@ -422,10 +422,11 @@ $messages['sv'] = array(
  * @author Veeven
  */
 $messages['te'] = array(
-	'usermerge-badolduser'    => 'తప్పుడు పాత వాడుకరిపేరు',
-	'usermerge-badnewuser'    => 'తప్పుడు కొత్త వాడుకరిపేరు',
-	'usermerge-noolduser'     => 'పాత వాడుకరిపేరు ఖాళీగా ఉంది',
-	'usermerge-deleteolduser' => 'పాత వాడుకరిని తొలగించాలా?',
+	'usermerge-badolduser'      => 'తప్పుడు పాత వాడుకరిపేరు',
+	'usermerge-badnewuser'      => 'తప్పుడు కొత్త వాడుకరిపేరు',
+	'usermerge-noolduser'       => 'పాత వాడుకరిపేరు ఖాళీగా ఉంది',
+	'usermerge-deleteolduser'   => 'పాత వాడుకరిని తొలగించాలా?',
+	'usermerge-userdeleted-log' => 'వాడుకరిని తొలగించాం: $2 ($3)',
 );
 
 /** Turkish (Türkçe)
