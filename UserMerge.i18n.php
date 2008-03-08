@@ -275,7 +275,7 @@ $messages['nl'] = array(
 	'usermerge-success-log'     => 'Gebruiker $2($3) samengevoegd naar $3($5)',
 	'usermerge-logpage'         => 'Logboek gebruikerssamenvoegingen',
 	'usermerge-logpagetext'     => 'Dit is het logboek van gebruikerssamenvoegingen.',
-	'usermerge-noselfdelete'    => 'U kan uzelf niet verwijderen of samenvoegen!',
+	'usermerge-noselfdelete'    => 'U kunt uzelf niet verwijderen of samenvoegen!',
 	'usermerge-unmergable'      => 'Deze gebruiker kan niet samengevoegd worden. De gebruikersnaam of het gebruikersnummer is ingesteld als niet samen te voegen.',
 	'usermerge-protectedgroup'  => 'Het is niet mogelijk de gebruikers samen te voegen. De gebruiker zit in een beschermde groep.',
 );
@@ -351,10 +351,19 @@ $messages['pms'] = array(
 );
 
 /** Portuguese (Português)
+ * @author Lijealso
  * @author Malafaya
  */
 $messages['pt'] = array(
-	'usermerge-deleteolduser' => 'Apagar Utilizador Antigo?',
+	'usermerge'                 => 'Fusão e eliminação de usuários',
+	'usermerge-badolduser'      => 'Nome antigo inválido',
+	'usermerge-badnewuser'      => 'Nome novo inválido',
+	'usermerge-noolduser'       => 'Limpar nome antigo',
+	'usermerge-deleteolduser'   => 'Apagar Utilizador Antigo?',
+	'usermerge-submit'          => 'Limpar usuário',
+	'usermerge-userdeleted'     => '$1 ($2) foi eliminado.',
+	'usermerge-userdeleted-log' => 'Usuário eliminado: $2 ($3)',
+	'usermerge-success-log'     => 'Usuário $2 ($3) fundido com $4 ($5)',
 );
 
 /** Slovak (Slovenčina)
@@ -427,6 +436,9 @@ $messages['te'] = array(
 	'usermerge-noolduser'       => 'పాత వాడుకరిపేరు ఖాళీగా ఉంది',
 	'usermerge-deleteolduser'   => 'పాత వాడుకరిని తొలగించాలా?',
 	'usermerge-userdeleted-log' => 'వాడుకరిని తొలగించాం: $2 ($3)',
+	'usermerge-logpage'         => 'వాడుకరి విలీనాల దినచర్య',
+	'usermerge-logpagetext'     => 'ఇది వాడుకరి విలీన చర్యల దినచర్య',
+	'usermerge-noselfdelete'    => 'మిమ్మల్ని మీరే తొలగించుకోలేరు లేదా మీలో విలీనం కాలేరు!',
 );
 
 /** Turkish (Türkçe)
