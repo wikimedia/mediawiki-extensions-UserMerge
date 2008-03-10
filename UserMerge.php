@@ -28,9 +28,6 @@ $wgSpecialPages['UserMerge'] = 'UserMerge';
 $wgUserMergeProtectedGroups = array( "sysop" );
 
 function efUserMerge() {
-	#Add Messages
-	wfLoadExtensionMessages('UserMerge');
-	
 	# Add a new log type
 	global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
 	$wgLogTypes[]                 		= 'usermerge';
@@ -39,4 +36,3 @@ function efUserMerge() {
 	$wgLogActions['usermerge/mergeuser'] 	= 'usermerge-success-log';
 	$wgLogActions['usermerge/deleteuser']	= 'usermerge-userdeleted-log';
 }
-
