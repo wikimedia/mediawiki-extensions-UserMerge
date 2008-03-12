@@ -334,6 +334,33 @@ $messages['oc'] = array(
 	'usermerge-protectedgroup'  => "Impossible de fusionar a partir d'un utilizaire - l'utilizaire se tròba dins un grop protegit.",
 );
 
+/** Polish (Polski)
+ * @author Masti
+ * @author Derbeth
+ */
+$messages['pl'] = array(
+	'usermerge'                 => 'Integruj i usuń użytkowników',
+	'usermerge-desc'            => "[[Special:UserMerge|Integruje odwołania od jednego uzytkownika do drugiego]] w bazie danych wiki - również  usunie starego użytkownika po integracji. Wymaga uprawnienia ''usermerge''",
+	'usermerge-badolduser'      => 'Niewłaściwa stara nazwa użytkownika',
+	'usermerge-badnewuser'      => 'Niewłaściwa nowa nazwa użytkownika',
+	'usermerge-nonewuser'       => 'Pusta nazwa nowego użytkownika - przyjęto, że nastąpi integracja do $1. <br />Naciśnij <u>Integruj użytkowników</u>, by zaakceptować.',
+	'usermerge-noolduser'       => 'Pusta stara nazwa użytkownika',
+	'usermerge-olduser'         => 'Stary użytkownik (integruj od)',
+	'usermerge-newuser'         => 'Nowy użytkownik (integruj z)',
+	'usermerge-deleteolduser'   => 'Usunąć starego użytkownika?',
+	'usermerge-submit'          => 'Integruj użytkowników',
+	'usermerge-userdeleted'     => '$1 ($2) został usunięty.',
+	'usermerge-userdeleted-log' => 'Usunięto uzytkownika: $2 ($3)',
+	'usermerge-updating'        => 'Odświeżanie tablicy $1 ($2 do $3)',
+	'usermerge-success'         => 'Integracja $1 ($2) z $3 ($4) zakończona.',
+	'usermerge-success-log'     => 'Zintegrowano użytkownika $2 ($3) do $4 ($5)',
+	'usermerge-logpage'         => 'Rejestr integracji uzytkowników',
+	'usermerge-logpagetext'     => 'To jest rejestr operacji integracji użytkowników',
+	'usermerge-noselfdelete'    => 'Nie możesz skasować lub zintegrować samego siebie!',
+	'usermerge-unmergable'      => 'Nie można zintegrować użytkownika - identyfikator lub nazwa zostały zdefiniowane jako nieintegrowalne.',
+	'usermerge-protectedgroup'  => 'Nie można zintegrować użytkownika - jest członkiem zabezpieczonej grupy',
+);
+
 $messages['pms'] = array(
 	'usermerge' => 'Union e scancelament d\'utent',
 	'usermerge-badolduser' => 'Vej stranòm nen bon',
@@ -431,11 +458,16 @@ $messages['sv'] = array(
  * @author Veeven
  */
 $messages['te'] = array(
+	'usermerge'                 => 'వాడుకరి విలీనం మరియు తొలగింపు',
 	'usermerge-badolduser'      => 'తప్పుడు పాత వాడుకరిపేరు',
 	'usermerge-badnewuser'      => 'తప్పుడు కొత్త వాడుకరిపేరు',
 	'usermerge-noolduser'       => 'పాత వాడుకరిపేరు ఖాళీగా ఉంది',
 	'usermerge-deleteolduser'   => 'పాత వాడుకరిని తొలగించాలా?',
+	'usermerge-submit'          => 'వాడుకరిని విలీనం చేయ్యండి',
+	'usermerge-userdeleted'     => '$1 ($2)ని తొలగించాం.',
 	'usermerge-userdeleted-log' => 'వాడుకరిని తొలగించాం: $2 ($3)',
+	'usermerge-success'         => '$1 ($2) నుండి $3 ($4) కి విలీనం పూర్తయ్యింది.',
+	'usermerge-success-log'     => '$2 ($3) వాడుకరి $4 ($5)లో విలీనమయ్యారు',
 	'usermerge-logpage'         => 'వాడుకరి విలీనాల దినచర్య',
 	'usermerge-logpagetext'     => 'ఇది వాడుకరి విలీన చర్యల దినచర్య',
 	'usermerge-noselfdelete'    => 'మిమ్మల్ని మీరే తొలగించుకోలేరు లేదా మీలో విలీనం కాలేరు!',
