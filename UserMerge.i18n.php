@@ -159,6 +159,7 @@ $messages['de'] = array(
 /** French (Français)
  * @author Sherbrooke
  * @author Grondin
+ * @author Guillom
  * @author Urhixidur
  */
 $messages['fr'] = array(
@@ -171,18 +172,18 @@ $messages['fr'] = array(
 Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'usermerge-noolduser'       => "Ancien nom d'utilisateur vide",
 	'usermerge-olduser'         => 'Ancien utilisateur (fusionner depuis)',
-	'usermerge-newuser'         => 'Nouvel utilisateur(fusionner dans)',
+	'usermerge-newuser'         => 'Nouvel utilisateur (fusionner dans)',
 	'usermerge-deleteolduser'   => 'Détruire l’ancien utilisateur ?',
 	'usermerge-submit'          => 'Fusionner utilisateur',
 	'usermerge-badtoken'        => 'Jeton d’édition invalide',
 	'usermerge-userdeleted'     => '$1($2) est détruit.',
 	'usermerge-userdeleted-log' => 'Contributeur effacé : $2($3)',
 	'usermerge-updating'        => 'Mise à jour de la table $1 (de $2 à $3)',
-	'usermerge-success'         => 'La fusion de $1($2) à $3($4) est complétée.',
+	'usermerge-success'         => 'La fusion de $1($2) à $3($4) est terminée.',
 	'usermerge-success-log'     => 'Contributeur $2($3) fusionné avec $4($5)',
 	'usermerge-logpage'         => 'Journal des fusions de contributeurs',
 	'usermerge-logpagetext'     => 'Ceci est un journal des actions de fusions de contributeurs',
-	'usermerge-noselfdelete'    => 'Vous ne pouvez pas, vous-même, vous supprimer ni vous fusionner !',
+	'usermerge-noselfdelete'    => 'Vous ne pouvez pas vous supprimer ou vous fusionner vous-même !',
 	'usermerge-unmergable'      => "Ne peut fusionner à partir d'un utilisateur, d'un numéro d'identification ou un nom qui ont été définis comme non fusionnables.",
 	'usermerge-protectedgroup'  => "Impossible de fusionner à partir d'un utilisateur - l'utilisateur se trouve dans un groupe protégé.",
 );
@@ -337,6 +338,7 @@ $messages['oc'] = array(
 /** Polish (Polski)
  * @author Masti
  * @author Derbeth
+ * @author Wpedzich
  */
 $messages['pl'] = array(
 	'usermerge'                 => 'Integruj i usuń użytkowników',
@@ -349,6 +351,7 @@ $messages['pl'] = array(
 	'usermerge-newuser'         => 'Nowy użytkownik (integruj z)',
 	'usermerge-deleteolduser'   => 'Usunąć starego użytkownika?',
 	'usermerge-submit'          => 'Integruj użytkowników',
+	'usermerge-badtoken'        => 'Nieprawidłowy token edycji',
 	'usermerge-userdeleted'     => '$1 ($2) został usunięty.',
 	'usermerge-userdeleted-log' => 'Usunięto uzytkownika: $2 ($3)',
 	'usermerge-updating'        => 'Odświeżanie tablicy $1 ($2 do $3)',
@@ -429,6 +432,7 @@ $messages['stq'] = array(
 
 /** Swedish (Svenska)
  * @author Lejonel
+ * @author Sannab
  */
 $messages['sv'] = array(
 	'usermerge'                 => 'Slå ihop och radera användarkonton',
@@ -441,7 +445,7 @@ $messages['sv'] = array(
 	'usermerge-newuser'         => 'Nytt användarnamn (slås ihop till)',
 	'usermerge-deleteolduser'   => 'Ta bort det gamla användarkontot?',
 	'usermerge-submit'          => 'Slå ihop konton',
-	'usermerge-badtoken'        => 'Ogiltigt redigerings-token',
+	'usermerge-badtoken'        => 'Ogiltigt redigeringstecken',
 	'usermerge-userdeleted'     => '$1 ($2) har raderats.',
 	'usermerge-userdeleted-log' => 'raderade användare $2 ($3)',
 	'usermerge-updating'        => 'Uppdaterar tabellen $1 (från $2 till $3)',
