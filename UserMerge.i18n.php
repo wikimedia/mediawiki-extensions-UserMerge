@@ -212,24 +212,28 @@ $messages['gl'] = array(
 	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
 );
 
+/** Upper Sorbian (Hornjoserbsce)
+ * @author Michawiki
+ */
 $messages['hsb'] = array(
-	'usermerge' => 'Wužiwarske konta zjednoćić a zničić',
-	'usermerge-badolduser' => 'Njepłaćiwe stare wužiwarske mjeno',
-	'usermerge-badnewuser' => 'Njepłaćiwe nowe wužiwarske mjeno',
-	'usermerge-nonewuser' => 'Nowe wužiwarske mjeno faluje - najskerje ma so z $1 zjednoćić.<br /> Klikń na <u>Wužiwarske konta zjednoćić</u>, zo by potwerdźił.',
-	'usermerge-noolduser' => 'Falowace stare wužiwarske mjeno',
-	'usermerge-olduser' => 'Stare wužiwarske konto (Zjednoćić wot)',
-	'usermerge-newuser' => 'Nowe wužiwarske konto (Zjednoćić do)',
-	'usermerge-deleteolduser' => 'Stare wužiwarske mjeno zničić?',
-	'usermerge-submit' => 'Wužiwarske konta zjednoćić',
-	'usermerge-badtoken' => 'Njepłaćiwe wobdźěłanske znamjo',
-	'usermerge-userdeleted' => '$1($2) bu zničeny.',
+	'usermerge'                 => 'Wužiwarske konta zjednoćić a zničić',
+	'usermerge-badolduser'      => 'Njepłaćiwe stare wužiwarske mjeno',
+	'usermerge-badnewuser'      => 'Njepłaćiwe nowe wužiwarske mjeno',
+	'usermerge-nonewuser'       => 'Nowe wužiwarske mjeno faluje - najskerje ma so z $1 zjednoćić.<br /> Klikń na <u>Wužiwarske konta zjednoćić</u>, zo by potwerdźił.',
+	'usermerge-noolduser'       => 'Falowace stare wužiwarske mjeno',
+	'usermerge-olduser'         => 'Stare wužiwarske konto (Zjednoćić wot)',
+	'usermerge-newuser'         => 'Nowe wužiwarske konto (Zjednoćić do)',
+	'usermerge-deleteolduser'   => 'Stare wužiwarske mjeno zničić?',
+	'usermerge-submit'          => 'Wužiwarske konta zjednoćić',
+	'usermerge-badtoken'        => 'Njepłaćiwe wobdźěłanske znamjo',
+	'usermerge-userdeleted'     => '$1($2) bu zničeny.',
 	'usermerge-userdeleted-log' => 'Wušmórnjeny wužiwar: $2($3)',
-	'usermerge-updating' => '$1 tabela so aktualizuje ($2 do $3)',
-	'usermerge-success' => 'Zjednoćenje wot $1($2) do $3($4) je dokónčene.',
-	'usermerge-success-log' => 'Wužiwar $2($3) je so z $4 ($5) zjednoćił',
-	'usermerge-logpage' => 'Protokol wužiwarskich zjednoćenjow',
-	'usermerge-logpagetext' => 'To je protokol wužiwarskich zjednoćenjow',
+	'usermerge-updating'        => '$1 tabela so aktualizuje ($2 do $3)',
+	'usermerge-success'         => 'Zjednoćenje wot $1($2) do $3($4) je dokónčene.',
+	'usermerge-success-log'     => 'Wužiwar $2($3) je so z $4 ($5) zjednoćił',
+	'usermerge-logpage'         => 'Protokol wužiwarskich zjednoćenjow',
+	'usermerge-logpagetext'     => 'To je protokol wužiwarskich zjednoćenjow',
+	'usermerge-noselfdelete'    => 'Njemóžeš sam wušmórnyć abo zjednoćić!',
 );
 
 /** Khmer (ភាសាខ្មែរ)
