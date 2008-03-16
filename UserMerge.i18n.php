@@ -190,6 +190,7 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 
 /** Galician (Galego)
  * @author Alma
+ * @author Toliño
  */
 $messages['gl'] = array(
 	'usermerge'                 => 'Fusionar e Eliminar usuario',
@@ -207,7 +208,7 @@ $messages['gl'] = array(
 	'usermerge-updating'        => 'Actualizando táboa $1 ($2 a $3)',
 	'usermerge-success'         => 'A fusión de $1($2) a $3($4) está completa.',
 	'usermerge-success-log'     => 'Usuario $2($3) fusionado a $4($5)',
-	'usermerge-logpage'         => 'Rexistro da Fusión de usuarios',
+	'usermerge-logpage'         => 'Rexistro de fusión de usuarios',
 	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
 );
 
