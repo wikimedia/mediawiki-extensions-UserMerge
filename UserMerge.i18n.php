@@ -267,7 +267,8 @@ $messages['nl'] = array(
 	'usermerge-desc'            => "Voegt een [[Special:UserMerge|speciale pagina]] toe om gebruikers samen te voegen en de oude gebruiker(s) te verwijderen (hiervoor is het recht ''usermerge'' nodig)",
 	'usermerge-badolduser'      => 'Verkeerde oude gebruiker',
 	'usermerge-badnewuser'      => 'Verkeerde nieuwe gebruiker',
-	'usermerge-nonewuser'       => 'Nieuwe gebruiker is niet ingegeven - er wordt aangenomen dat er samengevoegd moet worden naar $1.<br />Klik <u>Gebruiker samenvoegen</u> om te aanvaarden.',
+	'usermerge-nonewuser'       => 'Nieuwe gebruiker is niet ingegeven - er wordt aangenomen dat er samengevoegd moet worden naar $1.<br />
+Klik <u>Gebruiker samenvoegen</u> om te aanvaarden.',
 	'usermerge-noolduser'       => 'Oude gebruiker is niet ingegeven',
 	'usermerge-olduser'         => 'Oude gebruiker (samenvoegen van)',
 	'usermerge-newuser'         => 'Nieuwe gebruiker (samenvoegen naar)',
