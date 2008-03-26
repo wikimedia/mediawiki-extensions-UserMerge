@@ -1,4 +1,4 @@
-<?php 
+<?php
 #coding: utf-8
 /** \file
 * \brief Internationalization file for the User Merge and Delete Extension.
@@ -11,7 +11,8 @@ $messages['en'] = array(
 	'usermerge-desc'                => "[[Special:UserMerge|Merges references from one user to another user]] in the wiki database - will also delete old users following merge. Requires ''usermerge'' privileges",
 	'usermerge-badolduser' 		=> 'Invalid old username',
 	'usermerge-badnewuser' 		=> 'Invalid new username',
-	'usermerge-nonewuser' 		=> 'Empty new username - assuming merge to $1.<br />Click <u>Merge User</u> to accept.',
+	'usermerge-nonewuser' 		=> 'Empty new username - assuming merge to $1.<br />
+Click <u>Merge User</u> to accept.',
 	'usermerge-noolduser' 		=> 'Empty old username',
 	'usermerge-olduser' 		=> 'Old user (merge from)',
 	'usermerge-newuser' 		=> 'New user (merge to)',
@@ -26,7 +27,7 @@ $messages['en'] = array(
 	'usermerge-logpage'           	=> 'User merge log',
 	'usermerge-logpagetext'       	=> 'This is a log of user merge actions',
 	'usermerge-noselfdelete'       	=> 'You cannot delete or merge from yourself!',
-	'usermerge-unmergable'		=> 'Unable to merge from user - id or name has been defined as unmergable.',
+	'usermerge-unmergable'		=> 'Unable to merge from user - ID or name has been defined as unmergable.',
 	'usermerge-protectedgroup'	=> 'Unable to merge from user - user is in a protected group.',
 );
 
