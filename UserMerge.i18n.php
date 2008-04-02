@@ -484,6 +484,22 @@ $messages['te'] = array(
 	'usermerge-noselfdelete'    => 'మిమ్మల్ని మీరే తొలగించుకోలేరు లేదా మీలో విలీనం కాలేరు!',
 );
 
+/** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
+ * @author Ibrahim
+ */
+$messages['tg-cyrl'] = array(
+	'usermerge-badolduser'      => 'Номи корбарии кӯҳнаи номӯътабар',
+	'usermerge-badnewuser'      => 'Номи корбарии ҷадидӣ номӯътабар',
+	'usermerge-noolduser'       => 'Холӣ кардани номи корбарии кӯҳна',
+	'usermerge-olduser'         => 'Корбари кӯҳна (идғом аз)',
+	'usermerge-newuser'         => 'Корбари ҷадид (идғом ба)',
+	'usermerge-deleteolduser'   => 'Корбари кӯҳна ҳазв шавад?',
+	'usermerge-submit'          => 'Идғоми корбар',
+	'usermerge-userdeleted-log' => 'Корбари ҳазфшуда: $2 ($3)',
+	'usermerge-logpage'         => 'Гузориши идғоми корбар',
+	'usermerge-logpagetext'     => 'Ин гузориши амалҳои идғоми корбар аст',
+);
+
 /** Turkish (Türkçe)
  * @author Karduelis
  */
