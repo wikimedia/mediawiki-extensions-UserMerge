@@ -65,6 +65,7 @@ $messages['bg'] = array(
 	'usermerge'                 => 'Сливане и изтриване на потребители',
 	'usermerge-badolduser'      => 'Невалиден стар потребител',
 	'usermerge-badnewuser'      => 'Невалиден нов потребител',
+	'usermerge-noolduser'       => 'Изчистване на старото потребителско име',
 	'usermerge-olduser'         => 'Стар потребител (за сливане от)',
 	'usermerge-newuser'         => 'Нов потребител (за сливане в)',
 	'usermerge-deleteolduser'   => 'Изтриване на стария потребител?',
@@ -155,6 +156,14 @@ $messages['de'] = array(
 	'usermerge-noselfdelete'       	=> 'Zusammenführung mit sich selber ist nicht möglich!',
 	'usermerge-unmergable'		=> 'Zusammenführung nicht möglich - ID oder Benutzername wurde als nicht zusammenführbar definiert.',
 	'usermerge-protectedgroup'	=> 'Zusammenführung nicht möglich - Benutzername ist in einer geschützen Gruppe.',
+);
+
+/** Esperanto (Esperanto)
+ * @author Yekrats
+ */
+$messages['eo'] = array(
+	'usermerge-userdeleted'     => '$1 ($2) estis forigita.',
+	'usermerge-userdeleted-log' => 'Forigis uzanton: $2 ($3)',
 );
 
 /** French (Français)
@@ -488,6 +497,7 @@ $messages['te'] = array(
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
+	'usermerge'                 => 'Идгом ва ҳафзи корбар',
 	'usermerge-badolduser'      => 'Номи корбарии кӯҳнаи номӯътабар',
 	'usermerge-badnewuser'      => 'Номи корбарии ҷадидӣ номӯътабар',
 	'usermerge-noolduser'       => 'Холӣ кардани номи корбарии кӯҳна',
