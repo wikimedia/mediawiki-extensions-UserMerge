@@ -222,6 +222,13 @@ $messages['gl'] = array(
 	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
 );
 
+/** Hindi (हिन्दी)
+ * @author Kaustubh
+ */
+$messages['hi'] = array(
+	'usermerge-badtoken' => 'गलत एडिट टोकन',
+);
+
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
  */
@@ -353,12 +360,13 @@ $messages['oc'] = array(
 
 /** Polish (Polski)
  * @author Masti
+ * @author Sp5uhe
  * @author Derbeth
  * @author Wpedzich
  */
 $messages['pl'] = array(
 	'usermerge'                 => 'Integruj i usuń użytkowników',
-	'usermerge-desc'            => "[[Special:UserMerge|Integruje odwołania od jednego uzytkownika do drugiego]] w bazie danych wiki - również  usunie starego użytkownika po integracji. Wymaga uprawnienia ''usermerge''",
+	'usermerge-desc'            => "[[Special:UserMerge|Integruje odwołania od jednego użytkownika do drugiego]] w bazie danych wiki - również  usunie starego użytkownika po integracji. Wymaga uprawnienia ''usermerge''",
 	'usermerge-badolduser'      => 'Niewłaściwa stara nazwa użytkownika',
 	'usermerge-badnewuser'      => 'Niewłaściwa nowa nazwa użytkownika',
 	'usermerge-nonewuser'       => 'Pusta nazwa nowego użytkownika - przyjęto, że nastąpi integracja do $1. <br />Naciśnij <u>Integruj użytkowników</u>, by zaakceptować.',
@@ -369,13 +377,13 @@ $messages['pl'] = array(
 	'usermerge-submit'          => 'Integruj użytkowników',
 	'usermerge-badtoken'        => 'Nieprawidłowy token edycji',
 	'usermerge-userdeleted'     => '$1 ($2) został usunięty.',
-	'usermerge-userdeleted-log' => 'Usunięto uzytkownika: $2 ($3)',
+	'usermerge-userdeleted-log' => 'usunął użytkownika „$2” ($3)',
 	'usermerge-updating'        => 'Odświeżanie tablicy $1 ($2 do $3)',
 	'usermerge-success'         => 'Integracja $1 ($2) z $3 ($4) zakończona.',
-	'usermerge-success-log'     => 'Zintegrowano użytkownika $2 ($3) do $4 ($5)',
-	'usermerge-logpage'         => 'Rejestr integracji uzytkowników',
+	'usermerge-success-log'     => 'zintegrował użytkownika „$2” ($3) do „$4” ($5)',
+	'usermerge-logpage'         => 'Rejestr integracji użytkowników',
 	'usermerge-logpagetext'     => 'To jest rejestr operacji integracji użytkowników',
-	'usermerge-noselfdelete'    => 'Nie możesz skasować lub zintegrować samego siebie!',
+	'usermerge-noselfdelete'    => 'Nie możesz usunąć lub połączyć samego siebie!',
 	'usermerge-unmergable'      => 'Nie można zintegrować użytkownika - identyfikator lub nazwa zostały zdefiniowane jako nieintegrowalne.',
 	'usermerge-protectedgroup'  => 'Nie można zintegrować użytkownika - jest członkiem zabezpieczonej grupy',
 );
