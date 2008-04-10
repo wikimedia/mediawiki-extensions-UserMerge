@@ -199,27 +199,29 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 );
 
 /** Galician (Galego)
- * @author Alma
  * @author Toliño
+ * @author Alma
  */
 $messages['gl'] = array(
-	'usermerge'                 => 'Fusionar e Eliminar usuario',
-	'usermerge-badolduser'      => 'Antigo Nome de usuario non válido',
-	'usermerge-badnewuser'      => 'Novo Usuario non válido',
-	'usermerge-nonewuser'       => 'Novo Nome de usuario baleiro - Asumindo que se fusionan para $1.<br />Prema <u>Fusionar Usuario</u> para aceptar.',
-	'usermerge-noolduser'       => 'Antigo Nome de usuario baleiro',
-	'usermerge-olduser'         => 'Antigo Usuario(Fusionar Para)',
-	'usermerge-newuser'         => 'Novo Usuario(Fusionar A)',
-	'usermerge-deleteolduser'   => 'Eliminar Antigo Usuario?',
-	'usermerge-submit'          => 'Fusionar Usuario',
-	'usermerge-badtoken'        => 'Sinal de Edición non válida',
-	'usermerge-userdeleted'     => '$1($2) foi eliminado.',
-	'usermerge-userdeleted-log' => 'Eliminado usuario: $2($3)',
+	'usermerge'                 => 'Fusionar e eliminar usuario',
+	'usermerge-badolduser'      => 'Antigo nome de usuario non válido',
+	'usermerge-badnewuser'      => 'Novo nome de usuario non válido',
+	'usermerge-nonewuser'       => 'Novo nome de usuario baleiro - asumindo que se fusionan para $1.<br />
+Prema en <u>Fusionar o usuario</u> para aceptar.',
+	'usermerge-noolduser'       => 'Antigo nome de usuario baleiro',
+	'usermerge-olduser'         => 'Antigo usuario (fusionar desde)',
+	'usermerge-newuser'         => 'Novo usuario (fusionar a)',
+	'usermerge-deleteolduser'   => 'Eliminar o antigo usuario?',
+	'usermerge-submit'          => 'Fusionar o usuario',
+	'usermerge-badtoken'        => 'Sinal de edición non válido',
+	'usermerge-userdeleted'     => '$1 ($2) foi eliminado.',
+	'usermerge-userdeleted-log' => 'Usuario eliminado: $2 ($3)',
 	'usermerge-updating'        => 'Actualizando táboa $1 ($2 a $3)',
-	'usermerge-success'         => 'A fusión de $1($2) a $3($4) está completa.',
-	'usermerge-success-log'     => 'Usuario $2($3) fusionado a $4($5)',
+	'usermerge-success'         => 'A fusión desde $1 ($2) a $3 ($4) foi completada.',
+	'usermerge-success-log'     => 'Usuario $2 ($3) fusionado a $4 ($5)',
 	'usermerge-logpage'         => 'Rexistro de fusión de usuarios',
 	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
+	'usermerge-noselfdelete'    => 'Non se pode eliminar ou fusionar a si mesmo!',
 );
 
 /** Hindi (हिन्दी)
