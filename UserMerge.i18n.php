@@ -255,6 +255,18 @@ $messages['hsb'] = array(
 	'usermerge-noselfdelete'    => 'Njemóžeš sam wušmórnyć abo zjednoćić!',
 );
 
+/** Japanese (日本語)
+ * @author Mzm5zbC3
+ */
+$messages['ja'] = array(
+	'usermerge'               => '利用者の統合と削除',
+	'usermerge-olduser'       => '旧利用者（統合元）',
+	'usermerge-newuser'       => '新利用者（統合先）',
+	'usermerge-deleteolduser' => '利用者を削除する',
+	'usermerge-submit'        => '利用者の統合',
+	'usermerge-logpage'       => '利用者統合記録',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  */
