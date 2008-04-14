@@ -380,16 +380,16 @@ $messages['oc'] = array(
  */
 $messages['pl'] = array(
 	'usermerge'                 => 'Integruj i usuń użytkowników',
-	'usermerge-desc'            => "[[Special:UserMerge|Integruje odwołania od jednego użytkownika do drugiego]] w bazie danych wiki - również  usunie starego użytkownika po integracji. Wymaga uprawnienia ''usermerge''",
+	'usermerge-desc'            => "[[Special:UserMerge|Integruje odwołania dla jednego użytkownika do drugiego]] w bazie danych wiki – usuwa również starego użytkownika po integracji. Wymaga uprawnienia ''usermerge''",
 	'usermerge-badolduser'      => 'Niewłaściwa stara nazwa użytkownika',
 	'usermerge-badnewuser'      => 'Niewłaściwa nowa nazwa użytkownika',
-	'usermerge-nonewuser'       => 'Pusta nazwa nowego użytkownika - przyjęto, że nastąpi integracja do $1. <br />Naciśnij <u>Integruj użytkowników</u>, by zaakceptować.',
+	'usermerge-nonewuser'       => 'Pusta nazwa nowego użytkownika – przyjęto, że nastąpi integracja do $1. <br />Naciśnij <u>Integruj użytkowników</u>, by zaakceptować.',
 	'usermerge-noolduser'       => 'Pusta stara nazwa użytkownika',
 	'usermerge-olduser'         => 'Stary użytkownik (integruj od)',
 	'usermerge-newuser'         => 'Nowy użytkownik (integruj z)',
 	'usermerge-deleteolduser'   => 'Usunąć starego użytkownika?',
 	'usermerge-submit'          => 'Integruj użytkowników',
-	'usermerge-badtoken'        => 'Nieprawidłowy token edycji',
+	'usermerge-badtoken'        => 'Nieprawidłowy żeton edycji',
 	'usermerge-userdeleted'     => '$1 ($2) został usunięty.',
 	'usermerge-userdeleted-log' => 'usunął użytkownika „$2” ($3)',
 	'usermerge-updating'        => 'Odświeżanie tablicy $1 ($2 do $3)',
@@ -398,8 +398,8 @@ $messages['pl'] = array(
 	'usermerge-logpage'         => 'Rejestr integracji użytkowników',
 	'usermerge-logpagetext'     => 'To jest rejestr operacji integracji użytkowników',
 	'usermerge-noselfdelete'    => 'Nie możesz usunąć lub połączyć samego siebie!',
-	'usermerge-unmergable'      => 'Nie można zintegrować użytkownika - identyfikator lub nazwa zostały zdefiniowane jako nieintegrowalne.',
-	'usermerge-protectedgroup'  => 'Nie można zintegrować użytkownika - jest członkiem zabezpieczonej grupy',
+	'usermerge-unmergable'      => 'Nie można zintegrować użytkownika – identyfikator lub nazwa zostały zdefiniowane jako nieintegrowalne.',
+	'usermerge-protectedgroup'  => 'Nie można zintegrować użytkownika – jest członkiem zabezpieczonej grupy.',
 );
 
 $messages['pms'] = array(
