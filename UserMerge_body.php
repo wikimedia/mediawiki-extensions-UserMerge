@@ -224,7 +224,7 @@ class UserMerge extends SpecialPage
                 }
 
 
-                $dbw->delete( 'user_newtalk', array( 'user_ip' => $olduserID ));
+                $dbw->delete( 'user_newtalk', array( 'user_id' => $olduserID ));
 
                 $wgOut->addHTML("<hr />\n" . wfMsg('usermerge-success',$olduser_text,$olduserID,$newuser_text,$newuserID) . "\n<br />");
 
