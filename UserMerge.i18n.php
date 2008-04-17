@@ -463,6 +463,13 @@ $messages['pt'] = array(
 	'usermerge-success-log'     => 'Usuário $2 ($3) fundido com $4 ($5)',
 );
 
+/** Russian (Русский)
+ * @author Illusion
+ */
+$messages['ru'] = array(
+	'usermerge' => 'Объединение и удаление учётных записей',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
