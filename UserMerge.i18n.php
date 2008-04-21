@@ -448,19 +448,28 @@ $messages['pms'] = array(
 );
 
 /** Portuguese (Português)
- * @author Lijealso
  * @author Malafaya
+ * @author Lijealso
  */
 $messages['pt'] = array(
-	'usermerge'                 => 'Fusão e eliminação de usuários',
+	'usermerge'                 => 'Fusão e eliminação de utilizadores',
 	'usermerge-badolduser'      => 'Nome antigo inválido',
 	'usermerge-badnewuser'      => 'Nome novo inválido',
+	'usermerge-nonewuser'       => 'Novo nome de utilizador vazio - assumida fusão com $1.<br />
+Clique <u>Fundir Utilizador</u> para aceitar.',
 	'usermerge-noolduser'       => 'Limpar nome antigo',
-	'usermerge-deleteolduser'   => 'Apagar Utilizador Antigo?',
+	'usermerge-olduser'         => 'Utilizador antigo (fundir de)',
+	'usermerge-newuser'         => 'Utilizador novo (fundir para)',
+	'usermerge-deleteolduser'   => 'Apagar utilizador antigo?',
 	'usermerge-submit'          => 'Limpar usuário',
 	'usermerge-userdeleted'     => '$1 ($2) foi eliminado.',
 	'usermerge-userdeleted-log' => 'Usuário eliminado: $2 ($3)',
+	'usermerge-updating'        => 'Actualizando tabela $1 ($2 para $3)',
+	'usermerge-success'         => 'Fusão de $1 ($2) para $3 ($4) está completa.',
 	'usermerge-success-log'     => 'Usuário $2 ($3) fundido com $4 ($5)',
+	'usermerge-logpage'         => 'Registo de fusão de utilizadores',
+	'usermerge-logpagetext'     => 'Este é um registo de acções de fusão de utilizadores',
+	'usermerge-noselfdelete'    => 'Você não pode apagar ou fundir a partir de si próprio!',
 );
 
 /** Russian (Русский)
