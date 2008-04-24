@@ -29,6 +29,7 @@ Click <u>Merge User</u> to accept.',
 	'usermerge-noselfdelete'       	=> 'You cannot delete or merge from yourself!',
 	'usermerge-unmergable'		=> 'Unable to merge from user - ID or name has been defined as unmergable.',
 	'usermerge-protectedgroup'	=> 'Unable to merge from user - user is in a protected group.',
+	'right-usermerge'               => 'Merge users',
 );
 
 /** Arabic (العربية)
