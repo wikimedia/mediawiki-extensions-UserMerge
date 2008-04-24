@@ -173,6 +173,7 @@ $messages['eo'] = array(
  * @author Grondin
  * @author Guillom
  * @author Urhixidur
+ * @author IAlex
  */
 $messages['fr'] = array(
 	'usermerge'                 => 'Fusionner utilisateur et détruire',
@@ -198,6 +199,7 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'usermerge-noselfdelete'    => 'Vous ne pouvez pas vous supprimer ou vous fusionner vous-même !',
 	'usermerge-unmergable'      => "Ne peut fusionner à partir d'un utilisateur, d'un numéro d'identification ou un nom qui ont été définis comme non fusionnables.",
 	'usermerge-protectedgroup'  => "Impossible de fusionner à partir d'un utilisateur - l'utilisateur se trouve dans un groupe protégé.",
+	'right-usermerge'           => 'Fusionner des utilisateurs',
 );
 
 /** Galician (Galego)
@@ -320,8 +322,8 @@ $messages['lb'] = array(
 );
 
 /** Dutch (Nederlands)
- * @author SPQRobin
  * @author Siebrand
+ * @author SPQRobin
  */
 $messages['nl'] = array(
 	'usermerge'                 => 'Gebruikers samenvoegen en verwijderen',
@@ -346,9 +348,10 @@ Klik <u>Gebruiker samenvoegen</u> om te aanvaarden.',
 	'usermerge-noselfdelete'    => 'U kunt uzelf niet verwijderen of samenvoegen!',
 	'usermerge-unmergable'      => 'Deze gebruiker kan niet samengevoegd worden. De gebruikersnaam of het gebruikersnummer is ingesteld als niet samen te voegen.',
 	'usermerge-protectedgroup'  => 'Het is niet mogelijk de gebruikers samen te voegen. De gebruiker zit in een beschermde groep.',
+	'right-usermerge'           => 'Gebruikers samenvoegen',
 );
 
-/** Norwegian (‪Norsk (bokmål)‬)
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
 $messages['no'] = array(
@@ -373,6 +376,7 @@ $messages['no'] = array(
 	'usermerge-noselfdelete'    => 'Du kan ikke slette eller slå sammen din egen konto!',
 	'usermerge-unmergable'      => 'Kan ikke slå sammen den gamle kontoen. ID-en eller navnet anses som ikke-sammenslåbart.',
 	'usermerge-protectedgroup'  => 'Kan ikke slå sammen den gamle kontoen. Brukeren er medlem i en beskyttet brukergruppe.',
+	'right-usermerge'           => 'Slå sammen kontoer',
 );
 
 /** Occitan (Occitan)
@@ -474,10 +478,12 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 );
 
 /** Russian (Русский)
+ * @author .:Ajvol:.
  * @author Illusion
  */
 $messages['ru'] = array(
-	'usermerge' => 'Объединение и удаление учётных записей',
+	'usermerge'       => 'Объединение и удаление учётных записей',
+	'right-usermerge' => 'объединение участников',
 );
 
 /** Slovak (Slovenčina)
@@ -540,6 +546,7 @@ $messages['sv'] = array(
 	'usermerge-noselfdelete'    => 'Du kan inte radera eller slå samman ditt eget konto!',
 	'usermerge-unmergable'      => 'Kan inte sammanfoga det gamla kontot. ID:t eller namnet har angetts som icke-sammanslagningsbart.',
 	'usermerge-protectedgroup'  => 'Kan inte sammanfoga det gamla kontot. Användaren är medlem i en skyddad användargrupp.',
+	'right-usermerge'           => 'Slå ihop användarkonton',
 );
 
 /** Telugu (తెలుగు)
