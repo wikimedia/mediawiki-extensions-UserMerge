@@ -511,6 +511,7 @@ $messages['sk'] = array(
 	'usermerge-noselfdelete'    => 'Nemôžete zmazať alebo zlúčiť svoj účet!',
 	'usermerge-unmergable'      => 'Nebolo možné vykonať zlúčenie používateľa - zdrojové meno alebo ID bolo definované ako nezlúčiteľné.',
 	'usermerge-protectedgroup'  => 'Nebolo možné zlúčiť uvedeného používateľa - používateľ je v chránenej skupine.',
+	'right-usermerge'           => 'Zlučovať používateľov',
 );
 
 /** Seeltersk (Seeltersk)
