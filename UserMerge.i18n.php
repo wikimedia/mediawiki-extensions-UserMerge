@@ -158,6 +158,7 @@ $messages['de'] = array(
 	'usermerge-noselfdelete'       	=> 'Zusammenführung mit sich selber ist nicht möglich!',
 	'usermerge-unmergable'		=> 'Zusammenführung nicht möglich - ID oder Benutzername wurde als nicht zusammenführbar definiert.',
 	'usermerge-protectedgroup'	=> 'Zusammenführung nicht möglich - Benutzername ist in einer geschützen Gruppe.',
+	'right-usermerge'               => 'Benutzerkonten vereinen',
 );
 
 /** Esperanto (Esperanto)
