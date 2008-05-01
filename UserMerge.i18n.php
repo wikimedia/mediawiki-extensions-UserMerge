@@ -319,6 +319,7 @@ $messages['km'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'usermerge-noolduser'       => 'Eidelen ale Benotzernumm',
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
 );
 
@@ -405,6 +406,7 @@ $messages['oc'] = array(
 	'usermerge-noselfdelete'    => 'Podètz pas, vos-meteis, vos suprimir ni vos fusionar !',
 	'usermerge-unmergable'      => "Pòt pas fusionar a partir d'un utilizaire, d'un numèro d'identificacion o un nom que son estats definits coma non fusionables.",
 	'usermerge-protectedgroup'  => "Impossible de fusionar a partir d'un utilizaire - l'utilizaire se tròba dins un grop protegit.",
+	'right-usermerge'           => "Fusionar d'utilizaires",
 );
 
 /** Polish (Polski)
@@ -476,6 +478,7 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 	'usermerge-logpage'         => 'Registo de fusão de utilizadores',
 	'usermerge-logpagetext'     => 'Este é um registo de acções de fusão de utilizadores',
 	'usermerge-noselfdelete'    => 'Você não pode apagar ou fundir a partir de si próprio!',
+	'right-usermerge'           => 'Fundir utilizadores',
 );
 
 /** Russian (Русский)
