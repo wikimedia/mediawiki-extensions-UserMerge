@@ -300,6 +300,22 @@ $messages['ja'] = array(
 	'usermerge-logpage'       => '利用者統合記録',
 );
 
+/** Javanese (Basa Jawa)
+ * @author Meursault2004
+ */
+$messages['jv'] = array(
+	'usermerge-badnewuser'      => 'Jeneng panganggo anyar ora absah',
+	'usermerge-deleteolduser'   => 'Busak panganggo lawas?',
+	'usermerge-submit'          => 'Gabung panganggo',
+	'usermerge-badtoken'        => 'Token panyuntingan ora absah',
+	'usermerge-userdeleted'     => '$1 ($2) wis dibusak.',
+	'usermerge-userdeleted-log' => 'Panganggo dibusak: $2 ($3)',
+	'usermerge-logpage'         => 'Log panggabungan panganggo',
+	'usermerge-logpagetext'     => 'Iki sawijining log aksi panggabungan panganggo',
+	'usermerge-noselfdelete'    => 'Panjenengan ora bisa mbusak utawa nggabung saka panjenengan dhéwé!',
+	'right-usermerge'           => 'Gabung panganggo',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  */
