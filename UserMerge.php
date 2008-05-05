@@ -24,6 +24,7 @@ $wgAutoloadClasses['UserMerge'] = $dir . 'UserMerge_body.php';
 
 $wgExtensionMessagesFiles['UserMerge'] = $dir . 'UserMerge.i18n.php';
 $wgSpecialPages['UserMerge'] = 'UserMerge';
+$wgSpecialPageGroups['UserMerge'] = 'users';
 
 $wgUserMergeProtectedGroups = array( "sysop" );
 
