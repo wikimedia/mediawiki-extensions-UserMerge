@@ -305,6 +305,7 @@ $messages['ja'] = array(
  */
 $messages['jv'] = array(
 	'usermerge-badnewuser'      => 'Jeneng panganggo anyar ora absah',
+	'usermerge-noolduser'       => 'Jeneng panganggo sing lawas kosong',
 	'usermerge-deleteolduser'   => 'Busak panganggo lawas?',
 	'usermerge-submit'          => 'Gabung panganggo',
 	'usermerge-badtoken'        => 'Token panyuntingan ora absah',
