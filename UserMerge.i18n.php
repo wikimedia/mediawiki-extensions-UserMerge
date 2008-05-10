@@ -167,6 +167,7 @@ $messages['de'] = array(
 $messages['eo'] = array(
 	'usermerge-userdeleted'     => '$1 ($2) estis forigita.',
 	'usermerge-userdeleted-log' => 'Forigis uzanton: $2 ($3)',
+	'right-usermerge'           => 'Kunfandi uzantojn',
 );
 
 /** French (Français)
