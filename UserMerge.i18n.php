@@ -78,6 +78,7 @@ $messages['bg'] = array(
 	'usermerge-logpage'         => 'Дневник на потребителските сливания',
 	'usermerge-logpagetext'     => 'Тази страница съдържа дневник на потребителските сливания',
 	'usermerge-protectedgroup'  => 'Невъзможно е да се извърши сливане от потребител - потребителят е в защитена група.',
+	'right-usermerge'           => 'сливане на потребители',
 );
 
 /** Bengali (বাংলা)
@@ -224,7 +225,7 @@ Prema en <u>Fusionar o usuario</u> para aceptar.',
 	'usermerge-userdeleted-log' => 'Usuario eliminado: $2 ($3)',
 	'usermerge-updating'        => 'Actualizando táboa $1 ($2 a $3)',
 	'usermerge-success'         => 'A fusión desde $1 ($2) a $3 ($4) foi completada.',
-	'usermerge-success-log'     => 'Usuario $2 ($3) fusionado a $4 ($5)',
+	'usermerge-success-log'     => 'Usuario $2 ($3) fusionado con $4 ($5)',
 	'usermerge-logpage'         => 'Rexistro de fusión de usuarios',
 	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
 	'usermerge-noselfdelete'    => 'Non se pode eliminar ou fusionar a si mesmo!',
@@ -305,6 +306,7 @@ $messages['ja'] = array(
  * @author Meursault2004
  */
 $messages['jv'] = array(
+	'usermerge'                 => 'Panggabungan lan pambusakan panganggo',
 	'usermerge-badnewuser'      => 'Jeneng panganggo anyar ora absah',
 	'usermerge-noolduser'       => 'Jeneng panganggo sing lawas kosong',
 	'usermerge-deleteolduser'   => 'Busak panganggo lawas?',
@@ -312,6 +314,7 @@ $messages['jv'] = array(
 	'usermerge-badtoken'        => 'Token panyuntingan ora absah',
 	'usermerge-userdeleted'     => '$1 ($2) wis dibusak.',
 	'usermerge-userdeleted-log' => 'Panganggo dibusak: $2 ($3)',
+	'usermerge-updating'        => 'Nganyari tabèl $1 ($2 menyang $3)',
 	'usermerge-logpage'         => 'Log panggabungan panganggo',
 	'usermerge-logpagetext'     => 'Iki sawijining log aksi panggabungan panganggo',
 	'usermerge-noselfdelete'    => 'Panjenengan ora bisa mbusak utawa nggabung saka panjenengan dhéwé!',
