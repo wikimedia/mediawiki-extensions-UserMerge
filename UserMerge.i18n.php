@@ -59,6 +59,13 @@ $messages['ar'] = array(
 	'usermerge-protectedgroup'  => 'غير قادر على الدمج من المستخدم - المستخدم في مجموعة محمية.',
 );
 
+/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+ * @author EugeneZelenko
+ */
+$messages['be-tarask'] = array(
+	'usermerge' => "Аб'яднаньне і выдаленьне рахункаў удзельнікаў",
+);
+
 /** Bulgarian (Български)
  * @author DCLXVI
  */
