@@ -351,6 +351,28 @@ $messages['lb'] = array(
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
 );
 
+/** Malayalam (മലയാളം)
+ * @author Shijualex
+ */
+$messages['ml'] = array(
+	'usermerge-badolduser'      => 'അസാധുവായ പഴയ ഉപയോക്തൃനാമം',
+	'usermerge-badnewuser'      => 'അസാധുവായ പുതിയ ഉപയോക്തൃനാമം',
+	'usermerge-noolduser'       => 'പഴയ ഉപയോക്തൃനാമം ശൂന്യമാക്കുക',
+	'usermerge-olduser'         => 'പഴയ ഉപയോക്തൃനാമം (ലയിപ്പിക്കാനുള്ളത്)',
+	'usermerge-newuser'         => 'പുതിയ ഉപയോക്തൃനാമം (ഇതിലേക്കു സം‌യോജിപ്പിക്കണം)',
+	'usermerge-deleteolduser'   => 'പഴയ ഉപയോക്താവിനെ മായ്ക്കട്ടെ?',
+	'usermerge-submit'          => 'ഉപയോക്താവിനെ സം‌യോജിപ്പിക്കുക',
+	'usermerge-userdeleted'     => '$1 ($2) മായ്ച്ചു.',
+	'usermerge-userdeleted-log' => 'ഉപയോക്താവിനെ മായ്ച്ചു: $2 ($3)',
+	'usermerge-updating'        => '$1 പട്ടിക ($2 to $3) പുതുക്കുന്നു',
+	'usermerge-success'         => '$1 ($2) നെ $3 ($4) ലേക്കു സം‌യോജിപ്പിക്കുന്ന പ്രക്രിയ പൂര്‍ത്തിയായി.',
+	'usermerge-success-log'     => '$2 ($3) എന്ന ഉപയോക്താവിനെ $4 ($5)ലേക്കു സം‌യോജിപ്പിച്ചു',
+	'usermerge-logpage'         => 'ഉപയോക്തൃസം‌യോജന പ്രവര്‍ത്തനരേഖ',
+	'usermerge-logpagetext'     => 'ഉപയോക്താക്കളെ സം‌യോജിപ്പിച്ചതിന്റെ പ്രവര്‍ത്തനരേഖയാണിത്',
+	'usermerge-noselfdelete'    => 'താങ്കള്‍ക്ക് താങ്കളെത്തന്നെ മായ്ക്കാനോ, മറ്റൊരു അക്കുണ്ടിലേക്കു സം‌യോജിപ്പിക്കാനോ പറ്റില്ല!',
+	'right-usermerge'           => 'ഉപയോക്താക്കളെ സം‌യോജിപ്പിക്കുക',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  * @author SPQRobin
