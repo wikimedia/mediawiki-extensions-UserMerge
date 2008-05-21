@@ -532,7 +532,7 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 );
 
 /** Russian (Русский)
- * @author .:Ajvol:.
+ * @author Александр Сигачёв
  * @author Illusion
  */
 $messages['ru'] = array(
