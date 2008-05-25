@@ -347,7 +347,10 @@ $messages['km'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'usermerge-badolduser'      => 'Ongëltegen ale Benotzernumm',
+	'usermerge-badnewuser'      => 'Ongëltegen neie Benotzernumm',
 	'usermerge-noolduser'       => 'Eidelen ale Benotzernumm',
+	'usermerge-deleteolduser'   => 'Ale Benotzer läschen?',
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
 );
 
