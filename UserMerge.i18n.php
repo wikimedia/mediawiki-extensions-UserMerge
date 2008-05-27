@@ -34,6 +34,7 @@ Click <u>Merge User</u> to accept.',
 
 /** Arabic (العربية)
  * @author Meno25
+ * @author OsamaK
  */
 $messages['ar'] = array(
 	'usermerge'                 => 'دمج وحذف المستخدم',
@@ -57,6 +58,7 @@ $messages['ar'] = array(
 	'usermerge-noselfdelete'    => 'لا يمكنك حذف أو دمج من نفسك!',
 	'usermerge-unmergable'      => 'غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.',
 	'usermerge-protectedgroup'  => 'غير قادر على الدمج من المستخدم - المستخدم في مجموعة محمية.',
+	'right-usermerge'           => 'دمج مستخدمين',
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
@@ -71,6 +73,7 @@ $messages['be-tarask'] = array(
  */
 $messages['bg'] = array(
 	'usermerge'                 => 'Сливане и изтриване на потребители',
+	'usermerge-desc'            => "[[Special:UserMerge|Сливане на приносите от един потребител в друг]] в базата от данни - след сливането изтрива стария потребител. Изисква права ''usermerge''",
 	'usermerge-badolduser'      => 'Невалиден стар потребител',
 	'usermerge-badnewuser'      => 'Невалиден нов потребител',
 	'usermerge-noolduser'       => 'Изчистване на старото потребителско име',
