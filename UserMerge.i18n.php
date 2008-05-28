@@ -379,6 +379,22 @@ $messages['ml'] = array(
 	'right-usermerge'           => 'ഉപയോക്താക്കളെ സം‌യോജിപ്പിക്കുക',
 );
 
+/** Marathi (मराठी)
+ * @author Kaustubh
+ */
+$messages['mr'] = array(
+	'usermerge-badolduser'    => 'चुकीचे जुने सदस्यनाव',
+	'usermerge-badnewuser'    => 'चुकीचे नवे सदस्यनाव',
+	'usermerge-noolduser'     => 'रिकामे जुने सदस्यनाव',
+	'usermerge-olduser'       => 'जुना सदस्य (इथून एकत्र करा)',
+	'usermerge-newuser'       => 'नवीन सदस्य (मध्ये एकत्र करा)',
+	'usermerge-deleteolduser' => 'जुना सदस्य वगळायचा का?',
+	'usermerge-submit'        => 'सदस्य एकत्र करा',
+	'usermerge-badtoken'      => 'चुकीचे एडीट टोकन',
+	'usermerge-logpage'       => 'सदस्य एकत्रीकरण नोंद',
+	'right-usermerge'         => 'सदस्य एकत्र करा',
+);
+
 /** Dutch (Nederlands)
  * @author Siebrand
  * @author SPQRobin
