@@ -239,6 +239,7 @@ Prema en <u>Fusionar o usuario</u> para aceptar.',
 	'usermerge-logpage'         => 'Rexistro de fusión de usuarios',
 	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
 	'usermerge-noselfdelete'    => 'Non se pode eliminar ou fusionar a si mesmo!',
+	'right-usermerge'           => 'Fusionar usuarios',
 );
 
 /** Hindi (हिन्दी)
@@ -383,16 +384,23 @@ $messages['ml'] = array(
  * @author Kaustubh
  */
 $messages['mr'] = array(
-	'usermerge-badolduser'    => 'चुकीचे जुने सदस्यनाव',
-	'usermerge-badnewuser'    => 'चुकीचे नवे सदस्यनाव',
-	'usermerge-noolduser'     => 'रिकामे जुने सदस्यनाव',
-	'usermerge-olduser'       => 'जुना सदस्य (इथून एकत्र करा)',
-	'usermerge-newuser'       => 'नवीन सदस्य (मध्ये एकत्र करा)',
-	'usermerge-deleteolduser' => 'जुना सदस्य वगळायचा का?',
-	'usermerge-submit'        => 'सदस्य एकत्र करा',
-	'usermerge-badtoken'      => 'चुकीचे एडीट टोकन',
-	'usermerge-logpage'       => 'सदस्य एकत्रीकरण नोंद',
-	'right-usermerge'         => 'सदस्य एकत्र करा',
+	'usermerge'                 => 'सदस्य एकत्रीकरण व वगळणे',
+	'usermerge-badolduser'      => 'चुकीचे जुने सदस्यनाव',
+	'usermerge-badnewuser'      => 'चुकीचे नवे सदस्यनाव',
+	'usermerge-noolduser'       => 'रिकामे जुने सदस्यनाव',
+	'usermerge-olduser'         => 'जुना सदस्य (इथून एकत्र करा)',
+	'usermerge-newuser'         => 'नवीन सदस्य (मध्ये एकत्र करा)',
+	'usermerge-deleteolduser'   => 'जुना सदस्य वगळायचा का?',
+	'usermerge-submit'          => 'सदस्य एकत्र करा',
+	'usermerge-badtoken'        => 'चुकीचे एडीट टोकन',
+	'usermerge-userdeleted'     => '$1 ($2) ला वगळण्यात आलेले आहे.',
+	'usermerge-userdeleted-log' => 'सदस्य वगळला: $2 ($3)',
+	'usermerge-updating'        => '$1 सारणी ताजीतवानी करीत आहोत ($2 ते $3)',
+	'usermerge-success-log'     => 'सदस्य $2 ($3) ला $4 ($5) मध्ये एकत्र केले',
+	'usermerge-logpage'         => 'सदस्य एकत्रीकरण नोंद',
+	'usermerge-logpagetext'     => 'ही सदस्य एकत्रीकरणाची सूची आहे',
+	'usermerge-noselfdelete'    => 'तुम्ही स्वत:लाच वगळू किंवा एकत्र करू शकत नाही.',
+	'right-usermerge'           => 'सदस्य एकत्र करा',
 );
 
 /** Dutch (Nederlands)
@@ -595,6 +603,13 @@ $messages['sk'] = array(
  */
 $messages['stq'] = array(
 	'usermerge' => 'Benutserkonten touhoopefiere un läskje',
+);
+
+/** Sundanese (Basa Sunda)
+ * @author Irwangatot
+ */
+$messages['su'] = array(
+	'usermerge-desc' => "Ngagabungkeun Préférénsi ti hiji pamaké ka pamaké séjén dina pangkalan data wiki - ogé baris ngahapus pamaké lila sadeui Ngagabungkeun. diperlukeun hak aksés ''usermerge''",
 );
 
 /** Swedish (Svenska)
