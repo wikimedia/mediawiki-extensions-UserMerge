@@ -181,6 +181,15 @@ $messages['eo'] = array(
 	'right-usermerge'           => 'Kunfandi uzantojn',
 );
 
+/** Finnish (Suomi)
+ * @author Nike
+ */
+$messages['fi'] = array(
+	'usermerge'            => 'Käyttäjätunnusten yhdistys ja poisto',
+	'usermerge-badolduser' => 'Vanha käyttäjätunnus ei kelpaa',
+	'usermerge-badnewuser' => 'Uusi käyttäjätunnus ei kelpaa',
+);
+
 /** French (Français)
  * @author Sherbrooke
  * @author Grondin
