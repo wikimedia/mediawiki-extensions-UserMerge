@@ -576,8 +576,15 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
  * @author Illusion
  */
 $messages['ru'] = array(
-	'usermerge'       => 'Объединение и удаление учётных записей',
-	'right-usermerge' => 'объединение участников',
+	'usermerge'                 => 'Объединение и удаление учётных записей',
+	'usermerge-olduser'         => 'Старая учётная запись (объединить с)',
+	'usermerge-newuser'         => 'Новая учётная запись (объединить в)',
+	'usermerge-deleteolduser'   => 'Удалить старую учётную запись?',
+	'usermerge-userdeleted-log' => 'Удалён участник $2 ($3)',
+	'usermerge-success-log'     => 'Участник $2 ($3) объединён в $4 ($5)',
+	'usermerge-logpage'         => 'Журнал объединения участников',
+	'usermerge-logpagetext'     => 'Это журнал объединения учётных записей',
+	'right-usermerge'           => 'объединение участников',
 );
 
 /** Slovak (Slovenčina)
