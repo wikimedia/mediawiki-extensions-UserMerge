@@ -574,6 +574,7 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 /** Russian (Русский)
  * @author Александр Сигачёв
  * @author Illusion
+ * @author Illusion
  */
 $messages['ru'] = array(
 	'usermerge'                 => 'Объединение и удаление учётных записей',
