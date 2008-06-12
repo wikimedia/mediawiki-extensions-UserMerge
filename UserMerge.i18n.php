@@ -356,6 +356,13 @@ $messages['km'] = array(
 	'usermerge-noselfdelete'    => 'អ្នកមិនអាច លុបចេញ ឬ បញ្ចូលរួមគ្នា ពីខ្លួនអ្នកផ្ទាល់ !',
 );
 
+/** Ripoarisch (Ripoarisch)
+ * @author Purodha
+ */
+$messages['ksh'] = array(
+	'right-usermerge' => 'Metmaacher zosammelääje',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Robby
  */
