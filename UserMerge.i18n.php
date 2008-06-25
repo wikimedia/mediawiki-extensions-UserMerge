@@ -87,6 +87,8 @@ $messages['bg'] = array(
 	'usermerge-success-log'     => 'Потребител $2 ($3) беше слят с $4 ($5)',
 	'usermerge-logpage'         => 'Дневник на потребителските сливания',
 	'usermerge-logpagetext'     => 'Тази страница съдържа дневник на потребителските сливания',
+	'usermerge-noselfdelete'    => 'Не е възможно да изтривате или сливате от себе си!',
+	'usermerge-unmergable'      => 'Сливането от потребителя е невъзможно - името или ID е отбелязано като несливаемо.',
 	'usermerge-protectedgroup'  => 'Невъзможно е да се извърши сливане от потребител - потребителят е в защитена група.',
 	'right-usermerge'           => 'сливане на потребители',
 );
@@ -420,8 +422,8 @@ $messages['mr'] = array(
 );
 
 /** Dutch (Nederlands)
- * @author Siebrand
  * @author SPQRobin
+ * @author Siebrand
  */
 $messages['nl'] = array(
 	'usermerge'                 => 'Gebruikers samenvoegen en verwijderen',
@@ -440,7 +442,7 @@ Klik <u>Gebruiker samenvoegen</u> om te aanvaarden.',
 	'usermerge-userdeleted-log' => 'Verwijderde gebruiker: $2($3)',
 	'usermerge-updating'        => 'Tabel $1 aan het bijwerken ($2 naar $3)',
 	'usermerge-success'         => 'Samenvoegen van $1($2) naar $3($4) is afgerond.',
-	'usermerge-success-log'     => 'Gebruiker $2($3) samengevoegd naar $3($5)',
+	'usermerge-success-log'     => 'Gebruiker $2 ($3) samengevoegd naar $4 ($5)',
 	'usermerge-logpage'         => 'Logboek gebruikerssamenvoegingen',
 	'usermerge-logpagetext'     => 'Dit is het logboek van gebruikerssamenvoegingen.',
 	'usermerge-noselfdelete'    => 'U kunt uzelf niet verwijderen of samenvoegen!',
