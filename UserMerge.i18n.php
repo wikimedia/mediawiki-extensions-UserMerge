@@ -232,6 +232,7 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
  */
 $messages['gl'] = array(
 	'usermerge'                 => 'Fusionar e eliminar usuario',
+	'usermerge-desc'            => "[[Special:UserMerge|Fusiona as referencias dun usuario noutro usuario]] na base de datos do wiki (tamén borrará as fusións vellas dos usuarios seguintes. Require privilexios ''usermerge'')",
 	'usermerge-badolduser'      => 'Antigo nome de usuario non válido',
 	'usermerge-badnewuser'      => 'Novo nome de usuario non válido',
 	'usermerge-nonewuser'       => 'Novo nome de usuario baleiro - asumindo que se fusionan para $1.<br />
@@ -250,6 +251,8 @@ Prema en <u>Fusionar o usuario</u> para aceptar.',
 	'usermerge-logpage'         => 'Rexistro de fusión de usuarios',
 	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
 	'usermerge-noselfdelete'    => 'Non se pode eliminar ou fusionar a si mesmo!',
+	'usermerge-unmergable'      => 'Non se pode fusionar o usuario (o ID ou o nome foron definidos como "non fusionables").',
+	'usermerge-protectedgroup'  => 'Non se pode fusionar o usuario (o usuario está nun frupo protexido).',
 	'right-usermerge'           => 'Fusionar usuarios',
 );
 
@@ -310,6 +313,35 @@ Klike (prese) <u>Mèt ansanm kont Itilizatè</u> pou aksepte operasyon an.',
 	'usermerge-noselfdelete'    => 'Ou pa kapab efase tèt ou oubyen mèt yon lòt kont sou tèt ou, depi kont ou an menm.',
 	'usermerge-unmergable'      => 'Nou pa kapab mèt ansanm kont sa yo - ID an oubyen non an pa kapab mete ansanm, li sanble l make nan definisyon yo.',
 	'usermerge-protectedgroup'  => 'Nou pa kapab mèt ansanm kont itilizatè yo - itilizatè sa a nan yon gwoup ki pwoteje.',
+);
+
+/** Indonesian (Bahasa Indonesia)
+ * @author Rex
+ */
+$messages['id'] = array(
+	'usermerge'                 => 'Penggabungan dan penghapusan Pengguna',
+	'usermerge-desc'            => "[[Special:UserMerge|Menggabungkan rekam jejak dari suatu pengguna ke pengguna lain]] di basis data wiki - sekaligus menghapus pengguna lama setelah selesai digabungkan. Tindakan ini memerlukan hak ''usermerge''.",
+	'usermerge-badolduser'      => 'Nama pengguna lama tidak sah',
+	'usermerge-badnewuser'      => 'Nama pengguna baru tidak sah',
+	'usermerge-nonewuser'       => 'Nama pengguna baru tidak dituliskan - diasumsikan akan digabungkan ke $1.<br />
+Klik <u>Gabungkan Pengguna</u> untuk melanjutkan.',
+	'usermerge-noolduser'       => 'Nama pengguna lama tidak diisi',
+	'usermerge-olduser'         => 'Pengguna lama (digabungkan dari)',
+	'usermerge-newuser'         => 'Pengguna baru (digabungkan ke)',
+	'usermerge-deleteolduser'   => 'Hapus pengguna lama?',
+	'usermerge-submit'          => 'Gabungkan pengguna',
+	'usermerge-badtoken'        => 'Token penyuntingan tidak sah',
+	'usermerge-userdeleted'     => '$1 ($2) telah dihapuskan.',
+	'usermerge-userdeleted-log' => 'Pengguna telah dihapuskan: $2 ($3)',
+	'usermerge-updating'        => 'Memperbaharui tabel $1 ($2 hingga $3)',
+	'usermerge-success'         => '$1 ($2) telah selesai digabungkan ke $3 ($4).',
+	'usermerge-success-log'     => 'Pengguna $2 ($3) telah digabungkan ke $4 ($5)',
+	'usermerge-logpage'         => 'Log penggabungan pengguna',
+	'usermerge-logpagetext'     => 'Ini adalah catatan tindakan penggabungan pengguna',
+	'usermerge-noselfdelete'    => 'Anda tidak dapat menghapus atau menggabungkan dari Anda sendiri!',
+	'usermerge-unmergable'      => 'Tidak dapat menggabungkan dari pengguna ini - nomor ID atau nama akun ini telah ditandai sebagai akun yang tidak dapat digabungkan.',
+	'usermerge-protectedgroup'  => 'Tidak dapat menggabungkan dari pengguna ini - pengguna ini termasuk dalam kelompok terproteksi.',
+	'right-usermerge'           => 'Gabungkan pengguna',
 );
 
 /** Japanese (日本語)
