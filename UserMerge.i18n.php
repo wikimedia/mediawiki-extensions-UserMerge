@@ -268,6 +268,7 @@ $messages['hi'] = array(
  */
 $messages['hsb'] = array(
 	'usermerge'                 => 'Wužiwarske konta zjednoćić a zničić',
+	'usermerge-desc'            => "[[Special:UserMerge|Zjednoća referency wužiwarjow]] we wikowej datowej bance - stare wužiwarske konto so po zjednoćenju wušmórnje. Žada sej prawa ''usermerge''.",
 	'usermerge-badolduser'      => 'Njepłaćiwe stare wužiwarske mjeno',
 	'usermerge-badnewuser'      => 'Njepłaćiwe nowe wužiwarske mjeno',
 	'usermerge-nonewuser'       => 'Nowe wužiwarske mjeno faluje - najskerje ma so z $1 zjednoćić.<br /> Klikń na <u>Wužiwarske konta zjednoćić</u>, zo by potwerdźił.',
@@ -285,6 +286,9 @@ $messages['hsb'] = array(
 	'usermerge-logpage'         => 'Protokol wužiwarskich zjednoćenjow',
 	'usermerge-logpagetext'     => 'To je protokol wužiwarskich zjednoćenjow',
 	'usermerge-noselfdelete'    => 'Njemóžeš sam wušmórnyć abo zjednoćić!',
+	'usermerge-unmergable'      => 'Zjednoćenje wužiwarjow njemóžno - ID abo wužiwarske mjeno bu jako njezjednoćujomne definowane.',
+	'usermerge-protectedgroup'  => 'Zjednoćenje wužiwarjow njemóžno - wužiwar je w škitanej skupinje',
+	'right-usermerge'           => 'Wužiwarjow zjednoćić',
 );
 
 /** Haitian (Kreyòl ayisyen)
