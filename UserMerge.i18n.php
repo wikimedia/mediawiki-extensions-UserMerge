@@ -405,6 +405,7 @@ $messages['ksh'] = array(
  * @author Robby
  */
 $messages['lb'] = array(
+	'usermerge'                 => 'Benotzerkonten zesummeféieren a läschen',
 	'usermerge-badolduser'      => 'Ongëltegen ale Benotzernumm',
 	'usermerge-badnewuser'      => 'Ongëltegen neie Benotzernumm',
 	'usermerge-noolduser'       => 'Eidelen ale Benotzernumm',
@@ -619,7 +620,7 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 /** Russian (Русский)
  * @author Александр Сигачёв
  * @author Illusion
- * @author Illusion
+ * @author Innv
  */
 $messages['ru'] = array(
 	'usermerge'                 => 'Объединение и удаление учётных записей',
