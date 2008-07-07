@@ -799,7 +799,7 @@ $messages['zh-hant'] = array(
 	'usermerge-success' => '由 $1($2) 到 $3($4) 的合併已經完成。'
 );
 
-/** ‪中文(台灣)‬ (‪中文(台灣)‬)
+/** Taiwan Chinese (‪中文(台灣)‬)
  * @author Roc michael
  */
 $messages['zh-tw'] = array(
