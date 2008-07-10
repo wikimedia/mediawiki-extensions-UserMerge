@@ -150,28 +150,28 @@ $messages['br'] = array(
  * @author Raimond Spekking
  */
 $messages['de'] = array(
-	'usermerge'                     => 'Benutzerkonten zusammenführen und löschen',
-	'usermerge-desc'                => "[[Special:UserMerge|Führt Benutzerkonten in der Wiki-Datenbank zusammen]] - das alte Benutzerkonto wird nach der Zusammenführung gelöscht. Erfordert das ''usermerge''-Recht.",
-	'usermerge-badolduser' 		=> 'Ungültiger alter Benutzername',
-	'usermerge-badnewuser' 		=> 'Ungültiger neuer Benutzername',
-	'usermerge-nonewuser' 		=> 'Leerer neuer Benutzername - es wird eine Zusammenführung mit $1 vermutet.<br />Klicke <u>Benutzerkonten zusammenführen</u> zum Ausführen.',
-	'usermerge-noolduser' 		=> 'Leerer alter Benutzername',
-	'usermerge-olduser' 		=> 'Alter Benutzername (zusammenführen von)',
-	'usermerge-newuser' 		=> 'Neuer Benutzername (zusammenführen nach)',
-	'usermerge-deleteolduser' 	=> 'Alten Benutzernamen löschen?',
-	'usermerge-submit' 		=> 'Benutzerkonten zusammenführen',
-	'usermerge-badtoken' 		=> 'Ungültiges Bearbeiten-Token',
-	'usermerge-userdeleted' 	=> '$1 ($2) wurde gelöscht.',
-	'usermerge-userdeleted-log' 	=> 'Gelöschter Benutzername: $2 ($3)',
-	'usermerge-updating' 		=> 'Aktualisierung $1 Tabelle ($2 nach $3)',
-	'usermerge-success' 		=> 'Die Zusammenführung von $1 ($2) nach $3 ($4) ist vollständig.',
-	'usermerge-success-log' 	=> 'Benutzername $2 ($3) zusammengeführt mit $4 ($5)',
-	'usermerge-logpage'           	=> 'Benutzerkonten-Zusammenführungs-Logbuch',
-	'usermerge-logpagetext'       	=> 'Dies ist das Logbuch der Benutzerkonten-Zusammenführungen.',
-	'usermerge-noselfdelete'       	=> 'Zusammenführung mit sich selber ist nicht möglich!',
-	'usermerge-unmergable'		=> 'Zusammenführung nicht möglich - ID oder Benutzername wurde als nicht zusammenführbar definiert.',
-	'usermerge-protectedgroup'	=> 'Zusammenführung nicht möglich - Benutzername ist in einer geschützen Gruppe.',
-	'right-usermerge'               => 'Benutzerkonten vereinen',
+	'usermerge'                 => 'Benutzerkonten zusammenführen und löschen',
+	'usermerge-desc'            => "[[Special:UserMerge|Führt Benutzerkonten in der Wiki-Datenbank zusammen]] - das alte Benutzerkonto wird nach der Zusammenführung gelöscht. Erfordert das ''usermerge''-Recht.",
+	'usermerge-badolduser'      => 'Ungültiger alter Benutzername',
+	'usermerge-badnewuser'      => 'Ungültiger neuer Benutzername',
+	'usermerge-nonewuser'       => 'Leerer neuer Benutzername - es wird eine Zusammenführung mit $1 vermutet.<br />Klicke <u>Benutzerkonten zusammenführen</u> zum Ausführen.',
+	'usermerge-noolduser'       => 'Leerer alter Benutzername',
+	'usermerge-olduser'         => 'Alter Benutzername (zusammenführen von)',
+	'usermerge-newuser'         => 'Neuer Benutzername (zusammenführen nach)',
+	'usermerge-deleteolduser'   => 'Alten Benutzernamen löschen?',
+	'usermerge-submit'          => 'Benutzerkonten zusammenführen',
+	'usermerge-badtoken'        => 'Ungültiges Bearbeiten-Token',
+	'usermerge-userdeleted'     => '$1 ($2) wurde gelöscht.',
+	'usermerge-userdeleted-log' => 'Gelöschter Benutzername: $2 ($3)',
+	'usermerge-updating'        => 'Aktualisierung $1 Tabelle ($2 nach $3)',
+	'usermerge-success'         => 'Die Zusammenführung von $1 ($2) nach $3 ($4) ist vollständig.',
+	'usermerge-success-log'     => 'Benutzername $2 ($3) zusammengeführt mit $4 ($5)',
+	'usermerge-logpage'         => 'Benutzerkonten-Zusammenführungs-Logbuch',
+	'usermerge-logpagetext'     => 'Dies ist das Logbuch der Benutzerkonten-Zusammenführungen.',
+	'usermerge-noselfdelete'    => 'Zusammenführung mit sich selber ist nicht möglich!',
+	'usermerge-unmergable'      => 'Zusammenführung nicht möglich - ID oder Benutzername wurde als nicht zusammenführbar definiert.',
+	'usermerge-protectedgroup'  => 'Zusammenführung nicht möglich - Benutzername ist in einer geschützen Gruppe.',
+	'right-usermerge'           => 'Benutzerkonten vereinen',
 );
 
 /** Esperanto (Esperanto)
@@ -381,6 +381,7 @@ $messages['jv'] = array(
 
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
+ * @author Lovekhmer
  */
 $messages['km'] = array(
 	'usermerge'                 => 'បញ្ចូលរួមគ្នា និង​ លុបចេញ អ្នកប្រើប្រាស់',
@@ -390,6 +391,7 @@ $messages['km'] = array(
 	'usermerge-newuser'         => 'អ្នកប្រើប្រាស់ ថ្មី (បញ្ចូលរួមគ្នា ទៅ)',
 	'usermerge-deleteolduser'   => 'លុបចេញ អ្នកប្រើប្រាស់ ចាស់ ឬ ?',
 	'usermerge-submit'          => 'បញ្ចូលរួមគ្នា អ្នកប្រើប្រាស់',
+	'usermerge-userdeleted'     => '$1 ($2) ត្រូវបានលុបហើយ។',
 	'usermerge-userdeleted-log' => 'អ្នកប្រើប្រាស់ ត្រូវបានលុបចេញ ៖ $2 ($3)',
 	'usermerge-noselfdelete'    => 'អ្នកមិនអាច លុបចេញ ឬ បញ្ចូលរួមគ្នា ពីខ្លួនអ្នកផ្ទាល់ !',
 );
@@ -575,20 +577,23 @@ $messages['pl'] = array(
 	'right-usermerge'           => 'Scalanie użytkowników',
 );
 
+/** Piedmontese (Piemontèis)
+ * @author Bèrto 'd Sèra
+ */
 $messages['pms'] = array(
-	'usermerge' => 'Union e scancelament d\'utent',
-	'usermerge-badolduser' => 'Vej stranòm nen bon',
-	'usermerge-badnewuser' => 'Neuv stranòm nen bon',
-	'usermerge-nonewuser' => 'Neuv stranòm veujd - i la tnisoma bon për n\'union a $1.<br />de-ie \'n colp ansima a <u>Unì Utent</u> për aceté.',
-	'usermerge-noolduser' => 'Vej stranòm veujd',
-	'usermerge-olduser' => 'Vej stranòm (Unì da)',
-	'usermerge-newuser' => 'Neuv stranòm (Unì a)',
-	'usermerge-deleteolduser' => 'Veul-lo scancelé l\'utent vej?',
-	'usermerge-submit' => 'Unì Utent',
-	'usermerge-badtoken' => 'Geton d\'edission nen bon',
-	'usermerge-userdeleted' => '$1($2) a l\'é stàit scancelà.',
-	'usermerge-updating' => 'Antramentr ch\'i agiornoma la tàola $1 ($2 a $3)',
-	'usermerge-success' => 'Union da $1($2) a $3($4) completà.',
+	'usermerge'               => "Union e scancelament d'utent",
+	'usermerge-badolduser'    => 'Vej stranòm nen bon',
+	'usermerge-badnewuser'    => 'Neuv stranòm nen bon',
+	'usermerge-nonewuser'     => "Neuv stranòm veujd - i la tnisoma bon për n'union a $1.<br />de-ie 'n colp ansima a <u>Unì Utent</u> për aceté.",
+	'usermerge-noolduser'     => 'Vej stranòm veujd',
+	'usermerge-olduser'       => 'Vej stranòm (Unì da)',
+	'usermerge-newuser'       => 'Neuv stranòm (Unì a)',
+	'usermerge-deleteolduser' => "Veul-lo scancelé l'utent vej?",
+	'usermerge-submit'        => 'Unì Utent',
+	'usermerge-badtoken'      => "Geton d'edission nen bon",
+	'usermerge-userdeleted'   => "$1($2) a l'é stàit scancelà.",
+	'usermerge-updating'      => "Antramentr ch'i agiornoma la tàola $1 ($2 a $3)",
+	'usermerge-success'       => 'Union da $1($2) a $3($4) completà.',
 );
 
 /** Portuguese (Português)
@@ -751,52 +756,55 @@ $messages['tr'] = array(
 	'usermerge-deleteolduser' => 'Eski kullanıcı sil ?',
 );
 
+/** Yue (粵語) */
 $messages['yue'] = array(
-	'usermerge' => '用戶合併同刪除',
-	'usermerge-badolduser' => '無效嘅舊用戶名',
-	'usermerge-badnewuser' => '無效嘅新用戶名',
-	'usermerge-nonewuser' => '清除新用戶名 - 假設合併到$1。<br />撳<u>合併用戶</u>去接受。',
-	'usermerge-noolduser' => '清除舊用戶名',
-	'usermerge-olduser' => '舊用戶 (合併自)',
-	'usermerge-newuser' => '新用戶 (合併到)',
+	'usermerge'               => '用戶合併同刪除',
+	'usermerge-badolduser'    => '無效嘅舊用戶名',
+	'usermerge-badnewuser'    => '無效嘅新用戶名',
+	'usermerge-nonewuser'     => '清除新用戶名 - 假設合併到$1。<br />撳<u>合併用戶</u>去接受。',
+	'usermerge-noolduser'     => '清除舊用戶名',
+	'usermerge-olduser'       => '舊用戶 (合併自)',
+	'usermerge-newuser'       => '新用戶 (合併到)',
 	'usermerge-deleteolduser' => '刪舊用戶？',
-	'usermerge-submit' => '合併用戶',
-	'usermerge-badtoken' => '無效嘅編輯幣',
-	'usermerge-userdeleted' => '$1($2) 已經刪除咗。',
-	'usermerge-updating' => '更新緊 $1 表 ($2 到 $3)',
-	'usermerge-success' => '由 $1($2) 到 $3($4) 嘅合併已經完成。'
+	'usermerge-submit'        => '合併用戶',
+	'usermerge-badtoken'      => '無效嘅編輯幣',
+	'usermerge-userdeleted'   => '$1($2) 已經刪除咗。',
+	'usermerge-updating'      => '更新緊 $1 表 ($2 到 $3)',
+	'usermerge-success'       => '由 $1($2) 到 $3($4) 嘅合併已經完成。',
 );
 
+/** Simplified Chinese (‪中文(简体)‬) */
 $messages['zh-hans'] = array(
-	'usermerge' => '用户合并和删除',
-	'usermerge-badolduser' => '无效的旧用户名',
-	'usermerge-badnewuser' => '无效的新用户名',
-	'usermerge-nonewuser' => '清除新用户名 - 假设合并到$1。<br />点击<u>合并用户</u>以接受。',
-	'usermerge-noolduser' => '清除旧用户名',
-	'usermerge-olduser' => '旧用户 (合并自)',
-	'usermerge-newuser' => '新用户 (合并到)',
+	'usermerge'               => '用户合并和删除',
+	'usermerge-badolduser'    => '无效的旧用户名',
+	'usermerge-badnewuser'    => '无效的新用户名',
+	'usermerge-nonewuser'     => '清除新用户名 - 假设合并到$1。<br />点击<u>合并用户</u>以接受。',
+	'usermerge-noolduser'     => '清除旧用户名',
+	'usermerge-olduser'       => '旧用户 (合并自)',
+	'usermerge-newuser'       => '新用户 (合并到)',
 	'usermerge-deleteolduser' => '删除旧用户？',
-	'usermerge-submit' => '合并用户',
-	'usermerge-badtoken' => '无效的编辑币',
-	'usermerge-userdeleted' => '$1($2) 已删除。',
-	'usermerge-updating' => '正在更新 $1 表格 ($2 到 $3)',
-	'usermerge-success' => '由 $1($2) 到 $3($4) 的合并已经完成。'
+	'usermerge-submit'        => '合并用户',
+	'usermerge-badtoken'      => '无效的编辑币',
+	'usermerge-userdeleted'   => '$1($2) 已删除。',
+	'usermerge-updating'      => '正在更新 $1 表格 ($2 到 $3)',
+	'usermerge-success'       => '由 $1($2) 到 $3($4) 的合并已经完成。',
 );
 
+/** Traditional Chinese (‪中文(繁體)‬) */
 $messages['zh-hant'] = array(
-	'usermerge' => '用戶合併和刪除',
-	'usermerge-badolduser' => '無效的舊用戶名',
-	'usermerge-badnewuser' => '無效的新用戶名',
-	'usermerge-nonewuser' => '清除新用戶名 - 假設合併到$1。<br />點擊<u>合併用戶</u>以接受。',
-	'usermerge-noolduser' => '清除舊用戶名',
-	'usermerge-olduser' => '舊用戶 (合併自)',
-	'usermerge-newuser' => '新用戶 (合併到)',
+	'usermerge'               => '用戶合併和刪除',
+	'usermerge-badolduser'    => '無效的舊用戶名',
+	'usermerge-badnewuser'    => '無效的新用戶名',
+	'usermerge-nonewuser'     => '清除新用戶名 - 假設合併到$1。<br />點擊<u>合併用戶</u>以接受。',
+	'usermerge-noolduser'     => '清除舊用戶名',
+	'usermerge-olduser'       => '舊用戶 (合併自)',
+	'usermerge-newuser'       => '新用戶 (合併到)',
 	'usermerge-deleteolduser' => '刪除舊用戶？',
-	'usermerge-submit' => '合併用戶',
-	'usermerge-badtoken' => '無效的編輯幣',
-	'usermerge-userdeleted' => '$1($2) 已刪除。',
-	'usermerge-updating' => '正在更新 $1 表格 ($2 到 $3)',
-	'usermerge-success' => '由 $1($2) 到 $3($4) 的合併已經完成。'
+	'usermerge-submit'        => '合併用戶',
+	'usermerge-badtoken'      => '無效的編輯幣',
+	'usermerge-userdeleted'   => '$1($2) 已刪除。',
+	'usermerge-updating'      => '正在更新 $1 表格 ($2 到 $3)',
+	'usermerge-success'       => '由 $1($2) 到 $3($4) 的合併已經完成。',
 );
 
 /** Taiwan Chinese (‪中文(台灣)‬)
