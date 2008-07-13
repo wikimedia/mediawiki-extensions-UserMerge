@@ -384,15 +384,17 @@ $messages['jv'] = array(
  * @author Lovekhmer
  */
 $messages['km'] = array(
-	'usermerge'                 => 'បញ្ចូលរួមគ្នា និង​ លុបចេញ អ្នកប្រើប្រាស់',
+	'usermerge'                 => 'បញ្ចូលរួមគ្នា និង​លុបអ្នកប្រើប្រាស់',
 	'usermerge-badolduser'      => 'ឈ្មោះអ្នកប្រើប្រាស់ ចាស់ គ្មានសុពលភាព',
-	'usermerge-badnewuser'      => 'ឈ្មោះអ្នកប្រើប្រាស់ ថ្មី គ្មានសុពលភាព',
+	'usermerge-badnewuser'      => 'ឈ្មោះអ្នកប្រើប្រាស់ថ្មីមិនត្រឹមត្រូវទេ',
 	'usermerge-olduser'         => 'អ្នកប្រើប្រាស់ ចាស់ (បញ្ចូលរួមគ្នា ពី)',
 	'usermerge-newuser'         => 'អ្នកប្រើប្រាស់ ថ្មី (បញ្ចូលរួមគ្នា ទៅ)',
-	'usermerge-deleteolduser'   => 'លុបចេញ អ្នកប្រើប្រាស់ ចាស់ ឬ ?',
+	'usermerge-deleteolduser'   => 'លុបអ្នកប្រើប្រាស់ចាស់ឬ?',
 	'usermerge-submit'          => 'បញ្ចូលរួមគ្នា អ្នកប្រើប្រាស់',
 	'usermerge-userdeleted'     => '$1 ($2) ត្រូវបានលុបហើយ។',
 	'usermerge-userdeleted-log' => 'អ្នកប្រើប្រាស់ ត្រូវបានលុបចេញ ៖ $2 ($3)',
+	'usermerge-logpage'         => 'កំនត់ហេតុនៃការបញ្ចួលអ្នកប្រើប្រាស់រួមគ្នា',
+	'usermerge-logpagetext'     => 'នេះជាកំនត់ហេតុនៃសកម្មភាពបញ្ចូលអ្នកប្រើប្រាស់រួមគ្នា',
 	'usermerge-noselfdelete'    => 'អ្នកមិនអាច លុបចេញ ឬ បញ្ចូលរួមគ្នា ពីខ្លួនអ្នកផ្ទាល់ !',
 );
 
@@ -412,7 +414,9 @@ $messages['lb'] = array(
 	'usermerge-badnewuser'      => 'Ongëltegen neie Benotzernumm',
 	'usermerge-noolduser'       => 'Eidelen ale Benotzernumm',
 	'usermerge-deleteolduser'   => 'Ale Benotzer läschen?',
+	'usermerge-submit'          => 'Benotzerkonten zesummeféieren',
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
+	'usermerge-logpage'         => 'Lëscht vun de Benotzerkonten déi zesummegeféiert goufen',
 );
 
 /** Malayalam (മലയാളം)
