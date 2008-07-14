@@ -348,6 +348,13 @@ Klik <u>Gabungkan Pengguna</u> untuk melanjutkan.',
 	'right-usermerge'           => 'Gabungkan pengguna',
 );
 
+/** Italian (Italiano)
+ * @author Pietrodn
+ */
+$messages['it'] = array(
+	'usermerge-badtoken' => 'Edit token non valido',
+);
+
 /** Japanese (日本語)
  * @author Mzm5zbC3
  */
