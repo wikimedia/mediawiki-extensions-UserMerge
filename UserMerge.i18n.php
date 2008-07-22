@@ -350,9 +350,32 @@ Klik <u>Gabungkan Pengguna</u> untuk melanjutkan.',
 
 /** Italian (Italiano)
  * @author Pietrodn
+ * @author Darth Kule
  */
 $messages['it'] = array(
-	'usermerge-badtoken' => 'Edit token non valido',
+	'usermerge'                 => 'Unione e cancellazione utenti',
+	'usermerge-desc'            => "[[Special:UserMerge|Unisce i riferimenti di un utente con quelli di un altro]] nel database della wiki e inoltre cancellerà il vecchio utente dopo l'unione. Richiede privilegi ''usermerge''",
+	'usermerge-badolduser'      => 'Vecchio nome utente non valido',
+	'usermerge-badnewuser'      => 'Nuovo nome utente non valido',
+	'usermerge-nonewuser'       => "Nuovo nome utente vuoto - l'unione verrà effettuata con l'utente $1.<br />
+Fai clic su <u>Unisci Utente</u> per accettare.",
+	'usermerge-noolduser'       => 'Vecchio nome utente vuoto',
+	'usermerge-olduser'         => 'Vecchio utente (unisci da)',
+	'usermerge-newuser'         => 'Nuovo utente (unisci a)',
+	'usermerge-deleteolduser'   => 'Cancellare vecchio utente?',
+	'usermerge-submit'          => 'Unisci utente',
+	'usermerge-badtoken'        => 'Edit token non valido',
+	'usermerge-userdeleted'     => '$1 ($2) è stato cancellato.',
+	'usermerge-userdeleted-log' => 'Utente cancellato: $2 ($3)',
+	'usermerge-updating'        => 'Aggiornamento tabella $1 ($2 a $3)',
+	'usermerge-success'         => "L'unione di $1 ($2) a $3 ($4) è completa.",
+	'usermerge-success-log'     => 'Utente $2 ($3) unito a $4 ($5)',
+	'usermerge-logpage'         => 'Log unione utente',
+	'usermerge-logpagetext'     => 'Di seguito viene presentato il registro delle unioni di utenti',
+	'usermerge-noselfdelete'    => 'Non puoi cancellare o unire il tuo account!',
+	'usermerge-unmergable'      => "Impossibile unire da questo utente - l'ID o il nome è stato definito non unibile.",
+	'usermerge-protectedgroup'  => "Impossibile unire da questo utente - l'utente fa parte di un gruppo protetto.",
+	'right-usermerge'           => 'Unisce utenti',
 );
 
 /** Japanese (日本語)
