@@ -37,14 +37,15 @@ Click <u>Merge User</u> to accept.',
  * @author OsamaK
  */
 $messages['ar'] = array(
-	'usermerge'                 => 'دمج وحذف المستخدم',
+	'usermerge'                 => 'دمج وحذف المستخدمين',
 	'usermerge-desc'            => "[[Special:UserMerge|يدمج المراجع من مستخدم إلى آخر]] في قاعدة بيانات الويكي - سيحذف أيضا المستخدمين القدامى بعد الدمج. يتطلب صلاحيات ''usermerge''",
 	'usermerge-badolduser'      => 'اسم المستخدم القديم غير صحيح',
-	'usermerge-badnewuser'      => 'المستخدم الجديد غير صحيح',
-	'usermerge-nonewuser'       => 'اسم مستخدم جديد فارغ - افتراض الدمج إلى $1.<br />اضغط <u>دمج المستخدم</u> للقبول.',
+	'usermerge-badnewuser'      => 'اسم المستخدم الجديد غير صحيح',
+	'usermerge-nonewuser'       => 'اسم مستخدم جديد فارغ - افتراض الدمج إلى $1.<br />
+اضغط <u>دمج المستخدم</u> للقبول.',
 	'usermerge-noolduser'       => 'اسم المستخدم القديم فارغ',
-	'usermerge-olduser'         => 'مستخدم قديم(دمج من)',
-	'usermerge-newuser'         => 'مستخدم جديد(دمج إلى)',
+	'usermerge-olduser'         => 'مستخدم قديم (دمج من)',
+	'usermerge-newuser'         => 'مستخدم جديد (دمج إلى)',
 	'usermerge-deleteolduser'   => 'حذف المستخدم القديم؟',
 	'usermerge-submit'          => 'دمج المستخدم',
 	'usermerge-badtoken'        => 'نص تعديل غير صحيح',
@@ -54,11 +55,11 @@ $messages['ar'] = array(
 	'usermerge-success'         => 'الدمج من $1($2) إلى $3($4) اكتمل.',
 	'usermerge-success-log'     => 'المستخدم $2($3) تم دمجه مع $4($5)',
 	'usermerge-logpage'         => 'سجل دمج المستخدم',
-	'usermerge-logpagetext'     => 'هذا سجل بعمليات دمج المستخدمين',
+	'usermerge-logpagetext'     => 'هذا سجل بأفعال دمج المستخدمين',
 	'usermerge-noselfdelete'    => 'لا يمكنك حذف أو دمج من نفسك!',
 	'usermerge-unmergable'      => 'غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.',
 	'usermerge-protectedgroup'  => 'غير قادر على الدمج من المستخدم - المستخدم في مجموعة محمية.',
-	'right-usermerge'           => 'دمج مستخدمين',
+	'right-usermerge'           => 'دمج المستخدمين',
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
@@ -319,6 +320,13 @@ Klike (prese) <u>Mèt ansanm kont Itilizatè</u> pou aksepte operasyon an.',
 	'usermerge-protectedgroup'  => 'Nou pa kapab mèt ansanm kont itilizatè yo - itilizatè sa a nan yon gwoup ki pwoteje.',
 );
 
+/** Hungarian (Magyar)
+ * @author Dani
+ */
+$messages['hu'] = array(
+	'right-usermerge' => 'szerkesztők egyesítése',
+);
+
 /** Indonesian (Bahasa Indonesia)
  * @author Rex
  */
@@ -414,18 +422,21 @@ $messages['jv'] = array(
  * @author Lovekhmer
  */
 $messages['km'] = array(
-	'usermerge'                 => 'បញ្ចូលរួមគ្នា និង​លុបអ្នកប្រើប្រាស់',
-	'usermerge-badolduser'      => 'ឈ្មោះអ្នកប្រើប្រាស់ ចាស់ គ្មានសុពលភាព',
+	'usermerge'                 => 'បញ្ចូលរួមគ្នានិង​លុបអ្នកប្រើប្រាស់',
+	'usermerge-badolduser'      => 'ឈ្មោះអ្នកប្រើប្រាស់ចាស់មិនត្រឹមត្រូវទេ',
 	'usermerge-badnewuser'      => 'ឈ្មោះអ្នកប្រើប្រាស់ថ្មីមិនត្រឹមត្រូវទេ',
-	'usermerge-olduser'         => 'អ្នកប្រើប្រាស់ ចាស់ (បញ្ចូលរួមគ្នា ពី)',
-	'usermerge-newuser'         => 'អ្នកប្រើប្រាស់ ថ្មី (បញ្ចូលរួមគ្នា ទៅ)',
+	'usermerge-olduser'         => 'អ្នកប្រើប្រាស់ចាស់(បញ្ចូលរួមគ្នាពី)',
+	'usermerge-newuser'         => 'អ្នកប្រើប្រាស់ថ្មី(បញ្ចូលរួមគ្នាទៅ)',
 	'usermerge-deleteolduser'   => 'លុបអ្នកប្រើប្រាស់ចាស់ឬ?',
 	'usermerge-submit'          => 'បញ្ចូលរួមគ្នា អ្នកប្រើប្រាស់',
 	'usermerge-userdeleted'     => '$1 ($2) ត្រូវបានលុបហើយ។',
-	'usermerge-userdeleted-log' => 'អ្នកប្រើប្រាស់ ត្រូវបានលុបចេញ ៖ $2 ($3)',
+	'usermerge-userdeleted-log' => 'វបានលុបអ្នកប្រើប្រាស់៖ $2($3)',
+	'usermerge-success'         => 'ការបញ្ចូលរួមគ្នាពី$1($2)ទៅ$3($4)បានបញ្ចប់ដោយពេញលេញ។',
 	'usermerge-logpage'         => 'កំនត់ហេតុនៃការបញ្ចួលអ្នកប្រើប្រាស់រួមគ្នា',
 	'usermerge-logpagetext'     => 'នេះជាកំនត់ហេតុនៃសកម្មភាពបញ្ចូលអ្នកប្រើប្រាស់រួមគ្នា',
 	'usermerge-noselfdelete'    => 'អ្នកមិនអាច លុបចេញ ឬ បញ្ចូលរួមគ្នា ពីខ្លួនអ្នកផ្ទាល់ !',
+	'usermerge-protectedgroup'  => 'មិនអាចបញ្ចូលអ្នកប្រើប្រាស់រួមគ្នាបានទេ - អ្នកប្រើប្រាស់ស្ថិតនៅក្នុងក្រុមដែលបានការពារ។',
+	'right-usermerge'           => 'បញ្ចូលអ្នកប្រើប្រាស់រួមគ្នា',
 );
 
 /** Ripoarisch (Ripoarisch)
