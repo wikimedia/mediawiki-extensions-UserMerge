@@ -55,7 +55,7 @@ $messages['ar'] = array(
 	'usermerge-success'         => 'الدمج من $1($2) إلى $3($4) اكتمل.',
 	'usermerge-success-log'     => 'المستخدم $2($3) تم دمجه مع $4($5)',
 	'usermerge-logpage'         => 'سجل دمج المستخدم',
-	'usermerge-logpagetext'     => 'هذا سجل بأفعال دمج المستخدمين',
+	'usermerge-logpagetext'     => 'هذا سجل بأفعال دمج المستخدمين.',
 	'usermerge-noselfdelete'    => 'لا يمكنك حذف أو دمج من نفسك!',
 	'usermerge-unmergable'      => 'غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.',
 	'usermerge-protectedgroup'  => 'غير قادر على الدمج من المستخدم - المستخدم في مجموعة محمية.',
@@ -71,6 +71,7 @@ $messages['be-tarask'] = array(
 
 /** Bulgarian (Български)
  * @author DCLXVI
+ * @author Jon Harald Søby
  */
 $messages['bg'] = array(
 	'usermerge'                 => 'Сливане и изтриване на потребители',
@@ -87,7 +88,7 @@ $messages['bg'] = array(
 	'usermerge-success'         => 'Сливането от $1 ($2) към $3 ($4) приключи.',
 	'usermerge-success-log'     => 'Потребител $2 ($3) беше слят с $4 ($5)',
 	'usermerge-logpage'         => 'Дневник на потребителските сливания',
-	'usermerge-logpagetext'     => 'Тази страница съдържа дневник на потребителските сливания',
+	'usermerge-logpagetext'     => 'Тази страница съдържа дневник на потребителските сливания.',
 	'usermerge-noselfdelete'    => 'Не е възможно да изтривате или сливате от себе си!',
 	'usermerge-unmergable'      => 'Сливането от потребителя е невъзможно - името или ID е отбелязано като несливаемо.',
 	'usermerge-protectedgroup'  => 'Невъзможно е да се извърши сливане от потребител - потребителят е в защитена група.',
@@ -123,6 +124,7 @@ $messages['bn'] = array(
 
 /** Breton (Brezhoneg)
  * @author Fulup
+ * @author Jon Harald Søby
  */
 $messages['br'] = array(
 	'usermerge'                 => 'Kendeuziñ an implijer ha diverkañ',
@@ -142,7 +144,7 @@ $messages['br'] = array(
 	'usermerge-success'         => 'Kendeuzadenn adal $1 ($2) davet $3 ($4) kaset da benn vat.',
 	'usermerge-success-log'     => 'Implijer $2 ($3) kendeuzet davet $4 ($5)',
 	'usermerge-logpage'         => 'Marilh kendeuzadennoù an implijerien',
-	'usermerge-logpagetext'     => 'Setu aze marilh kendeuzadennoù an implijerien',
+	'usermerge-logpagetext'     => 'Setu aze marilh kendeuzadennoù an implijerien.',
 	'usermerge-noselfdelete'    => "N'hallit ket diverkañ pe kendeuziñ adal pe davedoc'h hoc'h-unan",
 	'usermerge-unmergable'      => 'Dibosupl kendeuziñ adal un implijer - un niv. anaout pe un anv bet termenet evel digendeuzadus.',
 );
@@ -199,6 +201,7 @@ $messages['fi'] = array(
  * @author Guillom
  * @author Urhixidur
  * @author IAlex
+ * @author Jon Harald Søby
  */
 $messages['fr'] = array(
 	'usermerge'                 => 'Fusionner utilisateur et détruire',
@@ -220,7 +223,7 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'usermerge-success'         => 'La fusion de $1($2) à $3($4) est terminée.',
 	'usermerge-success-log'     => 'Contributeur $2($3) fusionné avec $4($5)',
 	'usermerge-logpage'         => 'Journal des fusions de contributeurs',
-	'usermerge-logpagetext'     => 'Ceci est un journal des actions de fusions de contributeurs',
+	'usermerge-logpagetext'     => 'Ceci est un journal des actions de fusions de contributeurs.',
 	'usermerge-noselfdelete'    => 'Vous ne pouvez pas vous supprimer ou vous fusionner vous-même !',
 	'usermerge-unmergable'      => "Ne peut fusionner à partir d'un utilisateur, d'un numéro d'identification ou un nom qui ont été définis comme non fusionnables.",
 	'usermerge-protectedgroup'  => "Impossible de fusionner à partir d'un utilisateur - l'utilisateur se trouve dans un groupe protégé.",
@@ -230,6 +233,7 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 /** Galician (Galego)
  * @author Toliño
  * @author Alma
+ * @author Jon Harald Søby
  */
 $messages['gl'] = array(
 	'usermerge'                 => 'Fusionar e eliminar usuario',
@@ -250,7 +254,7 @@ Prema en <u>Fusionar o usuario</u> para aceptar.',
 	'usermerge-success'         => 'A fusión desde $1 ($2) a $3 ($4) foi completada.',
 	'usermerge-success-log'     => 'Usuario $2 ($3) fusionado con $4 ($5)',
 	'usermerge-logpage'         => 'Rexistro de fusión de usuarios',
-	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios',
+	'usermerge-logpagetext'     => 'Este é un rexistro das accións de fusión de usuarios.',
 	'usermerge-noselfdelete'    => 'Non se pode eliminar ou fusionar a si mesmo!',
 	'usermerge-unmergable'      => 'Non se pode fusionar o usuario (o ID ou o nome foron definidos como "non fusionables").',
 	'usermerge-protectedgroup'  => 'Non se pode fusionar o usuario (o usuario está nun frupo protexido).',
@@ -266,6 +270,7 @@ $messages['hi'] = array(
 
 /** Upper Sorbian (Hornjoserbsce)
  * @author Michawiki
+ * @author Jon Harald Søby
  */
 $messages['hsb'] = array(
 	'usermerge'                 => 'Wužiwarske konta zjednoćić a zničić',
@@ -285,7 +290,7 @@ $messages['hsb'] = array(
 	'usermerge-success'         => 'Zjednoćenje wot $1($2) do $3($4) je dokónčene.',
 	'usermerge-success-log'     => 'Wužiwar $2($3) je so z $4 ($5) zjednoćił',
 	'usermerge-logpage'         => 'Protokol wužiwarskich zjednoćenjow',
-	'usermerge-logpagetext'     => 'To je protokol wužiwarskich zjednoćenjow',
+	'usermerge-logpagetext'     => 'To je protokol wužiwarskich zjednoćenjow.',
 	'usermerge-noselfdelete'    => 'Njemóžeš sam wušmórnyć abo zjednoćić!',
 	'usermerge-unmergable'      => 'Zjednoćenje wužiwarjow njemóžno - ID abo wužiwarske mjeno bu jako njezjednoćujomne definowane.',
 	'usermerge-protectedgroup'  => 'Zjednoćenje wužiwarjow njemóžno - wužiwar je w škitanej skupinje',
@@ -314,7 +319,7 @@ Klike (prese) <u>Mèt ansanm kont Itilizatè</u> pou aksepte operasyon an.',
 	'usermerge-success'         => 'Nou rive mèt ansanm $1 ($2) ak $3 ($4), depi premye kont an.',
 	'usermerge-success-log'     => 'Itilizatè $2 ($3) fizyone ak $4 ($5)',
 	'usermerge-logpage'         => 'Jounal itilizatè pou referans fizyon, "mèt ansanm kont itilizatè yo"',
-	'usermerge-logpagetext'     => "Sa se yon jounal ki ap reprann tout aksyon ki fèt nan seksyon 'Mèt ansanm kont itilizatè yo, fizyone'",
+	'usermerge-logpagetext'     => "Men jounal ki ap reprann tout aksyon ki fèt nan seksyon 'Mete ansanm kont itilizatè yo, fizyone yo'.",
 	'usermerge-noselfdelete'    => 'Ou pa kapab efase tèt ou oubyen mèt yon lòt kont sou tèt ou, depi kont ou an menm.',
 	'usermerge-unmergable'      => 'Nou pa kapab mèt ansanm kont sa yo - ID an oubyen non an pa kapab mete ansanm, li sanble l make nan definisyon yo.',
 	'usermerge-protectedgroup'  => 'Nou pa kapab mèt ansanm kont itilizatè yo - itilizatè sa a nan yon gwoup ki pwoteje.',
@@ -329,6 +334,7 @@ $messages['hu'] = array(
 
 /** Indonesian (Bahasa Indonesia)
  * @author Rex
+ * @author Jon Harald Søby
  */
 $messages['id'] = array(
 	'usermerge'                 => 'Penggabungan dan penghapusan Pengguna',
@@ -349,7 +355,7 @@ Klik <u>Gabungkan Pengguna</u> untuk melanjutkan.',
 	'usermerge-success'         => '$1 ($2) telah selesai digabungkan ke $3 ($4).',
 	'usermerge-success-log'     => 'Pengguna $2 ($3) telah digabungkan ke $4 ($5)',
 	'usermerge-logpage'         => 'Log penggabungan pengguna',
-	'usermerge-logpagetext'     => 'Ini adalah catatan tindakan penggabungan pengguna',
+	'usermerge-logpagetext'     => 'Ini adalah catatan tindakan penggabungan pengguna.',
 	'usermerge-noselfdelete'    => 'Anda tidak dapat menghapus atau menggabungkan dari Anda sendiri!',
 	'usermerge-unmergable'      => 'Tidak dapat menggabungkan dari pengguna ini - nomor ID atau nama akun ini telah ditandai sebagai akun yang tidak dapat digabungkan.',
 	'usermerge-protectedgroup'  => 'Tidak dapat menggabungkan dari pengguna ini - pengguna ini termasuk dalam kelompok terproteksi.',
@@ -379,7 +385,7 @@ Fai clic su <u>Unisci Utente</u> per accettare.",
 	'usermerge-success'         => "L'unione di $1 ($2) a $3 ($4) è completa.",
 	'usermerge-success-log'     => 'Utente $2 ($3) unito a $4 ($5)',
 	'usermerge-logpage'         => 'Log unione utente',
-	'usermerge-logpagetext'     => 'Di seguito viene presentato il registro delle unioni di utenti',
+	'usermerge-logpagetext'     => 'Di seguito sono elencate le azioni di unione di utenti.',
 	'usermerge-noselfdelete'    => 'Non puoi cancellare o unire il tuo account!',
 	'usermerge-unmergable'      => "Impossibile unire da questo utente - l'ID o il nome è stato definito non unibile.",
 	'usermerge-protectedgroup'  => "Impossibile unire da questo utente - l'utente fa parte di un gruppo protetto.",
@@ -400,6 +406,7 @@ $messages['ja'] = array(
 
 /** Javanese (Basa Jawa)
  * @author Meursault2004
+ * @author Jon Harald Søby
  */
 $messages['jv'] = array(
 	'usermerge'                 => 'Panggabungan lan pambusakan panganggo',
@@ -412,7 +419,7 @@ $messages['jv'] = array(
 	'usermerge-userdeleted-log' => 'Panganggo dibusak: $2 ($3)',
 	'usermerge-updating'        => 'Nganyari tabèl $1 ($2 menyang $3)',
 	'usermerge-logpage'         => 'Log panggabungan panganggo',
-	'usermerge-logpagetext'     => 'Iki sawijining log aksi panggabungan panganggo',
+	'usermerge-logpagetext'     => 'Iki sawijining log aksi panggabungan panganggo.',
 	'usermerge-noselfdelete'    => 'Panjenengan ora bisa mbusak utawa nggabung saka panjenengan dhéwé!',
 	'right-usermerge'           => 'Gabung panganggo',
 );
@@ -458,6 +465,7 @@ $messages['lb'] = array(
 	'usermerge-submit'          => 'Benotzerkonten zesummeféieren',
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
 	'usermerge-logpage'         => 'Lëscht vun de Benotzerkonten déi zesummegeféiert goufen',
+	'right-usermerge'           => 'Benotzer zesummeféieren',
 );
 
 /** Malayalam (മലയാളം)
@@ -565,6 +573,7 @@ $messages['no'] = array(
 
 /** Occitan (Occitan)
  * @author Cedric31
+ * @author Jon Harald Søby
  */
 $messages['oc'] = array(
 	'usermerge'                 => 'Fusionar utilizaire e destruire',
@@ -584,7 +593,7 @@ $messages['oc'] = array(
 	'usermerge-success'         => 'La fusion de $1($2) a $3($4) es completada.',
 	'usermerge-success-log'     => 'Contributor $2($3) fusionat amb $4($5)',
 	'usermerge-logpage'         => 'Jornal de las fusions de contributors',
-	'usermerge-logpagetext'     => 'Aquò es un jornal de las accions de fusions de contributors',
+	'usermerge-logpagetext'     => 'Aquò es un jornal de las accions de fusions de contributors.',
 	'usermerge-noselfdelete'    => 'Podètz pas, vos-meteis, vos suprimir ni vos fusionar !',
 	'usermerge-unmergable'      => "Pòt pas fusionar a partir d'un utilizaire, d'un numèro d'identificacion o un nom que son estats definits coma non fusionables.",
 	'usermerge-protectedgroup'  => "Impossible de fusionar a partir d'un utilizaire - l'utilizaire se tròba dins un grop protegit.",
@@ -596,6 +605,7 @@ $messages['oc'] = array(
  * @author Sp5uhe
  * @author Derbeth
  * @author Wpedzich
+ * @author Jon Harald Søby
  */
 $messages['pl'] = array(
 	'usermerge'                 => 'Integruj i usuń użytkowników',
@@ -615,7 +625,7 @@ $messages['pl'] = array(
 	'usermerge-success'         => 'Integracja $1 ($2) z $3 ($4) zakończona.',
 	'usermerge-success-log'     => 'zintegrował użytkownika „$2” ($3) do „$4” ($5)',
 	'usermerge-logpage'         => 'Rejestr integracji użytkowników',
-	'usermerge-logpagetext'     => 'To jest rejestr operacji integracji użytkowników',
+	'usermerge-logpagetext'     => 'To jest rejestr operacji integracji użytkowników.',
 	'usermerge-noselfdelete'    => 'Nie możesz usunąć lub połączyć samego siebie!',
 	'usermerge-unmergable'      => 'Nie można zintegrować użytkownika – identyfikator lub nazwa zostały zdefiniowane jako nieintegrowalne.',
 	'usermerge-protectedgroup'  => 'Nie można zintegrować użytkownika – jest członkiem zabezpieczonej grupy.',
@@ -644,6 +654,7 @@ $messages['pms'] = array(
 /** Portuguese (Português)
  * @author Malafaya
  * @author Lijealso
+ * @author Jon Harald Søby
  */
 $messages['pt'] = array(
 	'usermerge'                 => 'Fusão e eliminação de utilizadores',
@@ -662,7 +673,7 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 	'usermerge-success'         => 'Fusão de $1 ($2) para $3 ($4) está completa.',
 	'usermerge-success-log'     => 'Usuário $2 ($3) fundido com $4 ($5)',
 	'usermerge-logpage'         => 'Registo de fusão de utilizadores',
-	'usermerge-logpagetext'     => 'Este é um registo de acções de fusão de utilizadores',
+	'usermerge-logpagetext'     => 'Este é um registo de acções de fusão de utilizadores.',
 	'usermerge-noselfdelete'    => 'Você não pode apagar ou fundir a partir de si próprio!',
 	'right-usermerge'           => 'Fundir utilizadores',
 );
@@ -671,6 +682,7 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
  * @author Александр Сигачёв
  * @author Illusion
  * @author Innv
+ * @author Jon Harald Søby
  */
 $messages['ru'] = array(
 	'usermerge'                 => 'Объединение и удаление учётных записей',
@@ -680,12 +692,13 @@ $messages['ru'] = array(
 	'usermerge-userdeleted-log' => 'Удалён участник $2 ($3)',
 	'usermerge-success-log'     => 'Участник $2 ($3) объединён в $4 ($5)',
 	'usermerge-logpage'         => 'Журнал объединения участников',
-	'usermerge-logpagetext'     => 'Это журнал объединения учётных записей',
+	'usermerge-logpagetext'     => 'Это журнал объединения учётных записей.',
 	'right-usermerge'           => 'объединение участников',
 );
 
 /** Slovak (Slovenčina)
  * @author Helix84
+ * @author Jon Harald Søby
  */
 $messages['sk'] = array(
 	'usermerge'                 => 'Zlúčenie a zmazanie používateľov',
@@ -705,7 +718,7 @@ $messages['sk'] = array(
 	'usermerge-success'         => 'Zlúčenie z $1($2) do $3($4) je dokončené.',
 	'usermerge-success-log'     => 'Používateľ $2($3) bol zlúčený do $4($5)',
 	'usermerge-logpage'         => 'Záznam zlúčení používateľov',
-	'usermerge-logpagetext'     => 'Toto je záznam zlúčení používateľov',
+	'usermerge-logpagetext'     => 'Toto je záznam zlúčení používateľov.',
 	'usermerge-noselfdelete'    => 'Nemôžete zmazať alebo zlúčiť svoj účet!',
 	'usermerge-unmergable'      => 'Nebolo možné vykonať zlúčenie používateľa - zdrojové meno alebo ID bolo definované ako nezlúčiteľné.',
 	'usermerge-protectedgroup'  => 'Nebolo možné zlúčiť uvedeného používateľa - používateľ je v chránenej skupine.',
@@ -776,6 +789,7 @@ $messages['te'] = array(
 
 /** Tajik (Cyrillic) (Тоҷикӣ/tojikī (Cyrillic))
  * @author Ibrahim
+ * @author Jon Harald Søby
  */
 $messages['tg-cyrl'] = array(
 	'usermerge'                 => 'Идгом ва ҳафзи корбар',
@@ -788,7 +802,7 @@ $messages['tg-cyrl'] = array(
 	'usermerge-submit'          => 'Идғоми корбар',
 	'usermerge-userdeleted-log' => 'Корбари ҳазфшуда: $2 ($3)',
 	'usermerge-logpage'         => 'Гузориши идғоми корбар',
-	'usermerge-logpagetext'     => 'Ин гузориши амалҳои идғоми корбар аст',
+	'usermerge-logpagetext'     => 'Ин гузориши амалҳои идғоми корбар аст.',
 );
 
 /** Turkish (Türkçe)
