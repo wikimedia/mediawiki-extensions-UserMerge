@@ -177,6 +177,13 @@ $messages['de'] = array(
 	'right-usermerge'           => 'Benutzerkonten vereinen',
 );
 
+/** Greek (Ελληνικά)
+ * @author Consta
+ */
+$messages['el'] = array(
+	'usermerge-deleteolduser' => 'Διαγραφή παλαιού χρήστη;',
+);
+
 /** Esperanto (Esperanto)
  * @author Yekrats
  */
