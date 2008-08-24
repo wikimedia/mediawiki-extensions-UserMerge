@@ -658,6 +658,14 @@ $messages['pms'] = array(
 	'usermerge-success' => 'Union da $1($2) a $3($4) completà.',
 );
 
+/** Pashto (پښتو)
+ * @author Ahmed-Najib-Biabani-Ibrahimkhel
+ */
+$messages['ps'] = array(
+	'usermerge-badnewuser' => 'نوی کارن-نوم مو ناسم دی',
+	'usermerge-deleteolduser' => 'آيا زوړ کارونکی ړنګوې؟',
+);
+
 /** Portuguese (Português)
  * @author Lijealso
  * @author Malafaya
