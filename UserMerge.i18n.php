@@ -33,6 +33,7 @@ Click <u>Merge User</u> to accept.',
 );
 
 /** Message documentation (Message documentation)
+ * @author Jon Harald Søby
  * @author Meno25
  */
 $messages['qqq'] = array(
