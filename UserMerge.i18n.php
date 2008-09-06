@@ -71,6 +71,35 @@ $messages['ar'] = array(
 	'right-usermerge' => 'دمج المستخدمين',
 );
 
+/** Egyptian Spoken Arabic (مصرى)
+ * @author Meno25
+ */
+$messages['arz'] = array(
+	'usermerge' => 'دمج وحذف المستخدمين',
+	'usermerge-desc' => "[[Special:UserMerge|يدمج المراجع من مستخدم إلى آخر]] فى قاعدة بيانات الويكى - سيحذف أيضا المستخدمين القدامى بعد الدمج. يتطلب صلاحيات ''usermerge''",
+	'usermerge-badolduser' => 'اسم المستخدم القديم غير صحيح',
+	'usermerge-badnewuser' => 'اسم المستخدم الجديد غير صحيح',
+	'usermerge-nonewuser' => 'اسم مستخدم جديد فارغ - افتراض الدمج إلى $1.<br />
+اضغط <u>دمج المستخدم</u> للقبول.',
+	'usermerge-noolduser' => 'اسم المستخدم القديم فارغ',
+	'usermerge-olduser' => 'مستخدم قديم (دمج من)',
+	'usermerge-newuser' => 'مستخدم جديد (دمج إلى)',
+	'usermerge-deleteolduser' => 'حذف المستخدم القديم؟',
+	'usermerge-submit' => 'دمج المستخدم',
+	'usermerge-badtoken' => 'نص تعديل غير صحيح',
+	'usermerge-userdeleted' => '$1($2) تم حذفه.',
+	'usermerge-userdeleted-log' => 'حذف المستخدم: $2($3)',
+	'usermerge-updating' => 'تحديث $1 جدول ($2 إلى $3)',
+	'usermerge-success' => 'الدمج من $1($2) إلى $3($4) اكتمل.',
+	'usermerge-success-log' => 'المستخدم $2($3) تم دمجه مع $4($5)',
+	'usermerge-logpage' => 'سجل دمج المستخدم',
+	'usermerge-logpagetext' => 'هذا سجل بأفعال دمج المستخدمين.',
+	'usermerge-noselfdelete' => 'لا يمكنك حذف أو دمج من نفسك!',
+	'usermerge-unmergable' => 'غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.',
+	'usermerge-protectedgroup' => 'غير قادر على الدمج من المستخدم - المستخدم فى مجموعة محمية.',
+	'right-usermerge' => 'دمج المستخدمين',
+);
+
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  */
@@ -825,6 +854,35 @@ $messages['tr'] = array(
 	'usermerge-badnewuser' => 'Geçersiz yeni kullanıcı',
 	'usermerge-noolduser' => 'Boş eski kullanıcı adı',
 	'usermerge-deleteolduser' => 'Eski kullanıcı sil ?',
+);
+
+/** Vietnamese (Tiếng Việt)
+ * @author Vinhtantran
+ */
+$messages['vi'] = array(
+	'usermerge' => 'Trộn và xóa thành viên',
+	'usermerge-desc' => "[[Special:UserMerge|Trộn các tham chiếu từ thành viên này sang một thành viên khác]] trong cơ sở dữ liệu wiki - đồng thời xóa thành viên cũ sau khi trộn. Cần phải có quyền ''usermerge''",
+	'usermerge-badolduser' => 'Tên thành viên cũ không hợp lệ',
+	'usermerge-badnewuser' => 'Tên thành viên mới không hợp lệ',
+	'usermerge-nonewuser' => 'Tên thành viên mới trống - giả thiết là trộn với $1.<br />
+Nhất <u>Trộn Thành viên</u> để chấp nhận.',
+	'usermerge-noolduser' => 'Tên thành viên cũ trống',
+	'usermerge-olduser' => 'Thành viên cũ (trộn từ đây)',
+	'usermerge-newuser' => 'Tên thành viên mới (trộn đến đây)',
+	'usermerge-deleteolduser' => 'Xóa thành viên cũ?',
+	'usermerge-submit' => 'Trộn thành viên',
+	'usermerge-badtoken' => 'Thẻ sửa đổi không hợp lệ',
+	'usermerge-userdeleted' => '$1 ($2) đã bị xóa.',
+	'usermerge-userdeleted-log' => 'Người đã xóa: $2 ($3)',
+	'usermerge-updating' => 'Đang cập nhật bảng $1 ($2 sang $3)',
+	'usermerge-success' => 'Việc trộn từ $1 ($2) đến $3 ($4) đã hoàn thành.',
+	'usermerge-success-log' => 'Thành viên $2 ($3) đã được trộn sang $4 ($5)',
+	'usermerge-logpage' => 'Nhật trình trộn thành viên',
+	'usermerge-logpagetext' => 'Đây là nhật trình ghi lại các tác vụ trộn thành viên.',
+	'usermerge-noselfdelete' => 'Bạn không thể xóa hoặc trộn từ chính bạn!',
+	'usermerge-unmergable' => 'Không thể trộn từ thành viên này - mã số hoặc tên đã được định nghĩa là không thể trộn.',
+	'usermerge-protectedgroup' => 'Không thể trộn từ thành viên này - thành viên này thuộc nhóm được bảo vệ.',
+	'right-usermerge' => 'Trộn thành viên',
 );
 
 /** Yue (粵語) */
