@@ -24,6 +24,16 @@ $aliases['arz'] = array(
 	'UserMerge' => array( 'دمج_مستخدم' ),
 );
 
+/** Assamese (অসমীয়া) */
+$aliases['as'] = array(
+	'UserMerge' => array( 'সদস্য চামিল কৰক' ),
+);
+
+/** Finnish (Suomi) */
+$aliases['fi'] = array(
+	'UserMerge' => array( 'Tunnusten yhdistäminen' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'UserMerge' => array( 'GebruikersSamenvoegen' ),
