@@ -34,6 +34,11 @@ $aliases['fi'] = array(
 	'UserMerge' => array( 'Tunnusten yhdistäminen' ),
 );
 
+/** French (Français) */
+$aliases['fr'] = array(
+	'UserMerge' => array( 'Fusionner les utilisateurs', 'FusionnerLesUtilisateur', 'Fusionner utilisateurs', 'FusionnerUtilisateurs', 'Fusionner utilisateur', 'FusionnerUtilisateur' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'UserMerge' => array( 'GebruikersSamenvoegen' ),
