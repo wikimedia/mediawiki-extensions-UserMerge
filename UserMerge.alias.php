@@ -29,6 +29,11 @@ $aliases['as'] = array(
 	'UserMerge' => array( 'সদস্য চামিল কৰক' ),
 );
 
+/** German (Deutsch) */
+$aliases['de'] = array(
+	'UserMerge' => array( 'Benutzerkonten vereinigen' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'UserMerge' => array( 'Tunnusten yhdistäminen' ),
