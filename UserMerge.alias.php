@@ -44,6 +44,11 @@ $aliases['fr'] = array(
 	'UserMerge' => array( 'Fusionner les utilisateurs', 'FusionnerLesUtilisateur', 'Fusionner utilisateurs', 'FusionnerUtilisateurs', 'Fusionner utilisateur', 'FusionnerUtilisateur' ),
 );
 
+/** Luxembourgish (Lëtzebuergesch) */
+$aliases['lb'] = array(
+	'UserMerge' => array( 'Benotzerkonten zesummeleeën' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'UserMerge' => array( 'GebruikersSamenvoegen' ),
