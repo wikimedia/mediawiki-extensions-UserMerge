@@ -463,6 +463,7 @@ Fai clic su <u>Unisci Utente</u> per accettare.",
 );
 
 /** Japanese (日本語)
+ * @author Fievarsty
  * @author Mzm5zbC3
  */
 $messages['ja'] = array(
@@ -471,7 +472,10 @@ $messages['ja'] = array(
 	'usermerge-newuser' => '新利用者（統合先）',
 	'usermerge-deleteolduser' => '利用者を削除する',
 	'usermerge-submit' => '利用者の統合',
+	'usermerge-userdeleted-log' => '利用者: $2 ($3) を削除しました。',
+	'usermerge-success-log' => '$2 ($3) を $4 ($5) へ利用者を統合しました。',
 	'usermerge-logpage' => '利用者統合記録',
+	'usermerge-logpagetext' => 'これは、利用者の統合を記録したものです。',
 );
 
 /** Javanese (Basa Jawa)
