@@ -243,12 +243,13 @@ $messages['fi'] = array(
  * @author Grondin
  * @author Guillom
  * @author IAlex
+ * @author McDutchie
  * @author Sherbrooke
  * @author Urhixidur
  */
 $messages['fr'] = array(
 	'usermerge' => 'Fusionner utilisateur et détruire',
-	'usermerge-desc' => '[[Special:UserMerge|Fusionne les références d’un utilisateur vers un autre]] dans la base de données wiki - supprimera aussi les anciennes fusions d’utilisateurs suivantes.',
+	'usermerge-desc' => "[[Special:UserMerge|Fusionne les références d’un utilisateur vers un autre]] dans la base de données wiki - supprimera aussi les anciens utilisateurs après la fusion. Nécessite le privilège ''usermerge''",
 	'usermerge-badolduser' => "Ancien nom d'utilisateur invalide",
 	'usermerge-badnewuser' => "Nouveau nom d'utilisateur invalide",
 	'usermerge-nonewuser' => "Nouveau nom d'utilisateur vide. Nous faisons l'hypothèse que vous voulez fusionner dans $1.
@@ -371,6 +372,35 @@ Klike (prese) <u>Mèt ansanm kont Itilizatè</u> pou aksepte operasyon an.',
  */
 $messages['hu'] = array(
 	'right-usermerge' => 'szerkesztők egyesítése',
+);
+
+/** Interlingua (Interlingua)
+ * @author McDutchie
+ */
+$messages['ia'] = array(
+	'usermerge' => 'Fusionar e deler usatores',
+	'usermerge-desc' => "[[Special:UserMerge|Fusiona le referentias ab un usator verso un altere usator]] in le base de datos wiki - delera equalmente le ancian usatores post le fusion. Require le privilegio ''usermerge''",
+	'usermerge-badolduser' => 'Nomine de usator ancian invalide',
+	'usermerge-badnewuser' => 'Nomine de nove usator invalide',
+	'usermerge-nonewuser' => 'Nomine de nove usator vacue; nos assume un fusion con $1.<br />
+Clicca <u>Fusionar usator</u> pro acceptar.',
+	'usermerge-noolduser' => 'Nomine de usator ancian vacue',
+	'usermerge-olduser' => 'Ancian usator (fusionar ab)',
+	'usermerge-newuser' => 'Nove usator (fusionar verso)',
+	'usermerge-deleteolduser' => 'Deler ancian usator?',
+	'usermerge-submit' => 'Fusionar usator',
+	'usermerge-badtoken' => 'Indicio de modification invalide',
+	'usermerge-userdeleted' => '$1 ($2) ha essite delite.',
+	'usermerge-userdeleted-log' => 'Usator delite: $2 ($3)',
+	'usermerge-updating' => 'Actualisa le tabella $1 (de $2 a $3)',
+	'usermerge-success' => 'Le fusion de $1 ($2) a $3 ($4) es complete.',
+	'usermerge-success-log' => 'Usator $2 ($3) fusionate con $4 ($5)',
+	'usermerge-logpage' => 'Registro de fusiones de usatores',
+	'usermerge-logpagetext' => 'Isto es un registro de actiones de fusion de usatores.',
+	'usermerge-noselfdelete' => 'Tu non pote deler o fusionar ab te mesme!',
+	'usermerge-unmergable' => 'Impossibile fusionar ab iste usator - le ID o nomine ha essite definite como non fusionabile.',
+	'usermerge-protectedgroup' => 'Impossibile fusionar ab iste usator - le usator es membro de un gruppo protegite.',
+	'right-usermerge' => 'Fusionar usatores',
 );
 
 /** Indonesian (Bahasa Indonesia)

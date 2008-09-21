@@ -49,8 +49,18 @@ $aliases['lb'] = array(
 	'UserMerge' => array( 'Benotzerkonten zesummeleeën' ),
 );
 
+/** Nedersaksisch (Nedersaksisch) */
+$aliases['nds-nl'] = array(
+	'UserMerge' => array( 'Gebrukers_bie_mekaar_doon' ),
+);
+
 /** Dutch (Nederlands) */
 $aliases['nl'] = array(
 	'UserMerge' => array( 'GebruikersSamenvoegen' ),
+);
+
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
+$aliases['no'] = array(
+	'UserMerge' => array( 'Slå sammen brukere' ),
 );
 
