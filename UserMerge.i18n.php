@@ -35,8 +35,10 @@ Click <u>Merge User</u> to accept.',
 /** Message documentation (Message documentation)
  * @author Jon Harald Søby
  * @author Meno25
+ * @author Purodha
  */
 $messages['qqq'] = array(
+	'usermerge-desc' => 'Shown in [[Special:Version]] as a short description of this extension. Do not translate links.',
 	'usermerge-badtoken' => '{{Identical|Invalid edit token}}',
 	'right-usermerge' => '{{doc-right}}',
 );
@@ -468,14 +470,22 @@ Fai clic su <u>Unisci Utente</u> per accettare.",
  */
 $messages['ja'] = array(
 	'usermerge' => '利用者の統合と削除',
+	'usermerge-badolduser' => '無効の古い利用者名',
+	'usermerge-badnewuser' => '無効の新しい利用者名',
 	'usermerge-olduser' => '旧利用者（統合元）',
 	'usermerge-newuser' => '新利用者（統合先）',
 	'usermerge-deleteolduser' => '利用者を削除する',
 	'usermerge-submit' => '利用者の統合',
+	'usermerge-userdeleted' => '$1 ($2) は削除されました。',
 	'usermerge-userdeleted-log' => '利用者: $2 ($3) を削除しました。',
+	'usermerge-updating' => '$1 のテーブルを更新 ($2 を $3 へ)',
+	'usermerge-success' => '$1 ($2) を $3 ($4) へ安全に統合しました。',
 	'usermerge-success-log' => '$2 ($3) を $4 ($5) へ利用者を統合しました。',
 	'usermerge-logpage' => '利用者統合記録',
 	'usermerge-logpagetext' => 'これは、利用者の統合を記録したものです。',
+	'usermerge-noselfdelete' => 'あなたは、自分から統合・削除をすることはできません!',
+	'usermerge-protectedgroup' => '利用者を統合できません - この利用者は、保護の対象となるグループです。',
+	'right-usermerge' => '利用者を統合する',
 );
 
 /** Javanese (Basa Jawa)
@@ -523,6 +533,7 @@ $messages['km'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'usermerge-desc' => '[[Special:UserMerge|Läät de Date fun einem Metmaacher met anem andere Metmaacher komplät zosamme]] en dem Wiki singe Datebank, un kann donoh och de övverhollte Metmaacher fottschmieße. Doför bruch mer et „{{int:right-usermerge}}“ (<i lang="en">usermerge</i>) Rääsch.',
 	'right-usermerge' => 'Metmaacher zosammelääje',
 );
 
