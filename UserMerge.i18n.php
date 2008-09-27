@@ -470,8 +470,8 @@ Fai clic su <u>Unisci Utente</u> per accettare.",
  */
 $messages['ja'] = array(
 	'usermerge' => '利用者の統合と削除',
-	'usermerge-badolduser' => '無効の古い利用者名',
-	'usermerge-badnewuser' => '無効の新しい利用者名',
+	'usermerge-badolduser' => '無効な旧利用者名',
+	'usermerge-badnewuser' => '無効な新利用者名',
 	'usermerge-olduser' => '旧利用者（統合元）',
 	'usermerge-newuser' => '新利用者（統合先）',
 	'usermerge-deleteolduser' => '利用者を削除する',
