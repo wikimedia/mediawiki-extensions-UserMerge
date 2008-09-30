@@ -520,7 +520,7 @@ $messages['km'] = array(
 	'usermerge-deleteolduser' => 'លុបអ្នកប្រើប្រាស់ចាស់ឬ?',
 	'usermerge-submit' => 'បញ្ចូលរួមគ្នា អ្នកប្រើប្រាស់',
 	'usermerge-userdeleted' => '$1 ($2) ត្រូវបានលុបហើយ។',
-	'usermerge-userdeleted-log' => 'វបានលុបអ្នកប្រើប្រាស់៖ $2($3)',
+	'usermerge-userdeleted-log' => 'បានលុបអ្នកប្រើប្រាស់៖ $2($3)',
 	'usermerge-success' => 'ការបញ្ចូលរួមគ្នាពី$1($2)ទៅ$3($4)បានបញ្ចប់ដោយពេញលេញ។',
 	'usermerge-logpage' => 'កំនត់ហេតុនៃការបញ្ចួលអ្នកប្រើប្រាស់រួមគ្នា',
 	'usermerge-logpagetext' => 'នេះជាកំនត់ហេតុនៃសកម្មភាពបញ្ចូលអ្នកប្រើប្រាស់រួមគ្នា។',
@@ -744,9 +744,11 @@ $messages['ps'] = array(
 /** Portuguese (Português)
  * @author Lijealso
  * @author Malafaya
+ * @author Sir Lestaty de Lioncourt
  */
 $messages['pt'] = array(
 	'usermerge' => 'Fusão e eliminação de utilizadores',
+	'usermerge-desc' => "[[Special:UserMerge|Unifica as referências de um utilizador em outro utilizador]] no banco de dados da wiki - também apagará o antigo utilizador após a fusão. Requer privilégio ''usermerge''",
 	'usermerge-badolduser' => 'Nome antigo inválido',
 	'usermerge-badnewuser' => 'Nome novo inválido',
 	'usermerge-nonewuser' => 'Novo nome de utilizador vazio - assumida fusão com $1.<br />
@@ -756,6 +758,7 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 	'usermerge-newuser' => 'Utilizador novo (fundir para)',
 	'usermerge-deleteolduser' => 'Apagar utilizador antigo?',
 	'usermerge-submit' => 'Limpar usuário',
+	'usermerge-badtoken' => 'Ficha de edição inválida',
 	'usermerge-userdeleted' => '$1 ($2) foi eliminado.',
 	'usermerge-userdeleted-log' => 'Usuário eliminado: $2 ($3)',
 	'usermerge-updating' => 'Actualizando tabela $1 ($2 para $3)',
@@ -764,6 +767,8 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 	'usermerge-logpage' => 'Registo de fusão de utilizadores',
 	'usermerge-logpagetext' => 'Este é um registo de acções de fusão de utilizadores.',
 	'usermerge-noselfdelete' => 'Você não pode apagar ou fundir a partir de si próprio!',
+	'usermerge-unmergable' => 'Não foi possível fundir o utilizador - Nome ou ID foi definido para não ser fundido.',
+	'usermerge-protectedgroup' => 'Não é possível fundir este utilizador - Utilizador está em um grupo protegido',
 	'right-usermerge' => 'Fundir utilizadores',
 );
 
@@ -869,8 +874,8 @@ $messages['te'] = array(
 	'usermerge-userdeleted-log' => 'వాడుకరిని తొలగించాం: $2 ($3)',
 	'usermerge-success' => '$1 ($2) నుండి $3 ($4) కి విలీనం పూర్తయ్యింది.',
 	'usermerge-success-log' => '$2 ($3) వాడుకరి $4 ($5)లో విలీనమయ్యారు',
-	'usermerge-logpage' => 'వాడుకరి విలీనాల దినచర్య',
-	'usermerge-logpagetext' => 'ఇది వాడుకరి విలీన చర్యల దినచర్య',
+	'usermerge-logpage' => 'వాడుకరి విలీనాల చిట్టా',
+	'usermerge-logpagetext' => 'ఇది వాడుకరి విలీనాల చిట్టా.',
 	'usermerge-noselfdelete' => 'మిమ్మల్ని మీరే తొలగించుకోలేరు లేదా మీలో విలీనం కాలేరు!',
 );
 
