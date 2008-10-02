@@ -660,7 +660,7 @@ $messages['no'] = array(
  */
 $messages['oc'] = array(
 	'usermerge' => 'Fusionar utilizaire e destruire',
-	'usermerge-desc' => "[[Special:UserMerge|Fusiona las referéncias d'un utilizaire vèrs un autre]] dins la banca de donadas wiki - suprimirà tanben las fusions d'utilizaires ancianas seguentas.",
+	'usermerge-desc' => "[[Special:UserMerge|Fusiona las referéncias d'un utilizaire cap a un autre]] dins la banca de donadas wiki - suprimirà tanben las fusions d'utilizaires ancianas seguentas.",
 	'usermerge-badolduser' => "Nom d'utilizaire ancian invalid",
 	'usermerge-badnewuser' => "Nom d'utilizaire novèl invalid",
 	'usermerge-nonewuser' => "Nom d'utilizaire novèl void. Fasèm l'ipotèsi que volètz fusionar dins $1. Clicatz sus ''Fusionar utilizaire'' per acceptar.",
