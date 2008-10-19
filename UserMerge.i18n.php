@@ -306,6 +306,34 @@ Prema en <u>Fusionar o usuario</u> para aceptar.',
 	'right-usermerge' => 'Fusionar usuarios',
 );
 
+/** Hebrew (עברית)
+ * @author YaronSh
+ */
+$messages['he'] = array(
+	'usermerge' => 'מיזוג ומחיקת משתמשים',
+	'usermerge-badolduser' => 'שם המשתמש הישן שגוי',
+	'usermerge-badnewuser' => 'שם המשתמש החדש שגוי',
+	'usermerge-nonewuser' => 'שם המשתמש החדש ריק - מעריך כי המיזוג הוא ל־$1.<br />
+לחץ על <u>מזג משתמש</u> לאות הסכמה.',
+	'usermerge-noolduser' => 'שם המשתמש הישן ריק',
+	'usermerge-olduser' => 'משתמש ישן (מיזוג מ־)',
+	'usermerge-newuser' => 'משתמש חדש (מיזוג אל)',
+	'usermerge-deleteolduser' => 'למחוק את המשתמש הישן?',
+	'usermerge-submit' => 'מזג משתמש',
+	'usermerge-badtoken' => 'אסימון עריכה שגוי.',
+	'usermerge-userdeleted' => '$1 ($2) נמחק.',
+	'usermerge-userdeleted-log' => 'המשתמש נמחק: $2 ($3)',
+	'usermerge-updating' => 'מעדכן את הטבלה $1 ($2 ל־$3)',
+	'usermerge-success' => 'המיזוג מ־$1 ($2) אל $3 ($4) הושלם.',
+	'usermerge-success-log' => 'המשתמש $2 ($3) מוזג אל $4 ($5)',
+	'usermerge-logpage' => 'רישום מיזוג משתמשים',
+	'usermerge-logpagetext' => 'זהו רישום של פעולות מיזוג המשתמשים.',
+	'usermerge-noselfdelete' => 'לא ניתן למחוק או למזג מעצמך!',
+	'usermerge-unmergable' => 'לא ניתן למזג ממשתמש - המזהה או השם כבר מוגדר כבלתי ניתן למיזוג.',
+	'usermerge-protectedgroup' => 'לא ניתן למזג ממשתמש - המשתמש נמצא בקבוצה מוגנת.',
+	'right-usermerge' => 'מזג משתמשים',
+);
+
 /** Hindi (हिन्दी)
  * @author Kaustubh
  */
