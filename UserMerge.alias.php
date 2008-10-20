@@ -34,6 +34,11 @@ $aliases['de'] = array(
 	'UserMerge' => array( 'Benutzerkonten vereinigen' ),
 );
 
+/** Persian (فارسی) */
+$aliases['fa'] = array(
+	'UserMerge' => array( 'ادغام_کاربر' ),
+);
+
 /** Finnish (Suomi) */
 $aliases['fi'] = array(
 	'UserMerge' => array( 'Tunnusten yhdistäminen' ),
@@ -42,6 +47,11 @@ $aliases['fi'] = array(
 /** French (Français) */
 $aliases['fr'] = array(
 	'UserMerge' => array( 'Fusionner les utilisateurs', 'FusionnerLesUtilisateur', 'Fusionner utilisateurs', 'FusionnerUtilisateurs', 'Fusionner utilisateur', 'FusionnerUtilisateur' ),
+);
+
+/** Hebrew (עברית) */
+$aliases['he'] = array(
+	'UserMerge' => array( 'מיזוג_משתמשים' ),
 );
 
 /** Luxembourgish (Lëtzebuergesch) */
@@ -62,5 +72,10 @@ $aliases['nl'] = array(
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $aliases['no'] = array(
 	'UserMerge' => array( 'Slå sammen brukere' ),
+);
+
+/** Occitan (Occitan) */
+$aliases['oc'] = array(
+	'UserMerge' => array( 'Fusionar los utilizaires', 'FusionarLosUtilizaire', 'Fusionar utilizaires', 'FusionarUtilizaires', 'Fusionar utilizaire', 'FusionarUtilizaire' ),
 );
 
