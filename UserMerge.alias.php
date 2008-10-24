@@ -54,6 +54,11 @@ $aliases['he'] = array(
 	'UserMerge' => array( 'מיזוג_משתמשים' ),
 );
 
+/** Upper Sorbian (Hornjoserbsce) */
+$aliases['hsb'] = array(
+	'UserMerge' => array( 'Wužiwarjow zjednoćić' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'UserMerge' => array( 'Benotzerkonten zesummeleeën' ),
