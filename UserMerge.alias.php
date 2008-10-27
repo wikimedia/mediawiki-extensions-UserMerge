@@ -59,6 +59,11 @@ $aliases['hsb'] = array(
 	'UserMerge' => array( 'Wužiwarjow zjednoćić' ),
 );
 
+/** Ripoarisch (Ripoarisch) */
+$aliases['ksh'] = array(
+	'UserMerge' => array( 'Metmaacher zosammelääje', 'Medmaacher zosammelääje' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
 	'UserMerge' => array( 'Benotzerkonten zesummeleeën' ),
