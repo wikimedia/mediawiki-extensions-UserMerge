@@ -558,6 +558,16 @@ $messages['km'] = array(
 	'right-usermerge' => 'បញ្ចូលអ្នកប្រើប្រាស់រួមគ្នា',
 );
 
+/** Korean (한국어)
+ * @author Kwj2772
+ */
+$messages['ko'] = array(
+	'usermerge' => '사용자 계정 병합 및 삭제',
+	'usermerge-userdeleted-log' => '$2 ($3) 사용자를 삭제함',
+	'usermerge-success-log' => '$2 ($3) 사용자를 $4 ($5) 로 병합함',
+	'usermerge-logpage' => '사용자 병합 기록',
+);
+
 /** Ripoarisch (Ripoarisch)
  * @author Purodha
  */
@@ -804,15 +814,20 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 );
 
 /** Russian (Русский)
+ * @author Ferrer
  * @author Illusion
  * @author Innv
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
 	'usermerge' => 'Объединение и удаление учётных записей',
+	'usermerge-badolduser' => 'Неправильное старое имя участника',
+	'usermerge-badnewuser' => 'Неправильное новое имя участника',
 	'usermerge-olduser' => 'Старая учётная запись (объединить с)',
 	'usermerge-newuser' => 'Новая учётная запись (объединить в)',
 	'usermerge-deleteolduser' => 'Удалить старую учётную запись?',
+	'usermerge-submit' => 'Объединить участников',
+	'usermerge-userdeleted' => '$1 ($2) был удалён.',
 	'usermerge-userdeleted-log' => 'Удалён участник $2 ($3)',
 	'usermerge-success-log' => 'Участник $2 ($3) объединён в $4 ($5)',
 	'usermerge-logpage' => 'Журнал объединения участников',
