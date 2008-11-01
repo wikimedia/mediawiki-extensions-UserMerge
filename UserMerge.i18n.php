@@ -499,12 +499,17 @@ Fai clic su <u>Unisci Utente</u> per accettare.",
  */
 $messages['ja'] = array(
 	'usermerge' => '利用者の統合と削除',
+	'usermerge-desc' => "Wikiデータベース上における[[Special:UserMerge|一人の利用者を別の利用者へ統合する]] - また統合元の利用者を削除する。''usermerge''の権限が必要です",
 	'usermerge-badolduser' => '無効な旧利用者名',
 	'usermerge-badnewuser' => '無効な新利用者名',
+	'usermerge-nonewuser' => '新しい利用者名の欄が空です - $1に統合します。<br />
+<u>利用者の統合</u>をクリックしてください。',
+	'usermerge-noolduser' => '旧利用者名の欄が空です',
 	'usermerge-olduser' => '旧利用者（統合元）',
 	'usermerge-newuser' => '新利用者（統合先）',
-	'usermerge-deleteolduser' => '利用者を削除する',
+	'usermerge-deleteolduser' => '統合元の利用者を削除しますか?',
 	'usermerge-submit' => '利用者の統合',
+	'usermerge-badtoken' => '無効な編集証拠',
 	'usermerge-userdeleted' => '$1 ($2) は削除されました。',
 	'usermerge-userdeleted-log' => '利用者: $2 ($3) を削除しました。',
 	'usermerge-updating' => '$1 のテーブルを更新 ($2 を $3 へ)',
@@ -513,6 +518,7 @@ $messages['ja'] = array(
 	'usermerge-logpage' => '利用者統合記録',
 	'usermerge-logpagetext' => 'これは、利用者の統合を記録したものです。',
 	'usermerge-noselfdelete' => 'あなたは、自分から統合・削除をすることはできません!',
+	'usermerge-unmergable' => '利用者を統合することができません - IDまたは名前が統合不可能です。',
 	'usermerge-protectedgroup' => '利用者を統合できません - この利用者は、保護の対象となるグループです。',
 	'right-usermerge' => '利用者を統合する',
 );
