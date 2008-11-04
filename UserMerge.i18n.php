@@ -591,11 +591,13 @@ $messages['lb'] = array(
 	'usermerge-badnewuser' => 'Ongëltegen neie Benotzernumm',
 	'usermerge-noolduser' => 'Eidelen ale Benotzernumm',
 	'usermerge-olduser' => 'Ale Benotzer (zesummeféiere vun)',
+	'usermerge-newuser' => 'Neie Benotzer (zusammenféiere mat)',
 	'usermerge-deleteolduser' => 'Ale Benotzer läschen?',
 	'usermerge-submit' => 'Benotzerkonten zesummeféieren',
 	'usermerge-userdeleted' => '$1 ($2) gouf geläscht.',
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
 	'usermerge-logpage' => 'Lëscht vun de Benotzerkonten déi zesummegeféiert goufen',
+	'usermerge-logpagetext' => 'Dëst ass eng Lëscht vun de Benotzerkonten, déi zesummegeféiert goufen.',
 	'right-usermerge' => 'Benotzer zesummeféieren',
 );
 
