@@ -601,6 +601,20 @@ $messages['lb'] = array(
 	'right-usermerge' => 'Benotzer zesummeféieren',
 );
 
+/** Macedonian (Македонски)
+ * @author Brest
+ */
+$messages['mk'] = array(
+	'usermerge' => 'Спојување и бришење корисници',
+	'usermerge-submit' => 'Спојување корисник',
+	'usermerge-badtoken' => 'Погрешен токен за уредување',
+	'usermerge-userdeleted' => '$1 ($2) беше избришано.',
+	'usermerge-userdeleted-log' => 'Избришан корисник: $2 ($3)',
+	'usermerge-logpage' => 'Дневник на спојувања на кориснички сметки',
+	'usermerge-logpagetext' => 'Ова е дневник на акции за спојување на кориснички имиња.',
+	'right-usermerge' => 'Спојување на корисници',
+);
+
 /** Malayalam (മലയാളം)
  * @author Shijualex
  */
