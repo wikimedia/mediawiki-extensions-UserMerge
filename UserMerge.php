@@ -9,7 +9,6 @@ if (!defined('MEDIAWIKI')) {
         exit(1);
 }
 
-$wgExtensionFunctions[] = 'efUserMerge';
 $wgExtensionCredits['specialpage'][] = array(
     'name'           => 'User Merge and Delete',
     'url'            => 'http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete',
@@ -29,12 +28,9 @@ $wgSpecialPageGroups['UserMerge'] = 'users';
 
 $wgUserMergeProtectedGroups = array( "sysop" );
 
-function efUserMerge() {
-	# Add a new log type
-	global $wgLogTypes, $wgLogNames, $wgLogHeaders, $wgLogActions;
-	$wgLogTypes[]                 		= 'usermerge';
-	$wgLogNames['usermerge']            = 'usermerge-logpage';
-	$wgLogHeaders['usermerge']          = 'usermerge-logpagetext';
-	$wgLogActions['usermerge/mergeuser'] 	= 'usermerge-success-log';
-	$wgLogActions['usermerge/deleteuser']	= 'usermerge-userdeleted-log';
-}
+# Add a new log type
+$wgLogTypes[]                 		= 'usermerge';
+$wgLogNames['usermerge']            = 'usermerge-logpage';
+$wgLogHeaders['usermerge']          = 'usermerge-logpagetext';
+$wgLogActions['usermerge/mergeuser'] 	= 'usermerge-success-log';
+$wgLogActions['usermerge/deleteuser']	= 'usermerge-userdeleted-log';
