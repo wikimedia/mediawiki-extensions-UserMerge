@@ -312,6 +312,7 @@ Prema en <u>Fusionar o usuario</u> para aceptar.',
  */
 $messages['he'] = array(
 	'usermerge' => 'מיזוג ומחיקת משתמשים',
+	'usermerge-desc' => "[[Special:UserMerge|מיזוג התייחסויות ממשתמש אחד לאחר]] בבסיס הנתונים של הוויקי, כולל מחיקת המשתמשים הישנים לאחר המיזוג. נדרשת הרשאת ''usermerge''",
 	'usermerge-badolduser' => 'שם המשתמש הישן אינו תקין',
 	'usermerge-badnewuser' => 'שם המשתמש החדש אינו תקין',
 	'usermerge-nonewuser' => 'שם המשתמש החדש ריק - כנראה שהמיזוג הוא ל$1.<br />
@@ -596,6 +597,7 @@ $messages['lb'] = array(
 	'usermerge-submit' => 'Benotzerkonten zesummeféieren',
 	'usermerge-userdeleted' => '$1 ($2) gouf geläscht.',
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
+	'usermerge-updating' => 'Aktualiséierung vun der Tabell $1 ($2 op $3)',
 	'usermerge-logpage' => 'Lëscht vun de Benotzerkonten déi zesummegeféiert goufen',
 	'usermerge-logpagetext' => 'Dëst ass eng Lëscht vun de Benotzerkonten, déi zesummegeféiert goufen.',
 	'right-usermerge' => 'Benotzer zesummeféieren',
