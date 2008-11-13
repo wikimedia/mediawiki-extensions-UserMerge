@@ -692,6 +692,34 @@ Klik <u>Gebruiker samenvoegen</u> om te aanvaarden.',
 	'right-usermerge' => 'Gebruikers samenvoegen',
 );
 
+/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+ * @author Frokor
+ */
+$messages['nn'] = array(
+	'usermerge' => 'Slå saman og slett brukarar',
+	'usermerge-desc' => "Gjev høve til å [[Special:UserMerge|slå saman kontoar]] ved at alle referansar til ein brukar vert bytta ut til ein annen brukar i databasen, for så å slette den eine kontoen. Krev rett til ''usermerge''.",
+	'usermerge-badolduser' => 'Gammalt brukernamn ugyldig',
+	'usermerge-badnewuser' => 'Nytt brukernamn ugyldig',
+	'usermerge-nonewuser' => 'Nytt brukernamn tomt &ndash; går ut frå samanslåing til $1.<br />Klikk <u>Slå saman brukarar</u> for å godta',
+	'usermerge-noolduser' => 'Gammalt brukarnamn tomt',
+	'usermerge-olduser' => 'Gammalt brukernamn (slå saman frå)',
+	'usermerge-newuser' => 'Nytt brukernamn (slå saman til)',
+	'usermerge-deleteolduser' => 'Slett gammal brukar?',
+	'usermerge-submit' => 'Slå saman brukarar',
+	'usermerge-badtoken' => 'Ugyldig redigeringsteikn',
+	'usermerge-userdeleted' => '$1 ($2) er sletta.',
+	'usermerge-userdeleted-log' => 'Sletta brukar: $2 ($3)',
+	'usermerge-updating' => 'Oppdaterer $1-tabell ($2 til $3)',
+	'usermerge-success' => 'Samanslåing frå $1 ($2) til $3 ($4) er ferdig.',
+	'usermerge-success-log' => 'Brukaren $2 ($3) slått saman med $4 ($5)',
+	'usermerge-logpage' => 'Brukarsamanslåingslogg',
+	'usermerge-logpagetext' => 'Dette er ein logg over brukarsamanslåingar.',
+	'usermerge-noselfdelete' => 'Du kan ikkje slette eller slå saman din eigen konto!',
+	'usermerge-unmergable' => 'Kan ikkje slå saman den gamle kontoen. ID-en eller namnet vert ikkje rekna som samanslåbart.',
+	'usermerge-protectedgroup' => 'Kan ikkje slå saman den gamle kontoen. Brukaren er medlem i ei verna brukargruppe.',
+	'right-usermerge' => 'Slå saman kontoar',
+);
+
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
  */
