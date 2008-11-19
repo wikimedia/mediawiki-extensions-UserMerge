@@ -227,6 +227,7 @@ $messages['el'] = array(
  * @author Yekrats
  */
 $messages['eo'] = array(
+	'usermerge-deleteolduser' => 'Forigi malnovan uzanton?',
 	'usermerge-userdeleted' => '$1 ($2) estis forigita.',
 	'usermerge-userdeleted-log' => 'Forigis uzanton: $2 ($3)',
 	'right-usermerge' => 'Kunfandi uzantojn',
