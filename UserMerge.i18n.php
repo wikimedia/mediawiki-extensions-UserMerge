@@ -611,6 +611,7 @@ $messages['lb'] = array(
 	'usermerge-userdeleted' => '$1 ($2) gouf geläscht.',
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
 	'usermerge-updating' => 'Aktualiséierung vun der Tabell $1 ($2 op $3)',
+	'usermerge-success-log' => 'Benotzer $2 ($3) gouf zesummegeféiert mat $4 ($5)',
 	'usermerge-logpage' => 'Lëscht vun de Benotzerkonten déi zesummegeféiert goufen',
 	'usermerge-logpagetext' => 'Dëst ass eng Lëscht vun de Benotzerkonten, déi zesummegeféiert goufen.',
 	'right-usermerge' => 'Benotzer zesummeféieren',
