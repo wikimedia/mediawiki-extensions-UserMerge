@@ -227,10 +227,17 @@ $messages['el'] = array(
  * @author Yekrats
  */
 $messages['eo'] = array(
+	'usermerge' => 'Kunigi kaj forigi uzantojn',
+	'usermerge-badolduser' => 'Nevalida malnova salutnomo',
+	'usermerge-badnewuser' => 'Nevalida nova salutnomo',
 	'usermerge-noolduser' => 'Malplena malnova salutnomo',
 	'usermerge-deleteolduser' => 'Forigi malnovan uzanton?',
+	'usermerge-submit' => 'Kunigi uzanton',
 	'usermerge-userdeleted' => '$1 ($2) estis forigita.',
 	'usermerge-userdeleted-log' => 'Forigis uzanton: $2 ($3)',
+	'usermerge-logpage' => 'Protokolo pri kunigado de uzantoj',
+	'usermerge-logpagetext' => 'Jen protokolo de kunigadoj de uzantoj',
+	'usermerge-noselfdelete' => 'Vi ne povas forigi aŭ kunigi de vi mem!',
 	'right-usermerge' => 'Kunfandi uzantojn',
 );
 
