@@ -64,6 +64,11 @@ $aliases['hsb'] = array(
 	'UserMerge' => array( 'Wužiwarjow zjednoćić' ),
 );
 
+/** Japanese (日本語) */
+$aliases['ja'] = array(
+	'UserMerge' => array( '利用者の統合' ),
+);
+
 /** Ripoarisch (Ripoarisch) */
 $aliases['ksh'] = array(
 	'UserMerge' => array( 'Metmaacher zosammelääje', 'Medmaacher zosammelääje' ),
