@@ -905,6 +905,7 @@ $messages['ru'] = array(
 	'usermerge-success-log' => 'Участник $2 ($3) объединён в $4 ($5)',
 	'usermerge-logpage' => 'Журнал объединения участников',
 	'usermerge-logpagetext' => 'Это журнал объединения учётных записей.',
+	'usermerge-noselfdelete' => 'Вы не можете удалять или объединять себя самого!',
 	'right-usermerge' => 'объединение участников',
 );
 
