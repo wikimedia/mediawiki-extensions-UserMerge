@@ -504,12 +504,13 @@ Fai clic su <u>Unisci Utente</u> per accettare.",
 );
 
 /** Japanese (日本語)
+ * @author Aotake
  * @author Fievarsty
  * @author Mzm5zbC3
  */
 $messages['ja'] = array(
 	'usermerge' => '利用者の統合と削除',
-	'usermerge-desc' => "Wikiデータベース上における[[Special:UserMerge|一人の利用者を別の利用者へ統合する]] - また統合元の利用者を削除する。''usermerge''の権限が必要です",
+	'usermerge-desc' => "ウィキデータベース上における[[Special:UserMerge|一人の利用者を別の利用者へ統合する]] - また統合元の利用者を削除する（''usermerge''の権限が必要）",
 	'usermerge-badolduser' => '無効な旧利用者名',
 	'usermerge-badnewuser' => '無効な新利用者名',
 	'usermerge-nonewuser' => '新しい利用者名の欄が空です - $1に統合します。<br />
