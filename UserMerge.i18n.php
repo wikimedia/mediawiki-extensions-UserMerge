@@ -567,6 +567,7 @@ Klik <u>Gabungaké Panganggo</u> kanggo nerusaké.',
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
+ * @author Thearith
  */
 $messages['km'] = array(
 	'usermerge' => 'បញ្ចូលរួមគ្នានិង​លុបអ្នកប្រើប្រាស់',
@@ -579,8 +580,8 @@ $messages['km'] = array(
 	'usermerge-userdeleted' => '$1 ($2) ត្រូវបានលុបហើយ។',
 	'usermerge-userdeleted-log' => 'បានលុបអ្នកប្រើប្រាស់៖ $2($3)',
 	'usermerge-success' => 'ការបញ្ចូលរួមគ្នាពី$1($2)ទៅ$3($4)បានបញ្ចប់ដោយពេញលេញ។',
-	'usermerge-logpage' => 'កំនត់ហេតុនៃការបញ្ចួលអ្នកប្រើប្រាស់រួមគ្នា',
-	'usermerge-logpagetext' => 'នេះជាកំនត់ហេតុនៃសកម្មភាពបញ្ចូលអ្នកប្រើប្រាស់រួមគ្នា។',
+	'usermerge-logpage' => 'កំណត់ហេតុនៃការបញ្ចួលអ្នកប្រើប្រាស់រួមគ្នា',
+	'usermerge-logpagetext' => 'នេះជាកំណត់ហេតុនៃសកម្មភាពបញ្ចូលអ្នកប្រើប្រាស់រួមគ្នា។',
 	'usermerge-noselfdelete' => 'អ្នកមិនអាច លុបចេញ ឬ បញ្ចូលរួមគ្នា ពីខ្លួនអ្នកផ្ទាល់ !',
 	'usermerge-protectedgroup' => 'មិនអាចបញ្ចូលអ្នកប្រើប្រាស់រួមគ្នាបានទេ - អ្នកប្រើប្រាស់ស្ថិតនៅក្នុងក្រុមដែលបានការពារ។',
 	'right-usermerge' => 'បញ្ចូលអ្នកប្រើប្រាស់រួមគ្នា',
