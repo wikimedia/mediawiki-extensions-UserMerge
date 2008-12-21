@@ -285,6 +285,13 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'right-usermerge' => 'Fusionner des utilisateurs',
 );
 
+/** Irish (Gaeilge)
+ * @author Alison
+ */
+$messages['ga'] = array(
+	'usermerge-userdeleted-log' => 'Úsáideoir scriosta: $2 ($3)',
+);
+
 /** Galician (Galego)
  * @author Alma
  * @author Toliño
