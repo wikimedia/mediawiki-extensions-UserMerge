@@ -243,11 +243,13 @@ $messages['eo'] = array(
 
 /** Finnish (Suomi)
  * @author Nike
+ * @author Str4nd
  */
 $messages['fi'] = array(
 	'usermerge' => 'Käyttäjätunnusten yhdistys ja poisto',
 	'usermerge-badolduser' => 'Vanha käyttäjätunnus ei kelpaa',
 	'usermerge-badnewuser' => 'Uusi käyttäjätunnus ei kelpaa',
+	'usermerge-deleteolduser' => 'Poista vanha käyttäjä?',
 );
 
 /** French (Français)
