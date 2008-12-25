@@ -1029,6 +1029,17 @@ $messages['tg-cyrl'] = array(
 	'usermerge-logpagetext' => 'Ин гузориши амалҳои идғоми корбар аст.',
 );
 
+/** Tagalog (Tagalog)
+ * @author AnakngAraw
+ */
+$messages['tl'] = array(
+	'usermerge' => 'Pagsanibin at burahin ang mga tagagamit',
+	'usermerge-badolduser' => 'Hindi tanggap na lumang pangalan ng tagagamit',
+	'usermerge-badnewuser' => 'Hindi tanggap na bagong pangalan ng tagagamit',
+	'usermerge-submit' => 'Isanib ang tagagamit',
+	'right-usermerge' => 'Pagsanibin ang mga tagagamit',
+);
+
 /** Turkish (Türkçe)
  * @author Karduelis
  */
