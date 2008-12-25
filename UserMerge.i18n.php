@@ -1034,9 +1034,27 @@ $messages['tg-cyrl'] = array(
  */
 $messages['tl'] = array(
 	'usermerge' => 'Pagsanibin at burahin ang mga tagagamit',
+	'usermerge-desc' => '[[Special:UserMerge|Nagsasanib ng mga sanggunian mula sa isang tagagamit patungo sa ibang tagagamit]] sa loob ng kalipunan ng dato ng wiki - magbubura din ng lumang mga tagagamit kasunod ng pagsasanib.  Nangangailangan ng mga karapatang "tagagamitpagsasanib"',
 	'usermerge-badolduser' => 'Hindi tanggap na lumang pangalan ng tagagamit',
 	'usermerge-badnewuser' => 'Hindi tanggap na bagong pangalan ng tagagamit',
+	'usermerge-nonewuser' => 'Tanggalan ng laman ang bagong pangalan ng tagagamit - itinuturing (ipinapalagay) na isasanib sa $1.<br />
+Pindutin ang <u>Isanib ang Tagagamit</u> upang tanggapin.',
+	'usermerge-noolduser' => 'Tanggalan ng laman ang lumang pangalan ng tagagamit',
+	'usermerge-olduser' => 'Lumang tagagamit (isanib mula sa)',
+	'usermerge-newuser' => 'Bagong tagagamit (isanib sa)',
+	'usermerge-deleteolduser' => 'Burahin ang lumang tagagamit?',
 	'usermerge-submit' => 'Isanib ang tagagamit',
+	'usermerge-badtoken' => 'Hindi tanggap na pananda ng pagbabago',
+	'usermerge-userdeleted' => 'Nabura na ang $1 ($2).',
+	'usermerge-userdeleted-log' => 'Binurang tagagamit: $2 ($3)',
+	'usermerge-updating' => 'Isinasapanahon ang $1 na tabla ($2 hanggang $3)',
+	'usermerge-success' => 'Ganap na ang pagsanib mula sa $1 ($2) patungo sa $3 ($4).',
+	'usermerge-success-log' => 'Tagagamit na $2 ($3) isinanib sa $4 ($5)',
+	'usermerge-logpage' => 'Talaan ng pagsasanib ng tagagamit',
+	'usermerge-logpagetext' => 'Isa itong talaan ng mga galaw na pangpagsasanib ng tagagamit.',
+	'usermerge-noselfdelete' => 'Hindi ka maaaring magbura o sumanib mula sa sarili mo!',
+	'usermerge-unmergable' => 'Hindi naisanib mula sa tagagamit - nilarawan ang ID o pangalan bilang hindi mapagsasanib.',
+	'usermerge-protectedgroup' => 'Hindi naisanib mula sa tagagamit - nasa loob ng isang nakasanggalang na pangkat ang tagagamit.',
 	'right-usermerge' => 'Pagsanibin ang mga tagagamit',
 );
 
