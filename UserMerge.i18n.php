@@ -74,19 +74,20 @@ $messages['ar'] = array(
 );
 
 /** Egyptian Spoken Arabic (مصرى)
+ * @author Ghaly
  * @author Meno25
  */
 $messages['arz'] = array(
-	'usermerge' => 'دمج وحذف المستخدمين',
-	'usermerge-desc' => "[[Special:UserMerge|يدمج المراجع من مستخدم إلى آخر]] فى قاعدة بيانات الويكى - سيحذف أيضا المستخدمين القدامى بعد الدمج. يتطلب صلاحيات ''usermerge''",
-	'usermerge-badolduser' => 'اسم المستخدم القديم غير صحيح',
-	'usermerge-badnewuser' => 'اسم المستخدم الجديد غير صحيح',
-	'usermerge-nonewuser' => 'اسم مستخدم جديد فارغ - افتراض الدمج إلى $1.<br />
+	'usermerge' => 'دمج وحذف اليوزرز',
+	'usermerge-desc' => "[[Special:UserMerge|يدمج المراجع من يوزر ليوزر]] فى قاعدة بيانات الويكى - يحذف اليوزرز القدام بعد الدمج. يتطلب صلاحيات ''usermerge''",
+	'usermerge-badolduser' => 'اسم اليوزر القديم مش صحيح',
+	'usermerge-badnewuser' => 'اسم اليوزر الجديد مش صحيح',
+	'usermerge-nonewuser' => 'اسم يوزر جديد فارغ - افتراض الدمج إلى $1.<br />
 اضغط <u>دمج المستخدم</u> للقبول.',
-	'usermerge-noolduser' => 'اسم المستخدم القديم فارغ',
+	'usermerge-noolduser' => 'اسم اليوزر القديم فارغ',
 	'usermerge-olduser' => 'مستخدم قديم (دمج من)',
 	'usermerge-newuser' => 'مستخدم جديد (دمج إلى)',
-	'usermerge-deleteolduser' => 'حذف المستخدم القديم؟',
+	'usermerge-deleteolduser' => 'حذف اليوزر القديم؟',
 	'usermerge-submit' => 'دمج المستخدم',
 	'usermerge-badtoken' => 'نص تعديل غير صحيح',
 	'usermerge-userdeleted' => '$1($2) تم حذفه.',
@@ -99,7 +100,7 @@ $messages['arz'] = array(
 	'usermerge-noselfdelete' => 'لا يمكنك حذف أو دمج من نفسك!',
 	'usermerge-unmergable' => 'غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.',
 	'usermerge-protectedgroup' => 'غير قادر على الدمج من المستخدم - المستخدم فى مجموعة محمية.',
-	'right-usermerge' => 'دمج المستخدمين',
+	'right-usermerge' => 'دمج اليوزرز',
 );
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
@@ -224,6 +225,7 @@ $messages['el'] = array(
 );
 
 /** Esperanto (Esperanto)
+ * @author Melancholie
  * @author Yekrats
  */
 $messages['eo'] = array(
@@ -233,6 +235,7 @@ $messages['eo'] = array(
 	'usermerge-noolduser' => 'Malplena malnova salutnomo',
 	'usermerge-deleteolduser' => 'Forigi malnovan uzanton?',
 	'usermerge-submit' => 'Kunigi uzanton',
+	'usermerge-badtoken' => 'Nevalida redakta ĵetono',
 	'usermerge-userdeleted' => '$1 ($2) estis forigita.',
 	'usermerge-userdeleted-log' => 'Forigis uzanton: $2 ($3)',
 	'usermerge-logpage' => 'Protokolo pri kunigado de uzantoj',
@@ -899,6 +902,15 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 	'right-usermerge' => 'Fundir utilizadores',
 );
 
+/** Romanian (Română)
+ * @author KlaudiuMihaila
+ */
+$messages['ro'] = array(
+	'usermerge-badolduser' => 'Nume de utilizator vechi incorect',
+	'usermerge-badnewuser' => 'Nume de utilizator nou incorect',
+	'usermerge-noolduser' => 'Nume de utilizator vechi gol',
+);
+
 /** Russian (Русский)
  * @author Ferrer
  * @author Illusion
@@ -1001,10 +1013,13 @@ $messages['te'] = array(
 	'usermerge-badolduser' => 'తప్పుడు పాత వాడుకరిపేరు',
 	'usermerge-badnewuser' => 'తప్పుడు కొత్త వాడుకరిపేరు',
 	'usermerge-noolduser' => 'పాత వాడుకరిపేరు ఖాళీగా ఉంది',
+	'usermerge-olduser' => 'పాత వాడుకరి (నుండి విలీనం)',
+	'usermerge-newuser' => 'కొత్త వాడుకరి (గా విలీనం)',
 	'usermerge-deleteolduser' => 'పాత వాడుకరిని తొలగించాలా?',
 	'usermerge-submit' => 'వాడుకరిని విలీనం చేయ్యండి',
 	'usermerge-userdeleted' => '$1 ($2)ని తొలగించాం.',
 	'usermerge-userdeleted-log' => 'వాడుకరిని తొలగించాం: $2 ($3)',
+	'usermerge-updating' => '$1 పట్టిక ($2 నుండి $3 వరకు) ని తాజాకరిస్తున్నాం',
 	'usermerge-success' => '$1 ($2) నుండి $3 ($4) కి విలీనం పూర్తయ్యింది.',
 	'usermerge-success-log' => '$2 ($3) వాడుకరి $4 ($5)లో విలీనమయ్యారు',
 	'usermerge-logpage' => 'వాడుకరి విలీనాల చిట్టా',
@@ -1131,7 +1146,9 @@ $messages['zh-hans'] = array(
 	'usermerge-success' => '由 $1($2) 到 $3($4) 的合并已经完成。',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬) */
+/** Traditional Chinese (‪中文(繁體)‬)
+ * @author Wrightbus
+ */
 $messages['zh-hant'] = array(
 	'usermerge' => '用戶合併和刪除',
 	'usermerge-badolduser' => '無效的舊用戶名',
@@ -1146,6 +1163,8 @@ $messages['zh-hant'] = array(
 	'usermerge-userdeleted' => '$1($2) 已刪除。',
 	'usermerge-updating' => '正在更新 $1 表格 ($2 到 $3)',
 	'usermerge-success' => '由 $1($2) 到 $3($4) 的合併已經完成。',
+	'usermerge-logpage' => '使用者合併記錄',
+	'right-usermerge' => '合併使用者',
 );
 
 /** Chinese (Taiwan) (‪中文(台灣)‬)
