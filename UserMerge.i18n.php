@@ -188,6 +188,34 @@ $messages['br'] = array(
 	'usermerge-unmergable' => 'Dibosupl kendeuziñ adal un implijer - un niv. anaout pe un anv bet termenet evel digendeuzadus.',
 );
 
+/** Czech (Česky)
+ * @author Matěj Grabovský
+ */
+$messages['cs'] = array(
+	'usermerge' => 'Sloučuvání a mazání uživatelů',
+	'usermerge-desc' => "[[Special:UserMerge|Slučuje odkazy na jednoho uživatele na odkazy na druhého]] v databázi wiki; také následně smaže starého uživatele. Vyžaduje oprávnění ''usermerge''.",
+	'usermerge-badolduser' => 'Neplatné staré uživatelské jméno',
+	'usermerge-badnewuser' => 'Neplatné nové uživatelské jmnéo',
+	'usermerge-nonewuser' => 'Prázdné nové uživatelské jméno',
+	'usermerge-noolduser' => 'Prázdné staré uživatelské jméno',
+	'usermerge-olduser' => 'Starý uživatel (sloučit odsud)',
+	'usermerge-newuser' => 'Nový uživatel (sloučit sem)',
+	'usermerge-deleteolduser' => 'Smazat starého uživatele?',
+	'usermerge-submit' => 'Sloučit uživatele',
+	'usermerge-badtoken' => 'Neplatný editační token',
+	'usermerge-userdeleted' => '$1 ($2) byl smazán.',
+	'usermerge-userdeleted-log' => 'Smazaný uživatel: $2 ($3)',
+	'usermerge-updating' => 'Aktualizuje se tabulka $1 ($2 na $3)',
+	'usermerge-success' => 'Sloučení z $1 ($2) do $3 ($4) je dokončeno.',
+	'usermerge-success-log' => 'Uživatel $2 ($3) byl sloučen do $4 ($5)',
+	'usermerge-logpage' => 'Záznam sloučení uživatelů',
+	'usermerge-logpagetext' => 'Toto je záznam sloučení uživatelů.',
+	'usermerge-noselfdelete' => 'Nemůžete smazat nebo sloučit svůj účet!',
+	'usermerge-unmergable' => 'Nebylo možné sloučit uživatele - zdrojové jméno nebo ID bylo definováno jako neslučitelné.',
+	'usermerge-protectedgroup' => 'Nebylo možné sloučit uvedeného uživatele - uživatel je v chráněné skupině.',
+	'right-usermerge' => 'Slučovat uživatele',
+);
+
 /** German (Deutsch)
  * @author Raimond Spekking
  */
@@ -233,11 +261,16 @@ $messages['eo'] = array(
 	'usermerge-badolduser' => 'Nevalida malnova salutnomo',
 	'usermerge-badnewuser' => 'Nevalida nova salutnomo',
 	'usermerge-noolduser' => 'Malplena malnova salutnomo',
+	'usermerge-olduser' => 'Malnova uzanto (kunigante de)',
+	'usermerge-newuser' => 'Nova uzanto (kunigante al)',
 	'usermerge-deleteolduser' => 'Forigi malnovan uzanton?',
 	'usermerge-submit' => 'Kunigi uzanton',
 	'usermerge-badtoken' => 'Nevalida redakta ĵetono',
 	'usermerge-userdeleted' => '$1 ($2) estis forigita.',
 	'usermerge-userdeleted-log' => 'Forigis uzanton: $2 ($3)',
+	'usermerge-updating' => 'Ĝisdatigante tabelon $1 ($2 al $3)',
+	'usermerge-success' => 'Kunigado de $1 ($2) al $3 ($4) kompletiĝis.',
+	'usermerge-success-log' => 'Uzanto $2 ($3) kunigita al $4 ($5)',
 	'usermerge-logpage' => 'Protokolo pri kunigado de uzantoj',
 	'usermerge-logpagetext' => 'Jen protokolo de kunigadoj de uzantoj',
 	'usermerge-noselfdelete' => 'Vi ne povas forigi aŭ kunigi de vi mem!',
@@ -606,6 +639,8 @@ $messages['km'] = array(
  */
 $messages['ko'] = array(
 	'usermerge' => '사용자 계정 병합 및 삭제',
+	'usermerge-deleteolduser' => '이전의 계정을 삭제하시겠습니까?',
+	'usermerge-submit' => '계정 합치기',
 	'usermerge-userdeleted-log' => '$2 ($3) 사용자를 삭제함',
 	'usermerge-success-log' => '$2 ($3) 사용자를 $4 ($5) 로 병합함',
 	'usermerge-logpage' => '사용자 병합 기록',
@@ -697,6 +732,16 @@ $messages['mr'] = array(
 	'usermerge-logpagetext' => 'ही सदस्य एकत्रीकरणाची सूची आहे',
 	'usermerge-noselfdelete' => 'तुम्ही स्वत:लाच वगळू किंवा एकत्र करू शकत नाही.',
 	'right-usermerge' => 'सदस्य एकत्र करा',
+);
+
+/** Nahuatl (Nāhuatl)
+ * @author Fluence
+ */
+$messages['nah'] = array(
+	'usermerge-badolduser' => 'Ahcualli huēhuehtlatequitiltilīltōcāitl',
+	'usermerge-badnewuser' => 'Ahcualli yancuīc tlatequitiltilīltōcāitl',
+	'usermerge-userdeleted' => '$1 ($2) ōmopolo',
+	'usermerge-userdeleted-log' => 'Tlapoloc tlatequitiltilīlli: $2 ($3)',
 );
 
 /** Dutch (Nederlands)
@@ -1005,6 +1050,34 @@ $messages['sv'] = array(
 	'right-usermerge' => 'Slå ihop användarkonton',
 );
 
+/** Silesian (Ślůnski)
+ * @author Lajsikonik
+ */
+$messages['szl'] = array(
+	'usermerge' => 'Skupluj a wyćep użytkowńikůw',
+	'usermerge-desc' => "[[Special:UserMerge|Kupluje odwołańo lů jednygo użytkowńika do drugigo]] we baźe danych wiki – wyćepuje tyż starygo użytkowńika po skuplowańu. Wymogo uprowńyńo ''usermerge''",
+	'usermerge-badolduser' => 'Felerne stare mjano użytkowńika',
+	'usermerge-badnewuser' => 'Felerne nowe mjano użytkowńika',
+	'usermerge-nonewuser' => 'Puste mjano nowygo użytkowńika – przyjynto, aże nastůmpi integracyjo do $1. <br />Naciś <u>Kupluj użytkowńikůw</u>, coby zaakceptować.',
+	'usermerge-noolduser' => 'Puste stare mjano użytkowńika',
+	'usermerge-olduser' => 'Stary użytkowńik (kupluj uod)',
+	'usermerge-newuser' => 'Nowy użytkowńik (kupluj s)',
+	'usermerge-deleteolduser' => 'Wyćepać starygo użytkowńika?',
+	'usermerge-submit' => 'Kupluj użytkowńikůw',
+	'usermerge-badtoken' => 'Ńyprowidłowy żetůn sprowjyńo',
+	'usermerge-userdeleted' => '$1 ($2) zostoł wyćepany.',
+	'usermerge-userdeleted-log' => 'wyćepoł użytkowńika „$2” ($3)',
+	'usermerge-updating' => 'Uodśwjeżańy tabuli $1 ($2 do $3)',
+	'usermerge-success' => 'Kuplowańy $1 ($2) s $3 ($4) zakończůne.',
+	'usermerge-success-log' => 'skuplowoł użytkowńika „$2” ($3) do „$4” ($5)',
+	'usermerge-logpage' => 'Rejer kuplowańo użytkowńików',
+	'usermerge-logpagetext' => 'To je rejer uoperacyji kuplowańo użytkowńikůw.',
+	'usermerge-noselfdelete' => 'Ńy idźe wyćepać abo kuplować samygo śebje!',
+	'usermerge-unmergable' => 'Ńy idźe skuplować użytkowńika - identyfikator abo mjano uostoły zidentyfikowane kej ńykuplowalne.',
+	'usermerge-protectedgroup' => 'Ńy idźe skulować użytkowńika - je uůn człůnkym zabezpjeczůnyj grupy.',
+	'right-usermerge' => 'Kuplowańy użytkowńikůw',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
@@ -1129,7 +1202,9 @@ $messages['yue'] = array(
 	'usermerge-success' => '由 $1($2) 到 $3($4) 嘅合併已經完成。',
 );
 
-/** Simplified Chinese (‪中文(简体)‬) */
+/** Simplified Chinese (‪中文(简体)‬)
+ * @author Gzdavidwong
+ */
 $messages['zh-hans'] = array(
 	'usermerge' => '用户合并和删除',
 	'usermerge-badolduser' => '无效的旧用户名',
@@ -1144,6 +1219,8 @@ $messages['zh-hans'] = array(
 	'usermerge-userdeleted' => '$1($2) 已删除。',
 	'usermerge-updating' => '正在更新 $1 表格 ($2 到 $3)',
 	'usermerge-success' => '由 $1($2) 到 $3($4) 的合并已经完成。',
+	'usermerge-logpage' => '用户合并日志',
+	'right-usermerge' => '合并用户',
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
