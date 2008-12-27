@@ -277,6 +277,17 @@ $messages['eo'] = array(
 	'right-usermerge' => 'Kunfandi uzantojn',
 );
 
+/** Spanish (Español)
+ * @author Imre
+ */
+$messages['es'] = array(
+	'usermerge' => 'Fusiónar y borrar usuarios',
+	'usermerge-submit' => 'Fusiónar usuario',
+	'usermerge-userdeleted' => '$1 ($2) ha sido borrado.',
+	'usermerge-userdeleted-log' => 'Usuario borrado: $2 ($3)',
+	'right-usermerge' => 'Fusiónar usuarios',
+);
+
 /** Finnish (Suomi)
  * @author Nike
  * @author Str4nd
