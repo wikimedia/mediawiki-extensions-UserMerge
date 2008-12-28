@@ -279,24 +279,33 @@ $messages['eo'] = array(
 
 /** Spanish (Español)
  * @author Imre
+ * @author Sanbec
  */
 $messages['es'] = array(
-	'usermerge' => 'Fusiónar y borrar usuarios',
-	'usermerge-submit' => 'Fusiónar usuario',
+	'usermerge' => 'Fusionar y borrar usuarios',
+	'usermerge-submit' => 'Fusionar usuario',
 	'usermerge-userdeleted' => '$1 ($2) ha sido borrado.',
 	'usermerge-userdeleted-log' => 'Usuario borrado: $2 ($3)',
-	'right-usermerge' => 'Fusiónar usuarios',
+	'right-usermerge' => 'Fusionar usuarios',
 );
 
 /** Finnish (Suomi)
  * @author Nike
  * @author Str4nd
+ * @author Vililikku
  */
 $messages['fi'] = array(
 	'usermerge' => 'Käyttäjätunnusten yhdistys ja poisto',
 	'usermerge-badolduser' => 'Vanha käyttäjätunnus ei kelpaa',
 	'usermerge-badnewuser' => 'Uusi käyttäjätunnus ei kelpaa',
+	'usermerge-noolduser' => 'Tyhjä vanha käyttäjänimi',
+	'usermerge-olduser' => 'Vanha käyttäjä (mikä yhdistetään)',
+	'usermerge-newuser' => 'Uusi käyttäjä (mihin yhdistetään)',
 	'usermerge-deleteolduser' => 'Poista vanha käyttäjä?',
+	'usermerge-userdeleted' => '$1 ($2) on poistettu.',
+	'usermerge-userdeleted-log' => 'Poistettiin käyttäjä: $2 ($3)',
+	'usermerge-success-log' => 'Käyttäjä $2 ($3) yhdistettiin käyttäjään $4 ($5)',
+	'right-usermerge' => 'Yhdistä käyttäjät',
 );
 
 /** French (Français)
@@ -670,19 +679,27 @@ $messages['ksh'] = array(
  */
 $messages['lb'] = array(
 	'usermerge' => 'Benotzerkonten zesummeféieren a läschen',
+	'usermerge-desc' => "[[Special:UserMerge|Féiert Benotzerkonten vun engem Benotzer op en anere Benotzer]] an der Wiki-Datebank zusammen - déi al Benotzerkonte ginn no der Zesummeféierung och geläscht. Erfuedert ''usermerge''-Rechter.",
 	'usermerge-badolduser' => 'Ongëltegen ale Benotzernumm',
 	'usermerge-badnewuser' => 'Ongëltegen neie Benotzernumm',
+	'usermerge-nonewuser' => 'Eidele neie Benotzernumm - wahrscheinlech eng Zesummeféierung matt "$1".<br />
+Klickt op <u>Benotzerkonten zesammeféieren</u> wann Dir d\'accord sidd.',
 	'usermerge-noolduser' => 'Eidelen ale Benotzernumm',
 	'usermerge-olduser' => 'Ale Benotzer (zesummeféiere vun)',
 	'usermerge-newuser' => 'Neie Benotzer (zusammenféiere mat)',
 	'usermerge-deleteolduser' => 'Ale Benotzer läschen?',
 	'usermerge-submit' => 'Benotzerkonten zesummeféieren',
+	'usermerge-badtoken' => 'Ännerungs-Jeton net valabel',
 	'usermerge-userdeleted' => '$1 ($2) gouf geläscht.',
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
 	'usermerge-updating' => 'Aktualiséierung vun der Tabell $1 ($2 op $3)',
+	'usermerge-success' => 'D\'Zesummeféierung vum "$1" ($2) op "$3" ($4) ass net komplett.',
 	'usermerge-success-log' => 'Benotzer $2 ($3) gouf zesummegeféiert mat $4 ($5)',
 	'usermerge-logpage' => 'Lëscht vun de Benotzerkonten déi zesummegeféiert goufen',
 	'usermerge-logpagetext' => 'Dëst ass eng Lëscht vun de Benotzerkonten, déi zesummegeféiert goufen.',
+	'usermerge-noselfdelete' => 'Dir kënnt Iech net selwer läschen oder mat Iech selwer zesummeféieren!',
+	'usermerge-unmergable' => "Zesammenféierung ass net méiglech - d'ID oder de Benotzernumm gouf als net zesummeféierbar definéiert.",
+	'usermerge-protectedgroup' => "D'Zesammenféierung ass net méiglech - De Benotzer ass an engem geschützte Grupp.",
 	'right-usermerge' => 'Benotzer zesummeféieren',
 );
 
@@ -1109,6 +1126,7 @@ $messages['te'] = array(
 	'usermerge-logpage' => 'వాడుకరి విలీనాల చిట్టా',
 	'usermerge-logpagetext' => 'ఇది వాడుకరి విలీనాల చిట్టా.',
 	'usermerge-noselfdelete' => 'మిమ్మల్ని మీరే తొలగించుకోలేరు లేదా మీలో విలీనం కాలేరు!',
+	'right-usermerge' => 'వాడుకరులను విలీనం చేయగలగడం',
 );
 
 /** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
@@ -1214,6 +1232,7 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (‪中文(简体)‬)
+ * @author Gaoxuewei
  * @author Gzdavidwong
  */
 $messages['zh-hans'] = array(
@@ -1228,9 +1247,15 @@ $messages['zh-hans'] = array(
 	'usermerge-submit' => '合并用户',
 	'usermerge-badtoken' => '无效的编辑币',
 	'usermerge-userdeleted' => '$1($2) 已删除。',
+	'usermerge-userdeleted-log' => '已删除的用户： $2 ($3)',
 	'usermerge-updating' => '正在更新 $1 表格 ($2 到 $3)',
 	'usermerge-success' => '由 $1($2) 到 $3($4) 的合并已经完成。',
+	'usermerge-success-log' => '用户 $2 ($3) 合并到 $4 ($5)',
 	'usermerge-logpage' => '用户合并日志',
+	'usermerge-logpagetext' => '这是一份用户合并动作的记录。',
+	'usermerge-noselfdelete' => '您不能将自己删除或者合并！',
+	'usermerge-unmergable' => '无法完成用户合并 - ID或者名称被标记为不可合并。',
+	'usermerge-protectedgroup' => '无法完成用户合并 - 用户位于受保护组中。',
 	'right-usermerge' => '合并用户',
 );
 
