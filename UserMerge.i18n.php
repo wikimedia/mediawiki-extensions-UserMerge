@@ -298,14 +298,14 @@ $messages['fi'] = array(
 	'usermerge' => 'Käyttäjätunnusten yhdistys ja poisto',
 	'usermerge-badolduser' => 'Vanha käyttäjätunnus ei kelpaa',
 	'usermerge-badnewuser' => 'Uusi käyttäjätunnus ei kelpaa',
-	'usermerge-noolduser' => 'Tyhjä vanha käyttäjänimi',
+	'usermerge-noolduser' => 'Vanha käyttäjätunnus ei voi olla tyhjä.',
 	'usermerge-olduser' => 'Vanha käyttäjä (mikä yhdistetään)',
 	'usermerge-newuser' => 'Uusi käyttäjä (mihin yhdistetään)',
 	'usermerge-deleteolduser' => 'Poista vanha käyttäjä?',
 	'usermerge-userdeleted' => '$1 ($2) on poistettu.',
 	'usermerge-userdeleted-log' => 'Poistettiin käyttäjä: $2 ($3)',
 	'usermerge-success-log' => 'Käyttäjä $2 ($3) yhdistettiin käyttäjään $4 ($5)',
-	'right-usermerge' => 'Yhdistä käyttäjät',
+	'right-usermerge' => 'Yhdistää käyttäjiä',
 );
 
 /** French (Français)
