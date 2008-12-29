@@ -274,6 +274,7 @@ $messages['eo'] = array(
 	'usermerge-logpage' => 'Protokolo pri kunigado de uzantoj',
 	'usermerge-logpagetext' => 'Jen protokolo de kunigadoj de uzantoj',
 	'usermerge-noselfdelete' => 'Vi ne povas forigi aŭ kunigi de vi mem!',
+	'usermerge-protectedgroup' => 'Ne eblis kunigi de uzanto - uzanto estas en protektita grupo.',
 	'right-usermerge' => 'Kunfandi uzantojn',
 );
 
@@ -670,7 +671,29 @@ $messages['ko'] = array(
  * @author Purodha
  */
 $messages['ksh'] = array(
+	'usermerge' => 'Metmaacher zosammelääje un fött schmiiße',
 	'usermerge-desc' => '[[Special:UserMerge|Läät de Date fun einem Metmaacher met anem andere Metmaacher komplät zosamme]] en dem Wiki singe Datebank, un kann donoh och de övverhollte Metmaacher fottschmieße. Doför bruch mer et „{{int:right-usermerge}}“ (<i lang="en">usermerge</i>) Rääsch.',
+	'usermerge-badolduser' => 'Dä ahle Metmaachername es nit jöltesch',
+	'usermerge-badnewuser' => 'Dä neue Metmaachername es nit jöltesch',
+	'usermerge-nonewuser' => 'keine neue Metmaachername aanjejovve. Mer vermoode, dat De met „$1“ zosamme lääje wells.<br />
+Kleck op „<u>{{int:bbbbbbbbbb}}</u>“ öm dat esu ze maache.',
+	'usermerge-noolduser' => 'Keine ahle Metmaachername aanjejovve',
+	'usermerge-olduser' => '
+Dä ahle Metmaachername (Zosamme lääje fun&nbsp;…)',
+	'usermerge-newuser' => 'Dä neu Metmaachername (Zosamme lääje noh …)',
+	'usermerge-deleteolduser' => 'Dä ahle Metmaacher fott schmieße?',
+	'usermerge-submit' => 'Zosammelääje',
+	'usermerge-badtoken' => 'Onjöltesch Kennzeiche',
+	'usermerge-userdeleted' => '„$1“ ($2) es jetz fott jeschmeße.',
+	'usermerge-userdeleted-log' => 'Fott jeschmeße Metmaacherame: „$2“ ($3)',
+	'usermerge-updating' => 'Jeändert: Tabäll $1 (vun $2 noh $3)',
+	'usermerge-success' => 'Et Zosammelääje vun „$1“ ($2) noh „$3“ ($4) es komplätt.',
+	'usermerge-success-log' => 'Metmaacher Name „$2“ ($3) zosammejelaat met „$4“ ($5)',
+	'usermerge-logpage' => 'Logboch övver et Metmaacher-Zosammelääje',
+	'usermerge-logpagetext' => 'Dat hee es et Logboch övver de zosammejelaate Metmaachere.',
+	'usermerge-noselfdelete' => 'Ene Metmaacher met sesch sellver zosamme ze lääje, wat ene Quatsch! Dat jeiht nit.',
+	'usermerge-unmergable' => 'Schadt. Die esu zosamme ze Lääje es nit müjjelech. Dat dä Metmaacher nit zosamme jelaat wääde kann, es övver singe Name odder per sing Nommer esu faßjelaat woode.',
+	'usermerge-protectedgroup' => 'Schadt. Die esu zosamme ze Lääje es nit müjjelech. Dä Metmaacher es en en Jropp, die et Zosammelääje verbeede deiht.',
 	'right-usermerge' => 'Metmaacher zosammelääje',
 );
 
