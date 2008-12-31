@@ -290,6 +290,26 @@ $messages['es'] = array(
 	'right-usermerge' => 'Fusionar usuarios',
 );
 
+/** Basque (Euskara)
+ * @author Theklan
+ */
+$messages['eu'] = array(
+	'usermerge-noolduser' => 'Lankide izen zahar hutsa',
+	'usermerge-olduser' => 'Lankide zaharra (nondik batu)',
+	'usermerge-newuser' => 'Lankide berria (nora batu)',
+	'usermerge-deleteolduser' => 'Ezabatu lankide zaharra?',
+	'usermerge-submit' => 'Lankidea batu',
+	'usermerge-badtoken' => 'Aldaketa token ez baliagarria',
+	'usermerge-userdeleted' => '$1 ($2) ezabatua izan da.',
+	'usermerge-userdeleted-log' => 'Ezabatutako lankidea: $2 ($3)',
+	'usermerge-updating' => '$1 taula berritzen ($2(e)tik $3(e)ra)',
+	'usermerge-success' => '$1(e)tik ($2) $3(e)ra ($4) batzea burutu da.',
+	'usermerge-success-log' => '$2 ($3) lankidea $4 ($5) lankidera batu da',
+	'usermerge-logpage' => 'Lankide batze loga',
+	'usermerge-logpagetext' => 'Log hau lankide batze ekintzena da.',
+	'usermerge-noselfdelete' => 'Ezin duzu zure burua ezabatu edo batu!',
+);
+
 /** Finnish (Suomi)
  * @author Nike
  * @author Str4nd
