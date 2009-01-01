@@ -36,9 +36,10 @@ Click <u>Merge User</u> to accept.',
  * @author Jon Harald Søby
  * @author Meno25
  * @author Purodha
+ * @author Siebrand
  */
 $messages['qqq'] = array(
-	'usermerge-desc' => 'Shown in [[Special:Version]] as a short description of this extension. Do not translate links.',
+	'usermerge-desc' => 'Shown in [[Special:Version]] as a short description of this extension.{{doc-important|Do not translate links.}}',
 	'usermerge-badtoken' => '{{Identical|Invalid edit token}}',
 	'right-usermerge' => '{{doc-right}}',
 );
@@ -83,20 +84,20 @@ $messages['arz'] = array(
 	'usermerge-badolduser' => 'اسم اليوزر القديم مش صحيح',
 	'usermerge-badnewuser' => 'اسم اليوزر الجديد مش صحيح',
 	'usermerge-nonewuser' => 'اسم يوزر جديد فارغ - افتراض الدمج إلى $1.<br />
-اضغط <u>دمج المستخدم</u> للقبول.',
+اضغط <u>دمج اليوزر</u> للقبول.',
 	'usermerge-noolduser' => 'اسم اليوزر القديم فارغ',
-	'usermerge-olduser' => 'مستخدم قديم (دمج من)',
-	'usermerge-newuser' => 'مستخدم جديد (دمج إلى)',
+	'usermerge-olduser' => 'يوزر قديم (دمج من)',
+	'usermerge-newuser' => 'يوزر جديد (دمج ل)',
 	'usermerge-deleteolduser' => 'حذف اليوزر القديم؟',
-	'usermerge-submit' => 'دمج المستخدم',
+	'usermerge-submit' => 'دمج اليوزر',
 	'usermerge-badtoken' => 'نص تعديل غير صحيح',
 	'usermerge-userdeleted' => '$1($2) تم حذفه.',
-	'usermerge-userdeleted-log' => 'حذف المستخدم: $2($3)',
+	'usermerge-userdeleted-log' => 'حذف اليوزر: $2($3)',
 	'usermerge-updating' => 'تحديث $1 جدول ($2 إلى $3)',
 	'usermerge-success' => 'الدمج من $1($2) إلى $3($4) اكتمل.',
-	'usermerge-success-log' => 'المستخدم $2($3) تم دمجه مع $4($5)',
-	'usermerge-logpage' => 'سجل دمج المستخدم',
-	'usermerge-logpagetext' => 'هذا سجل بأفعال دمج المستخدمين.',
+	'usermerge-success-log' => 'اليوزر $2($3) تم دمجه مع $4($5)',
+	'usermerge-logpage' => 'سجل دمج اليوزر',
+	'usermerge-logpagetext' => 'ده سجل بأفعال دمج اليوزرز.',
 	'usermerge-noselfdelete' => 'لا يمكنك حذف أو دمج من نفسك!',
 	'usermerge-unmergable' => 'غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.',
 	'usermerge-protectedgroup' => 'غير قادر على الدمج من المستخدم - المستخدم فى مجموعة محمية.',
