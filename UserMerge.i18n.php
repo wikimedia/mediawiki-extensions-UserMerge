@@ -99,8 +99,8 @@ $messages['arz'] = array(
 	'usermerge-logpage' => 'سجل دمج اليوزر',
 	'usermerge-logpagetext' => 'ده سجل بأفعال دمج اليوزرز.',
 	'usermerge-noselfdelete' => 'لا يمكنك حذف أو دمج من نفسك!',
-	'usermerge-unmergable' => 'غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.',
-	'usermerge-protectedgroup' => 'غير قادر على الدمج من المستخدم - المستخدم فى مجموعة محمية.',
+	'usermerge-unmergable' => 'مش قادر يدمج من يوزر - الرقم أو الاسم تم تعريفه على  انه مش  قابل للدمج.',
+	'usermerge-protectedgroup' => 'مش قادر  يدمج من اليوزر - اليوزر فى مجموعة محمية.',
 	'right-usermerge' => 'دمج اليوزرز',
 );
 
@@ -292,9 +292,12 @@ $messages['es'] = array(
 );
 
 /** Basque (Euskara)
+ * @author An13sa
  * @author Theklan
  */
 $messages['eu'] = array(
+	'usermerge-badolduser' => 'Baliogabeko lankide izen zaharra',
+	'usermerge-badnewuser' => 'Baliogabeko lankide izen berria',
 	'usermerge-noolduser' => 'Lankide izen zahar hutsa',
 	'usermerge-olduser' => 'Lankide zaharra (nondik batu)',
 	'usermerge-newuser' => 'Lankide berria (nora batu)',
@@ -309,6 +312,7 @@ $messages['eu'] = array(
 	'usermerge-logpage' => 'Lankide batze loga',
 	'usermerge-logpagetext' => 'Log hau lankide batze ekintzena da.',
 	'usermerge-noselfdelete' => 'Ezin duzu zure burua ezabatu edo batu!',
+	'right-usermerge' => 'Lankideak bateratu',
 );
 
 /** Finnish (Suomi)
