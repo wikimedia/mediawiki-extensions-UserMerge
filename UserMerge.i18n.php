@@ -315,6 +315,21 @@ $messages['eu'] = array(
 	'right-usermerge' => 'Lankideak bateratu',
 );
 
+/** Persian (فارسی)
+ * @author Meisam
+ */
+$messages['fa'] = array(
+	'usermerge' => 'ادغام و پاک‌کردن کاربران',
+	'usermerge-badolduser' => 'نام کاربری قدیمی نامعتبر',
+	'usermerge-badnewuser' => 'نام کاربری جدید نامعتبر',
+	'usermerge-noolduser' => 'نام‌کاربری قدیمی خالی',
+	'usermerge-olduser' => 'کاربر قدیمی (ادغام از)',
+	'usermerge-newuser' => 'کاربر جدید (ادغام با)',
+	'usermerge-deleteolduser' => 'کاربر قدیمی پاک‌شود؟',
+	'usermerge-submit' => 'ادغام کاربر',
+	'usermerge-userdeleted' => '$1 ($2) پاک شد.',
+);
+
 /** Finnish (Suomi)
  * @author Nike
  * @author Str4nd
