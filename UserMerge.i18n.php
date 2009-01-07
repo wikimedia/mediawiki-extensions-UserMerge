@@ -1278,6 +1278,17 @@ Nhất <u>Trộn Thành viên</u> để chấp nhận.',
 	'right-usermerge' => 'Trộn thành viên',
 );
 
+/** Volapük (Volapük)
+ * @author Smeira
+ */
+$messages['vo'] = array(
+	'usermerge-badolduser' => 'Gebananem büik no lonöfon',
+	'usermerge-badnewuser' => 'Gebananem nulik no lonöfon',
+	'usermerge-noolduser' => 'Vagükön gebananemi büik',
+	'usermerge-deleteolduser' => 'Moükön gebani büik?',
+	'usermerge-userdeleted' => '$1 ($2) pemoükon.',
+);
+
 /** Yue (粵語) */
 $messages['yue'] = array(
 	'usermerge' => '用戶合併同刪除',
