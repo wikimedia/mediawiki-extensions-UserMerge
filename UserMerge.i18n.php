@@ -106,9 +106,25 @@ $messages['arz'] = array(
 
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
+ * @author Jim-by
  */
 $messages['be-tarask'] = array(
 	'usermerge' => "Аб'яднаньне і выдаленьне рахункаў удзельнікаў",
+	'usermerge-desc' => "[[Special:UserMerge|Аб'ядноўвае сувязі аднаго ўдзельніка з сувявямі іншага]] ў базе зьвестак вікі - адначасова выдаляе старога ўдзельніка пасьля аб'яднаньня. Патрабуе правы ''usermerge''",
+	'usermerge-badolduser' => 'Няслушнае старое імя ўдзельніка',
+	'usermerge-badnewuser' => 'Няслушнае новае імя ўдзельніка',
+	'usermerge-nonewuser' => "Пустое імя ўдзельніка - прынята аб'яднанне з $1.<br />
+Націсьні <u>Аб'яднаць удзельнікаў</u> каб пагадзіцца.",
+	'usermerge-noolduser' => 'Пустое старое імя ўдзельніка',
+	'usermerge-olduser' => "Стары ўдзельнік (аб'яднаць з)",
+	'usermerge-newuser' => "Новы ўдзельнік (аб'яднаць з)",
+	'usermerge-deleteolduser' => 'Выдаліць старога ўдзельніка?',
+	'usermerge-submit' => "Аб'яднаць удзельнікаў",
+	'usermerge-badtoken' => 'Няслушны знак рэдагаваньня',
+	'usermerge-userdeleted' => '$1 ($2) быў выдалены.',
+	'usermerge-userdeleted-log' => 'Выдалены ўдзельнік: $2 ($3)',
+	'usermerge-updating' => 'Абнаўленьне табліцы $1 ($2 да $3)',
+	'usermerge-success' => "Аь'яднаньне $1 ($2) з $3 ($4) скончана.",
 );
 
 /** Bulgarian (Български)
@@ -316,17 +332,18 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Huji
  * @author Meisam
  */
 $messages['fa'] = array(
-	'usermerge' => 'ادغام و پاک‌کردن کاربران',
+	'usermerge' => 'یکی کردن و حذف کردن کاربران',
 	'usermerge-badolduser' => 'نام کاربری قدیمی نامعتبر',
 	'usermerge-badnewuser' => 'نام کاربری جدید نامعتبر',
-	'usermerge-noolduser' => 'نام‌کاربری قدیمی خالی',
+	'usermerge-noolduser' => 'نام کاربری قدیمی خالی',
 	'usermerge-olduser' => 'کاربر قدیمی (ادغام از)',
 	'usermerge-newuser' => 'کاربر جدید (ادغام با)',
-	'usermerge-deleteolduser' => 'کاربر قدیمی پاک‌شود؟',
-	'usermerge-submit' => 'ادغام کاربر',
+	'usermerge-deleteolduser' => 'کاربر قدیمی حذف شود؟',
+	'usermerge-submit' => 'یکی کردن کاربر',
 	'usermerge-userdeleted' => '$1 ($2) پاک شد.',
 );
 
