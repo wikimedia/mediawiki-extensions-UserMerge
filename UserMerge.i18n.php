@@ -107,24 +107,32 @@ $messages['arz'] = array(
 /** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
  * @author EugeneZelenko
  * @author Jim-by
+ * @author Red Winged Duck
  */
 $messages['be-tarask'] = array(
 	'usermerge' => "Аб'яднаньне і выдаленьне рахункаў удзельнікаў",
-	'usermerge-desc' => "[[Special:UserMerge|Аб'ядноўвае сувязі аднаго ўдзельніка з сувявямі іншага]] ў базе зьвестак вікі - адначасова выдаляе старога ўдзельніка пасьля аб'яднаньня. Патрабуе правы ''usermerge''",
+	'usermerge-desc' => "[[Special:UserMerge|Аб'ядноўвае спасылкі аднаго ўдзельніка на іншага]] ў базе зьвестак вікі — адначасова выдаляе старыя рахункі пасьля аб'яднаньня. Патрабуе правы на ''аб'яданьне рахункаў удзельнікаў''",
 	'usermerge-badolduser' => 'Няслушнае старое імя ўдзельніка',
 	'usermerge-badnewuser' => 'Няслушнае новае імя ўдзельніка',
-	'usermerge-nonewuser' => "Пустое імя ўдзельніка - прынята аб'яднанне з $1.<br />
-Націсьні <u>Аб'яднаць удзельнікаў</u> каб пагадзіцца.",
+	'usermerge-nonewuser' => "Пустое імя ўдзельніка — мяркуецца аб'яднаньне з $1.<br />
+Націсьніце <u>Аб'яднаць рахункі ўдзельнікаў</u> каб пагадзіцца.",
 	'usermerge-noolduser' => 'Пустое старое імя ўдзельніка',
 	'usermerge-olduser' => "Стары ўдзельнік (аб'яднаць з)",
 	'usermerge-newuser' => "Новы ўдзельнік (аб'яднаць з)",
-	'usermerge-deleteolduser' => 'Выдаліць старога ўдзельніка?',
-	'usermerge-submit' => "Аб'яднаць удзельнікаў",
+	'usermerge-deleteolduser' => 'Выдаліць стары рахунак удзельніка?',
+	'usermerge-submit' => "Аб'яднаць рахункі ўдзельнікаў",
 	'usermerge-badtoken' => 'Няслушны знак рэдагаваньня',
 	'usermerge-userdeleted' => '$1 ($2) быў выдалены.',
-	'usermerge-userdeleted-log' => 'Выдалены ўдзельнік: $2 ($3)',
+	'usermerge-userdeleted-log' => 'Выдалены рахунак удзельніка: $2 ($3)',
 	'usermerge-updating' => 'Абнаўленьне табліцы $1 ($2 да $3)',
-	'usermerge-success' => "Аь'яднаньне $1 ($2) з $3 ($4) скончана.",
+	'usermerge-success' => "Аб'яднаньне $1 ($2) з $3 ($4) скончанае.",
+	'usermerge-success-log' => "Удзельнік $2 ($3) аб'яднаны з $4 ($5)",
+	'usermerge-logpage' => "Журнал аб'яднаньня рахункаў удзельнікаў",
+	'usermerge-logpagetext' => "Гэта журнал аб'яднаньня рахункаў удзельнікаў.",
+	'usermerge-noselfdelete' => "Вы ня можаце выдаліць ці аб'яднаць уласны рахунак!",
+	'usermerge-unmergable' => "Немагчыма аб'яднаць рахунак удзельніка — ідэнтыфікатар ці імя былі пазначаны як неаб'яднальныя.",
+	'usermerge-protectedgroup' => "Немагчыма аб'яднаць рахунак удзельніка — удзельнік знаходзіцца ў абароненай групе.",
+	'right-usermerge' => "аб'яднаньне рахункаў удзельнікаў",
 );
 
 /** Bulgarian (Български)
@@ -262,6 +270,35 @@ Klicke auf <u>Benutzerkonten zusammenführen</u> zum Ausführen.',
 	'right-usermerge' => 'Benutzerkonten vereinen',
 );
 
+/** Lower Sorbian (Dolnoserbski)
+ * @author Michawiki
+ */
+$messages['dsb'] = array(
+	'usermerge' => 'Wužywarjow zjadnośiś a wulašowaś',
+	'usermerge-desc' => "[[Special:UserMerge|Zjadnośujo reference wót jadnego wužywarja k drugemu wužywarjeju]] we wikijowej datowej bance - buźo teke wšych starych wužywarjow pó zjadnosénju lašowaś. Pomina se pšawa ''usermerge''",
+	'usermerge-badolduser' => 'Njepłaśiwe stare wužywarske mě',
+	'usermerge-badnewuser' => 'Njepłaśiwe nowe wužywarske mě',
+	'usermerge-nonewuser' => 'Prozne nowe wužywarske mě - góda se zjadnośenje k $1.<br />
+Klikni na <u>Wužywarja zjadnośiś</u>, aby wobkšuśił.',
+	'usermerge-noolduser' => 'Prozne stare wužywarske mě',
+	'usermerge-olduser' => 'Stare wužywarske mě (zjadnośiś wót)',
+	'usermerge-newuser' => 'Nowe wužywarske mě (zjadnośiś do)',
+	'usermerge-deleteolduser' => 'Starego wužywarja lašowaś?',
+	'usermerge-submit' => 'Wužywarja zjadnośiś',
+	'usermerge-badtoken' => 'Njepłaśiwy wobźěłowański token',
+	'usermerge-userdeleted' => '$1 ($2) jo se wulašował.',
+	'usermerge-userdeleted-log' => 'Wulašowany wužywaŕ: $2 ($3)',
+	'usermerge-updating' => 'Aktualizěrujo se tabela $1 ($2 do $3)',
+	'usermerge-success' => 'Zjadnosénje wot $1 ($2) do $3 ($4) jo skóńcone.',
+	'usermerge-success-log' => 'Wužywaŕ $2 ($3) jo se do $4 ($5) zjadnośił',
+	'usermerge-logpage' => 'Protokol wužywarskich zjadnośenjow',
+	'usermerge-logpagetext' => 'To jo protokol akcijow wužywarskich zjadnośenjow.',
+	'usermerge-noselfdelete' => 'Njamóžoš se ze sobu zjadnośiś!',
+	'usermerge-unmergable' => 'Zjadnosénja wót wužywarja njemóžno - ID abo wužywarske mě jo se ako njezjadnośujobne definěrowane.',
+	'usermerge-protectedgroup' => 'Zjadnośenje wót wužywarja njemóžno - wužywaŕ jo w šćitanej kupce.',
+	'right-usermerge' => 'Wužywarjow zjadnośiś',
+);
+
 /** Greek (Ελληνικά)
  * @author Consta
  */
@@ -296,11 +333,15 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Crazymadlover
  * @author Imre
  * @author Sanbec
  */
 $messages['es'] = array(
 	'usermerge' => 'Fusionar y borrar usuarios',
+	'usermerge-badolduser' => 'Nombre de usuario antiguo inválido',
+	'usermerge-badnewuser' => 'Nombre de usuario nuevo inválido',
+	'usermerge-deleteolduser' => 'Borrar antiguo usuario?',
 	'usermerge-submit' => 'Fusionar usuario',
 	'usermerge-userdeleted' => '$1 ($2) ha sido borrado.',
 	'usermerge-userdeleted-log' => 'Usuario borrado: $2 ($3)',
@@ -1121,6 +1162,28 @@ $messages['sk'] = array(
  */
 $messages['stq'] = array(
 	'usermerge' => 'Benutserkonten touhoopefiere un läskje',
+	'usermerge-desc' => "[[Special:UserMerge|Fiert Benutserkonten in ju Wiki-Doatenbank touhoope]] - dät oolde Benutserkonto wäd ätter ju Touhoopefierenge läsked. Ärfoardert dät ''usermerge''-Gjucht.",
+	'usermerge-badolduser' => 'Uungultigen oolden Benutsernoome',
+	'usermerge-badnewuser' => 'Uungultigen näien Benutsernoome',
+	'usermerge-nonewuser' => 'Loosen näien Benutsernoome - der is ne Touhoopefierenge mäd „$1“ fermoudjen.<br />
+Klik ap <u>Benutserkonten touhoopefiere</u> toun Uutfieren.',
+	'usermerge-noolduser' => 'Loosen oolden Benutsernoome',
+	'usermerge-olduser' => 'Oolden Benutsernoome (touhoopefieren fon)',
+	'usermerge-newuser' => 'Näien Benutsernoome (touhoopefieren ätter)',
+	'usermerge-deleteolduser' => 'Oolden Benutsernoome läskje?',
+	'usermerge-submit' => 'Benutserkonten touhoopefiere',
+	'usermerge-badtoken' => 'Uungultich Beoarbaidjen-Token',
+	'usermerge-userdeleted' => '„$1“ ($2) wuud läsked.',
+	'usermerge-userdeleted-log' => 'Läskeden Benutsernoome: „$2“ ($3)',
+	'usermerge-updating' => 'Aktualisierenge $1 Tabelle ($2 ätter $3)',
+	'usermerge-success' => 'Ju Touhoopefierenge fon „$1“ ($2) ätter „$3“ ($4) is fulboodich.',
+	'usermerge-success-log' => 'Benutsernoome „$2“ ($3) touhoopefierd mäd „$4“ ($5)',
+	'usermerge-logpage' => 'Benutserkonten-Touhoopefierenge-Logbouk',
+	'usermerge-logpagetext' => 'Dit is dät Logbouk fon do Benutserkonten-Touhoopefierengen.',
+	'usermerge-noselfdelete' => 'Touhoopefierenge mäd aan sälwen is nit muugelk!',
+	'usermerge-unmergable' => 'Touhoopefierenge nit muugelk - ID of Benutsernoome wuud as nit touhoopefierboar definierd.',
+	'usermerge-protectedgroup' => 'Touhoopefierenge nit muugelk - Benutsernoome is in ne schutsede Gruppe.',
+	'right-usermerge' => 'Benutserkonten fereenje',
 );
 
 /** Sundanese (Basa Sunda)
@@ -1304,6 +1367,7 @@ $messages['vo'] = array(
 	'usermerge-noolduser' => 'Vagükön gebananemi büik',
 	'usermerge-deleteolduser' => 'Moükön gebani büik?',
 	'usermerge-userdeleted' => '$1 ($2) pemoükon.',
+	'usermerge-userdeleted-log' => 'Moükön gebani: $2 ($3)',
 );
 
 /** Yue (粵語) */
