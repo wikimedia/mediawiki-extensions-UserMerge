@@ -109,3 +109,8 @@ $aliases['oc'] = array(
 	'UserMerge' => array( 'Fusionar los utilizaires', 'FusionarLosUtilizaire', 'Fusionar utilizaires', 'FusionarUtilizaires', 'Fusionar utilizaire', 'FusionarUtilizaire' ),
 );
 
+/** Sanskrit (संस्कृत) */
+$aliases['sa'] = array(
+	'UserMerge' => array( 'सदस्यसंयोग' ),
+);
+
