@@ -479,6 +479,19 @@ Prema en <u>Fusionar o usuario</u> para aceptar.',
 	'right-usermerge' => 'Fusionar usuarios',
 );
 
+/** Swiss German (Alemannisch)
+ * @author Als-Holder
+ */
+$messages['gsw'] = array(
+	'usermerge' => 'Benutzerkonte zämmefiere un lesche',
+	'usermerge-desc' => "[[Special:UserMerge|Fiert Benutzerkonte in dr Wiki-Datebank zämme]] - s alt Benutzerkonto wird no dr Zämmefierig glescht. Bruucht s ''usermerge''-Rächt.",
+	'usermerge-badolduser' => 'Uugiltiger alter Benutzername',
+	'usermerge-badnewuser' => 'Uugiltiger nejer Benutzername',
+	'usermerge-nonewuser' => 'Läärer nejer Benutzername - s wird e Zämmefierig mit „$1“ vermuetet.<br />
+Klick uf <u>Benutzerkonte zämmefiere</u> go s Uusfiere.',
+	'usermerge-noolduser' => 'Läärer alter Benutzername',
+);
+
 /** Hebrew (עברית)
  * @author Rotemliss
  * @author YaronSh
@@ -670,6 +683,7 @@ Fai clic su <u>Unisci Utente</u> per accettare.",
 /** Japanese (日本語)
  * @author Aotake
  * @author Fievarsty
+ * @author Fryed-peach
  * @author Mzm5zbC3
  */
 $messages['ja'] = array(
@@ -684,7 +698,7 @@ $messages['ja'] = array(
 	'usermerge-newuser' => '新利用者（統合先）',
 	'usermerge-deleteolduser' => '統合元の利用者を削除しますか?',
 	'usermerge-submit' => '利用者の統合',
-	'usermerge-badtoken' => '無効な編集証拠',
+	'usermerge-badtoken' => '編集トークンが不正',
 	'usermerge-userdeleted' => '$1 ($2) は削除されました。',
 	'usermerge-userdeleted-log' => '利用者: $2 ($3) を削除しました。',
 	'usermerge-updating' => '$1 のテーブルを更新 ($2 を $3 へ)',
