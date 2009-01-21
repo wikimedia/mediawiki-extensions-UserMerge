@@ -490,6 +490,22 @@ $messages['gsw'] = array(
 	'usermerge-nonewuser' => 'Läärer nejer Benutzername - s wird e Zämmefierig mit „$1“ vermuetet.<br />
 Klick uf <u>Benutzerkonte zämmefiere</u> go s Uusfiere.',
 	'usermerge-noolduser' => 'Läärer alter Benutzername',
+	'usermerge-olduser' => 'Alter Benutzername (zämmefiere vu)',
+	'usermerge-newuser' => 'Nejer Benutzername (zämmefiere noch)',
+	'usermerge-deleteolduser' => 'Alte Benutzername lesche?',
+	'usermerge-submit' => 'Benutzerkonte zämmefiere',
+	'usermerge-badtoken' => 'Uugiltig Bearbeite-Token',
+	'usermerge-userdeleted' => '„$1“ ($2) isch glescht wore.',
+	'usermerge-userdeleted-log' => 'Gleschter Benutzername: „$2“ ($3)',
+	'usermerge-updating' => 'Aktualisierig $1 Tabälle ($2 noch $3)',
+	'usermerge-success' => 'D Zämmefierig vu „$1“ ($2) noch „$3“ ($4) isch vollständig.',
+	'usermerge-success-log' => 'Benutzername „$2“ ($3) zämmegfiert mit „$4“ ($5)',
+	'usermerge-logpage' => 'Benutzerkonte-Zämmefierigs-Logbuech',
+	'usermerge-logpagetext' => 'Des isch s Logbuech vu dr Benutzerkonte-Zämmefierige.',
+	'usermerge-noselfdelete' => 'Zämmefierig mit sich sälber isch nit megli!',
+	'usermerge-unmergable' => 'Zämmefierig nit megli - ID oder Benutzername isch nit as zämmefierbar definiert.',
+	'usermerge-protectedgroup' => 'Zämmefierig nit megli - Benutzername isch in ere gschitze Gruppe.',
+	'right-usermerge' => 'Benutzerkonte zämmefiere',
 );
 
 /** Hebrew (עברית)
