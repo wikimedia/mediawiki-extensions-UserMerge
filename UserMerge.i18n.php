@@ -275,7 +275,7 @@ Klicke auf <u>Benutzerkonten zusammenführen</u> zum Ausführen.',
  */
 $messages['dsb'] = array(
 	'usermerge' => 'Wužywarjow zjadnośiś a wulašowaś',
-	'usermerge-desc' => "[[Special:UserMerge|Zjadnośujo reference wót jadnego wužywarja k drugemu wužywarjeju]] we wikijowej datowej bance - buźo teke wšych starych wužywarjow pó zjadnosénju lašowaś. Pomina se pšawa ''usermerge''",
+	'usermerge-desc' => "[[Special:UserMerge|Zjadnośujo reference wót jadnogo wužywarja k drugemu wužywarjeju]] we wikijowej datowej bance - buźo teke wšych starych wužywarjow pó zjadnosénju lašowaś. Pomina se pšawa ''usermerge''",
 	'usermerge-badolduser' => 'Njepłaśiwe stare wužywarske mě',
 	'usermerge-badnewuser' => 'Njepłaśiwe nowe wužywarske mě',
 	'usermerge-nonewuser' => 'Prozne nowe wužywarske mě - góda se zjadnośenje k $1.<br />
