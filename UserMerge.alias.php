@@ -79,6 +79,11 @@ $aliases['ja'] = array(
 	'UserMerge' => array( '利用者の統合' ),
 );
 
+/** Korean (한국어) */
+$aliases['ko'] = array(
+	'UserMerge' => array( '계정병합' ),
+);
+
 /** Ripoarisch (Ripoarisch) */
 $aliases['ksh'] = array(
 	'UserMerge' => array( 'Metmaacher zosammelääje', 'Medmaacher zosammelääje' ),
