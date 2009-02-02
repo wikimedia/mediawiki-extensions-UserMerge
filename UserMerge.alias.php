@@ -39,6 +39,11 @@ $aliases['de'] = array(
 	'UserMerge' => array( 'Benutzerkonten vereinigen' ),
 );
 
+/** Lower Sorbian (Dolnoserbski) */
+$aliases['dsb'] = array(
+	'UserMerge' => array( 'Konta zjadnośiś' ),
+);
+
 /** Persian (فارسی) */
 $aliases['fa'] = array(
 	'UserMerge' => array( 'ادغام_کاربر' ),

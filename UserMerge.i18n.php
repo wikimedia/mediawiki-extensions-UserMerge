@@ -341,6 +341,7 @@ $messages['es'] = array(
 	'usermerge' => 'Fusionar y borrar usuarios',
 	'usermerge-badolduser' => 'Nombre de usuario antiguo inválido',
 	'usermerge-badnewuser' => 'Nombre de usuario nuevo inválido',
+	'usermerge-noolduser' => 'Vaciar antiguo nombre de usuario',
 	'usermerge-deleteolduser' => 'Borrar antiguo usuario?',
 	'usermerge-submit' => 'Fusionar usuario',
 	'usermerge-userdeleted' => '$1 ($2) ha sido borrado.',
