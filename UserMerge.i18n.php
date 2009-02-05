@@ -711,8 +711,8 @@ $messages['ja'] = array(
 	'usermerge-nonewuser' => '新しい利用者名の欄が空です - $1に統合します。<br />
 <u>利用者の統合</u>をクリックしてください。',
 	'usermerge-noolduser' => '旧利用者名の欄が空です',
-	'usermerge-olduser' => '旧利用者（統合元）',
-	'usermerge-newuser' => '新利用者（統合先）',
+	'usermerge-olduser' => '旧利用者 (統合元)',
+	'usermerge-newuser' => '新利用者 (統合先)',
 	'usermerge-deleteolduser' => '統合元の利用者を削除しますか?',
 	'usermerge-submit' => '利用者の統合',
 	'usermerge-badtoken' => '編集トークンが不正',
