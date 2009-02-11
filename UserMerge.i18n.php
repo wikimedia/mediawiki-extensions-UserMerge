@@ -339,13 +339,22 @@ $messages['eo'] = array(
  */
 $messages['es'] = array(
 	'usermerge' => 'Fusionar y borrar usuarios',
+	'usermerge-desc' => "[[Special:UserMerge|Fusiona referencias de un usuario a otro usuario]] en la base de datos wiki - borrará también usuarios antiguos en la siguiente fusión. requiere ''usermerge'' privilegios",
 	'usermerge-badolduser' => 'Nombre de usuario antiguo inválido',
 	'usermerge-badnewuser' => 'Nombre de usuario nuevo inválido',
+	'usermerge-nonewuser' => 'Vaciar nuevo nombre de usuario - asumiendo que fue fusionado a $1.<br />
+Haga Click en<u>Fusionar usuario</u> para aceptar.',
 	'usermerge-noolduser' => 'Vaciar antiguo nombre de usuario',
+	'usermerge-olduser' => 'Antiguo usuario (fusionar de)',
+	'usermerge-newuser' => 'Nuevo usuario (fusionar a)',
 	'usermerge-deleteolduser' => 'Borrar antiguo usuario?',
 	'usermerge-submit' => 'Fusionar usuario',
 	'usermerge-userdeleted' => '$1 ($2) ha sido borrado.',
 	'usermerge-userdeleted-log' => 'Usuario borrado: $2 ($3)',
+	'usermerge-updating' => 'Actualizando $1 tabla ($2 to $3)',
+	'usermerge-success' => 'Fusión de $1 ($2) a $3 ($4) está completada.',
+	'usermerge-success-log' => 'Usuario $2 ($3) fusionado a $4 ($5)',
+	'usermerge-noselfdelete' => 'Usted no puede borrarse o fusionarse a sí mismo!',
 	'right-usermerge' => 'Fusionar usuarios',
 );
 
