@@ -124,3 +124,8 @@ $aliases['sa'] = array(
 	'UserMerge' => array( 'सदस्यसंयोग' ),
 );
 
+/** Tagalog (Tagalog) */
+$aliases['tl'] = array(
+	'UserMerge' => array( 'Pagsasanib ng tagagamit' ),
+);
+
