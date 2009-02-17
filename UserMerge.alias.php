@@ -79,6 +79,11 @@ $aliases['hu'] = array(
 	'UserMerge' => array( 'Felhasználók egyesítése' ),
 );
 
+/** Interlingua (Interlingua) */
+$aliases['ia'] = array(
+	'UserMerge' => array( 'Fusionar usatores' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'UserMerge' => array( '利用者の統合' ),
