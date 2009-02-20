@@ -1138,6 +1138,35 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 	'right-usermerge' => 'Fundir utilizadores',
 );
 
+/** Brazilian Portuguese (Português do Brasil)
+ * @author Eduardo.mps
+ */
+$messages['pt-br'] = array(
+	'usermerge' => 'Fusão e eliminação de utilizadores',
+	'usermerge-desc' => "[[Special:UserMerge|Unifica as referências de um utilizador em outro utilizador]] no banco de dados da wiki - também apagará o antigo utilizador após a fusão. Requer privilégio ''usermerge''",
+	'usermerge-badolduser' => 'Nome antigo inválido',
+	'usermerge-badnewuser' => 'Nome novo inválido',
+	'usermerge-nonewuser' => 'Novo nome de utilizador vazio - assumida fusão com $1.<br />
+Clique <u>Fundir Utilizador</u> para aceitar.',
+	'usermerge-noolduser' => 'Limpar nome antigo',
+	'usermerge-olduser' => 'Utilizador antigo (fundir de)',
+	'usermerge-newuser' => 'Utilizador novo (fundir para)',
+	'usermerge-deleteolduser' => 'Apagar utilizador antigo?',
+	'usermerge-submit' => 'Fundir utilizador',
+	'usermerge-badtoken' => 'Token de edição inválida',
+	'usermerge-userdeleted' => '$1 ($2) foi eliminado.',
+	'usermerge-userdeleted-log' => 'Utilizador eliminado: $2 ($3)',
+	'usermerge-updating' => 'Atualizando tabela $1 ($2 para $3)',
+	'usermerge-success' => 'Fusão de $1 ($2) para $3 ($4) está completa.',
+	'usermerge-success-log' => 'Utilizador $2 ($3) fundido com $4 ($5)',
+	'usermerge-logpage' => 'Registo de fusão de utilizadores',
+	'usermerge-logpagetext' => 'Este é um registro de ações de fusão de utilizadores.',
+	'usermerge-noselfdelete' => 'Você não pode apagar ou fundir a partir de si próprio!',
+	'usermerge-unmergable' => 'Não foi possível fundir o utilizador - Nome ou ID foi definido para não ser fundido.',
+	'usermerge-protectedgroup' => 'Não é possível fundir este utilizador - Utilizador está em um grupo protegido',
+	'right-usermerge' => 'Fundir utilizadores',
+);
+
 /** Romanian (Română)
  * @author KlaudiuMihaila
  */
