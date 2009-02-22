@@ -648,6 +648,7 @@ Clicca <u>Fusionar usator</u> pro acceptar.',
 );
 
 /** Indonesian (Bahasa Indonesia)
+ * @author IvanLanin
  * @author Rex
  */
 $messages['id'] = array(
@@ -673,7 +674,7 @@ Klik <u>Gabungkan Pengguna</u> untuk melanjutkan.',
 	'usermerge-noselfdelete' => 'Anda tidak dapat menghapus atau menggabungkan dari Anda sendiri!',
 	'usermerge-unmergable' => 'Tidak dapat menggabungkan dari pengguna ini - nomor ID atau nama akun ini telah ditandai sebagai akun yang tidak dapat digabungkan.',
 	'usermerge-protectedgroup' => 'Tidak dapat menggabungkan dari pengguna ini - pengguna ini termasuk dalam kelompok terproteksi.',
-	'right-usermerge' => 'Gabungkan pengguna',
+	'right-usermerge' => 'Menggabungkan pengguna',
 );
 
 /** Italian (Italiano)
