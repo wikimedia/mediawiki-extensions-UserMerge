@@ -422,6 +422,7 @@ $messages['fi'] = array(
  * @author Guillom
  * @author IAlex
  * @author McDutchie
+ * @author PieRRoMaN
  * @author Sherbrooke
  * @author Urhixidur
  */
@@ -444,7 +445,7 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'usermerge-updating' => 'Mise à jour de la table $1 (de $2 à $3)',
 	'usermerge-success' => 'La fusion de $1($2) à $3($4) est terminée.',
 	'usermerge-success-log' => 'Contributeur $2($3) fusionné avec $4($5)',
-	'usermerge-logpage' => 'Journal des fusions de contributeurs',
+	'usermerge-logpage' => 'Journal des fusions de comptes utilisateur',
 	'usermerge-logpagetext' => 'Ceci est un journal des actions de fusions de contributeurs.',
 	'usermerge-noselfdelete' => 'Vous ne pouvez pas vous supprimer ou vous fusionner vous-même !',
 	'usermerge-unmergable' => "Ne peut fusionner à partir d'un utilisateur, d'un numéro d'identification ou un nom qui ont été définis comme non fusionnables.",
