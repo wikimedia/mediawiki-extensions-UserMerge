@@ -213,6 +213,22 @@ $messages['br'] = array(
 	'usermerge-unmergable' => 'Dibosupl kendeuziñ adal un implijer - un niv. anaout pe un anv bet termenet evel digendeuzadus.',
 );
 
+/** Bosnian (Bosanski)
+ * @author CERminator
+ */
+$messages['bs'] = array(
+	'usermerge' => 'Spajanje i brisanje korisnika',
+	'usermerge-badolduser' => 'Nevaljano staro korisničko ime',
+	'usermerge-badnewuser' => 'Nevaljano novo korisničko ime',
+	'usermerge-noolduser' => 'Prazno staro korisničko ime',
+	'usermerge-deleteolduser' => 'Obriši starog korisnika?',
+	'usermerge-submit' => 'Spoji korisnika',
+	'usermerge-userdeleted' => '$1 ($2) je obrisan.',
+	'usermerge-userdeleted-log' => 'Obrisani korisnik: $2 ($3)',
+	'usermerge-logpage' => 'Zapisnik spajanja korisnika',
+	'right-usermerge' => 'Spajanje korisnika',
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  */
