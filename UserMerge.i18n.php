@@ -1194,6 +1194,14 @@ $messages['ro'] = array(
 	'usermerge-noolduser' => 'Nume de utilizator vechi gol',
 );
 
+/** Tarandíne (Tarandíne)
+ * @author Joetaras
+ */
+$messages['roa-tara'] = array(
+	'usermerge-badolduser' => 'Nome utende vecchije invalide',
+	'usermerge-badnewuser' => 'Nome utende nuève invalide',
+);
+
 /** Russian (Русский)
  * @author Ferrer
  * @author Illusion
