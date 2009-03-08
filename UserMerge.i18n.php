@@ -44,6 +44,15 @@ $messages['qqq'] = array(
 	'right-usermerge' => '{{doc-right}}',
 );
 
+/** Veps (Vepsan kel')
+ * @author Игорь Бродский
+ */
+$messages['vep'] = array(
+	'usermerge-badolduser' => 'Vär vanh kävutajan nimi',
+	'usermerge-badnewuser' => "Vär uz' kävutajan nimi",
+	'usermerge-deleteolduser' => 'Čuta poiš vanh kävutajan nimi?',
+);
+
 /** Arabic (العربية)
  * @author Meno25
  * @author OsamaK
@@ -443,7 +452,7 @@ $messages['fi'] = array(
  * @author Urhixidur
  */
 $messages['fr'] = array(
-	'usermerge' => 'Fusionner utilisateur et détruire',
+	'usermerge' => 'Fusionner et supprimer des utilisateurs',
 	'usermerge-desc' => "[[Special:UserMerge|Fusionne les références d’un utilisateur vers un autre]] dans la base de données wiki - supprimera aussi les anciens utilisateurs après la fusion. Nécessite le privilège ''usermerge''",
 	'usermerge-badolduser' => "Ancien nom d'utilisateur invalide",
 	'usermerge-badnewuser' => "Nouveau nom d'utilisateur invalide",
@@ -453,19 +462,19 @@ Cliquez sur ''Fusionner utilisateur'' pour accepter.",
 	'usermerge-noolduser' => "Ancien nom d'utilisateur vide",
 	'usermerge-olduser' => 'Ancien utilisateur (fusionner depuis)',
 	'usermerge-newuser' => 'Nouvel utilisateur (fusionner dans)',
-	'usermerge-deleteolduser' => 'Détruire l’ancien utilisateur ?',
-	'usermerge-submit' => 'Fusionner utilisateur',
-	'usermerge-badtoken' => 'Jeton d’édition invalide',
-	'usermerge-userdeleted' => '$1($2) est détruit.',
-	'usermerge-userdeleted-log' => 'Contributeur effacé : $2($3)',
+	'usermerge-deleteolduser' => 'Supprimer l’ancien utilisateur ?',
+	'usermerge-submit' => "Fusionner l'utilisateur",
+	'usermerge-badtoken' => 'Jeton de modification invalide',
+	'usermerge-userdeleted' => '$1 ($2) a été supprimé.',
+	'usermerge-userdeleted-log' => 'Contributeur supprimé : $2 ($3)',
 	'usermerge-updating' => 'Mise à jour de la table $1 (de $2 à $3)',
-	'usermerge-success' => 'La fusion de $1($2) à $3($4) est terminée.',
-	'usermerge-success-log' => 'Contributeur $2($3) fusionné avec $4($5)',
+	'usermerge-success' => 'La fusion de $1 ($2) à $3 ($4) est terminée.',
+	'usermerge-success-log' => 'Utilisateur $2 ($3) fusionné avec $4 ($5)',
 	'usermerge-logpage' => 'Journal des fusions de comptes utilisateur',
-	'usermerge-logpagetext' => 'Ceci est un journal des actions de fusions de contributeurs.',
+	'usermerge-logpagetext' => "Voici un journal des actions de fusions d'utilisateurs.",
 	'usermerge-noselfdelete' => 'Vous ne pouvez pas vous supprimer ou vous fusionner vous-même !',
-	'usermerge-unmergable' => "Ne peut fusionner à partir d'un utilisateur, d'un numéro d'identification ou un nom qui ont été définis comme non fusionnables.",
-	'usermerge-protectedgroup' => "Impossible de fusionner à partir d'un utilisateur - l'utilisateur se trouve dans un groupe protégé.",
+	'usermerge-unmergable' => "Impossible de fusionner l'utilisateur : le numéro ou le nom a été défini comme non fusionnable.",
+	'usermerge-protectedgroup' => "Impossible de fusionner l'utilisateur : l'utilisateur est dans un groupe protégé.",
 	'right-usermerge' => 'Fusionner des utilisateurs',
 );
 
