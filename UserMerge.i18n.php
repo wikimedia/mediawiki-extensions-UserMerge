@@ -379,6 +379,7 @@ Haga Click en<u>Fusionar usuario</u> para aceptar.',
 	'usermerge-updating' => 'Actualizando $1 tabla ($2 to $3)',
 	'usermerge-success' => 'Fusión de $1 ($2) a $3 ($4) está completada.',
 	'usermerge-success-log' => 'Usuario $2 ($3) fusionado a $4 ($5)',
+	'usermerge-logpage' => 'Registro de fusiones del usuario',
 	'usermerge-noselfdelete' => 'Usted no puede borrarse o fusionarse a sí mismo!',
 	'right-usermerge' => 'Fusionar usuarios',
 );
