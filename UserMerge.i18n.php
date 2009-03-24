@@ -1,8 +1,9 @@
 <?php
-#coding: utf-8
-/** \file
-* \brief Internationalization file for the User Merge and Delete Extension.
-*/
+/**
+ * Internationalisation file for the User Merge and Delete Extension.
+ *
+ * @addtogroup Extensions
+ */
 
 $messages = array();
 
@@ -11,12 +12,13 @@ $messages['en'] = array(
 	'usermerge-desc'                => "[[Special:UserMerge|Merges references from one user to another user]] in the wiki database - will also delete old users following merge. Requires ''usermerge'' privileges",
 	'usermerge-badolduser' 		=> 'Invalid old username',
 	'usermerge-badnewuser' 		=> 'Invalid new username',
-	'usermerge-nonewuser' 		=> 'Empty new username - assuming merge to $1.<br />
-Click <u>Merge User</u> to accept.',
+	'usermerge-nonewuser' 		=> 'Empty new username - assuming merge to "$1".<br />
+Click "{{int:usermerge-submit}}" to accept.',
 	'usermerge-noolduser' 		=> 'Empty old username',
-	'usermerge-olduser' 		=> 'Old user (merge from)',
-	'usermerge-newuser' 		=> 'New user (merge to)',
-	'usermerge-deleteolduser' 	=> 'Delete old user?',
+	'usermerge-fieldset'            => 'Usernames to merge',
+	'usermerge-olduser' 		=> 'Old user (merge from):',
+	'usermerge-newuser' 		=> 'New user (merge to):',
+	'usermerge-deleteolduser' 	=> 'Delete old user',
 	'usermerge-submit' 		=> 'Merge user',
 	'usermerge-badtoken' 		=> 'Invalid edit token',
 	'usermerge-userdeleted' 	=> '$1 ($2) has been deleted.',
