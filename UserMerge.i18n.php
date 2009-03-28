@@ -326,9 +326,10 @@ Klikni na "{{int:usermerge-submit}}", aby akceptěrował.',
 
 /** Greek (Ελληνικά)
  * @author Consta
+ * @author Crazymadlover
  */
 $messages['el'] = array(
-	'usermerge-deleteolduser' => 'Διαγραφή παλαιού χρήστη;',
+	'usermerge-deleteolduser' => 'Διαγραφή παλαιού χρήστη',
 );
 
 /** Esperanto (Esperanto)
@@ -429,6 +430,7 @@ $messages['fa'] = array(
 );
 
 /** Finnish (Suomi)
+ * @author Crt
  * @author Nike
  * @author Str4nd
  * @author Vililikku
@@ -440,7 +442,7 @@ $messages['fi'] = array(
 	'usermerge-noolduser' => 'Vanha käyttäjätunnus ei voi olla tyhjä.',
 	'usermerge-olduser' => 'Vanha käyttäjä (mikä yhdistetään)',
 	'usermerge-newuser' => 'Uusi käyttäjä (mihin yhdistetään)',
-	'usermerge-deleteolduser' => 'Poista vanha käyttäjä?',
+	'usermerge-deleteolduser' => 'Poista vanha käyttäjä',
 	'usermerge-userdeleted' => '$1 ($2) on poistettu.',
 	'usermerge-userdeleted-log' => 'Poistettiin käyttäjä: $2 ($3)',
 	'usermerge-success-log' => 'Käyttäjä $2 ($3) yhdistettiin käyttäjään $4 ($5)',
@@ -850,16 +852,16 @@ $messages['ko'] = array(
  */
 $messages['ksh'] = array(
 	'usermerge' => 'Metmaacher zosammelääje un fött schmiiße',
-	'usermerge-desc' => '[[Special:UserMerge|Läät de Date fun einem Metmaacher met anem andere Metmaacher komplät zosamme]] en dem Wiki singe Datebank, un kann donoh och de övverhollte Metmaacher fottschmieße. Doför bruch mer et „{{int:right-usermerge}}“ (<i lang="en">usermerge</i>) Rääsch.',
+	'usermerge-desc' => '[[Special:UserMerge|Läät de Date fun einem Metmaacher met anem andere Metmaacher komplät zosamme]] en dem Wiki singe Datebank, un kann donoh och de övverhollte Metmaacher fottschmieße. Doför bruch mer et „{{int:right-usermerge}}“ Rääsch (<i lang="en">usermerge</i>)',
 	'usermerge-badolduser' => 'Dä ahle Metmaachername es nit jöltesch',
 	'usermerge-badnewuser' => 'Dä neue Metmaachername es nit jöltesch',
-	'usermerge-nonewuser' => 'keine neue Metmaachername aanjejovve. Mer vermoode, dat De met „$1“ zosamme lääje wells.<br />
-Kleck op „<u>{{int:bbbbbbbbbb}}</u>“ öm dat esu ze maache.',
+	'usermerge-nonewuser' => 'Keine neue Metmaachername aanjejovve. Mer vermoode, dat De met „$1“ zosamme lääje wells.<br />
+Kleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.',
 	'usermerge-noolduser' => 'Keine ahle Metmaachername aanjejovve',
-	'usermerge-olduser' => '
-Dä ahle Metmaachername (Zosamme lääje fun&nbsp;…)',
-	'usermerge-newuser' => 'Dä neu Metmaachername (Zosamme lääje noh …)',
-	'usermerge-deleteolduser' => 'Dä ahle Metmaacher fott schmieße?',
+	'usermerge-fieldset' => 'De Name vun dä Metmaacher zum Zosamme lääje',
+	'usermerge-olduser' => 'Dä ahle Metmaachername (Zosamme lääje fun&nbsp;…):',
+	'usermerge-newuser' => 'Dä neu Metmaachername (Zosamme lääje noh&nbsp;…):',
+	'usermerge-deleteolduser' => 'Dä ahle Metmaacher fott schmieße',
 	'usermerge-submit' => 'Zosammelääje',
 	'usermerge-badtoken' => 'Onjöltesch Kennzeiche',
 	'usermerge-userdeleted' => '„$1“ ($2) es jetz fott jeschmeße.',
@@ -1007,6 +1009,7 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Frokor
+ * @author Harald Khan
  */
 $messages['nn'] = array(
 	'usermerge' => 'Slå saman og slett brukarar',
@@ -1015,9 +1018,10 @@ $messages['nn'] = array(
 	'usermerge-badnewuser' => 'Nytt brukernamn ugyldig',
 	'usermerge-nonewuser' => 'Nytt brukernamn tomt &ndash; går ut frå samanslåing til $1.<br />Klikk <u>Slå saman brukarar</u> for å godta',
 	'usermerge-noolduser' => 'Gammalt brukarnamn tomt',
-	'usermerge-olduser' => 'Gammalt brukernamn (slå saman frå)',
-	'usermerge-newuser' => 'Nytt brukernamn (slå saman til)',
-	'usermerge-deleteolduser' => 'Slett gammal brukar?',
+	'usermerge-fieldset' => 'Brukarnamn som skal verta slegne saman',
+	'usermerge-olduser' => 'Gammalt brukarnamn (slå saman frå):',
+	'usermerge-newuser' => 'Nytt brukarnamn (slå saman til):',
+	'usermerge-deleteolduser' => 'Slett gammal brukar',
 	'usermerge-submit' => 'Slå saman brukarar',
 	'usermerge-badtoken' => 'Ugyldig redigeringsteikn',
 	'usermerge-userdeleted' => '$1 ($2) er sletta.',
@@ -1152,6 +1156,8 @@ $messages['ps'] = array(
 );
 
 /** Portuguese (Português)
+ * @author Crazymadlover
+ * @author Jorge Morais
  * @author Lijealso
  * @author Malafaya
  * @author Sir Lestaty de Lioncourt
@@ -1163,11 +1169,11 @@ $messages['pt'] = array(
 	'usermerge-badolduser' => 'Nome antigo inválido',
 	'usermerge-badnewuser' => 'Nome novo inválido',
 	'usermerge-nonewuser' => 'Novo nome de utilizador vazio - assumida fusão com $1.<br />
-Clique <u>Fundir Utilizador</u> para aceitar.',
+Clique "{{int:usermerge-submit}}" para aceitar.',
 	'usermerge-noolduser' => 'Limpar nome antigo',
-	'usermerge-olduser' => 'Utilizador antigo (fundir de)',
-	'usermerge-newuser' => 'Utilizador novo (fundir para)',
-	'usermerge-deleteolduser' => 'Apagar utilizador antigo?',
+	'usermerge-olduser' => 'Utilizador antigo (fundir de):',
+	'usermerge-newuser' => 'Utilizador novo (fundir para):',
+	'usermerge-deleteolduser' => 'Apagar utilizador antigo',
 	'usermerge-submit' => 'Fundir utilizador',
 	'usermerge-badtoken' => 'Ficha de edição inválida',
 	'usermerge-userdeleted' => '$1 ($2) foi eliminado.',
@@ -1186,6 +1192,7 @@ Clique <u>Fundir Utilizador</u> para aceitar.',
 /** Brazilian Portuguese (Português do Brasil)
  * @author Crazymadlover
  * @author Eduardo.mps
+ * @author Jorge Morais
  */
 $messages['pt-br'] = array(
 	'usermerge' => 'Fusão e eliminação de utilizadores',
@@ -1197,7 +1204,7 @@ Clique "{{int:usermerge-submit}}" para aceitar.',
 	'usermerge-noolduser' => 'Limpar nome antigo',
 	'usermerge-olduser' => 'Utilizador antigo (fundir de):',
 	'usermerge-newuser' => 'Utilizador novo (fundir para):',
-	'usermerge-deleteolduser' => 'Apagar utilizador antigo?',
+	'usermerge-deleteolduser' => 'Apagar usuário antigo',
 	'usermerge-submit' => 'Fundir utilizador',
 	'usermerge-badtoken' => 'Token de edição inválida',
 	'usermerge-userdeleted' => '$1 ($2) foi eliminado.',
@@ -1433,12 +1440,13 @@ $messages['tl'] = array(
 	'usermerge-desc' => '[[Special:UserMerge|Nagsasanib ng mga sanggunian mula sa isang tagagamit patungo sa ibang tagagamit]] sa loob ng kalipunan ng dato ng wiki - magbubura din ng lumang mga tagagamit kasunod ng pagsasanib.  Nangangailangan ng mga karapatang "tagagamitpagsasanib"',
 	'usermerge-badolduser' => 'Hindi tanggap na lumang pangalan ng tagagamit',
 	'usermerge-badnewuser' => 'Hindi tanggap na bagong pangalan ng tagagamit',
-	'usermerge-nonewuser' => 'Tanggalan ng laman ang bagong pangalan ng tagagamit - itinuturing (ipinapalagay) na isasanib sa $1.<br />
-Pindutin ang <u>Isanib ang Tagagamit</u> upang tanggapin.',
+	'usermerge-nonewuser' => 'Tanggalan ng laman ang bagong pangalan ng tagagamit - ipinapalagay na isasanib sa $1.<br />
+Pindutin ang "{{int:usermerge-submit}}" upang tanggapin.',
 	'usermerge-noolduser' => 'Tanggalan ng laman ang lumang pangalan ng tagagamit',
-	'usermerge-olduser' => 'Lumang tagagamit (isanib mula sa)',
-	'usermerge-newuser' => 'Bagong tagagamit (isanib sa)',
-	'usermerge-deleteolduser' => 'Burahin ang lumang tagagamit?',
+	'usermerge-fieldset' => 'Mga pangalan ng tagagamit na pagsasanibin',
+	'usermerge-olduser' => 'Lumang tagagamit (isanib mula sa):',
+	'usermerge-newuser' => 'Bagong tagagamit (isanib sa):',
+	'usermerge-deleteolduser' => 'Burahin ang lumang tagagamit',
 	'usermerge-submit' => 'Isanib ang tagagamit',
 	'usermerge-badtoken' => 'Hindi tanggap na pananda ng pagbabago',
 	'usermerge-userdeleted' => 'Nabura na ang $1 ($2).',
@@ -1455,13 +1463,33 @@ Pindutin ang <u>Isanib ang Tagagamit</u> upang tanggapin.',
 );
 
 /** Turkish (Türkçe)
+ * @author Joseph
  * @author Karduelis
  */
 $messages['tr'] = array(
+	'usermerge' => 'Kullanıcıları birleştir ve sil',
+	'usermerge-desc' => "Viki veritabanında [[Special:UserMerge|referansları bir kullanıcıdan diğerine birleştirir]] - birleşmeyi mütakip eski kullanıcıları da siler. ''Kullanıcıbirleştir'' ayrıcalığı gerekir",
 	'usermerge-badolduser' => 'Geçersiz eski kullanıcı adı',
 	'usermerge-badnewuser' => 'Geçersiz yeni kullanıcı',
+	'usermerge-nonewuser' => 'Yeni boş kullanıcıadı - "$1" ile birleştirme varsayılıyor.<br />
+Kabul etmek için "{{int:usermerge-submit}}"e tıklayın.',
 	'usermerge-noolduser' => 'Boş eski kullanıcı adı',
-	'usermerge-deleteolduser' => 'Eski kullanıcı sil ?',
+	'usermerge-fieldset' => 'Birleştirilecek kullanıcı adları',
+	'usermerge-olduser' => 'Eski kullanıcı (dan birleştir):',
+	'usermerge-newuser' => 'Yeni kullanıcı (e birleştir):',
+	'usermerge-deleteolduser' => 'Eski kullanıcıyı sil',
+	'usermerge-submit' => 'Kullanıcıyı birleştir',
+	'usermerge-userdeleted' => '$1 ($2) silindi.',
+	'usermerge-userdeleted-log' => 'Silinen kullanıcı: $2 ($3)',
+	'usermerge-updating' => '$1 tablosu ($2 den $3 e) güncelleniyor',
+	'usermerge-success' => '$1 ($2) kullanıcısından $3 ($4) kullanıcısına birleştirme tamamlandı.',
+	'usermerge-success-log' => '$2 ($3) kullanıcısı $4 ($5) kullanıcısına birleştirildi',
+	'usermerge-logpage' => 'Kullanıcı birleştirme günlüğü',
+	'usermerge-logpagetext' => 'Bu bir kullanıcı birleştirme eylemleri günlüğüdür.',
+	'usermerge-noselfdelete' => 'Kendinizden birleştiremez ya da silemezsiniz!',
+	'usermerge-unmergable' => 'Kullanıcıdan birleştirilemiyor - ID ya da isim birleştirilemez olarak tanımlanmış.',
+	'usermerge-protectedgroup' => 'Kullanıcıdan birleştirilemiyor - kullanıcı korunan bir grupta bulunuyor.',
+	'right-usermerge' => 'Kullanıcıları birleştir',
 );
 
 /** Veps (Vepsan kel')
