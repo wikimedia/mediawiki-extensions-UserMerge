@@ -1501,7 +1501,7 @@ Kabul etmek için "{{int:usermerge-submit}}"e tıklayın.',
 $messages['vep'] = array(
 	'usermerge-badolduser' => 'Vär vanh kävutajan nimi',
 	'usermerge-badnewuser' => "Vär uz' kävutajan nimi",
-	'usermerge-deleteolduser' => 'Čuta poiš vanh kävutajan nimi?',
+	'usermerge-deleteolduser' => 'Čuta poiš vanh kävutajan nimi',
 );
 
 /** Vietnamese (Tiếng Việt)
