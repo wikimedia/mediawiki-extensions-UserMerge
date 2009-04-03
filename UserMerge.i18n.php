@@ -238,17 +238,20 @@ $messages['bs'] = array(
 
 /** Czech (Česky)
  * @author Matěj Grabovský
+ * @author Mormegil
  */
 $messages['cs'] = array(
-	'usermerge' => 'Sloučuvání a mazání uživatelů',
+	'usermerge' => 'Slučování a mazání uživatelů',
 	'usermerge-desc' => "[[Special:UserMerge|Slučuje odkazy na jednoho uživatele na odkazy na druhého]] v databázi wiki; také následně smaže starého uživatele. Vyžaduje oprávnění ''usermerge''.",
-	'usermerge-badolduser' => 'Neplatné staré uživatelské jméno',
+	'usermerge-badolduser' => 'Původní uživatelské jméno je neplatné',
 	'usermerge-badnewuser' => 'Neplatné nové uživatelské jmnéo',
-	'usermerge-nonewuser' => 'Prázdné nové uživatelské jméno',
-	'usermerge-noolduser' => 'Prázdné staré uživatelské jméno',
-	'usermerge-olduser' => 'Starý uživatel (sloučit odsud)',
-	'usermerge-newuser' => 'Nový uživatel (sloučit sem)',
-	'usermerge-deleteolduser' => 'Smazat starého uživatele?',
+	'usermerge-nonewuser' => 'Nové uživatelské jméno je prázdné – předpokládá se sloučení do „$1“.<br />
+Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.',
+	'usermerge-noolduser' => 'Původní uživatelské jméno je prázdné',
+	'usermerge-fieldset' => 'Slučovaná uživatelská jména',
+	'usermerge-olduser' => 'Původní uživatel (odkud se slučuje):',
+	'usermerge-newuser' => 'Nový uživatel (kam se slučuje):',
+	'usermerge-deleteolduser' => 'Smazat původního uživatele',
 	'usermerge-submit' => 'Sloučit uživatele',
 	'usermerge-badtoken' => 'Neplatný editační token',
 	'usermerge-userdeleted' => '$1 ($2) byl smazán.',
@@ -256,12 +259,12 @@ $messages['cs'] = array(
 	'usermerge-updating' => 'Aktualizuje se tabulka $1 ($2 na $3)',
 	'usermerge-success' => 'Sloučení z $1 ($2) do $3 ($4) je dokončeno.',
 	'usermerge-success-log' => 'Uživatel $2 ($3) byl sloučen do $4 ($5)',
-	'usermerge-logpage' => 'Záznam sloučení uživatelů',
-	'usermerge-logpagetext' => 'Toto je záznam sloučení uživatelů.',
-	'usermerge-noselfdelete' => 'Nemůžete smazat nebo sloučit svůj účet!',
-	'usermerge-unmergable' => 'Nebylo možné sloučit uživatele - zdrojové jméno nebo ID bylo definováno jako neslučitelné.',
-	'usermerge-protectedgroup' => 'Nebylo možné sloučit uvedeného uživatele - uživatel je v chráněné skupině.',
-	'right-usermerge' => 'Slučovat uživatele',
+	'usermerge-logpage' => 'Kniha slučování uživatelů',
+	'usermerge-logpagetext' => 'Toto je záznam slučování uživatelů.',
+	'usermerge-noselfdelete' => 'Nemůžete smazat nebo sloučit svůj vlastní účet!',
+	'usermerge-unmergable' => 'Nebylo možné sloučit uživatele – zdrojové jméno nebo ID bylo definováno jako neslučitelné.',
+	'usermerge-protectedgroup' => 'Nebylo možné sloučit uvedeného uživatele – uživatel je v chráněné skupině.',
+	'right-usermerge' => 'Slučování uživatelů',
 );
 
 /** German (Deutsch)
@@ -667,11 +670,12 @@ $messages['ia'] = array(
 	'usermerge-badolduser' => 'Nomine de usator ancian invalide',
 	'usermerge-badnewuser' => 'Nomine de nove usator invalide',
 	'usermerge-nonewuser' => 'Nomine de nove usator vacue; nos assume un fusion con $1.<br />
-Clicca <u>Fusionar usator</u> pro acceptar.',
+Clicca "{{int:usermerge-submit}}" pro acceptar.',
 	'usermerge-noolduser' => 'Nomine de usator ancian vacue',
-	'usermerge-olduser' => 'Ancian usator (fusionar ab)',
-	'usermerge-newuser' => 'Nove usator (fusionar verso)',
-	'usermerge-deleteolduser' => 'Deler ancian usator?',
+	'usermerge-fieldset' => 'Nomines de usator a fusionar',
+	'usermerge-olduser' => 'Ancian usator (fusionar ab):',
+	'usermerge-newuser' => 'Nove usator (fusionar con):',
+	'usermerge-deleteolduser' => 'Deler ancian usator',
 	'usermerge-submit' => 'Fusionar usator',
 	'usermerge-badtoken' => 'Indicio de modification invalide',
 	'usermerge-userdeleted' => '$1 ($2) ha essite delite.',
@@ -1173,6 +1177,7 @@ $messages['pt'] = array(
 	'usermerge-nonewuser' => 'Novo nome de utilizador vazio - assumida fusão com $1.<br />
 Clique "{{int:usermerge-submit}}" para aceitar.',
 	'usermerge-noolduser' => 'Limpar nome antigo',
+	'usermerge-fieldset' => 'Nomes de utilizadores a fundir',
 	'usermerge-olduser' => 'Utilizador antigo (fundir de):',
 	'usermerge-newuser' => 'Utilizador novo (fundir para):',
 	'usermerge-deleteolduser' => 'Apagar utilizador antigo',
