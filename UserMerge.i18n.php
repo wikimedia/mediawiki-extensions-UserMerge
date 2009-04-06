@@ -401,9 +401,9 @@ $messages['eu'] = array(
 	'usermerge-badolduser' => 'Baliogabeko lankide izen zaharra',
 	'usermerge-badnewuser' => 'Baliogabeko lankide izen berria',
 	'usermerge-noolduser' => 'Lankide izen zahar hutsa',
-	'usermerge-olduser' => 'Lankide zaharra (nondik batu)',
-	'usermerge-newuser' => 'Lankide berria (nora batu)',
-	'usermerge-deleteolduser' => 'Ezabatu lankide zaharra?',
+	'usermerge-olduser' => 'Lankide zaharra (nondik batu):',
+	'usermerge-newuser' => 'Lankide berria (nora batu):',
+	'usermerge-deleteolduser' => 'Ezabatu lankide zaharra',
 	'usermerge-submit' => 'Lankidea batu',
 	'usermerge-badtoken' => 'Aldaketa token ez baliagarria',
 	'usermerge-userdeleted' => '$1 ($2) ezabatua izan da.',
@@ -466,16 +466,16 @@ $messages['fi'] = array(
 $messages['fr'] = array(
 	'usermerge' => 'Fusionner et supprimer des utilisateurs',
 	'usermerge-desc' => "[[Special:UserMerge|Fusionne les références d’un utilisateur vers un autre]] dans la base de données wiki - supprimera aussi les anciens utilisateurs après la fusion. Nécessite le privilège ''usermerge''",
-	'usermerge-badolduser' => "Ancien nom d'utilisateur invalide",
-	'usermerge-badnewuser' => "Nouveau nom d'utilisateur invalide",
-	'usermerge-nonewuser' => "Nouveau nom d'utilisateur vide. Nous faisons l'hypothèse que vous voulez fusionner dans « $1 ».<br />
-Cliquez sur « {{int:usermerge-submit}} » pour accepter.",
-	'usermerge-noolduser' => "Ancien nom d'utilisateur vide",
+	'usermerge-badolduser' => 'Ancien nom d’utilisateur invalide',
+	'usermerge-badnewuser' => 'Nouveau nom d’utilisateur invalide',
+	'usermerge-nonewuser' => 'Nouveau nom d’utilisateur vide. Nous faisons l’hypothèse que vous voulez fusionner dans « $1 ».<br />
+Cliquez sur « {{int:usermerge-submit}} » pour accepter.',
+	'usermerge-noolduser' => 'Ancien nom d’utilisateur vide',
 	'usermerge-fieldset' => 'Noms d’utilisateur à fusionner',
 	'usermerge-olduser' => 'Ancien utilisateur (fusionner depuis) :',
 	'usermerge-newuser' => 'Nouvel utilisateur (fusionner avec) :',
 	'usermerge-deleteolduser' => 'Supprimer l’ancien utilisateur',
-	'usermerge-submit' => "Fusionner l'utilisateur",
+	'usermerge-submit' => 'Fusionner l’utilisateur',
 	'usermerge-badtoken' => 'Jeton de modification invalide',
 	'usermerge-userdeleted' => '$1 ($2) a été supprimé.',
 	'usermerge-userdeleted-log' => 'Contributeur supprimé : $2 ($3)',
@@ -483,10 +483,10 @@ Cliquez sur « {{int:usermerge-submit}} » pour accepter.",
 	'usermerge-success' => 'La fusion de $1 ($2) à $3 ($4) est terminée.',
 	'usermerge-success-log' => 'Utilisateur $2 ($3) fusionné avec $4 ($5)',
 	'usermerge-logpage' => 'Journal des fusions de comptes utilisateur',
-	'usermerge-logpagetext' => "Voici un journal des actions de fusions d'utilisateurs.",
+	'usermerge-logpagetext' => 'Voici un journal des actions de fusions d’utilisateurs.',
 	'usermerge-noselfdelete' => 'Vous ne pouvez pas vous supprimer ou vous fusionner vous-même !',
-	'usermerge-unmergable' => "Impossible de fusionner l'utilisateur : le numéro ou le nom a été défini comme non fusionnable.",
-	'usermerge-protectedgroup' => "Impossible de fusionner l'utilisateur : l'utilisateur est dans un groupe protégé.",
+	'usermerge-unmergable' => 'Impossible de fusionner l’utilisateur : le numéro ou le nom a été défini comme non fusionnable.',
+	'usermerge-protectedgroup' => 'Impossible de fusionner l’utilisateur : l’utilisateur est dans un groupe protégé.',
 	'right-usermerge' => 'Fusionner des utilisateurs',
 );
 
@@ -1015,6 +1015,7 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
  * @author Frokor
+ * @author Gunnernett
  * @author Harald Khan
  */
 $messages['nn'] = array(
@@ -1022,7 +1023,7 @@ $messages['nn'] = array(
 	'usermerge-desc' => "Gjev høve til å [[Special:UserMerge|slå saman kontoar]] ved at alle referansar til ein brukar vert bytta ut til ein annen brukar i databasen, for så å slette den eine kontoen. Krev rett til ''usermerge''.",
 	'usermerge-badolduser' => 'Gammalt brukernamn ugyldig',
 	'usermerge-badnewuser' => 'Nytt brukernamn ugyldig',
-	'usermerge-nonewuser' => 'Nytt brukernamn tomt &ndash; går ut frå samanslåing til $1.<br />Klikk <u>Slå saman brukarar</u> for å godta',
+	'usermerge-nonewuser' => 'Nytt brukarnamn tomt &ndash; går ut frå samanslåing til $1.<br />Klikk "{{int:usermerge-submit}}" for å godta',
 	'usermerge-noolduser' => 'Gammalt brukarnamn tomt',
 	'usermerge-fieldset' => 'Brukarnamn som skal verta slegne saman',
 	'usermerge-olduser' => 'Gammalt brukarnamn (slå saman frå):',
@@ -1438,6 +1439,13 @@ $messages['tg-cyrl'] = array(
 	'usermerge-userdeleted-log' => 'Корбари ҳазфшуда: $2 ($3)',
 	'usermerge-logpage' => 'Гузориши идғоми корбар',
 	'usermerge-logpagetext' => 'Ин гузориши амалҳои идғоми корбар аст.',
+);
+
+/** Thai (ไทย)
+ * @author Mopza
+ */
+$messages['th'] = array(
+	'usermerge-logpage' => 'ปูมการรวมผู้ใช้',
 );
 
 /** Tagalog (Tagalog)
