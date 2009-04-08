@@ -1346,6 +1346,7 @@ $messages['su'] = array(
 
 /** Swedish (Svenska)
  * @author Lejonel
+ * @author Micke
  * @author Sannab
  */
 $messages['sv'] = array(
@@ -1353,18 +1354,19 @@ $messages['sv'] = array(
 	'usermerge-desc' => "Ger möjlighet att [[Special:UserMerge|slå samman användarkonton]] genom att alla referenser till en användare byts ut till en annan användare i databasen, samt att efter sammanslagning radera gamla konton. Kräver behörigheten ''usermerge''.",
 	'usermerge-badolduser' => 'Ogiltigt gammalt användarnamn',
 	'usermerge-badnewuser' => 'Ogiltigt nytt användarnamn',
-	'usermerge-nonewuser' => 'Inget nytt användarnamn angavs. Antar att det gamla kontot ska slås ihop till $1.<br />Tryck på <u>Slå ihop konton</u> för att godkänna sammanslagningen.',
-	'usermerge-noolduser' => 'Inget gammalt användarnamn angavs',
-	'usermerge-olduser' => 'Gammalt användarnamn (slås ihop från)',
-	'usermerge-newuser' => 'Nytt användarnamn (slås ihop till)',
-	'usermerge-deleteolduser' => 'Ta bort det gamla användarkontot?',
-	'usermerge-submit' => 'Slå ihop konton',
+	'usermerge-nonewuser' => 'Nytt användarnamn tomt. Antar sammanslagning till $1.<br />Klicka på "{{int:usermerge-submit}}" för att godkänna.',
+	'usermerge-noolduser' => 'Gammalt användarnamn tomt',
+	'usermerge-fieldset' => 'Användarnamn att förena',
+	'usermerge-olduser' => 'Gammalt användarnamn (slå ihop från)',
+	'usermerge-newuser' => 'Nytt användarnamn (slå ihop till)',
+	'usermerge-deleteolduser' => 'Ta bort den gamla användaren',
+	'usermerge-submit' => 'Förena konton',
 	'usermerge-badtoken' => 'Ogiltigt redigeringstecken',
 	'usermerge-userdeleted' => '$1 ($2) har raderats.',
-	'usermerge-userdeleted-log' => 'raderade användare $2 ($3)',
-	'usermerge-updating' => 'Uppdaterar tabellen $1 (från $2 till $3)',
-	'usermerge-success' => 'Sammanslagningen av $1 ($2) till $3 ($4) har genomförts.',
-	'usermerge-success-log' => 'slog ihop användare $2 ($3) med $4 ($5)',
+	'usermerge-userdeleted-log' => 'Raderad användare: $2 ($3)',
+	'usermerge-updating' => 'Uppdaterar $1-tabell  ($2 till $3)',
+	'usermerge-success' => 'Sammanslagning från $1 ($2) till $3 ($4) är genomförd.',
+	'usermerge-success-log' => 'Användare $2 ($3) sammanslagen med $4 ($5)',
 	'usermerge-logpage' => 'Användarsammanslagningslogg',
 	'usermerge-logpagetext' => 'Det här är en logg över sammanslagningar av användarkonton.',
 	'usermerge-noselfdelete' => 'Du kan inte radera eller slå samman ditt eget konto!',
