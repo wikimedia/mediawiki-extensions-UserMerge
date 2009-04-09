@@ -129,6 +129,11 @@ $aliases['sa'] = array(
 	'UserMerge' => array( 'सदस्यसंयोग' ),
 );
 
+/** Thai (ไทย) */
+$aliases['th'] = array(
+	'UserMerge' => array( 'รวมบัญชีผู้ใช้' ),
+);
+
 /** Tagalog (Tagalog) */
 $aliases['tl'] = array(
 	'UserMerge' => array( 'Pagsasanib ng tagagamit' ),
