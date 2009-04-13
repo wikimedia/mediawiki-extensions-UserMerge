@@ -84,6 +84,11 @@ $aliases['ia'] = array(
 	'UserMerge' => array( 'Fusionar usatores' ),
 );
 
+/** Italian (Italiano) */
+$aliases['it'] = array(
+	'UserMerge' => array( 'UnisciUtenze' ),
+);
+
 /** Japanese (日本語) */
 $aliases['ja'] = array(
 	'UserMerge' => array( '利用者の統合' ),
