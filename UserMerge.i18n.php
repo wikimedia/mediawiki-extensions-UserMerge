@@ -1309,6 +1309,29 @@ Kliknutím na „{{int:usermerge-submit}}“ prijmete.',
 	'right-usermerge' => 'Zlučovať používateľov',
 );
 
+/** Serbian Cyrillic ekavian (ћирилица)
+ * @author Михајло Анђелковић
+ */
+$messages['sr-ec'] = array(
+	'usermerge' => 'Спаја и брише кориснике',
+	'usermerge-badolduser' => 'Неисправно старо корисничко име',
+	'usermerge-badnewuser' => 'Неисправно ново корисничко име',
+	'usermerge-fieldset' => 'Корисничка имена за спајање',
+	'usermerge-olduser' => 'Стари корисник (спајање од):',
+	'usermerge-newuser' => 'Нови корисник (спајање са):',
+	'usermerge-deleteolduser' => 'Обриши старог корисника',
+	'usermerge-submit' => 'Споји корисника',
+	'usermerge-userdeleted' => '$1 ($2) је обрисан.',
+	'usermerge-userdeleted-log' => 'Обрисан корисник: $2 ($3)',
+	'usermerge-success' => 'Спајање $1 ($2) са $3 ($4) је завршено.',
+	'usermerge-success-log' => 'Корисник $2 ($2) је спојен са $4 ($5)',
+	'usermerge-logpage' => 'Историја спајања корисника',
+	'usermerge-logpagetext' => 'Ово је историја спајања корисника.',
+	'usermerge-noselfdelete' => 'Не можете да се обришете или спојите са другим налогом!',
+	'usermerge-protectedgroup' => 'Није могуђе спојити овог корисника са другим — налази се у заштићеној групи.',
+	'right-usermerge' => 'Споји кориснике',
+);
+
 /** Seeltersk (Seeltersk)
  * @author Pyt
  */
