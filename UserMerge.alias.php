@@ -59,6 +59,11 @@ $aliases['fr'] = array(
 	'UserMerge' => array( 'Fusionner les utilisateurs', 'FusionnerLesUtilisateurs', 'Fusionner utilisateurs', 'FusionnerUtilisateurs', 'Fusionner utilisateur', 'FusionnerUtilisateur' ),
 );
 
+/** Franco-Provençal (Arpetan) */
+$aliases['frp'] = array(
+	'UserMerge' => array( 'Fusionar los utilisators', 'FusionarLosUtilisators' ),
+);
+
 /** Swiss German (Alemannisch) */
 $aliases['gsw'] = array(
 	'UserMerge' => array( 'Benutzerchonte zämmefiere' ),
