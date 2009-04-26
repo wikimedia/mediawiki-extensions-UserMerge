@@ -892,7 +892,7 @@ $messages['lb'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Féiert Benotzerkonten vun engem Benotzer op en anere Benotzer]] an der Wiki-Datebank zusammen - déi al Benotzerkonte ginn no der Zesummeféierung och geläscht. Erfuedert ''usermerge''-Rechter.",
 	'usermerge-badolduser' => 'Ongëltegen ale Benotzernumm',
 	'usermerge-badnewuser' => 'Ongëltegen neie Benotzernumm',
-	'usermerge-nonewuser' => 'Eidele neie Benotzernumm - wahrscheinlech eng Zesummeféierung matt "$1".<br />
+	'usermerge-nonewuser' => 'Eidele neie Benotzernumm - wahrscheinlech eng Zesummeféierung mat "$1".<br />
 Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
 	'usermerge-noolduser' => 'Eidelen ale Benotzernumm',
 	'usermerge-fieldset' => 'Benotzernimm fir zesummenzeféieren',
@@ -1258,8 +1258,8 @@ $messages['ru'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Переводит связи с одного участника на другого]] в базе данных вики, старые пользователи будут удаляться. Требует прав ''usermerge''",
 	'usermerge-badolduser' => 'Неправильное старое имя участника',
 	'usermerge-badnewuser' => 'Неправильное новое имя участника',
-	'usermerge-nonewuser' => 'Пустое новое имя участника — при слиянии с $1.<br />
-Нажмите <u>Объединить участников</u>, чтобы подтвердить действие.',
+	'usermerge-nonewuser' => 'Пустое новое имя участника — при слиянии с «$1».<br />
+Нажмите «{{int:usermerge-submit}}», чтобы подтвердить действие.',
 	'usermerge-noolduser' => 'Пустое старое имя участника',
 	'usermerge-olduser' => 'Старая учётная запись (объединить с)',
 	'usermerge-newuser' => 'Новая учётная запись (объединить в)',
