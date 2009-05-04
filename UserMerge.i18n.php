@@ -1272,9 +1272,10 @@ $messages['ru'] = array(
 	'usermerge-nonewuser' => 'Пустое новое имя участника — при слиянии с «$1».<br />
 Нажмите «{{int:usermerge-submit}}», чтобы подтвердить действие.',
 	'usermerge-noolduser' => 'Пустое старое имя участника',
-	'usermerge-olduser' => 'Старая учётная запись (объединить с)',
-	'usermerge-newuser' => 'Новая учётная запись (объединить в)',
-	'usermerge-deleteolduser' => 'Удалить старую учётную запись?',
+	'usermerge-fieldset' => 'Учётные записи для объединения',
+	'usermerge-olduser' => 'Старая учётная запись (объединить с):',
+	'usermerge-newuser' => 'Новая учётная запись (объединить в):',
+	'usermerge-deleteolduser' => 'Удалить старую учётную запись',
 	'usermerge-submit' => 'Объединить участников',
 	'usermerge-badtoken' => 'Недействительный маркер правки',
 	'usermerge-userdeleted' => '$1 ($2) был удалён.',
