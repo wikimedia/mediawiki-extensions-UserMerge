@@ -248,6 +248,13 @@ Kliknite na "{{int:usermerge-submit}}" za prihvatanje.',
 	'right-usermerge' => 'Spajanje korisnika',
 );
 
+/** Catalan (Català)
+ * @author Solde
+ */
+$messages['ca'] = array(
+	'usermerge-userdeleted-log' => 'Usuari eliminat: $2 ($3)',
+);
+
 /** Czech (Česky)
  * @author Matěj Grabovský
  * @author Mormegil
