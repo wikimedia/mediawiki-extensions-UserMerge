@@ -1065,17 +1065,20 @@ $messages['nn'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
  * @author Jon Harald Søby
+ * @author Nghtwlkr
  */
 $messages['no'] = array(
 	'usermerge' => 'Brukersammenslåing og -sletting',
 	'usermerge-desc' => "Gir muligheten til  å [[Special:UserMerge|slå sammen kontoer]] ved at alle referanser til en bruker byttes ut til en annen bruker i databasen, for så å slette den ene kontoen. Trenger rettigheten ''usermerge''.",
 	'usermerge-badolduser' => 'Gammelt brukernavn ugyldig',
 	'usermerge-badnewuser' => 'Nytt brukernavn ugyldig',
-	'usermerge-nonewuser' => 'Nytt brukernavn tomt &ndash; antar sammenslåing til $1.<br />Klikk <u>Slå sammen brukere</u> for å godta.',
+	'usermerge-nonewuser' => 'Nytt brukernavn tomt &ndash; antar sammenslåing til «$1».<br />
+Klikk «{{int:usermerge-submit}}» for å godta.',
 	'usermerge-noolduser' => 'Gammelt brukernavn tomt',
-	'usermerge-olduser' => 'Gammelt brukernavn (slå sammen fra)',
-	'usermerge-newuser' => 'Nytt brukernavn (slå sammen til)',
-	'usermerge-deleteolduser' => 'Slett gammel bruker?',
+	'usermerge-fieldset' => 'Brukernavn som skal slås sammen',
+	'usermerge-olduser' => 'Gammelt brukernavn (slå sammen fra):',
+	'usermerge-newuser' => 'Nytt brukernavn (slå sammen til):',
+	'usermerge-deleteolduser' => 'Slett gammel bruker',
 	'usermerge-submit' => 'Slå sammen brukere',
 	'usermerge-badtoken' => 'Ugydlgi redigeringstegn',
 	'usermerge-userdeleted' => '$1 ($2) har blitt slettet.',
