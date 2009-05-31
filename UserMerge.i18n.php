@@ -907,7 +907,7 @@ Kleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.',
  */
 $messages['lb'] = array(
 	'usermerge' => 'Benotzerkonten zesummeféieren a läschen',
-	'usermerge-desc' => "[[Special:UserMerge|Féiert Benotzerkonten vun engem Benotzer op en anere Benotzer]] an der Wiki-Datebank zusammen - déi al Benotzerkonte ginn no der Zesummeféierung och geläscht. Erfuedert ''usermerge''-Rechter.",
+	'usermerge-desc' => "[[Special:UserMerge|Féiert Benotzerkonte vun engem Benotzer op en anere Benotzer]] an der Wiki-Datebank zusammen - déi al Benotzerkonte ginn no der Zesummeféierung och geläscht. Erfuedert ''usermerge''-Rechter.",
 	'usermerge-badolduser' => 'Ongëltegen ale Benotzernumm',
 	'usermerge-badnewuser' => 'Ongëltegen neie Benotzernumm',
 	'usermerge-nonewuser' => 'Eidele neie Benotzernumm - wahrscheinlech eng Zesummeféierung mat "$1".<br />
@@ -1253,11 +1253,33 @@ Clique "{{int:usermerge-submit}}" para aceitar.',
 
 /** Romanian (Română)
  * @author KlaudiuMihaila
+ * @author Mihai
  */
 $messages['ro'] = array(
+	'usermerge' => 'Contopire şi ştergere utilizatori',
+	'usermerge-desc' => "[[Special:UserMerge|Contopeşte două conturi diferite de utilizatori]] totodată şterge din baza de date wiki contul de utilizator vechi ca urmare a contopirii. Necesită drepturi speciale (''usermerge'')",
 	'usermerge-badolduser' => 'Nume de utilizator vechi incorect',
 	'usermerge-badnewuser' => 'Nume de utilizator nou incorect',
+	'usermerge-nonewuser' => 'Noul nume de utilizator nu este introdus - Este presupusă fuzionarea în "$1".<br />
+Apasă "{{int:usermerge-submit}}" pentru a accepta.',
 	'usermerge-noolduser' => 'Nume de utilizator vechi gol',
+	'usermerge-fieldset' => 'Nume de utilizator de contopit',
+	'usermerge-olduser' => 'Utilizator vechi (redenumeşte din):',
+	'usermerge-newuser' => 'Utilizator nou (contopeşte în):',
+	'usermerge-deleteolduser' => 'Şterge contul de utilizator vechi',
+	'usermerge-submit' => 'Contopeşte utilizatorul',
+	'usermerge-badtoken' => 'Jetonul de modificare este invalid',
+	'usermerge-userdeleted' => '$1 ($2) a fost şters.',
+	'usermerge-userdeleted-log' => 'Şterge utilizator: $2 ($3)',
+	'usermerge-updating' => 'Actualizarea tabelului $1 ($2 în $3)',
+	'usermerge-success' => 'Contopirea din $1 ($2) în $3 ($4) este completă.',
+	'usermerge-success-log' => 'Utilizatorul $2 ($3) a fost contopit în $4 ($5)',
+	'usermerge-logpage' => 'Jurnal contopire utilizatori',
+	'usermerge-logpagetext' => 'Acesta este jurnalul acţiunilor de contopire a conturilor de utilizator.',
+	'usermerge-noselfdelete' => 'Nu poate fi şters sau contopit contul propriu!',
+	'usermerge-unmergable' => 'Nu poate fi contopit utilizatorul - ID-ul sau numele a fost definit ca fiind de necontopit.',
+	'usermerge-protectedgroup' => 'Nu poate fi contopit utilizatorul - utilizatorul face parte dintr-un grup protejat.',
+	'right-usermerge' => 'Contopire conturi de utilizator',
 );
 
 /** Tarandíne (Tarandíne)
