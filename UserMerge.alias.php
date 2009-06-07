@@ -114,6 +114,11 @@ $aliases['lb'] = array(
 	'UserMerge' => array( 'Benotzerkonten zesummeleeën' ),
 );
 
+/** Marathi (मराठी) */
+$aliases['mr'] = array(
+	'UserMerge' => array( 'सदस्यविलीनीकरण' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
 	'UserMerge' => array( 'Gebrukers_bie_mekaar_doon' ),
