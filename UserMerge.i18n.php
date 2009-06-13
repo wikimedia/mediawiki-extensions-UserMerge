@@ -719,12 +719,12 @@ $messages['id'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Menggabungkan rekam jejak dari suatu pengguna ke pengguna lain]] di basis data wiki - sekaligus menghapus pengguna lama setelah selesai digabungkan. Tindakan ini memerlukan hak ''usermerge''.",
 	'usermerge-badolduser' => 'Nama pengguna lama tidak sah',
 	'usermerge-badnewuser' => 'Nama pengguna baru tidak sah',
-	'usermerge-nonewuser' => 'Nama pengguna baru tidak dituliskan - diasumsikan akan digabungkan ke $1.<br />
-Klik <u>Gabungkan Pengguna</u> untuk melanjutkan.',
+	'usermerge-nonewuser' => 'Nama pengguna baru tidak dituliskan - diasumsikan akan digabungkan ke "$1".<br />
+Klik "{{int:usermerge-submit}}" untuk melanjutkan.',
 	'usermerge-noolduser' => 'Nama pengguna lama tidak diisi',
-	'usermerge-olduser' => 'Pengguna lama (digabungkan dari)',
-	'usermerge-newuser' => 'Pengguna baru (digabungkan ke)',
-	'usermerge-deleteolduser' => 'Hapus pengguna lama?',
+	'usermerge-olduser' => 'Pengguna lama (digabungkan dari):',
+	'usermerge-newuser' => 'Pengguna baru (digabungkan ke):',
+	'usermerge-deleteolduser' => 'Hapus pengguna lama',
 	'usermerge-submit' => 'Gabungkan pengguna',
 	'usermerge-badtoken' => 'Token penyuntingan tidak sah',
 	'usermerge-userdeleted' => '$1 ($2) telah dihapuskan.',
