@@ -722,6 +722,7 @@ $messages['id'] = array(
 	'usermerge-nonewuser' => 'Nama pengguna baru tidak dituliskan - diasumsikan akan digabungkan ke "$1".<br />
 Klik "{{int:usermerge-submit}}" untuk melanjutkan.',
 	'usermerge-noolduser' => 'Nama pengguna lama tidak diisi',
+	'usermerge-fieldset' => 'Akun-akun pengguna yang akan digabungkan',
 	'usermerge-olduser' => 'Pengguna lama (digabungkan dari):',
 	'usermerge-newuser' => 'Pengguna baru (digabungkan ke):',
 	'usermerge-deleteolduser' => 'Hapus pengguna lama',
