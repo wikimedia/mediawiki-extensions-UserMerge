@@ -89,6 +89,11 @@ $aliases['ia'] = array(
 	'UserMerge' => array( 'Fusionar usatores' ),
 );
 
+/** Indonesian (Bahasa Indonesia) */
+$aliases['id'] = array(
+	'UserMerge' => array( 'Penggabungan pengguna', 'PenggabunganPengguna' ),
+);
+
 /** Italian (Italiano) */
 $aliases['it'] = array(
 	'UserMerge' => array( 'UnisciUtenze' ),
