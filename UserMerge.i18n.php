@@ -77,6 +77,15 @@ $messages['ar'] = array(
 	'right-usermerge' => 'دمج المستخدمين',
 );
 
+/** Aramaic (ܐܪܡܝܐ)
+ * @author Basharh
+ */
+$messages['arc'] = array(
+	'usermerge-deleteolduser' => 'ܫܘܦ ܡܦܠܚܢܐ ܥܬܝܩܐ',
+	'usermerge-submit' => 'ܚܒܘܛ ܡܦܠܚܢܐ',
+	'right-usermerge' => 'ܚܒܘܛ ܡܦܠܚܢ̈ܐ',
+);
+
 /** Egyptian Spoken Arabic (مصرى)
  * @author Ghaly
  * @author Meno25
