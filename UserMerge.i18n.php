@@ -1588,6 +1588,31 @@ Kabul etmek için "{{int:usermerge-submit}}"e tıklayın.',
 	'right-usermerge' => 'Kullanıcıları birleştir',
 );
 
+/** Ukrainian (Українська)
+ * @author Ahonc
+ */
+$messages['uk'] = array(
+	'usermerge' => "Об'єднання і вилучення облікових записів",
+	'usermerge-desc' => "[[Special:UserMerge|Переводить зв'язки з одного користувача на іншого]] у базі даних вікі, старі користувачі будуть вилучатися. Вимагає прав ''usermerge''",
+	'usermerge-badolduser' => "Неправильне старе ім'я користувача",
+	'usermerge-badnewuser' => "Неправильне нове ім'я користувача",
+	'usermerge-nonewuser' => "Порожнє ім'я користувача — при злитті з «$1».<br />
+Натисніть «{{int:usermerge-submit}}», щоб підтвердити дію.",
+	'usermerge-noolduser' => "Порожнє старе ім'я користувача",
+	'usermerge-fieldset' => "Облікові записи для об'єднання",
+	'usermerge-olduser' => "Старий обліковий запис (об'єднати з):",
+	'usermerge-newuser' => "Новий обліковий запис (об'єднати у):",
+	'usermerge-deleteolduser' => 'Вилучити старий обліковий запис',
+	'usermerge-submit' => "Об'єднати користувачів",
+	'usermerge-badtoken' => 'Недійсний маркер редагування',
+	'usermerge-userdeleted' => '$1 ($2) був вилучений.',
+	'usermerge-userdeleted-log' => 'Вилучений користувач: $2 ($3)',
+	'usermerge-updating' => 'Оновлення таблиці $1 ($2 з $3)',
+	'usermerge-success' => "Об'єднання $1 ($2) з $3 ($4) виконане.",
+	'usermerge-success-log' => 'Користувач $2 ($3) приєднаний до $4 ($5)',
+	'usermerge-logpage' => "Журнал об'єднання користувачів",
+);
+
 /** Veps (Vepsan kel')
  * @author Игорь Бродский
  */
