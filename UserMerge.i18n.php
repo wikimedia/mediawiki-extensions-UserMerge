@@ -446,6 +446,7 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author BlueDevil
  * @author Huji
  * @author Meisam
  */
