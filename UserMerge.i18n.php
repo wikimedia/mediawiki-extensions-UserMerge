@@ -83,6 +83,7 @@ $messages['ar'] = array(
 $messages['arc'] = array(
 	'usermerge-deleteolduser' => 'ܫܘܦ ܡܦܠܚܢܐ ܥܬܝܩܐ',
 	'usermerge-submit' => 'ܚܒܘܛ ܡܦܠܚܢܐ',
+	'usermerge-logpage' => 'ܣܓܠܐ ܕܚܒܛ̈ܐ ܕܡܦܠܚܢܐ',
 	'right-usermerge' => 'ܚܒܘܛ ܡܦܠܚܢ̈ܐ',
 );
 
@@ -262,6 +263,13 @@ Kliknite na "{{int:usermerge-submit}}" za prihvatanje.',
  */
 $messages['ca'] = array(
 	'usermerge-userdeleted-log' => 'Usuari eliminat: $2 ($3)',
+);
+
+/** Sorani (Arabic script) (‫کوردی (عەرەبی)‬)
+ * @author Marmzok
+ */
+$messages['ckb-arab'] = array(
+	'usermerge-deleteolduser' => 'سڕینەوەی بەکارهێنەری کۆن',
 );
 
 /** Czech (Česky)
@@ -456,7 +464,7 @@ $messages['fa'] = array(
 	'usermerge-badnewuser' => 'نام کاربری جدید نامعتبر',
 	'usermerge-noolduser' => 'نام کاربری قدیمی خالی',
 	'usermerge-olduser' => 'کاربر قدیمی (ادغام از)',
-	'usermerge-newuser' => 'کاربر جدید (ادغام با)',
+	'usermerge-newuser' => 'کاربر جدید (ادغام با):',
 	'usermerge-deleteolduser' => 'کاربر قدیمی حذف شود؟',
 	'usermerge-submit' => 'یکی کردن کاربر',
 	'usermerge-userdeleted' => '$1 ($2) پاک شد.',
