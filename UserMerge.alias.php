@@ -149,6 +149,11 @@ $aliases['sa'] = array(
 	'UserMerge' => array( 'सदस्यसंयोग' ),
 );
 
+/** Slovak (Slovenčina) */
+$aliases['sk'] = array(
+	'UserMerge' => array( 'ZlúčeniePoužívateľov' ),
+);
+
 /** Thai (ไทย) */
 $aliases['th'] = array(
 	'UserMerge' => array( 'รวมบัญชีผู้ใช้' ),

@@ -35,13 +35,14 @@ Click "{{int:usermerge-submit}}" to accept.',
 );
 
 /** Message documentation (Message documentation)
+ * @author Fryed-peach
  * @author Jon Harald Søby
  * @author Meno25
  * @author Purodha
  * @author Siebrand
  */
 $messages['qqq'] = array(
-	'usermerge-desc' => 'Shown in [[Special:Version]] as a short description of this extension.{{doc-important|Do not translate links.}}',
+	'usermerge-desc' => '{{desc}}',
 	'usermerge-badtoken' => '{{Identical|Invalid edit token}}',
 	'right-usermerge' => '{{doc-right}}',
 );
