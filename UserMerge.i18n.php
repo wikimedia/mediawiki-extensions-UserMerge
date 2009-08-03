@@ -596,6 +596,19 @@ Klick uf "{{int:usermerge-submit}}" go s Uusfiere.',
 	'right-usermerge' => 'Benutzerkonte zämmefiere',
 );
 
+/** Gujarati (ગુજરાતી)
+ * @author Ashok modhvadia
+ */
+$messages['gu'] = array(
+	'usermerge' => 'સભ્યોને ભેળવો અને રદ કરો',
+	'usermerge-badolduser' => 'અમાન્ય જુનું સભ્યનામ',
+	'usermerge-badnewuser' => 'અમાન્ય નવું સભ્યનામ',
+	'usermerge-noolduser' => 'જુનું સભ્યનામ ખાલી કરો',
+	'usermerge-fieldset' => 'ભેળવવા માટેનાં સભ્યનામો',
+	'usermerge-submit' => 'સભ્ય ભેળવો',
+	'right-usermerge' => 'સભ્યો ભેળવો',
+);
+
 /** Hebrew (עברית)
  * @author Rotemliss
  * @author YaronSh
@@ -1381,6 +1394,7 @@ $messages['sr-ec'] = array(
 	'usermerge' => 'Спаја и брише кориснике',
 	'usermerge-badolduser' => 'Неисправно старо корисничко име',
 	'usermerge-badnewuser' => 'Неисправно ново корисничко име',
+	'usermerge-noolduser' => 'Испразни старо корисничко име',
 	'usermerge-fieldset' => 'Корисничка имена за спајање',
 	'usermerge-olduser' => 'Стари корисник (спајање од):',
 	'usermerge-newuser' => 'Нови корисник (спајање са):',
@@ -1388,6 +1402,7 @@ $messages['sr-ec'] = array(
 	'usermerge-submit' => 'Споји корисника',
 	'usermerge-userdeleted' => '$1 ($2) је обрисан.',
 	'usermerge-userdeleted-log' => 'Обрисан корисник: $2 ($3)',
+	'usermerge-updating' => 'Ажурирање $1 табеле ($2 на $3)',
 	'usermerge-success' => 'Спајање $1 ($2) са $3 ($4) је завршено.',
 	'usermerge-success-log' => 'Корисник $2 ($3) је спојен са $4 ($5)',
 	'usermerge-logpage' => 'Историја спајања корисника',
