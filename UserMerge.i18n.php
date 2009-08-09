@@ -472,8 +472,10 @@ $messages['fa'] = array(
 );
 
 /** Finnish (Suomi)
+ * @author Cimon Avaro
  * @author Crt
  * @author Nike
+ * @author Silvonen
  * @author Str4nd
  * @author Vililikku
  */
@@ -482,12 +484,17 @@ $messages['fi'] = array(
 	'usermerge-badolduser' => 'Vanha käyttäjätunnus ei kelpaa',
 	'usermerge-badnewuser' => 'Uusi käyttäjätunnus ei kelpaa',
 	'usermerge-noolduser' => 'Vanha käyttäjätunnus ei voi olla tyhjä.',
+	'usermerge-fieldset' => 'Yhdistettävät käyttäjänimet',
 	'usermerge-olduser' => 'Vanha käyttäjä (mikä yhdistetään)',
 	'usermerge-newuser' => 'Uusi käyttäjä (mihin yhdistetään)',
 	'usermerge-deleteolduser' => 'Poista vanha käyttäjä',
+	'usermerge-submit' => 'Yhdistä käyttäjä',
 	'usermerge-userdeleted' => '$1 ($2) on poistettu.',
 	'usermerge-userdeleted-log' => 'Poistettiin käyttäjä: $2 ($3)',
+	'usermerge-updating' => 'Päivitetään taulukko $1 ($2 arvoon $3)',
 	'usermerge-success-log' => 'Käyttäjä $2 ($3) yhdistettiin käyttäjään $4 ($5)',
+	'usermerge-logpage' => 'Käyttäjien yhdistämisloki',
+	'usermerge-logpagetext' => 'Tämä on loki käyttäjätunnuksien yhdistämistoimista.',
 	'right-usermerge' => 'Yhdistää käyttäjiä',
 );
 
