@@ -367,9 +367,26 @@ Klikni na "{{int:usermerge-submit}}", aby akceptěrował.',
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Crazymadlover
+ * @author ZaDiak
  */
 $messages['el'] = array(
+	'usermerge-badolduser' => 'Μη έγκυρο παλιό όνομα χρήστη',
+	'usermerge-badnewuser' => 'Μη έγκυρο νέο όνομα χρήστη',
+	'usermerge-noolduser' => 'Άδειασμα παλαιού ονόματος χρήστη',
+	'usermerge-fieldset' => 'Ονόματα χρηστών προς συγχώνευση',
+	'usermerge-olduser' => 'Παλιός χρήστης (συγχώνευση από):',
+	'usermerge-newuser' => 'Νέος χρήστης (συγχώνευση σε):',
 	'usermerge-deleteolduser' => 'Διαγραφή παλαιού χρήστη',
+	'usermerge-submit' => 'Συγχώνευση χρήστη',
+	'usermerge-userdeleted' => 'Ο $1 ($2) έχει διαγραφεί.',
+	'usermerge-userdeleted-log' => 'Διεγραμμένος χρήστης: $2 ($3)',
+	'usermerge-updating' => 'Ενημέρωση $1 πίνακα ($2 σε $3)',
+	'usermerge-success' => 'Η συγχώνευση από $1 ($2) σε $3 ($4) είναι πλήρης.',
+	'usermerge-success-log' => 'Ο χρήστης $2 ($3) συγχωνεύθηκε σε $4 ($5)',
+	'usermerge-logpage' => 'Αρχείο καταγραφής συγχωνεύσεων χρηστών',
+	'usermerge-logpagetext' => 'Αυτό είναι ένα αρχείο καταγραφής συγχωνεύσεων.',
+	'usermerge-noselfdelete' => 'Δεν μπορείτε να διαγράψετε ή να συγχωνευτείτε από μόνος σας!',
+	'right-usermerge' => 'Συγχώνευση χρηστών',
 );
 
 /** Esperanto (Esperanto)
@@ -428,6 +445,14 @@ Haga Click en "{{int:usermerge-submit}}" para aceptar.',
 	'usermerge-unmergable' => 'Incapaz de fusionar de usuario - ID o nombre ha sido definido como no fusionable.',
 	'usermerge-protectedgroup' => 'Incapaz de fusionar de usuario - Usuario está en un grupo protegido.',
 	'right-usermerge' => 'Fusionar usuarios',
+);
+
+/** Estonian (Eesti)
+ * @author Pikne
+ */
+$messages['et'] = array(
+	'usermerge-logpage' => 'Kasutaja ühendamislogi',
+	'usermerge-logpagetext' => 'See on kasutajaühendamistoimingute logi.',
 );
 
 /** Basque (Euskara)
@@ -1417,6 +1442,31 @@ $messages['sr-ec'] = array(
 	'usermerge-noselfdelete' => 'Не можете да се обришете или спојите са другим налогом!',
 	'usermerge-protectedgroup' => 'Није могуђе спојити овог корисника са другим — налази се у заштићеној групи.',
 	'right-usermerge' => 'Споји кориснике',
+);
+
+/** latinica (latinica)
+ * @author Michaello
+ */
+$messages['sr-el'] = array(
+	'usermerge' => 'Spaja i briše korisnike',
+	'usermerge-badolduser' => 'Neispravno staro korisničko ime',
+	'usermerge-badnewuser' => 'Neispravno novo korisničko ime',
+	'usermerge-noolduser' => 'Isprazni staro korisničko ime',
+	'usermerge-fieldset' => 'Korisnička imena za spajanje',
+	'usermerge-olduser' => 'Stari korisnik (spajanje od):',
+	'usermerge-newuser' => 'Novi korisnik (spajanje sa):',
+	'usermerge-deleteolduser' => 'Obriši starog korisnika',
+	'usermerge-submit' => 'Spoji korisnika',
+	'usermerge-userdeleted' => '$1 ($2) je obrisan.',
+	'usermerge-userdeleted-log' => 'Obrisan korisnik: $2 ($3)',
+	'usermerge-updating' => 'Ažuriranje $1 tabele ($2 na $3)',
+	'usermerge-success' => 'Spajanje $1 ($2) sa $3 ($4) je završeno.',
+	'usermerge-success-log' => 'Korisnik $2 ($3) je spojen sa $4 ($5)',
+	'usermerge-logpage' => 'Istorija spajanja korisnika',
+	'usermerge-logpagetext' => 'Ovo je istorija spajanja korisnika.',
+	'usermerge-noselfdelete' => 'Ne možete da se obrišete ili spojite sa drugim nalogom!',
+	'usermerge-protectedgroup' => 'Nije moguđe spojiti ovog korisnika sa drugim — nalazi se u zaštićenoj grupi.',
+	'right-usermerge' => 'Spoji korisnike',
 );
 
 /** Seeltersk (Seeltersk)
