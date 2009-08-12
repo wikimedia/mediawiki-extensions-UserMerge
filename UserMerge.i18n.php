@@ -370,6 +370,7 @@ Klikni na "{{int:usermerge-submit}}", aby akceptěrował.',
  * @author ZaDiak
  */
 $messages['el'] = array(
+	'usermerge' => 'Συγχώνευση και διαγραφή χρηστών',
 	'usermerge-badolduser' => 'Μη έγκυρο παλιό όνομα χρήστη',
 	'usermerge-badnewuser' => 'Μη έγκυρο νέο όνομα χρήστη',
 	'usermerge-noolduser' => 'Άδειασμα παλαιού ονόματος χρήστη',
@@ -1005,16 +1006,17 @@ Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
 );
 
 /** Macedonian (Македонски)
+ * @author Bjankuloski06
  * @author Brest
  */
 $messages['mk'] = array(
 	'usermerge' => 'Спојување и бришење корисници',
-	'usermerge-submit' => 'Спојување корисник',
+	'usermerge-submit' => 'Спој го корисникот',
 	'usermerge-badtoken' => 'Погрешен токен за уредување',
 	'usermerge-userdeleted' => '$1 ($2) беше избришано.',
 	'usermerge-userdeleted-log' => 'Избришан корисник: $2 ($3)',
 	'usermerge-logpage' => 'Дневник на спојувања на кориснички сметки',
-	'usermerge-logpagetext' => 'Ова е дневник на акции за спојување на кориснички имиња.',
+	'usermerge-logpagetext' => 'Ова е дневник на спојувања на кориснички имиња.',
 	'right-usermerge' => 'Спојување на корисници',
 );
 
