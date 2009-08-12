@@ -260,9 +260,14 @@ Kliknite na "{{int:usermerge-submit}}" za prihvatanje.',
 );
 
 /** Catalan (Català)
+ * @author Paucabot
  * @author Solde
  */
 $messages['ca'] = array(
+	'usermerge-badolduser' => "Nom d'usuari antic no vàlid",
+	'usermerge-badnewuser' => "Nom d'usuari nou no vàlid",
+	'usermerge-deleteolduser' => "Elimina l'antic usuari",
+	'usermerge-submit' => 'Combina els usuaris',
 	'usermerge-userdeleted-log' => 'Usuari eliminat: $2 ($3)',
 );
 
@@ -367,6 +372,7 @@ Klikni na "{{int:usermerge-submit}}", aby akceptěrował.',
 /** Greek (Ελληνικά)
  * @author Consta
  * @author Crazymadlover
+ * @author Omnipaedista
  * @author ZaDiak
  */
 $messages['el'] = array(
@@ -379,6 +385,7 @@ $messages['el'] = array(
 	'usermerge-newuser' => 'Νέος χρήστης (συγχώνευση σε):',
 	'usermerge-deleteolduser' => 'Διαγραφή παλαιού χρήστη',
 	'usermerge-submit' => 'Συγχώνευση χρήστη',
+	'usermerge-badtoken' => 'Άκυρο δείγμα επεξεργασίας',
 	'usermerge-userdeleted' => 'Ο $1 ($2) έχει διαγραφεί.',
 	'usermerge-userdeleted-log' => 'Διεγραμμένος χρήστης: $2 ($3)',
 	'usermerge-updating' => 'Ενημέρωση $1 πίνακα ($2 σε $3)',
@@ -603,6 +610,13 @@ Prema en "{{int:usermerge-submit}}" para aceptar.',
 	'usermerge-unmergable' => 'Non se pode fusionar o usuario (o ID ou o nome foron definidos como "non fusionables").',
 	'usermerge-protectedgroup' => 'Non se pode fusionar o usuario (o usuario está nun frupo protexido).',
 	'right-usermerge' => 'Fusionar usuarios',
+);
+
+/** Ancient Greek (Ἀρχαία ἑλληνικὴ)
+ * @author Omnipaedista
+ */
+$messages['grc'] = array(
+	'usermerge-badtoken' => 'Ἄκυρον δεῖγμα μεταγραφῆς',
 );
 
 /** Swiss German (Alemannisch)
