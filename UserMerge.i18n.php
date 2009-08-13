@@ -211,11 +211,13 @@ $messages['br'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Kendeuziñ a ra daveennoù un implijer gant re unan bennak all]] e diaz titouroù ar wiki - diverkañ a raio ivez ar c'hendeuzadennoù implijer kozh da zont. Rekis eo kaout aotreoù ''kendeuziñ''",
 	'usermerge-badolduser' => 'Anv implijer kozh direizh',
 	'usermerge-badnewuser' => 'Anv implijer nevez direizh',
-	'usermerge-nonewuser' => "Anv implijer nevez goullo - soñjal a ra deomp e fell deoc'h kendeuziñ davet $1.<br />Klikañ war <u>Kendeuziñ implijer</u> evit asantiñ.",
+	'usermerge-nonewuser' => 'Anv implijer nevez goullo - soñjal a ra deomp e fell deoc\'h kendeuziñ davet "$1".<br />
+Klikañ war "{{int:usermerge-submit}}" evit asantiñ.',
 	'usermerge-noolduser' => 'Anv implijer kozh goullo',
-	'usermerge-olduser' => 'Implijer kozh (kendeuziñ adal)',
-	'usermerge-newuser' => 'Implijer nevez (kendeuziñ davet)',
-	'usermerge-deleteolduser' => 'Diverkañ an implijer kozh ?',
+	'usermerge-fieldset' => 'Anvioù implijer da gendeuziñ',
+	'usermerge-olduser' => 'Implijer kozh (kendeuziñ adal) :',
+	'usermerge-newuser' => 'Implijer nevez (kendeuziñ gant) :',
+	'usermerge-deleteolduser' => 'Diverkañ an implijer kozh',
 	'usermerge-submit' => 'Kendeuziñ implijer',
 	'usermerge-badtoken' => 'Jedouer aozañ direizh',
 	'usermerge-userdeleted' => 'Diverket eo bet $1 ($2).',
@@ -227,6 +229,8 @@ $messages['br'] = array(
 	'usermerge-logpagetext' => 'Setu aze marilh kendeuzadennoù an implijerien.',
 	'usermerge-noselfdelete' => "N'hallit ket diverkañ pe kendeuziñ adal pe davedoc'h hoc'h-unan",
 	'usermerge-unmergable' => 'Dibosupl kendeuziñ adal un implijer - un niv. anaout pe un anv bet termenet evel digendeuzadus.',
+	'usermerge-protectedgroup' => 'Dibosupl kendeuziñ an implijer - emañ-eñ en ur strollad gwarezet',
+	'right-usermerge' => 'Kendeuziñ implijerien',
 );
 
 /** Bosnian (Bosanski)
