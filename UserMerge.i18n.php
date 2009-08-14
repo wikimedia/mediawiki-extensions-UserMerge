@@ -875,7 +875,7 @@ $messages['ja'] = array(
 	'usermerge-nonewuser' => '新しい利用者名の欄が空です。「$1」への統合と仮定します。<br />
 「{{int:usermerge-submit}}」をクリックして承認してください。',
 	'usermerge-noolduser' => '旧利用者名の欄が空です',
-	'usermerge-fieldset' => '統合すべき利用者名',
+	'usermerge-fieldset' => '統合する利用者名',
 	'usermerge-olduser' => '旧利用者 (統合元):',
 	'usermerge-newuser' => '新利用者 (統合先):',
 	'usermerge-deleteolduser' => '旧利用者を削除する',
