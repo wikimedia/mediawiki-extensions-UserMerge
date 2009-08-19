@@ -411,7 +411,7 @@ $messages['eo'] = array(
 	'usermerge-badnewuser' => 'Nevalida nova salutnomo',
 	'usermerge-noolduser' => 'Malplena malnova salutnomo',
 	'usermerge-fieldset' => 'Kunigotaj salutnomoj',
-	'usermerge-olduser' => 'Malnova uzanto (kunigante de)',
+	'usermerge-olduser' => 'Malnova uzanto (kunigante de):',
 	'usermerge-newuser' => 'Nova uzanto (kunigante al)',
 	'usermerge-deleteolduser' => 'Forigi malnovan uzanton',
 	'usermerge-submit' => 'Kunigi uzanton',
@@ -1798,6 +1798,7 @@ $messages['yue'] = array(
 /** Simplified Chinese (‪中文(简体)‬)
  * @author Gaoxuewei
  * @author Gzdavidwong
+ * @author Liangent
  */
 $messages['zh-hans'] = array(
 	'usermerge' => '用户合并和删除',
@@ -1805,9 +1806,9 @@ $messages['zh-hans'] = array(
 	'usermerge-badnewuser' => '无效的新用户名',
 	'usermerge-nonewuser' => '清除新用户名 - 假设合并到$1。<br />点击<u>合并用户</u>以接受。',
 	'usermerge-noolduser' => '清除旧用户名',
-	'usermerge-olduser' => '旧用户 （合并自）',
-	'usermerge-newuser' => '新用户 （合并到）',
-	'usermerge-deleteolduser' => '删除旧用户？',
+	'usermerge-olduser' => '旧用户（合并自）：',
+	'usermerge-newuser' => '新用户（合并到）：',
+	'usermerge-deleteolduser' => '删除旧用户',
 	'usermerge-submit' => '合并用户',
 	'usermerge-badtoken' => '无效的编辑币',
 	'usermerge-userdeleted' => '$1（$2） 已删除。',
