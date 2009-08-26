@@ -994,14 +994,15 @@ Kleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.',
 );
 
 /** Luxembourgish (Lëtzebuergesch)
+ * @author Les Meloures
  * @author Robby
  */
 $messages['lb'] = array(
 	'usermerge' => 'Benotzerkonten zesummeféieren a läschen',
-	'usermerge-desc' => "[[Special:UserMerge|Féiert Benotzerkonte vun engem Benotzer op en anere Benotzer]] an der Wiki-Datebank zusammen - déi al Benotzerkonte ginn no der Zesummeféierung och geläscht. Erfuedert ''usermerge''-Rechter.",
+	'usermerge-desc' => "[[Special:UserMerge|Féiert Benotzerkonte vun engem Benotzer mat engem anere Benotzer]] an der Wiki-Datebank zesummen - déi al Benotzerkonte ginn no der Zesummeféierung och geläscht. Erfuedert ''usermerge''-Rechter.",
 	'usermerge-badolduser' => 'Ongëltegen ale Benotzernumm',
 	'usermerge-badnewuser' => 'Ongëltegen neie Benotzernumm',
-	'usermerge-nonewuser' => 'Eidele neie Benotzernumm - wahrscheinlech eng Zesummeféierung mat "$1".<br />
+	'usermerge-nonewuser' => 'Eidelen neie Benotzernumm - wahrscheinlech eng Zesummeféierung mat "$1".<br />
 Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
 	'usermerge-noolduser' => 'Eidelen ale Benotzernumm',
 	'usermerge-fieldset' => 'Benotzernimm fir zesummenzeféieren',
