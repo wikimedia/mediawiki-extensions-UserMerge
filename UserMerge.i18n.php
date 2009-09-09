@@ -1671,6 +1671,7 @@ Pindutin ang "{{int:usermerge-submit}}" upang tanggapin.',
 /** Turkish (Türkçe)
  * @author Joseph
  * @author Karduelis
+ * @author Srhat
  */
 $messages['tr'] = array(
 	'usermerge' => 'Kullanıcıları birleştir ve sil',
@@ -1685,6 +1686,7 @@ Kabul etmek için "{{int:usermerge-submit}}"e tıklayın.',
 	'usermerge-newuser' => 'Yeni kullanıcı (e birleştir):',
 	'usermerge-deleteolduser' => 'Eski kullanıcıyı sil',
 	'usermerge-submit' => 'Kullanıcıyı birleştir',
+	'usermerge-badtoken' => 'Geçersiz değişiklik dizgeciği',
 	'usermerge-userdeleted' => '$1 ($2) silindi.',
 	'usermerge-userdeleted-log' => 'Silinen kullanıcı: $2 ($3)',
 	'usermerge-updating' => '$1 tablosu ($2 den $3 e) güncelleniyor',
