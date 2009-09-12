@@ -1252,12 +1252,14 @@ Kliknij „{{int:usermerge-submit}}”, aby zaakceptować.',
 
 /** Piedmontese (Piemontèis)
  * @author Bèrto 'd Sèra
+ * @author Dragonòt
  */
 $messages['pms'] = array(
 	'usermerge' => "Union e scancelament d'utent",
 	'usermerge-badolduser' => 'Vej stranòm nen bon',
 	'usermerge-badnewuser' => 'Neuv stranòm nen bon',
-	'usermerge-nonewuser' => "Neuv stranòm veujd - i la tnisoma bon për n'union a $1.<br />de-ie 'n colp ansima a <u>Unì Utent</u> për aceté.",
+	'usermerge-nonewuser' => 'Neuv stranòm veujd - i të tnisoma bon për n\'union a "$1".<br />
+Sgnaca "{{int:usermerge-submit}}" për asseté.',
 	'usermerge-noolduser' => 'Vej stranòm veujd',
 	'usermerge-olduser' => 'Vej stranòm (Unì da)',
 	'usermerge-newuser' => 'Neuv stranòm (Unì a)',
@@ -1737,6 +1739,7 @@ $messages['vep'] = array(
 	'usermerge-badolduser' => 'Vär vanh kävutajan nimi',
 	'usermerge-badnewuser' => "Vär uz' kävutajan nimi",
 	'usermerge-deleteolduser' => 'Čuta poiš vanh kävutajan nimi',
+	'right-usermerge' => 'Ühtenzoitta kävutajid',
 );
 
 /** Vietnamese (Tiếng Việt)
