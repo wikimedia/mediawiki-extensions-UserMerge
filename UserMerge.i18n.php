@@ -1256,19 +1256,29 @@ Kliknij „{{int:usermerge-submit}}”, aby zaakceptować.',
  */
 $messages['pms'] = array(
 	'usermerge' => "Union e scancelament d'utent",
+	'usermerge-desc' => "[[Special:UserMerge|A uniss j'arferiment da n'utent a n'àutr utent]] ant ël database wiki - a scanselerà ëdcò ij vej utent d'apress l'union. A veul ij pribilegi ''usermerge''",
 	'usermerge-badolduser' => 'Vej stranòm nen bon',
 	'usermerge-badnewuser' => 'Neuv stranòm nen bon',
 	'usermerge-nonewuser' => 'Neuv stranòm veujd - i të tnisoma bon për n\'union a "$1".<br />
 Sgnaca "{{int:usermerge-submit}}" për asseté.',
 	'usermerge-noolduser' => 'Vej stranòm veujd',
-	'usermerge-olduser' => 'Vej stranòm (Unì da)',
-	'usermerge-newuser' => 'Neuv stranòm (Unì a)',
-	'usermerge-deleteolduser' => "Veul-lo scancelé l'utent vej?",
+	'usermerge-fieldset' => 'Nòm utent da unì',
+	'usermerge-olduser' => 'Vej utent (unì da):',
+	'usermerge-newuser' => 'Neuv utent (unì a):',
+	'usermerge-deleteolduser' => "Scansela l'utent vej",
 	'usermerge-submit' => 'Unì Utent',
 	'usermerge-badtoken' => "Geton d'edission nen bon",
 	'usermerge-userdeleted' => "$1($2) a l'é stàit scancelà.",
+	'usermerge-userdeleted-log' => 'Utent scanselà: $2 ($3)',
 	'usermerge-updating' => "Antramentr ch'i agiornoma la tàola $1 ($2 a $3)",
 	'usermerge-success' => 'Union da $1($2) a $3($4) completà.',
+	'usermerge-success-log' => 'Utent $2 ($3) unì a $4 ($5)',
+	'usermerge-logpage' => 'Registr dle union utent',
+	'usermerge-logpagetext' => "Sto sì a l'é un registr ëd le assion d'union utent.",
+	'usermerge-noselfdelete' => 'It peule pa scanselé o unì ti midem!',
+	'usermerge-unmergable' => "As peul pa unì l'utent - l'ID o ël nòm a l'é stàit definì pa unificàbil.",
+	'usermerge-protectedgroup' => "As peul pa unì l'utent - l'utent a l'é ant na partìa protegiùa.",
+	'right-usermerge' => "Uniss j'utent",
 );
 
 /** Pashto (پښتو)
