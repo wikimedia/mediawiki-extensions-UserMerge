@@ -764,8 +764,14 @@ Klike (prese) <u>Mèt ansanm kont Itilizatè</u> pou aksepte operasyon an.',
 
 /** Hungarian (Magyar)
  * @author Dani
+ * @author Glanthor Reviol
  */
 $messages['hu'] = array(
+	'usermerge' => 'Felhasználói fiókok összevonása és törlése',
+	'usermerge-badolduser' => 'Érvénytelen régi felhasználói név',
+	'usermerge-badnewuser' => 'Érvénytelen új felhasználói név',
+	'usermerge-deleteolduser' => 'Régi felhasználói fiók törlése',
+	'usermerge-submit' => 'Felhasználói fiók összevonása',
 	'right-usermerge' => 'szerkesztők egyesítése',
 );
 
