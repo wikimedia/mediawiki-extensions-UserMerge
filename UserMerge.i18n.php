@@ -770,8 +770,15 @@ $messages['hu'] = array(
 	'usermerge' => 'Felhasználói fiókok összevonása és törlése',
 	'usermerge-badolduser' => 'Érvénytelen régi felhasználói név',
 	'usermerge-badnewuser' => 'Érvénytelen új felhasználói név',
+	'usermerge-noolduser' => 'A régi felhasználói név üres',
+	'usermerge-fieldset' => 'Összevonandó felhasználói nevek',
+	'usermerge-olduser' => 'Régi felhasználói név (honnan):',
+	'usermerge-newuser' => 'Új felhasználói név (hová):',
 	'usermerge-deleteolduser' => 'Régi felhasználói fiók törlése',
 	'usermerge-submit' => 'Felhasználói fiók összevonása',
+	'usermerge-badtoken' => 'Érvénytelen szerkesztési token',
+	'usermerge-logpage' => 'Felhasználói nevek egyesítésének naplója',
+	'usermerge-logpagetext' => 'Ez a felhasználó nevek összevonásának naplója.',
 	'right-usermerge' => 'szerkesztők egyesítése',
 );
 
