@@ -314,6 +314,7 @@ Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.',
 );
 
 /** German (Deutsch)
+ * @author Lukas9950
  * @author Raimond Spekking
  */
 $messages['de'] = array(
@@ -331,15 +332,15 @@ Klicke auf „{{int:usermerge-submit}}“ zum Ausführen.',
 	'usermerge-submit' => 'Benutzerkonten zusammenführen',
 	'usermerge-badtoken' => 'Ungültiges Bearbeiten-Token',
 	'usermerge-userdeleted' => '„$1“ ($2) wurde gelöscht.',
-	'usermerge-userdeleted-log' => 'Gelöschter Benutzername: „$2“ ($3)',
-	'usermerge-updating' => 'Aktualisierung $1 Tabelle ($2 nach $3)',
-	'usermerge-success' => 'Die Zusammenführung von „$1“ ($2) nach „$3“ ($4) ist vollständig.',
-	'usermerge-success-log' => 'Benutzername „$2“ ($3) zusammengeführt mit „$4“ ($5)',
+	'usermerge-userdeleted-log' => 'hat „$2“ gelöscht',
+	'usermerge-updating' => 'Aktualisiere Tabelle $1 ...',
+	'usermerge-success' => 'Die Zusammenführung von „$1“ nach „$3“ war erfolgreich.',
+	'usermerge-success-log' => 'hat „$2“ mit „$4“ zusammengeführt',
 	'usermerge-logpage' => 'Benutzerkonten-Zusammenführungs-Logbuch',
 	'usermerge-logpagetext' => 'Dies ist das Logbuch der Benutzerkonten-Zusammenführungen.',
-	'usermerge-noselfdelete' => 'Zusammenführung mit sich selber ist nicht möglich!',
+	'usermerge-noselfdelete' => 'Die Zusammenführung mit sich selber ist nicht möglich!',
 	'usermerge-unmergable' => 'Zusammenführung nicht möglich - ID oder Benutzername wurde als nicht zusammenführbar definiert.',
-	'usermerge-protectedgroup' => 'Zusammenführung nicht möglich - Benutzername ist in einer geschützen Gruppe.',
+	'usermerge-protectedgroup' => 'Die Zusammenführung ist nicht möglich - der Benutzer befindet sich in einer geschützen Gruppe.',
 	'right-usermerge' => 'Benutzerkonten vereinen',
 );
 
@@ -1299,7 +1300,7 @@ Sgnaca "{{int:usermerge-submit}}" për asseté.',
  */
 $messages['ps'] = array(
 	'usermerge-badnewuser' => 'نوی کارن-نوم مو ناسم دی',
-	'usermerge-deleteolduser' => 'آيا زوړ کارونکی ړنګوې؟',
+	'usermerge-deleteolduser' => 'زوړ کارن ړنګول',
 );
 
 /** Portuguese (Português)
