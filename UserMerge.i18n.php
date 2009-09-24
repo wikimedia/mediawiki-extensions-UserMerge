@@ -316,6 +316,7 @@ Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.',
 /** German (Deutsch)
  * @author Lukas9950
  * @author Raimond Spekking
+ * @author Umherirrender
  */
 $messages['de'] = array(
 	'usermerge' => 'Benutzerkonten zusammenführen und löschen',
@@ -332,10 +333,10 @@ Klicke auf „{{int:usermerge-submit}}“ zum Ausführen.',
 	'usermerge-submit' => 'Benutzerkonten zusammenführen',
 	'usermerge-badtoken' => 'Ungültiges Bearbeiten-Token',
 	'usermerge-userdeleted' => '„$1“ ($2) wurde gelöscht.',
-	'usermerge-userdeleted-log' => 'hat „$2“ gelöscht',
-	'usermerge-updating' => 'Aktualisiere Tabelle $1 ...',
-	'usermerge-success' => 'Die Zusammenführung von „$1“ nach „$3“ war erfolgreich.',
-	'usermerge-success-log' => 'hat „$2“ mit „$4“ zusammengeführt',
+	'usermerge-userdeleted-log' => 'hat „$2“ ($3) gelöscht',
+	'usermerge-updating' => 'Aktualisiere Tabelle $1 ($2 nach $3) …',
+	'usermerge-success' => 'Die Zusammenführung von „$1“ ($2) nach „$3“ ($4) war erfolgreich.',
+	'usermerge-success-log' => 'hat „$2“ ($3) mit „$4“ ($5) zusammengeführt',
 	'usermerge-logpage' => 'Benutzerkonten-Zusammenführungs-Logbuch',
 	'usermerge-logpagetext' => 'Dies ist das Logbuch der Benutzerkonten-Zusammenführungen.',
 	'usermerge-noselfdelete' => 'Die Zusammenführung mit sich selber ist nicht möglich!',
