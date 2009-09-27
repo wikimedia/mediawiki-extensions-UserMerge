@@ -44,6 +44,22 @@ Click "{{int:usermerge-submit}}" to accept.',
 $messages['qqq'] = array(
 	'usermerge-desc' => '{{desc}}',
 	'usermerge-badtoken' => '{{Identical|Invalid edit token}}',
+	'usermerge-userdeleted' => 'Parameters:
+* $1 is a user name (not linked)
+* $2 is a user ID',
+	'usermerge-userdeleted-log' => 'Parameters:
+* $2 is a user name (not linked) of the deleted user
+* $3 is a user ID of the deleted user',
+	'usermerge-success' => 'Parameters:
+* $1 is a user name (not linked) that is merged into another user
+* $2 is a user ID of the source user
+* $3 is a user name (not linked) that the other user is merged into
+* $4 is a user ID of the target user',
+	'usermerge-success-log' => 'Parameters:
+* $2 is a user name (not linked) that is merged into another user
+* $3 is a user ID of the source user
+* $4 is a user name (not linked) that the other user is merged into
+* $5 is a user ID of the target user',
 	'right-usermerge' => '{{doc-right}}',
 );
 
@@ -1127,10 +1143,10 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 	'usermerge-deleteolduser' => 'Oude gebruiker verwijderen',
 	'usermerge-submit' => 'Gebruiker samenvoegen',
 	'usermerge-badtoken' => 'Ongeldig bewerkingstoken',
-	'usermerge-userdeleted' => '$1($2) is verwijderd.',
-	'usermerge-userdeleted-log' => 'Verwijderde gebruiker: $2($3)',
+	'usermerge-userdeleted' => '$1 ($2) is verwijderd.',
+	'usermerge-userdeleted-log' => 'Verwijderde gebruiker: $2 ($3)',
 	'usermerge-updating' => 'Tabel $1 aan het bijwerken ($2 naar $3)',
-	'usermerge-success' => 'Samenvoegen van $1($2) naar $3($4) is afgerond.',
+	'usermerge-success' => 'Samenvoegen van $1 ($2) naar $3 ($4) is afgerond.',
 	'usermerge-success-log' => 'Gebruiker $2 ($3) samengevoegd naar $4 ($5)',
 	'usermerge-logpage' => 'Logboek gebruikerssamenvoegingen',
 	'usermerge-logpagetext' => 'Dit is het logboek van gebruikerssamenvoegingen.',
