@@ -281,14 +281,19 @@ Kliknite na "{{int:usermerge-submit}}" za prihvatanje.',
 
 /** Catalan (Català)
  * @author Paucabot
+ * @author SMP
  * @author Solde
  */
 $messages['ca'] = array(
 	'usermerge-badolduser' => "Nom d'usuari antic no vàlid",
 	'usermerge-badnewuser' => "Nom d'usuari nou no vàlid",
+	'usermerge-noolduser' => "Nom d'usuari antic sense especificar",
+	'usermerge-olduser' => 'Antic usuari (barreja des de):',
+	'usermerge-newuser' => 'Nou usuari (barreja a):',
 	'usermerge-deleteolduser' => "Elimina l'antic usuari",
 	'usermerge-submit' => 'Combina els usuaris',
 	'usermerge-userdeleted-log' => 'Usuari eliminat: $2 ($3)',
+	'usermerge-logpage' => "Registre de fusions d'usuaris",
 );
 
 /** Sorani (Arabic script) (‫کوردی (عەرەبی)‬)
