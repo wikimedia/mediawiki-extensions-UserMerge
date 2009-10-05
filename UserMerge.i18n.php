@@ -800,6 +800,7 @@ $messages['hu'] = array(
 	'usermerge-deleteolduser' => 'Régi felhasználói fiók törlése',
 	'usermerge-submit' => 'Felhasználói fiók összevonása',
 	'usermerge-badtoken' => 'Érvénytelen szerkesztési token',
+	'usermerge-userdeleted-log' => 'Törölt felhasználó: $2 ($3)',
 	'usermerge-logpage' => 'Felhasználói nevek egyesítésének naplója',
 	'usermerge-logpagetext' => 'Ez a felhasználó nevek összevonásának naplója.',
 	'right-usermerge' => 'szerkesztők egyesítése',
