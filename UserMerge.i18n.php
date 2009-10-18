@@ -1131,6 +1131,36 @@ $messages['nah'] = array(
 	'usermerge-userdeleted-log' => 'Tlapoloc tlatequitiltilīlli: $2 ($3)',
 );
 
+/** Nedersaksisch (Nedersaksisch)
+ * @author Servien
+ */
+$messages['nds-nl'] = array(
+	'usermerge' => 'Gebrukers samenvoegen en vortdoon',
+	'usermerge-desc' => "Voeg een [[Special:UserMerge|speciale pagina]] toe um gebrukers samen te voegen en de ouwe gebruker(s) vort te doon (hierveur is 't rech ''usermerge'' neudig)",
+	'usermerge-badolduser' => 'Ongeldige ouwe gebrukersnaam',
+	'usermerge-badnewuser' => 'Ongeldige nieje gebrukersnaam',
+	'usermerge-nonewuser' => 'De nieje gebrukersnaam is neet op-egeven - der wönnen vanuut egaon dat der samengevoeg mut wönnen naor $1.<br />
+Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.',
+	'usermerge-noolduser' => 'Ouwe gebrukersnaam is neet op-egeven',
+	'usermerge-fieldset' => 'Gebrukersnamen dee samen-evoegen mutten wönnen',
+	'usermerge-olduser' => 'Ouwe gebruker (samenvoegen van):',
+	'usermerge-newuser' => 'Nieje gebruker (samenvoegen naor):',
+	'usermerge-deleteolduser' => 'Ouwe gebruker vortdoon',
+	'usermerge-submit' => 'Gebruker samenvoegen',
+	'usermerge-badtoken' => 'Ongeldig bewarkingstoken',
+	'usermerge-userdeleted' => '$1 ($2) is vort-edaon.',
+	'usermerge-userdeleted-log' => 'Vort-edaone gebruker: $2 ($3)',
+	'usermerge-updating' => "Tebel $1 an 't biewarken ($2 naor $3)",
+	'usermerge-success' => 'Samenvoegen van $1 ($2) naor $3 ($4) is of-erond.',
+	'usermerge-success-log' => 'Gebruker $2 ($3) samen-evoeg naor $4 ($5)',
+	'usermerge-logpage' => 'Logboek gebrukerssamenvoegingen',
+	'usermerge-logpagetext' => "Dit is 't logboek van gebrukerssamenvoegingen.",
+	'usermerge-noselfdelete' => 'Je kunnen je eigen neet vortdoon of samenvoegen!',
+	'usermerge-unmergable' => "Disse gebruker kan neet samen-evoeg wönnen. De gebrukersnaam of 't gebrukersnummer is in-esteld as neet samenvoegen.",
+	'usermerge-protectedgroup' => 'Kan de gebrukers neet samenvoegen. De gebruker zit in een bescharmde groep.',
+	'right-usermerge' => 'Gebrukers samenvoegen',
+);
+
 /** Dutch (Nederlands)
  * @author SPQRobin
  * @author Siebrand
