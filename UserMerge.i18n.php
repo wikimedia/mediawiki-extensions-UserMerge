@@ -791,8 +791,11 @@ Klike (prese) <u>Mèt ansanm kont Itilizatè</u> pou aksepte operasyon an.',
  */
 $messages['hu'] = array(
 	'usermerge' => 'Felhasználói fiókok összevonása és törlése',
+	'usermerge-desc' => "[[Special:UserMerge|Beolvasztja egy felhasználó közreműködéseit egy másikéba]] a wiki adatbázisában, majd törli a beolvasztott felhasználói fiókot. ''Szerkesztők egyesítése'' jogosultság kell hozzá",
 	'usermerge-badolduser' => 'Érvénytelen régi felhasználói név',
 	'usermerge-badnewuser' => 'Érvénytelen új felhasználói név',
+	'usermerge-nonewuser' => 'Üres új felhasználónév – feltételezett cél: „$1”<br />
+Kattints a „{{int:usermerge-submit}}”-ra az elfogadáshoz.',
 	'usermerge-noolduser' => 'A régi felhasználói név üres',
 	'usermerge-fieldset' => 'Összevonandó felhasználói nevek',
 	'usermerge-olduser' => 'Régi felhasználói név (honnan):',
@@ -808,6 +811,8 @@ $messages['hu'] = array(
 	'usermerge-logpage' => 'Felhasználói nevek egyesítésének naplója',
 	'usermerge-logpagetext' => 'Ez a felhasználó nevek összevonásának naplója.',
 	'usermerge-noselfdelete' => 'Nem tudsz törölni vagy összevonni a saját fiókodból!',
+	'usermerge-unmergable' => 'Nem lehetséges beolvasztani a felhasználói fiókot – az azonosító vagy a név be van jelölve összevonhatatlannak.',
+	'usermerge-protectedgroup' => 'Nem lehetséges beolvasztani a felhasználói fiókot – a felhasználó védett csoportban van.',
 	'right-usermerge' => 'szerkesztők egyesítése',
 );
 
