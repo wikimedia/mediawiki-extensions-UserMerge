@@ -426,6 +426,7 @@ $messages['el'] = array(
 
 /** Esperanto (Esperanto)
  * @author Melancholie
+ * @author Michawiki
  * @author Yekrats
  */
 $messages['eo'] = array(
@@ -435,7 +436,7 @@ $messages['eo'] = array(
 	'usermerge-noolduser' => 'Malplena malnova salutnomo',
 	'usermerge-fieldset' => 'Kunigotaj salutnomoj',
 	'usermerge-olduser' => 'Malnova uzanto (kunigante de):',
-	'usermerge-newuser' => 'Nova uzanto (kunigante al)',
+	'usermerge-newuser' => 'Nova uzanto (kunigante al):',
 	'usermerge-deleteolduser' => 'Forigi malnovan uzanton',
 	'usermerge-submit' => 'Kunigi uzanton',
 	'usermerge-badtoken' => 'Nevalida redakta ĵetono',
