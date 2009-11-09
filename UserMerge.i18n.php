@@ -1078,12 +1078,28 @@ Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
  */
 $messages['mk'] = array(
 	'usermerge' => 'Спојување и бришење корисници',
+	'usermerge-desc' => "[[Special:UserMerge|Спојува наводи од еден корисник во друг]] во вики базата на податици - ги брише и старите корисници по спојувањето. Бара ''usermerge'' привилегии",
+	'usermerge-badolduser' => 'Погрешно старо корисничко име',
+	'usermerge-badnewuser' => 'Погрешно ново корисничко име',
+	'usermerge-nonewuser' => 'Празно ново корисничко име - се подразбира спојување со „$1“.<br />
+Кликнете на „{{int:usermerge-submit}}“ за да прифатите.',
+	'usermerge-noolduser' => 'Празно старо корисничко име',
+	'usermerge-fieldset' => 'Кориснички имиња за спојување',
+	'usermerge-olduser' => 'Стар корисник (за спојување од):',
+	'usermerge-newuser' => 'Нов корисник (за спојување со):',
+	'usermerge-deleteolduser' => 'Избриши стар корисник',
 	'usermerge-submit' => 'Спој го корисникот',
 	'usermerge-badtoken' => 'Погрешен токен за уредување',
 	'usermerge-userdeleted' => '$1 ($2) беше избришано.',
 	'usermerge-userdeleted-log' => 'Избришан корисник: $2 ($3)',
+	'usermerge-updating' => 'Обновувам табела $1 ($2 до $3)',
+	'usermerge-success' => 'Спојувањето од $1 ($2) до $3 ($4) е готово.',
+	'usermerge-success-log' => 'Корисникот $2 ($3) е споен со $4 ($5)',
 	'usermerge-logpage' => 'Дневник на спојувања на кориснички сметки',
 	'usermerge-logpagetext' => 'Ова е дневник на спојувања на кориснички имиња.',
+	'usermerge-noselfdelete' => 'Не можете да се избришете или споите самите себеси!',
+	'usermerge-unmergable' => 'Не можам да спојам од корисникот - ид. бр.или името е определено како неспојливо.',
+	'usermerge-protectedgroup' => 'Не можам да спојам од корисникот - корисникот е во заштитена група.',
 	'right-usermerge' => 'Спојување на корисници',
 );
 
