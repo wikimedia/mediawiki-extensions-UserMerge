@@ -1705,6 +1705,7 @@ $messages['te'] = array(
 	'usermerge-badolduser' => 'తప్పుడు పాత వాడుకరిపేరు',
 	'usermerge-badnewuser' => 'తప్పుడు కొత్త వాడుకరిపేరు',
 	'usermerge-noolduser' => 'పాత వాడుకరిపేరు ఖాళీగా ఉంది',
+	'usermerge-fieldset' => 'విలీనించాల్సిన వాడుకరిపేర్లు',
 	'usermerge-olduser' => 'పాత వాడుకరి (నుండి విలీనం):',
 	'usermerge-newuser' => 'కొత్త వాడుకరి (గా విలీనం):',
 	'usermerge-deleteolduser' => 'పాత వాడుకరిని తొలగించు',
