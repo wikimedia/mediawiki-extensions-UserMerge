@@ -1385,6 +1385,7 @@ $messages['ps'] = array(
 
 /** Portuguese (Português)
  * @author Crazymadlover
+ * @author Hamilton Abreu
  * @author Jorge Morais
  * @author Lijealso
  * @author Malafaya
@@ -1393,7 +1394,7 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'usermerge' => 'Fusão e eliminação de utilizadores',
-	'usermerge-desc' => "[[Special:UserMerge|Unifica as referências de um utilizador em outro utilizador]] no banco de dados da wiki - também apagará o antigo utilizador após a fusão. Requer privilégio ''usermerge''",
+	'usermerge-desc' => "[[Special:UserMerge|Funde referências a um utilizador com as de outro utilizador]] na base de dados da wiki - também apaga o antigo utilizador após a fusão. Requer os privilégios ''usermerge''",
 	'usermerge-badolduser' => 'Nome antigo inválido',
 	'usermerge-badnewuser' => 'Nome novo inválido',
 	'usermerge-nonewuser' => 'Novo nome de utilizador vazio - assumida fusão com $1.<br />
