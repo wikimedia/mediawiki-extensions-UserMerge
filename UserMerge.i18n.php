@@ -1523,6 +1523,32 @@ $messages['ru'] = array(
 	'right-usermerge' => 'объединение участников',
 );
 
+/** Sinhala (සිංහල)
+ * @author Calcey
+ */
+$messages['si'] = array(
+	'usermerge' => 'පරිශීලකයින් මුසු කිරීම හා මැකීම',
+	'usermerge-desc' => "විකිදත්ත ගබඩාවේ ඇති [[Special:UserMerge|එක් පරිශීලකයකුගෙන් තවත් පරිශිලකයෙකුට යොමුවන් මුසු කරයි]] පැරණි පරිශීලකයින්වද මකයි,පහත මුසු කිරීමට ''usermerge'' වරප්‍රසාද අවශ්‍යවේ.",
+	'usermerge-badolduser' => 'වලංගු නොවන පැරණි පරිශීලක නාමය',
+	'usermerge-badnewuser' => 'වලංගු නොවන නව පරිශීලක නාමය',
+	'usermerge-nonewuser' => 'හිස් නව පරිශීලක නාමය - "$1" ට මුසු කිරීමට උපකල්පනය කරමින්.<br />
+පිළිගැනීමට "{{int:usermerge-submit}}" ක්ලික් කරන්න.',
+	'usermerge-noolduser' => 'හිස් පැරණි පරිශීලක නාමය',
+	'usermerge-fieldset' => 'මුසු කිරීමට නියමිත පරිශීලක නාමයන්',
+	'usermerge-olduser' => 'පැරණි පරිශීලක (මුසු කරන්නේ):',
+	'usermerge-newuser' => 'නව පරිශීලකයා (මුසු කිරීමට තිබෙන):',
+	'usermerge-deleteolduser' => 'පැරණි පරිශීලකයා මකන්න',
+	'usermerge-submit' => 'පරිශීලකයා මුසු කරන්න',
+	'usermerge-badtoken' => 'වලංගු නොවන සංස්කරණ සංඥාව',
+	'usermerge-userdeleted' => '$1 ($2) මකනු ලැබ ඇත.',
+	'usermerge-userdeleted-log' => 'මකනු ලැබූ පරිශීලක: $2 ($3)',
+	'usermerge-updating' => '$1 වගුව යාවත්කාලීන කිරීම ($2 ,$3ට )',
+	'usermerge-success' => '$1 ($2) සිට $3 ($4) දක්වා මුසු කිරීම සම්පූර්ණ විය.',
+	'usermerge-success-log' => '$2 ($3) පරිශීලකයා $4 ($5) ට මුසු කරන ලදී',
+	'usermerge-logpage' => 'පරිශීලක මුසු කිරීම් ලඝු සටහන',
+	'usermerge-logpagetext' => 'මෙය පරිශීලක මුසු කිරීම් කාර්යයන්වල ලඝු සටහනකි.',
+);
+
 /** Slovak (Slovenčina)
  * @author Helix84
  */
