@@ -1413,7 +1413,7 @@ Clique "{{int:usermerge-submit}}" para aceitar.',
 	'usermerge-success-log' => 'Utilizador $2 ($3) fundido com $4 ($5)',
 	'usermerge-logpage' => 'Registo de fusão de utilizadores',
 	'usermerge-logpagetext' => 'Este é um registo de acções de fusão de utilizadores.',
-	'usermerge-noselfdelete' => 'Você não pode apagar ou fundir a partir de si próprio!',
+	'usermerge-noselfdelete' => 'Não pode apagar ou fundir a partir de si próprio!',
 	'usermerge-unmergable' => 'Não foi possível fundir o utilizador - Nome ou ID foi definido para não ser fundido.',
 	'usermerge-protectedgroup' => 'Não é possível fundir este utilizador - Utilizador está em um grupo protegido',
 	'right-usermerge' => 'Fundir utilizadores',
@@ -1547,6 +1547,10 @@ $messages['si'] = array(
 	'usermerge-success-log' => '$2 ($3) පරිශීලකයා $4 ($5) ට මුසු කරන ලදී',
 	'usermerge-logpage' => 'පරිශීලක මුසු කිරීම් ලඝු සටහන',
 	'usermerge-logpagetext' => 'මෙය පරිශීලක මුසු කිරීම් කාර්යයන්වල ලඝු සටහනකි.',
+	'usermerge-noselfdelete' => 'ඔබ විසින්ම මැකීම හෝ මුසු කිරීම සිදු කරනු ලැබිය නොහැකිය!',
+	'usermerge-unmergable' => 'පරිශීලකයා මඟින් මුසු කළ නොහැකියි - ID හෝ නම හඳුන්වා දී තිබෙන්නේ මුසු කළ නොහැකි ලෙසයි.',
+	'usermerge-protectedgroup' => 'පරිශිලකයා මඟින් මුසු කළ නොහැකියි - පරිශීලකයා සිටින්නේ ආරක්ෂිත කණ්ඩායමකය.',
+	'right-usermerge' => 'පරිශීලකයින් මුසු කිරීම',
 );
 
 /** Slovak (Slovenčina)
