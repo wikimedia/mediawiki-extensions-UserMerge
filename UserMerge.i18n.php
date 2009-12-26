@@ -116,6 +116,7 @@ $messages['arz'] = array(
 	'usermerge-nonewuser' => 'اسم يوزر جديد فارغ - افتراض الدمج إلى $1.<br />
 اضغط "{{int:usermerge-submit}}" للقبول.',
 	'usermerge-noolduser' => 'اسم اليوزر القديم فارغ',
+	'usermerge-fieldset' => 'أسماء اليوزرز للدمج',
 	'usermerge-olduser' => 'يوزر قديم (دمج من):',
 	'usermerge-newuser' => 'يوزر جديد (دمج ل):',
 	'usermerge-deleteolduser' => 'حذف اليوزر القديم',
@@ -1967,6 +1968,7 @@ $messages['zh-hans'] = array(
 );
 
 /** Traditional Chinese (‪中文(繁體)‬)
+ * @author Liangent
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
@@ -1981,9 +1983,15 @@ $messages['zh-hant'] = array(
 	'usermerge-submit' => '合併用戶',
 	'usermerge-badtoken' => '無效的編輯幣',
 	'usermerge-userdeleted' => '$1（$2） 已刪除。',
+	'usermerge-userdeleted-log' => '已刪除的用戶： $2 （$3）',
 	'usermerge-updating' => '正在更新 $1 表格 （$2 到 $3）',
 	'usermerge-success' => '由 $1（$2） 到 $3（$4） 的合併已經完成。',
+	'usermerge-success-log' => '用戶 $2 （$3） 合併到 $4 （$5）',
 	'usermerge-logpage' => '使用者合併記錄',
+	'usermerge-logpagetext' => '這是一份用戶合併動作的記錄。',
+	'usermerge-noselfdelete' => '您不能將自己刪除或者合併！',
+	'usermerge-unmergable' => '無法完成用戶合併 - ID或者名稱被標記為不可合併。',
+	'usermerge-protectedgroup' => '無法完成用戶合併 - 用戶位於受保護組中。',
 	'right-usermerge' => '合併使用者',
 );
 
