@@ -1770,6 +1770,20 @@ $messages['tg-cyrl'] = array(
 	'usermerge-logpagetext' => 'Ин гузориши амалҳои идғоми корбар аст.',
 );
 
+/** Tajik (Latin) (Тоҷикӣ (Latin))
+ * @author Liangent
+ */
+$messages['tg-latn'] = array(
+	'usermerge' => 'Idgom va hafzi korbar',
+	'usermerge-badolduser' => "Nomi korbariji kūhnai nomū'tabar",
+	'usermerge-badnewuser' => "Nomi korbariji çadidī nomū'tabar",
+	'usermerge-noolduser' => 'Xolī kardani nomi korbariji kūhna',
+	'usermerge-submit' => 'Idƣomi korbar',
+	'usermerge-userdeleted-log' => 'Korbari hazfşuda: $2 ($3)',
+	'usermerge-logpage' => 'Guzorişi idƣomi korbar',
+	'usermerge-logpagetext' => 'In guzorişi amalhoi idƣomi korbar ast.',
+);
+
 /** Thai (ไทย)
  * @author Mopza
  */
@@ -1977,9 +1991,9 @@ $messages['zh-hant'] = array(
 	'usermerge-badnewuser' => '無效的新用戶名',
 	'usermerge-nonewuser' => '清除新用戶名 - 假設合併到$1。<br />點擊<u>合併用戶</u>以接受。',
 	'usermerge-noolduser' => '清除舊用戶名',
-	'usermerge-olduser' => '舊用戶 （合併自）',
-	'usermerge-newuser' => '新用戶 （合併到）',
-	'usermerge-deleteolduser' => '刪除舊用戶？',
+	'usermerge-olduser' => '舊用戶（合併自）：',
+	'usermerge-newuser' => '新用戶（合併到）：',
+	'usermerge-deleteolduser' => '刪除舊用戶',
 	'usermerge-submit' => '合併用戶',
 	'usermerge-badtoken' => '無效的編輯幣',
 	'usermerge-userdeleted' => '$1（$2） 已刪除。',
