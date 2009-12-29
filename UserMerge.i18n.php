@@ -562,6 +562,7 @@ Napsauta "{{int:usermerge-submit}}" hyväksyäksesi.',
 	'usermerge-success-log' => 'Käyttäjä $2 ($3) yhdistettiin käyttäjään $4 ($5)',
 	'usermerge-logpage' => 'Käyttäjien yhdistämisloki',
 	'usermerge-logpagetext' => 'Tämä on loki käyttäjätunnuksien yhdistämistoimista.',
+	'usermerge-noselfdelete' => 'Et voi poistaa tai yhdistää itseltäsi.',
 	'usermerge-protectedgroup' => 'Ei voi yhdistää käyttäjänimestä - käyttäjänimi kuuluu suojattuun ryhmään.',
 	'right-usermerge' => 'Yhdistää käyttäjiä',
 );
