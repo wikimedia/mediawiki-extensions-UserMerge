@@ -397,6 +397,14 @@ Klicke auf „{{int:usermerge-submit}}“ zum Ausführen.',
 	'right-usermerge' => 'Benutzerkonten vereinen',
 );
 
+/** German (formal address) (Deutsch (Sie-Form))
+ * @author Imre
+ */
+$messages['de-formal'] = array(
+	'usermerge-nonewuser' => 'Leerer neuer Benutzername - es wird eine Zusammenführung mit „$1“ vermutet.<br />
+Klicken Sie auf „{{int:usermerge-submit}}“ zum Ausführen.',
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
