@@ -1112,6 +1112,13 @@ Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
 	'right-usermerge' => 'Benotzer zesummeféieren',
 );
 
+/** Malagasy (Malagasy)
+ * @author Jagwar
+ */
+$messages['mg'] = array(
+	'right-usermerge' => 'Manempo ny kaontim-pikambana',
+);
+
 /** Macedonian (Македонски)
  * @author Bjankuloski06
  * @author Brest
