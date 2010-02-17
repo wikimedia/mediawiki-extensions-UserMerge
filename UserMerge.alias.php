@@ -10,157 +10,139 @@ $aliases['en'] = array(
 	'UserMerge' => array( 'UserMerge' ),
 );
 
-/** Arabic (العربية)
- * @author Meno25
- */
 $aliases['ar'] = array(
-	'UserMerge' => array( 'دمج_مستخدم' ),
+	'UserMerge'   => array( 'دمج_مستخدم' ),
 );
 
-/** Egyptian Spoken Arabic (مصرى)
- * @author Meno25
- */
 $aliases['arz'] = array(
-	'UserMerge' => array( 'دمج_مستخدم' ),
+	'UserMerge'   => array( 'دمج_مستخدم' ),
 );
 
-/** Assamese (অসমীয়া) */
 $aliases['as'] = array(
-	'UserMerge' => array( 'সদস্য চামিল কৰক' ),
+	'UserMerge'   => array( 'সদস্য চামিল কৰক' ),
 );
 
-/** Bosnian (Bosanski) */
 $aliases['bs'] = array(
-	'UserMerge' => array( 'SpajanjeKorisnika' ),
+	'UserMerge'   => array( 'SpajanjeKorisnika' ),
 );
 
-/** German (Deutsch) */
 $aliases['de'] = array(
-	'UserMerge' => array( 'Benutzerkonten vereinigen' ),
+	'UserMerge'   => array( 'Benutzerkonten vereinigen' ),
 );
 
-/** Lower Sorbian (Dolnoserbski) */
 $aliases['dsb'] = array(
-	'UserMerge' => array( 'Konta zjadnośiś' ),
+	'UserMerge'   => array( 'Wužywarjow zjadnośiś' ),
 );
 
-/** Persian (فارسی) */
 $aliases['fa'] = array(
-	'UserMerge' => array( 'ادغام_کاربر' ),
+	'UserMerge'   => array( 'ادغام_کاربر' ),
 );
 
-/** Finnish (Suomi) */
 $aliases['fi'] = array(
-	'UserMerge' => array( 'Tunnusten yhdistäminen' ),
+	'UserMerge'   => array( 'Tunnusten yhdistäminen' ),
 );
 
-/** French (Français) */
 $aliases['fr'] = array(
-	'UserMerge' => array( 'Fusionner les utilisateurs', 'FusionnerLesUtilisateurs', 'Fusionner utilisateurs', 'FusionnerUtilisateurs', 'Fusionner utilisateur', 'FusionnerUtilisateur' ),
+	'UserMerge'   => array( 'Fusionner les utilisateurs', 'FusionnerLesUtilisateurs', 'Fusionner utilisateurs', 'FusionnerUtilisateurs', 'Fusionner utilisateur', 'FusionnerUtilisateur' ),
 );
 
-/** Franco-Provençal (Arpetan) */
 $aliases['frp'] = array(
-	'UserMerge' => array( 'Fusionar los utilisators', 'FusionarLosUtilisators' ),
+	'UserMerge'   => array( 'Fusionar los utilisators', 'FusionarLosUtilisators' ),
 );
 
-/** Swiss German (Alemannisch) */
 $aliases['gsw'] = array(
-	'UserMerge' => array( 'Benutzerchonte zämmefiere' ),
+	'UserMerge'   => array( 'Benutzerchonte zämmefiere' ),
 );
 
-/** Hebrew (עברית) */
 $aliases['he'] = array(
-	'UserMerge' => array( 'מיזוג_משתמשים' ),
+	'UserMerge'   => array( 'מיזוג_משתמשים' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
 $aliases['hsb'] = array(
-	'UserMerge' => array( 'Wužiwarjow zjednoćić' ),
+	'UserMerge'   => array( 'Wužiwarjow zjednoćić' ),
 );
 
-/** Hungarian (Magyar) */
 $aliases['hu'] = array(
-	'UserMerge' => array( 'Felhasználók egyesítése' ),
+	'UserMerge'   => array( 'Felhasználók egyesítése' ),
 );
 
-/** Interlingua (Interlingua) */
 $aliases['ia'] = array(
-	'UserMerge' => array( 'Fusionar usatores' ),
+	'UserMerge'   => array( 'Fusionar usatores' ),
 );
 
-/** Indonesian (Bahasa Indonesia) */
 $aliases['id'] = array(
-	'UserMerge' => array( 'Penggabungan pengguna', 'PenggabunganPengguna' ),
+	'UserMerge'   => array( 'Penggabungan pengguna', 'PenggabunganPengguna' ),
 );
 
-/** Italian (Italiano) */
 $aliases['it'] = array(
-	'UserMerge' => array( 'UnisciUtenze' ),
+	'UserMerge'   => array( 'UnisciUtenze' ),
 );
 
-/** Japanese (日本語) */
 $aliases['ja'] = array(
-	'UserMerge' => array( '利用者の統合' ),
+	'UserMerge'   => array( '利用者の統合' ),
 );
 
-/** Korean (한국어) */
 $aliases['ko'] = array(
-	'UserMerge' => array( '계정병합' ),
+	'UserMerge'   => array( '사용자 병합' ),
 );
 
-/** Ripoarisch (Ripoarisch) */
 $aliases['ksh'] = array(
-	'UserMerge' => array( 'Metmaacher zosammelääje', 'Medmaacher zosammelääje' ),
+	'UserMerge'   => array( 'Metmaacher zosammelääje', 'Medmaacher zosammelääje' ),
 );
 
-/** Luxembourgish (Lëtzebuergesch) */
 $aliases['lb'] = array(
-	'UserMerge' => array( 'Benotzerkonten zesummeleeën' ),
+	'UserMerge'   => array( 'Benotzerkonten zesummeleeën' ),
 );
 
-/** Marathi (मराठी) */
+$aliases['ml'] = array(
+	'UserMerge'   => array( 'ഉപയോക്തൃലയനം' ),
+);
+
 $aliases['mr'] = array(
-	'UserMerge' => array( 'सदस्यविलीनीकरण' ),
+	'UserMerge'   => array( 'सदस्यविलीनीकरण' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
 $aliases['nds-nl'] = array(
-	'UserMerge' => array( 'Gebrukers_bie_mekaar_doon' ),
+	'UserMerge'   => array( 'Gebrukers_samenvoegen' ),
 );
 
-/** Dutch (Nederlands) */
 $aliases['nl'] = array(
-	'UserMerge' => array( 'GebruikersSamenvoegen' ),
+	'UserMerge'   => array( 'GebruikersSamenvoegen' ),
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $aliases['no'] = array(
-	'UserMerge' => array( 'Slå sammen brukere' ),
+	'UserMerge'   => array( 'Slå sammen brukere' ),
 );
 
-/** Occitan (Occitan) */
 $aliases['oc'] = array(
-	'UserMerge' => array( 'Fusionar los utilizaires', 'FusionarLosUtilizaire', 'Fusionar utilizaires', 'FusionarUtilizaires', 'Fusionar utilizaire', 'FusionarUtilizaire' ),
+	'UserMerge'   => array( 'Fusionar los utilizaires', 'FusionarLosUtilizaire', 'Fusionar utilizaires', 'FusionarUtilizaires', 'Fusionar utilizaire', 'FusionarUtilizaire' ),
 );
 
-/** Sanskrit (संस्कृत) */
+$aliases['pt'] = array(
+	'UserMerge'   => array( 'Fundir utilizadores' ),
+);
+
 $aliases['sa'] = array(
-	'UserMerge' => array( 'सदस्यसंयोग' ),
+	'UserMerge'   => array( 'सदस्यसंयोग' ),
 );
 
-/** Slovak (Slovenčina) */
 $aliases['sk'] = array(
-	'UserMerge' => array( 'ZlúčeniePoužívateľov' ),
+	'UserMerge'   => array( 'ZlúčeniePoužívateľov' ),
 );
 
-/** Thai (ไทย) */
+$aliases['te'] = array(
+	'UserMerge'   => array( 'సభ్యునివిలీనం' ),
+);
+
 $aliases['th'] = array(
-	'UserMerge' => array( 'รวมบัญชีผู้ใช้' ),
+	'UserMerge'   => array( 'รวมบัญชีผู้ใช้' ),
 );
 
-/** Tagalog (Tagalog) */
 $aliases['tl'] = array(
-	'UserMerge' => array( 'Pagsasanib ng tagagamit' ),
+	'UserMerge'   => array( 'Pagsasanib ng tagagamit' ),
+);
+
+$aliases['tr'] = array(
+	'UserMerge'   => array( 'KullanıcıBirleştir' ),
 );
 
