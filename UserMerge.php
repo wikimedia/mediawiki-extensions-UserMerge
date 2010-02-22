@@ -10,13 +10,12 @@ if (!defined('MEDIAWIKI')) {
 }
 
 $wgExtensionCredits['specialpage'][] = array(
-    'path'           => __FILE__,
-    'name'           => 'User Merge and Delete',
-    'url'            => 'http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete',
-    'author'         => 'Tim Laqua',
-    'description'    => "Merges references from one user to another user in the Wiki database - will also delete old users following merge.  Requires 'usermerge' privileges.",
-    'descriptionmsg' => 'usermerge-desc',
-    'version'        => '1.6.1'
+	'path'           => __FILE__,
+	'name'           => 'User Merge and Delete',
+	'url'            => 'http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete',
+	'author'         => 'Tim Laqua',
+	'descriptionmsg' => 'usermerge-desc',
+	'version'        => '1.6.1'
 );
 
 $wgAvailableRights[] = 'usermerge';
