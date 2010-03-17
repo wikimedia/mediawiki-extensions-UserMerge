@@ -105,7 +105,7 @@ $aliases['ko'] = array(
 	'UserMerge' => array( '사용자 병합' ),
 );
 
-/** Ripoarisch (Ripoarisch) */
+/** Colognian (Ripoarisch) */
 $aliases['ksh'] = array(
 	'UserMerge' => array( 'Metmaacher zosammelääje', 'Medmaacher zosammelääje' ),
 );
