@@ -1388,7 +1388,7 @@ Kliknij „{{int:usermerge-submit}}”, aby zaakceptować.',
 	'usermerge-noselfdelete' => 'Nie możesz usunąć lub zintegrować samego siebie!',
 	'usermerge-unmergable' => 'Nie można zintegrować użytkownika – identyfikator lub nazwa zostały zdefiniowane jako nieintegrowalne.',
 	'usermerge-protectedgroup' => 'Nie można zintegrować użytkownika – jest członkiem zabezpieczonej grupy.',
-	'right-usermerge' => 'Integrowanie użytkowników',
+	'right-usermerge' => 'Łączenie kont użytkowników',
 );
 
 /** Piedmontese (Piemontèis)
