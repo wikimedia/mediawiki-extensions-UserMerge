@@ -1051,7 +1051,7 @@ $messages['ko'] = array(
 	'usermerge-logpage' => '사용자 병합 기록',
 );
 
-/** Ripoarisch (Ripoarisch)
+/** Colognian (Ripoarisch)
  * @author Purodha
  */
 $messages['ksh'] = array(
@@ -1981,7 +1981,7 @@ $messages['vo'] = array(
 	'usermerge-userdeleted-log' => 'Moükön gebani: $2 ($3)',
 );
 
-/** Yue (粵語) */
+/** Cantonese (粵語) */
 $messages['yue'] = array(
 	'usermerge' => '用戶合併同刪除',
 	'usermerge-badolduser' => '無效嘅舊用戶名',
