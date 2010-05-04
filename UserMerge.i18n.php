@@ -1441,7 +1441,7 @@ $messages['ps'] = array(
  */
 $messages['pt'] = array(
 	'usermerge' => 'Fusão e eliminação de utilizadores',
-	'usermerge-desc' => "[[Special:UserMerge|Funde referências a um utilizador com as de outro utilizador]] na base de dados da wiki - também apaga o antigo utilizador após a fusão. Requer os privilégios ''usermerge''",
+	'usermerge-desc' => "[[Special:UserMerge|Funde referências a um utilizador com as de outro utilizador]] na base de dados da wiki - também apaga o antigo utilizador após a fusão. Requer o privilégio ''usermerge''",
 	'usermerge-badolduser' => 'Nome antigo inválido',
 	'usermerge-badnewuser' => 'Nome novo inválido',
 	'usermerge-nonewuser' => 'Novo nome de utilizador vazio - assumida fusão com $1.<br />
