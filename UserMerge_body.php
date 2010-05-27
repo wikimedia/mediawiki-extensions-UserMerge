@@ -20,6 +20,8 @@ class UserMerge extends SpecialPage {
 	function execute( $par ) {
 		global $wgRequest, $wgOut, $wgUser;
 
+		wfLoadExtensionMessages( 'UserMerge' );
+
 		$this->setHeaders();
 
 		if ( !$wgUser->isAllowed( 'usermerge' ) ) {
