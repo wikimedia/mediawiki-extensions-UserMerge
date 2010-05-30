@@ -253,6 +253,7 @@ $messages['bg'] = array(
 );
 
 /** Bengali (বাংলা)
+ * @author Bellayet
  * @author Zaheen
  */
 $messages['bn'] = array(
@@ -262,9 +263,10 @@ $messages['bn'] = array(
 	'usermerge-badnewuser' => 'অবৈধ নতুন ব্যবহারকারী নাম',
 	'usermerge-nonewuser' => 'খালি নতুন ব্যবহারকারী নাম - $1-এর সাথে একত্রীকরণ করা হচ্ছে ধরা হলে। <br /><u>ব্যবহারকারী একত্রিত করা হোক</u> ক্লিক করে সম্মতি দিন।',
 	'usermerge-noolduser' => 'খালি পুরনো ব্যবহারকারী নাম',
-	'usermerge-olduser' => 'পুরনো ব্যবহারকারী (যার থেকে একত্রীকরণ)',
-	'usermerge-newuser' => 'নতুন ব্যবহারকারী (যার সাথে একত্রীকরণ)',
-	'usermerge-deleteolduser' => 'পুরনো ব্যবহারকারী মুছে ফেলা হোক?',
+	'usermerge-fieldset' => 'একত্রিক করার জন্য ব্যবহারকারীনাম',
+	'usermerge-olduser' => 'পুরনো ব্যবহারকারী (যার থেকে একত্রীকরণ):',
+	'usermerge-newuser' => 'নতুন ব্যবহারকারী (যার সাথে একত্রীকরণ)ঃ',
+	'usermerge-deleteolduser' => 'পুরনো ব্যবহারকারী অপসারণ',
 	'usermerge-submit' => 'ব্যবহারকারী একত্রিত করা হোক',
 	'usermerge-badtoken' => 'সম্পাদনা টোকেন অবৈধ',
 	'usermerge-userdeleted' => '$1 ($2) মুছে ফেলা হয়েছে।',
@@ -273,10 +275,11 @@ $messages['bn'] = array(
 	'usermerge-success' => '$1 ($2) থেকে $3 ($4)-তে একত্রীকরণ সম্পন্ন হয়েছে।',
 	'usermerge-success-log' => 'ব্যবহারকারী $2 ($3)-কে $4 ($5)-এর সাথে একত্রিত করা হয়েছে',
 	'usermerge-logpage' => 'ব্যবহারকারী একত্রীকরণ লগ',
-	'usermerge-logpagetext' => 'এটি ব্যবহারকারী একত্রীকরণ ক্রিয়াসমূহের একটি লগ',
+	'usermerge-logpagetext' => 'এটি ব্যবহারকারী একত্রীকরনের একটি লগ।',
 	'usermerge-noselfdelete' => 'আপনি নিজের ব্যবহারকারী নাম মুছে ফেলতে বা এটি থেকে অন্য নামে একত্রিত করতে পারবেন না!',
 	'usermerge-unmergable' => 'ব্যবহারকারী নাম থেকে একত্রিত করা যায়নি - আইডি বা নামটি একত্রীকরণযোগ্য নয় হিসেবে সংজ্ঞায়িত।',
 	'usermerge-protectedgroup' => 'ব্যবহারকারী নাম থেকে একত্রিত করা যায়নি - ব্যবহারকারীটি একটি সুরক্ষিত দলে আছেন।',
+	'right-usermerge' => 'ব্যবহারকারী একত্রিত করা হোক',
 );
 
 /** Breton (Brezhoneg)
