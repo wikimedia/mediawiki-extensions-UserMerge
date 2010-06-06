@@ -9,7 +9,7 @@
  * user to another user - also supports deleting users following
  * merge.
  *
- * @addtogroup Extensions
+ * @ingroup Extensions
  * @author Tim Laqua <t.laqua@gmail.com>
  */
 class UserMerge extends SpecialPage {

@@ -2,7 +2,8 @@
 /**
  * Internationalisation file for the User Merge and Delete Extension.
  *
- * @addtogroup Extensions
+ * @file
+ * @ingroup Extensions
  */
 
 $messages = array();
