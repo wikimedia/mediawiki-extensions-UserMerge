@@ -1663,6 +1663,27 @@ Kliknutím na „{{int:usermerge-submit}}“ prijmete.',
 	'right-usermerge' => 'Zlučovať používateľov',
 );
 
+/** Slovenian (Slovenščina)
+ * @author Dbc334
+ */
+$messages['sl'] = array(
+	'usermerge' => 'Spoji in izbriši uporabnike',
+	'usermerge-badolduser' => 'Neveljavno staro uporabniško ime',
+	'usermerge-badnewuser' => 'Neveljavno novo uporabniško ime',
+	'usermerge-noolduser' => 'Prazno staro uporabniško ime',
+	'usermerge-fieldset' => 'Uporabniška imena za spajanje',
+	'usermerge-olduser' => 'Stari uporabnik (spoji od):',
+	'usermerge-newuser' => 'Novi uporabnik (spoji do):',
+	'usermerge-deleteolduser' => 'Izbriši starega uporabnika',
+	'usermerge-submit' => 'Spoji uporabnika',
+	'usermerge-userdeleted' => '$1 ($2) je bil izbrisan.',
+	'usermerge-userdeleted-log' => 'Izbrisal(-a) uporabnika: $2 ($3)',
+	'usermerge-success-log' => 'Uporabnik $2 ($3) je spojen z $4 ($5)',
+	'usermerge-logpage' => 'Dnevnik spajanja uporabnikov',
+	'usermerge-logpagetext' => 'To je dnevnik dejanj spajanja uporabnikov.',
+	'right-usermerge' => 'Spajanje uporabnikov',
+);
+
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
  * @author Михајло Анђелковић
  */
