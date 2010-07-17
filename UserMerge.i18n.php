@@ -1603,6 +1603,17 @@ $messages['ru'] = array(
 	'right-usermerge' => 'объединение участников',
 );
 
+/** Rusyn (русиньскый язык)
+ * @author Gazeb
+ */
+$messages['rue'] = array(
+	'usermerge-noolduser' => 'Порожнє старе мено хоснователя',
+	'usermerge-deleteolduser' => 'Змазати старого хоснователя',
+	'usermerge-userdeleted' => '$1 ($2) быв змазаный.',
+	'usermerge-userdeleted-log' => 'Змазаный хоснователь: $2 ($3)',
+	'usermerge-updating' => 'Актуалізує ся таблиця $1 ($2 на $3)',
+);
+
 /** Sinhala (සිංහල)
  * @author Calcey
  */
