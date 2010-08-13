@@ -360,7 +360,7 @@ $messages['ca'] = array(
 	'usermerge-logpage' => "Registre de fusions d'usuaris",
 );
 
-/** Sorani (Arabic script) (‫کوردی (عەرەبی)‬)
+/** Sorani (کوردی)
  * @author Marmzok
  */
 $messages['ckb'] = array(
