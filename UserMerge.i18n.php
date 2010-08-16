@@ -675,6 +675,33 @@ Cliquez sur « {{int:usermerge-submit}} » pour accepter.',
 	'right-usermerge' => 'Fusionner des utilisateurs',
 );
 
+/** Franco-Provençal (Arpetan)
+ * @author ChrisPtDe
+ */
+$messages['frp'] = array(
+	'usermerge' => 'Fusionar et suprimar des utilisators',
+	'usermerge-badolduser' => 'Viely nom d’utilisator envalido',
+	'usermerge-badnewuser' => 'Novél nom d’utilisator envalido',
+	'usermerge-noolduser' => 'Viely nom d’utilisator vouedo',
+	'usermerge-fieldset' => 'Noms d’utilisator a fusionar',
+	'usermerge-olduser' => 'Viely utilisator (fusionar dês) :',
+	'usermerge-newuser' => 'Novél utilisator (fusionar avouéc) :',
+	'usermerge-deleteolduser' => 'Suprimar lo viely utilisator',
+	'usermerge-submit' => 'Fusionar l’utilisator',
+	'usermerge-badtoken' => 'Jeton de changement envalido',
+	'usermerge-userdeleted' => '$1 ($2) at étâ suprimâ.',
+	'usermerge-userdeleted-log' => 'Contributor suprimâ : $2 ($3)',
+	'usermerge-updating' => 'Misa a jorn de la trâbla $1 (de $2 a $3)',
+	'usermerge-success' => 'La fusion de $1 ($2) a $3 ($4) est chavonâ.',
+	'usermerge-success-log' => 'Utilisator $2 ($3) fusionâ avouéc $4 ($5)',
+	'usermerge-logpage' => 'Jornal de les fusions d’utilisators',
+	'usermerge-logpagetext' => 'O est un jornal de les accions de fusions d’utilisators.',
+	'usermerge-noselfdelete' => 'Vos vos pouede pas suprimar ou ben fusionar vos-mémo !',
+	'usermerge-unmergable' => 'Empossiblo de fusionar l’utilisator : lo numerô ou ben lo nom at étâ dèfeni coment pas fusionâblo.',
+	'usermerge-protectedgroup' => 'Empossiblo de fusionar l’utilisator : l’utilisator est dens una tropa protègiê.',
+	'right-usermerge' => 'Fusionar des utilisators',
+);
+
 /** Irish (Gaeilge)
  * @author Alison
  */
