@@ -1630,7 +1630,7 @@ $messages['ru'] = array(
 	'right-usermerge' => 'объединение участников',
 );
 
-/** Rusyn (русиньскый язык)
+/** Rusyn (Русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
