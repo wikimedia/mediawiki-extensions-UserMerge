@@ -1716,6 +1716,7 @@ $messages['sl'] = array(
 	'usermerge-submit' => 'Spoji uporabnika',
 	'usermerge-userdeleted' => '$1 ($2) je bil izbrisan.',
 	'usermerge-userdeleted-log' => 'Izbrisal(-a) uporabnika: $2 ($3)',
+	'usermerge-success' => 'Združitev iz $1 ($2) v $3 ($4) je končana.',
 	'usermerge-success-log' => 'Uporabnik $2 ($3) je spojen z $4 ($5)',
 	'usermerge-logpage' => 'Dnevnik spajanja uporabnikov',
 	'usermerge-logpagetext' => 'To je dnevnik dejanj spajanja uporabnikov.',
