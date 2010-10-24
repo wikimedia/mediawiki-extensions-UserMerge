@@ -1211,15 +1211,16 @@ $messages['mk'] = array(
 );
 
 /** Malayalam (മലയാളം)
+ * @author Praveenp
  * @author Shijualex
  */
 $messages['ml'] = array(
 	'usermerge-badolduser' => 'അസാധുവായ പഴയ ഉപയോക്തൃനാമം',
 	'usermerge-badnewuser' => 'അസാധുവായ പുതിയ ഉപയോക്തൃനാമം',
 	'usermerge-noolduser' => 'പഴയ ഉപയോക്തൃനാമം ശൂന്യമാക്കുക',
-	'usermerge-olduser' => 'പഴയ ഉപയോക്തൃനാമം (ലയിപ്പിക്കാനുള്ളത്)',
-	'usermerge-newuser' => 'പുതിയ ഉപയോക്തൃനാമം (ഇതിലേക്കു സം‌യോജിപ്പിക്കണം)',
-	'usermerge-deleteolduser' => 'പഴയ ഉപയോക്താവിനെ മായ്ക്കട്ടെ?',
+	'usermerge-olduser' => 'പഴയ ഉപയോക്താവ് (ലയിപ്പിക്കാനുള്ളത്):',
+	'usermerge-newuser' => 'പുതിയ ഉപയോക്താവ് (ഇതിലേക്കു സം‌യോജിപ്പിക്കണം):',
+	'usermerge-deleteolduser' => 'പഴയ ഉപയോക്താവിനെ മായ്ക്കുക',
 	'usermerge-submit' => 'ഉപയോക്താവിനെ സം‌യോജിപ്പിക്കുക',
 	'usermerge-userdeleted' => '$1 ($2) മായ്ച്ചു.',
 	'usermerge-userdeleted-log' => 'ഉപയോക്താവിനെ മായ്ച്ചു: $2 ($3)',
