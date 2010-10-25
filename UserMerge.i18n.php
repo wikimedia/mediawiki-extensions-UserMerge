@@ -1709,6 +1709,8 @@ $messages['sl'] = array(
 	'usermerge' => 'Spoji in izbriši uporabnike',
 	'usermerge-badolduser' => 'Neveljavno staro uporabniško ime',
 	'usermerge-badnewuser' => 'Neveljavno novo uporabniško ime',
+	'usermerge-nonewuser' => 'Prazno novo uporabniško ime – predpostavljam združitev z »$1«.<br />
+Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 	'usermerge-noolduser' => 'Prazno staro uporabniško ime',
 	'usermerge-fieldset' => 'Uporabniška imena za spajanje',
 	'usermerge-olduser' => 'Stari uporabnik (spoji od):',
@@ -1717,6 +1719,7 @@ $messages['sl'] = array(
 	'usermerge-submit' => 'Spoji uporabnika',
 	'usermerge-userdeleted' => '$1 ($2) je bil izbrisan.',
 	'usermerge-userdeleted-log' => 'Izbrisal(-a) uporabnika: $2 ($3)',
+	'usermerge-updating' => 'Posodabljanje tabele $1 ($2 v $3)',
 	'usermerge-success' => 'Združitev iz $1 ($2) v $3 ($4) je končana.',
 	'usermerge-success-log' => 'Uporabnik $2 ($3) je spojen z $4 ($5)',
 	'usermerge-logpage' => 'Dnevnik spajanja uporabnikov',
