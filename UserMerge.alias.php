@@ -40,12 +40,17 @@ $specialPageAliases['bs'] = array(
 
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
-	'UserMerge' => array( 'Benutzerkonten vereinigen' ),
+	'UserMerge' => array( 'Benutzerkonten_vereinigen' ),
 );
 
 /** Lower Sorbian (Dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'UserMerge' => array( 'Wužywarjow zjadnośiś' ),
+);
+
+/** Spanish (Español) */
+$specialPageAliases['es'] = array(
+	'UserMerge' => array( 'FusionarUsuario', 'Fusionar_usuario' ),
 );
 
 /** Persian (فارسی) */
@@ -55,7 +60,7 @@ $specialPageAliases['fa'] = array(
 
 /** Finnish (Suomi) */
 $specialPageAliases['fi'] = array(
-	'UserMerge' => array( 'Tunnusten yhdistäminen' ),
+	'UserMerge' => array( 'Tunnusten_yhdistäminen' ),
 );
 
 /** French (Français) */
@@ -90,7 +95,7 @@ $specialPageAliases['hu'] = array(
 
 /** Interlingua (Interlingua) */
 $specialPageAliases['ia'] = array(
-	'UserMerge' => array( 'Fusionar usatores' ),
+	'UserMerge' => array( 'Fusionar_usatores' ),
 );
 
 /** Indonesian (Bahasa Indonesia) */
@@ -110,7 +115,7 @@ $specialPageAliases['ja'] = array(
 
 /** Korean (한국어) */
 $specialPageAliases['ko'] = array(
-	'UserMerge' => array( '사용자 병합' ),
+	'UserMerge' => array( '사용자병합' ),
 );
 
 /** Colognian (Ripoarisch) */
