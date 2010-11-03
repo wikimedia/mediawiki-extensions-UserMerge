@@ -2067,13 +2067,14 @@ Nhấn “{{int:usermerge-submit}}” để chấp nhận.',
 );
 
 /** Volapük (Volapük)
+ * @author Malafaya
  * @author Smeira
  */
 $messages['vo'] = array(
 	'usermerge-badolduser' => 'Gebananem büik no lonöfon',
 	'usermerge-badnewuser' => 'Gebananem nulik no lonöfon',
 	'usermerge-noolduser' => 'Vagükön gebananemi büik',
-	'usermerge-deleteolduser' => 'Moükön gebani büik?',
+	'usermerge-deleteolduser' => 'Moükön gebani vönedik',
 	'usermerge-userdeleted' => '$1 ($2) pemoükon.',
 	'usermerge-userdeleted-log' => 'Moükön gebani: $2 ($3)',
 );
