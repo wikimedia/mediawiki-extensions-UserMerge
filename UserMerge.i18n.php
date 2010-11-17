@@ -592,6 +592,7 @@ $messages['eu'] = array(
  * @author BlueDevil
  * @author Huji
  * @author Meisam
+ * @author ZxxZxxZ
  */
 $messages['fa'] = array(
 	'usermerge' => 'یکی کردن و حذف کردن کاربران',
@@ -603,6 +604,8 @@ $messages['fa'] = array(
 	'usermerge-deleteolduser' => 'کاربر قدیمی حذف شود؟',
 	'usermerge-submit' => 'یکی کردن کاربر',
 	'usermerge-userdeleted' => '$1 ($2) پاک شد.',
+	'usermerge-logpage' => 'سیاههٔ ادغام کاربر',
+	'right-usermerge' => 'ادغام حساب‌های کاربری',
 );
 
 /** Finnish (Suomi)
