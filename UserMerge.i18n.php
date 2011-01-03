@@ -1731,6 +1731,7 @@ Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 );
 
 /** Serbian Cyrillic ekavian (Српски (ћирилица))
+ * @author Rancher
  * @author Михајло Анђелковић
  */
 $messages['sr-ec'] = array(
@@ -1749,7 +1750,7 @@ $messages['sr-ec'] = array(
 	'usermerge-success' => 'Спајање $1 ($2) са $3 ($4) је завршено.',
 	'usermerge-success-log' => 'Корисник $2 ($3) је спојен са $4 ($5)',
 	'usermerge-logpage' => 'Историја спајања корисника',
-	'usermerge-logpagetext' => 'Ово је историја спајања корисника.',
+	'usermerge-logpagetext' => 'Ово је историјат спајања корисника.',
 	'usermerge-noselfdelete' => 'Не можете да се обришете или спојите са другим налогом!',
 	'usermerge-protectedgroup' => 'Није могуђе спојити овог корисника са другим — налази се у заштићеној групи.',
 	'right-usermerge' => 'Споји кориснике',
