@@ -862,29 +862,30 @@ Klikń na "{{int:usermerge-submit}}", zo by akceptował.',
 );
 
 /** Haitian (Kreyòl ayisyen)
+ * @author Boukman
  * @author Masterches
  */
 $messages['ht'] = array(
-	'usermerge' => 'Mèt ansanm kont itilizatè yo ak efase tou',
-	'usermerge-desc' => '[[Special:UserMerge|Mèt ansanm referans yo depi yon itilizatè nan referans yon lòt itilizatè]] nan baz done wiki a - l ap efase tou vye non itilizatè yo apre fizyon, reyinyon sa. Ou dwèt genyen dwa pou fè fizyon sa.',
-	'usermerge-badolduser' => 'Lòt vyen non itilizatè ou an pa bon, li pa korèk, genyen yon erè anndan l.',
-	'usermerge-badnewuser' => 'Nouvo non itilizatè ou chwazi an pa bon, li pa korèk, genyen yon erè anndan l',
-	'usermerge-nonewuser' => 'Efase nouvo non itilizatè - depi ou vle mèt ansanm kont ou an ak $1.<br />
-Klike (prese) <u>Mèt ansanm kont Itilizatè</u> pou aksepte operasyon an.',
-	'usermerge-noolduser' => 'Efase vye non itilizatè an',
-	'usermerge-olduser' => 'Ansyen non itilizatè (mèt ansanm)',
-	'usermerge-newuser' => 'Nouvo non itilizatè (mèt ansanm)',
-	'usermerge-deleteolduser' => 'Efase ansyen, vye non itilizatè a ?',
+	'usermerge' => 'Mete ansanm ak efase kont itilizatè yo',
+	'usermerge-desc' => "[[Special:UserMerge|Mèt ansanm referans yo depi yon itilizatè nan referans yon lòt itilizatè]] nan baz done wiki a - l ap efase tou vye non itilizatè yo apre fizyon fin fèt. Ou bezwen genyen dwa ''usermerge'' pou fè fizyon sa.",
+	'usermerge-badolduser' => 'Ansyen non itilizatè a pa bon.',
+	'usermerge-badnewuser' => 'Nouvo non itilizatè a pa bon.',
+	'usermerge-nonewuser' => 'Nouvo non itilizatè ki vid - nou kwè ou vle mete l ansanm ak $1.<br />
+Klike "{{int:usermerge-submit}}" pou aksepte operasyon an.',
+	'usermerge-noolduser' => 'Ansyen non itilizatè a vid',
+	'usermerge-olduser' => 'Ansyen non itilizatè (mete ansanm depi)',
+	'usermerge-newuser' => 'Nouvo non itilizatè (mete ansanm ak)',
+	'usermerge-deleteolduser' => 'Efase ansyen non itilizatè a',
 	'usermerge-submit' => 'Mèt ansanm kont itilizatè yo',
-	'usermerge-badtoken' => 'Edisyon ou fè an pa bon, li pa korèk, genyen yon erè nan operasyon an',
+	'usermerge-badtoken' => 'Tikè pou modifikasyon pa bon',
 	'usermerge-userdeleted' => '$1 ($2) efase.',
 	'usermerge-userdeleted-log' => 'Non itilizatè ki efase a: $2 ($3)',
-	'usermerge-updating' => 'Mèt a jou, modifye tab $1 (depi $2 jouk $3)',
+	'usermerge-updating' => 'Mete ajou tablo $1 (depi $2 jouk $3)',
 	'usermerge-success' => 'Nou rive mèt ansanm $1 ($2) ak $3 ($4), depi premye kont an.',
 	'usermerge-success-log' => 'Itilizatè $2 ($3) fizyone ak $4 ($5)',
-	'usermerge-logpage' => 'Jounal itilizatè pou referans fizyon, "mèt ansanm kont itilizatè yo"',
-	'usermerge-logpagetext' => "Men jounal ki ap reprann tout aksyon ki fèt nan seksyon 'Mete ansanm kont itilizatè yo, fizyone yo'.",
-	'usermerge-noselfdelete' => 'Ou pa kapab efase tèt ou oubyen mèt yon lòt kont sou tèt ou, depi kont ou an menm.',
+	'usermerge-logpage' => 'Jounal pou fizyon kont itilizatè',
+	'usermerge-logpagetext' => 'Men jounal ki dekri tout aksyon ki te fèt pou fizyon kont itilizatè yo.',
+	'usermerge-noselfdelete' => 'Ou pa kapab efase tèt ou oubyen fizyone tèt ou.',
 	'usermerge-unmergable' => 'Nou pa kapab mèt ansanm kont sa yo - ID an oubyen non an pa kapab mete ansanm, li sanble l make nan definisyon yo.',
 	'usermerge-protectedgroup' => 'Nou pa kapab mèt ansanm kont itilizatè yo - itilizatè sa a nan yon gwoup ki pwoteje.',
 );
