@@ -1711,6 +1711,7 @@ Kliknutím na „{{int:usermerge-submit}}“ prijmete.',
  */
 $messages['sl'] = array(
 	'usermerge' => 'Spoji in izbriši uporabnike',
+	'usermerge-desc' => "[[Special:UserMerge|Združi sklice iz enega uporabnika na drugega]] v zbirki podatkov wikija – prav tako po združitvi izbriše stare uporabnika. Potrebuje pravico ''usermerge''",
 	'usermerge-badolduser' => 'Neveljavno staro uporabniško ime',
 	'usermerge-badnewuser' => 'Neveljavno novo uporabniško ime',
 	'usermerge-nonewuser' => 'Prazno novo uporabniško ime – predpostavljam združitev z »$1«.<br />
@@ -1721,6 +1722,7 @@ Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 	'usermerge-newuser' => 'Novi uporabnik (spoji do):',
 	'usermerge-deleteolduser' => 'Izbriši starega uporabnika',
 	'usermerge-submit' => 'Spoji uporabnika',
+	'usermerge-badtoken' => 'Neveljavni žeton urejanja',
 	'usermerge-userdeleted' => '$1 ($2) je bil izbrisan.',
 	'usermerge-userdeleted-log' => 'Izbrisal(-a) uporabnika: $2 ($3)',
 	'usermerge-updating' => 'Posodabljanje tabele $1 ($2 v $3)',
@@ -1728,6 +1730,9 @@ Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 	'usermerge-success-log' => 'Uporabnik $2 ($3) je spojen z $4 ($5)',
 	'usermerge-logpage' => 'Dnevnik spajanja uporabnikov',
 	'usermerge-logpagetext' => 'To je dnevnik dejanj spajanja uporabnikov.',
+	'usermerge-noselfdelete' => 'Ne morete izbrisati ali združevati sebe!',
+	'usermerge-unmergable' => 'Ne morem združiti uporabnika – ID ali ime je opredeljeno kot nezdružljivo.',
+	'usermerge-protectedgroup' => 'Ne morem združiti uporabnika – uporabnik je v zaščiteni skupini.',
 	'right-usermerge' => 'Spajanje uporabnikov',
 );
 
