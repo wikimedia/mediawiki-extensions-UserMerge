@@ -195,7 +195,7 @@ $messages['arz'] = array(
 	'right-usermerge' => 'دمج اليوزرز',
 );
 
-/** Belarusian (Taraškievica orthography) (Беларуская (тарашкевіца))
+/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -430,7 +430,7 @@ Klicke auf „{{int:usermerge-submit}}“ zum Ausführen.',
 	'right-usermerge' => 'Benutzerkonten vereinen',
 );
 
-/** German (formal address) (Deutsch (Sie-Form))
+/** German (formal address) (‪Deutsch (Sie-Form)‬)
  * @author Imre
  */
 $messages['de-formal'] = array(
@@ -1736,7 +1736,7 @@ Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 	'right-usermerge' => 'Spajanje uporabnikov',
 );
 
-/** Serbian Cyrillic ekavian (Српски (ћирилица))
+/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Михајло Анђелковић
  */
@@ -1762,7 +1762,7 @@ $messages['sr-ec'] = array(
 	'right-usermerge' => 'Споји кориснике',
 );
 
-/** Serbian Latin ekavian (Srpski (latinica))
+/** Serbian Latin ekavian (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -2137,6 +2137,7 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (‪中文(繁體)‬)
  * @author Liangent
+ * @author Mark85296341
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
@@ -2145,6 +2146,7 @@ $messages['zh-hant'] = array(
 	'usermerge-badnewuser' => '無效的新用戶名',
 	'usermerge-nonewuser' => '清除新用戶名 - 假設合併到$1。<br />點擊<u>合併用戶</u>以接受。',
 	'usermerge-noolduser' => '清除舊用戶名',
+	'usermerge-fieldset' => '使用者名稱合併',
 	'usermerge-olduser' => '舊用戶（合併自）：',
 	'usermerge-newuser' => '新用戶（合併到）：',
 	'usermerge-deleteolduser' => '刪除舊用戶',
@@ -2158,8 +2160,8 @@ $messages['zh-hant'] = array(
 	'usermerge-logpage' => '使用者合併記錄',
 	'usermerge-logpagetext' => '這是一份用戶合併動作的記錄。',
 	'usermerge-noselfdelete' => '您不能將自己刪除或者合併！',
-	'usermerge-unmergable' => '無法完成用戶合併 - ID或者名稱被標記為不可合併。',
-	'usermerge-protectedgroup' => '無法完成用戶合併 - 用戶位於受保護組中。',
+	'usermerge-unmergable' => '無法完成用戶合併 - ID 或者名稱被標記為不可合併。',
+	'usermerge-protectedgroup' => '無法完成用戶合併 - 用戶位於受保護群組中。',
 	'right-usermerge' => '合併使用者',
 );
 
