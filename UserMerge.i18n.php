@@ -1084,8 +1084,8 @@ Klik "{{int:usermerge-submit}}" kanggo nerusaké.',
  */
 $messages['km'] = array(
 	'usermerge' => 'បញ្ចូលរួមគ្នានិង​លុបអ្នកប្រើប្រាស់',
-	'usermerge-badolduser' => 'ឈ្មោះអ្នកប្រើប្រាស់ចាស់មិនត្រឹមត្រូវទេ',
-	'usermerge-badnewuser' => 'ឈ្មោះអ្នកប្រើប្រាស់ថ្មីមិនត្រឹមត្រូវទេ',
+	'usermerge-badolduser' => 'អត្តនាមចាស់មិនត្រឹមត្រូវទេ',
+	'usermerge-badnewuser' => 'អត្តនាមថ្មីមិនត្រឹមត្រូវទេ',
 	'usermerge-olduser' => 'អ្នកប្រើប្រាស់ចាស់(បញ្ចូលរួមគ្នាពី)៖',
 	'usermerge-newuser' => 'អ្នកប្រើប្រាស់ថ្មី(បញ្ចូលរួមគ្នាទៅ)៖',
 	'usermerge-deleteolduser' => 'លុបអ្នកប្រើប្រាស់ចាស់ចោល',
