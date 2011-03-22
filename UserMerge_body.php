@@ -214,7 +214,7 @@ class UserMerge extends SpecialPage {
 			array('oldimage','oi_user_text'),
 			array('recentchanges','rc_user_text'),
 			array('ipblocks','ipb_address'),
-			array('ipblocks','ipb_by_name'),
+			array('ipblocks','ipb_by_text'),
 		);
 
 		$idUpdateFields = array(
