@@ -213,7 +213,8 @@ class UserMerge extends SpecialPage {
 			array('image','img_user_text'),
 			array('oldimage','oi_user_text'),
 			array('recentchanges','rc_user_text'),
-			array('ipblocks','ipb_address')
+			array('ipblocks','ipb_address'),
+			array('ipblocks','ipb_by_name'),
 		);
 
 		$idUpdateFields = array(
@@ -223,7 +224,9 @@ class UserMerge extends SpecialPage {
 			array('image','img_user'),
 			array('oldimage','oi_user'),
 			array('recentchanges','rc_user'),
-			array('logging','log_user')
+			array('logging','log_user'),
+			array('ipblocks', 'ipb_id'),
+			array('ipblocks', 'ipb_by'),
 		);
 
 		$dbw = wfGetDB( DB_MASTER );
