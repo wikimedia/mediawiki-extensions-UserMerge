@@ -1760,7 +1760,7 @@ $messages['sr-ec'] = array(
 	'usermerge-logpagetext' => 'Ово је историја спајања корисника.',
 	'usermerge-noselfdelete' => 'Не можете да се обришете или спојите са другим налогом!',
 	'usermerge-protectedgroup' => 'Није могуђе спојити овог корисника са другим — налази се у заштићеној групи.',
-	'right-usermerge' => 'Споји кориснике',
+	'right-usermerge' => 'спајање корисника',
 );
 
 /** Serbian Latin ekavian (‪Srpski (latinica)‬)
