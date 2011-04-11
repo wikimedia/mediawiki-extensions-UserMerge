@@ -358,6 +358,7 @@ $messages['ca'] = array(
 	'usermerge-submit' => 'Combina els usuaris',
 	'usermerge-userdeleted-log' => 'Usuari eliminat: $2 ($3)',
 	'usermerge-logpage' => "Registre de fusions d'usuaris",
+	'right-usermerge' => 'Fusionar usuaris',
 );
 
 /** Sorani (کوردی)
