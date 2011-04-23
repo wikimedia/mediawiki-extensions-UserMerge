@@ -561,6 +561,9 @@ Haga Click en "{{int:usermerge-submit}}" para aceptar.',
  * @author Pikne
  */
 $messages['et'] = array(
+	'usermerge-badolduser' => 'Vigane vana kasutajanimi',
+	'usermerge-badnewuser' => 'Vigane uus kasutajanimi',
+	'usermerge-userdeleted' => '$1 ($2) on kustutatud.',
 	'usermerge-logpage' => 'Kasutaja ühendamislogi',
 	'usermerge-logpagetext' => 'See on kasutajaühendamistoimingute logi.',
 );
