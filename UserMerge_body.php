@@ -144,7 +144,7 @@ class UserMerge extends SpecialPage {
 			</tr>" .
 			Xml::closeElement( 'table' ) .
 			Xml::closeElement( 'fieldset' ) .
-			Xml::hidden( 'token', $wgUser->editToken() ) .
+			Html::Hidden( 'token', $wgUser->editToken() ) .
 			Xml::closeElement( 'form' ) . "\n"
 		);
 
