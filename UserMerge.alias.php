@@ -25,7 +25,7 @@ $specialPageAliases['arz'] = array(
 
 /** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
-	'UserMerge' => array( 'সদস্য চামিল কৰক' ),
+	'UserMerge' => array( 'সদস্য_চামিল_কৰক' ),
 );
 
 /** Breton (Brezhoneg) */
@@ -65,7 +65,7 @@ $specialPageAliases['fi'] = array(
 
 /** French (Français) */
 $specialPageAliases['fr'] = array(
-	'UserMerge' => array( 'Fusionner les utilisateurs', 'FusionnerLesUtilisateurs', 'Fusionner utilisateurs', 'FusionnerUtilisateurs', 'Fusionner utilisateur', 'FusionnerUtilisateur' ),
+	'UserMerge' => array( 'Fusionner_les_utilisateurs', 'FusionnerLesUtilisateurs', 'Fusionner_utilisateurs', 'FusionnerUtilisateurs', 'Fusionner_utilisateur', 'FusionnerUtilisateur' ),
 );
 
 /** Franco-Provençal (Arpetan) */
@@ -88,9 +88,14 @@ $specialPageAliases['hsb'] = array(
 	'UserMerge' => array( 'Wužiwarjow zjednoćić' ),
 );
 
+/** Haitian (Kreyòl ayisyen) */
+$specialPageAliases['ht'] = array(
+	'UserMerge' => array( 'FizyonItilizatè' ),
+);
+
 /** Hungarian (Magyar) */
 $specialPageAliases['hu'] = array(
-	'UserMerge' => array( 'Felhasználók egyesítése' ),
+	'UserMerge' => array( 'Felhasználók_egyesítése' ),
 );
 
 /** Interlingua (Interlingua) */
@@ -128,6 +133,11 @@ $specialPageAliases['lb'] = array(
 	'UserMerge' => array( 'Benotzerkonten_zesummeleeën' ),
 );
 
+/** Macedonian (Македонски) */
+$specialPageAliases['mk'] = array(
+	'UserMerge' => array( 'СпојКорисник' ),
+);
+
 /** Malayalam (മലയാളം) */
 $specialPageAliases['ml'] = array(
 	'UserMerge' => array( 'ഉപയോക്തൃലയനം' ),
@@ -150,7 +160,7 @@ $specialPageAliases['nl'] = array(
 
 /** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
 $specialPageAliases['no'] = array(
-	'UserMerge' => array( 'Slå sammen brukere' ),
+	'UserMerge' => array( 'Slå_sammen_brukere' ),
 );
 
 /** Occitan (Occitan) */
