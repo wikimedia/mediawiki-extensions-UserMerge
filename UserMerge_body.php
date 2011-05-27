@@ -5,7 +5,7 @@
 
 ///Special page class for the User Merge and Delete extension
 /**
- * Special page that allows sysops to merge referances from one
+ * Special page that allows sysops to merge references from one
  * user to another user - also supports deleting users following
  * merge.
  *
@@ -155,9 +155,9 @@ class UserMerge extends SpecialPage {
 				$wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg( 'usermerge-badtoken' ) . "</span><br />\n" );
 			} else {
 				//good editToken
-				$this->mergeUser( $newuser_text, $newuserID, $olduser_text, $olduserID );
+				$this->mergeUser( $objNewUser, $newuser_text, $newuserID, $objOldUser, $olduser_text, $olduserID );
 				if ( $wgRequest->getText( 'deleteuser' ) ) {
-					$this->deleteUser($olduserID, $olduser_text);
+					$this->deleteUser( $objOldUser, $olduserID, $olduser_text);
 				}
 			}
 		}
@@ -172,7 +172,7 @@ class UserMerge extends SpecialPage {
 	 *
 	 * @return Always returns true - throws exceptions on failure.
 	 */
-	private function deleteUser( $olduserID, $olduser_text ) {
+	private function deleteUser( $objOldUser, $olduserID, $olduser_text ) {
 		global $wgOut,$wgUser;
 
 		$dbw = wfGetDB( DB_MASTER );
@@ -181,7 +181,9 @@ class UserMerge extends SpecialPage {
 		$wgOut->addHTML( wfMsg( 'usermerge-userdeleted', $olduser_text, $olduserID ) );
 
 		$log = new LogPage( 'usermerge' );
-		$log->addEntry( 'deleteuser', $wgUser->getUserPage(),'',array($olduser_text,$olduserID) );
+		$log->addEntry( 'deleteuser', $wgUser->getUserPage(), '', array( $olduser_text,$olduserID ) );
+
+		wfRunHooks( 'DeleteAccount', array( $objOldUser ) );
 
 		$users = $dbw->selectField( 'user', 'COUNT(*)', array() );
 		$admins = $dbw->selectField( 'user_groups', 'COUNT(*)', array( 'ug_group' => 'sysop' ) );
@@ -191,19 +193,19 @@ class UserMerge extends SpecialPage {
 		return true;
 	}
 
-	///Function to merge database referances from one user to another user
+	///Function to merge database references from one user to another user
 	/**
 	 * Merges database references from one user ID or username to another user ID or username
 	 * to preserve referential integrity.
 	 *
-	 * @param $newuser_text string Username to merge referances TO
-	 * @param $newuserID int ID of user to merge referances TO
-	 * @param $olduser_text string Username of user to remove referances FROM
-	 * @param $olduserID int ID of user to remove referances FROM
+	 * @param $newuser_text string Username to merge references TO
+	 * @param $newuserID int ID of user to merge references TO
+	 * @param $olduser_text string Username of user to remove references FROM
+	 * @param $olduserID int ID of user to remove references FROM
 	 *
 	 * @return Always returns true - throws exceptions on failure.
 	 */
-	private function mergeUser( $newuser_text, $newuserID, $olduser_text, $olduserID ) {
+	private function mergeUser( $objNewUser, $newuser_text, $newuserID, $objOldUser, $olduser_text, $olduserID ) {
 		global $wgOut, $wgUser;
 
 		$textUpdateFields = array(
@@ -247,6 +249,8 @@ class UserMerge extends SpecialPage {
 
 		$log = new LogPage( 'usermerge' );
 		$log->addEntry( 'mergeuser', $wgUser->getUserPage(),'',array($olduser_text,$olduserID,$newuser_text,$newuserID) );
+
+           	wfRunHooks( 'MergeAccountFromTo', array( $objOldUser, $objNewUser ) );
 
 		return true;
 	}
