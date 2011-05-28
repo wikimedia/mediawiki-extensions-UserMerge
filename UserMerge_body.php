@@ -208,17 +208,6 @@ class UserMerge extends SpecialPage {
 	private function mergeUser( $objNewUser, $newuser_text, $newuserID, $objOldUser, $olduser_text, $olduserID ) {
 		global $wgOut, $wgUser;
 
-		$textUpdateFields = array(
-			array('archive','ar_user_text'),
-			array('revision','rev_user_text'),
-			array('filearchive','fa_user_text'),
-			array('image','img_user_text'),
-			array('oldimage','oi_user_text'),
-			array('recentchanges','rc_user_text'),
-			array('ipblocks','ipb_address'),
-			array('ipblocks','ipb_by_text'),
-		);
-
 		$idUpdateFields = array(
 			array('archive','ar_user'),
 			array('revision','rev_user'),
@@ -229,6 +218,18 @@ class UserMerge extends SpecialPage {
 			array('logging','log_user'),
 			array('ipblocks', 'ipb_id'),
 			array('ipblocks', 'ipb_by'),
+			array('watchlist', 'wl_user'),
+		);
+
+		$textUpdateFields = array(
+			array('archive','ar_user_text'),
+			array('revision','rev_user_text'),
+			array('filearchive','fa_user_text'),
+			array('image','img_user_text'),
+			array('oldimage','oi_user_text'),
+			array('recentchanges','rc_user_text'),
+			array('ipblocks','ipb_address'),
+			array('ipblocks','ipb_by_text'),
 		);
 
 		$dbw = wfGetDB( DB_MASTER );
