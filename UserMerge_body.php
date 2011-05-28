@@ -51,7 +51,7 @@ class UserMerge extends SpecialPage {
 
 				global $wgUser;
 
-				if ( !is_object( $objOldUser ) ) {
+				if ( !is_object( $objOldUser ) || $objOldUser->getID() == 0 ) {
 					$validOldUser = false;
 					$wgOut->wrapWikiMsg( "<div class='error'>\n$1</div>", 'usermerge-badolduser' );
 				} elseif ( $olduserID == $wgUser->getID() ) {
@@ -181,7 +181,7 @@ class UserMerge extends SpecialPage {
 		$wgOut->addHTML( wfMsg( 'usermerge-userdeleted', $olduser_text, $olduserID ) );
 
 		$log = new LogPage( 'usermerge' );
-		$log->addEntry( 'deleteuser', $wgUser->getUserPage(), '', array( $olduser_text,$olduserID ) );
+		$log->addEntry( 'deleteuser', $wgUser->getUserPage(), '', array( $olduser_text, $olduserID ) );
 
 		wfRunHooks( 'DeleteAccount', array( $objOldUser ) );
 
@@ -245,10 +245,10 @@ class UserMerge extends SpecialPage {
 
 		$dbw->delete( 'user_newtalk', array( 'user_id' => $olduserID ));
 
-		$wgOut->addHTML("<hr />\n" . wfMsg('usermerge-success',$olduser_text,$olduserID,$newuser_text,$newuserID) . "\n<br />");
+		$wgOut->addHTML("<hr />\n" . wfMsg( 'usermerge-success',$olduser_text, $olduserID, $newuser_text, $newuserID ) . "\n<br />");
 
 		$log = new LogPage( 'usermerge' );
-		$log->addEntry( 'mergeuser', $wgUser->getUserPage(),'',array($olduser_text,$olduserID,$newuser_text,$newuserID) );
+		$log->addEntry( 'mergeuser', $wgUser->getUserPage(), '', array( $olduser_text, $olduserID, $newuser_text, $newuserID ) );
 
            	wfRunHooks( 'MergeAccountFromTo', array( $objOldUser, $objNewUser ) );
 
