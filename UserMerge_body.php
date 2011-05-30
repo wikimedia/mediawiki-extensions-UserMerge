@@ -183,7 +183,7 @@ class UserMerge extends SpecialPage {
 		$log = new LogPage( 'usermerge' );
 		$log->addEntry( 'deleteuser', $wgUser->getUserPage(), '', array( $olduser_text, $olduserID ) );
 
-		wfRunHooks( 'DeleteAccount', array( $objOldUser ) );
+		wfRunHooks( 'DeleteAccount', array( &$objOldUser ) );
 
 		$users = $dbw->selectField( 'user', 'COUNT(*)', array() );
 		$admins = $dbw->selectField( 'user_groups', 'COUNT(*)', array( 'ug_group' => 'sysop' ) );
@@ -251,7 +251,7 @@ class UserMerge extends SpecialPage {
 		$log = new LogPage( 'usermerge' );
 		$log->addEntry( 'mergeuser', $wgUser->getUserPage(), '', array( $olduser_text, $olduserID, $newuser_text, $newuserID ) );
 
-           	wfRunHooks( 'MergeAccountFromTo', array( $objOldUser, $objNewUser ) );
+           	wfRunHooks( 'MergeAccountFromTo', array( &$objOldUser, &$objNewUser ) );
 
 		return true;
 	}
