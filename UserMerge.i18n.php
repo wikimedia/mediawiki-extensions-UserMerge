@@ -407,35 +407,43 @@ Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.',
 );
 
 /** German (Deutsch)
+ * @author Kghbln
  * @author Lukas9950
  * @author Raimond Spekking
  * @author Umherirrender
  */
 $messages['de'] = array(
 	'usermerge' => 'Benutzerkonten zusammenführen und löschen',
-	'usermerge-desc' => "[[Special:UserMerge|Führt Benutzerkonten in der Wiki-Datenbank zusammen]] - das alte Benutzerkonto wird nach der Zusammenführung gelöscht. Erfordert das ''usermerge''-Recht.",
+	'usermerge-desc' => 'Ergänzt eine [[Special:UserMerge|Spezialseite]] zum Zusammenführen von Benutzerkonten und der anschließenden Löschung des alten Benutzerkontos in der Datenbank des Wikis',
 	'usermerge-badolduser' => 'Ungültiger alter Benutzername',
 	'usermerge-badnewuser' => 'Ungültiger neuer Benutzername',
-	'usermerge-nonewuser' => 'Leerer neuer Benutzername - es wird eine Zusammenführung mit „$1“ vermutet.<br />
-Klicke auf „{{int:usermerge-submit}}“ zum Ausführen.',
-	'usermerge-noolduser' => 'Leerer alter Benutzername',
+	'usermerge-nonewuser' => 'Es wurde kein neuer Benutzername angegeben. Daher wird eine Zusammenführung mit „$1“ angenommen.<br />
+Zum Ausführen auf „{{int:usermerge-submit}}“ klicken.',
+	'usermerge-noolduser' => 'Es wurde kein neuer Benutzername angegeben.',
 	'usermerge-fieldset' => 'Benutzernamen zum Zusammenführen',
 	'usermerge-olduser' => 'Alter Benutzername (zusammenführen von):',
 	'usermerge-newuser' => 'Neuer Benutzername (zusammenführen nach):',
 	'usermerge-deleteolduser' => 'Alten Benutzernamen löschen',
 	'usermerge-submit' => 'Benutzerkonten zusammenführen',
-	'usermerge-badtoken' => 'Ungültiges Bearbeiten-Token',
+	'usermerge-badtoken' => 'Ungültiges Bearbeitungstoken',
 	'usermerge-userdeleted' => '„$1“ ($2) wurde gelöscht.',
 	'usermerge-userdeleted-log' => 'hat „$2“ ($3) gelöscht',
 	'usermerge-updating' => 'Aktualisiere Tabelle $1 ($2 nach $3) …',
 	'usermerge-success' => 'Die Zusammenführung von „$1“ ($2) nach „$3“ ($4) war erfolgreich.',
 	'usermerge-success-log' => 'hat „$2“ ($3) mit „$4“ ($5) zusammengeführt',
-	'usermerge-logpage' => 'Benutzerkonten-Zusammenführungs-Logbuch',
-	'usermerge-logpagetext' => 'Dies ist das Logbuch der Benutzerkonten-Zusammenführungen.',
+	'usermerge-logpage' => 'Benutzerkontenzusammenführungs-Logbuch',
+	'usermerge-logpagetext' => 'Dies ist das Logbuch der Benutzerkontenzusammenführungen.',
 	'usermerge-noselfdelete' => 'Die Zusammenführung mit sich selber ist nicht möglich!',
-	'usermerge-unmergable' => 'Zusammenführung nicht möglich - ID oder Benutzername wurde als nicht zusammenführbar definiert.',
-	'usermerge-protectedgroup' => 'Die Zusammenführung ist nicht möglich - der Benutzer befindet sich in einer geschützen Gruppe.',
-	'right-usermerge' => 'Benutzerkonten vereinen',
+	'usermerge-unmergable' => 'Die Zusammenführung ist nicht möglich: Benutzerkennung oder Benutzername wurde als nicht zusammenführbar definiert.',
+	'usermerge-protectedgroup' => 'Die Zusammenführung ist nicht möglich: Der Benutzer befindet sich in einer geschützten Gruppe.',
+	'right-usermerge' => 'Benutzerkonten zusammenführen',
+	'usermerge-editcount' => 'Bearbeitungszähler hinzufügen?',
+	'usermerge-editcount-success' => 'Hinzufügen des Bearbeitungszählers ($1 und $2)',
+	'usermerge-autopagedelete' => 'Automatisch während der Benutzerkontenzusammenführung gelöscht',
+	'usermerge-page-unmoved' => 'Die Seite „$1“ konnte nicht nach „$2“ verschoben werden.',
+	'usermerge-page-moved' => 'Die Seite „$1“ wurde nach „$2“ verschoben.',
+	'usermerge-move-log' => 'Seite während der Benutzerkontenzusammenführung von „[[User:$1|$1]]“ nach „[[User:$2|$2]]“ automatisch verschoben',
+	'usermerge-page-deleted' => 'Seite „$1“ gelöscht',
 );
 
 /** German (formal address) (‪Deutsch (Sie-Form)‬)
@@ -960,6 +968,13 @@ Clicca "{{int:usermerge-submit}}" pro acceptar.',
 	'usermerge-unmergable' => 'Impossibile fusionar ab iste usator - le ID o nomine ha essite definite como non fusionabile.',
 	'usermerge-protectedgroup' => 'Impossibile fusionar ab iste usator - le usator es membro de un gruppo protegite.',
 	'right-usermerge' => 'Fusionar usatores',
+	'usermerge-editcount' => 'Adder numero de modificationes?',
+	'usermerge-editcount-success' => 'Es addite le numero de modificationes de ($1 e $2)',
+	'usermerge-autopagedelete' => 'Automaticamente delite durante le fusion de usatores',
+	'usermerge-page-unmoved' => 'Le pagina $1 non poteva esser renominate a $2.',
+	'usermerge-page-moved' => 'Le pagina $1 ha essite renominate a $2.',
+	'usermerge-move-log' => 'Le pagina ha essite automaticamente renominate con le fusion del usator "[[User:$1|$1]]" in "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Pagina $1 delite',
 );
 
 /** Indonesian (Bahasa Indonesia)
@@ -1223,6 +1238,13 @@ $messages['mk'] = array(
 	'usermerge-unmergable' => 'Не можам да спојам од корисникот - ид. бр.или името е определено како неспојливо.',
 	'usermerge-protectedgroup' => 'Не можам да спојам од корисникот - корисникот е во заштитена група.',
 	'right-usermerge' => 'Спојување на корисници',
+	'usermerge-editcount' => 'Да го додадам бројот на уредувањата?',
+	'usermerge-editcount-success' => 'Го додавам бројот на уредувања на ($1 и $2)',
+	'usermerge-autopagedelete' => 'Се брише автоматски, при спојување на корисници',
+	'usermerge-page-unmoved' => 'Не моежев да ја преместам страницата $1 на $2.',
+	'usermerge-page-moved' => 'Страницата $1 е преместена на $2.',
+	'usermerge-move-log' => 'Автоматско преместување на страница при припојувањето на корисникот „[[User:$1|$1]]“ кон „[[User:$2|$2]]“',
+	'usermerge-page-deleted' => 'Избришана страница $1',
 );
 
 /** Malayalam (മലയാളം)
