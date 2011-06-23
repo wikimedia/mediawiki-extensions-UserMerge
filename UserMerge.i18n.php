@@ -33,6 +33,13 @@ Click "{{int:usermerge-submit}}" to accept.',
 	'usermerge-unmergable'		=> 'Unable to merge from user - ID or name has been defined as unmergable.',
 	'usermerge-protectedgroup'	=> 'Unable to merge from user - user is in a protected group.',
 	'right-usermerge'               => 'Merge users',
+	'usermerge-editcount'		=> 'Add edit count?',
+	'usermerge-editcount-success'	=> 'Adding edit count of ($1 and $2)',
+	'usermerge-autopagedelete'	=> 'Automatically deleted when merging users',
+	'usermerge-page-unmoved' 	=> 'The page $1 could not be moved to $2.',
+	'usermerge-page-moved'   	=> 'The page $1 has been moved to $2.',
+	'usermerge-move-log'   		=> 'Automatically moved page while merging the user "[[User:$1|$1]]" to "[[User:$2|$2]]"',
+	'usermerge-page-deleted' 	=> 'Deleted page $1',
 );
 
 /** Message documentation (Message documentation)

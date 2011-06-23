@@ -3,15 +3,15 @@
 * \brief Contains code for the UserMerge Class (extends SpecialPage).
 */
 
-///Special page class for the User Merge and Delete extension
 /**
- * Special page that allows sysops to merge references from one
- * user to another user - also supports deleting users following
- * merge.
+ * Special page class for the User Merge and Delete extension
+ * allows sysops to merge references from one user to another user.
+ * It also supports deleting users following merge.
  *
  * @ingroup Extensions
  * @author Tim Laqua <t.laqua@gmail.com>
  */
+
 class UserMerge extends SpecialPage {
 	function __construct() {
 		parent::__construct( 'UserMerge', 'usermerge' );
@@ -155,16 +155,19 @@ class UserMerge extends SpecialPage {
 				$wgOut->addHTML( "<span style=\"color: red;\">" . wfMsg( 'usermerge-badtoken' ) . "</span><br />\n" );
 			} else {
 				//good editToken
+				$this->mergeEditcount( $newuserID,$olduserID );
 				$this->mergeUser( $objNewUser, $newuser_text, $newuserID, $objOldUser, $olduser_text, $olduserID );
 				if ( $wgRequest->getText( 'deleteuser' ) ) {
+					$this->movePages( $newuser_text, $olduser_text );
 					$this->deleteUser( $objOldUser, $olduserID, $olduser_text);
 				}
 			}
 		}
 	}
 
-	///Function to delete users following a successful mergeUser call
 	/**
+	 * Function to delete users following a successful mergeUser call
+	 *
 	 * Removes user entries from the user table and the user_groups table
 	 *
 	 * @param $olduserID int ID of user to delete
@@ -193,8 +196,10 @@ class UserMerge extends SpecialPage {
 		return true;
 	}
 
-	///Function to merge database references from one user to another user
+
 	/**
+	 * Function to merge database references from one user to another user
+	 *
 	 * Merges database references from one user ID or username to another user ID or username
 	 * to preserve referential integrity.
 	 *
@@ -253,6 +258,155 @@ class UserMerge extends SpecialPage {
 
            	wfRunHooks( 'MergeAccountFromTo', array( &$objOldUser, &$objNewUser ) );
 
+		return true;
+	}
+	
+	///Function to add edit count
+	/**
+	 * Adds edit count of both users
+	 *
+	 * @param $newuserID int ID of user to merge references TO
+	 * @param $olduserID int ID of user to remove references FROM
+	 *
+	 * @return Always returns true - throws exceptions on failure.
+	 *
+	 * @author Matthew April <Matthew.April@tbs-sct.gc.ca>
+	 */
+	private function mergeEditcount( $newuserID, $olduserID ) {
+		global $wgOut;
+
+		$dbw =& wfGetDB( DB_MASTER );
+		
+		# old user edit count
+		$result = $dbw->select( 'user', array('user_editcount'), 'user_id ='.$olduserID );
+		$row = $dbw->fetchRow($result);
+		$oldEdits = $row[0];
+		
+		# new user edit count
+		$result = $dbw->select( 'user', array('user_editcount'), 'user_id ='.$newuserID );
+		$row = $dbw->fetchRow($result);
+		$newEdits = $row[0];
+		
+		# add edits
+		$totalEdits = $oldEdits + $newEdits;
+		
+		# don't run querys if neither user has any edits
+		if( $totalEdits > 0 ) {
+			# update new user with total edits
+			$dbw->update( 'user', array('user_editcount' => $totalEdits), array('user_id' => $newuserID) );
+			
+			#clear old users edits
+			$dbw->update( 'user', array('user_editcount' => 0), array('user_id' => $olduserID) );
+		}
+		
+		$wgOut->addHTML(wfMsgForContent('usermerge-editcount-success', $olduserID, $newuserID) . "<br />\n");
+
+		return true;
+	}
+	
+
+	/**
+	 * Function to merge user pages
+	 *
+	 * Deletes all pages when merging to Anon
+	 * Moves user page when the target user page does not exist or is empty
+	 * Deletes redirect if nothing links to old page
+	 * Deletes the old user page when the target user page exists
+	 *
+	 * @param $newuser_text string Username to merge pages TO
+	 * @param $olduser_text string Username of user to remove pages FROM
+	 *
+	 * @return returns true on completion
+	 *
+	 * @author Matthew April <Matthew.April@tbs-sct.gc.ca>
+	 */
+	private function movePages( $newuser_text, $olduser_text ) {
+		
+		global $wgOut, $wgTitle, $wgContLang, $wgUser;
+		
+		$oldusername = trim( str_replace( '_', ' ', $olduser_text ) );
+		$oldusername = Title::makeTitle( NS_USER, $oldusername );
+		$newusername = Title::makeTitleSafe( NS_USER, $wgContLang->ucfirst( $newuser_text ) );
+		
+		# select all user pages and sub-pages
+		$dbr = wfGetDB( DB_SLAVE );
+		$oldkey = $oldusername->getDBkey();
+		$pages = $dbr->select(
+			'page',
+			array( 'page_namespace', 'page_title' ),
+			array(
+				'page_namespace IN (' . NS_USER . ',' . NS_USER_TALK . ')',
+				'(page_title LIKE ' . 
+					$dbr->addQuotes( $dbr->escapeLike( $oldusername->getDBkey() ) . '/%' ) . 
+					' OR page_title = ' . $dbr->addQuotes( $oldusername->getDBkey() ) . ')'
+			)
+		);
+
+		$output = '';
+		$skin =& $wgUser->getSkin();
+		while ( $row = $dbr->fetchObject( $pages ) ) {
+			$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
+			$newPage = Title::makeTitleSafe( $row->page_namespace, 
+				preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
+
+			
+			if( $newuser_text == "Anonymous" ) { # delete ALL old pages
+				
+				if( $oldPage->exists() ) {
+					$oldPageArticle = new Article($oldPage);
+					$oldPageArticle->doDeleteArticle( wfMsgHtml('usermerge-autopagedelete') );
+					
+					$oldLink = $skin->makeKnownLinkObj( $oldPage );
+					$output .= '<li class="mw-renameuser-pe">' . wfMsgHtml( 'usermerge-page-deleted', $oldLink ) . '</li>';
+				}
+				
+			} elseif( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) && $newPage->getLength() > 0) { # delete old pages that can't be moved
+				
+				$oldPageArticle = new Article($oldPage);
+				$oldPageArticle->doDeleteArticle( wfMsgHtml('usermerge-autopagedelete') );
+				
+				$link = $skin->makeKnownLinkObj( $oldPage );
+				$output .= '<li class="mw-renameuser-pe">' . wfMsgHtml( 'usermerge-page-deleted', $link ) . '</li>';
+				
+			} else { # move content to new page
+				
+				# delete target page if it exists and is blank
+				if( $newPage->exists() ) {
+					$newPageArticle = new Article($newPage);
+					$newPageArticle->doDeleteArticle('usermerge-autopagedelete');
+				}
+				
+				# move to target location
+				$success = $oldPage->moveTo( $newPage, false, wfMsgForContent( 'usermerge-move-log', 
+					$oldusername->getText(), $newusername->getText() ) );
+				if( $success === true ) {
+					$oldLink = $skin->makeKnownLinkObj( $oldPage, '', 'redirect=no' );
+					$newLink = $skin->makeKnownLinkObj( $newPage );
+					$output .= '<li class="mw-renameuser-pm">' . wfMsgHtml( 'usermerge-page-moved', $oldLink, $newLink ) . '</li>';
+				} else {
+					$oldLink = $skin->makeKnownLinkObj( $oldPage );
+					$newLink = $skin->makeLinkObj( $newPage );
+					$output .= '<li class="mw-renameuser-pu">' . wfMsgHtml( 'usermerge-page-unmoved', $oldLink, $newLink ) . '</li>';
+				}
+				
+				# check if any pages link here
+				$res = $dbr->select( 'pagelinks',
+					'pl_title' ,
+					array( 'pl_title' => $olduser_text ),
+					__METHOD__
+                                );
+				if( !$dbr->numRows( $res ) ) {
+						# nothing links here, so delete unmoved page/redirect
+						$oldPageArticle = new Article($oldPage);
+						$oldPageArticle->doDeleteArticle( wfMsgHtml('usermerge-autopagedelete') );
+				}
+
+			}
+		}
+		
+		if( $output )
+			$wgOut->addHTML( '<ul>' . $output . '</ul>' );
+		
 		return true;
 	}
 }
