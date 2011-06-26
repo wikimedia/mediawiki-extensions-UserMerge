@@ -813,6 +813,7 @@ $messages['gu'] = array(
 );
 
 /** Hebrew (עברית)
+ * @author Amire80
  * @author Rotemliss
  * @author YaronSh
  */
@@ -841,6 +842,13 @@ $messages['he'] = array(
 	'usermerge-unmergable' => 'לא ניתן למזג ממשתמש זה - מספר המשתמש או השם כבר מוגדר כבלתי ניתן למיזוג.',
 	'usermerge-protectedgroup' => 'לא ניתן למזג ממשתמש זה - המשתמש נמצא בקבוצה מוגנת.',
 	'right-usermerge' => 'מיזוג משתמשים',
+	'usermerge-editcount' => 'להוסיף מונה עריכות?',
+	'usermerge-editcount-success' => 'הוספת מונה עריכות של ($1&rlm;, $2)',
+	'usermerge-autopagedelete' => 'נמחק אוטומטית בזמן מיזוג חשבונות',
+	'usermerge-page-unmoved' => 'לא ניתן להעביר את הדף $1 לשם $2.',
+	'usermerge-page-moved' => 'הדף $1 הועבר לשם $2.',
+	'usermerge-move-log' => 'הדף הועבר אוטומטית בזמן מיזוג חשבון "[[User:$1|$1]]" אל "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'הדף $1 נמחק',
 );
 
 /** Hindi (हिन्दी)
@@ -1362,6 +1370,11 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 	'usermerge-unmergable' => 'Deze gebruiker kan niet samengevoegd worden. De gebruikersnaam of het gebruikersnummer is ingesteld als niet samen te voegen.',
 	'usermerge-protectedgroup' => 'Het is niet mogelijk de gebruikers samen te voegen. De gebruiker zit in een beschermde groep.',
 	'right-usermerge' => 'Gebruikers samenvoegen',
+	'usermerge-autopagedelete' => 'Automatisch verwijderd bij het samenvoegen van gebruikers',
+	'usermerge-page-unmoved' => 'De pagina $1 kon niet hernoemd worden naar $2.',
+	'usermerge-page-moved' => 'De pagina $1 is hernoemd naar $2.',
+	'usermerge-move-log' => 'Pagina automatisch hernoemd bij het samenvoegen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Verwijderde pagina $1',
 );
 
 /** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
