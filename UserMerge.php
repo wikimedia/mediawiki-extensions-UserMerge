@@ -6,7 +6,9 @@
 /*
  * UserMerge Extension for MediaWiki
  *
- * Copyright (C) PediaPress GmbH
+ * Copyright (C) Tim Laqua
+ * Copyright (C) Thomas Gries
+ * Copyright (C) Matthew April
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
