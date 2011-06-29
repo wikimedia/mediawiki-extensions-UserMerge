@@ -1787,6 +1787,13 @@ Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 	'usermerge-unmergable' => 'Ne morem združiti uporabnika – ID ali ime je opredeljeno kot nezdružljivo.',
 	'usermerge-protectedgroup' => 'Ne morem združiti uporabnika – uporabnik je v zaščiteni skupini.',
 	'right-usermerge' => 'Spajanje uporabnikov',
+	'usermerge-editcount' => 'Dodam števec urejanj?',
+	'usermerge-editcount-success' => 'Dodajanje števca urejanj ($1 in $2)',
+	'usermerge-autopagedelete' => 'Samodejno izbrisano med združevanjem uporabnikov',
+	'usermerge-page-unmoved' => 'Strani $1 ni bilo mogoče prestaviti na $2.',
+	'usermerge-page-moved' => 'Stran $1 je bila prestavljena na $2.',
+	'usermerge-move-log' => 'Samodejno prestavljena stran med združevanjem uporabnika »[[User:$1|$1]]« z »[[User:$2|$2]]«',
+	'usermerge-page-deleted' => 'Izbrisana stran $1',
 );
 
 /** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
