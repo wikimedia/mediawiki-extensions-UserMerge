@@ -1302,6 +1302,13 @@ $messages['mr'] = array(
 	'right-usermerge' => 'सदस्य एकत्र करा',
 );
 
+/** Malay (Bahasa Melayu)
+ * @author Anakmalaysia
+ */
+$messages['ms'] = array(
+	'right-usermerge' => 'Menggabungkan pengguna',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  */
