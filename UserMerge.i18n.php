@@ -659,6 +659,7 @@ Napsauta "{{int:usermerge-submit}}" hyväksyäksesi.',
  * @author IAlex
  * @author McDutchie
  * @author PieRRoMaN
+ * @author Seb35
  * @author Sherbrooke
  * @author Urhixidur
  */
@@ -687,6 +688,13 @@ Cliquez sur « {{int:usermerge-submit}} » pour accepter.',
 	'usermerge-unmergable' => 'Impossible de fusionner l’utilisateur : le numéro ou le nom a été défini comme non fusionnable.',
 	'usermerge-protectedgroup' => 'Impossible de fusionner l’utilisateur : l’utilisateur est dans un groupe protégé.',
 	'right-usermerge' => 'Fusionner des utilisateurs',
+	'usermerge-editcount' => 'Ajouter le compteur d’éditions ?',
+	'usermerge-editcount-success' => 'Ajout du compteur d’éditions de ($1 et $2)',
+	'usermerge-autopagedelete' => 'Supprimé automatiquement lors de la fusion de utilisateurs',
+	'usermerge-page-unmoved' => 'Cette page $1 ne peut pas être déplacée vers $2.',
+	'usermerge-page-moved' => 'La page $1 a été déplacée vers $2.',
+	'usermerge-move-log' => 'Page déplacée automatiquement lors de la fusion de l’utilisateur « [[User:$1|$1]] » en « [[User:$2|$2]] »',
+	'usermerge-page-deleted' => 'Page $1 effacée',
 );
 
 /** Franco-Provençal (Arpetan)
