@@ -1209,6 +1209,13 @@ Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
 	'usermerge-unmergable' => "Zesammenféierung ass net méiglech - d'ID oder de Benotzernumm gouf als net zesummeféierbar definéiert.",
 	'usermerge-protectedgroup' => "D'Zesammenféierung ass net méiglech - De Benotzer ass an engem geschützte Grupp.",
 	'right-usermerge' => 'Benotzer zesummeféieren',
+	'usermerge-editcount' => 'Compteur vun den Ännerungen derbäisetzen?',
+	'usermerge-editcount-success' => 'De Compteur vun den Ännerungen vun ($1 a(n) $2) gëtt derbäigesat',
+	'usermerge-autopagedelete' => "Automatesch geläscht wéi d'Benotzer zesummegeluecht goufen",
+	'usermerge-page-unmoved' => "D'Säit $1 konnt net op $2 geréckelt ginn.",
+	'usermerge-page-moved' => "D'Säit $1 gouf op $2 geréckelt.",
+	'usermerge-move-log' => 'D\'Säit gouf automatesch geréckelt wéi de Benotzer "[[User:$1|$1]]" mam "[[User:$2|$2]]" zesummegeluecht gouf',
+	'usermerge-page-deleted' => 'Säit $1 ass geläscht',
 );
 
 /** Malagasy (Malagasy)
