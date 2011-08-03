@@ -343,8 +343,7 @@ class UserMerge extends SpecialPage {
 	 * @author Matthew April <Matthew.April@tbs-sct.gc.ca>
 	 */
 	private function movePages( $newuser_text, $olduser_text ) {
-		
-		global $wgOut, $wgTitle, $wgContLang, $wgUser;
+		global $wgOut, $wgContLang, $wgUser;
 		
 		$oldusername = trim( str_replace( '_', ' ', $olduser_text ) );
 		$oldusername = Title::makeTitle( NS_USER, $oldusername );
