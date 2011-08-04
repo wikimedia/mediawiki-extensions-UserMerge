@@ -1331,13 +1331,13 @@ $messages['nah'] = array(
  */
 $messages['nds-nl'] = array(
 	'usermerge' => 'Gebrukers samenvoegen en vortdoon',
-	'usermerge-desc' => "Zet een [[Special:UserMerge|spesiale pagina]] derbie um gebrukers samen te voegen en de ouwe gebruker(s) vort te doon (hierveur is t recht ''usermerge'' neudig)",
+	'usermerge-desc' => "Zet n [[Special:UserMerge|spesiale pagina]] derbie um gebrukers samen te voegen en de ouwe gebruker(s) vort te doon (hierveur is t recht ''usermerge'' neudig)",
 	'usermerge-badolduser' => 'Ongeldige ouwe gebrukersnaam',
 	'usermerge-badnewuser' => 'Ongeldige nieje gebrukersnaam',
-	'usermerge-nonewuser' => 'De nieje gebrukersnaam is niet op-egeven - der wörden vanuut egaon dat der samengevoeg möt wörden naor $1.<br />
+	'usermerge-nonewuser' => 'De nieje gebrukersnaam is niet op-egeven - der wörden vanuut egaon dat der samengevoeg mut wörden naor $1.<br />
 Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.',
 	'usermerge-noolduser' => 'Ouwe gebrukersnaam is niet op-egeven',
-	'usermerge-fieldset' => 'Gebrukersnamen die samenevoegen mötten wörden',
+	'usermerge-fieldset' => 'Gebrukersnamen die samenevoegen mutten wörden',
 	'usermerge-olduser' => 'Ouwe gebruker (samenvoegen van):',
 	'usermerge-newuser' => 'Nieje gebruker (samenvoegen naor):',
 	'usermerge-deleteolduser' => 'Ouwe gebruker vortdoon',
@@ -1352,7 +1352,7 @@ Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.',
 	'usermerge-logpagetext' => 'Dit is t logboek van gebrukerssamenvoegingen.',
 	'usermerge-noselfdelete' => 'Je kunnen je eigen niet vortdoon of samenvoegen!',
 	'usermerge-unmergable' => 'Disse gebruker kan niet samenevoeg wörden. De gebrukersnaam of t gebrukersnummer is in-esteld as niet samenvoegen.',
-	'usermerge-protectedgroup' => 'Kan de gebrukers niet samenvoegen. De gebruker zit in een bescharmde groep.',
+	'usermerge-protectedgroup' => 'Kan de gebrukers niet samenvoegen. De gebruker zit in n bescharmde groep.',
 	'right-usermerge' => 'Gebrukers samenvoegen',
 );
 
