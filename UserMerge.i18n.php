@@ -722,6 +722,7 @@ $messages['frp'] = array(
 	'usermerge-unmergable' => 'Empossiblo de fusionar l’utilisator : lo numerô ou ben lo nom at étâ dèfeni coment pas fusionâblo.',
 	'usermerge-protectedgroup' => 'Empossiblo de fusionar l’utilisator : l’utilisator est dens una tropa protègiê.',
 	'right-usermerge' => 'Fusionar des utilisators',
+	'usermerge-editcount' => 'Apondre lo comptor de changements ?',
 	'usermerge-page-deleted' => 'Pâge suprimâ $1',
 );
 
