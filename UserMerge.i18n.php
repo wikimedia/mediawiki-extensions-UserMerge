@@ -723,6 +723,11 @@ $messages['frp'] = array(
 	'usermerge-protectedgroup' => 'Empossiblo de fusionar l’utilisator : l’utilisator est dens una tropa protègiê.',
 	'right-usermerge' => 'Fusionar des utilisators',
 	'usermerge-editcount' => 'Apondre lo comptor de changements ?',
+	'usermerge-editcount-success' => 'Aponsa du comptor de changements de ($1 et $2)',
+	'usermerge-autopagedelete' => 'Suprimâ ôtomaticament pendent la fusion d’utilisators',
+	'usermerge-page-unmoved' => 'La pâge $1 pôt pas étre dèplaciê vers $2.',
+	'usermerge-page-moved' => 'La pâge $1 at étâ dèplaciê vers $2.',
+	'usermerge-move-log' => 'Pâge dèplaciê ôtomaticament pendent la fusion de l’utilisator « [[User:$1|$1]] » en « [[User:$2|$2]] »',
 	'usermerge-page-deleted' => 'Pâge suprimâ $1',
 );
 
