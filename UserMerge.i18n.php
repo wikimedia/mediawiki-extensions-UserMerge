@@ -767,6 +767,13 @@ Prema en "{{int:usermerge-submit}}" para aceptar.',
 	'usermerge-unmergable' => 'Non se pode fusionar o usuario (o ID ou o nome foron definidos como "non fusionables").',
 	'usermerge-protectedgroup' => 'Non se pode fusionar o usuario (o usuario está nun frupo protexido).',
 	'right-usermerge' => 'Fusionar usuarios',
+	'usermerge-editcount' => 'Quere engadir o contador de edicións?',
+	'usermerge-editcount-success' => 'Engadindo o contador de edicións de ($1 e $2)',
+	'usermerge-autopagedelete' => 'Borrada automaticamente ao fusionar os usuarios',
+	'usermerge-page-unmoved' => 'A páxina "$1" non pode ser movida a "$2".',
+	'usermerge-page-moved' => 'A páxina "$1" foi movida a "$2".',
+	'usermerge-move-log' => 'A páxina moveuse automaticamente cando se fusionou o usuario "[[User:$1|$1]]" con "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'A páxina "$1" foi borrada',
 );
 
 /** Ancient Greek (Ἀρχαία ἑλληνικὴ)
