@@ -1030,6 +1030,24 @@ Klik "{{int:usermerge-submit}}" untuk melanjutkan.',
 	'right-usermerge' => 'Menggabungkan pengguna',
 );
 
+/** Interlingue (Interlingue)
+ * @author Renan
+ */
+$messages['ie'] = array(
+	'usermerge' => 'Fuser se e deleter usatores',
+	'usermerge-desc' => "[[Special:UserMerge|Referenties de fusion de un usator por altri usator]] in li funde de data del wiki - anc va deleter usatores antiqui succedent fusion. Exige avantages de ''fusion de usator''",
+	'usermerge-badolduser' => 'Antiqui nómine de usator ínvalid',
+	'usermerge-badnewuser' => 'Nov nómine de usator ínvalid',
+	'usermerge-nonewuser' => 'Nov nómine de usator vacui - acceptant fusion por "$1".<br />
+Clacca "{{int:usermerge-submit}}" por acceptar.',
+	'usermerge-fieldset' => 'Nómines de usator por fusion',
+	'usermerge-newuser' => 'Nov usator (fuser se por):',
+	'usermerge-deleteolduser' => 'Deleter usator antiqui',
+	'usermerge-badtoken' => 'Simbol de redaction ínvalid',
+	'usermerge-logpage' => 'Diarium de fusion de usator',
+	'usermerge-logpagetext' => 'Ti es un diarium de actiones de fusion de usator.',
+);
+
 /** Italian (Italiano)
  * @author Darth Kule
  * @author Pietrodn
