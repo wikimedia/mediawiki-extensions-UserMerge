@@ -1040,12 +1040,22 @@ $messages['ie'] = array(
 	'usermerge-badnewuser' => 'Nov nómine de usator ínvalid',
 	'usermerge-nonewuser' => 'Nov nómine de usator vacui - acceptant fusion por "$1".<br />
 Clacca "{{int:usermerge-submit}}" por acceptar.',
+	'usermerge-noolduser' => 'Antiqui nómine de usator vacui',
 	'usermerge-fieldset' => 'Nómines de usator por fusion',
+	'usermerge-olduser' => 'Antiqui usator (fuser se de):',
 	'usermerge-newuser' => 'Nov usator (fuser se por):',
 	'usermerge-deleteolduser' => 'Deleter usator antiqui',
+	'usermerge-submit' => 'Fuser usator',
 	'usermerge-badtoken' => 'Simbol de redaction ínvalid',
+	'usermerge-userdeleted' => '$1 ($2) ha esset deletet.',
+	'usermerge-userdeleted-log' => 'Usator deletet: $2 ($3)',
+	'usermerge-updating' => 'Modernisant tabelle $1 ($2 por $3)',
+	'usermerge-success' => 'Fuser se de $1 ($2) por $3 ($4) es complet.',
 	'usermerge-logpage' => 'Diarium de fusion de usator',
 	'usermerge-logpagetext' => 'Ti es un diarium de actiones de fusion de usator.',
+	'usermerge-noselfdelete' => 'Vu ne posse deleter o fuser se vu self!',
+	'usermerge-unmergable' => 'Ne posse fuser se de ti usator - ID o nómine ha esset definit quam ínfusibil.',
+	'usermerge-protectedgroup' => 'Ne posse fuser de ti usator - usator es in un gruppe protectet.',
 );
 
 /** Italian (Italiano)
