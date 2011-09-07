@@ -206,6 +206,7 @@ $messages['arz'] = array(
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
+ * @author Renessaince
  */
 $messages['be-tarask'] = array(
 	'usermerge' => "Аб'яднаньне і выдаленьне рахункаў удзельнікаў",
@@ -232,6 +233,13 @@ $messages['be-tarask'] = array(
 	'usermerge-unmergable' => "Немагчыма аб'яднаць рахунак удзельніка — ідэнтыфікатар ці імя былі пазначаны як неаб'яднальныя.",
 	'usermerge-protectedgroup' => "Немагчыма аб'яднаць рахунак удзельніка — удзельнік знаходзіцца ў абароненай групе.",
 	'right-usermerge' => "аб'яднаньне рахункаў удзельнікаў",
+	'usermerge-editcount' => 'Дадаць лічыльнік рэдагаваньняў?',
+	'usermerge-editcount-success' => 'Даданьне лічыльніка рэдагаваньняў ($1 і $2)',
+	'usermerge-autopagedelete' => 'Аўтаматычна выдалены падчас аб’яднаньня рахункаў ўдзельнікаў',
+	'usermerge-page-unmoved' => 'Старонка $1 ня можа быць перанесеная ў $2.',
+	'usermerge-page-moved' => 'Старонка $1 перанесеная ў $2.',
+	'usermerge-move-log' => 'Аўтаматычна перанесеная старонка падчас аб’яднаньня рахунку ўдзельніка «[[User:$1|$1]]» з «[[User:$2|$2]]»',
+	'usermerge-page-deleted' => 'Выдаленая старонка $1',
 );
 
 /** Bulgarian (Български)
