@@ -70,7 +70,7 @@ $specialPageAliases['fr'] = array(
 
 /** Franco-Provençal (Arpetan) */
 $specialPageAliases['frp'] = array(
-	'UserMerge' => array( 'Fusionar los utilisators', 'FusionarLosUtilisators' ),
+	'UserMerge' => array( 'Fusionar_los_utilisators', 'FusionarLosUtilisators' ),
 );
 
 /** Swiss German (Alemannisch) */
