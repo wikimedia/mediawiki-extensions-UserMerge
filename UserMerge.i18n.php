@@ -48,6 +48,7 @@ Click "{{int:usermerge-submit}}" to accept.',
  * @author Meno25
  * @author Purodha
  * @author Siebrand
+ * @author Umherirrender
  */
 $messages['qqq'] = array(
 	'usermerge-desc' => '{{desc}}',
@@ -68,7 +69,7 @@ $messages['qqq'] = array(
 * $3 is a user ID of the source user
 * $4 is a user name (not linked) that the other user is merged into
 * $5 is a user ID of the target user',
-	'right-usermerge' => '{{doc-right}}',
+	'right-usermerge' => '{{doc-right|usermerge}}',
 );
 
 /** Afrikaans (Afrikaans)
