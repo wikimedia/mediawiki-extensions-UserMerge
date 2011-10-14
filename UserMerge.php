@@ -3,7 +3,7 @@
 * \brief Contains setup code for the User Merge and Delete Extension.
 */
 
-/*
+/**
  * UserMerge Extension for MediaWiki
  *
  * Copyright (C) Tim Laqua
