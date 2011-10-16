@@ -793,6 +793,7 @@ $messages['grc'] = array(
 );
 
 /** Swiss German (Alemannisch)
+ * @author Als-Chlämens
  * @author Als-Holder
  */
 $messages['gsw'] = array(
@@ -820,6 +821,13 @@ Klick uf "{{int:usermerge-submit}}" go s Uusfiere.',
 	'usermerge-unmergable' => 'Zämmefierig nit megli - ID oder Benutzername isch nit as zämmefierbar definiert.',
 	'usermerge-protectedgroup' => 'Zämmefierig nit megli - Benutzername isch in ere gschitze Gruppe.',
 	'right-usermerge' => 'Benutzerkonte zämmefiere',
+	'usermerge-editcount' => 'Bearbeitigszääler dezuefiege?',
+	'usermerge-editcount-success' => 'Dezuefiege vum Bearbeitigszääler ($1 un $2)',
+	'usermerge-autopagedelete' => 'Derwyylischt de Benutzerchontezämmefierig automatisch glöscht',
+	'usermerge-page-unmoved' => 'D Syte „$1“ het nüt chönne uf „$2“ verschobe werde.',
+	'usermerge-page-moved' => 'D Syte „$1“ isch uff „$2“ verschobe worde.',
+	'usermerge-move-log' => 'Dur d Benutzerchontezämmefierig vu „[[User:$1|$1]]“ noch „[[User:$2|$2]]“ automatisch verschobeni Syte',
+	'usermerge-page-deleted' => 'Gleschti Syte $1',
 );
 
 /** Gujarati (ગુજરાતી)
