@@ -1739,6 +1739,7 @@ $messages['roa-tara'] = array(
 );
 
 /** Russian (Русский)
+ * @author Askarmuk
  * @author Ferrer
  * @author Illusion
  * @author Innv
@@ -1769,6 +1770,11 @@ $messages['ru'] = array(
 	'usermerge-unmergable' => 'Невозможно объединить участников — идентификатор или имя было определено как необъединяемое.',
 	'usermerge-protectedgroup' => 'Невозможно объединить участников — участник относится к защищённой группе.',
 	'right-usermerge' => 'объединение участников',
+	'usermerge-autopagedelete' => 'Автоматически удаляются при объединении пользователей',
+	'usermerge-page-unmoved' => 'Страница $1 не может быть переименована в $2.',
+	'usermerge-page-moved' => 'Страница $1 была переименована в $2.',
+	'usermerge-move-log' => 'Автоматически переименовано во время объединения учетной записи "[[User:$1|$1]]" с "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Удалить страницу $1',
 );
 
 /** Rusyn (Русиньскый)
