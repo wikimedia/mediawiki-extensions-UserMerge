@@ -134,6 +134,7 @@ $messages['aln'] = array(
 /** Arabic (العربية)
  * @author Meno25
  * @author OsamaK
+ * @author روخو
  */
 $messages['ar'] = array(
 	'usermerge' => 'دمج وحذف المستخدمين',
@@ -160,6 +161,7 @@ $messages['ar'] = array(
 	'usermerge-unmergable' => 'غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.',
 	'usermerge-protectedgroup' => 'غير قادر على الدمج من المستخدم - المستخدم في مجموعة محمية.',
 	'right-usermerge' => 'دمج المستخدمين',
+	'usermerge-page-deleted' => 'صفحة محذوفة $1',
 );
 
 /** Aramaic (ܐܪܡܝܐ)
