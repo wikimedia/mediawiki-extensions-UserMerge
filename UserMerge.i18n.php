@@ -1964,7 +1964,7 @@ Klik ap  „{{int:usermerge-submit}}“ toun Uutfieren.',
 	'usermerge-logpagetext' => 'Dit is dät Logbouk fon do Benutserkonten-Touhoopefierengen.',
 	'usermerge-noselfdelete' => 'Touhoopefierenge mäd aan sälwen is nit muugelk!',
 	'usermerge-unmergable' => 'Touhoopefierenge nit muugelk - ID of Benutsernoome wuud as nit touhoopefierboar definierd.',
-	'usermerge-protectedgroup' => 'Touhoopefierenge nit muugelk - Benutsernoome is in ne schutsede Gruppe.',
+	'usermerge-protectedgroup' => 'Touhoopefierenge nit muugelk - Benutsernoome is in ne skutsede Gruppe.',
 	'right-usermerge' => 'Benutserkonten fereenje',
 );
 
