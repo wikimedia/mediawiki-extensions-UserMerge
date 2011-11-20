@@ -919,6 +919,13 @@ Klikń na "{{int:usermerge-submit}}", zo by akceptował.',
 	'usermerge-unmergable' => 'Zjednoćenje wužiwarjow njemóžno - ID abo wužiwarske mjeno bu jako njezjednoćujomne definowane.',
 	'usermerge-protectedgroup' => 'Zjednoćenje wužiwarjow njemóžno - wužiwar je w škitanej skupinje',
 	'right-usermerge' => 'Wužiwarjow zjednoćić',
+	'usermerge-editcount' => 'Ličenje změnow přidać?',
+	'usermerge-editcount-success' => 'Přidawanje ličenja změnow ($1 a $2)',
+	'usermerge-autopagedelete' => 'Při zjednoćenju wužiwarjow awtomatisce zhašany',
+	'usermerge-page-unmoved' => 'Strona $1 njeda so do $2 přesunyć.',
+	'usermerge-page-moved' => 'Strona $1 bu do $2 přesunjena.',
+	'usermerge-move-log' => 'Strona za zjednoćenje wužiwarja "[[User:$1|$1]]" z "[[User:$2|$2]]" awtomatisce přesunjena',
+	'usermerge-page-deleted' => 'Zhašana strona $1',
 );
 
 /** Haitian (Kreyòl ayisyen)
