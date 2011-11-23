@@ -1894,7 +1894,7 @@ Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 	'usermerge-page-deleted' => 'Izbrisana stran $1',
 );
 
-/** Serbian Cyrillic ekavian (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
  * @author Rancher
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
@@ -1921,7 +1921,7 @@ $messages['sr-ec'] = array(
 	'right-usermerge' => 'спајање корисника',
 );
 
-/** Serbian Latin ekavian (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
  */
 $messages['sr-el'] = array(
@@ -2065,7 +2065,7 @@ $messages['te'] = array(
 	'right-usermerge' => 'వాడుకరులను విలీనం చేయగలగడం',
 );
 
-/** Tajik (Cyrillic) (Тоҷикӣ (Cyrillic))
+/** Tajik (Cyrillic script) (Тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -2082,7 +2082,7 @@ $messages['tg-cyrl'] = array(
 	'usermerge-logpagetext' => 'Ин гузориши амалҳои идғоми корбар аст.',
 );
 
-/** Tajik (Latin) (Тоҷикӣ (Latin))
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
