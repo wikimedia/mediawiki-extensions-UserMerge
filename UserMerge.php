@@ -35,7 +35,7 @@ if (!defined('MEDIAWIKI')) {
 $wgExtensionCredits['specialpage'][] = array(
 	'path'           => __FILE__,
 	'name'           => 'User Merge and Delete',
-	'url'            => 'http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete',
+	'url'            => 'https://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete',
 	'author'         => array( 'Tim Laqua', 'Thomas Gries', 'Matthew April' ),
 	'descriptionmsg' => 'usermerge-desc',
 	'version'        => '1.6.31'
