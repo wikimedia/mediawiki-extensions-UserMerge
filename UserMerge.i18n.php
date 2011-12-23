@@ -2276,6 +2276,7 @@ $messages['zh-hans'] = array(
 	'usermerge-badnewuser' => '无效的新用户名',
 	'usermerge-nonewuser' => '清除新用户名 - 假设合并到$1。<br />点击<u>合并用户</u>以接受。',
 	'usermerge-noolduser' => '清除旧用户名',
+	'usermerge-fieldset' => '使用者名称合并',
 	'usermerge-olduser' => '旧用户（合并自）：',
 	'usermerge-newuser' => '新用户（合并到）：',
 	'usermerge-deleteolduser' => '删除旧用户',
