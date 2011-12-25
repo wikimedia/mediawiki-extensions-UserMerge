@@ -1393,6 +1393,45 @@ $messages['nah'] = array(
 	'usermerge-userdeleted-log' => 'Tlapoloc tlatequitiltilīlli: $2 ($3)',
 );
 
+/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
+ * @author Event
+ * @author Jon Harald Søby
+ * @author Nghtwlkr
+ */
+$messages['nb'] = array(
+	'usermerge' => 'Brukersammenslåing og -sletting',
+	'usermerge-desc' => "Gir muligheten til  å [[Special:UserMerge|slå sammen kontoer]] ved at alle referanser til en bruker byttes ut til en annen bruker i databasen, for så å slette den ene kontoen. Trenger rettigheten ''usermerge''.",
+	'usermerge-badolduser' => 'Gammelt brukernavn ugyldig',
+	'usermerge-badnewuser' => 'Nytt brukernavn ugyldig',
+	'usermerge-nonewuser' => 'Nytt brukernavn tomt &ndash; antar sammenslåing til «$1».<br />
+Klikk «{{int:usermerge-submit}}» for å godta.',
+	'usermerge-noolduser' => 'Gammelt brukernavn tomt',
+	'usermerge-fieldset' => 'Brukernavn som skal slås sammen',
+	'usermerge-olduser' => 'Gammelt brukernavn (slå sammen fra):',
+	'usermerge-newuser' => 'Nytt brukernavn (slå sammen til):',
+	'usermerge-deleteolduser' => 'Slett gammel bruker',
+	'usermerge-submit' => 'Slå sammen brukere',
+	'usermerge-badtoken' => 'Ugyldig redigeringstegn',
+	'usermerge-userdeleted' => '$1 ($2) har blitt slettet.',
+	'usermerge-userdeleted-log' => 'Slettet bruker: $2 ($3)',
+	'usermerge-updating' => 'Oppdaterer $1-tabell ($2 til $3)',
+	'usermerge-success' => 'Sammenslåing fra $1 ($2) til $3 ($4) er fullført.',
+	'usermerge-success-log' => 'Brukeren $2 ($3) slått sammen med $4 ($5)',
+	'usermerge-logpage' => 'Brukersammenslåingslogg',
+	'usermerge-logpagetext' => 'Dette er en logg over brukersammenslåinger.',
+	'usermerge-noselfdelete' => 'Du kan ikke slette eller slå sammen din egen konto!',
+	'usermerge-unmergable' => 'Kan ikke slå sammen den gamle kontoen. ID-en eller navnet anses som ikke-sammenslåbart.',
+	'usermerge-protectedgroup' => 'Kan ikke slå sammen den gamle kontoen. Brukeren er medlem i en beskyttet brukergruppe.',
+	'right-usermerge' => 'Slå sammen kontoer',
+	'usermerge-editcount' => 'Legge til antall redigeringer?',
+	'usermerge-editcount-success' => 'Legge til antall redigeringer for ($1 og $2)',
+	'usermerge-autopagedelete' => 'Automatisk slettet ved brukersammenslåing',
+	'usermerge-page-unmoved' => 'Side $1 kunne ikke flyttes til $2.',
+	'usermerge-page-moved' => 'Side $1 er flyttet til $2.',
+	'usermerge-move-log' => 'Flyttet siden automatisk i forbindelse med sammenslåing av bruker "[[User:$1|$1]]" til "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Slettet side $1',
+);
+
 /** Nedersaksisch (Nedersaksisch)
  * @author Servien
  */
@@ -1490,45 +1529,6 @@ $messages['nn'] = array(
 	'usermerge-unmergable' => 'Kan ikkje slå saman den gamle kontoen. ID-en eller namnet vert ikkje rekna som samanslåbart.',
 	'usermerge-protectedgroup' => 'Kan ikkje slå saman den gamle kontoen. Brukaren er medlem i ei verna brukargruppe.',
 	'right-usermerge' => 'Slå saman kontoar',
-);
-
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬)
- * @author Event
- * @author Jon Harald Søby
- * @author Nghtwlkr
- */
-$messages['nb'] = array(
-	'usermerge' => 'Brukersammenslåing og -sletting',
-	'usermerge-desc' => "Gir muligheten til  å [[Special:UserMerge|slå sammen kontoer]] ved at alle referanser til en bruker byttes ut til en annen bruker i databasen, for så å slette den ene kontoen. Trenger rettigheten ''usermerge''.",
-	'usermerge-badolduser' => 'Gammelt brukernavn ugyldig',
-	'usermerge-badnewuser' => 'Nytt brukernavn ugyldig',
-	'usermerge-nonewuser' => 'Nytt brukernavn tomt &ndash; antar sammenslåing til «$1».<br />
-Klikk «{{int:usermerge-submit}}» for å godta.',
-	'usermerge-noolduser' => 'Gammelt brukernavn tomt',
-	'usermerge-fieldset' => 'Brukernavn som skal slås sammen',
-	'usermerge-olduser' => 'Gammelt brukernavn (slå sammen fra):',
-	'usermerge-newuser' => 'Nytt brukernavn (slå sammen til):',
-	'usermerge-deleteolduser' => 'Slett gammel bruker',
-	'usermerge-submit' => 'Slå sammen brukere',
-	'usermerge-badtoken' => 'Ugyldig redigeringstegn',
-	'usermerge-userdeleted' => '$1 ($2) har blitt slettet.',
-	'usermerge-userdeleted-log' => 'Slettet bruker: $2 ($3)',
-	'usermerge-updating' => 'Oppdaterer $1-tabell ($2 til $3)',
-	'usermerge-success' => 'Sammenslåing fra $1 ($2) til $3 ($4) er fullført.',
-	'usermerge-success-log' => 'Brukeren $2 ($3) slått sammen med $4 ($5)',
-	'usermerge-logpage' => 'Brukersammenslåingslogg',
-	'usermerge-logpagetext' => 'Dette er en logg over brukersammenslåinger.',
-	'usermerge-noselfdelete' => 'Du kan ikke slette eller slå sammen din egen konto!',
-	'usermerge-unmergable' => 'Kan ikke slå sammen den gamle kontoen. ID-en eller navnet anses som ikke-sammenslåbart.',
-	'usermerge-protectedgroup' => 'Kan ikke slå sammen den gamle kontoen. Brukeren er medlem i en beskyttet brukergruppe.',
-	'right-usermerge' => 'Slå sammen kontoer',
-	'usermerge-editcount' => 'Legge til antall redigeringer?',
-	'usermerge-editcount-success' => 'Legge til antall redigeringer for ($1 og $2)',
-	'usermerge-autopagedelete' => 'Automatisk slettet ved brukersammenslåing',
-	'usermerge-page-unmoved' => 'Side $1 kunne ikke flyttes til $2.',
-	'usermerge-page-moved' => 'Side $1 er flyttet til $2.',
-	'usermerge-move-log' => 'Flyttet siden automatisk i forbindelse med sammenslåing av bruker "[[User:$1|$1]]" til "[[User:$2|$2]]"',
-	'usermerge-page-deleted' => 'Slettet side $1',
 );
 
 /** Occitan (Occitan)
@@ -1923,6 +1923,7 @@ $messages['sr-ec'] = array(
 
 /** Serbian (Latin script) (‪Srpski (latinica)‬)
  * @author Michaello
+ * @author Rancher
  */
 $messages['sr-el'] = array(
 	'usermerge' => 'Spaja i briše korisnike',
@@ -1943,7 +1944,7 @@ $messages['sr-el'] = array(
 	'usermerge-logpagetext' => 'Ovo je istorija spajanja korisnika.',
 	'usermerge-noselfdelete' => 'Ne možete da se obrišete ili spojite sa drugim nalogom!',
 	'usermerge-protectedgroup' => 'Nije moguđe spojiti ovog korisnika sa drugim — nalazi se u zaštićenoj grupi.',
-	'right-usermerge' => 'Spoji korisnike',
+	'right-usermerge' => 'spajanje korisnika',
 );
 
 /** Seeltersk (Seeltersk)
