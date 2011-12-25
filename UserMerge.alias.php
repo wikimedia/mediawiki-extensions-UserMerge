@@ -70,7 +70,7 @@ $specialPageAliases['fr'] = array(
 
 /** Franco-Provençal (Arpetan) */
 $specialPageAliases['frp'] = array(
-	'UserMerge' => array( 'Fusionar_los_utilisators', 'FusionarLosUtilisators' ),
+	'UserMerge' => array( 'Fusionar_los_usanciérs', 'FusionarLosUsanciérs' ),
 );
 
 /** Swiss German (Alemannisch) */
@@ -148,6 +148,11 @@ $specialPageAliases['mr'] = array(
 	'UserMerge' => array( 'सदस्यविलीनीकरण' ),
 );
 
+/** Norwegian Bokmål (‪Norsk (bokmål)‬) */
+$specialPageAliases['nb'] = array(
+	'UserMerge' => array( 'Slå_sammen_brukere' ),
+);
+
 /** Nedersaksisch (Nedersaksisch) */
 $specialPageAliases['nds-nl'] = array(
 	'UserMerge' => array( 'Gebrukers_samenvoegen' ),
@@ -158,11 +163,6 @@ $specialPageAliases['nl'] = array(
 	'UserMerge' => array( 'GebruikersSamenvoegen' ),
 );
 
-/** Norwegian (bokmål)‬ (‪Norsk (bokmål)‬) */
-$specialPageAliases['nb'] = array(
-	'UserMerge' => array( 'Slå_sammen_brukere' ),
-);
-
 /** Occitan (Occitan) */
 $specialPageAliases['oc'] = array(
 	'UserMerge' => array( 'Fusionar los utilizaires', 'FusionarLosUtilizaire', 'Fusionar utilizaires', 'FusionarUtilizaires', 'Fusionar utilizaire', 'FusionarUtilizaire' ),
@@ -170,10 +170,10 @@ $specialPageAliases['oc'] = array(
 
 /** Portuguese (Português) */
 $specialPageAliases['pt'] = array(
-	'UserMerge' => array( 'Fundir utilizadores' ),
+	'UserMerge' => array( 'Fundir_utilizadores' ),
 );
 
-/** Sanskrit (संस्कृत) */
+/** Sanskrit (संस्कृतम्) */
 $specialPageAliases['sa'] = array(
 	'UserMerge' => array( 'सदस्यसंयोग' ),
 );
@@ -207,8 +207,3 @@ $specialPageAliases['tr'] = array(
 $specialPageAliases['yi'] = array(
 	'UserMerge' => array( 'צונויפגיסן_באניצער' ),
 );
-
-/**
- * For backwards compatibility with MediaWiki 1.15 and earlier.
- */
-$aliases =& $specialPageAliases;
