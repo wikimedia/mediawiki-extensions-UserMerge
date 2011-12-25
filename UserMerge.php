@@ -48,7 +48,7 @@ $dir = dirname(__FILE__) . '/';
 $wgAutoloadClasses['UserMerge'] = $dir . 'UserMerge_body.php';
 
 $wgExtensionMessagesFiles['UserMerge'] = $dir . 'UserMerge.i18n.php';
-$wgExtensionAliasesFiles['UserMerge'] = $dir . 'UserMerge.alias.php';
+$wgExtensionMessagesFiles['UserMergeAlias'] = $dir . 'UserMerge.alias.php';
 $wgSpecialPages['UserMerge'] = 'UserMerge';
 $wgSpecialPageGroups['UserMerge'] = 'users';
 
