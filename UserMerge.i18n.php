@@ -1497,7 +1497,7 @@ $messages['nn'] = array(
  * @author Jon Harald Søby
  * @author Nghtwlkr
  */
-$messages['no'] = array(
+$messages['nb'] = array(
 	'usermerge' => 'Brukersammenslåing og -sletting',
 	'usermerge-desc' => "Gir muligheten til  å [[Special:UserMerge|slå sammen kontoer]] ved at alle referanser til en bruker byttes ut til en annen bruker i databasen, for så å slette den ene kontoen. Trenger rettigheten ''usermerge''.",
 	'usermerge-badolduser' => 'Gammelt brukernavn ugyldig',
