@@ -1595,6 +1595,7 @@ Kliknij „{{int:usermerge-submit}}”, aby zaakceptować.',
 );
 
 /** Piedmontese (Piemontèis)
+ * @author Borichèt
  * @author Bèrto 'd Sèra
  * @author Dragonòt
  */
@@ -1625,11 +1626,11 @@ Sgnaca "{{int:usermerge-submit}}" për asseté.',
 	'right-usermerge' => "Uniss j'utent",
 	'usermerge-editcount' => 'Gionté un conteur ëd modìfiche?',
 	'usermerge-editcount-success' => 'Gionté un conteur ëd modìfiche ëd ($1 e $2)',
-	'usermerge-autopagedelete' => "Scanselà automaticament an unificand j'utent",
+	'usermerge-autopagedelete' => "Scancelà automaticament an unificand j'utent",
 	'usermerge-page-unmoved' => 'La pàgina $1 a peul pa esse tramudà a $2.',
-	'usermerge-page-moved' => "La pàgina $1 a l'ha fait San Martin a $2.",
+	'usermerge-page-moved' => "La pàgina $1 a l'ha fàit San Martin a $2.",
 	'usermerge-move-log' => 'Pàgina tramudà n\'automàtich damëntrè ch\'as arbatiava "[[User:$1|$1]]" an "[[User:$2|$2]]"',
-	'usermerge-page-deleted' => 'Scancelà pagina $1',
+	'usermerge-page-deleted' => 'Scancelà la pagina $1',
 );
 
 /** Pashto (پښتو)
