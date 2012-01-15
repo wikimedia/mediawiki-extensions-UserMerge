@@ -329,6 +329,7 @@ Klikañ war "{{int:usermerge-submit}}" evit asantiñ.',
 	'usermerge-unmergable' => 'Dibosupl kendeuziñ adal un implijer - un niv. anaout pe un anv bet termenet evel digendeuzadus.',
 	'usermerge-protectedgroup' => 'Dibosupl kendeuziñ an implijer - emañ-eñ en ur strollad gwarezet',
 	'right-usermerge' => 'Kendeuziñ implijerien',
+	'usermerge-page-deleted' => 'Pajenn $1 diverket',
 );
 
 /** Bosnian (Bosanski)
