@@ -1563,6 +1563,7 @@ Clicatz sus « {{int:usermerge-submit}} » per acceptar.",
 );
 
 /** Polish (Polski)
+ * @author BeginaFelicysym
  * @author Derbeth
  * @author Masti
  * @author Sp5uhe
@@ -1593,6 +1594,13 @@ Kliknij „{{int:usermerge-submit}}”, aby zaakceptować.',
 	'usermerge-unmergable' => 'Nie można zintegrować użytkownika – identyfikator lub nazwa zostały zdefiniowane jako nieintegrowalne.',
 	'usermerge-protectedgroup' => 'Nie można zintegrować użytkownika – jest członkiem zabezpieczonej grupy.',
 	'right-usermerge' => 'Łączenie kont użytkowników',
+	'usermerge-editcount' => 'Dodać licznik edycji?',
+	'usermerge-editcount-success' => 'Dodawanie licznika edycji ($1 i $2)',
+	'usermerge-autopagedelete' => 'Automatycznie usuwane podczas scalania użytkowników',
+	'usermerge-page-unmoved' => 'Strona $1 nie mogła zostać przeniesiona pod nazwę $2.',
+	'usermerge-page-moved' => 'Strona $1 została przeniesiona do $2.',
+	'usermerge-move-log' => 'Automatyczne przeniesiono stronę po zmianie nazwy konta z "[[User:$1|$1]]" na "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Usunięto stronę $1',
 );
 
 /** Piedmontese (Piemontèis)
