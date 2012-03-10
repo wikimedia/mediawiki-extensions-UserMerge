@@ -545,6 +545,7 @@ $messages['eo'] = array(
 );
 
 /** Spanish (Español)
+ * @author Armando-Martin
  * @author Crazymadlover
  * @author Imre
  * @author Sanbec
@@ -574,6 +575,13 @@ Haga Click en "{{int:usermerge-submit}}" para aceptar.',
 	'usermerge-unmergable' => 'Incapaz de fusionar de usuario - ID o nombre ha sido definido como no fusionable.',
 	'usermerge-protectedgroup' => 'Incapaz de fusionar de usuario - Usuario está en un grupo protegido.',
 	'right-usermerge' => 'Fusionar usuarios',
+	'usermerge-editcount' => '¿Agregar contador de ediciones?',
+	'usermerge-editcount-success' => 'Agregando el contador de ediciones de ($1 y $2)',
+	'usermerge-autopagedelete' => 'Eliminado automáticamente al fusionar usuarios',
+	'usermerge-page-unmoved' => 'La página  $1  no pudo ser trasladada a  $2 .',
+	'usermerge-page-moved' => 'La página $1 ha sido trasladada a $2.',
+	'usermerge-move-log' => 'La página se trasladó automaticamente cuando se fusionaron los usuarios "[[User:$1|$1]]" y "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'La página $1 fue eliminada',
 );
 
 /** Estonian (Eesti)
