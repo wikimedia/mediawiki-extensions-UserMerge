@@ -1129,6 +1129,7 @@ Fare clic su "{{int:usermerge-submit}}" per accettare.',
  * @author Fievarsty
  * @author Fryed-peach
  * @author Mzm5zbC3
+ * @author Shirayuki
  */
 $messages['ja'] = array(
 	'usermerge' => '利用者の統合と削除',
@@ -1155,6 +1156,8 @@ $messages['ja'] = array(
 	'usermerge-unmergable' => '利用者を統合できません。IDまたは名前が統合不可能となっています。',
 	'usermerge-protectedgroup' => '利用者を統合できません。この利用者は被保護グループに属しています。',
 	'right-usermerge' => '利用者を統合する',
+	'usermerge-page-unmoved' => 'ページ「$1」を「$2」に移動できませんでした。',
+	'usermerge-page-moved' => 'ページ「$1」を「$2」に移動しました。',
 );
 
 /** Javanese (Basa Jawa)
