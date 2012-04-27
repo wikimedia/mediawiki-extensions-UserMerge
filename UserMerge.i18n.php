@@ -1142,7 +1142,7 @@ $messages['ja'] = array(
 	'usermerge-fieldset' => '統合する利用者名',
 	'usermerge-olduser' => '旧利用者 (統合元):',
 	'usermerge-newuser' => '新利用者 (統合先):',
-	'usermerge-deleteolduser' => '旧利用者を削除する',
+	'usermerge-deleteolduser' => '旧利用者を削除',
 	'usermerge-submit' => '利用者の統合',
 	'usermerge-badtoken' => '編集トークンが不正',
 	'usermerge-userdeleted' => '$1 ($2) は削除されました。',
@@ -1156,8 +1156,12 @@ $messages['ja'] = array(
 	'usermerge-unmergable' => '利用者を統合できません。IDまたは名前が統合不可能となっています。',
 	'usermerge-protectedgroup' => '利用者を統合できません。この利用者は被保護グループに属しています。',
 	'right-usermerge' => '利用者を統合する',
+	'usermerge-editcount' => '編集回数を加算しますか？',
+	'usermerge-editcount-success' => '（$1 と $2 の）編集回数を加算しています',
+	'usermerge-autopagedelete' => '利用者の統合と共に自動的に削除しました',
 	'usermerge-page-unmoved' => 'ページ「$1」を「$2」に移動できませんでした。',
 	'usermerge-page-moved' => 'ページ「$1」を「$2」に移動しました。',
+	'usermerge-move-log' => '統合と共に「[[User:$1|$1]]」を「[[User:$2|$2]]」へ自動的に移動しました',
 );
 
 /** Javanese (Basa Jawa)
