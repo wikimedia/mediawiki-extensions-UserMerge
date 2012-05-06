@@ -492,12 +492,16 @@ Klikni na "{{int:usermerge-submit}}", aby akceptěrował.',
  * @author Consta
  * @author Crazymadlover
  * @author Omnipaedista
+ * @author Protnet
  * @author ZaDiak
  */
 $messages['el'] = array(
 	'usermerge' => 'Συγχώνευση και διαγραφή χρηστών',
+	'usermerge-desc' => "[[Special: UserMerge|Συγχωνεύει αναφορές από ένα χρήστη σε έναν άλλο χρήστη]] στη βάση δεδομένων του wiki - θα διαγράψει επίσης τους παλιούς χρήστες μετά από τη συγχώνευση. Απαιτεί δικαιώματα '' usermerge''",
 	'usermerge-badolduser' => 'Μη έγκυρο παλιό όνομα χρήστη',
 	'usermerge-badnewuser' => 'Μη έγκυρο νέο όνομα χρήστη',
+	'usermerge-nonewuser' => 'Το νέο όνομα χρήστη είναι κενό - η συγχώνευση θα γίνει σε " $1 ".<br />
+Κάντε κλικ στο κουμπί "{{int:usermerge-submit}}" για αποδοχή.',
 	'usermerge-noolduser' => 'Άδειασμα παλαιού ονόματος χρήστη',
 	'usermerge-fieldset' => 'Ονόματα χρηστών προς συγχώνευση',
 	'usermerge-olduser' => 'Παλιός χρήστης (συγχώνευση από):',
@@ -508,12 +512,21 @@ $messages['el'] = array(
 	'usermerge-userdeleted' => 'Ο $1 ($2) έχει διαγραφεί.',
 	'usermerge-userdeleted-log' => 'Διεγραμμένος χρήστης: $2 ($3)',
 	'usermerge-updating' => 'Ενημέρωση $1 πίνακα ($2 σε $3)',
-	'usermerge-success' => 'Η συγχώνευση από $1 ($2) σε $3 ($4) είναι πλήρης.',
+	'usermerge-success' => 'Η συγχώνευση από $1 ($2) σε $3 ($4) ολοκληρώθηκε.',
 	'usermerge-success-log' => 'Ο χρήστης $2 ($3) συγχωνεύθηκε σε $4 ($5)',
 	'usermerge-logpage' => 'Αρχείο καταγραφής συγχωνεύσεων χρηστών',
 	'usermerge-logpagetext' => 'Αυτό είναι ένα αρχείο καταγραφής συγχωνεύσεων.',
 	'usermerge-noselfdelete' => 'Δεν μπορείτε να διαγράψετε ή να συγχωνευτείτε από μόνος σας!',
+	'usermerge-unmergable' => 'Δεν είναι δυνατή η συγχώνευση από χρήστη - το αναγνωριστικό χρήστη ή το όνομα έχει οριστεί ως μη συγχωνεύσιμο.',
+	'usermerge-protectedgroup' => 'Δεν είναι δυνατή η συγχώνευση από χρήστη - ο χρήστης είναι μέλος μιας προστατευμένης ομάδας.',
 	'right-usermerge' => 'Συγχώνευση χρηστών',
+	'usermerge-editcount' => 'Προσθήκη αρίθμησης επεξεργασίας;',
+	'usermerge-editcount-success' => 'Γίνεται προσθήκη αρίθμησης επεξεργασίας των ($1 και $2)',
+	'usermerge-autopagedelete' => 'Διαγράφεται αυτόματα κατά τη συγχώνευση χρηστών',
+	'usermerge-page-unmoved' => 'Η σελίδα $1 δεν μπόρεσε να μετακινηθεί στο $2.',
+	'usermerge-page-moved' => 'Η σελίδα $1 έχει μετακινηθεί στο $2.',
+	'usermerge-move-log' => 'Αυτόματα μετακινημένη σελίδα κατά τη συγχώνευση του χρήστη "[[User:$1|$1]]" σε "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Διαγεγραμμένη σελίδα $1',
 );
 
 /** Esperanto (Esperanto)
