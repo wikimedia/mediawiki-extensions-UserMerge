@@ -1533,6 +1533,7 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
  * @author Frokor
  * @author Gunnernett
  * @author Harald Khan
+ * @author Njardarlogar
  */
 $messages['nn'] = array(
 	'usermerge' => 'Slå saman og slett brukarar',
@@ -2128,7 +2129,7 @@ $messages['tg-cyrl'] = array(
 	'usermerge-logpagetext' => 'Ин гузориши амалҳои идғоми корбар аст.',
 );
 
-/** Tajik (Latin script) (tojikī)
+/** Tajik (Latin script) (Tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -2241,7 +2242,7 @@ $messages['uk'] = array(
 	'right-usermerge' => "об'єднання користувачів",
 );
 
-/** Veps (Vepsan kel')
+/** Veps (Vepsän kel’)
  * @author Игорь Бродский
  */
 $messages['vep'] = array(
