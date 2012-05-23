@@ -28,6 +28,11 @@ $specialPageAliases['as'] = array(
 	'UserMerge' => array( 'সদস্য_চামিল_কৰক' ),
 );
 
+/** Banjar (Bahasa Banjar) */
+$specialPageAliases['bjn'] = array(
+	'UserMerge' => array( 'Panggabungan_pamakai' ),
+);
+
 /** Breton (Brezhoneg) */
 $specialPageAliases['br'] = array(
 	'UserMerge' => array( 'KendeuziñImplijer' ),
@@ -75,7 +80,7 @@ $specialPageAliases['frp'] = array(
 
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
-	'UserMerge' => array( 'Benutzerchonte zämmefiere' ),
+	'UserMerge' => array( 'Benutzer_zämmefiere' ),
 );
 
 /** Hebrew (עברית) */
@@ -206,4 +211,9 @@ $specialPageAliases['tr'] = array(
 /** Yiddish (ייִדיש) */
 $specialPageAliases['yi'] = array(
 	'UserMerge' => array( 'צונויפגיסן_באניצער' ),
+);
+
+/** Simplified Chinese (‪中文(简体)‬) */
+$specialPageAliases['zh-hans'] = array(
+	'UserMerge' => array( '合并用户' ),
 );
