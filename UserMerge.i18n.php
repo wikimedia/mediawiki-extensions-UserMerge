@@ -2110,6 +2110,7 @@ $messages['te'] = array(
 	'usermerge-logpagetext' => 'ఇది వాడుకరి విలీనాల చిట్టా.',
 	'usermerge-noselfdelete' => 'మిమ్మల్ని మీరే తొలగించుకోలేరు లేదా మీలో విలీనం కాలేరు!',
 	'right-usermerge' => 'వాడుకరులను విలీనం చేయగలగడం',
+	'usermerge-move-log' => '"[[User:$1|$1]]" పేరును "[[User:$2|$2]]"కు మార్చేప్పుడు పేజీని ఆటోమాటిగ్గా తరలించాం',
 );
 
 /** Tajik (Cyrillic script) (Тоҷикӣ)
