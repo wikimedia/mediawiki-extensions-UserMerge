@@ -458,6 +458,13 @@ Zum Ausführen auf „{{int:usermerge-submit}}“ klicken.',
 	'usermerge-page-deleted' => 'Seite „$1“ gelöscht',
 );
 
+/** Zazaki (Zazaki)
+ * @author Erdemaslancan
+ */
+$messages['diq'] = array(
+	'usermerge-updating' => "Tabloy $1'i oyo ($2 ra hetê $3 ya) neweyêno",
+);
+
 /** Lower Sorbian (Dolnoserbski)
  * @author Michawiki
  */
