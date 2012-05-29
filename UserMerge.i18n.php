@@ -1242,15 +1242,40 @@ $messages['km'] = array(
 
 /** Korean (한국어)
  * @author Kwj2772
+ * @author 아라
  */
 $messages['ko'] = array(
-	'usermerge' => '사용자 계정 병합 및 삭제',
-	'usermerge-olduser' => '이전 사용자',
+	'usermerge' => '사용자 계정 합치기 및 삭제',
+	'usermerge-desc' => "위키 데이터베이스에서 [[Special:UserMerge|참고한 한 사용자에서 다른 사용자로 합칩니다]] - 합치고 나서 이에 따라 이전 사용자는 삭제됩니다. ''usermerge'' 권한 필요",
+	'usermerge-badolduser' => '잘못된 이전 사용자 이름',
+	'usermerge-badnewuser' => '잘못된 새 사용자 이름',
+	'usermerge-nonewuser' => '빈 새 사용자 이름 - "$1" 사용자로 가정하여 합칩니다.<br />
+동의하면 "{{int:usermerge-submit}}"을 클릭하세요.',
+	'usermerge-noolduser' => '이전 사용자 이름이 비어 있음',
+	'usermerge-fieldset' => '사용자 이름 합치기',
+	'usermerge-olduser' => '(합쳐질) 이전 사용자:',
+	'usermerge-newuser' => '(합칠) 새 사용자:',
 	'usermerge-deleteolduser' => '이전 계정을 삭제하기',
 	'usermerge-submit' => '계정 합치기',
+	'usermerge-badtoken' => '잘못된 편집 토큰',
+	'usermerge-userdeleted' => '$1 ($2) 사용자가 삭제되었습니다.',
 	'usermerge-userdeleted-log' => '$2 ($3) 사용자를 삭제함',
-	'usermerge-success-log' => '$2 ($3) 사용자를 $4 ($5) 로 병합함',
+	'usermerge-updating' => '$1 테이블을 업데이트함 ($2부터 $3까지)',
+	'usermerge-success' => '$1 ($2) 사용자를 $3 ($4) 사용자에 합치는 것을 완료했습니다.',
+	'usermerge-success-log' => '$2 ($3) 사용자를 $4 ($5) 로 합침',
 	'usermerge-logpage' => '사용자 병합 기록',
+	'usermerge-logpagetext' => '사용자 병합 행위 기록입니다.',
+	'usermerge-noselfdelete' => '자신으로부터 삭제나 합치기를 할 수 없습니다!',
+	'usermerge-unmergable' => '사용자로부터 합칠 수 없습니다 - ID나 이름이 합칠 수 없도록 지정되어 있습니다.',
+	'usermerge-protectedgroup' => '사용자로부터 합칠 수 없습니다 - 사용자는 보호된 그룹에 있습니다.',
+	'right-usermerge' => '계정 합치기',
+	'usermerge-editcount' => '편집 횟수를 더할까요?',
+	'usermerge-editcount-success' => '($1 그리고 $2)의 편집 횟수 더함',
+	'usermerge-autopagedelete' => '계정을 합칠 때 자동으로 삭제됩니다',
+	'usermerge-page-unmoved' => '$1 문서를 $2 문서로 이동하지 못했습니다.',
+	'usermerge-page-moved' => '$1 문서를 $2 문서로 이동했습니다.',
+	'usermerge-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|$2]]" 사용자로 합치면서 자동으로 문서를 이동함',
+	'usermerge-page-deleted' => '$1 문서가 삭제됨',
 );
 
 /** Colognian (Ripoarisch)
