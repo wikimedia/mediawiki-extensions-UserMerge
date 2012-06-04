@@ -1308,6 +1308,13 @@ Kleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.',
 	'right-usermerge' => 'Metmaacher zosammelääje',
 );
 
+/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+ * @author Gomada
+ */
+$messages['ku-latn'] = array(
+	'usermerge-page-deleted' => 'Rûpela $1 jê bir',
+);
+
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
