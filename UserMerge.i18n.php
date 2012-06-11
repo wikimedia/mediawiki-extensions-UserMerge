@@ -1113,7 +1113,8 @@ Clacca "{{int:usermerge-submit}}" por acceptar.',
 	'usermerge-protectedgroup' => 'Ne posse fuser de ti usator - usator es in un gruppe protectet.',
 );
 
-/** Italian (Italiano)
+/** Italian (italiano)
+ * @author Beta16
  * @author Darth Kule
  * @author Pietrodn
  */
@@ -1142,6 +1143,13 @@ Fare clic su "{{int:usermerge-submit}}" per accettare.',
 	'usermerge-unmergable' => "Impossibile unire da questo utente - l'ID o il nome è stato definito non unibile.",
 	'usermerge-protectedgroup' => "Impossibile unire da questo utente - l'utente fa parte di un gruppo protetto.",
 	'right-usermerge' => 'Unisce utenti',
+	'usermerge-editcount' => 'Aggiungi conteggio contributi?',
+	'usermerge-editcount-success' => 'Aggiunto conteggio contributi di ($1 e $2)',
+	'usermerge-autopagedelete' => 'Cancellata automaticamente quando si uniscono gli utenti',
+	'usermerge-page-unmoved' => 'La pagina $1 non può essere spostata a $2.',
+	'usermerge-page-moved' => 'La pagina $1 è stata spostata a $2.',
+	'usermerge-move-log' => 'Pagina spostata automaticamente durante l\'unione dell\'utente "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Pagina cancellata $1',
 );
 
 /** Japanese (日本語)
