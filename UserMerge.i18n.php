@@ -245,7 +245,7 @@ $messages['be-tarask'] = array(
 	'usermerge-page-deleted' => 'Выдаленая старонка $1',
 );
 
-/** Bulgarian (Български)
+/** Bulgarian (български)
  * @author DCLXVI
  */
 $messages['bg'] = array(
@@ -301,7 +301,7 @@ $messages['bn'] = array(
 	'right-usermerge' => 'ব্যবহারকারী একত্রিত করা হোক',
 );
 
-/** Breton (Brezhoneg)
+/** Breton (brezhoneg)
  * @author Fulup
  */
 $messages['br'] = array(
@@ -332,7 +332,7 @@ Klikañ war "{{int:usermerge-submit}}" evit asantiñ.',
 	'usermerge-page-deleted' => 'Pajenn $1 diverket',
 );
 
-/** Bosnian (Bosanski)
+/** Bosnian (bosanski)
  * @author CERminator
  */
 $messages['bs'] = array(
@@ -362,7 +362,7 @@ Kliknite na "{{int:usermerge-submit}}" za prihvatanje.',
 	'right-usermerge' => 'Spajanje korisnika',
 );
 
-/** Catalan (Català)
+/** Catalan (català)
  * @author Paucabot
  * @author SMP
  * @author Solde
@@ -380,14 +380,14 @@ $messages['ca'] = array(
 	'right-usermerge' => 'Fusionar usuaris',
 );
 
-/** Sorani (کوردی)
+/** Sorani Kurdish (کوردی)
  * @author Marmzok
  */
 $messages['ckb'] = array(
 	'usermerge-deleteolduser' => 'سڕینەوەی بەکارهێنەری کۆن',
 );
 
-/** Czech (Česky)
+/** Czech (česky)
  * @author Matěj Grabovský
  * @author Mormegil
  */
@@ -564,7 +564,7 @@ $messages['eo'] = array(
 	'right-usermerge' => 'Kunfandi uzantojn',
 );
 
-/** Spanish (Español)
+/** Spanish (español)
  * @author Armando-Martin
  * @author Crazymadlover
  * @author Imre
@@ -604,7 +604,7 @@ Haga Click en "{{int:usermerge-submit}}" para aceptar.',
 	'usermerge-page-deleted' => 'La página $1 fue eliminada',
 );
 
-/** Estonian (Eesti)
+/** Estonian (eesti)
  * @author Pikne
  */
 $messages['et'] = array(
@@ -615,7 +615,7 @@ $messages['et'] = array(
 	'usermerge-logpagetext' => 'See on kasutajaühendamistoimingute logi.',
 );
 
-/** Basque (Euskara)
+/** Basque (euskara)
  * @author An13sa
  * @author Theklan
  */
@@ -659,7 +659,7 @@ $messages['fa'] = array(
 	'right-usermerge' => 'ادغام حساب‌های کاربری',
 );
 
-/** Finnish (Suomi)
+/** Finnish (suomi)
  * @author Cimon Avaro
  * @author Crt
  * @author Nike
@@ -692,7 +692,7 @@ Napsauta "{{int:usermerge-submit}}" hyväksyäksesi.',
 	'right-usermerge' => 'Yhdistää käyttäjiä',
 );
 
-/** French (Français)
+/** French (français)
  * @author Crochet.david
  * @author Grondin
  * @author Guillom
@@ -737,7 +737,7 @@ Cliquez sur « {{int:usermerge-submit}} » pour accepter.',
 	'usermerge-page-deleted' => 'Page $1 effacée',
 );
 
-/** Franco-Provençal (Arpetan)
+/** Franco-Provençal (arpetan)
  * @author ChrisPtDe
  */
 $messages['frp'] = array(
@@ -986,7 +986,7 @@ Klike "{{int:usermerge-submit}}" pou aksepte operasyon an.',
 	'usermerge-protectedgroup' => 'Nou pa kapab mèt ansanm kont itilizatè yo - itilizatè sa a nan yon gwoup ki pwoteje.',
 );
 
-/** Hungarian (Magyar)
+/** Hungarian (magyar)
  * @author Dani
  * @author Glanthor Reviol
  */
@@ -1017,7 +1017,7 @@ Kattints a „{{int:usermerge-submit}}”-ra az elfogadáshoz.',
 	'right-usermerge' => 'szerkesztők egyesítése',
 );
 
-/** Interlingua (Interlingua)
+/** Interlingua (interlingua)
  * @author McDutchie
  */
 $messages['ia'] = array(
@@ -1368,7 +1368,7 @@ $messages['mg'] = array(
 	'right-usermerge' => 'Manempo ny kaontim-pikambana',
 );
 
-/** Macedonian (Македонски)
+/** Macedonian (македонски)
  * @author Bjankuloski06
  * @author Brest
  */
@@ -1576,7 +1576,7 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 	'usermerge-page-deleted' => 'Verwijderde pagina $1',
 );
 
-/** Norwegian Nynorsk (‪Norsk (nynorsk)‬)
+/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
  * @author Frokor
  * @author Gunnernett
  * @author Harald Khan
@@ -1608,7 +1608,7 @@ $messages['nn'] = array(
 	'right-usermerge' => 'Slå saman kontoar',
 );
 
-/** Occitan (Occitan)
+/** Occitan (occitan)
  * @author Cedric31
  */
 $messages['oc'] = array(
@@ -1638,7 +1638,7 @@ Clicatz sus « {{int:usermerge-submit}} » per acceptar.",
 	'right-usermerge' => "Fusionar d'utilizaires",
 );
 
-/** Polish (Polski)
+/** Polish (polski)
  * @author BeginaFelicysym
  * @author Derbeth
  * @author Masti
@@ -1726,7 +1726,7 @@ $messages['ps'] = array(
 	'usermerge-deleteolduser' => 'زوړ کارن ړنګول',
 );
 
-/** Portuguese (Português)
+/** Portuguese (português)
  * @author Crazymadlover
  * @author Hamilton Abreu
  * @author Jorge Morais
@@ -1769,7 +1769,7 @@ Clique "{{int:usermerge-submit}}" para aceitar.',
 	'usermerge-page-deleted' => 'A página $1 foi eliminada',
 );
 
-/** Brazilian Portuguese (Português do Brasil)
+/** Brazilian Portuguese (português do Brasil)
  * @author Crazymadlover
  * @author Eduardo.mps
  * @author Jorge Morais
@@ -1801,7 +1801,7 @@ Clique "{{int:usermerge-submit}}" para aceitar.',
 	'right-usermerge' => 'Fundir utilizadores',
 );
 
-/** Romanian (Română)
+/** Romanian (română)
  * @author KlaudiuMihaila
  * @author Mihai
  */
@@ -1832,7 +1832,7 @@ Apasă "{{int:usermerge-submit}}" pentru a accepta.',
 	'right-usermerge' => 'Contopire conturi de utilizator',
 );
 
-/** Tarandíne (Tarandíne)
+/** tarandíne (tarandíne)
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
@@ -1840,7 +1840,7 @@ $messages['roa-tara'] = array(
 	'usermerge-badnewuser' => 'Nome utende nuève invalide',
 );
 
-/** Russian (Русский)
+/** Russian (русский)
  * @author Askarmuk
  * @author Ferrer
  * @author Illusion
@@ -1920,7 +1920,7 @@ $messages['si'] = array(
 	'right-usermerge' => 'පරිශීලකයින් මුසු කිරීම',
 );
 
-/** Slovak (Slovenčina)
+/** Slovak (slovenčina)
  * @author Helix84
  */
 $messages['sk'] = array(
@@ -1950,7 +1950,7 @@ Kliknutím na „{{int:usermerge-submit}}“ prijmete.',
 	'right-usermerge' => 'Zlučovať používateľov',
 );
 
-/** Slovenian (Slovenščina)
+/** Slovenian (slovenščina)
  * @author Dbc334
  */
 $messages['sl'] = array(
@@ -1987,7 +1987,7 @@ Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 	'usermerge-page-deleted' => 'Izbrisana stran $1',
 );
 
-/** Serbian (Cyrillic script) (‪Српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
  * @author Rancher
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
@@ -2014,7 +2014,7 @@ $messages['sr-ec'] = array(
 	'right-usermerge' => 'спајање корисника',
 );
 
-/** Serbian (Latin script) (‪Srpski (latinica)‬)
+/** Serbian (Latin script) (‪srpski (latinica)‬)
  * @author Michaello
  * @author Rancher
  */
@@ -2076,7 +2076,7 @@ $messages['su'] = array(
 	'usermerge-desc' => "Ngagabungkeun Préférénsi ti hiji pamaké ka pamaké séjén dina pangkalan data wiki - ogé baris ngahapus pamaké lila sadeui Ngagabungkeun. diperlukeun hak aksés ''usermerge''",
 );
 
-/** Swedish (Svenska)
+/** Swedish (svenska)
  * @author Lejonel
  * @author Micke
  * @author Sannab
@@ -2160,7 +2160,7 @@ $messages['te'] = array(
 	'usermerge-move-log' => '"[[User:$1|$1]]" పేరును "[[User:$2|$2]]"కు మార్చేప్పుడు పేజీని ఆటోమాటిగ్గా తరలించాం',
 );
 
-/** Tajik (Cyrillic script) (Тоҷикӣ)
+/** Tajik (Cyrillic script) (тоҷикӣ)
  * @author Ibrahim
  */
 $messages['tg-cyrl'] = array(
@@ -2177,7 +2177,7 @@ $messages['tg-cyrl'] = array(
 	'usermerge-logpagetext' => 'Ин гузориши амалҳои идғоми корбар аст.',
 );
 
-/** Tajik (Latin script) (Tojikī)
+/** Tajik (Latin script) (tojikī)
  * @author Liangent
  */
 $messages['tg-latn'] = array(
@@ -2260,7 +2260,7 @@ Kabul etmek için "{{int:usermerge-submit}}"e tıklayın.',
 	'right-usermerge' => 'Kullanıcıları birleştir',
 );
 
-/** Ukrainian (Українська)
+/** Ukrainian (українська)
  * @author Ahonc
  */
 $messages['uk'] = array(
@@ -2360,7 +2360,7 @@ $messages['yue'] = array(
 	'usermerge-success' => '由 $1($2) 到 $3($4) 嘅合併已經完成。',
 );
 
-/** Simplified Chinese (‪中文(简体)‬)
+/** Simplified Chinese (‪中文（简体）‬)
  * @author Gaoxuewei
  * @author Gzdavidwong
  * @author Liangent
@@ -2390,7 +2390,7 @@ $messages['zh-hans'] = array(
 	'right-usermerge' => '合并用户',
 );
 
-/** Traditional Chinese (‪中文(繁體)‬)
+/** Traditional Chinese (‪中文（繁體）‬)
  * @author Liangent
  * @author Mark85296341
  * @author Wrightbus
