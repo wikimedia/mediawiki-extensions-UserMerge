@@ -262,7 +262,7 @@ class UserMerge extends SpecialPage {
 
 		return true;
 	}
-	
+
 
 	/**
 	 * Function to add edit count
@@ -280,7 +280,7 @@ class UserMerge extends SpecialPage {
 		global $wgOut;
 
 		$dbw = wfGetDB( DB_MASTER );
-		
+
 		# old user edit count
 		$result = $dbw->selectField( 'user',
 				'user_editcount',
@@ -288,9 +288,9 @@ class UserMerge extends SpecialPage {
 				__METHOD__
 			  );
 		$row = $dbw->fetchRow($result);
-		
+
 		$oldEdits = $row[0];
-		
+
 		# new user edit count
 		$result = $dbw->selectField( 'user',
 				'user_editcount',
@@ -299,10 +299,10 @@ class UserMerge extends SpecialPage {
 			  );
 		$row = $dbw->fetchRow($result);
 		$newEdits = $row[0];
-		
+
 		# add edits
 		$totalEdits = $oldEdits + $newEdits;
-		
+
 		# don't run querys if neither user has any edits
 		if( $totalEdits > 0 ) {
 			# update new user with total edits
@@ -311,7 +311,7 @@ class UserMerge extends SpecialPage {
 				array( 'user_id' => $newuserID ),
 				__METHOD__
 			);
-			
+
 			#clear old users edits
 			$dbw->update( 'user',
 				array( 'user_editcount' => 0 ),
@@ -319,12 +319,12 @@ class UserMerge extends SpecialPage {
 				__METHOD__
 			);
 		}
-		
+
 		$wgOut->addHTML( wfMsgForContent( 'usermerge-editcount-success', $olduserID, $newuserID ) . "<br />\n" );
 
 		return true;
 	}
-	
+
 
 	/**
 	 * Function to merge user pages
@@ -343,11 +343,11 @@ class UserMerge extends SpecialPage {
 	 */
 	private function movePages( $newuser_text, $olduser_text ) {
 		global $wgOut, $wgContLang, $wgUser;
-		
+
 		$oldusername = trim( str_replace( '_', ' ', $olduser_text ) );
 		$oldusername = Title::makeTitle( NS_USER, $oldusername );
 		$newusername = Title::makeTitleSafe( NS_USER, $wgContLang->ucfirst( $newuser_text ) );
-		
+
 		# select all user pages and sub-pages
 		$dbr = wfGetDB( DB_SLAVE );
 		$oldkey = $oldusername->getDBkey();
@@ -360,58 +360,57 @@ class UserMerge extends SpecialPage {
 			 );
 
 		$output = '';
-		$skin = $wgUser->getSkin();
 
 		foreach ( $pages as $row ) {
 			$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
-			$newPage = Title::makeTitleSafe( $row->page_namespace, 
+			$newPage = Title::makeTitleSafe( $row->page_namespace,
 				preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
 
-			
+
 			if( $newuser_text === "Anonymous" ) { # delete ALL old pages
-				
+
 				if( $oldPage->exists() ) {
 					$oldPageArticle = new Article( $oldPage, 0 );
 					$oldPageArticle->doDeleteArticle( wfMsgHtml( 'usermerge-autopagedelete' ) );
-					
-					$oldLink = $skin->linkKnown( $oldPage );
+
+					$oldLink = Linker::linkKnown( $oldPage );
 					$output .= '<li class="mw-renameuser-pe">' . wfMsgHtml( 'usermerge-page-deleted', $oldLink ) . '</li>';
 				}
-				
+
 			} elseif( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) && $newPage->getLength() > 0) { # delete old pages that can't be moved
-				
+
 				$oldPageArticle = new Article( $oldPage, 0 );
 				$oldPageArticle->doDeleteArticle( wfMsgHtml( 'usermerge-autopagedelete' ) );
-				
-				$link = $skin->linkKnown( $oldPage );
+
+				$link = Linker::linkKnown( $oldPage );
 				$output .= '<li class="mw-renameuser-pe">' . wfMsgHtml( 'usermerge-page-deleted', $link ) . '</li>';
-				
+
 			} else { # move content to new page
-				
+
 				# delete target page if it exists and is blank
 				if( $newPage->exists() ) {
 					$newPageArticle = new Article( $newPage, 0 );
 					$newPageArticle->doDeleteArticle( 'usermerge-autopagedelete' );
 				}
-				
+
 				# move to target location
-				$success = $oldPage->moveTo( $newPage, false, wfMsgForContent( 'usermerge-move-log', 
+				$success = $oldPage->moveTo( $newPage, false, wfMsgForContent( 'usermerge-move-log',
 					$oldusername->getText(), $newusername->getText() ) );
 				if( $success === true ) {
-					$oldLink = $skin->linkKnown(
+					$oldLink = Linker::linkKnown(
 							$oldPage,
 							null,
 							array(),
 							array( 'redirect' => 'no' )
 					);
-					$newLink = $skin->linkKnown( $newPage );
+					$newLink = Linker::linkKnown( $newPage );
 					$output .= '<li class="mw-renameuser-pm">' . wfMsgHtml( 'usermerge-page-moved', $oldLink, $newLink ) . '</li>';
 				} else {
-					$oldLink = $skin->linkKnown( $oldPage );
-					$newLink = $skin->linkKnown( $newPage );
+					$oldLink = Linker::linkKnown( $oldPage );
+					$newLink = Linker::linkKnown( $newPage );
 					$output .= '<li class="mw-renameuser-pu">' . wfMsgHtml( 'usermerge-page-unmoved', $oldLink, $newLink ) . '</li>';
 				}
-				
+
 				# check if any pages link here
 				$res = $dbr->selectField( 'pagelinks',
 						'pl_title',
@@ -426,11 +425,11 @@ class UserMerge extends SpecialPage {
 
 			}
 		}
-		
+
 		if ( $output ) {
 			$wgOut->addHTML( '<ul>' . $output . '</ul>' );
 		}
-		
+
 		return true;
 	}
 }
