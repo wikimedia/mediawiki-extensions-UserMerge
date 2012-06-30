@@ -25,7 +25,7 @@ $specialPageAliases['arz'] = array(
 
 /** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
-	'UserMerge' => array( 'সদস্য_চামিল_কৰক' ),
+	'UserMerge' => array( 'সদস্য_একত্ৰীকৰণ_কৰক' ),
 );
 
 /** Banjar (Bahasa Banjar) */
@@ -53,7 +53,7 @@ $specialPageAliases['diq'] = array(
 	'UserMerge' => array( 'KarberaPêtewrke' ),
 );
 
-/** Lower Sorbian (Dolnoserbski) */
+/** Lower Sorbian (dolnoserbski) */
 $specialPageAliases['dsb'] = array(
 	'UserMerge' => array( 'Wužywarjow zjadnośiś' ),
 );
@@ -93,7 +93,7 @@ $specialPageAliases['he'] = array(
 	'UserMerge' => array( 'מיזוג_משתמשים' ),
 );
 
-/** Upper Sorbian (Hornjoserbsce) */
+/** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
 	'UserMerge' => array( 'Wužiwarjow zjednoćić' ),
 );
