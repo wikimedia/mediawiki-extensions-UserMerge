@@ -183,6 +183,11 @@ $specialPageAliases['pt'] = array(
 	'UserMerge' => array( 'Fundir_utilizadores' ),
 );
 
+/** Brazilian Portuguese (português do Brasil) */
+$specialPageAliases['pt-br'] = array(
+	'UserMerge' => array( 'Fundir_contas' ),
+);
+
 /** Sanskrit (संस्कृतम्) */
 $specialPageAliases['sa'] = array(
 	'UserMerge' => array( 'सदस्यसंयोग' ),

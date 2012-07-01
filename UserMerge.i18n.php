@@ -205,7 +205,7 @@ $messages['arz'] = array(
 	'right-usermerge' => 'دمج اليوزرز',
 );
 
-/** Belarusian (Taraškievica orthography) (‪Беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -465,7 +465,7 @@ $messages['diq'] = array(
 	'usermerge-updating' => "Tabloy $1'i oyo ($2 ra hetê $3 ya) neweyêno",
 );
 
-/** Lower Sorbian (Dolnoserbski)
+/** Lower Sorbian (dolnoserbski)
  * @author Michawiki
  */
 $messages['dsb'] = array(
@@ -778,7 +778,7 @@ $messages['ga'] = array(
 	'usermerge-userdeleted-log' => 'Úsáideoir scriosta: $2 ($3)',
 );
 
-/** Galician (Galego)
+/** Galician (galego)
  * @author Alma
  * @author Toliño
  */
@@ -920,7 +920,7 @@ $messages['hi'] = array(
 	'usermerge-badtoken' => 'गलत एडिट टोकन',
 );
 
-/** Upper Sorbian (Hornjoserbsce)
+/** Upper Sorbian (hornjoserbsce)
  * @author Michawiki
  */
 $messages['hsb'] = array(
@@ -1879,7 +1879,7 @@ $messages['ru'] = array(
 	'usermerge-page-deleted' => 'Удалить страницу $1',
 );
 
-/** Rusyn (Русиньскый)
+/** Rusyn (русиньскый)
  * @author Gazeb
  */
 $messages['rue'] = array(
@@ -2107,7 +2107,7 @@ $messages['sv'] = array(
 	'right-usermerge' => 'Slå ihop användarkonton',
 );
 
-/** Silesian (Ślůnski)
+/** Silesian (ślůnski)
  * @author Lajsikonik
  */
 $messages['szl'] = array(
