@@ -1314,6 +1314,13 @@ Kleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.',
 	'usermerge-unmergable' => 'Schadt. Die esu zosamme ze Lääje es nit müjjelech. Dat dä Metmaacher nit zosamme jelaat wääde kann, es övver singe Name odder per sing Nommer esu faßjelaat woode.',
 	'usermerge-protectedgroup' => 'Schadt. Die esu zosamme ze Lääje es nit müjjelech. Dä Metmaacher es en en Jropp, die et Zosammelääje verbeede deiht.',
 	'right-usermerge' => 'Metmaacher zosammelääje',
+	'usermerge-editcount' => 'De Aanzahl Änderonge zusamme träcke?',
+	'usermerge-editcount-success' => 'Mer sin de Aanzahl Änderonge {{GENDER:$1|vum Metmaacher|vun dä Metmaacherėn|vum däm Metmaacher|vun dä Metmaacherėn|vum Metmaacher}} [[User:$1|$1]] un {{GENDER:$2|däm Metmaacher|dä Metmaacherėn|däm Metmaacher|dä Metmaacherėn|däm Metmaacher}} „[[User:$2|$2]]“ aam zesamme träcke.',
+	'usermerge-autopagedelete' => 'Automattesch fottjeschmeße beim Metmaacher Zusammelääje',
+	'usermerge-page-unmoved' => 'Mer kůnnte di Sigg „$1“ nit op „$2“ ömnänne.',
+	'usermerge-page-moved' => 'De Sigg „$1“ wood wood op „$2“ ömjenannt.',
+	'usermerge-move-log' => 'Di Sigg weet automatesch ömjenannt weil mer {{GENDER:$1|dä Metmaacher|de Metmaacherėn|dä Metmaacher|de Metmaacherėn|dä Metmaacher}} „[[User:$1|$1]]“ met {{GENDER:$2|däm Metmaacher|dä Metmaacherėn|däm Metmaacher|dä Metmaacherėn|däm Metmaacher}} „[[User:$2|$2]]“ aam zesamme lääje sin.',
+	'usermerge-page-deleted' => 'De Sigg „$1“ es fottjeschmeße.',
 );
 
 /** Kurdish (Latin script) (‪Kurdî (latînî)‬)
@@ -2226,6 +2233,13 @@ Pindutin ang "{{int:usermerge-submit}}" upang tanggapin.',
 	'usermerge-unmergable' => 'Hindi naisanib mula sa tagagamit - nilarawan ang ID o pangalan bilang hindi mapagsasanib.',
 	'usermerge-protectedgroup' => 'Hindi naisanib mula sa tagagamit - nasa loob ng isang nakasanggalang na pangkat ang tagagamit.',
 	'right-usermerge' => 'Pagsanibin ang mga tagagamit',
+	'usermerge-editcount' => 'Idagdag ang bilang ng pagpatnugot?',
+	'usermerge-editcount-success' => 'Idinaragdag ang bilang ng pagpatnugot ng ($1 at $2)',
+	'usermerge-autopagedelete' => 'Kusang nabubura kapag pinagsasanib ang mga tagagamit',
+	'usermerge-page-unmoved' => 'Hindi mailipat ang pahinang $1 papunta sa $2.',
+	'usermerge-page-moved' => 'Ang pahinang $1 ay nailipat papunta sa $2.',
+	'usermerge-move-log' => 'Kusang inilipat ang pahina habang pinagsasanib ang tagagamit na si "[[User:$1|$1]]" papunta sa "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Binura ang pahinang $1',
 );
 
 /** Turkish (Türkçe)
