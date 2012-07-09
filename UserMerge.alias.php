@@ -210,7 +210,7 @@ $specialPageAliases['th'] = array(
 
 /** Tagalog (Tagalog) */
 $specialPageAliases['tl'] = array(
-	'UserMerge' => array( 'Pagsasanib ng tagagamit' ),
+	'UserMerge' => array( 'Pagsasanib_ng_tagagamit' ),
 );
 
 /** Turkish (Türkçe) */
