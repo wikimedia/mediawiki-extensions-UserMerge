@@ -1519,7 +1519,7 @@ Klikk «{{int:usermerge-submit}}» for å godta.',
  */
 $messages['nds-nl'] = array(
 	'usermerge' => 'Gebrukers samenvoegen en vortdoon',
-	'usermerge-desc' => "Zet n [[Special:UserMerge|spesiale pagina]] derbie um gebrukers samen te voegen en de ouwe gebruker(s) vort te doon (hierveur is t recht ''usermerge'' neudig)",
+	'usermerge-desc' => "Zet n [[Special:UserMerge|spesiale zied]] derbie um gebrukers samen te voegen en de ouwe gebruker(s) vort te doon (hierveur is t recht ''usermerge'' neudig)",
 	'usermerge-badolduser' => 'Ongeldige ouwe gebrukersnaam',
 	'usermerge-badnewuser' => 'Ongeldige nieje gebrukersnaam',
 	'usermerge-nonewuser' => 'De nieje gebrukersnaam is niet op-egeven - der wörden vanuut egaon dat der samengevoeg mut wörden naor $1.<br />
