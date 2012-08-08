@@ -46,6 +46,7 @@ Click "{{int:usermerge-submit}}" to accept.',
  * @author Fryed-peach
  * @author Jon Harald Søby
  * @author Meno25
+ * @author Nemo bis
  * @author Purodha
  * @author Siebrand
  * @author Umherirrender
@@ -69,6 +70,7 @@ $messages['qqq'] = array(
 * $3 is a user ID of the source user
 * $4 is a user name (not linked) that the other user is merged into
 * $5 is a user ID of the target user',
+	'usermerge-logpage' => '{{doc-logpage}}',
 	'right-usermerge' => '{{doc-right|usermerge}}',
 );
 
@@ -1116,6 +1118,7 @@ Clacca "{{int:usermerge-submit}}" por acceptar.',
 /** Italian (italiano)
  * @author Beta16
  * @author Darth Kule
+ * @author Nemo bis
  * @author Pietrodn
  */
 $messages['it'] = array(
@@ -1137,7 +1140,7 @@ Fare clic su "{{int:usermerge-submit}}" per accettare.',
 	'usermerge-updating' => 'Aggiornamento tabella $1 ($2 a $3)',
 	'usermerge-success' => "L'unione di $1 ($2) a $3 ($4) è completa.",
 	'usermerge-success-log' => 'Utente $2 ($3) unito a $4 ($5)',
-	'usermerge-logpage' => 'Log unione utente',
+	'usermerge-logpage' => 'Unioni delle utenze',
 	'usermerge-logpagetext' => 'Di seguito sono elencate le azioni di unione di utenti.',
 	'usermerge-noselfdelete' => 'Non puoi cancellare o unire il tuo account!',
 	'usermerge-unmergable' => "Impossibile unire da questo utente - l'ID o il nome è stato definito non unibile.",
