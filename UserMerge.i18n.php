@@ -1469,6 +1469,13 @@ $messages['ms'] = array(
 	'right-usermerge' => 'Menggabungkan pengguna',
 );
 
+/** Maltese (Malti)
+ * @author Chrisportelli
+ */
+$messages['mt'] = array(
+	'right-usermerge' => 'Iwaħħad utenti',
+);
+
 /** Nahuatl (Nāhuatl)
  * @author Fluence
  */
