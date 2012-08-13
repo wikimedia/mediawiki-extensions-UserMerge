@@ -1225,6 +1225,25 @@ Klik "{{int:usermerge-submit}}" kanggo nerusaké.',
 	'right-usermerge' => 'Gabung panganggo',
 );
 
+/** Georgian (ქართული)
+ * @author David1010
+ */
+$messages['ka'] = array(
+	'usermerge-badolduser' => 'არასწორი ძველი მომხმარებლის სახელი',
+	'usermerge-badnewuser' => 'არასწორი ახალი მომხმარებლის სახელი',
+	'usermerge-noolduser' => 'ცარიელი ძველი მომხმარებლის სახელი',
+	'usermerge-fieldset' => 'მომხმარებლის სახელები გასაერთიანებლად',
+	'usermerge-olduser' => 'ძველი მომხმარებელი (გაერთიანება):',
+	'usermerge-newuser' => 'ახალი მომხმარებელი (გაერთიანება):',
+	'usermerge-deleteolduser' => 'ძველი მომხმარებლის წაშლა',
+	'usermerge-submit' => 'მომხმარებლების გაერთიანება',
+	'usermerge-userdeleted' => '$1 ($2) წაიშალა.',
+	'usermerge-userdeleted-log' => 'წაშლილი მომხმარებელი: $2 ($3)',
+	'right-usermerge' => 'მომხმარებლების გაერთიანება',
+	'usermerge-editcount' => 'დაემატოს რედაქტირებათა მთვლელი?',
+	'usermerge-page-deleted' => 'წაშლილი გვერდი $1',
+);
+
 /** Khmer (ភាសាខ្មែរ)
  * @author Chhorran
  * @author Lovekhmer
