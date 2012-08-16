@@ -1,7 +1,7 @@
 <?php
 /** \file
-* \brief Contains setup code for the User Merge and Delete Extension.
-*/
+ * \brief Contains setup code for the User Merge and Delete Extension.
+ */
 
 /**
  * UserMerge Extension for MediaWiki
@@ -27,9 +27,9 @@
  */
 
 # Not a valid entry point, skip unless MEDIAWIKI is defined
-if (!defined('MEDIAWIKI')) {
-        echo "User Merge and Delete extension";
-        exit(1);
+if ( !defined( 'MEDIAWIKI' ) ) {
+	echo "User Merge and Delete extension";
+	exit( 1 );
 }
 
 $wgExtensionCredits['specialpage'][] = array(
@@ -38,13 +38,13 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete',
 	'author'         => array( 'Tim Laqua', 'Thomas Gries', 'Matthew April' ),
 	'descriptionmsg' => 'usermerge-desc',
-	'version'        => '1.6.31'
+	'version'        => '1.7'
 );
 
 $wgAvailableRights[] = 'usermerge';
 # $wgGroupPermissions['bureaucrat']['usermerge'] = true;
 
-$dir = dirname(__FILE__) . '/';
+$dir = __DIR__ . '/';
 $wgAutoloadClasses['UserMerge'] = $dir . 'UserMerge_body.php';
 
 $wgExtensionMessagesFiles['UserMerge'] = $dir . 'UserMerge.i18n.php';
