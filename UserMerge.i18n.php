@@ -1299,13 +1299,13 @@ $messages['ko'] = array(
 	'usermerge-unmergable' => '사용자로부터 합칠 수 없습니다 - ID나 이름이 합칠 수 없도록 지정되어 있습니다.',
 	'usermerge-protectedgroup' => '사용자로부터 합칠 수 없습니다 - 사용자는 보호된 그룹에 있습니다.',
 	'right-usermerge' => '계정 합치기',
-	'usermerge-editcount' => '편집 횟수를 더할까요?',
-	'usermerge-editcount-success' => '($1 그리고 $2)의 편집 횟수 더함',
+	'usermerge-editcount' => '편집 횟수를 추가할까요?',
+	'usermerge-editcount-success' => '($1 그리고 $2)의 편집 횟수 추가함',
 	'usermerge-autopagedelete' => '계정을 합칠 때 자동으로 삭제됩니다',
 	'usermerge-page-unmoved' => '$1 문서를 $2 문서로 이동하지 못했습니다.',
 	'usermerge-page-moved' => '$1 문서를 $2 문서로 이동했습니다.',
 	'usermerge-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|$2]]" 사용자로 합치면서 자동으로 문서를 이동함',
-	'usermerge-page-deleted' => '$1 문서가 삭제됨',
+	'usermerge-page-deleted' => '$1 문서를 삭제함',
 );
 
 /** Colognian (Ripoarisch)
