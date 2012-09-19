@@ -212,6 +212,7 @@ $messages['arz'] = array(
  * @author Jim-by
  * @author Red Winged Duck
  * @author Renessaince
+ * @author Wizardist
  */
 $messages['be-tarask'] = array(
 	'usermerge' => "Аб'яднаньне і выдаленьне рахункаў удзельнікаў",
@@ -232,8 +233,8 @@ $messages['be-tarask'] = array(
 	'usermerge-updating' => 'Абнаўленьне табліцы $1 ($2 да $3)',
 	'usermerge-success' => "Аб'яднаньне $1 ($2) з $3 ($4) скончанае.",
 	'usermerge-success-log' => "Удзельнік $2 ($3) аб'яднаны з $4 ($5)",
-	'usermerge-logpage' => "Журнал аб'яднаньня рахункаў удзельнікаў",
-	'usermerge-logpagetext' => "Гэта журнал аб'яднаньня рахункаў удзельнікаў.",
+	'usermerge-logpage' => 'Журнал аб’яднаньня рахункаў удзельнікаў',
+	'usermerge-logpagetext' => 'Гэта журнал аб’яднаньня рахункаў удзельнікаў.',
 	'usermerge-noselfdelete' => "Вы ня можаце выдаліць ці аб'яднаць уласны рахунак!",
 	'usermerge-unmergable' => "Немагчыма аб'яднаць рахунак удзельніка — ідэнтыфікатар ці імя былі пазначаны як неаб'яднальныя.",
 	'usermerge-protectedgroup' => "Немагчыма аб'яднаць рахунак удзельніка — удзельнік знаходзіцца ў абароненай групе.",
