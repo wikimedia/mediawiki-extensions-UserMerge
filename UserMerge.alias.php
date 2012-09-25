@@ -158,7 +158,7 @@ $specialPageAliases['mr'] = array(
 	'UserMerge' => array( 'सदस्यविलीनीकरण' ),
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬) */
+/** Norwegian Bokmål (norsk (bokmål)‎) */
 $specialPageAliases['nb'] = array(
 	'UserMerge' => array( 'Slå_sammen_brukere' ),
 );
@@ -228,7 +228,7 @@ $specialPageAliases['yi'] = array(
 	'UserMerge' => array( 'צונויפגיסן_באניצער' ),
 );
 
-/** Simplified Chinese (‪中文（简体）‬) */
+/** Simplified Chinese (中文（简体）‎) */
 $specialPageAliases['zh-hans'] = array(
 	'UserMerge' => array( '合并用户' ),
 );

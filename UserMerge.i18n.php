@@ -207,7 +207,7 @@ $messages['arz'] = array(
 	'right-usermerge' => 'دمج اليوزرز',
 );
 
-/** Belarusian (Taraškievica orthography) (‪беларуская (тарашкевіца)‬)
+/** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
  * @author Red Winged Duck
@@ -2338,6 +2338,15 @@ $messages['uk'] = array(
 	'usermerge-unmergable' => "Неможливо об'єднати користувачів — ідентифікатор або ім'я було визначене як необ'єднуване.",
 	'usermerge-protectedgroup' => "Неможливо об'єднати користувачів — користувач належить до захищеної групи.",
 	'right-usermerge' => "об'єднання користувачів",
+);
+
+/** Uzbek (oʻzbekcha)
+ * @author CoderSI
+ */
+$messages['uz'] = array(
+	'usermerge-userdeleted-log' => "Ishtirokchi o'chirildi: $2 ($3)",
+	'usermerge-success-log' => 'Ishtirokchi $2 ($3) -> $4 ($5)ga birlashtirildi',
+	'usermerge-logpage' => 'Ishtirokchilarni birlashtirish qaydlari',
 );
 
 /** Veps (vepsän kel’)
