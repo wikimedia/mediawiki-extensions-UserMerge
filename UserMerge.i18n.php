@@ -422,6 +422,7 @@ Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.',
 );
 
 /** German (Deutsch)
+ * @author Das Schäfchen
  * @author Kghbln
  * @author Lukas9950
  * @author Raimond Spekking
@@ -448,7 +449,7 @@ Zum Ausführen auf „{{int:usermerge-submit}}“ klicken.',
 	'usermerge-success-log' => 'hat „$2“ ($3) mit „$4“ ($5) zusammengeführt',
 	'usermerge-logpage' => 'Benutzerkontenzusammenführungs-Logbuch',
 	'usermerge-logpagetext' => 'Dies ist das Logbuch der Benutzerkontenzusammenführungen.',
-	'usermerge-noselfdelete' => 'Die Zusammenführung mit sich selber ist nicht möglich!',
+	'usermerge-noselfdelete' => 'Die Zusammenführung mit sich selbst ist nicht möglich.',
 	'usermerge-unmergable' => 'Die Zusammenführung ist nicht möglich: Benutzerkennung oder Benutzername wurde als nicht zusammenführbar definiert.',
 	'usermerge-protectedgroup' => 'Die Zusammenführung ist nicht möglich: Der Benutzer befindet sich in einer geschützten Gruppe.',
 	'right-usermerge' => 'Benutzerkonten zusammenführen',
