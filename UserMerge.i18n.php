@@ -1354,7 +1354,7 @@ Kleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.',
 	'usermerge-page-deleted' => 'De Sigg „$1“ es fottjeschmeße.',
 );
 
-/** Kurdish (Latin script) (‪Kurdî (latînî)‬)
+/** Kurdish (Latin script) (Kurdî (latînî)‎)
  * @author Gomada
  */
 $messages['ku-latn'] = array(
@@ -1514,7 +1514,7 @@ $messages['nah'] = array(
 	'usermerge-userdeleted-log' => 'Tlapoloc tlatequitiltilīlli: $2 ($3)',
 );
 
-/** Norwegian Bokmål (‪norsk (bokmål)‬)
+/** Norwegian Bokmål (norsk (bokmål)‎)
  * @author Event
  * @author Nghtwlkr
  */
@@ -1620,7 +1620,7 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 	'usermerge-page-deleted' => 'Verwijderde pagina $1',
 );
 
-/** Norwegian Nynorsk (‪norsk (nynorsk)‬)
+/** Norwegian Nynorsk (norsk (nynorsk)‎)
  * @author Frokor
  * @author Gunnernett
  * @author Harald Khan
@@ -2031,7 +2031,7 @@ Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 	'usermerge-page-deleted' => 'Izbrisana stran $1',
 );
 
-/** Serbian (Cyrillic script) (‪српски (ћирилица)‬)
+/** Serbian (Cyrillic script) (српски (ћирилица)‎)
  * @author Rancher
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
@@ -2058,7 +2058,7 @@ $messages['sr-ec'] = array(
 	'right-usermerge' => 'спајање корисника',
 );
 
-/** Serbian (Latin script) (‪srpski (latinica)‬)
+/** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
  * @author Rancher
  */
@@ -2420,7 +2420,7 @@ $messages['yue'] = array(
 	'usermerge-success' => '由 $1($2) 到 $3($4) 嘅合併已經完成。',
 );
 
-/** Simplified Chinese (‪中文（简体）‬)
+/** Simplified Chinese (中文（简体）‎)
  * @author Gaoxuewei
  * @author Gzdavidwong
  * @author Liangent
@@ -2450,7 +2450,7 @@ $messages['zh-hans'] = array(
 	'right-usermerge' => '合并用户',
 );
 
-/** Traditional Chinese (‪中文（繁體）‬)
+/** Traditional Chinese (中文（繁體）‎)
  * @author Liangent
  * @author Mark85296341
  * @author Wrightbus
