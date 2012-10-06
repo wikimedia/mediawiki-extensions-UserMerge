@@ -2122,6 +2122,7 @@ $messages['su'] = array(
 
 /** Swedish (svenska)
  * @author Lejonel
+ * @author Martinwiss
  * @author Micke
  * @author Sannab
  */
@@ -2149,6 +2150,13 @@ $messages['sv'] = array(
 	'usermerge-unmergable' => 'Kan inte sammanfoga det gamla kontot. ID:t eller namnet har angetts som icke-sammanslagningsbart.',
 	'usermerge-protectedgroup' => 'Kan inte sammanfoga det gamla kontot. Användaren är medlem i en skyddad användargrupp.',
 	'right-usermerge' => 'Slå ihop användarkonton',
+	'usermerge-editcount' => 'Lägg till antal redigeringar',
+	'usermerge-editcount-success' => 'Lägger till antalet redigeringar för ($1 och $2)',
+	'usermerge-autopagedelete' => 'Ta bort automatiskt när användare slås ihop',
+	'usermerge-page-unmoved' => 'Sidan $1 kan inte tas bort till $2',
+	'usermerge-page-moved' => 'Sidan $1 måste tas bort till $2',
+	'usermerge-move-log' => 'Ta automatiskt bort sidan när du slår ihop användare "[[User:$1|$1]]" med "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Tog bort sidan $1',
 );
 
 /** Silesian (ślůnski)
