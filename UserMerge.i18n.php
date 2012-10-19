@@ -629,6 +629,7 @@ $messages['et'] = array(
 /** Basque (euskara)
  * @author An13sa
  * @author Theklan
+ * @author Xabier Armendaritz
  */
 $messages['eu'] = array(
 	'usermerge-badolduser' => 'Baliogabeko lankide izen zaharra',
@@ -648,6 +649,7 @@ $messages['eu'] = array(
 	'usermerge-logpagetext' => 'Log hau lankide batze ekintzena da.',
 	'usermerge-noselfdelete' => 'Ezin duzu zure burua ezabatu edo batu!',
 	'right-usermerge' => 'Lankideak bateratu',
+	'usermerge-page-moved' => '$1 orria $2 izenera aldatu da.',
 );
 
 /** Persian (فارسی)
