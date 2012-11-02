@@ -28,8 +28,7 @@
 
 # Not a valid entry point, skip unless MEDIAWIKI is defined
 if ( !defined( 'MEDIAWIKI' ) ) {
-	echo "User Merge and Delete extension";
-	exit( 1 );
+	die( 'This file is a MediaWiki extension, it is not a valid entry point' );
 }
 
 $wgExtensionCredits['specialpage'][] = array(

@@ -24,12 +24,12 @@ class UserMerge extends SpecialPage {
 		$this->setHeaders();
 
 		$user = $this->getUser();
-		$out = $this->getOutput();
 
 		if ( !$user->isAllowed( 'usermerge' ) ) {
 			throw new PermissionsError( 'usermerge' );
 		}
 
+		$out = $this->getOutput();
 		$request = $this->getRequest();
 
 		// init variables
@@ -107,8 +107,6 @@ class UserMerge extends SpecialPage {
 				$validOldUser = false;
 				$out->addHTML( "<span style=\"color: red;\">" . $this->msg( 'usermerge-noolduser' )->escaped() . "</span><br />\n" );
 			}
-		} else {
-			// NO POST data found
 		}
 
 		$out->addHTML(
@@ -193,7 +191,8 @@ class UserMerge extends SpecialPage {
 		$users = $dbw->selectField( 'user', 'COUNT(*)', array() );
 		$dbw->update( 'site_stats',
 			array( 'ss_users' => $users ),
-			array( 'ss_row_id' => 1 ) );
+			array( 'ss_row_id' => 1 )
+		);
 		return true;
 	}
 
@@ -257,7 +256,7 @@ class UserMerge extends SpecialPage {
 		$log = new LogPage( 'usermerge' );
 		$log->addEntry( 'mergeuser', $this->getUser()->getUserPage(), '', array( $olduser_text, $olduserID, $newuser_text, $newuserID ) );
 
-           	wfRunHooks( 'MergeAccountFromTo', array( &$objOldUser, &$objNewUser ) );
+		wfRunHooks( 'MergeAccountFromTo', array( &$objOldUser, &$objNewUser ) );
 
 		return true;
 	}
@@ -280,20 +279,20 @@ class UserMerge extends SpecialPage {
 
 		# old user edit count
 		$result = $dbw->selectField( 'user',
-				'user_editcount',
-				array( 'user_id' => $olduserID ),
-				__METHOD__
-			  );
+			'user_editcount',
+			array( 'user_id' => $olduserID ),
+			__METHOD__
+		);
 		$row = $dbw->fetchRow( $result );
 
 		$oldEdits = $row[0];
 
 		# new user edit count
 		$result = $dbw->selectField( 'user',
-				'user_editcount',
-				array( 'user_id' => $newuserID ),
-				__METHOD__
-			  );
+			'user_editcount',
+			array( 'user_id' => $newuserID ),
+			__METHOD__
+		);
 		$row = $dbw->fetchRow( $result );
 		$newEdits = $row[0];
 
@@ -361,7 +360,6 @@ class UserMerge extends SpecialPage {
 			$newPage = Title::makeTitleSafe( $row->page_namespace,
 				preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
 
-
 			if ( $newuser_text === "Anonymous" ) { # delete ALL old pages
 				if ( $oldPage->exists() ) {
 					$oldPageArticle = new Article( $oldPage, 0 );
@@ -396,10 +394,10 @@ class UserMerge extends SpecialPage {
 
 				if ( $success === true ) {
 					$oldLink = Linker::linkKnown(
-							$oldPage,
-							null,
-							array(),
-							array( 'redirect' => 'no' )
+						$oldPage,
+						null,
+						array(),
+						array( 'redirect' => 'no' )
 					);
 					$newLink = Linker::linkKnown( $newPage );
 					$msg = $this->msg( 'usermerge-page-moved' )->rawParams( $oldLink, $newLink )->escaped();
@@ -413,14 +411,14 @@ class UserMerge extends SpecialPage {
 
 				# check if any pages link here
 				$res = $dbr->selectField( 'pagelinks',
-						'pl_title',
-						array( 'pl_title' => $olduser_text ),
-						__METHOD__
-                                	);
+					'pl_title',
+					array( 'pl_title' => $olduser_text ),
+					__METHOD__
+				);
 				if ( !$dbr->numRows( $res ) ) {
-						# nothing links here, so delete unmoved page/redirect
-						$oldPageArticle = new Article( $oldPage, 0 );
-						$oldPageArticle->doDeleteArticle( $this->msg( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
+					# nothing links here, so delete unmoved page/redirect
+					$oldPageArticle = new Article( $oldPage, 0 );
+					$oldPageArticle->doDeleteArticle( $this->msg( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
 				}
 			}
 		}
