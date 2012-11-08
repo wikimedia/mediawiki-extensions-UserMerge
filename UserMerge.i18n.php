@@ -2371,6 +2371,7 @@ $messages['vep'] = array(
 );
 
 /** Vietnamese (Tiếng Việt)
+ * @author Minh Nguyen
  * @author Vinhtantran
  */
 $messages['vi'] = array(
@@ -2398,6 +2399,13 @@ Nhấn “{{int:usermerge-submit}}” để chấp nhận.',
 	'usermerge-unmergable' => 'Không thể trộn từ thành viên này - mã số hoặc tên đã được định nghĩa là không thể trộn.',
 	'usermerge-protectedgroup' => 'Không thể trộn từ thành viên này - thành viên này thuộc nhóm được bảo vệ.',
 	'right-usermerge' => 'Trộn thành viên',
+	'usermerge-editcount' => 'Thêm số lần sửa đổi?',
+	'usermerge-editcount-success' => 'Đang thêm số lần sửa đổi của ($1 và $2)',
+	'usermerge-autopagedelete' => 'Được tự động xóa khi hợp nhất người dùng',
+	'usermerge-page-unmoved' => 'Trang $1 không thể di chuyển đến $2.',
+	'usermerge-page-moved' => 'Trang $1 đã được di chuyển đến $2.',
+	'usermerge-move-log' => 'Đã tự động di chuyển trang khi hợp nhất thành viên “[[User:$1|$1]]” vào “[[User:$2|$2]]”',
+	'usermerge-page-deleted' => 'Đã xóa trang $1',
 );
 
 /** Volapük (Volapük)
