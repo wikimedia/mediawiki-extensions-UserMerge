@@ -2189,6 +2189,15 @@ $messages['szl'] = array(
 	'right-usermerge' => 'Kuplowańy użytkowńikůw',
 );
 
+/** Tamil (தமிழ்)
+ * @author மதனாஹரன்
+ */
+$messages['ta'] = array(
+	'usermerge-noolduser' => 'பழம்பயனர் பெயரைக் காலியாக்கு',
+	'usermerge-deleteolduser' => 'பழம்பயனரை அழி',
+	'right-usermerge' => 'பயனர்களை ஒருங்கிணை',
+);
+
 /** Telugu (తెలుగు)
  * @author Veeven
  */
