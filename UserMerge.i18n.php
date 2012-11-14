@@ -578,17 +578,18 @@ $messages['eo'] = array(
 /** Spanish (español)
  * @author Armando-Martin
  * @author Crazymadlover
+ * @author Dferg
  * @author Imre
  * @author Sanbec
  */
 $messages['es'] = array(
 	'usermerge' => 'Fusionar y borrar usuarios',
-	'usermerge-desc' => "[[Special:UserMerge|Fusiona referencias de un usuario a otro usuario]] en la base de datos wiki - borrará también usuarios antiguos en la siguiente fusión. requiere ''usermerge'' privilegios",
+	'usermerge-desc' => "[[Special:UserMerge|Fusiona referencias de un usuario a otro usuario]] en la base de datos wiki - también borrará los usuarios antiguos como consecuencia de la fusión. Se requieren los permisos de ''usermerge''",
 	'usermerge-badolduser' => 'Nombre de usuario antiguo inválido',
 	'usermerge-badnewuser' => 'Nombre de usuario nuevo inválido',
-	'usermerge-nonewuser' => 'Vaciar nuevo nombre de usuario - asumiendo que fue fusionado a $1.<br />
-Haga Click en "{{int:usermerge-submit}}" para aceptar.',
-	'usermerge-noolduser' => 'Vaciar antiguo nombre de usuario',
+	'usermerge-nonewuser' => 'Nuevo nombre de usuario vacío - asumiendo fusión en "$1".<br />
+Haga clic en "{{int:usermerge-submit}}" para aceptar.',
+	'usermerge-noolduser' => 'Nombre de usuario antiguo vacío',
 	'usermerge-fieldset' => 'Nombres de usuario a fusionar',
 	'usermerge-olduser' => 'Antiguo usuario (fusionar de):',
 	'usermerge-newuser' => 'Nuevo usuario (fusionar a):',
@@ -596,22 +597,22 @@ Haga Click en "{{int:usermerge-submit}}" para aceptar.',
 	'usermerge-submit' => 'Fusionar usuario',
 	'usermerge-badtoken' => 'Ficha de edición inválida',
 	'usermerge-userdeleted' => '$1 ($2) ha sido borrado.',
-	'usermerge-userdeleted-log' => 'Usuario borrado: $2 ($3)',
-	'usermerge-updating' => 'Actualizando $1 tabla ($2 to $3)',
-	'usermerge-success' => 'Fusión de $1 ($2) a $3 ($4) está completada.',
+	'usermerge-userdeleted-log' => 'borró el usuario: $2 ($3)',
+	'usermerge-updating' => 'Actualizando tabla $1 ($2 to $3)',
+	'usermerge-success' => 'La fusión de $1 ($2) a $3 ($4) ha sido completada.',
 	'usermerge-success-log' => 'Usuario $2 ($3) fusionado a $4 ($5)',
 	'usermerge-logpage' => 'Registro de fusiones del usuario',
 	'usermerge-logpagetext' => 'Este es un registro de acciones de fusión de usuarios.',
-	'usermerge-noselfdelete' => 'Usted no puede borrarse o fusionarse a sí mismo!',
-	'usermerge-unmergable' => 'Incapaz de fusionar de usuario - ID o nombre ha sido definido como no fusionable.',
-	'usermerge-protectedgroup' => 'Incapaz de fusionar de usuario - Usuario está en un grupo protegido.',
+	'usermerge-noselfdelete' => '¡No puede borrarse o fusionarse usted mismo!',
+	'usermerge-unmergable' => 'Incapaz de fusionar desde el usuario - La identidad o el nombre ha sido definido como no fusionable.',
+	'usermerge-protectedgroup' => 'Imposible fusionar desde el usuario - el usuario está incluido en un grupo protegido.',
 	'right-usermerge' => 'Fusionar usuarios',
 	'usermerge-editcount' => '¿Agregar contador de ediciones?',
 	'usermerge-editcount-success' => 'Agregando el contador de ediciones de ($1 y $2)',
 	'usermerge-autopagedelete' => 'Eliminado automáticamente al fusionar usuarios',
-	'usermerge-page-unmoved' => 'La página  $1  no pudo ser trasladada a  $2 .',
+	'usermerge-page-unmoved' => 'La página $1 no pudo ser trasladada a $2.',
 	'usermerge-page-moved' => 'La página $1 ha sido trasladada a $2.',
-	'usermerge-move-log' => 'La página se trasladó automaticamente cuando se fusionaron los usuarios "[[User:$1|$1]]" y "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Página trasladada automáticamente al fusionar al usuario "[[User:$1|$1]]" con el usuario "[[User:$2|$2]]"',
 	'usermerge-page-deleted' => 'La página $1 fue eliminada',
 );
 
