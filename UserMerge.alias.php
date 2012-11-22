@@ -193,6 +193,11 @@ $specialPageAliases['sa'] = array(
 	'UserMerge' => array( 'सदस्यसंयोग' ),
 );
 
+/** Sicilian (sicilianu) */
+$specialPageAliases['scn'] = array(
+	'UserMerge' => array( 'UnisciUtenze' ),
+);
+
 /** Slovak (slovenčina) */
 $specialPageAliases['sk'] = array(
 	'UserMerge' => array( 'ZlúčeniePoužívateľov' ),
