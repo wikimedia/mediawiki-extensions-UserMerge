@@ -43,6 +43,11 @@ $specialPageAliases['bs'] = array(
 	'UserMerge' => array( 'SpajanjeKorisnika' ),
 );
 
+/** буряад (буряад) */
+$specialPageAliases['bxr'] = array(
+	'UserMerge' => array( 'Хэрэглэгшые_нэгэдхэхэ' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'UserMerge' => array( 'Benutzerkonten_vereinigen' ),
