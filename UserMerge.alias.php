@@ -168,7 +168,7 @@ $specialPageAliases['nb'] = array(
 	'UserMerge' => array( 'Slå_sammen_brukere' ),
 );
 
-/** Nedersaksisch (Nedersaksisch) */
+/** Nedersaksies (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'UserMerge' => array( 'Gebrukers_samenvoegen' ),
 );
