@@ -221,7 +221,7 @@ class UserMerge extends SpecialPage {
 			array( 'oldimage', 'oi_user' ),
 			array( 'recentchanges', 'rc_user' ),
 			array( 'logging', 'log_user' ),
-			array( 'ipblocks', 'ipb_id' ),
+			array( 'ipblocks', 'ipb_user' ),
 			array( 'ipblocks', 'ipb_by' ),
 			array( 'watchlist', 'wl_user' ),
 		);
