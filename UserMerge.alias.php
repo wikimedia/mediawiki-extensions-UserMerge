@@ -143,6 +143,11 @@ $specialPageAliases['ksh'] = array(
 	'UserMerge' => array( 'Metmaacher zosammelääje', 'Medmaacher zosammelääje' ),
 );
 
+/** Cornish (kernowek) */
+$specialPageAliases['kw'] = array(
+	'UserMerge' => array( 'KesunyaDevnydhyer' ),
+);
+
 /** Luxembourgish (Lëtzebuergesch) */
 $specialPageAliases['lb'] = array(
 	'UserMerge' => array( 'Benotzerkonten_zesummeleeën' ),
