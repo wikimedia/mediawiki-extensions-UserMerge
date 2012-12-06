@@ -1176,7 +1176,7 @@ Fare clic su "{{int:usermerge-submit}}" per accettare.',
  */
 $messages['ja'] = array(
 	'usermerge' => '利用者の統合と削除',
-	'usermerge-desc' => "ウィキデータベース上における[[Special:UserMerge|ある利用者を別の利用者へ統合し]]、また統合元の利用者を削除する(「{{int:right-usermerge}}」権限 ''usermerge'' が必要)",
+	'usermerge-desc' => "ウィキデータベース上における[[Special:UserMerge|ある利用者を別の利用者へ統合し]]、また統合元の利用者を削除する (「{{int:right-usermerge}}」できる権限 ''usermerge'' が必要)",
 	'usermerge-badolduser' => '無効な旧利用者名',
 	'usermerge-badnewuser' => '無効な新利用者名',
 	'usermerge-nonewuser' => '新しい利用者名の欄が空です。「$1」への統合と仮定します。<br />
