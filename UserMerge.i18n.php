@@ -1497,7 +1497,26 @@ $messages['mr'] = array(
  * @author Anakmalaysia
  */
 $messages['ms'] = array(
+	'usermerge' => 'Gabungkan dan gugurkan pengguna',
+	'usermerge-badolduser' => 'Nama pengguna lama tidak sah',
+	'usermerge-badnewuser' => 'Nama pengguna baru tidak sah',
+	'usermerge-nonewuser' => 'Nama pengguna baru kosong - dianggap hendak digabungkan dengan "$1".<br />
+Klik "{{int:usermerge-submit}}" untuk menerima.',
+	'usermerge-noolduser' => 'Nama pengguna lama kosong',
+	'usermerge-fieldset' => 'Nama-nama pengguna yang hendak digabungkan',
+	'usermerge-olduser' => 'Pengguna lama (digabungkan dari):',
+	'usermerge-newuser' => 'Pengguna baru (digabungkan ke):',
+	'usermerge-deleteolduser' => 'Buang pengguna lama',
+	'usermerge-submit' => 'Gabungkan pengguna',
+	'usermerge-badtoken' => 'Token penyuntingan tidak sah',
+	'usermerge-userdeleted' => '$1 ($2) telah dihapuskan.',
+	'usermerge-userdeleted-log' => 'Pengguna terhapus: $2 ($3)',
+	'usermerge-updating' => 'Mengemaskinikan jadual $1 ($2 kepada $3)',
+	'usermerge-success' => 'Penggabungan dari $1 ($2) kepada $3 ($4) selesai.',
+	'usermerge-success-log' => 'Pengguna $2 ($3) digabungkan kepada $4 ($5)',
+	'usermerge-logpage' => 'Log penggabungan pengguna',
 	'right-usermerge' => 'Menggabungkan pengguna',
+	'usermerge-editcount' => 'Tambahkan kiraan suntingan?',
 );
 
 /** Maltese (Malti)
