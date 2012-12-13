@@ -1498,6 +1498,7 @@ $messages['mr'] = array(
  */
 $messages['ms'] = array(
 	'usermerge' => 'Gabungkan dan gugurkan pengguna',
+	'usermerge-desc' => "[[Special:UserMerge|Menggabungkan rujukan daripada seorang pengguna kepada seorang pengguna yang lain]] di dalam pangkalan data wiki - juga akan menggugurkan pengguna-pengguna lama ekoran penggabungan. Memerlukan keistimewaan ''usermerge''",
 	'usermerge-badolduser' => 'Nama pengguna lama tidak sah',
 	'usermerge-badnewuser' => 'Nama pengguna baru tidak sah',
 	'usermerge-nonewuser' => 'Nama pengguna baru kosong - dianggap hendak digabungkan dengan "$1".<br />
@@ -1515,8 +1516,18 @@ Klik "{{int:usermerge-submit}}" untuk menerima.',
 	'usermerge-success' => 'Penggabungan dari $1 ($2) kepada $3 ($4) selesai.',
 	'usermerge-success-log' => 'Pengguna $2 ($3) digabungkan kepada $4 ($5)',
 	'usermerge-logpage' => 'Log penggabungan pengguna',
+	'usermerge-logpagetext' => 'Ini merupakan log tindakan menggabungkan pengguna.',
+	'usermerge-noselfdelete' => 'Anda tidak boleh menghapuskan atau menggabungkan diri anda sendiri!',
+	'usermerge-unmergable' => 'Tidak dapat menggabungkan pengguna - ID atau namanya telah ditakrifkan sebagai tidak boleh digabungkan.',
+	'usermerge-protectedgroup' => 'Tidak dapat menggabungkan pengguna - pengguna menganggotai kumpulan yang terlindung.',
 	'right-usermerge' => 'Menggabungkan pengguna',
 	'usermerge-editcount' => 'Tambahkan kiraan suntingan?',
+	'usermerge-editcount-success' => 'Mencampur kiraan suntingan ($1 dan $2)',
+	'usermerge-autopagedelete' => 'Dihapuskan secara automatik apabila menggabungkan pengguna',
+	'usermerge-page-unmoved' => 'Halaman $1 tidak dapat dipindahkan ke $2.',
+	'usermerge-page-moved' => 'Halaman $1 telah dipindahkan ke $2.',
+	'usermerge-move-log' => 'Halaman dipindahkan secara automatik ketika menukar nama "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Halaman $1 dipadamkan',
 );
 
 /** Maltese (Malti)
