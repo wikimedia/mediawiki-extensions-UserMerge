@@ -238,6 +238,11 @@ $specialPageAliases['uk'] = array(
 	'UserMerge' => array( 'Об\'єднання_облікових_записів' ),
 );
 
+/** Vietnamese (Tiếng Việt) */
+$specialPageAliases['vi'] = array(
+	'UserMerge' => array( 'Hợp_nhất_người_dùng' ),
+);
+
 /** Yiddish (ייִדיש) */
 $specialPageAliases['yi'] = array(
 	'UserMerge' => array( 'צונויפגיסן_באניצער' ),
