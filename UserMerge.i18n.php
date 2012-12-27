@@ -679,6 +679,7 @@ $messages['fa'] = array(
  * @author Nike
  * @author Silvonen
  * @author Str4nd
+ * @author VezonThunder
  * @author Vililikku
  */
 $messages['fi'] = array(
@@ -704,6 +705,11 @@ Napsauta "{{int:usermerge-submit}}" hyväksyäksesi.',
 	'usermerge-noselfdelete' => 'Et voi poistaa tai yhdistää itseltäsi.',
 	'usermerge-protectedgroup' => 'Ei voi yhdistää käyttäjänimestä - käyttäjänimi kuuluu suojattuun ryhmään.',
 	'right-usermerge' => 'Yhdistää käyttäjiä',
+	'usermerge-autopagedelete' => 'Poistettiin automaattisesti käyttäjien yhdistämisessä',
+	'usermerge-page-unmoved' => 'Sivua $1 ei voitu siirtää nimelle $2.',
+	'usermerge-page-moved' => 'Sivu $1 siirrettiin nimelle $2.',
+	'usermerge-move-log' => 'Sivu siirretty automaattisesti yhdistettäessä käyttäjä "[[User:$1|$1]]" käyttäjään "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Sivu $1 poistettiin',
 );
 
 /** French (français)
@@ -1922,6 +1928,7 @@ $messages['roa-tara'] = array(
  * @author Ferrer
  * @author Illusion
  * @author Innv
+ * @author Ole Yves
  * @author Александр Сигачёв
  */
 $messages['ru'] = array(
@@ -1949,6 +1956,8 @@ $messages['ru'] = array(
 	'usermerge-unmergable' => 'Невозможно объединить участников — идентификатор или имя было определено как необъединяемое.',
 	'usermerge-protectedgroup' => 'Невозможно объединить участников — участник относится к защищённой группе.',
 	'right-usermerge' => 'объединение участников',
+	'usermerge-editcount' => 'Добавить счётчик правок?',
+	'usermerge-editcount-success' => 'Добавление счётчика правок ($1 и $2)',
 	'usermerge-autopagedelete' => 'Автоматически удаляются при объединении пользователей',
 	'usermerge-page-unmoved' => 'Страница $1 не может быть переименована в $2.',
 	'usermerge-page-moved' => 'Страница $1 была переименована в $2.',
@@ -1969,6 +1978,7 @@ $messages['rue'] = array(
 
 /** Sinhala (සිංහල)
  * @author Calcey
+ * @author පසිඳු කාවින්ද
  */
 $messages['si'] = array(
 	'usermerge' => 'පරිශීලකයින් මුසු කිරීම හා මැකීම',
@@ -1995,6 +2005,7 @@ $messages['si'] = array(
 	'usermerge-unmergable' => 'පරිශීලකයා මඟින් මුසු කළ නොහැකියි - ID හෝ නම හඳුන්වා දී තිබෙන්නේ මුසු කළ නොහැකි ලෙසයි.',
 	'usermerge-protectedgroup' => 'පරිශිලකයා මඟින් මුසු කළ නොහැකියි - පරිශීලකයා සිටින්නේ ආරක්ෂිත කණ්ඩායමකය.',
 	'right-usermerge' => 'පරිශීලකයින් මුසු කිරීම',
+	'usermerge-page-deleted' => '$1 මකාදැමූ පිටුව',
 );
 
 /** Slovak (slovenčina)
@@ -2363,6 +2374,7 @@ Kabul etmek için "{{int:usermerge-submit}}"e tıklayın.',
 
 /** Ukrainian (українська)
  * @author Ahonc
+ * @author Steve.rusyn
  */
 $messages['uk'] = array(
 	'usermerge' => "Об'єднання і вилучення облікових записів",
@@ -2389,6 +2401,13 @@ $messages['uk'] = array(
 	'usermerge-unmergable' => "Неможливо об'єднати користувачів — ідентифікатор або ім'я було визначене як необ'єднуване.",
 	'usermerge-protectedgroup' => "Неможливо об'єднати користувачів — користувач належить до захищеної групи.",
 	'right-usermerge' => "об'єднання користувачів",
+	'usermerge-editcount' => 'Додати лічильник редагувань?',
+	'usermerge-editcount-success' => 'Додавання лічильника редагувань ($1 і $2)',
+	'usermerge-autopagedelete' => "Автоматично видаляються при об'єднанні користувачів",
+	'usermerge-page-unmoved' => 'Сторінка $1 не може бути перейменована на $2.',
+	'usermerge-page-moved' => 'Сторінка $1 була перейменована на $2.',
+	'usermerge-move-log' => "Автоматичне перейменування сторінки при об'єднанні користувача «[[User:$1|$1]]» з «[[User:$2|$2]]»",
+	'usermerge-page-deleted' => 'Сторінку $1 вилучено',
 );
 
 /** Uzbek (oʻzbekcha)

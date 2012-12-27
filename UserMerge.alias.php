@@ -252,3 +252,8 @@ $specialPageAliases['yi'] = array(
 $specialPageAliases['zh-hans'] = array(
 	'UserMerge' => array( '合并用户' ),
 );
+
+/** Traditional Chinese (中文（繁體）‎) */
+$specialPageAliases['zh-hant'] = array(
+	'UserMerge' => array( '合併用戶' ),
+);
