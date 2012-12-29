@@ -48,6 +48,7 @@ Click "{{int:usermerge-submit}}" to accept.',
  * @author Meno25
  * @author Nemo bis
  * @author Purodha
+ * @author Shirayuki
  * @author Siebrand
  * @author Umherirrender
  */
@@ -67,12 +68,12 @@ $messages['qqq'] = array(
 	'usermerge-success' => 'Status message. Parameters:
 * $1 is a user name (not linked) that is merged into another user
 * $2 is a user ID of the source user
-* $3 is a user name (not linked) that the other user is merged into
+* $3 is a user name (not linked) that the other user is merged into; can be used for GENDER
 * $4 is a user ID of the target user',
 	'usermerge-success-log' => 'Parameters:
 * $2 is a user name (not linked) that is merged into another user
 * $3 is a user ID of the source user
-* $4 is a user name (not linked) that the other user is merged into
+* $4 is a user name (not linked) that the other user is merged into; can be used for GENDER
 * $5 is a user ID of the target user',
 	'usermerge-logpage' => '{{doc-logpage}}',
 	'right-usermerge' => '{{doc-right|usermerge}}',
@@ -432,6 +433,7 @@ Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.',
  * @author Das Schäfchen
  * @author Kghbln
  * @author Lukas9950
+ * @author Metalhead64
  * @author Raimond Spekking
  * @author Umherirrender
  */
@@ -440,7 +442,7 @@ $messages['de'] = array(
 	'usermerge-desc' => 'Ergänzt eine [[Special:UserMerge|Spezialseite]] zum Zusammenführen von Benutzerkonten und der anschließenden Löschung des alten Benutzerkontos in der Datenbank des Wikis',
 	'usermerge-badolduser' => 'Ungültiger alter Benutzername',
 	'usermerge-badnewuser' => 'Ungültiger neuer Benutzername',
-	'usermerge-nonewuser' => 'Es wurde kein neuer Benutzername angegeben. Daher wird eine Zusammenführung mit „$1“ angenommen.<br />
+	'usermerge-nonewuser' => 'Es wurde kein neuer Benutzername angegeben. Daher wird eine Zusammenführung mit „{{GENDER:$1|$1}}“ angenommen.<br />
 Zum Ausführen auf „{{int:usermerge-submit}}“ klicken.',
 	'usermerge-noolduser' => 'Es wurde kein neuer Benutzername angegeben.',
 	'usermerge-fieldset' => 'Benutzernamen zum Zusammenführen',
@@ -452,8 +454,8 @@ Zum Ausführen auf „{{int:usermerge-submit}}“ klicken.',
 	'usermerge-userdeleted' => '„$1“ ($2) wurde gelöscht.',
 	'usermerge-userdeleted-log' => 'hat „$2“ ($3) gelöscht',
 	'usermerge-updating' => 'Aktualisiere Tabelle $1 ($2 nach $3) …',
-	'usermerge-success' => 'Die Zusammenführung von „$1“ ($2) nach „$3“ ($4) war erfolgreich.',
-	'usermerge-success-log' => 'hat „$2“ ($3) mit „$4“ ($5) zusammengeführt',
+	'usermerge-success' => 'Die Zusammenführung von „$1“ ($2) nach „{{GENDER:$3|$3}}“ ($4) war erfolgreich.',
+	'usermerge-success-log' => 'hat „$2“ ($3) mit „{{GENDER:$4|$4}}“ ($5) zusammengeführt',
 	'usermerge-logpage' => 'Benutzerkontenzusammenführungs-Logbuch',
 	'usermerge-logpagetext' => 'Dies ist das Logbuch der Benutzerkontenzusammenführungen.',
 	'usermerge-noselfdelete' => 'Die Zusammenführung mit sich selbst ist nicht möglich.',
@@ -465,7 +467,7 @@ Zum Ausführen auf „{{int:usermerge-submit}}“ klicken.',
 	'usermerge-autopagedelete' => 'Automatisch während der Benutzerkontenzusammenführung gelöscht',
 	'usermerge-page-unmoved' => 'Die Seite „$1“ konnte nicht nach „$2“ verschoben werden.',
 	'usermerge-page-moved' => 'Die Seite „$1“ wurde nach „$2“ verschoben.',
-	'usermerge-move-log' => 'Seite während der Benutzerkontenzusammenführung von „[[User:$1|$1]]“ nach „[[User:$2|$2]]“ automatisch verschoben',
+	'usermerge-move-log' => 'Seite während der Benutzerkontenzusammenführung von „[[User:$1|$1]]“ nach „[[User:$2|{{GENDER:$2|$2}}]]“ automatisch verschoben',
 	'usermerge-page-deleted' => 'Seite „$1“ gelöscht',
 );
 
@@ -1192,7 +1194,7 @@ $messages['ja'] = array(
 	'usermerge-desc' => "ウィキデータベース上における[[Special:UserMerge|ある利用者を別の利用者へ統合し]]、また統合元の利用者を削除する (「{{int:right-usermerge}}」できる権限 ''usermerge'' が必要)",
 	'usermerge-badolduser' => '無効な旧利用者名',
 	'usermerge-badnewuser' => '無効な新利用者名',
-	'usermerge-nonewuser' => '新しい利用者名の欄が空です。「$1」への統合と仮定します。<br />
+	'usermerge-nonewuser' => '新しい利用者名の欄が空です。「{{GENDER:$1|$1}}」への統合と見なします。<br />
 「{{int:usermerge-submit}}」をクリックして承認してください。',
 	'usermerge-noolduser' => '旧利用者名の欄が空です',
 	'usermerge-fieldset' => '統合する利用者名',
@@ -1204,20 +1206,20 @@ $messages['ja'] = array(
 	'usermerge-userdeleted' => '$1 ($2) は削除されました。',
 	'usermerge-userdeleted-log' => '利用者: $2 ($3) を削除しました',
 	'usermerge-updating' => '$1 のテーブルを更新 ($2 を $3 へ)',
-	'usermerge-success' => '$1 ($2) の $3 ($4) への統合が完了しました。',
-	'usermerge-success-log' => '利用者 $2 ($3) を $4 ($5) へ統合しました',
+	'usermerge-success' => '$1 ($2) の {{GENDER:$3$3}} ($4) への統合が完了しました。',
+	'usermerge-success-log' => '利用者 $2 ($3) を {{GENDER:$4|$4}} ($5) へ統合しました',
 	'usermerge-logpage' => '利用者統合記録',
 	'usermerge-logpagetext' => 'これは、利用者の統合を記録したものです。',
 	'usermerge-noselfdelete' => 'あなたは、自身を統合あるいは削除することはできません。',
-	'usermerge-unmergable' => '利用者を統合できません。IDまたは名前が統合不可能となっています。',
-	'usermerge-protectedgroup' => '利用者を統合できません。この利用者は被保護グループに属しています。',
+	'usermerge-unmergable' => '利用者を統合できません: IDまたは名前が統合不可能となっています。',
+	'usermerge-protectedgroup' => '利用者を統合できません: この利用者は被保護グループに属しています。',
 	'right-usermerge' => '利用者を統合',
 	'usermerge-editcount' => '編集回数を加算しますか？',
-	'usermerge-editcount-success' => '（$1 と $2 の）編集回数を加算しています',
+	'usermerge-editcount-success' => '($1 と $2 の) 編集回数を加算しています',
 	'usermerge-autopagedelete' => '利用者の統合と共に自動的に削除しました',
 	'usermerge-page-unmoved' => 'ページ「$1」を「$2」に移動できませんでした。',
 	'usermerge-page-moved' => 'ページ「$1」を「$2」に移動しました。',
-	'usermerge-move-log' => '統合と共に「[[User:$1|$1]]」を「[[User:$2|$2]]」へ自動的に移動しました',
+	'usermerge-move-log' => '統合と共に「[[User:$1|$1]]」を「[[User:$2|{{GENDER:$2|$2}}]]」へ自動的に移動しました',
 );
 
 /** Javanese (Basa Jawa)
@@ -1431,8 +1433,8 @@ $messages['mk'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Спојува наводи од еден корисник во друг]] во вики базата на податици - ги брише и старите корисници по спојувањето. Бара ''usermerge'' привилегии",
 	'usermerge-badolduser' => 'Погрешно старо корисничко име',
 	'usermerge-badnewuser' => 'Погрешно ново корисничко име',
-	'usermerge-nonewuser' => 'Празно ново корисничко име - се подразбира спојување со „$1“.<br />
-Кликнете на „{{int:usermerge-submit}}“ за да прифатите.',
+	'usermerge-nonewuser' => 'Празно ново корисничко име. Се подразбира спојување со „{{GENDER:$1|$1}}“.<br />
+Стиснете на „{{int:usermerge-submit}}“ за да прифатите.',
 	'usermerge-noolduser' => 'Празно старо корисничко име',
 	'usermerge-fieldset' => 'Кориснички имиња за спојување',
 	'usermerge-olduser' => 'Стар корисник (за спојување од):',
@@ -1443,8 +1445,8 @@ $messages['mk'] = array(
 	'usermerge-userdeleted' => '$1 ($2) беше избришано.',
 	'usermerge-userdeleted-log' => 'Избришан корисник: $2 ($3)',
 	'usermerge-updating' => 'Обновувам табела $1 ($2 до $3)',
-	'usermerge-success' => 'Спојувањето од $1 ($2) до $3 ($4) е готово.',
-	'usermerge-success-log' => 'Корисникот $2 ($3) е споен со $4 ($5)',
+	'usermerge-success' => 'Спојувањето од $1 ($2) до {{GENDER:$3|$3}} ($4) е готово.',
+	'usermerge-success-log' => 'Корисникот $2 ($3) е споен со {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Дневник на спојувања на кориснички сметки',
 	'usermerge-logpagetext' => 'Ова е дневник на спојувања на кориснички имиња.',
 	'usermerge-noselfdelete' => 'Не можете да се избришете или споите самите себеси!',
@@ -1456,7 +1458,7 @@ $messages['mk'] = array(
 	'usermerge-autopagedelete' => 'Се брише автоматски, при спојување на корисници',
 	'usermerge-page-unmoved' => 'Не моежев да ја преместам страницата $1 на $2.',
 	'usermerge-page-moved' => 'Страницата $1 е преместена на $2.',
-	'usermerge-move-log' => 'Автоматско преместување на страница при припојувањето на корисникот „[[User:$1|$1]]“ кон „[[User:$2|$2]]“',
+	'usermerge-move-log' => 'Автоматско преместување на страница при припојувањето на корисникот „[[User:$1|$1]]“ кон „[[User:$2|{{GENDER:$2|$2}}]]“',
 	'usermerge-page-deleted' => 'Избришана страница $1',
 );
 
