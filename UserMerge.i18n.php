@@ -1516,7 +1516,8 @@ $messages['ms'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Menggabungkan rujukan daripada seorang pengguna kepada seorang pengguna yang lain]] di dalam pangkalan data wiki - juga akan menggugurkan pengguna-pengguna lama ekoran penggabungan. Memerlukan keistimewaan ''usermerge''",
 	'usermerge-badolduser' => 'Nama pengguna lama tidak sah',
 	'usermerge-badnewuser' => 'Nama pengguna baru tidak sah',
-	'usermerge-nonewuser' => 'Nama pengguna baru kosong - dianggap hendak digabungkan dengan "$1".<br />
+	'usermerge-nonewuser' => 'Nama pengguna baru kosong, dianggap hendak digabungkan dengan "{{GENDER:$1|$1}}".<br />
+
 Klik "{{int:usermerge-submit}}" untuk menerima.',
 	'usermerge-noolduser' => 'Nama pengguna lama kosong',
 	'usermerge-fieldset' => 'Nama-nama pengguna yang hendak digabungkan',
@@ -1528,8 +1529,8 @@ Klik "{{int:usermerge-submit}}" untuk menerima.',
 	'usermerge-userdeleted' => '$1 ($2) telah dihapuskan.',
 	'usermerge-userdeleted-log' => 'Pengguna terhapus: $2 ($3)',
 	'usermerge-updating' => 'Mengemaskinikan jadual $1 ($2 kepada $3)',
-	'usermerge-success' => 'Penggabungan dari $1 ($2) kepada $3 ($4) selesai.',
-	'usermerge-success-log' => 'Pengguna $2 ($3) digabungkan kepada $4 ($5)',
+	'usermerge-success' => 'Penggabungan dari $1 ($2) kepada {{GENDER:$3|$3}} ($4) selesai.',
+	'usermerge-success-log' => 'Pengguna $2 ($3) digabungkan kepada {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Log penggabungan pengguna',
 	'usermerge-logpagetext' => 'Ini merupakan log tindakan menggabungkan pengguna.',
 	'usermerge-noselfdelete' => 'Anda tidak boleh menghapuskan atau menggabungkan diri anda sendiri!',
@@ -1541,7 +1542,7 @@ Klik "{{int:usermerge-submit}}" untuk menerima.',
 	'usermerge-autopagedelete' => 'Dihapuskan secara automatik apabila menggabungkan pengguna',
 	'usermerge-page-unmoved' => 'Halaman $1 tidak dapat dipindahkan ke $2.',
 	'usermerge-page-moved' => 'Halaman $1 telah dipindahkan ke $2.',
-	'usermerge-move-log' => 'Halaman dipindahkan secara automatik ketika menukar nama "[[User:$1|$1]]" menjadi "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Halaman dipindahkan secara automatik ketika menukar nama "[[User:$1|$1]]" menjadi "[[User:$2|{{GENDER:$2|$2}}]]"',
 	'usermerge-page-deleted' => 'Halaman $1 dipadamkan',
 );
 
@@ -2014,6 +2015,7 @@ $messages['si'] = array(
 	'usermerge-unmergable' => 'පරිශීලකයා මඟින් මුසු කළ නොහැකියි - ID හෝ නම හඳුන්වා දී තිබෙන්නේ මුසු කළ නොහැකි ලෙසයි.',
 	'usermerge-protectedgroup' => 'පරිශිලකයා මඟින් මුසු කළ නොහැකියි - පරිශීලකයා සිටින්නේ ආරක්ෂිත කණ්ඩායමකය.',
 	'right-usermerge' => 'පරිශීලකයින් මුසු කිරීම',
+	'usermerge-editcount' => 'සංස්කරණ ගණනය එක් කරනවද?',
 	'usermerge-page-deleted' => '$1 මකාදැමූ පිටුව',
 );
 
