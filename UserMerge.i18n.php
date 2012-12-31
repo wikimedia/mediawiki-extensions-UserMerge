@@ -666,6 +666,7 @@ $messages['eu'] = array(
  * @author BlueDevil
  * @author Huji
  * @author Meisam
+ * @author Mjbmr
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
@@ -673,6 +674,7 @@ $messages['fa'] = array(
 	'usermerge-badolduser' => 'نام کاربری قدیمی نامعتبر',
 	'usermerge-badnewuser' => 'نام کاربری جدید نامعتبر',
 	'usermerge-noolduser' => 'نام کاربری قدیمی خالی',
+	'usermerge-fieldset' => 'نام‌های کاربری برای ادغام',
 	'usermerge-olduser' => 'کاربر قدیمی (ادغام از)', # Fuzzy
 	'usermerge-newuser' => 'کاربر جدید (ادغام با):',
 	'usermerge-deleteolduser' => 'کاربر قدیمی حذف شود؟', # Fuzzy
@@ -723,6 +725,7 @@ Napsauta "{{int:usermerge-submit}}" hyväksyäksesi.', # Fuzzy
 
 /** French (français)
  * @author Crochet.david
+ * @author Gomoko
  * @author Grondin
  * @author Guillom
  * @author IAlex
@@ -737,8 +740,8 @@ $messages['fr'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Fusionne les références d’un utilisateur vers un autre]] dans la base de données wiki - supprimera aussi les anciens utilisateurs après la fusion. Nécessite le privilège ''usermerge''",
 	'usermerge-badolduser' => 'Ancien nom d’utilisateur invalide',
 	'usermerge-badnewuser' => 'Nouveau nom d’utilisateur invalide',
-	'usermerge-nonewuser' => 'Nouveau nom d’utilisateur vide. Nous faisons l’hypothèse que vous voulez fusionner dans « $1 ».<br />
-Cliquez sur « {{int:usermerge-submit}} » pour accepter.',
+	'usermerge-nonewuser' => 'Nouveau nom d’utilisateur vide. Nous supposons que vous voulez fusionner dans "{{GENDER:$1|$1}}".<br />
+Cliquez sur "{{int:usermerge-submit}}" pour accepter.',
 	'usermerge-noolduser' => 'Ancien nom d’utilisateur vide',
 	'usermerge-fieldset' => 'Noms d’utilisateur à fusionner',
 	'usermerge-olduser' => 'Ancien utilisateur (fusionner depuis) :',
@@ -749,8 +752,8 @@ Cliquez sur « {{int:usermerge-submit}} » pour accepter.',
 	'usermerge-userdeleted' => '$1 ($2) a été supprimé.',
 	'usermerge-userdeleted-log' => 'Contributeur supprimé : $2 ($3)',
 	'usermerge-updating' => 'Mise à jour de la table $1 (de $2 à $3)',
-	'usermerge-success' => 'La fusion de $1 ($2) à $3 ($4) est terminée.',
-	'usermerge-success-log' => 'Utilisateur $2 ($3) fusionné avec $4 ($5)',
+	'usermerge-success' => 'La fusion de $1 ($2) à {{GENDER:$3|$3}} ($4) est terminée.',
+	'usermerge-success-log' => 'Utilisateur $2 ($3) fusionné avec {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Journal des fusions de comptes utilisateur',
 	'usermerge-logpagetext' => 'Voici un journal des actions de fusions d’utilisateurs.',
 	'usermerge-noselfdelete' => 'Vous ne pouvez pas vous supprimer ou vous fusionner vous-même !',
@@ -762,7 +765,7 @@ Cliquez sur « {{int:usermerge-submit}} » pour accepter.',
 	'usermerge-autopagedelete' => 'Supprimé automatiquement lors de la fusion de utilisateurs',
 	'usermerge-page-unmoved' => 'Cette page $1 ne peut pas être déplacée vers $2.',
 	'usermerge-page-moved' => 'La page $1 a été déplacée vers $2.',
-	'usermerge-move-log' => 'Page déplacée automatiquement lors de la fusion de l’utilisateur « [[User:$1|$1]] » en « [[User:$2|$2]] »',
+	'usermerge-move-log' => 'Page déplacée automatiquement lors de la fusion de l’utilisateur "[[User:$1|$1]]" en "[[User:$2|{{GENDER:$2|$2}}]]"',
 	'usermerge-page-deleted' => 'Page $1 effacée',
 );
 
@@ -1782,7 +1785,7 @@ $messages['pms'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|A uniss j'arferiment da n'utent a n'àutr utent]] ant ël database wiki - a scanselerà ëdcò ij vej utent d'apress l'union. A veul ij pribilegi ''usermerge''",
 	'usermerge-badolduser' => 'Vej stranòm nen bon',
 	'usermerge-badnewuser' => 'Neuv stranòm nen bon',
-	'usermerge-nonewuser' => 'Neuv stranòm veujd - i të tnisoma bon për n\'union a "$1".<br />
+	'usermerge-nonewuser' => 'Neuv stranòm veujd. I të tnisoma bon për n\'union a "$1".<br />
 Sgnaca "{{int:usermerge-submit}}" për asseté.',
 	'usermerge-noolduser' => 'Vej stranòm veujd',
 	'usermerge-fieldset' => 'Nòm utent da unì',
@@ -1794,8 +1797,8 @@ Sgnaca "{{int:usermerge-submit}}" për asseté.',
 	'usermerge-userdeleted' => "$1($2) a l'é stàit scancelà.",
 	'usermerge-userdeleted-log' => 'Utent scanselà: $2 ($3)',
 	'usermerge-updating' => "Antramentr ch'i agiornoma la tàola $1 ($2 a $3)",
-	'usermerge-success' => 'Union da $1($2) a $3($4) completà.',
-	'usermerge-success-log' => 'Utent $2 ($3) unì a $4 ($5)',
+	'usermerge-success' => 'Union da $1($2) a {{GENDER:$3}} ($4) completà.',
+	'usermerge-success-log' => 'Utent $2 ($3) unì a {{GENDER:$4}} ($5)',
 	'usermerge-logpage' => 'Registr dle union utent',
 	'usermerge-logpagetext' => "Sto sì a l'é un registr ëd le assion d'union utent.",
 	'usermerge-noselfdelete' => 'It peule pa scanselé o unì ti midem!',
@@ -1807,7 +1810,7 @@ Sgnaca "{{int:usermerge-submit}}" për asseté.',
 	'usermerge-autopagedelete' => "Scancelà automaticament an unificand j'utent",
 	'usermerge-page-unmoved' => 'La pàgina $1 a peul pa esse tramudà a $2.',
 	'usermerge-page-moved' => "La pàgina $1 a l'ha fàit San Martin a $2.",
-	'usermerge-move-log' => 'Pàgina tramudà n\'automàtich damëntrè ch\'as arbatiava "[[User:$1|$1]]" an "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Pàgina tramudà n\'automàtich damëntrè ch\'as arbatiava "[[User:$1|$1]]" an "[[User:$2|{{GENDER:$2|$2}}]]"',
 	'usermerge-page-deleted' => 'Scancelà la pagina $1',
 );
 
@@ -2016,6 +2019,9 @@ $messages['si'] = array(
 	'usermerge-protectedgroup' => 'පරිශිලකයා මඟින් මුසු කළ නොහැකියි - පරිශීලකයා සිටින්නේ ආරක්ෂිත කණ්ඩායමකය.',
 	'right-usermerge' => 'පරිශීලකයින් මුසු කිරීම',
 	'usermerge-editcount' => 'සංස්කරණ ගණනය එක් කරනවද?',
+	'usermerge-editcount-success' => '($1 සහ $2) න් සංස්කරණ ගණනය එක් කරමින්',
+	'usermerge-page-unmoved' => '$1 පිටුව $2 වෙත ගෙනයා නොහැක.',
+	'usermerge-page-moved' => '$1 පිටුව $2 වෙත ගෙනයන ලදි.',
 	'usermerge-page-deleted' => '$1 මකාදැමූ පිටුව',
 );
 
@@ -2381,6 +2387,14 @@ Kabul etmek için "{{int:usermerge-submit}}"e tıklayın.',
 	'usermerge-unmergable' => 'Kullanıcıdan birleştirilemiyor - ID ya da isim birleştirilemez olarak tanımlanmış.',
 	'usermerge-protectedgroup' => 'Kullanıcıdan birleştirilemiyor - kullanıcı korunan bir grupta bulunuyor.',
 	'right-usermerge' => 'Kullanıcıları birleştir',
+);
+
+/** Uyghur (Arabic script) (ئۇيغۇرچە)
+ * @author Sahran
+ */
+$messages['ug-arab'] = array(
+	'usermerge-page-unmoved' => '$1 بەتنى $2 گە يۆتكىيەلمىدى.',
+	'usermerge-page-moved' => '$1 بەت $2 گە يۆتكەلدى.',
 );
 
 /** Ukrainian (українська)
