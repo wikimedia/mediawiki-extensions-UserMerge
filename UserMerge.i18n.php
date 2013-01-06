@@ -1156,7 +1156,7 @@ $messages['it'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Unisce i riferimenti di un utente con quelli di un altro]] nel database della wiki e inoltre cancellerà il vecchio utente dopo l'unione. Richiede privilegi ''usermerge''",
 	'usermerge-badolduser' => 'Vecchio nome utente non valido',
 	'usermerge-badnewuser' => 'Nuovo nome utente non valido',
-	'usermerge-nonewuser' => 'Nuovo nome utente vuoto - l\'unione verrà effettuata con l\'utente "$1".<br />
+	'usermerge-nonewuser' => 'Nuovo nome utente vuoto - l\'unione verrà effettuata con l\'utente "{{GENDER:$1|$1}}".<br />
 Fare clic su "{{int:usermerge-submit}}" per accettare.',
 	'usermerge-noolduser' => 'Vecchio nome utente vuoto',
 	'usermerge-fieldset' => 'Nomi utente da unire',
@@ -1168,8 +1168,8 @@ Fare clic su "{{int:usermerge-submit}}" per accettare.',
 	'usermerge-userdeleted' => '$1 ($2) è stato cancellato.',
 	'usermerge-userdeleted-log' => 'Utente cancellato: $2 ($3)',
 	'usermerge-updating' => 'Aggiornamento tabella $1 ($2 a $3)',
-	'usermerge-success' => "L'unione di $1 ($2) a $3 ($4) è completa.",
-	'usermerge-success-log' => 'Utente $2 ($3) unito a $4 ($5)',
+	'usermerge-success' => "L'unione di $1 ($2) a {{GENDER:$3|$3}} ($4) è completa.",
+	'usermerge-success-log' => 'Utente $2 ($3) unito a {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Unioni delle utenze',
 	'usermerge-logpagetext' => 'Di seguito sono elencate le azioni di unione di utenti.',
 	'usermerge-noselfdelete' => 'Non puoi cancellare o unire il tuo account!',
@@ -1181,7 +1181,7 @@ Fare clic su "{{int:usermerge-submit}}" per accettare.',
 	'usermerge-autopagedelete' => 'Cancellata automaticamente quando si uniscono gli utenti',
 	'usermerge-page-unmoved' => 'La pagina $1 non può essere spostata a $2.',
 	'usermerge-page-moved' => 'La pagina $1 è stata spostata a $2.',
-	'usermerge-move-log' => 'Pagina spostata automaticamente durante l\'unione dell\'utente "[[User:$1|$1]]" a "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Pagina spostata automaticamente durante l\'unione dell\'utente "[[User:$1|$1]]" a "[[User:$2|{{GENDER:$2|$2}}]]"',
 	'usermerge-page-deleted' => 'Pagina cancellata $1',
 );
 
@@ -1934,6 +1934,9 @@ Apasă "{{int:usermerge-submit}}" pentru a accepta.',
 $messages['roa-tara'] = array(
 	'usermerge-badolduser' => 'Nome utende vecchije invalide',
 	'usermerge-badnewuser' => 'Nome utende nuève invalide',
+	'usermerge-deleteolduser' => 'Scangellate vecchie utende',
+	'usermerge-page-unmoved' => "'A pàgene $1 non ge pò essere spustate sus a $2.",
+	'usermerge-page-moved' => "'A pàgene $1 ha state spustete sus a $2.",
 );
 
 /** Russian (русский)
