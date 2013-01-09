@@ -819,7 +819,7 @@ $messages['gl'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Fusiona as referencias dun usuario noutro usuario]] na base de datos do wiki (tamén borrará as fusións vellas dos usuarios seguintes. Require privilexios ''usermerge'')",
 	'usermerge-badolduser' => 'Antigo nome de usuario non válido',
 	'usermerge-badnewuser' => 'Novo nome de usuario non válido',
-	'usermerge-nonewuser' => 'Nome de usuario baleiro (asúmese que quere fusionalo con "$1").<br />
+	'usermerge-nonewuser' => 'Nome de usuario baleiro. Asúmese que quere fusionalo con "{{GENDER:$1|$1}}".<br />
 Prema en "{{int:usermerge-submit}}" para aceptar.',
 	'usermerge-noolduser' => 'Antigo nome de usuario baleiro',
 	'usermerge-fieldset' => 'Nomes de usuario a fusionar',
@@ -831,8 +831,8 @@ Prema en "{{int:usermerge-submit}}" para aceptar.',
 	'usermerge-userdeleted' => '$1 ($2) foi eliminado.',
 	'usermerge-userdeleted-log' => 'Usuario eliminado: $2 ($3)',
 	'usermerge-updating' => 'Actualizando táboa $1 ($2 a $3)',
-	'usermerge-success' => 'A fusión desde $1 ($2) a $3 ($4) foi completada.',
-	'usermerge-success-log' => 'Usuario $2 ($3) fusionado con $4 ($5)',
+	'usermerge-success' => 'A fusión desde $1 ($2) a {{GENDER:$3|$3}} ($4) foi completada.',
+	'usermerge-success-log' => 'Usuario $2 ($3) fusionado con {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Rexistro de fusión de usuarios',
 	'usermerge-logpagetext' => 'Este é un rexistro das accións de fusión de usuarios.',
 	'usermerge-noselfdelete' => 'Non se pode eliminar ou fusionar a si mesmo!',
@@ -844,7 +844,7 @@ Prema en "{{int:usermerge-submit}}" para aceptar.',
 	'usermerge-autopagedelete' => 'Borrada automaticamente ao fusionar os usuarios',
 	'usermerge-page-unmoved' => 'A páxina "$1" non pode ser movida a "$2".',
 	'usermerge-page-moved' => 'A páxina "$1" foi movida a "$2".',
-	'usermerge-move-log' => 'A páxina moveuse automaticamente cando se fusionou o usuario "[[User:$1|$1]]" con "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'A páxina moveuse automaticamente cando se fusionou o usuario "[[User:$1|$1]]" con "[[User:$2|{{GENDER:$2|$2}}]]"',
 	'usermerge-page-deleted' => 'A páxina "$1" foi borrada',
 );
 
