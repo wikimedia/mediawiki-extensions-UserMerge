@@ -1309,7 +1309,7 @@ $messages['ko'] = array(
 	'usermerge-desc' => "위키 데이터베이스에서 [[Special:UserMerge|참고한 한 사용자에서 다른 사용자로 합칩니다]] - 합치고 나서 이에 따라 이전 사용자는 삭제됩니다. ''usermerge'' 권한 필요",
 	'usermerge-badolduser' => '잘못된 이전 사용자 이름',
 	'usermerge-badnewuser' => '잘못된 새 사용자 이름',
-	'usermerge-nonewuser' => '빈 새 사용자 이름 - "$1" 사용자로 가정하여 합칩니다.<br />
+	'usermerge-nonewuser' => '빈 새 사용자 이름입니다. "{{GENDER:$1|$1}}" 사용자로 가정하여 합칩니다.<br />
 동의하면 "{{int:usermerge-submit}}"을 클릭하세요.',
 	'usermerge-noolduser' => '이전 사용자 이름이 비어 있음',
 	'usermerge-fieldset' => '사용자 이름 합치기',
@@ -1321,8 +1321,8 @@ $messages['ko'] = array(
 	'usermerge-userdeleted' => '$1 ($2) 사용자가 삭제되었습니다.',
 	'usermerge-userdeleted-log' => '사용자가 $2 ($3) 사용자를 삭제했습니다',
 	'usermerge-updating' => '사용자가 $1 테이블을 업데이트했습니다 ($2부터 $3까지)',
-	'usermerge-success' => '$1 ($2) 사용자를 $3 ($4) 사용자에 합치는 것을 완료했습니다.',
-	'usermerge-success-log' => '사용자가 $2 ($3) 사용자를 $4 ($5) 로 합쳤습니다',
+	'usermerge-success' => '$1 ($2) 사용자를 {{GENDER:$3|$3}} ($4) 사용자에 합치는 것을 완료했습니다.',
+	'usermerge-success-log' => '$2 ($3) 사용자를 {{GENDER:$4|$4}} ($5) 로 합쳤습니다',
 	'usermerge-logpage' => '사용자 병합 기록',
 	'usermerge-logpagetext' => '사용자 병합 행위 기록입니다.',
 	'usermerge-noselfdelete' => '자신으로부터 삭제나 합치기를 할 수 없습니다!',
@@ -1334,7 +1334,7 @@ $messages['ko'] = array(
 	'usermerge-autopagedelete' => '사용자를 합칠 때 자동으로 삭제했습니다',
 	'usermerge-page-unmoved' => '$1 문서를 $2 문서로 이동하지 못했습니다.',
 	'usermerge-page-moved' => '$1 문서를 $2 문서로 이동했습니다.',
-	'usermerge-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|$2]]" 사용자로 합치면서 자동으로 문서를 이동함',
+	'usermerge-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|{{GENDER:$2|$2}}]]" 사용자로 합치면서 자동으로 문서를 이동함',
 	'usermerge-page-deleted' => '$1 문서를 삭제함',
 );
 
