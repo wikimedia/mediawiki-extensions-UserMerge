@@ -33,6 +33,7 @@ Click "{{int:usermerge-submit}}" to accept.',
 	'usermerge-unmergable'		=> 'Unable to merge from user: ID or name has been defined as unmergable.',
 	'usermerge-protectedgroup'	=> 'Unable to merge from user: User is in a protected group.',
 	'right-usermerge'               => 'Merge users',
+	'action-usermerge'              => 'merge users',
 	'usermerge-editcount'		=> 'Add edit count?',
 	'usermerge-editcount-success'	=> 'Adding edit count of ($1 and $2)',
 	'usermerge-autopagedelete'	=> 'Automatically deleted when merging users',
@@ -77,6 +78,7 @@ $messages['qqq'] = array(
 * $5 is a user ID of the target user',
 	'usermerge-logpage' => '{{doc-logpage}}',
 	'right-usermerge' => '{{doc-right|usermerge}}',
+	'action-usermerge' => '{{doc-action|usermerge}}',
 	'usermerge-editcount-success' => 'Message that indicates two users have been merged. Parameters:
 * $1 is the user ID of the user that was merged into user with ID $2.
 * $2 is the user ID that $1 was merged into.',
