@@ -1343,12 +1343,12 @@ $messages['ko'] = array(
 	'right-usermerge' => '사용자 합치기',
 	'action-usermerge' => '사용자 합치기',
 	'usermerge-editcount' => '편집 횟수를 추가할까요?',
-	'usermerge-editcount-success' => '($1 그리고 $2)의 편집 횟수 추가함',
+	'usermerge-editcount-success' => '($1 그리고 $2)의 편집 횟수를 추가합니다',
 	'usermerge-autopagedelete' => '사용자를 합칠 때 자동으로 삭제했습니다',
 	'usermerge-page-unmoved' => '$1 문서를 $2 문서로 이동하지 못했습니다.',
 	'usermerge-page-moved' => '$1 문서를 $2 문서로 이동했습니다.',
-	'usermerge-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|{{GENDER:$2|$2}}]]" 사용자로 합치면서 자동으로 문서를 이동함',
-	'usermerge-page-deleted' => '$1 문서를 삭제함',
+	'usermerge-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|{{GENDER:$2|$2}}]]" 사용자로 합치면서 자동으로 문서를 이동했습니다',
+	'usermerge-page-deleted' => '$1 문서를 삭제했습니다',
 );
 
 /** Colognian (Ripoarisch)
@@ -2419,14 +2419,15 @@ $messages['ug-arab'] = array(
 /** Ukrainian (українська)
  * @author Ahonc
  * @author Steve.rusyn
+ * @author Ата
  */
 $messages['uk'] = array(
 	'usermerge' => "Об'єднання і вилучення облікових записів",
 	'usermerge-desc' => "[[Special:UserMerge|Переводить зв'язки з одного користувача на іншого]] у базі даних вікі, старі користувачі будуть вилучатися. Вимагає прав ''usermerge''",
 	'usermerge-badolduser' => "Неправильне старе ім'я користувача",
 	'usermerge-badnewuser' => "Неправильне нове ім'я користувача",
-	'usermerge-nonewuser' => "Порожнє ім'я користувача — при злитті з «$1».<br />
-Натисніть «{{int:usermerge-submit}}», щоб підтвердити дію.", # Fuzzy
+	'usermerge-nonewuser' => "Порожнє ім'я користувача. Припускається злиття з «{{GENDER:$1|$1}}».<br />
+Натисніть «{{int:usermerge-submit}}», щоб підтвердити дію.",
 	'usermerge-noolduser' => "Порожнє старе ім'я користувача",
 	'usermerge-fieldset' => "Облікові записи для об'єднання",
 	'usermerge-olduser' => "Старий обліковий запис (об'єднати з):",
@@ -2437,20 +2438,21 @@ $messages['uk'] = array(
 	'usermerge-userdeleted' => '$1 ($2) був вилучений.',
 	'usermerge-userdeleted-log' => 'Вилучений користувач: $2 ($3)',
 	'usermerge-updating' => 'Оновлення таблиці $1 ($2 з $3)',
-	'usermerge-success' => "Об'єднання $1 ($2) з $3 ($4) виконане.", # Fuzzy
-	'usermerge-success-log' => 'Користувач $2 ($3) приєднаний до $4 ($5)', # Fuzzy
+	'usermerge-success' => "Об'єднання $1 ($2) з {{GENDER:$3|$3}} ($4) виконане.",
+	'usermerge-success-log' => 'Користувач $2 ($3) приєднаний до {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => "Журнал об'єднання користувачів",
 	'usermerge-logpagetext' => "Це журнал об'єднання облікових записів.",
 	'usermerge-noselfdelete' => 'Ви не можете вилучати або приєднувати самого себе!',
 	'usermerge-unmergable' => "Неможливо об'єднати користувачів — ідентифікатор або ім'я було визначене як необ'єднуване.",
 	'usermerge-protectedgroup' => "Неможливо об'єднати користувачів — користувач належить до захищеної групи.",
 	'right-usermerge' => "об'єднання користувачів",
+	'action-usermerge' => "об'єднування користувачів",
 	'usermerge-editcount' => 'Додати лічильник редагувань?',
 	'usermerge-editcount-success' => 'Додавання лічильника редагувань ($1 і $2)',
 	'usermerge-autopagedelete' => "Автоматично видаляються при об'єднанні користувачів",
 	'usermerge-page-unmoved' => 'Сторінка $1 не може бути перейменована на $2.',
 	'usermerge-page-moved' => 'Сторінка $1 була перейменована на $2.',
-	'usermerge-move-log' => "Автоматичне перейменування сторінки при об'єднанні користувача «[[User:$1|$1]]» з «[[User:$2|$2]]»", # Fuzzy
+	'usermerge-move-log' => "Автоматичне перейменування сторінки при об'єднанні користувача «[[User:$1|$1]]» з «[[User:$2|{{GENDER:$2|$2}}]]»",
 	'usermerge-page-deleted' => 'Сторінку $1 вилучено',
 );
 
