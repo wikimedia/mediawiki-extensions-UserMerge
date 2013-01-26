@@ -1229,7 +1229,7 @@ $messages['ja'] = array(
 	'usermerge-protectedgroup' => '利用者を統合できません: この利用者は被保護グループに属しています。',
 	'right-usermerge' => '利用者を統合',
 	'action-usermerge' => '利用者の統合',
-	'usermerge-editcount' => '編集回数を加算しますか？',
+	'usermerge-editcount' => '編集回数を加算しますか?',
 	'usermerge-editcount-success' => '($1 と $2 の) 編集回数を加算しています',
 	'usermerge-autopagedelete' => '利用者の統合と共に自動的に削除しました',
 	'usermerge-page-unmoved' => 'ページ「$1」を「$2」に移動できませんでした。',
@@ -1405,7 +1405,7 @@ $messages['lb'] = array(
 	'usermerge-badolduser' => 'Ongëltegen ale Benotzernumm',
 	'usermerge-badnewuser' => 'Ongëltegen neie Benotzernumm',
 	'usermerge-nonewuser' => 'Eidelen neie Benotzernumm - wahrscheinlech eng Zesummeféierung mat "$1".<br />
-Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
+Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.', # Fuzzy
 	'usermerge-noolduser' => 'Eidelen ale Benotzernumm',
 	'usermerge-fieldset' => 'Benotzernimm fir zesummenzeféieren',
 	'usermerge-olduser' => 'Ale Benotzer (zesummeféiere vun):',
@@ -1416,20 +1416,21 @@ Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
 	'usermerge-userdeleted' => '$1 ($2) gouf geläscht.',
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
 	'usermerge-updating' => 'Aktualiséierung vun der Tabell $1 ($2 op $3)',
-	'usermerge-success' => 'D\'Zesummeféierung vum "$1" ($2) op "$3" ($4) ass net komplett.',
-	'usermerge-success-log' => 'Benotzer $2 ($3) gouf zesummegeféiert mat $4 ($5)',
+	'usermerge-success' => 'D\'Zesummeféierung vum "$1" ($2) op "$3" ($4) ass net komplett.', # Fuzzy
+	'usermerge-success-log' => 'Benotzer $2 ($3) gouf zesummegeféiert mat $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Lëscht vun de Benotzerkonten déi zesummegeféiert goufen',
 	'usermerge-logpagetext' => 'Dëst ass eng Lëscht vun de Benotzerkonten, déi zesummegeféiert goufen.',
 	'usermerge-noselfdelete' => 'Dir kënnt Iech net selwer läschen oder mat Iech selwer zesummeféieren!',
 	'usermerge-unmergable' => "Zesammenféierung ass net méiglech - d'ID oder de Benotzernumm gouf als net zesummeféierbar definéiert.",
 	'usermerge-protectedgroup' => "D'Zesammenféierung ass net méiglech - De Benotzer ass an engem geschützte Grupp.",
 	'right-usermerge' => 'Benotzer zesummeféieren',
+	'action-usermerge' => 'Benotzer zesummeféieren',
 	'usermerge-editcount' => 'Compteur vun den Ännerungen derbäisetzen?',
 	'usermerge-editcount-success' => 'De Compteur vun den Ännerungen vun ($1 a(n) $2) gëtt derbäigesat',
 	'usermerge-autopagedelete' => "Automatesch geläscht wéi d'Benotzer zesummegeluecht goufen",
 	'usermerge-page-unmoved' => "D'Säit $1 konnt net op $2 geréckelt ginn.",
 	'usermerge-page-moved' => "D'Säit $1 gouf op $2 geréckelt.",
-	'usermerge-move-log' => 'D\'Säit gouf automatesch geréckelt wéi de Benotzer "[[User:$1|$1]]" mam "[[User:$2|$2]]" zesummegeluecht gouf',
+	'usermerge-move-log' => 'D\'Säit gouf automatesch geréckelt wéi de Benotzer "[[User:$1|$1]]" mam "[[User:$2|$2]]" zesummegeluecht gouf', # Fuzzy
 	'usermerge-page-deleted' => 'Säit $1 ass geläscht',
 );
 
