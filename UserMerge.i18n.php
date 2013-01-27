@@ -96,7 +96,7 @@ $messages['af'] = array(
 	'usermerge-badolduser' => 'Ongeldige ou gebruiker',
 	'usermerge-badnewuser' => 'Ongeldige nuwe gebruiker',
 	'usermerge-nonewuser' => 'Die nuwe gebruikersnaam is nie ingevoer nie - daar word aangeneem dat dit met $1 versmelt moet word.<br />
-Kliek "{{int:usermerge-submit}}" om die handeling uit te voer.',
+Kliek "{{int:usermerge-submit}}" om die handeling uit te voer.', # Fuzzy
 	'usermerge-noolduser' => 'Ou gebruikersnaam is leeg',
 	'usermerge-fieldset' => 'Gebruikers om saam te smelt',
 	'usermerge-olduser' => 'Ou gebruiker (versmelt van):',
@@ -107,8 +107,8 @@ Kliek "{{int:usermerge-submit}}" om die handeling uit te voer.',
 	'usermerge-userdeleted' => '$1 ($2) is verwyder.',
 	'usermerge-userdeleted-log' => 'Verwyderde gebruiker: $2 ($3)',
 	'usermerge-updating' => 'Tabel $1 aan die verander ($2 na $3)',
-	'usermerge-success' => 'Versmelting van $1 ($2) na $3 ($4) is voltooi.',
-	'usermerge-success-log' => 'Gebruiker $2 ($3) is versmelt na $4 ($5)',
+	'usermerge-success' => 'Versmelting van $1 ($2) na $3 ($4) is voltooi.', # Fuzzy
+	'usermerge-success-log' => 'Gebruiker $2 ($3) is versmelt na $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Logboek van gebruikersversmeltings',
 	'usermerge-logpagetext' => "Die is 'n logboek van gebruikersversmeltings.",
 	'usermerge-noselfdelete' => 'U kan nie uself verwyder of versmelt nie!',
@@ -125,7 +125,7 @@ $messages['aln'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|referencat bashkohet nga një user në një përdorues tjetër]] në bazën e të dhënave wiki - do të fshini gjithashtu përdoruesit e vjetër pas bashkohen. Kërkon''''usermerge privilegje",
 	'usermerge-badolduser' => 'emrin e pavlefshme të vjetra',
 	'usermerge-badnewuser' => 'emrin e pavlefshme të reja',
-	'usermerge-nonewuser' => 'Bosh emrin e re - duke supozuar të bashkohen për të "" $1 ". <br /> Kliko "{{int:usermerge-submit}}" për të pranuar.',
+	'usermerge-nonewuser' => 'Bosh emrin e re - duke supozuar të bashkohen për të "" $1 ". <br /> Kliko "{{int:usermerge-submit}}" për të pranuar.', # Fuzzy
 	'usermerge-noolduser' => 'Bosh emrin e vjetër',
 	'usermerge-fieldset' => 'Emr të bashkojë',
 	'usermerge-olduser' => 'përdorues Vjetër (bashkojë nga):',
@@ -136,8 +136,8 @@ $messages['aln'] = array(
 	'usermerge-userdeleted' => '$1 ($2) është fshirë.',
 	'usermerge-userdeleted-log' => 'përdorues Deleted: $2 ($3)',
 	'usermerge-updating' => 'Tabela Përditësimi $1 ($2 në $3)',
-	'usermerge-success' => 'Merge nga $1 ($2) për $3 ($4), është i kompletuar.',
-	'usermerge-success-log' => 'User $2 ($3) bashkohen në $4 ($5)',
+	'usermerge-success' => 'Merge nga $1 ($2) për $3 ($4), është i kompletuar.', # Fuzzy
+	'usermerge-success-log' => 'User $2 ($3) bashkohen në $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Përdoruesi bashkojë log',
 	'usermerge-logpagetext' => 'Ky është një regjistër i përdoruesit bashkojë veprimet.',
 	'usermerge-noselfdelete' => 'Ju nuk mund të fshini ose përpuqni nga vetë!',
@@ -157,7 +157,7 @@ $messages['ar'] = array(
 	'usermerge-badolduser' => 'اسم المستخدم القديم غير صحيح',
 	'usermerge-badnewuser' => 'اسم المستخدم الجديد غير صحيح',
 	'usermerge-nonewuser' => 'اسم مستخدم جديد فارغ - افتراض الدمج إلى "$1".<br />
-اضغط "{{int:usermerge-submit}}" للقبول.',
+اضغط "{{int:usermerge-submit}}" للقبول.', # Fuzzy
 	'usermerge-noolduser' => 'اسم المستخدم القديم فارغ',
 	'usermerge-fieldset' => 'أسماء المستخدمين للدمج',
 	'usermerge-olduser' => 'مستخدم قديم (دمج من):',
@@ -168,8 +168,8 @@ $messages['ar'] = array(
 	'usermerge-userdeleted' => '$1($2) تم حذفه.',
 	'usermerge-userdeleted-log' => 'حذف المستخدم: $2($3)',
 	'usermerge-updating' => 'تحديث $1 جدول ($2 إلى $3)',
-	'usermerge-success' => 'الدمج من $1($2) إلى $3($4) اكتمل.',
-	'usermerge-success-log' => 'المستخدم $2($3) تم دمجه مع $4($5)',
+	'usermerge-success' => 'الدمج من $1($2) إلى $3($4) اكتمل.', # Fuzzy
+	'usermerge-success-log' => 'المستخدم $2($3) تم دمجه مع $4($5)', # Fuzzy
 	'usermerge-logpage' => 'سجل دمج المستخدم',
 	'usermerge-logpagetext' => 'هذا سجل بأفعال دمج المستخدمين.',
 	'usermerge-noselfdelete' => 'لا يمكنك حذف أو دمج من نفسك!',
@@ -199,7 +199,7 @@ $messages['arz'] = array(
 	'usermerge-badolduser' => 'اسم اليوزر القديم مش صحيح',
 	'usermerge-badnewuser' => 'اسم اليوزر الجديد مش صحيح',
 	'usermerge-nonewuser' => 'اسم يوزر جديد فارغ - افتراض الدمج إلى $1.<br />
-اضغط "{{int:usermerge-submit}}" للقبول.',
+اضغط "{{int:usermerge-submit}}" للقبول.', # Fuzzy
 	'usermerge-noolduser' => 'اسم اليوزر القديم فارغ',
 	'usermerge-fieldset' => 'أسماء اليوزرز للدمج',
 	'usermerge-olduser' => 'يوزر قديم (دمج من):',
@@ -210,8 +210,8 @@ $messages['arz'] = array(
 	'usermerge-userdeleted' => '$1($2) تم حذفه.',
 	'usermerge-userdeleted-log' => 'حذف اليوزر: $2($3)',
 	'usermerge-updating' => 'تحديث $1 جدول ($2 إلى $3)',
-	'usermerge-success' => 'الدمج من $1($2) إلى $3($4) اكتمل.',
-	'usermerge-success-log' => 'اليوزر $2($3) تم دمجه مع $4($5)',
+	'usermerge-success' => 'الدمج من $1($2) إلى $3($4) اكتمل.', # Fuzzy
+	'usermerge-success-log' => 'اليوزر $2($3) تم دمجه مع $4($5)', # Fuzzy
 	'usermerge-logpage' => 'سجل دمج اليوزر',
 	'usermerge-logpagetext' => 'ده سجل بأفعال دمج اليوزرز.',
 	'usermerge-noselfdelete' => 'لا يمكنك حذف أو دمج من نفسك!',
@@ -233,7 +233,7 @@ $messages['be-tarask'] = array(
 	'usermerge-badolduser' => 'Няслушнае старое імя ўдзельніка',
 	'usermerge-badnewuser' => 'Няслушнае новае імя ўдзельніка',
 	'usermerge-nonewuser' => "Пустое новае імя ўдзельніка — мяркуецца аб'яднаньне з «$1».<br />
-Націсьніце «{{int:usermerge-submit}}» каб пагадзіцца.",
+Націсьніце «{{int:usermerge-submit}}» каб пагадзіцца.", # Fuzzy
 	'usermerge-noolduser' => 'Пустое старое імя ўдзельніка',
 	'usermerge-fieldset' => "Імёны ўдзельнікаў для аб'яднаньня",
 	'usermerge-olduser' => "Стары ўдзельнік (аб'яднаць з):",
@@ -244,8 +244,8 @@ $messages['be-tarask'] = array(
 	'usermerge-userdeleted' => '$1 ($2) быў выдалены.',
 	'usermerge-userdeleted-log' => 'Выдалены рахунак удзельніка: $2 ($3)',
 	'usermerge-updating' => 'Абнаўленьне табліцы $1 ($2 да $3)',
-	'usermerge-success' => "Аб'яднаньне $1 ($2) з $3 ($4) скончанае.",
-	'usermerge-success-log' => "Удзельнік $2 ($3) аб'яднаны з $4 ($5)",
+	'usermerge-success' => "Аб'яднаньне $1 ($2) з $3 ($4) скончанае.", # Fuzzy
+	'usermerge-success-log' => "Удзельнік $2 ($3) аб'яднаны з $4 ($5)", # Fuzzy
 	'usermerge-logpage' => 'Журнал аб’яднаньня рахункаў удзельнікаў',
 	'usermerge-logpagetext' => 'Гэта журнал аб’яднаньня рахункаў удзельнікаў.',
 	'usermerge-noselfdelete' => "Вы ня можаце выдаліць ці аб'яднаць уласны рахунак!",
@@ -257,7 +257,7 @@ $messages['be-tarask'] = array(
 	'usermerge-autopagedelete' => 'Аўтаматычна выдалены падчас аб’яднаньня рахункаў ўдзельнікаў',
 	'usermerge-page-unmoved' => 'Старонка $1 ня можа быць перанесеная ў $2.',
 	'usermerge-page-moved' => 'Старонка $1 перанесеная ў $2.',
-	'usermerge-move-log' => 'Аўтаматычна перанесеная старонка падчас аб’яднаньня рахунку ўдзельніка «[[User:$1|$1]]» з «[[User:$2|$2]]»',
+	'usermerge-move-log' => 'Аўтаматычна перанесеная старонка падчас аб’яднаньня рахунку ўдзельніка «[[User:$1|$1]]» з «[[User:$2|$2]]»', # Fuzzy
 	'usermerge-page-deleted' => 'Выдаленая старонка $1',
 );
 
@@ -277,8 +277,8 @@ $messages['bg'] = array(
 	'usermerge-submit' => 'Сливане',
 	'usermerge-userdeleted' => '$1($2) беше изтрит.',
 	'usermerge-userdeleted-log' => 'Изтрит потребител: $2($3)',
-	'usermerge-success' => 'Сливането от $1 ($2) към $3 ($4) приключи.',
-	'usermerge-success-log' => 'Потребител $2 ($3) беше слят с $4 ($5)',
+	'usermerge-success' => 'Сливането от $1 ($2) към $3 ($4) приключи.', # Fuzzy
+	'usermerge-success-log' => 'Потребител $2 ($3) беше слят с $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Дневник на потребителските сливания',
 	'usermerge-logpagetext' => 'Тази страница съдържа дневник на потребителските сливания.',
 	'usermerge-noselfdelete' => 'Не е възможно да изтривате или сливате от себе си!',
@@ -307,8 +307,8 @@ $messages['bn'] = array(
 	'usermerge-userdeleted' => '$1 ($2) মুছে ফেলা হয়েছে।',
 	'usermerge-userdeleted-log' => 'ব্যবহারকারী মুছে ফেলে হয়েছে: $2 ($3)',
 	'usermerge-updating' => '$1 টেবিল হালনাগাদ করা হচ্ছে ($2 থেকে $3-তে)',
-	'usermerge-success' => '$1 ($2) থেকে $3 ($4)-তে একত্রীকরণ সম্পন্ন হয়েছে।',
-	'usermerge-success-log' => 'ব্যবহারকারী $2 ($3)-কে $4 ($5)-এর সাথে একত্রিত করা হয়েছে',
+	'usermerge-success' => '$1 ($2) থেকে $3 ($4)-তে একত্রীকরণ সম্পন্ন হয়েছে।', # Fuzzy
+	'usermerge-success-log' => 'ব্যবহারকারী $2 ($3)-কে $4 ($5)-এর সাথে একত্রিত করা হয়েছে', # Fuzzy
 	'usermerge-logpage' => 'ব্যবহারকারী একত্রীকরণ লগ',
 	'usermerge-logpagetext' => 'এটি ব্যবহারকারী একত্রীকরনের একটি লগ।',
 	'usermerge-noselfdelete' => 'আপনি নিজের ব্যবহারকারী নাম মুছে ফেলতে বা এটি থেকে অন্য নামে একত্রিত করতে পারবেন না!',
@@ -326,7 +326,7 @@ $messages['br'] = array(
 	'usermerge-badolduser' => 'Anv implijer kozh direizh',
 	'usermerge-badnewuser' => 'Anv implijer nevez direizh',
 	'usermerge-nonewuser' => 'Anv implijer nevez goullo - soñjal a ra deomp e fell deoc\'h kendeuziñ davet "$1".<br />
-Klikañ war "{{int:usermerge-submit}}" evit asantiñ.',
+Klikañ war "{{int:usermerge-submit}}" evit asantiñ.', # Fuzzy
 	'usermerge-noolduser' => 'Anv implijer kozh goullo',
 	'usermerge-fieldset' => 'Anvioù implijer da gendeuziñ',
 	'usermerge-olduser' => 'Implijer kozh (kendeuziñ adal) :',
@@ -337,8 +337,8 @@ Klikañ war "{{int:usermerge-submit}}" evit asantiñ.',
 	'usermerge-userdeleted' => 'Diverket eo bet $1 ($2).',
 	'usermerge-userdeleted-log' => 'Implijer diverket : $2($3)',
 	'usermerge-updating' => "Oc'h hizivaat an daolenn $1 (eus $2 da $3)",
-	'usermerge-success' => 'Kendeuzadenn adal $1 ($2) davet $3 ($4) kaset da benn vat.',
-	'usermerge-success-log' => 'Implijer $2 ($3) kendeuzet davet $4 ($5)',
+	'usermerge-success' => 'Kendeuzadenn adal $1 ($2) davet $3 ($4) kaset da benn vat.', # Fuzzy
+	'usermerge-success-log' => 'Implijer $2 ($3) kendeuzet davet $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Marilh kendeuzadennoù an implijerien',
 	'usermerge-logpagetext' => 'Setu aze marilh kendeuzadennoù an implijerien.',
 	'usermerge-noselfdelete' => "N'hallit ket diverkañ pe kendeuziñ adal pe davedoc'h hoc'h-unan",
@@ -357,7 +357,7 @@ $messages['bs'] = array(
 	'usermerge-badolduser' => 'Nevaljano staro korisničko ime',
 	'usermerge-badnewuser' => 'Nevaljano novo korisničko ime',
 	'usermerge-nonewuser' => 'Prazno novo korisničko ime - pretpostavljam da se spaja na "$1".<br />
-Kliknite na "{{int:usermerge-submit}}" za prihvatanje.',
+Kliknite na "{{int:usermerge-submit}}" za prihvatanje.', # Fuzzy
 	'usermerge-noolduser' => 'Prazno staro korisničko ime',
 	'usermerge-fieldset' => 'Korisnička imena za spajanje',
 	'usermerge-olduser' => 'Stari korisnik (spajanje sa):',
@@ -368,8 +368,8 @@ Kliknite na "{{int:usermerge-submit}}" za prihvatanje.',
 	'usermerge-userdeleted' => '$1 ($2) je obrisan.',
 	'usermerge-userdeleted-log' => 'Obrisani korisnik: $2 ($3)',
 	'usermerge-updating' => 'Ažuriram $1 tabelu ($2 do $3)',
-	'usermerge-success' => 'Spajanje sa $1 ($2) na $3 ($4) je završeno.',
-	'usermerge-success-log' => 'Korisnik $2 ($3) spojen na $4 ($5)',
+	'usermerge-success' => 'Spajanje sa $1 ($2) na $3 ($4) je završeno.', # Fuzzy
+	'usermerge-success-log' => 'Korisnik $2 ($3) spojen na $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Zapisnik spajanja korisnika',
 	'usermerge-logpagetext' => 'Ovo je zapisnik akcija spajanja korisnika.',
 	'usermerge-noselfdelete' => 'Ne možete obrisati ili spajati od samog sebe!',
@@ -413,7 +413,7 @@ $messages['cs'] = array(
 	'usermerge-badolduser' => 'Původní uživatelské jméno je neplatné',
 	'usermerge-badnewuser' => 'Neplatné nové uživatelské jmnéo',
 	'usermerge-nonewuser' => 'Nové uživatelské jméno je prázdné – předpokládá se sloučení do „$1“.<br />
-Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.',
+Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.', # Fuzzy
 	'usermerge-noolduser' => 'Původní uživatelské jméno je prázdné',
 	'usermerge-fieldset' => 'Slučovaná uživatelská jména',
 	'usermerge-olduser' => 'Původní uživatel (odkud se slučuje):',
@@ -424,8 +424,8 @@ Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.',
 	'usermerge-userdeleted' => '$1 ($2) byl smazán.',
 	'usermerge-userdeleted-log' => 'Smazaný uživatel: $2 ($3)',
 	'usermerge-updating' => 'Aktualizuje se tabulka $1 ($2 na $3)',
-	'usermerge-success' => 'Sloučení z $1 ($2) do $3 ($4) je dokončeno.',
-	'usermerge-success-log' => 'Uživatel $2 ($3) byl sloučen do $4 ($5)',
+	'usermerge-success' => 'Sloučení z $1 ($2) do $3 ($4) je dokončeno.', # Fuzzy
+	'usermerge-success-log' => 'Uživatel $2 ($3) byl sloučen do $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Kniha slučování uživatelů',
 	'usermerge-logpagetext' => 'Toto je záznam slučování uživatelů.',
 	'usermerge-noselfdelete' => 'Nemůžete smazat nebo sloučit svůj vlastní účet!',
@@ -535,7 +535,7 @@ $messages['el'] = array(
 	'usermerge-badolduser' => 'Μη έγκυρο παλιό όνομα χρήστη',
 	'usermerge-badnewuser' => 'Μη έγκυρο νέο όνομα χρήστη',
 	'usermerge-nonewuser' => 'Το νέο όνομα χρήστη είναι κενό - η συγχώνευση θα γίνει σε " $1 ".<br />
-Κάντε κλικ στο κουμπί "{{int:usermerge-submit}}" για αποδοχή.',
+Κάντε κλικ στο κουμπί "{{int:usermerge-submit}}" για αποδοχή.', # Fuzzy
 	'usermerge-noolduser' => 'Άδειασμα παλαιού ονόματος χρήστη',
 	'usermerge-fieldset' => 'Ονόματα χρηστών προς συγχώνευση',
 	'usermerge-olduser' => 'Παλιός χρήστης (συγχώνευση από):',
@@ -546,8 +546,8 @@ $messages['el'] = array(
 	'usermerge-userdeleted' => 'Ο $1 ($2) έχει διαγραφεί.',
 	'usermerge-userdeleted-log' => 'Διεγραμμένος χρήστης: $2 ($3)',
 	'usermerge-updating' => 'Ενημέρωση $1 πίνακα ($2 σε $3)',
-	'usermerge-success' => 'Η συγχώνευση από $1 ($2) σε $3 ($4) ολοκληρώθηκε.',
-	'usermerge-success-log' => 'Ο χρήστης $2 ($3) συγχωνεύθηκε σε $4 ($5)',
+	'usermerge-success' => 'Η συγχώνευση από $1 ($2) σε $3 ($4) ολοκληρώθηκε.', # Fuzzy
+	'usermerge-success-log' => 'Ο χρήστης $2 ($3) συγχωνεύθηκε σε $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Αρχείο καταγραφής συγχωνεύσεων χρηστών',
 	'usermerge-logpagetext' => 'Αυτό είναι ένα αρχείο καταγραφής συγχωνεύσεων.',
 	'usermerge-noselfdelete' => 'Δεν μπορείτε να διαγράψετε ή να συγχωνευτείτε από μόνος σας!',
@@ -559,7 +559,7 @@ $messages['el'] = array(
 	'usermerge-autopagedelete' => 'Διαγράφεται αυτόματα κατά τη συγχώνευση χρηστών',
 	'usermerge-page-unmoved' => 'Η σελίδα $1 δεν μπόρεσε να μετακινηθεί στο $2.',
 	'usermerge-page-moved' => 'Η σελίδα $1 έχει μετακινηθεί στο $2.',
-	'usermerge-move-log' => 'Αυτόματα μετακινημένη σελίδα κατά τη συγχώνευση του χρήστη "[[User:$1|$1]]" σε "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Αυτόματα μετακινημένη σελίδα κατά τη συγχώνευση του χρήστη "[[User:$1|$1]]" σε "[[User:$2|$2]]"', # Fuzzy
 	'usermerge-page-deleted' => 'Διαγεγραμμένη σελίδα $1',
 );
 
@@ -582,8 +582,8 @@ $messages['eo'] = array(
 	'usermerge-userdeleted' => '$1 ($2) estis forigita.',
 	'usermerge-userdeleted-log' => 'Forigis uzanton: $2 ($3)',
 	'usermerge-updating' => 'Ĝisdatigante tabelon $1 ($2 al $3)',
-	'usermerge-success' => 'Kunigado de $1 ($2) al $3 ($4) kompletiĝis.',
-	'usermerge-success-log' => 'Uzanto $2 ($3) kunigita al $4 ($5)',
+	'usermerge-success' => 'Kunigado de $1 ($2) al $3 ($4) kompletiĝis.', # Fuzzy
+	'usermerge-success-log' => 'Uzanto $2 ($3) kunigita al $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Protokolo pri kunigado de uzantoj',
 	'usermerge-logpagetext' => 'Jen protokolo de kunigadoj de uzantoj',
 	'usermerge-noselfdelete' => 'Vi ne povas forigi aŭ kunigi de vi mem!',
@@ -604,7 +604,7 @@ $messages['es'] = array(
 	'usermerge-badolduser' => 'Nombre de usuario antiguo inválido',
 	'usermerge-badnewuser' => 'Nombre de usuario nuevo inválido',
 	'usermerge-nonewuser' => 'Nuevo nombre de usuario vacío - asumiendo fusión en «$1».<br />
-Haga clic en «{{int:usermerge-submit}}» para aceptar.',
+Haga clic en «{{int:usermerge-submit}}» para aceptar.', # Fuzzy
 	'usermerge-noolduser' => 'Nombre de usuario antiguo vacío',
 	'usermerge-fieldset' => 'Nombres de usuario a fusionar',
 	'usermerge-olduser' => 'Antiguo usuario (fusionar de):',
@@ -615,8 +615,8 @@ Haga clic en «{{int:usermerge-submit}}» para aceptar.',
 	'usermerge-userdeleted' => 'El usuario «$1» ($2) ha sido borrado.',
 	'usermerge-userdeleted-log' => 'borró la cuenta de usuario «$2» ($3)',
 	'usermerge-updating' => 'Actualizando tabla $1 ($2 to $3)',
-	'usermerge-success' => 'La fusión de $1 ($2) a $3 ($4) ha sido completada.',
-	'usermerge-success-log' => 'fusionó al usuario «$2» ($3) con el usuario «$4» ($5)',
+	'usermerge-success' => 'La fusión de $1 ($2) a $3 ($4) ha sido completada.', # Fuzzy
+	'usermerge-success-log' => 'fusionó al usuario «$2» ($3) con el usuario «$4» ($5)', # Fuzzy
 	'usermerge-logpage' => 'Registro de fusiones del usuario',
 	'usermerge-logpagetext' => 'Este es un registro de fusiones de cuentas de usuario.',
 	'usermerge-noselfdelete' => '¡No puede borrarse o fusionarse usted mismo!',
@@ -628,7 +628,7 @@ Haga clic en «{{int:usermerge-submit}}» para aceptar.',
 	'usermerge-autopagedelete' => 'Eliminado automáticamente al fusionar usuarios',
 	'usermerge-page-unmoved' => 'La página $1 no pudo ser trasladada a $2.',
 	'usermerge-page-moved' => 'La página $1 ha sido trasladada a $2.',
-	'usermerge-move-log' => 'Página trasladada automáticamente al fusionar al usuario "[[User:$1|$1]]" con el usuario "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Página trasladada automáticamente al fusionar al usuario "[[User:$1|$1]]" con el usuario "[[User:$2|$2]]"', # Fuzzy
 	'usermerge-page-deleted' => 'La página $1 fue eliminada',
 );
 
@@ -660,8 +660,8 @@ $messages['eu'] = array(
 	'usermerge-userdeleted' => '$1 ($2) ezabatua izan da.',
 	'usermerge-userdeleted-log' => 'Ezabatutako lankidea: $2 ($3)',
 	'usermerge-updating' => '$1 taula berritzen ($2(e)tik $3(e)ra)',
-	'usermerge-success' => '$1(e)tik ($2) $3(e)ra ($4) batzea burutu da.',
-	'usermerge-success-log' => '$2 ($3) lankidea $4 ($5) lankidera batu da',
+	'usermerge-success' => '$1(e)tik ($2) $3(e)ra ($4) batzea burutu da.', # Fuzzy
+	'usermerge-success-log' => '$2 ($3) lankidea $4 ($5) lankidera batu da', # Fuzzy
 	'usermerge-logpage' => 'Lankide batze loga',
 	'usermerge-logpagetext' => 'Log hau lankide batze ekintzena da.',
 	'usermerge-noselfdelete' => 'Ezin duzu zure burua ezabatu edo batu!',
@@ -794,8 +794,8 @@ $messages['frp'] = array(
 	'usermerge-userdeleted' => '$1 ($2) at étâ suprimâ.',
 	'usermerge-userdeleted-log' => 'Contributor suprimâ : $2 ($3)',
 	'usermerge-updating' => 'Misa a jorn de la trâbla $1 (de $2 a $3)',
-	'usermerge-success' => 'La fusion de $1 ($2) a $3 ($4) est chavonâ.',
-	'usermerge-success-log' => 'Usanciér $2 ($3) fusionâ avouéc $4 ($5)',
+	'usermerge-success' => 'La fusion de $1 ($2) a $3 ($4) est chavonâ.', # Fuzzy
+	'usermerge-success-log' => 'Usanciér $2 ($3) fusionâ avouéc $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Jornal de les fusions d’usanciérs',
 	'usermerge-logpagetext' => 'O est un jornal de les accions de fusions d’usanciérs.',
 	'usermerge-noselfdelete' => 'Vos vos pouede pas suprimar ou ben fusionar vos-mémo !',
@@ -807,7 +807,7 @@ $messages['frp'] = array(
 	'usermerge-autopagedelete' => 'Suprimâ ôtomaticament pendent la fusion d’usanciérs',
 	'usermerge-page-unmoved' => 'La pâge $1 pôt pas étre dèplaciê vers $2.',
 	'usermerge-page-moved' => 'La pâge $1 at étâ dèplaciê vers $2.',
-	'usermerge-move-log' => 'Pâge dèplaciê ôtomaticament pendent la fusion de l’usanciér « [[User:$1|$1]] » en « [[User:$2|$2]] »',
+	'usermerge-move-log' => 'Pâge dèplaciê ôtomaticament pendent la fusion de l’usanciér « [[User:$1|$1]] » en « [[User:$2|$2]] »', # Fuzzy
 	'usermerge-page-deleted' => 'Pâge suprimâ $1',
 );
 
@@ -874,7 +874,7 @@ $messages['gsw'] = array(
 	'usermerge-badolduser' => 'Uugiltiger alter Benutzername',
 	'usermerge-badnewuser' => 'Uugiltiger nejer Benutzername',
 	'usermerge-nonewuser' => 'Läärer nejer Benutzername - s wird e Zämmefierig mit „$1“ vermuetet.<br />
-Klick uf "{{int:usermerge-submit}}" go s Uusfiere.',
+Klick uf "{{int:usermerge-submit}}" go s Uusfiere.', # Fuzzy
 	'usermerge-noolduser' => 'Läärer alter Benutzername',
 	'usermerge-fieldset' => 'Benutzernäme, wu solle zämmegfiert wäre',
 	'usermerge-olduser' => 'Alter Benutzername (zämmefiere vu):',
@@ -885,8 +885,8 @@ Klick uf "{{int:usermerge-submit}}" go s Uusfiere.',
 	'usermerge-userdeleted' => '„$1“ ($2) isch glescht wore.',
 	'usermerge-userdeleted-log' => 'Gleschter Benutzername: „$2“ ($3)',
 	'usermerge-updating' => 'Aktualisierig $1 Tabälle ($2 noch $3)',
-	'usermerge-success' => 'D Zämmefierig vu „$1“ ($2) noch „$3“ ($4) isch vollständig.',
-	'usermerge-success-log' => 'Benutzername „$2“ ($3) zämmegfiert mit „$4“ ($5)',
+	'usermerge-success' => 'D Zämmefierig vu „$1“ ($2) noch „$3“ ($4) isch vollständig.', # Fuzzy
+	'usermerge-success-log' => 'Benutzername „$2“ ($3) zämmegfiert mit „$4“ ($5)', # Fuzzy
 	'usermerge-logpage' => 'Benutzerkonte-Zämmefierigs-Logbuech',
 	'usermerge-logpagetext' => 'Des isch s Logbuech vu dr Benutzerkonte-Zämmefierige.',
 	'usermerge-noselfdelete' => 'Zämmefierig mit sich sälber isch nit megli!',
@@ -898,7 +898,7 @@ Klick uf "{{int:usermerge-submit}}" go s Uusfiere.',
 	'usermerge-autopagedelete' => 'Derwyylischt de Benutzerchontezämmefierig automatisch glöscht',
 	'usermerge-page-unmoved' => 'D Syte „$1“ het nüt chönne uf „$2“ verschobe werde.',
 	'usermerge-page-moved' => 'D Syte „$1“ isch uff „$2“ verschobe worde.',
-	'usermerge-move-log' => 'Dur d Benutzerchontezämmefierig vu „[[User:$1|$1]]“ noch „[[User:$2|$2]]“ automatisch verschobeni Syte',
+	'usermerge-move-log' => 'Dur d Benutzerchontezämmefierig vu „[[User:$1|$1]]“ noch „[[User:$2|$2]]“ automatisch verschobeni Syte', # Fuzzy
 	'usermerge-page-deleted' => 'Gleschti Syte $1',
 );
 
@@ -926,7 +926,7 @@ $messages['he'] = array(
 	'usermerge-badolduser' => 'שם המשתמש הישן אינו תקין',
 	'usermerge-badnewuser' => 'שם המשתמש החדש אינו תקין',
 	'usermerge-nonewuser' => 'שם המשתמש החדש ריק - כנראה שהמיזוג הוא ל־"$1".<br />
-לחצו על "{{int:usermerge-submit}}" לאישור.',
+לחצו על "{{int:usermerge-submit}}" לאישור.', # Fuzzy
 	'usermerge-noolduser' => 'שם המשתמש הישן ריק',
 	'usermerge-fieldset' => 'שמות משתמש למיזוג',
 	'usermerge-olduser' => 'משתמש ישן (מיזוג מ):',
@@ -937,8 +937,8 @@ $messages['he'] = array(
 	'usermerge-userdeleted' => '$1 ($2) נמחק.',
 	'usermerge-userdeleted-log' => 'המשתמש נמחק: $2 ($3)',
 	'usermerge-updating' => 'בתהליך עדכון הטבלה $1 ($2 ל$3)',
-	'usermerge-success' => 'המיזוג מ$1 ($2) ל$3 ($4) הושלם.',
-	'usermerge-success-log' => 'המשתמש $2 ($3) מוזג ל$4 ($5)',
+	'usermerge-success' => 'המיזוג מ$1 ($2) ל$3 ($4) הושלם.', # Fuzzy
+	'usermerge-success-log' => 'המשתמש $2 ($3) מוזג ל$4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'יומן מיזוג משתמשים',
 	'usermerge-logpagetext' => 'זהו יומן של פעולות מיזוג המשתמשים.',
 	'usermerge-noselfdelete' => 'לא ניתן למחוק או למזג מעצמך!',
@@ -950,7 +950,7 @@ $messages['he'] = array(
 	'usermerge-autopagedelete' => 'נמחק אוטומטית בזמן מיזוג חשבונות',
 	'usermerge-page-unmoved' => 'לא ניתן להעביר את הדף $1 לשם $2.',
 	'usermerge-page-moved' => 'הדף $1 הועבר לשם $2.',
-	'usermerge-move-log' => 'הדף הועבר אוטומטית בזמן מיזוג חשבון "[[User:$1|$1]]" אל "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'הדף הועבר אוטומטית בזמן מיזוג חשבון "[[User:$1|$1]]" אל "[[User:$2|$2]]"', # Fuzzy
 	'usermerge-page-deleted' => 'הדף $1 נמחק',
 );
 
@@ -1009,7 +1009,7 @@ $messages['ht'] = array(
 	'usermerge-badolduser' => 'Ansyen non itilizatè a pa bon.',
 	'usermerge-badnewuser' => 'Nouvo non itilizatè a pa bon.',
 	'usermerge-nonewuser' => 'Nouvo non itilizatè ki vid - nou kwè ou vle mete l ansanm ak $1.<br />
-Klike "{{int:usermerge-submit}}" pou aksepte operasyon an.',
+Klike "{{int:usermerge-submit}}" pou aksepte operasyon an.', # Fuzzy
 	'usermerge-noolduser' => 'Ansyen non itilizatè a vid',
 	'usermerge-olduser' => 'Ansyen non itilizatè (mete ansanm depi)',
 	'usermerge-newuser' => 'Nouvo non itilizatè (mete ansanm ak)',
@@ -1019,8 +1019,8 @@ Klike "{{int:usermerge-submit}}" pou aksepte operasyon an.',
 	'usermerge-userdeleted' => '$1 ($2) efase.',
 	'usermerge-userdeleted-log' => 'Non itilizatè ki efase a: $2 ($3)',
 	'usermerge-updating' => 'Mete ajou tablo $1 (depi $2 jouk $3)',
-	'usermerge-success' => 'Nou rive mèt ansanm $1 ($2) ak $3 ($4), depi premye kont an.',
-	'usermerge-success-log' => 'Itilizatè $2 ($3) fizyone ak $4 ($5)',
+	'usermerge-success' => 'Nou rive mèt ansanm $1 ($2) ak $3 ($4), depi premye kont an.', # Fuzzy
+	'usermerge-success-log' => 'Itilizatè $2 ($3) fizyone ak $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Jounal pou fizyon kont itilizatè',
 	'usermerge-logpagetext' => 'Men jounal ki dekri tout aksyon ki te fèt pou fizyon kont itilizatè yo.',
 	'usermerge-noselfdelete' => 'Ou pa kapab efase tèt ou oubyen fizyone tèt ou.',
@@ -1038,7 +1038,7 @@ $messages['hu'] = array(
 	'usermerge-badolduser' => 'Érvénytelen régi felhasználói név',
 	'usermerge-badnewuser' => 'Érvénytelen új felhasználói név',
 	'usermerge-nonewuser' => 'Üres új felhasználónév – feltételezett cél: „$1”<br />
-Kattints a „{{int:usermerge-submit}}”-ra az elfogadáshoz.',
+Kattints a „{{int:usermerge-submit}}”-ra az elfogadáshoz.', # Fuzzy
 	'usermerge-noolduser' => 'A régi felhasználói név üres',
 	'usermerge-fieldset' => 'Összevonandó felhasználói nevek',
 	'usermerge-olduser' => 'Régi felhasználói név (honnan):',
@@ -1049,8 +1049,8 @@ Kattints a „{{int:usermerge-submit}}”-ra az elfogadáshoz.',
 	'usermerge-userdeleted' => '„$1” ($2) törölve.',
 	'usermerge-userdeleted-log' => 'Törölt felhasználó: $2 ($3)',
 	'usermerge-updating' => '$1 tábla frissítése ($2 → $3)',
-	'usermerge-success' => '„$1” ($2) fiók beolvasztása a(z) „$3” ($4) felhasználói fiókba elkészült.',
-	'usermerge-success-log' => '„$2” ($3) felhasználó beolvasztva a(z) „$4” ($5) felhasználói fiókba',
+	'usermerge-success' => '„$1” ($2) fiók beolvasztása a(z) „$3” ($4) felhasználói fiókba elkészült.', # Fuzzy
+	'usermerge-success-log' => '„$2” ($3) felhasználó beolvasztva a(z) „$4” ($5) felhasználói fiókba', # Fuzzy
 	'usermerge-logpage' => 'Felhasználói nevek egyesítésének naplója',
 	'usermerge-logpagetext' => 'Ez a felhasználó nevek összevonásának naplója.',
 	'usermerge-noselfdelete' => 'Nem tudsz törölni vagy összevonni a saját fiókodból!',
@@ -1068,7 +1068,7 @@ $messages['ia'] = array(
 	'usermerge-badolduser' => 'Nomine de usator ancian invalide',
 	'usermerge-badnewuser' => 'Nomine de nove usator invalide',
 	'usermerge-nonewuser' => 'Nomine de nove usator vacue; nos assume un fusion con $1.<br />
-Clicca "{{int:usermerge-submit}}" pro acceptar.',
+Clicca "{{int:usermerge-submit}}" pro acceptar.', # Fuzzy
 	'usermerge-noolduser' => 'Nomine de usator ancian vacue',
 	'usermerge-fieldset' => 'Nomines de usator a fusionar',
 	'usermerge-olduser' => 'Ancian usator (fusionar ab):',
@@ -1079,8 +1079,8 @@ Clicca "{{int:usermerge-submit}}" pro acceptar.',
 	'usermerge-userdeleted' => '$1 ($2) ha essite delite.',
 	'usermerge-userdeleted-log' => 'Usator delite: $2 ($3)',
 	'usermerge-updating' => 'Actualisa le tabella $1 (de $2 a $3)',
-	'usermerge-success' => 'Le fusion de $1 ($2) a $3 ($4) es complete.',
-	'usermerge-success-log' => 'Usator $2 ($3) fusionate con $4 ($5)',
+	'usermerge-success' => 'Le fusion de $1 ($2) a $3 ($4) es complete.', # Fuzzy
+	'usermerge-success-log' => 'Usator $2 ($3) fusionate con $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Registro de fusiones de usatores',
 	'usermerge-logpagetext' => 'Isto es un registro de actiones de fusion de usatores.',
 	'usermerge-noselfdelete' => 'Tu non pote deler o fusionar ab te mesme!',
@@ -1092,7 +1092,7 @@ Clicca "{{int:usermerge-submit}}" pro acceptar.',
 	'usermerge-autopagedelete' => 'Automaticamente delite durante le fusion de usatores',
 	'usermerge-page-unmoved' => 'Le pagina $1 non poteva esser renominate a $2.',
 	'usermerge-page-moved' => 'Le pagina $1 ha essite renominate a $2.',
-	'usermerge-move-log' => 'Le pagina ha essite automaticamente renominate con le fusion del usator "[[User:$1|$1]]" in "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Le pagina ha essite automaticamente renominate con le fusion del usator "[[User:$1|$1]]" in "[[User:$2|$2]]"', # Fuzzy
 	'usermerge-page-deleted' => 'Pagina $1 delite',
 );
 
@@ -1106,7 +1106,7 @@ $messages['id'] = array(
 	'usermerge-badolduser' => 'Nama pengguna lama tidak sah',
 	'usermerge-badnewuser' => 'Nama pengguna baru tidak sah',
 	'usermerge-nonewuser' => 'Nama pengguna baru tidak dituliskan - diasumsikan akan digabungkan ke "$1".<br />
-Klik "{{int:usermerge-submit}}" untuk melanjutkan.',
+Klik "{{int:usermerge-submit}}" untuk melanjutkan.', # Fuzzy
 	'usermerge-noolduser' => 'Nama pengguna lama tidak diisi',
 	'usermerge-fieldset' => 'Akun-akun pengguna yang akan digabungkan',
 	'usermerge-olduser' => 'Pengguna lama (digabungkan dari):',
@@ -1117,8 +1117,8 @@ Klik "{{int:usermerge-submit}}" untuk melanjutkan.',
 	'usermerge-userdeleted' => '$1 ($2) telah dihapuskan.',
 	'usermerge-userdeleted-log' => 'Pengguna telah dihapuskan: $2 ($3)',
 	'usermerge-updating' => 'Memperbaharui tabel $1 ($2 hingga $3)',
-	'usermerge-success' => '$1 ($2) telah selesai digabungkan ke $3 ($4).',
-	'usermerge-success-log' => 'Pengguna $2 ($3) telah digabungkan ke $4 ($5)',
+	'usermerge-success' => '$1 ($2) telah selesai digabungkan ke $3 ($4).', # Fuzzy
+	'usermerge-success-log' => 'Pengguna $2 ($3) telah digabungkan ke $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Log penggabungan pengguna',
 	'usermerge-logpagetext' => 'Ini adalah catatan tindakan penggabungan pengguna.',
 	'usermerge-noselfdelete' => 'Anda tidak dapat menghapus atau menggabungkan dari Anda sendiri!',
@@ -1136,7 +1136,7 @@ $messages['ie'] = array(
 	'usermerge-badolduser' => 'Antiqui nómine de usator ínvalid',
 	'usermerge-badnewuser' => 'Nov nómine de usator ínvalid',
 	'usermerge-nonewuser' => 'Nov nómine de usator vacui - acceptant fusion por "$1".<br />
-Clacca "{{int:usermerge-submit}}" por acceptar.',
+Clacca "{{int:usermerge-submit}}" por acceptar.', # Fuzzy
 	'usermerge-noolduser' => 'Antiqui nómine de usator vacui',
 	'usermerge-fieldset' => 'Nómines de usator por fusion',
 	'usermerge-olduser' => 'Antiqui usator (fuser se de):',
@@ -1147,7 +1147,7 @@ Clacca "{{int:usermerge-submit}}" por acceptar.',
 	'usermerge-userdeleted' => '$1 ($2) ha esset deletet.',
 	'usermerge-userdeleted-log' => 'Usator deletet: $2 ($3)',
 	'usermerge-updating' => 'Modernisant tabelle $1 ($2 por $3)',
-	'usermerge-success' => 'Fuser se de $1 ($2) por $3 ($4) es complet.',
+	'usermerge-success' => 'Fuser se de $1 ($2) por $3 ($4) es complet.', # Fuzzy
 	'usermerge-logpage' => 'Diarium de fusion de usator',
 	'usermerge-logpagetext' => 'Ti es un diarium de actiones de fusion de usator.',
 	'usermerge-noselfdelete' => 'Vu ne posse deleter o fuser se vu self!',
@@ -1247,7 +1247,7 @@ $messages['jv'] = array(
 	'usermerge-badolduser' => 'Jeneng panganggo lawas ora sah',
 	'usermerge-badnewuser' => 'Jeneng panganggo anyar ora absah',
 	'usermerge-nonewuser' => 'Jeneng panganggo kothong - dianggep bakal digabungaké menyang $1.<br />
-Klik "{{int:usermerge-submit}}" kanggo nerusaké.',
+Klik "{{int:usermerge-submit}}" kanggo nerusaké.', # Fuzzy
 	'usermerge-noolduser' => 'Jeneng panganggo sing lawas kosong',
 	'usermerge-olduser' => 'Panganggo lawas (digabungaké saka):',
 	'usermerge-newuser' => 'Panganggo anyar (digabungaké menyang):',
@@ -1257,8 +1257,8 @@ Klik "{{int:usermerge-submit}}" kanggo nerusaké.',
 	'usermerge-userdeleted' => '$1 ($2) wis dibusak.',
 	'usermerge-userdeleted-log' => 'Panganggo dibusak: $2 ($3)',
 	'usermerge-updating' => 'Nganyari tabèl $1 ($2 menyang $3)',
-	'usermerge-success' => '$1 ($2) wis rampung digabungaké menyang $3 ($4).',
-	'usermerge-success-log' => 'Panganggo $2 ($3) wis digabungaké menyang $4 ($5)',
+	'usermerge-success' => '$1 ($2) wis rampung digabungaké menyang $3 ($4).', # Fuzzy
+	'usermerge-success-log' => 'Panganggo $2 ($3) wis digabungaké menyang $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Log panggabungan panganggo',
 	'usermerge-logpagetext' => 'Iki sawijining log aksi panggabungan panganggo.',
 	'usermerge-noselfdelete' => 'Panjenengan ora bisa mbusak utawa nggabung saka panjenengan dhéwé!',
@@ -1303,8 +1303,8 @@ $messages['km'] = array(
 	'usermerge-userdeleted' => '$1 ($2) ត្រូវបានលុបហើយ។',
 	'usermerge-userdeleted-log' => 'បានលុបអ្នកប្រើប្រាស់៖ $2($3)',
 	'usermerge-updating' => 'បន្ទាន់សម័យ $1 តារាង ($2 to $3)',
-	'usermerge-success' => 'ការបញ្ចូលរួមគ្នាពី$1($2)ទៅ$3($4)បានបញ្ចប់ដោយពេញលេញ។',
-	'usermerge-success-log' => 'អ្នកប្រើប្រាស់ $2 ($3) បញ្ចូលរួមគ្នាទៅ $4 ($5)',
+	'usermerge-success' => 'ការបញ្ចូលរួមគ្នាពី$1($2)ទៅ$3($4)បានបញ្ចប់ដោយពេញលេញ។', # Fuzzy
+	'usermerge-success-log' => 'អ្នកប្រើប្រាស់ $2 ($3) បញ្ចូលរួមគ្នាទៅ $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'កំណត់ហេតុនៃការបញ្ចួលអ្នកប្រើប្រាស់រួមគ្នា',
 	'usermerge-logpagetext' => 'នេះជាកំណត់ហេតុនៃសកម្មភាពបញ្ចូលអ្នកប្រើប្រាស់រួមគ្នា។',
 	'usermerge-noselfdelete' => 'អ្នកមិនអាច លុបចេញ ឬ បញ្ចូលរួមគ្នា ពីខ្លួនអ្នកផ្ទាល់ !',
@@ -1360,7 +1360,7 @@ $messages['ksh'] = array(
 	'usermerge-badolduser' => 'Dä ahle Metmaachername es nit jöltesch',
 	'usermerge-badnewuser' => 'Dä neue Metmaachername es nit jöltesch',
 	'usermerge-nonewuser' => 'Keine neue Metmaachername aanjejovve. Mer vermoode, dat De met „$1“ zosamme lääje wells.<br />
-Kleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.',
+Kleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.', # Fuzzy
 	'usermerge-noolduser' => 'Keine ahle Metmaachername aanjejovve',
 	'usermerge-fieldset' => 'De Name vun dä Metmaacher zum Zosamme lääje',
 	'usermerge-olduser' => 'Dä ahle Metmaachername (Zosamme lääje fun&nbsp;…):',
@@ -1371,8 +1371,8 @@ Kleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.',
 	'usermerge-userdeleted' => '„$1“ ($2) es jetz fott jeschmeße.',
 	'usermerge-userdeleted-log' => 'Fott jeschmeße Metmaacherame: „$2“ ($3)',
 	'usermerge-updating' => 'Jeändert: Tabäll $1 (vun $2 noh $3)',
-	'usermerge-success' => 'Et Zosammelääje vun „$1“ ($2) noh „$3“ ($4) es komplätt.',
-	'usermerge-success-log' => 'Metmaacher Name „$2“ ($3) zosammejelaat met „$4“ ($5)',
+	'usermerge-success' => 'Et Zosammelääje vun „$1“ ($2) noh „$3“ ($4) es komplätt.', # Fuzzy
+	'usermerge-success-log' => 'Metmaacher Name „$2“ ($3) zosammejelaat met „$4“ ($5)', # Fuzzy
 	'usermerge-logpage' => 'Logboch övver et Metmaacher-Zosammelääje',
 	'usermerge-logpagetext' => 'Dat hee es et Logboch övver de zosammejelaate Metmaachere.',
 	'usermerge-noselfdelete' => 'Ene Metmaacher met sesch sellver zosamme ze lääje, wat ene Quatsch! Dat jeiht nit.',
@@ -1384,7 +1384,7 @@ Kleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.',
 	'usermerge-autopagedelete' => 'Automattesch fottjeschmeße beim Metmaacher Zusammelääje',
 	'usermerge-page-unmoved' => 'Mer kůnnte di Sigg „$1“ nit op „$2“ ömnänne.',
 	'usermerge-page-moved' => 'De Sigg „$1“ wood wood op „$2“ ömjenannt.',
-	'usermerge-move-log' => 'Di Sigg weet automatesch ömjenannt weil mer {{GENDER:$1|dä Metmaacher|de Metmaacherėn|dä Metmaacher|de Metmaacherėn|dä Metmaacher}} „[[User:$1|$1]]“ met {{GENDER:$2|däm Metmaacher|dä Metmaacherėn|däm Metmaacher|dä Metmaacherėn|däm Metmaacher}} „[[User:$2|$2]]“ aam zesamme lääje sin.',
+	'usermerge-move-log' => 'Di Sigg weet automatesch ömjenannt weil mer {{GENDER:$1|dä Metmaacher|de Metmaacherėn|dä Metmaacher|de Metmaacherėn|dä Metmaacher}} „[[User:$1|$1]]“ met {{GENDER:$2|däm Metmaacher|dä Metmaacherėn|däm Metmaacher|dä Metmaacherėn|däm Metmaacher}} „[[User:$2|$2]]“ aam zesamme lääje sin.', # Fuzzy
 	'usermerge-page-deleted' => 'De Sigg „$1“ es fottjeschmeße.',
 );
 
@@ -1495,8 +1495,8 @@ $messages['ml'] = array(
 	'usermerge-userdeleted' => '$1 ($2) മായ്ച്ചു.',
 	'usermerge-userdeleted-log' => 'ഉപയോക്താവിനെ മായ്ച്ചു: $2 ($3)',
 	'usermerge-updating' => '$1 പട്ടിക ($2 to $3) പുതുക്കുന്നു',
-	'usermerge-success' => '$1 ($2) നെ $3 ($4) ലേക്കു സം‌യോജിപ്പിക്കുന്ന പ്രക്രിയ പൂർത്തിയായി.',
-	'usermerge-success-log' => '$2 ($3) എന്ന ഉപയോക്താവിനെ $4 ($5)ലേക്കു സം‌യോജിപ്പിച്ചു',
+	'usermerge-success' => '$1 ($2) നെ $3 ($4) ലേക്കു സം‌യോജിപ്പിക്കുന്ന പ്രക്രിയ പൂർത്തിയായി.', # Fuzzy
+	'usermerge-success-log' => '$2 ($3) എന്ന ഉപയോക്താവിനെ $4 ($5)ലേക്കു സം‌യോജിപ്പിച്ചു', # Fuzzy
 	'usermerge-logpage' => 'ഉപയോക്തൃസം‌യോജന പ്രവർത്തനരേഖ',
 	'usermerge-logpagetext' => 'ഉപയോക്താക്കളെ സം‌യോജിപ്പിച്ചതിന്റെ പ്രവർത്തനരേഖയാണിത്',
 	'usermerge-noselfdelete' => 'താങ്കൾക്ക് താങ്കളെത്തന്നെ മായ്ക്കാനോ, മറ്റൊരു അക്കുണ്ടിലേക്കു സം‌യോജിപ്പിക്കാനോ പറ്റില്ല!',
@@ -1519,7 +1519,7 @@ $messages['mr'] = array(
 	'usermerge-userdeleted' => '$1 ($2) ला वगळण्यात आलेले आहे.',
 	'usermerge-userdeleted-log' => 'सदस्य वगळला: $2 ($3)',
 	'usermerge-updating' => '$1 सारणी ताजीतवानी करीत आहोत ($2 ते $3)',
-	'usermerge-success-log' => 'सदस्य $2 ($3) ला $4 ($5) मध्ये एकत्र केले',
+	'usermerge-success-log' => 'सदस्य $2 ($3) ला $4 ($5) मध्ये एकत्र केले', # Fuzzy
 	'usermerge-logpage' => 'सदस्य एकत्रीकरण नोंद',
 	'usermerge-logpagetext' => 'ही सदस्य एकत्रीकरणाची सूची आहे', # Fuzzy
 	'usermerge-noselfdelete' => 'तुम्ही स्वत:लाच वगळू किंवा एकत्र करू शकत नाही.',
@@ -1591,7 +1591,7 @@ $messages['nb'] = array(
 	'usermerge-badolduser' => 'Gammelt brukernavn ugyldig',
 	'usermerge-badnewuser' => 'Nytt brukernavn ugyldig',
 	'usermerge-nonewuser' => 'Nytt brukernavn tomt &ndash; antar sammenslåing til «$1».<br />
-Klikk «{{int:usermerge-submit}}» for å godta.',
+Klikk «{{int:usermerge-submit}}» for å godta.', # Fuzzy
 	'usermerge-noolduser' => 'Gammelt brukernavn tomt',
 	'usermerge-fieldset' => 'Brukernavn som skal slås sammen',
 	'usermerge-olduser' => 'Gammelt brukernavn (slå sammen fra):',
@@ -1602,8 +1602,8 @@ Klikk «{{int:usermerge-submit}}» for å godta.',
 	'usermerge-userdeleted' => '$1 ($2) har blitt slettet.',
 	'usermerge-userdeleted-log' => 'Slettet bruker: $2 ($3)',
 	'usermerge-updating' => 'Oppdaterer $1-tabell ($2 til $3)',
-	'usermerge-success' => 'Sammenslåing fra $1 ($2) til $3 ($4) er fullført.',
-	'usermerge-success-log' => 'Brukeren $2 ($3) slått sammen med $4 ($5)',
+	'usermerge-success' => 'Sammenslåing fra $1 ($2) til $3 ($4) er fullført.', # Fuzzy
+	'usermerge-success-log' => 'Brukeren $2 ($3) slått sammen med $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Brukersammenslåingslogg',
 	'usermerge-logpagetext' => 'Dette er en logg over brukersammenslåinger.',
 	'usermerge-noselfdelete' => 'Du kan ikke slette eller slå sammen din egen konto!',
@@ -1615,11 +1615,11 @@ Klikk «{{int:usermerge-submit}}» for å godta.',
 	'usermerge-autopagedelete' => 'Automatisk slettet ved brukersammenslåing',
 	'usermerge-page-unmoved' => 'Side $1 kunne ikke flyttes til $2.',
 	'usermerge-page-moved' => 'Side $1 er flyttet til $2.',
-	'usermerge-move-log' => 'Flyttet siden automatisk i forbindelse med sammenslåing av bruker "[[User:$1|$1]]" til "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Flyttet siden automatisk i forbindelse med sammenslåing av bruker "[[User:$1|$1]]" til "[[User:$2|$2]]"', # Fuzzy
 	'usermerge-page-deleted' => 'Slettet side $1',
 );
 
-/** Nedersaksisch (Nedersaksisch)
+/** Nedersaksies (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
@@ -1628,7 +1628,7 @@ $messages['nds-nl'] = array(
 	'usermerge-badolduser' => 'Ongeldige ouwe gebrukersnaam',
 	'usermerge-badnewuser' => 'Ongeldige nieje gebrukersnaam',
 	'usermerge-nonewuser' => 'De nieje gebrukersnaam is niet op-egeven - der wörden vanuut egaon dat der samengevoeg mut wörden naor $1.<br />
-Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.',
+Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.', # Fuzzy
 	'usermerge-noolduser' => 'Ouwe gebrukersnaam is niet op-egeven',
 	'usermerge-fieldset' => 'Gebrukersnamen die samenevoegen mutten wörden',
 	'usermerge-olduser' => 'Ouwe gebruker (samenvoegen van):',
@@ -1639,8 +1639,8 @@ Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.',
 	'usermerge-userdeleted' => '$1 ($2) is vort-edaon.',
 	'usermerge-userdeleted-log' => 'Vort-edaone gebruker: $2 ($3)',
 	'usermerge-updating' => 'Tabel $1 an t biewarken ($2 naor $3)',
-	'usermerge-success' => 'Samenvoegen van $1 ($2) naor $3 ($4) is aoferond.',
-	'usermerge-success-log' => 'Gebruker $2 ($3) samenevoeg naor $4 ($5)',
+	'usermerge-success' => 'Samenvoegen van $1 ($2) naor $3 ($4) is aoferond.', # Fuzzy
+	'usermerge-success-log' => 'Gebruker $2 ($3) samenevoeg naor $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Logboek gebrukerssamenvoegingen',
 	'usermerge-logpagetext' => 'Dit is t logboek van gebrukerssamenvoegingen.',
 	'usermerge-noselfdelete' => 'Je kunnen je eigen niet vortdoon of samenvoegen!',
@@ -1659,7 +1659,7 @@ $messages['nl'] = array(
 	'usermerge-badolduser' => 'Ongeldige oude gebruiker',
 	'usermerge-badnewuser' => 'Ongeldige nieuwe gebruiker',
 	'usermerge-nonewuser' => 'De nieuwe gebruikersnaam is niet ingegeven - er wordt aangenomen dat er samengevoegd moet worden naar $1.<br />
-Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
+Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.', # Fuzzy
 	'usermerge-noolduser' => 'Oude gebruiker is niet ingegeven',
 	'usermerge-fieldset' => 'Samen te voegen gebruikersnamen',
 	'usermerge-olduser' => 'Oude gebruiker (samenvoegen van):',
@@ -1670,20 +1670,21 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 	'usermerge-userdeleted' => '$1 ($2) is verwijderd.',
 	'usermerge-userdeleted-log' => 'Verwijderde gebruiker: $2 ($3)',
 	'usermerge-updating' => 'Tabel $1 aan het bijwerken ($2 naar $3)',
-	'usermerge-success' => 'Samenvoegen van $1 ($2) naar $3 ($4) is afgerond.',
-	'usermerge-success-log' => 'Gebruiker $2 ($3) samengevoegd naar $4 ($5)',
+	'usermerge-success' => 'Samenvoegen van $1 ($2) naar $3 ($4) is afgerond.', # Fuzzy
+	'usermerge-success-log' => 'Gebruiker $2 ($3) samengevoegd naar $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Logboek gebruikerssamenvoegingen',
 	'usermerge-logpagetext' => 'Dit is het logboek van gebruikerssamenvoegingen.',
 	'usermerge-noselfdelete' => 'U kunt uzelf niet verwijderen of samenvoegen!',
 	'usermerge-unmergable' => 'Deze gebruiker kan niet samengevoegd worden. De gebruikersnaam of het gebruikersnummer is ingesteld als niet samen te voegen.',
 	'usermerge-protectedgroup' => 'Het is niet mogelijk de gebruikers samen te voegen. De gebruiker zit in een beschermde groep.',
 	'right-usermerge' => 'Gebruikers samenvoegen',
+	'action-usermerge' => 'gebruikers samenvoegen',
 	'usermerge-editcount' => 'Aantal bewerkingen toevoegen?',
 	'usermerge-editcount-success' => 'Bezig met het toevoegen van het aantal bewerkingen voor ($1 en $2)',
 	'usermerge-autopagedelete' => 'Automatisch verwijderd bij het samenvoegen van gebruikers',
 	'usermerge-page-unmoved' => 'De pagina $1 kon niet hernoemd worden naar $2.',
 	'usermerge-page-moved' => 'De pagina $1 is hernoemd naar $2.',
-	'usermerge-move-log' => 'Pagina automatisch hernoemd bij het samenvoegen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Pagina automatisch hernoemd bij het samenvoegen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"', # Fuzzy
 	'usermerge-page-deleted' => 'Verwijderde pagina $1',
 );
 
@@ -1698,7 +1699,7 @@ $messages['nn'] = array(
 	'usermerge-desc' => "Gjev høve til å [[Special:UserMerge|slå saman kontoar]] ved at alle referansar til ein brukar vert bytta ut til ein annen brukar i databasen, for så å slette den eine kontoen. Krev rett til ''usermerge''.",
 	'usermerge-badolduser' => 'Gammalt brukernamn ugyldig',
 	'usermerge-badnewuser' => 'Nytt brukernamn ugyldig',
-	'usermerge-nonewuser' => 'Nytt brukarnamn tomt &ndash; går ut frå samanslåing til $1.<br />Klikk "{{int:usermerge-submit}}" for å godta',
+	'usermerge-nonewuser' => 'Nytt brukarnamn tomt &ndash; går ut frå samanslåing til $1.<br />Klikk "{{int:usermerge-submit}}" for å godta', # Fuzzy
 	'usermerge-noolduser' => 'Gammalt brukarnamn tomt',
 	'usermerge-fieldset' => 'Brukarnamn som skal verta slegne saman',
 	'usermerge-olduser' => 'Gammalt brukarnamn (slå saman frå):',
@@ -1709,8 +1710,8 @@ $messages['nn'] = array(
 	'usermerge-userdeleted' => '$1 ($2) er sletta.',
 	'usermerge-userdeleted-log' => 'Sletta brukar: $2 ($3)',
 	'usermerge-updating' => 'Oppdaterer $1-tabell ($2 til $3)',
-	'usermerge-success' => 'Samanslåing frå $1 ($2) til $3 ($4) er ferdig.',
-	'usermerge-success-log' => 'Brukaren $2 ($3) slått saman med $4 ($5)',
+	'usermerge-success' => 'Samanslåing frå $1 ($2) til $3 ($4) er ferdig.', # Fuzzy
+	'usermerge-success-log' => 'Brukaren $2 ($3) slått saman med $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Brukarsamanslåingslogg',
 	'usermerge-logpagetext' => 'Dette er ein logg over brukarsamanslåingar.',
 	'usermerge-noselfdelete' => 'Du kan ikkje slette eller slå saman din eigen konto!',
@@ -1728,7 +1729,7 @@ $messages['oc'] = array(
 	'usermerge-badolduser' => "Nom d'utilizaire ancian invalid",
 	'usermerge-badnewuser' => "Nom d'utilizaire novèl invalid",
 	'usermerge-nonewuser' => "Nom d'utilizaire novèl void. Fasèm l'ipotèsi que volètz fusionar dins « $1 ».<br />
-Clicatz sus « {{int:usermerge-submit}} » per acceptar.",
+Clicatz sus « {{int:usermerge-submit}} » per acceptar.", # Fuzzy
 	'usermerge-noolduser' => "Nom d'utilizaire ancian void",
 	'usermerge-fieldset' => 'Noms d’utilizaires de fusionar',
 	'usermerge-olduser' => 'Utilizaire ancian (fusionar dempuèi) :',
@@ -1739,8 +1740,8 @@ Clicatz sus « {{int:usermerge-submit}} » per acceptar.",
 	'usermerge-userdeleted' => '$1($2) es destruch.',
 	'usermerge-userdeleted-log' => 'Contributor escafat : $2($3)',
 	'usermerge-updating' => 'Mesa a jorn de la taula $1 (de $2 a $3)',
-	'usermerge-success' => 'La fusion de $1($2) a $3($4) es completada.',
-	'usermerge-success-log' => 'Contributor $2($3) fusionat amb $4($5)',
+	'usermerge-success' => 'La fusion de $1($2) a $3($4) es completada.', # Fuzzy
+	'usermerge-success-log' => 'Contributor $2($3) fusionat amb $4($5)', # Fuzzy
 	'usermerge-logpage' => 'Jornal de las fusions de contributors',
 	'usermerge-logpagetext' => 'Aquò es un jornal de las accions de fusions de contributors.',
 	'usermerge-noselfdelete' => 'Podètz pas, vos-meteis, vos suprimir ni vos fusionar !',
@@ -1762,7 +1763,7 @@ $messages['pl'] = array(
 	'usermerge-badolduser' => 'Nieprawidłowa nazwa dotychczasowego użytkownika',
 	'usermerge-badnewuser' => 'Nieprawidłowa nazwa nowego użytkownika',
 	'usermerge-nonewuser' => 'Pusta nazwa nowego użytkownika – integracja nastąpi z $1.<br />
-Kliknij „{{int:usermerge-submit}}”, aby zaakceptować.',
+Kliknij „{{int:usermerge-submit}}”, aby zaakceptować.', # Fuzzy
 	'usermerge-noolduser' => 'Pusta nazwa dotychczasowego użytkownika',
 	'usermerge-fieldset' => 'Nazwy kont użytkowników do integracji',
 	'usermerge-olduser' => 'Dotychczasowy użytkownik (do integracji)',
@@ -1773,8 +1774,8 @@ Kliknij „{{int:usermerge-submit}}”, aby zaakceptować.',
 	'usermerge-userdeleted' => '$1 ($2) został usunięty.',
 	'usermerge-userdeleted-log' => 'usunął użytkownika „$2” ($3)',
 	'usermerge-updating' => 'Aktualizacja tablicy $1 ($2 do $3)',
-	'usermerge-success' => 'Integracja $1 ($2) z $3 ($4) zakończona.',
-	'usermerge-success-log' => 'zintegrował użytkownika „$2” ($3) do „$4” ($5)',
+	'usermerge-success' => 'Integracja $1 ($2) z $3 ($4) zakończona.', # Fuzzy
+	'usermerge-success-log' => 'zintegrował użytkownika „$2” ($3) do „$4” ($5)', # Fuzzy
 	'usermerge-logpage' => 'Rejestr integracji użytkowników',
 	'usermerge-logpagetext' => 'To jest rejestr operacji integracji użytkowników.',
 	'usermerge-noselfdelete' => 'Nie możesz usunąć lub zintegrować samego siebie!',
@@ -1786,7 +1787,7 @@ Kliknij „{{int:usermerge-submit}}”, aby zaakceptować.',
 	'usermerge-autopagedelete' => 'Automatycznie usuwane podczas scalania użytkowników',
 	'usermerge-page-unmoved' => 'Strona $1 nie mogła zostać przeniesiona pod nazwę $2.',
 	'usermerge-page-moved' => 'Strona $1 została przeniesiona do $2.',
-	'usermerge-move-log' => 'Automatyczne przeniesiono stronę po zmianie nazwy konta z "[[User:$1|$1]]" na "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Automatyczne przeniesiono stronę po zmianie nazwy konta z "[[User:$1|$1]]" na "[[User:$2|$2]]"', # Fuzzy
 	'usermerge-page-deleted' => 'Usunięto stronę $1',
 );
 
@@ -1853,7 +1854,7 @@ $messages['pt'] = array(
 	'usermerge-badolduser' => 'Nome antigo inválido',
 	'usermerge-badnewuser' => 'Nome novo inválido',
 	'usermerge-nonewuser' => 'O nome de utilizador novo está vazio - será assumida a fusão com $1.<br />
-Clique "{{int:usermerge-submit}}" para aceitar.',
+Clique "{{int:usermerge-submit}}" para aceitar.', # Fuzzy
 	'usermerge-noolduser' => 'O nome de utilizador antigo está vazio',
 	'usermerge-fieldset' => 'Nomes de utilizadores a fundir',
 	'usermerge-olduser' => 'Utilizador antigo (fundir de):',
@@ -1864,8 +1865,8 @@ Clique "{{int:usermerge-submit}}" para aceitar.',
 	'usermerge-userdeleted' => '$1 ($2) foi eliminado.',
 	'usermerge-userdeleted-log' => 'Utilizador apagado: $2 ($3)',
 	'usermerge-updating' => 'A actualizar a tabela $1 ($2 para $3)',
-	'usermerge-success' => 'A fusão de $1 ($2) com $3 ($4) está completa.',
-	'usermerge-success-log' => 'Utilizador $2 ($3) fundido com $4 ($5)',
+	'usermerge-success' => 'A fusão de $1 ($2) com $3 ($4) está completa.', # Fuzzy
+	'usermerge-success-log' => 'Utilizador $2 ($3) fundido com $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Registo de fusão de utilizadores',
 	'usermerge-logpagetext' => 'Este é um registo de acções de fusão de utilizadores.',
 	'usermerge-noselfdelete' => 'Não pode apagar ou fundir a partir de si próprio!',
@@ -1877,7 +1878,7 @@ Clique "{{int:usermerge-submit}}" para aceitar.',
 	'usermerge-autopagedelete' => 'Eliminada automaticamente ao fundir utilizadores',
 	'usermerge-page-unmoved' => 'Não foi possível mover a página $1 para $2.',
 	'usermerge-page-moved' => 'A página $1 foi movida para $2.',
-	'usermerge-move-log' => 'Página movida automaticamente ao fundir o utilizador "[[User:$1|$1]]" com "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Página movida automaticamente ao fundir o utilizador "[[User:$1|$1]]" com "[[User:$2|$2]]"', # Fuzzy
 	'usermerge-page-deleted' => 'A página $1 foi eliminada',
 );
 
@@ -1892,7 +1893,7 @@ $messages['pt-br'] = array(
 	'usermerge-badolduser' => 'Nome antigo inválido',
 	'usermerge-badnewuser' => 'Nome novo inválido',
 	'usermerge-nonewuser' => 'Novo nome de utilizador vazio - assumida fusão com "$1".<br />
-Clique "{{int:usermerge-submit}}" para aceitar.',
+Clique "{{int:usermerge-submit}}" para aceitar.', # Fuzzy
 	'usermerge-noolduser' => 'Limpar nome antigo',
 	'usermerge-fieldset' => 'Nomes de utilizador a unificar',
 	'usermerge-olduser' => 'Utilizador antigo (fundir de):',
@@ -1903,8 +1904,8 @@ Clique "{{int:usermerge-submit}}" para aceitar.',
 	'usermerge-userdeleted' => '$1 ($2) foi eliminado.',
 	'usermerge-userdeleted-log' => 'Utilizador eliminado: $2 ($3)',
 	'usermerge-updating' => 'Atualizando tabela $1 ($2 para $3)',
-	'usermerge-success' => 'Fusão de $1 ($2) para $3 ($4) está completa.',
-	'usermerge-success-log' => 'Utilizador $2 ($3) fundido com $4 ($5)',
+	'usermerge-success' => 'Fusão de $1 ($2) para $3 ($4) está completa.', # Fuzzy
+	'usermerge-success-log' => 'Utilizador $2 ($3) fundido com $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Registo de fusão de utilizadores',
 	'usermerge-logpagetext' => 'Este é um registro de ações de fusão de utilizadores.',
 	'usermerge-noselfdelete' => 'Você não pode apagar ou fundir a partir de si próprio!',
@@ -1923,7 +1924,7 @@ $messages['ro'] = array(
 	'usermerge-badolduser' => 'Nume de utilizator vechi incorect',
 	'usermerge-badnewuser' => 'Nume de utilizator nou incorect',
 	'usermerge-nonewuser' => 'Noul nume de utilizator nu este introdus - Este presupusă fuzionarea în "$1".<br />
-Apasă "{{int:usermerge-submit}}" pentru a accepta.',
+Apasă "{{int:usermerge-submit}}" pentru a accepta.', # Fuzzy
 	'usermerge-noolduser' => 'Nume de utilizator vechi gol',
 	'usermerge-fieldset' => 'Nume de utilizator de contopit',
 	'usermerge-olduser' => 'Utilizator vechi (redenumește din):',
@@ -1934,8 +1935,8 @@ Apasă "{{int:usermerge-submit}}" pentru a accepta.',
 	'usermerge-userdeleted' => '$1 ($2) a fost șters.',
 	'usermerge-userdeleted-log' => 'Şterge utilizator: $2 ($3)',
 	'usermerge-updating' => 'Actualizarea tabelului $1 ($2 în $3)',
-	'usermerge-success' => 'Contopirea din $1 ($2) în $3 ($4) este completă.',
-	'usermerge-success-log' => 'Utilizatorul $2 ($3) a fost contopit în $4 ($5)',
+	'usermerge-success' => 'Contopirea din $1 ($2) în $3 ($4) este completă.', # Fuzzy
+	'usermerge-success-log' => 'Utilizatorul $2 ($3) a fost contopit în $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Jurnal contopire utilizatori',
 	'usermerge-logpagetext' => 'Acesta este jurnalul acțiunilor de contopire a conturilor de utilizator.',
 	'usermerge-noselfdelete' => 'Nu poate fi șters sau contopit contul propriu!',
@@ -2053,7 +2054,7 @@ $messages['sk'] = array(
 	'usermerge-badolduser' => 'Neplatné staré používateľské meno',
 	'usermerge-badnewuser' => 'Neplatné nové používateľské meno',
 	'usermerge-nonewuser' => 'Prázdne nové používateľské meno - predpokladá sa zlúčenie do „$1“.<br />
-Kliknutím na „{{int:usermerge-submit}}“ prijmete.',
+Kliknutím na „{{int:usermerge-submit}}“ prijmete.', # Fuzzy
 	'usermerge-noolduser' => 'Prázdne staré používateľské meno',
 	'usermerge-fieldset' => 'Zlúčiť používateľov',
 	'usermerge-olduser' => 'Starý používateľ (zlúčiť odtiaľto)',
@@ -2064,8 +2065,8 @@ Kliknutím na „{{int:usermerge-submit}}“ prijmete.',
 	'usermerge-userdeleted' => '$1($2) bol zmazaný.',
 	'usermerge-userdeleted-log' => 'Zmazaný používateľ: $2($3)',
 	'usermerge-updating' => 'Aktualizuje sa tabuľka $1 ($2 na $3)',
-	'usermerge-success' => 'Zlúčenie z $1($2) do $3($4) je dokončené.',
-	'usermerge-success-log' => 'Používateľ $2($3) bol zlúčený do $4($5)',
+	'usermerge-success' => 'Zlúčenie z $1($2) do $3($4) je dokončené.', # Fuzzy
+	'usermerge-success-log' => 'Používateľ $2($3) bol zlúčený do $4($5)', # Fuzzy
 	'usermerge-logpage' => 'Záznam zlúčení používateľov',
 	'usermerge-logpagetext' => 'Toto je záznam zlúčení používateľov.',
 	'usermerge-noselfdelete' => 'Nemôžete zmazať alebo zlúčiť svoj účet!',
@@ -2130,8 +2131,8 @@ $messages['sr-ec'] = array(
 	'usermerge-userdeleted' => '$1 ($2) је обрисан.',
 	'usermerge-userdeleted-log' => 'Обрисан корисник: $2 ($3)',
 	'usermerge-updating' => 'Ажурирање $1 табеле ($2 на $3)',
-	'usermerge-success' => 'Спајање $1 ($2) са $3 ($4) је завршено.',
-	'usermerge-success-log' => 'Корисник $2 ($3) је спојен са $4 ($5)',
+	'usermerge-success' => 'Спајање $1 ($2) са $3 ($4) је завршено.', # Fuzzy
+	'usermerge-success-log' => 'Корисник $2 ($3) је спојен са $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Историја спајања корисника',
 	'usermerge-logpagetext' => 'Ово је историја спајања корисника.',
 	'usermerge-noselfdelete' => 'Не можете да се обришете или спојите са другим налогом!',
@@ -2156,8 +2157,8 @@ $messages['sr-el'] = array(
 	'usermerge-userdeleted' => '$1 ($2) je obrisan.',
 	'usermerge-userdeleted-log' => 'Obrisan korisnik: $2 ($3)',
 	'usermerge-updating' => 'Ažuriranje $1 tabele ($2 na $3)',
-	'usermerge-success' => 'Spajanje $1 ($2) sa $3 ($4) je završeno.',
-	'usermerge-success-log' => 'Korisnik $2 ($3) je spojen sa $4 ($5)',
+	'usermerge-success' => 'Spajanje $1 ($2) sa $3 ($4) je završeno.', # Fuzzy
+	'usermerge-success-log' => 'Korisnik $2 ($3) je spojen sa $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Istorija spajanja korisnika',
 	'usermerge-logpagetext' => 'Ovo je istorija spajanja korisnika.',
 	'usermerge-noselfdelete' => 'Ne možete da se obrišete ili spojite sa drugim nalogom!',
@@ -2174,7 +2175,7 @@ $messages['stq'] = array(
 	'usermerge-badolduser' => 'Uungultigen oolden Benutsernoome',
 	'usermerge-badnewuser' => 'Uungultigen näien Benutsernoome',
 	'usermerge-nonewuser' => 'Loosen näien Benutsernoome - der is ne Touhoopefierenge mäd „$1“ fermoudjen.<br />
-Klik ap  „{{int:usermerge-submit}}“ toun Uutfieren.',
+Klik ap  „{{int:usermerge-submit}}“ toun Uutfieren.', # Fuzzy
 	'usermerge-noolduser' => 'Loosen oolden Benutsernoome',
 	'usermerge-olduser' => 'Oolden Benutsernoome (touhoopefieren fon):',
 	'usermerge-newuser' => 'Näien Benutsernoome (touhoopefieren ätter):',
@@ -2184,8 +2185,8 @@ Klik ap  „{{int:usermerge-submit}}“ toun Uutfieren.',
 	'usermerge-userdeleted' => '„$1“ ($2) wuud läsked.',
 	'usermerge-userdeleted-log' => 'Läskeden Benutsernoome: „$2“ ($3)',
 	'usermerge-updating' => 'Aktualisierenge $1 Tabelle ($2 ätter $3)',
-	'usermerge-success' => 'Ju Touhoopefierenge fon „$1“ ($2) ätter „$3“ ($4) is fulboodich.',
-	'usermerge-success-log' => 'Benutsernoome „$2“ ($3) touhoopefierd mäd „$4“ ($5)',
+	'usermerge-success' => 'Ju Touhoopefierenge fon „$1“ ($2) ätter „$3“ ($4) is fulboodich.', # Fuzzy
+	'usermerge-success-log' => 'Benutsernoome „$2“ ($3) touhoopefierd mäd „$4“ ($5)', # Fuzzy
 	'usermerge-logpage' => 'Benutserkonten-Touhoopefierenge-Logbouk',
 	'usermerge-logpagetext' => 'Dit is dät Logbouk fon do Benutserkonten-Touhoopefierengen.',
 	'usermerge-noselfdelete' => 'Touhoopefierenge mäd aan sälwen is nit muugelk!',
@@ -2212,7 +2213,7 @@ $messages['sv'] = array(
 	'usermerge-desc' => "Ger möjlighet att [[Special:UserMerge|slå samman användarkonton]] genom att alla referenser till en användare byts ut till en annan användare i databasen, samt att efter sammanslagning radera gamla konton. Kräver behörigheten ''usermerge''.",
 	'usermerge-badolduser' => 'Ogiltigt gammalt användarnamn',
 	'usermerge-badnewuser' => 'Ogiltigt nytt användarnamn',
-	'usermerge-nonewuser' => 'Nytt användarnamn tomt. Antar sammanslagning till $1.<br />Klicka på "{{int:usermerge-submit}}" för att godkänna.',
+	'usermerge-nonewuser' => 'Nytt användarnamn tomt. Antar sammanslagning till $1.<br />Klicka på "{{int:usermerge-submit}}" för att godkänna.', # Fuzzy
 	'usermerge-noolduser' => 'Gammalt användarnamn tomt',
 	'usermerge-fieldset' => 'Användarnamn att förena',
 	'usermerge-olduser' => 'Gammalt användarnamn (slå ihop från)',
@@ -2223,8 +2224,8 @@ $messages['sv'] = array(
 	'usermerge-userdeleted' => '$1 ($2) har raderats.',
 	'usermerge-userdeleted-log' => 'Raderad användare: $2 ($3)',
 	'usermerge-updating' => 'Uppdaterar $1-tabell  ($2 till $3)',
-	'usermerge-success' => 'Sammanslagning från $1 ($2) till $3 ($4) är genomförd.',
-	'usermerge-success-log' => 'Användare $2 ($3) sammanslagen med $4 ($5)',
+	'usermerge-success' => 'Sammanslagning från $1 ($2) till $3 ($4) är genomförd.', # Fuzzy
+	'usermerge-success-log' => 'Användare $2 ($3) sammanslagen med $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Användarsammanslagningslogg',
 	'usermerge-logpagetext' => 'Det här är en logg över sammanslagningar av användarkonton.',
 	'usermerge-noselfdelete' => 'Du kan inte radera eller slå samman ditt eget konto!',
@@ -2236,7 +2237,7 @@ $messages['sv'] = array(
 	'usermerge-autopagedelete' => 'Ta bort automatiskt när användare slås ihop',
 	'usermerge-page-unmoved' => 'Sidan $1 kan inte tas bort till $2',
 	'usermerge-page-moved' => 'Sidan $1 måste tas bort till $2',
-	'usermerge-move-log' => 'Ta automatiskt bort sidan när du slår ihop användare "[[User:$1|$1]]" med "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Ta automatiskt bort sidan när du slår ihop användare "[[User:$1|$1]]" med "[[User:$2|$2]]"', # Fuzzy
 	'usermerge-page-deleted' => 'Tog bort sidan $1',
 );
 
@@ -2258,8 +2259,8 @@ $messages['szl'] = array(
 	'usermerge-userdeleted' => '$1 ($2) zostoł wyćepany.',
 	'usermerge-userdeleted-log' => 'wyćepoł użytkowńika „$2” ($3)',
 	'usermerge-updating' => 'Uodśwjeżańy tabuli $1 ($2 do $3)',
-	'usermerge-success' => 'Kuplowańy $1 ($2) s $3 ($4) zakończůne.',
-	'usermerge-success-log' => 'skuplowoł użytkowńika „$2” ($3) do „$4” ($5)',
+	'usermerge-success' => 'Kuplowańy $1 ($2) s $3 ($4) zakończůne.', # Fuzzy
+	'usermerge-success-log' => 'skuplowoł użytkowńika „$2” ($3) do „$4” ($5)', # Fuzzy
 	'usermerge-logpage' => 'Rejer kuplowańo użytkowńików',
 	'usermerge-logpagetext' => 'To je rejer uoperacyji kuplowańo użytkowńikůw.',
 	'usermerge-noselfdelete' => 'Ńy idźe wyćepać abo kuplować samygo śebje!',
@@ -2293,13 +2294,13 @@ $messages['te'] = array(
 	'usermerge-userdeleted' => '$1 ($2)ని తొలగించాం.',
 	'usermerge-userdeleted-log' => 'వాడుకరిని తొలగించాం: $2 ($3)',
 	'usermerge-updating' => '$1 పట్టిక ($2 నుండి $3 వరకు) ని తాజాకరిస్తున్నాం',
-	'usermerge-success' => '$1 ($2) నుండి $3 ($4) కి విలీనం పూర్తయ్యింది.',
-	'usermerge-success-log' => '$2 ($3) వాడుకరి $4 ($5)లో విలీనమయ్యారు',
+	'usermerge-success' => '$1 ($2) నుండి $3 ($4) కి విలీనం పూర్తయ్యింది.', # Fuzzy
+	'usermerge-success-log' => '$2 ($3) వాడుకరి $4 ($5)లో విలీనమయ్యారు', # Fuzzy
 	'usermerge-logpage' => 'వాడుకరి విలీనాల చిట్టా',
 	'usermerge-logpagetext' => 'ఇది వాడుకరి విలీనాల చిట్టా.',
 	'usermerge-noselfdelete' => 'మిమ్మల్ని మీరే తొలగించుకోలేరు లేదా మీలో విలీనం కాలేరు!',
 	'right-usermerge' => 'వాడుకరులను విలీనం చేయగలగడం',
-	'usermerge-move-log' => '"[[User:$1|$1]]" పేరును "[[User:$2|$2]]"కు మార్చేప్పుడు పేజీని ఆటోమాటిగ్గా తరలించాం',
+	'usermerge-move-log' => '"[[User:$1|$1]]" పేరును "[[User:$2|$2]]"కు మార్చేప్పుడు పేజీని ఆటోమాటిగ్గా తరలించాం', # Fuzzy
 );
 
 /** Tajik (Cyrillic script) (тоҷикӣ)
@@ -2349,7 +2350,7 @@ $messages['tl'] = array(
 	'usermerge-badolduser' => 'Hindi tanggap na lumang pangalan ng tagagamit',
 	'usermerge-badnewuser' => 'Hindi tanggap na bagong pangalan ng tagagamit',
 	'usermerge-nonewuser' => 'Tanggalan ng laman ang bagong pangalan ng tagagamit - ipinapalagay na isasanib sa $1.<br />
-Pindutin ang "{{int:usermerge-submit}}" upang tanggapin.',
+Pindutin ang "{{int:usermerge-submit}}" upang tanggapin.', # Fuzzy
 	'usermerge-noolduser' => 'Tanggalan ng laman ang lumang pangalan ng tagagamit',
 	'usermerge-fieldset' => 'Mga pangalan ng tagagamit na pagsasanibin',
 	'usermerge-olduser' => 'Lumang tagagamit (isanib mula sa):',
@@ -2360,8 +2361,8 @@ Pindutin ang "{{int:usermerge-submit}}" upang tanggapin.',
 	'usermerge-userdeleted' => 'Nabura na ang $1 ($2).',
 	'usermerge-userdeleted-log' => 'Binurang tagagamit: $2 ($3)',
 	'usermerge-updating' => 'Isinasapanahon ang $1 na tabla ($2 hanggang $3)',
-	'usermerge-success' => 'Ganap na ang pagsanib mula sa $1 ($2) patungo sa $3 ($4).',
-	'usermerge-success-log' => 'Tagagamit na $2 ($3) isinanib sa $4 ($5)',
+	'usermerge-success' => 'Ganap na ang pagsanib mula sa $1 ($2) patungo sa $3 ($4).', # Fuzzy
+	'usermerge-success-log' => 'Tagagamit na $2 ($3) isinanib sa $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Talaan ng pagsasanib ng tagagamit',
 	'usermerge-logpagetext' => 'Isa itong talaan ng mga galaw na pangpagsasanib ng tagagamit.',
 	'usermerge-noselfdelete' => 'Hindi ka maaaring magbura o sumanib mula sa sarili mo!',
@@ -2373,7 +2374,7 @@ Pindutin ang "{{int:usermerge-submit}}" upang tanggapin.',
 	'usermerge-autopagedelete' => 'Kusang nabubura kapag pinagsasanib ang mga tagagamit',
 	'usermerge-page-unmoved' => 'Hindi mailipat ang pahinang $1 papunta sa $2.',
 	'usermerge-page-moved' => 'Ang pahinang $1 ay nailipat papunta sa $2.',
-	'usermerge-move-log' => 'Kusang inilipat ang pahina habang pinagsasanib ang tagagamit na si "[[User:$1|$1]]" papunta sa "[[User:$2|$2]]"',
+	'usermerge-move-log' => 'Kusang inilipat ang pahina habang pinagsasanib ang tagagamit na si "[[User:$1|$1]]" papunta sa "[[User:$2|$2]]"', # Fuzzy
 	'usermerge-page-deleted' => 'Binura ang pahinang $1',
 );
 
@@ -2388,7 +2389,7 @@ $messages['tr'] = array(
 	'usermerge-badolduser' => 'Geçersiz eski kullanıcı adı',
 	'usermerge-badnewuser' => 'Geçersiz yeni kullanıcı',
 	'usermerge-nonewuser' => 'Yeni boş kullanıcıadı - "$1" ile birleştirme varsayılıyor.<br />
-Kabul etmek için "{{int:usermerge-submit}}"e tıklayın.',
+Kabul etmek için "{{int:usermerge-submit}}"e tıklayın.', # Fuzzy
 	'usermerge-noolduser' => 'Boş eski kullanıcı adı',
 	'usermerge-fieldset' => 'Birleştirilecek kullanıcı adları',
 	'usermerge-olduser' => 'Eski kullanıcı (dan birleştir):',
@@ -2399,8 +2400,8 @@ Kabul etmek için "{{int:usermerge-submit}}"e tıklayın.',
 	'usermerge-userdeleted' => '$1 ($2) silindi.',
 	'usermerge-userdeleted-log' => 'Silinen kullanıcı: $2 ($3)',
 	'usermerge-updating' => '$1 tablosu ($2 den $3 e) güncelleniyor',
-	'usermerge-success' => '$1 ($2) kullanıcısından $3 ($4) kullanıcısına birleştirme tamamlandı.',
-	'usermerge-success-log' => '$2 ($3) kullanıcısı $4 ($5) kullanıcısına birleştirildi',
+	'usermerge-success' => '$1 ($2) kullanıcısından $3 ($4) kullanıcısına birleştirme tamamlandı.', # Fuzzy
+	'usermerge-success-log' => '$2 ($3) kullanıcısı $4 ($5) kullanıcısına birleştirildi', # Fuzzy
 	'usermerge-logpage' => 'Kullanıcı birleştirme günlüğü',
 	'usermerge-logpagetext' => 'Bu bir kullanıcı birleştirme eylemleri günlüğüdür.',
 	'usermerge-noselfdelete' => 'Kendinizden birleştiremez ya da silemezsiniz!',
@@ -2462,7 +2463,7 @@ $messages['uk'] = array(
  */
 $messages['uz'] = array(
 	'usermerge-userdeleted-log' => "Ishtirokchi o'chirildi: $2 ($3)",
-	'usermerge-success-log' => 'Ishtirokchi $2 ($3) -> $4 ($5)ga birlashtirildi',
+	'usermerge-success-log' => 'Ishtirokchi $2 ($3) -> $4 ($5)ga birlashtirildi', # Fuzzy
 	'usermerge-logpage' => 'Ishtirokchilarni birlashtirish qaydlari',
 );
 
@@ -2543,7 +2544,7 @@ $messages['yue'] = array(
 	'usermerge-badtoken' => '無效嘅編輯幣',
 	'usermerge-userdeleted' => '$1($2) 已經刪除咗。',
 	'usermerge-updating' => '更新緊 $1 表 ($2 到 $3)',
-	'usermerge-success' => '由 $1($2) 到 $3($4) 嘅合併已經完成。',
+	'usermerge-success' => '由 $1($2) 到 $3($4) 嘅合併已經完成。', # Fuzzy
 );
 
 /** Simplified Chinese (中文（简体）‎)
@@ -2566,8 +2567,8 @@ $messages['zh-hans'] = array(
 	'usermerge-userdeleted' => '$1（$2） 已删除。',
 	'usermerge-userdeleted-log' => '已删除的用户： $2 （$3）',
 	'usermerge-updating' => '正在更新 $1 表格 （$2 到 $3）',
-	'usermerge-success' => '由 $1（$2） 到 $3（$4） 的合并已经完成。',
-	'usermerge-success-log' => '用户 $2 （$3） 合并到 $4 （$5）',
+	'usermerge-success' => '由 $1（$2） 到 $3（$4） 的合并已经完成。', # Fuzzy
+	'usermerge-success-log' => '用户 $2 （$3） 合并到 $4 （$5）', # Fuzzy
 	'usermerge-logpage' => '用户合并日志',
 	'usermerge-logpagetext' => '这是一份用户合并动作的记录。',
 	'usermerge-noselfdelete' => '您不能将自己删除或者合并！',
@@ -2596,8 +2597,8 @@ $messages['zh-hant'] = array(
 	'usermerge-userdeleted' => '$1（$2） 已刪除。',
 	'usermerge-userdeleted-log' => '已刪除的用戶： $2 （$3）',
 	'usermerge-updating' => '正在更新 $1 表格 （$2 到 $3）',
-	'usermerge-success' => '由 $1（$2） 到 $3（$4） 的合併已經完成。',
-	'usermerge-success-log' => '用戶 $2 （$3） 合併到 $4 （$5）',
+	'usermerge-success' => '由 $1（$2） 到 $3（$4） 的合併已經完成。', # Fuzzy
+	'usermerge-success-log' => '用戶 $2 （$3） 合併到 $4 （$5）', # Fuzzy
 	'usermerge-logpage' => '使用者合併記錄',
 	'usermerge-logpagetext' => '這是一份用戶合併動作的記錄。',
 	'usermerge-noselfdelete' => '您不能將自己刪除或者合併！',
