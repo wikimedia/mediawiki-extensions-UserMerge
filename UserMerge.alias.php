@@ -173,7 +173,7 @@ $specialPageAliases['nb'] = array(
 	'UserMerge' => array( 'Slå_sammen_brukere' ),
 );
 
-/** Nedersaksies (Nedersaksies) */
+/** Low Saxon (Netherlands) (Nedersaksies) */
 $specialPageAliases['nds-nl'] = array(
 	'UserMerge' => array( 'Gebrukers_samenvoegen' ),
 );

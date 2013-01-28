@@ -1658,8 +1658,9 @@ $messages['nl'] = array(
 	'usermerge-desc' => "Voegt een [[Special:UserMerge|speciale pagina]] toe om gebruikers samen te voegen en de oude gebruiker(s) te verwijderen. Hiervoor is het recht ''usermerge'' nodig.",
 	'usermerge-badolduser' => 'Ongeldige oude gebruiker',
 	'usermerge-badnewuser' => 'Ongeldige nieuwe gebruiker',
-	'usermerge-nonewuser' => 'De nieuwe gebruikersnaam is niet ingegeven - er wordt aangenomen dat er samengevoegd moet worden naar $1.<br />
-Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.', # Fuzzy
+	'usermerge-nonewuser' => 'De nieuwe gebruikersnaam is niet ingegeven.
+Er wordt aangenomen dat er samengevoegd moet worden naar "{{GENDER:$1|$1}}".<br />
+Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 	'usermerge-noolduser' => 'Oude gebruiker is niet ingegeven',
 	'usermerge-fieldset' => 'Samen te voegen gebruikersnamen',
 	'usermerge-olduser' => 'Oude gebruiker (samenvoegen van):',
@@ -1670,8 +1671,8 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.', # Fuzzy
 	'usermerge-userdeleted' => '$1 ($2) is verwijderd.',
 	'usermerge-userdeleted-log' => 'Verwijderde gebruiker: $2 ($3)',
 	'usermerge-updating' => 'Tabel $1 aan het bijwerken ($2 naar $3)',
-	'usermerge-success' => 'Samenvoegen van $1 ($2) naar $3 ($4) is afgerond.', # Fuzzy
-	'usermerge-success-log' => 'Gebruiker $2 ($3) samengevoegd naar $4 ($5)', # Fuzzy
+	'usermerge-success' => 'Samenvoegen van $1 ($2) naar {{GENDER:$3|$3}} ($4) is afgerond.',
+	'usermerge-success-log' => 'Gebruiker $2 ($3) samengevoegd naar {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Logboek gebruikerssamenvoegingen',
 	'usermerge-logpagetext' => 'Dit is het logboek van gebruikerssamenvoegingen.',
 	'usermerge-noselfdelete' => 'U kunt uzelf niet verwijderen of samenvoegen!',
@@ -1684,7 +1685,7 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.', # Fuzzy
 	'usermerge-autopagedelete' => 'Automatisch verwijderd bij het samenvoegen van gebruikers',
 	'usermerge-page-unmoved' => 'De pagina $1 kon niet hernoemd worden naar $2.',
 	'usermerge-page-moved' => 'De pagina $1 is hernoemd naar $2.',
-	'usermerge-move-log' => 'Pagina automatisch hernoemd bij het samenvoegen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|$2]]"', # Fuzzy
+	'usermerge-move-log' => 'Pagina automatisch hernoemd bij het samenvoegen van gebruiker "[[User:$1|$1]]" naar "[[User:$2|{{GENDER:$2|$2}}]]"',
 	'usermerge-page-deleted' => 'Verwijderde pagina $1',
 );
 
