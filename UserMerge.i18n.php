@@ -1956,6 +1956,7 @@ $messages['roa-tara'] = array(
 	'usermerge-deleteolduser' => 'Scangellate vecchie utende',
 	'usermerge-page-unmoved' => "'A pàgene $1 non ge pò essere spustate sus a $2.",
 	'usermerge-page-moved' => "'A pàgene $1 ha state spustete sus a $2.",
+	'usermerge-page-deleted' => 'Pàgene scangellate $1',
 );
 
 /** Russian (русский)
@@ -2553,6 +2554,7 @@ $messages['yue'] = array(
  * @author Gaoxuewei
  * @author Gzdavidwong
  * @author Liangent
+ * @author 乌拉跨氪
  */
 $messages['zh-hans'] = array(
 	'usermerge' => '用户合并和删除',
@@ -2577,6 +2579,7 @@ $messages['zh-hans'] = array(
 	'usermerge-unmergable' => '无法完成用户合并 - ID或者名称被标记为不可合并。',
 	'usermerge-protectedgroup' => '无法完成用户合并 - 用户位于受保护组中。',
 	'right-usermerge' => '合并用户',
+	'action-usermerge' => '合并用户',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
