@@ -168,7 +168,7 @@ $specialPageAliases['mr'] = array(
 	'UserMerge' => array( 'सदस्यविलीनीकरण' ),
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎) */
+/** Norwegian Bokmål (norsk bokmål) */
 $specialPageAliases['nb'] = array(
 	'UserMerge' => array( 'Slå_sammen_brukere' ),
 );
