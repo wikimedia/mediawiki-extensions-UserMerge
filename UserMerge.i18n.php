@@ -2551,6 +2551,7 @@ $messages['yue'] = array(
 );
 
 /** Simplified Chinese (中文（简体）‎)
+ * @author Dimension
  * @author Gaoxuewei
  * @author Gzdavidwong
  * @author Liangent
@@ -2580,6 +2581,7 @@ $messages['zh-hans'] = array(
 	'usermerge-protectedgroup' => '无法完成用户合并 - 用户位于受保护组中。',
 	'right-usermerge' => '合并用户',
 	'action-usermerge' => '合并用户',
+	'usermerge-page-deleted' => '页面$1已删除',
 );
 
 /** Traditional Chinese (中文（繁體）‎)
