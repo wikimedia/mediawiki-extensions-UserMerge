@@ -2556,10 +2556,12 @@ $messages['yue'] = array(
  * @author Gaoxuewei
  * @author Gzdavidwong
  * @author Liangent
+ * @author Yfdyh000
  * @author 乌拉跨氪
  */
 $messages['zh-hans'] = array(
 	'usermerge' => '用户合并和删除',
+	'usermerge-desc' => "将在wiki数据库中[[Special:UserMerge|合并一个用户到另一个用户]] - 合并后删除旧用户。需要''usermerge''权限",
 	'usermerge-badolduser' => '无效的旧用户名',
 	'usermerge-badnewuser' => '无效的新用户名',
 	'usermerge-nonewuser' => '清除新用户名 - 假设合并到$1。<br />点击<em>{{int:usermerge-submit}}</em>以接受。', # Fuzzy
