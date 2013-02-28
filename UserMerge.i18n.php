@@ -54,7 +54,7 @@ Click "{{int:usermerge-submit}}" to accept.',
  * @author Umherirrender
  */
 $messages['qqq'] = array(
-	'usermerge-desc' => '{{desc}}',
+	'usermerge-desc' => '{{desc|name=User Merge|url=http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete}}',
 	'usermerge-submit' => '{{Identical|Merge user}}',
 	'usermerge-badtoken' => '{{Identical|Invalid edit token}}',
 	'usermerge-userdeleted' => 'Status message. Parameters:
