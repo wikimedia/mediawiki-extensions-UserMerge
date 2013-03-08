@@ -319,6 +319,7 @@ $messages['bn'] = array(
 );
 
 /** Breton (brezhoneg)
+ * @author Fohanno
  * @author Fulup
  */
 $messages['br'] = array(
@@ -346,6 +347,7 @@ Klikañ war "{{int:usermerge-submit}}" evit asantiñ.', # Fuzzy
 	'usermerge-unmergable' => 'Dibosupl kendeuziñ adal un implijer - un niv. anaout pe un anv bet termenet evel digendeuzadus.',
 	'usermerge-protectedgroup' => 'Dibosupl kendeuziñ an implijer - emañ-eñ en ur strollad gwarezet',
 	'right-usermerge' => 'Kendeuziñ implijerien',
+	'action-usermerge' => 'kendeuziñ implijerien',
 	'usermerge-page-deleted' => 'Pajenn $1 diverket',
 );
 
