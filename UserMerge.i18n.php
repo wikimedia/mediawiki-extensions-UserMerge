@@ -2586,6 +2586,12 @@ $messages['zh-hans'] = array(
 	'usermerge-protectedgroup' => '无法完成用户合并 - 用户位于受保护组中。',
 	'right-usermerge' => '合并用户',
 	'action-usermerge' => '合并用户',
+	'usermerge-editcount' => '添加编辑计数吗？',
+	'usermerge-editcount-success' => '添加 $1 和 $2 的编辑计数吗',
+	'usermerge-autopagedelete' => '合并用户时自动删除',
+	'usermerge-page-unmoved' => '页面$1无法被移动到$2。',
+	'usermerge-page-moved' => '页面$1已被移动到$2。',
+	'usermerge-move-log' => '合并用户“[[User:$1|$1]]”到“[[User:$2|{{GENDER:$2|$2}}]]”时自动移动页面',
 	'usermerge-page-deleted' => '页面$1已删除',
 );
 
