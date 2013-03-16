@@ -2466,10 +2466,11 @@ $messages['uk'] = array(
 
 /** Uzbek (oʻzbekcha)
  * @author CoderSI
+ * @author Sociologist
  */
 $messages['uz'] = array(
-	'usermerge-userdeleted-log' => "Ishtirokchi o'chirildi: $2 ($3)",
-	'usermerge-success-log' => 'Ishtirokchi $2 ($3) -> $4 ($5)ga birlashtirildi', # Fuzzy
+	'usermerge-userdeleted-log' => 'Foydalanuvchi $2 ($3) chetlatilgan',
+	'usermerge-success-log' => 'Foydalanuvchi $2 ($3) {{GENDER:$4|$4}} ($5) bilan birlashtirilgan',
 	'usermerge-logpage' => 'Ishtirokchilarni birlashtirish qaydlari',
 );
 
