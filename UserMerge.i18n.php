@@ -1238,6 +1238,7 @@ $messages['ja'] = array(
 	'usermerge-page-unmoved' => 'ページ「$1」を「$2」に移動できませんでした。',
 	'usermerge-page-moved' => 'ページ「$1」を「$2」に移動しました。',
 	'usermerge-move-log' => '統合と共に「[[User:$1|$1]]」を「[[User:$2|{{GENDER:$2|$2}}]]」へ自動的に移動しました',
+	'usermerge-page-deleted' => 'ページ「$1」を削除しました',
 );
 
 /** Javanese (Basa Jawa)
