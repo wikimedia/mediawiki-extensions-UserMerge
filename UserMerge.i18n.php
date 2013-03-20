@@ -85,6 +85,10 @@ $messages['qqq'] = array(
 	'usermerge-editcount-success' => 'Message that indicates two users have been merged. Parameters:
 * $1 is the user ID of the user that was merged into user with ID $2.
 * $2 is the user ID that $1 was merged into.',
+	'usermerge-page-deleted' => 'This message indicates that the page $1 has been deleted successfully.
+
+Parameters:
+* $1 - old page name (with link)',
 );
 
 /** Afrikaans (Afrikaans)
