@@ -55,6 +55,9 @@ Click "{{int:usermerge-submit}}" to accept.',
  */
 $messages['qqq'] = array(
 	'usermerge-desc' => '{{desc|name=User Merge|url=http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete}}',
+	'usermerge-nonewuser' => '{{doc-important|Do not translate <code><nowiki>{{int:usermerge-submit}}</nowiki></code>.}}
+Used as error message. Parameters:
+* $1 - username "Anonymous" (hard-coded)',
 	'usermerge-submit' => '{{Identical|Merge user}}',
 	'usermerge-badtoken' => '{{Identical|Invalid edit token}}',
 	'usermerge-userdeleted' => 'Status message. Parameters:
@@ -85,6 +88,19 @@ $messages['qqq'] = array(
 	'usermerge-editcount-success' => 'Message that indicates two users have been merged. Parameters:
 * $1 is the user ID of the user that was merged into user with ID $2.
 * $2 is the user ID that $1 was merged into.',
+	'usermerge-page-unmoved' => 'Used as failure message when moving a page. Parameters:
+* $1 - old page title (with link)
+* $2 - new page title (with link)
+See also:
+* {{msg-mw|Usermerge-page-moved}}',
+	'usermerge-page-moved' => 'Used as success message when moving a page. Parameters:
+* $1 - old page title (with link, without redirect)
+* $2 - new page title (with link)
+See also:
+* {{msg-mw|Usermerge-page-unmoved}}',
+	'usermerge-move-log' => 'Parameters:
+* $1 - old username
+* $2 - new username',
 	'usermerge-page-deleted' => 'This message indicates that the page $1 has been deleted successfully.
 
 Parameters:
