@@ -1827,8 +1827,8 @@ $messages['pms'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|A uniss j'arferiment da n'utent a n'àutr utent]] ant ël database wiki - a scanselerà ëdcò ij vej utent d'apress l'union. A veul ij pribilegi ''usermerge''",
 	'usermerge-badolduser' => 'Vej stranòm nen bon',
 	'usermerge-badnewuser' => 'Neuv stranòm nen bon',
-	'usermerge-nonewuser' => 'Neuv stranòm veujd. I të tnisoma bon për n\'union a "$1".<br />
-Sgnaca "{{int:usermerge-submit}}" për asseté.',
+	'usermerge-nonewuser' => 'Neuv stranòm veujd. I chërdoma ch\'a veula gionz-se an «{{GENDER:$1|$1}}».<br />
+Ch\'a sgnaca "{{int:usermerge-submit}}" për aceté.',
 	'usermerge-noolduser' => 'Vej stranòm veujd',
 	'usermerge-fieldset' => 'Nòm utent da unì',
 	'usermerge-olduser' => 'Vej utent (unì da):',
