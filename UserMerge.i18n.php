@@ -59,7 +59,7 @@ $messages['qqq'] = array(
 Used as error message. Parameters:
 * $1 - username "Anonymous" (hard-coded)',
 	'usermerge-submit' => '{{Identical|Merge user}}',
-	'usermerge-badtoken' => '{{Identical|Invalid edit token}}',
+	'usermerge-badtoken' => 'Used as error message if the Edit Token is invalid.',
 	'usermerge-userdeleted' => 'Status message. Parameters:
 * $1 is the name of a user that was deleted (not linked).
 * $2 is the ID of a user that was deleted.',
@@ -1239,7 +1239,7 @@ $messages['ja'] = array(
 	'usermerge-newuser' => '新利用者 (統合先):',
 	'usermerge-deleteolduser' => '旧利用者を削除',
 	'usermerge-submit' => '利用者の統合',
-	'usermerge-badtoken' => '編集トークンが不正',
+	'usermerge-badtoken' => '編集トークンが無効です',
 	'usermerge-userdeleted' => '$1 ($2) は削除されました。',
 	'usermerge-userdeleted-log' => '利用者: $2 ($3) を削除しました',
 	'usermerge-updating' => '$1 のテーブルを更新 ($2 を $3 へ)',
