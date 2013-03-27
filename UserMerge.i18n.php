@@ -54,6 +54,7 @@ Click "{{int:usermerge-submit}}" to accept.',
  * @author Umherirrender
  */
 $messages['qqq'] = array(
+	'usermerge' => '{{doc-special|UserMerge}}',
 	'usermerge-desc' => '{{desc|name=User Merge|url=http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete}}',
 	'usermerge-nonewuser' => '{{doc-important|Do not translate <code><nowiki>{{int:usermerge-submit}}</nowiki></code>.}}
 Used as error message. Parameters:
@@ -1229,17 +1230,17 @@ Fare clic su "{{int:usermerge-submit}}" per accettare.',
 $messages['ja'] = array(
 	'usermerge' => '利用者の統合と削除',
 	'usermerge-desc' => "ウィキデータベース上における[[Special:UserMerge|ある利用者を別の利用者へ統合し]]、また統合元の利用者を削除する (「{{int:right-usermerge}}」できる権限 ''usermerge'' が必要)",
-	'usermerge-badolduser' => '無効な旧利用者名',
-	'usermerge-badnewuser' => '無効な新利用者名',
+	'usermerge-badolduser' => '旧利用者名が無効です。',
+	'usermerge-badnewuser' => '新利用者名が無効です。',
 	'usermerge-nonewuser' => '新しい利用者名の欄が空です。「{{GENDER:$1|$1}}」への統合と見なします。<br />
 「{{int:usermerge-submit}}」をクリックして承認してください。',
-	'usermerge-noolduser' => '旧利用者名の欄が空です',
+	'usermerge-noolduser' => '旧利用者名の欄が空です。',
 	'usermerge-fieldset' => '統合する利用者名',
 	'usermerge-olduser' => '旧利用者 (統合元):',
 	'usermerge-newuser' => '新利用者 (統合先):',
 	'usermerge-deleteolduser' => '旧利用者を削除',
 	'usermerge-submit' => '利用者の統合',
-	'usermerge-badtoken' => '編集トークンが無効です',
+	'usermerge-badtoken' => '編集トークンが無効です。',
 	'usermerge-userdeleted' => '$1 ($2) は削除されました。',
 	'usermerge-userdeleted-log' => '利用者: $2 ($3) を削除しました',
 	'usermerge-updating' => '$1 のテーブルを更新 ($2 を $3 へ)',
