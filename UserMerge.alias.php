@@ -23,7 +23,7 @@ $specialPageAliases['arz'] = array(
 	'UserMerge' => array( 'دمج_يوزر' ),
 );
 
-/** Assamese (অসমীয়া) */
+/** Assamese (অসমীয়া) */
 $specialPageAliases['as'] = array(
 	'UserMerge' => array( 'সদস্য_একত্ৰীকৰণ_কৰক' ),
 );
