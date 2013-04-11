@@ -1374,8 +1374,8 @@ $messages['ko'] = array(
 	'usermerge-editcount-success' => '($1 그리고 $2)의 편집 횟수를 추가합니다',
 	'usermerge-autopagedelete' => '사용자를 합칠 때 자동으로 삭제했습니다',
 	'usermerge-page-unmoved' => '$1 문서를 $2 문서로 이동하지 못했습니다.',
-	'usermerge-page-moved' => '$1 문서를 $2 문서로 이동했습니다.',
-	'usermerge-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|{{GENDER:$2|$2}}]]" 사용자로 합치면서 자동으로 문서를 이동했습니다',
+	'usermerge-page-moved' => '$1 문서를 $2 문서로 옮겼습니다.',
+	'usermerge-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|{{GENDER:$2|$2}}]]" 사용자로 합치면서 자동으로 문서를 옮겼습니다',
 	'usermerge-page-deleted' => '$1 문서를 삭제했습니다',
 );
 
@@ -2238,13 +2238,15 @@ $messages['su'] = array(
  * @author Martinwiss
  * @author Micke
  * @author Sannab
+ * @author WikiPhoenix
  */
 $messages['sv'] = array(
 	'usermerge' => 'Slå ihop och radera användarkonton',
 	'usermerge-desc' => "Ger möjlighet att [[Special:UserMerge|slå samman användarkonton]] genom att alla referenser till en användare byts ut till en annan användare i databasen, samt att efter sammanslagning radera gamla konton. Kräver behörigheten ''usermerge''.",
 	'usermerge-badolduser' => 'Ogiltigt gammalt användarnamn',
 	'usermerge-badnewuser' => 'Ogiltigt nytt användarnamn',
-	'usermerge-nonewuser' => 'Nytt användarnamn tomt. Antar sammanslagning till $1.<br />Klicka på "{{int:usermerge-submit}}" för att godkänna.', # Fuzzy
+	'usermerge-nonewuser' => 'Tomt nytt användarnamn. Antar sammanslagning till "{{GENDER:$1|$1}}".<br />
+Klicka på "{{int:usermerge-submit}}" för att godkänna.',
 	'usermerge-noolduser' => 'Gammalt användarnamn tomt',
 	'usermerge-fieldset' => 'Användarnamn att förena',
 	'usermerge-olduser' => 'Gammalt användarnamn (slå ihop från)',
@@ -2255,8 +2257,8 @@ $messages['sv'] = array(
 	'usermerge-userdeleted' => '$1 ($2) har raderats.',
 	'usermerge-userdeleted-log' => 'Raderad användare: $2 ($3)',
 	'usermerge-updating' => 'Uppdaterar $1-tabell  ($2 till $3)',
-	'usermerge-success' => 'Sammanslagning från $1 ($2) till $3 ($4) är genomförd.', # Fuzzy
-	'usermerge-success-log' => 'Användare $2 ($3) sammanslagen med $4 ($5)', # Fuzzy
+	'usermerge-success' => 'Sammanslagning från $1 ($2) till {{GENDER:$3|$3}} ($4) är slutfört.',
+	'usermerge-success-log' => 'Användare $2 ($3) slogs samman med {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Användarsammanslagningslogg',
 	'usermerge-logpagetext' => 'Det här är en logg över sammanslagningar av användarkonton.',
 	'usermerge-noselfdelete' => 'Du kan inte radera eller slå samman ditt eget konto!',
@@ -2268,7 +2270,7 @@ $messages['sv'] = array(
 	'usermerge-autopagedelete' => 'Ta bort automatiskt när användare slås ihop',
 	'usermerge-page-unmoved' => 'Sidan $1 kan inte tas bort till $2',
 	'usermerge-page-moved' => 'Sidan $1 måste tas bort till $2',
-	'usermerge-move-log' => 'Ta automatiskt bort sidan när du slår ihop användare "[[User:$1|$1]]" med "[[User:$2|$2]]"', # Fuzzy
+	'usermerge-move-log' => 'Ta automatiskt bort sidan när du slår ihop användare "[[User:$1|$1]]" med "[[User:$2|{{GENDER:$2|$2}}]]"',
 	'usermerge-page-deleted' => 'Tog bort sidan $1',
 );
 
