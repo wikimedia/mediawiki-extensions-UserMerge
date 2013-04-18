@@ -1375,7 +1375,7 @@ $messages['ko'] = array(
 	'usermerge-autopagedelete' => '사용자를 합칠 때 자동으로 삭제했습니다',
 	'usermerge-page-unmoved' => '$1 문서를 $2 문서로 이동하지 못했습니다.',
 	'usermerge-page-moved' => '$1 문서를 $2 문서로 옮겼습니다.',
-	'usermerge-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|{{GENDER:$2|$2}}]]" 사용자로 합치면서 자동으로 문서를 옮겼습니다',
+	'usermerge-move-log' => '"[[User:$1|$1]]" 사용자를 "[[User:$2|{{GENDER:$2|$2}}]]" 사용자로 합치면서 문서를 자동으로 옮겼습니다',
 	'usermerge-page-deleted' => '$1 문서를 삭제했습니다',
 );
 
