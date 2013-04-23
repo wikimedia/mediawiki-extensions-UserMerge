@@ -2235,6 +2235,7 @@ $messages['su'] = array(
 
 /** Swedish (svenska)
  * @author Lejonel
+ * @author Lokal Profil
  * @author Martinwiss
  * @author Micke
  * @author Sannab
@@ -2265,6 +2266,7 @@ Klicka på "{{int:usermerge-submit}}" för att godkänna.',
 	'usermerge-unmergable' => 'Kan inte sammanfoga det gamla kontot. ID:t eller namnet har angetts som icke-sammanslagningsbart.',
 	'usermerge-protectedgroup' => 'Kan inte sammanfoga det gamla kontot. Användaren är medlem i en skyddad användargrupp.',
 	'right-usermerge' => 'Slå ihop användarkonton',
+	'action-usermerge' => 'slå ihop användarkonton',
 	'usermerge-editcount' => 'Lägg till antal redigeringar',
 	'usermerge-editcount-success' => 'Lägger till antalet redigeringar för ($1 och $2)',
 	'usermerge-autopagedelete' => 'Ta bort automatiskt när användare slås ihop',
