@@ -181,7 +181,10 @@ class UserMerge extends SpecialPage {
 		$dbw = wfGetDB( DB_MASTER );
 		$dbw->delete( 'user_groups', array( 'ug_user' => $olduserID ) );
 		$dbw->delete( 'user', array( 'user_id' => $olduserID ) );
-		$this->getOutput()->addHTML( $this->msg( 'usermerge-userdeleted', $olduser_text, $olduserID )->escaped() );
+		$this->getOutput()->addHTML(
+			$this->msg( 'usermerge-userdeleted', $olduser_text, $olduserID )->escaped() .
+			Html::element( 'br' ) . "\n"
+		);
 
 		$log = new LogPage( 'usermerge' );
 		$log->addEntry( 'deleteuser', $this->getUser()->getUserPage(), '', array( $olduser_text, $olduserID ) );
