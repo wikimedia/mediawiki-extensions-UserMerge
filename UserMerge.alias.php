@@ -240,7 +240,7 @@ $specialPageAliases['tr'] = array(
 
 /** Ukrainian (українська) */
 $specialPageAliases['uk'] = array(
-	'UserMerge' => array( 'Об\'єднання_облікових_записів' ),
+	'UserMerge' => array( 'Об\'єднання_користувачів' ),
 );
 
 /** Vietnamese (Tiếng Việt) */
