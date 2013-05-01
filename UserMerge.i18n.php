@@ -1247,7 +1247,7 @@ $messages['ja'] = array(
 	'usermerge-userdeleted' => '$1 ($2) は削除されました。',
 	'usermerge-userdeleted-log' => '利用者: $2 ($3) を削除しました',
 	'usermerge-updating' => '$1 のテーブルを更新 ($2 を $3 へ)',
-	'usermerge-success' => '$1 ($2) の {{GENDER:$3$3}} ($4) への統合が完了しました。',
+	'usermerge-success' => '$1 ($2) の {{GENDER:$3|$3}} ($4) への統合が完了しました。',
 	'usermerge-success-log' => '利用者 $2 ($3) を {{GENDER:$4|$4}} ($5) へ統合しました',
 	'usermerge-logpage' => '利用者統合記録',
 	'usermerge-logpagetext' => 'これは、利用者の統合を記録したものです。',
@@ -1874,6 +1874,7 @@ $messages['ps'] = array(
  * @author Hamilton Abreu
  * @author Jorge Morais
  * @author Lijealso
+ * @author Luckas
  * @author Malafaya
  * @author Sir Lestaty de Lioncourt
  * @author Waldir
@@ -1894,7 +1895,7 @@ Clique "{{int:usermerge-submit}}" para aceitar.', # Fuzzy
 	'usermerge-badtoken' => 'Chave de edição inválida',
 	'usermerge-userdeleted' => '$1 ($2) foi eliminado.',
 	'usermerge-userdeleted-log' => 'Utilizador apagado: $2 ($3)',
-	'usermerge-updating' => 'A actualizar a tabela $1 ($2 para $3)',
+	'usermerge-updating' => 'A atualizar a tabela $1 ($2 para $3)',
 	'usermerge-success' => 'A fusão de $1 ($2) com $3 ($4) está completa.', # Fuzzy
 	'usermerge-success-log' => 'Utilizador $2 ($3) fundido com $4 ($5)', # Fuzzy
 	'usermerge-logpage' => 'Registo de fusão de utilizadores',
@@ -1916,6 +1917,7 @@ Clique "{{int:usermerge-submit}}" para aceitar.', # Fuzzy
  * @author Crazymadlover
  * @author Eduardo.mps
  * @author Jorge Morais
+ * @author Luckas
  */
 $messages['pt-br'] = array(
 	'usermerge' => 'Fusão e eliminação de utilizadores',
@@ -1926,13 +1928,13 @@ $messages['pt-br'] = array(
 Clique "{{int:usermerge-submit}}" para aceitar.', # Fuzzy
 	'usermerge-noolduser' => 'Limpar nome antigo',
 	'usermerge-fieldset' => 'Nomes de utilizador a unificar',
-	'usermerge-olduser' => 'Utilizador antigo (fundir de):',
-	'usermerge-newuser' => 'Utilizador novo (fundir para):',
+	'usermerge-olduser' => 'Usuário antigo (fundir de):',
+	'usermerge-newuser' => 'Usuário novo (fundir para):',
 	'usermerge-deleteolduser' => 'Apagar usuário antigo',
-	'usermerge-submit' => 'Fundir utilizador',
+	'usermerge-submit' => 'Fundir usuário',
 	'usermerge-badtoken' => 'Token de edição inválida',
 	'usermerge-userdeleted' => '$1 ($2) foi eliminado.',
-	'usermerge-userdeleted-log' => 'Utilizador eliminado: $2 ($3)',
+	'usermerge-userdeleted-log' => 'Usuário apagado: $2 ($3)',
 	'usermerge-updating' => 'Atualizando tabela $1 ($2 para $3)',
 	'usermerge-success' => 'Fusão de $1 ($2) para $3 ($4) está completa.', # Fuzzy
 	'usermerge-success-log' => 'Utilizador $2 ($3) fundido com $4 ($5)', # Fuzzy
