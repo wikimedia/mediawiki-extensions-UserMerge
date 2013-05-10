@@ -423,6 +423,13 @@ $messages['ca'] = array(
 	'right-usermerge' => 'Fusionar usuaris',
 );
 
+/** Chechen (нохчийн)
+ * @author Умар
+ */
+$messages['ce'] = array(
+	'usermerge-page-deleted' => 'ДӀаяккха агӀо $1',
+);
+
 /** Sorani Kurdish (کوردی)
  * @author Marmzok
  */
@@ -2503,6 +2510,7 @@ $messages['uz'] = array(
 	'usermerge-userdeleted-log' => 'Foydalanuvchi $2 ($3) chetlatilgan',
 	'usermerge-success-log' => 'Foydalanuvchi $2 ($3) {{GENDER:$4|$4}} ($5) bilan birlashtirilgan',
 	'usermerge-logpage' => 'Ishtirokchilarni birlashtirish qaydlari',
+	'usermerge-page-deleted' => '$1 sahifasini oʻchirish',
 );
 
 /** Veps (vepsän kel’)
