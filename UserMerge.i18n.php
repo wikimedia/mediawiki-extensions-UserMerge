@@ -427,6 +427,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'usermerge-page-moved' => 'АгӀона $1 цӀе хийцина оцу $2.',
 	'usermerge-page-deleted' => 'ДӀаяккха агӀо $1',
 );
 
