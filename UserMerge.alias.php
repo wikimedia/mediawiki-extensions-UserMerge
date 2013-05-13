@@ -63,6 +63,11 @@ $specialPageAliases['dsb'] = array(
 	'UserMerge' => array( 'Wužywarjow zjadnośiś' ),
 );
 
+/** Greek (Ελληνικά) */
+$specialPageAliases['el'] = array(
+	'UserMerge' => array( 'ΣυγχώνευσηΧρήστη' ),
+);
+
 /** Esperanto (Esperanto) */
 $specialPageAliases['eo'] = array(
 	'UserMerge' => array( 'Kunigi_uzanton' ),
