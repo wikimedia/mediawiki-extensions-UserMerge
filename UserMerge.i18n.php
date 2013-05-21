@@ -1441,8 +1441,8 @@ $messages['lb'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Féiert Benotzerkonte vun engem Benotzer mat engem anere Benotzer]] an der Wiki-Datebank zesummen - déi al Benotzerkonte ginn no der Zesummeféierung och geläscht. Erfuedert ''usermerge''-Rechter.",
 	'usermerge-badolduser' => 'Ongëltegen ale Benotzernumm',
 	'usermerge-badnewuser' => 'Ongëltegen neie Benotzernumm',
-	'usermerge-nonewuser' => 'Eidelen neie Benotzernumm - wahrscheinlech eng Zesummeféierung mat "$1".<br />
-Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.', # Fuzzy
+	'usermerge-nonewuser' => 'Eidelen neie Benotzernumm - wahrscheinlech eng Zesummeféierung mat "{{GENDER:$1|$1}}.<br />
+Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
 	'usermerge-noolduser' => 'Eidelen ale Benotzernumm',
 	'usermerge-fieldset' => 'Benotzernimm fir zesummenzeféieren',
 	'usermerge-olduser' => 'Ale Benotzer (zesummeféiere vun):',
@@ -1453,8 +1453,8 @@ Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.', # Fuzzy
 	'usermerge-userdeleted' => '$1 ($2) gouf geläscht.',
 	'usermerge-userdeleted-log' => 'Geläschte Benotzer: $2($3)',
 	'usermerge-updating' => 'Aktualiséierung vun der Tabell $1 ($2 op $3)',
-	'usermerge-success' => 'D\'Zesummeféierung vum "$1" ($2) op "$3" ($4) ass net komplett.', # Fuzzy
-	'usermerge-success-log' => 'Benotzer $2 ($3) gouf zesummegeféiert mat $4 ($5)', # Fuzzy
+	'usermerge-success' => 'D\'Zesummeféierung vum "$1" ($2) op "{{GENDER:$3|$3}}" ($4) ass net komplett.',
+	'usermerge-success-log' => 'Benotzer $2 ($3) gouf zesummegeféiert mat {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Lëscht vun de Benotzerkonten déi zesummegeféiert goufen',
 	'usermerge-logpagetext' => 'Dëst ass eng Lëscht vun de Benotzerkonten, déi zesummegeféiert goufen.',
 	'usermerge-noselfdelete' => 'Dir kënnt Iech net selwer läschen oder mat Iech selwer zesummeféieren!',
@@ -1467,7 +1467,7 @@ Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.', # Fuzzy
 	'usermerge-autopagedelete' => "Automatesch geläscht wéi d'Benotzer zesummegeluecht goufen",
 	'usermerge-page-unmoved' => "D'Säit $1 konnt net op $2 geréckelt ginn.",
 	'usermerge-page-moved' => "D'Säit $1 gouf op $2 geréckelt.",
-	'usermerge-move-log' => 'D\'Säit gouf automatesch geréckelt wéi de Benotzer "[[User:$1|$1]]" mam "[[User:$2|$2]]" zesummegeluecht gouf', # Fuzzy
+	'usermerge-move-log' => 'D\'Säit gouf automatesch geréckelt wéi de Benotzer "[[User:$1|$1]]" mam "[[User:$2|$2{{GENDER:$2|$2}}]]" zesummegeluecht gouf',
 	'usermerge-page-deleted' => 'Säit $1 ass geläscht',
 );
 
