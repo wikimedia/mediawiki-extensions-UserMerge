@@ -1992,7 +1992,12 @@ Apasă "{{int:usermerge-submit}}" pentru a accepta.', # Fuzzy
 $messages['roa-tara'] = array(
 	'usermerge-badolduser' => 'Nome utende vecchije invalide',
 	'usermerge-badnewuser' => 'Nome utende nuève invalide',
+	'usermerge-noolduser' => "Vacande 'u nome utende vecchie.",
+	'usermerge-fieldset' => 'Nome utinde da scuagghià.',
+	'usermerge-olduser' => 'Utende vecchie (da scuagghià):',
+	'usermerge-newuser' => 'Utende nuève (da pigghià):',
 	'usermerge-deleteolduser' => 'Scangellate vecchie utende',
+	'usermerge-submit' => "Scuagghie l'utende",
 	'usermerge-page-unmoved' => "'A pàgene $1 non ge pò essere spustate sus a $2.",
 	'usermerge-page-moved' => "'A pàgene $1 ha state spustete sus a $2.",
 	'usermerge-page-deleted' => 'Pàgene scangellate $1',
