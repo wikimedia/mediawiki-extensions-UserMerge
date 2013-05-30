@@ -34,8 +34,7 @@ Click "{{int:usermerge-submit}}" to accept.',
 	'usermerge-protectedgroup'	=> 'Unable to merge from user: User is in a protected group.',
 	'right-usermerge'               => 'Merge users',
 	'action-usermerge'              => 'merge users',
-	'usermerge-editcount'		=> 'Add edit count?',
-	'usermerge-editcount-success'	=> 'Adding edit count of ($1 and $2)',
+	'usermerge-editcount-merge-success' => 'Adding $1 {{PLURAL:$1|edit|edits}} of user $2 to $3 {{PLURAL:$3|edit|edits}} of user $4 ($5 {{PLURAL:$5|edit|edits}} after merging)',
 	'usermerge-autopagedelete'	=> 'Automatically deleted when merging users',
 	'usermerge-page-unmoved' 	=> 'The page $1 could not be moved to $2.',
 	'usermerge-page-moved'   	=> 'The page $1 has been moved to $2.',
@@ -86,9 +85,12 @@ Used as error message. Parameters:
 {{Identical|Merge user}}',
 	'action-usermerge' => '{{doc-action|usermerge}}
 {{Identical|Merge user}}',
-	'usermerge-editcount-success' => 'Message that indicates two users have been merged. Parameters:
-* $1 is the user ID of the user that was merged into user with ID $2.
-* $2 is the user ID that $1 was merged into.',
+	'usermerge-editcount-merge-success' => 'Message that indicates two users have been merged. Parameters:
+* $1 is the number of edits of user with ID $2 before merging.
+* $2 is the user ID of the user that was merged into user with ID $4.
+* $3 is the number of edits of user with ID $3 before merging
+* $4 is the user ID of the user that the user with ID $2 was merged into.
+* $5 is the combined edit count of users with ID $2 and with ID $4',
 	'usermerge-page-unmoved' => 'Used as failure message when moving a page. Parameters:
 * $1 - old page title (with link)
 * $2 - new page title (with link)

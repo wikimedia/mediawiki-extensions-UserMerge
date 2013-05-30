@@ -277,27 +277,27 @@ class UserMerge extends SpecialPage {
 	private function mergeEditcount( $newuserID, $olduserID ) {
 		$dbw = wfGetDB( DB_MASTER );
 
-		# old user edit count
-		$result = $dbw->selectField( 'user',
-			'user_editcount',
-			array( 'user_id' => $olduserID ),
-			__METHOD__
+		$olduserEdits  = $dbw->selectField( 
+					'user',
+					'user_editcount',
+					array( 'user_id' => $olduserID ),
+					__METHOD__
 		);
-		$row = $dbw->fetchRow( $result );
+		if ( $olduserEdits === false ) {
+			$olduserEdits = 0;
+		}
 
-		$oldEdits = $row[0];
-
-		# new user edit count
-		$result = $dbw->selectField( 'user',
-			'user_editcount',
-			array( 'user_id' => $newuserID ),
-			__METHOD__
+		$newuserEdits  = $dbw->selectField( 
+					'user',
+					'user_editcount',
+					array( 'user_id' => $newuserID ),
+					__METHOD__
 		);
-		$row = $dbw->fetchRow( $result );
-		$newEdits = $row[0];
+		if ( $newuserEdits === false ) {
+			$newuserEdits = 0;
+		}
 
-		# add edits
-		$totalEdits = $oldEdits + $newEdits;
+		$totalEdits = $olduserEdits + $newuserEdits;
 
 		# don't run querys if neither user has any edits
 		if ( $totalEdits > 0 ) {
@@ -316,7 +316,10 @@ class UserMerge extends SpecialPage {
 			);
 		}
 
-		$this->getOutput()->addHTML( $this->msg( 'usermerge-editcount-success', $olduserID, $newuserID )->escaped() . "<br />\n" );
+		$this->getOutput()->addHTML( $this->msg( 'usermerge-editcount-merge-success', 
+			$olduserEdits, $olduserID, $newuserEdits, $newuserID, $totalEdits
+			)->escaped() . "<br />\n"
+		);
 
 		return true;
 	}
