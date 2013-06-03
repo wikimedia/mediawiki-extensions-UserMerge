@@ -43,10 +43,7 @@ Click "{{int:usermerge-submit}}" to accept.',
 	'usermerge-page-deleted' 	=> 'Deleted page $1',
 );
 
-/** Message documentation (This is the name of the message documentation language code (qqq). Follow the rules of your languages and use small first letter if it doesn't capitalize language names always.
-
-It might be easier to translate it as "translation guidelines" or "translation help".
-{{Identical|Message documentation}})
+/** Message documentation (Message documentation)
  * @author Fryed-peach
  * @author Jon Harald Søby
  * @author Meno25
@@ -670,6 +667,7 @@ $messages['eo'] = array(
  * @author Crazymadlover
  * @author Dferg
  * @author Imre
+ * @author MarcoAurelio
  * @author Sanbec
  */
 $messages['es'] = array(
@@ -1658,7 +1656,7 @@ $messages['nah'] = array(
 	'usermerge-userdeleted-log' => 'Tlapoloc tlatequitiltilīlli: $2 ($3)',
 );
 
-/** Norwegian Bokmål (norsk (bokmål)‎)
+/** Norwegian Bokmål (norsk bokmål)
  * @author Event
  * @author Nghtwlkr
  */
@@ -1696,7 +1694,7 @@ Klikk «{{int:usermerge-submit}}» for å godta.', # Fuzzy
 	'usermerge-page-deleted' => 'Slettet side $1',
 );
 
-/** Nedersaksies (Nedersaksies)
+/** Low Saxon (Netherlands) (Nedersaksies)
  * @author Servien
  */
 $messages['nds-nl'] = array(
@@ -1766,7 +1764,7 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 	'usermerge-page-deleted' => 'Verwijderde pagina $1',
 );
 
-/** Norwegian Nynorsk (norsk (nynorsk)‎)
+/** Norwegian Nynorsk (norsk nynorsk)
  * @author Frokor
  * @author Gunnernett
  * @author Harald Khan
