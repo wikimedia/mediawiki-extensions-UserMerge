@@ -244,6 +244,44 @@ $messages['arz'] = array(
 	'right-usermerge' => 'دمج اليوزرز',
 );
 
+/** Asturian (asturianu)
+ * @author Xuacu
+ */
+$messages['ast'] = array(
+	'usermerge' => 'Fusionar y desaniciar usuarios',
+	'usermerge-desc' => "[[Special:UserMerge|Fusiona les referencies d'un usuariu n'otru usuariu]] na base de datos de la wiki (tamién desaniciará l'usuariu antiguu darréu de la fusión). Requier permisos d'''usermerge''",
+	'usermerge-badolduser' => "Nome d'usuariu antiguu inválidu.",
+	'usermerge-badnewuser' => "Nome d'usuariu nuevu inválidu",
+	'usermerge-nonewuser' => 'Nome d\'usuariu nuevu baleru. Asumese la fusión en "{{GENDER:$1|$1}}".<br />
+Calque "{{int:usermerge-submit}}" p\'aceutar.',
+	'usermerge-noolduser' => "Nome d'usuariu antiguu baleru",
+	'usermerge-fieldset' => "Nomes d'usuariu a fusionar",
+	'usermerge-olduser' => 'Usuariu antiguu (fusionar dende):',
+	'usermerge-newuser' => 'Usuariu nuevu (fusionar en):',
+	'usermerge-deleteolduser' => "Desaniciar l'usuariu antiguu",
+	'usermerge-submit' => 'Fusionar usuariu',
+	'usermerge-badtoken' => "Pase d'edición inválidu",
+	'usermerge-userdeleted' => "Desaniciáu l'usuariu $1 ($2).",
+	'usermerge-userdeleted-log' => 'Usuariu desaniciáu: $2 ($3)',
+	'usermerge-updating' => 'Actualizando la tabla $1 ($2 a $3)',
+	'usermerge-success' => 'La fusión dende $1 ($2) a {{GENDER:$3|$3}} ($4) ta completa.',
+	'usermerge-success-log' => 'Usuariu $2 ($3) fusionáu con {{GENDER:$4|$4}} ($5)',
+	'usermerge-logpage' => "Rexistru de fusión d'usuarios",
+	'usermerge-logpagetext' => "Esti ye un rexistru d'aiciones de fusión d'usuarios.",
+	'usermerge-noselfdelete' => '¡Nun pue desaniciase o fusionar dende sigo mesmu!',
+	'usermerge-unmergable' => "Nun pue fusionar dende l'usuariu: La ID o'l nome definieronse como non fusionables.",
+	'usermerge-protectedgroup' => "Nun pue fusionase dende l'usuariu: L'usuariu ta nun grupu protexíu.",
+	'right-usermerge' => 'Fusionar usuarios',
+	'action-usermerge' => 'fusionar usuarios',
+	'usermerge-editcount' => "¿Amestar contador d'ediciones?",
+	'usermerge-editcount-success' => "Amestando'l contador d'ediciones de («$1» y «$2»)",
+	'usermerge-autopagedelete' => 'Desaniciao automáticamente al fusionar usuarios',
+	'usermerge-page-unmoved' => 'La páxina $1 nun pudo treslladase a $2.',
+	'usermerge-page-moved' => 'La páxina $1 treslladóse a $2.',
+	'usermerge-move-log' => 'Treslladóse la páxina automáticamente al fusionar al usuariu "[[User:$1|$1]]" en "[[User:$2|{{GENDER:$2|$2}}]]"',
+	'usermerge-page-deleted' => 'Páxina "$1" desaniciada',
+);
+
 /** Belarusian (Taraškievica orthography) (беларуская (тарашкевіца)‎)
  * @author EugeneZelenko
  * @author Jim-by
@@ -961,8 +999,8 @@ $messages['he'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|מיזוג התייחסויות ממשתמש אחד לאחר]] בבסיס הנתונים של הוויקי, כולל מחיקת המשתמשים הישנים לאחר המיזוג. נדרשת הרשאת ''usermerge''",
 	'usermerge-badolduser' => 'שם המשתמש הישן אינו תקין',
 	'usermerge-badnewuser' => 'שם המשתמש החדש אינו תקין',
-	'usermerge-nonewuser' => 'שם המשתמש החדש ריק - כנראה שהמיזוג הוא ל־"$1".<br />
-לחצו על "{{int:usermerge-submit}}" לאישור.', # Fuzzy
+	'usermerge-nonewuser' => 'שם המשתמש החדש ריק. כנראה שהמיזוג הוא אל "$1".<br />
+נא ללחוץ על "{{int:usermerge-submit}}" לאישור.',
 	'usermerge-noolduser' => 'שם המשתמש הישן ריק',
 	'usermerge-fieldset' => 'שמות משתמש למיזוג',
 	'usermerge-olduser' => 'משתמש ישן (מיזוג מ):',
@@ -973,20 +1011,21 @@ $messages['he'] = array(
 	'usermerge-userdeleted' => '$1 ($2) נמחק.',
 	'usermerge-userdeleted-log' => 'המשתמש נמחק: $2 ($3)',
 	'usermerge-updating' => 'בתהליך עדכון הטבלה $1 ($2 ל$3)',
-	'usermerge-success' => 'המיזוג מ$1 ($2) ל$3 ($4) הושלם.', # Fuzzy
-	'usermerge-success-log' => 'המשתמש $2 ($3) מוזג ל$4 ($5)', # Fuzzy
+	'usermerge-success' => 'המיזוג מהשם $1&rlm; ($2) אל $3&rlm; ($4) הושלם.',
+	'usermerge-success-log' => 'המשתמש $2&rlm; ($3) מוזג אל $4&rlm; ($5)',
 	'usermerge-logpage' => 'יומן מיזוג משתמשים',
 	'usermerge-logpagetext' => 'זהו יומן של פעולות מיזוג המשתמשים.',
 	'usermerge-noselfdelete' => 'לא ניתן למחוק או למזג מעצמך!',
 	'usermerge-unmergable' => 'לא ניתן למזג ממשתמש זה - מספר המשתמש או השם כבר מוגדר כבלתי ניתן למיזוג.',
 	'usermerge-protectedgroup' => 'לא ניתן למזג ממשתמש זה - המשתמש נמצא בקבוצה מוגנת.',
 	'right-usermerge' => 'מיזוג משתמשים',
+	'action-usermerge' => 'למזג משתמשים',
 	'usermerge-editcount' => 'להוסיף מונה עריכות?',
 	'usermerge-editcount-success' => 'הוספת מונה עריכות של ($1&rlm;, $2)',
 	'usermerge-autopagedelete' => 'נמחק אוטומטית בזמן מיזוג חשבונות',
 	'usermerge-page-unmoved' => 'לא ניתן להעביר את הדף $1 לשם $2.',
 	'usermerge-page-moved' => 'הדף $1 הועבר לשם $2.',
-	'usermerge-move-log' => 'הדף הועבר אוטומטית בזמן מיזוג חשבון "[[User:$1|$1]]" אל "[[User:$2|$2]]"', # Fuzzy
+	'usermerge-move-log' => 'הדף הועבר אוטומטית בזמן מיזוג חשבון "[[User:$1|$1]]" אל "[[User:$2|$2]]"',
 	'usermerge-page-deleted' => 'הדף $1 נמחק',
 );
 
