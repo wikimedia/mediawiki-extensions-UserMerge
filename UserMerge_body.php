@@ -105,7 +105,14 @@ class UserMerge extends SpecialPage {
 				}
 			} else {
 				$validOldUser = false;
-				$out->addHTML( "<span style=\"color: red;\">" . $this->msg( 'usermerge-noolduser' )->escaped() . "</span><br />\n" );
+				$out->addHTML(
+					Html::rawElement( 'span',
+						array( 'class' => 'warning' ),
+						$this->msg( 'usermerge-noolduser' )->escaped()
+					) .
+					Html::element( 'br' ) .
+					"\n"
+				);
 			}
 		}
 
@@ -153,7 +160,13 @@ class UserMerge extends SpecialPage {
 			// go time, baby
 			if ( !$user->matchEditToken( $request->getVal( 'token' ) ) ) {
 				// bad editToken
-				$out->addHTML( "<span style=\"color: red;\">" . $this->msg( 'usermerge-badtoken' )->escaped() . "</span><br />\n" );
+				$out->addHTML(
+					Html::rawElement( 'span',
+						array( 'class' => 'warning' ),
+						$this->msg( 'usermerge-badtoken' )->escaped()
+					) .
+					Html::element( 'br' ) . "\n"
+				);
 			} else {
 				// good editToken
 				$this->mergeEditcount( $newuserID, $olduserID );
@@ -179,8 +192,14 @@ class UserMerge extends SpecialPage {
 	 */
 	private function deleteUser( $objOldUser, $olduserID, $olduser_text ) {
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->delete( 'user_groups', array( 'ug_user' => $olduserID ) );
-		$dbw->delete( 'user', array( 'user_id' => $olduserID ) );
+		$dbw->delete(
+			'user_groups',
+			array( 'ug_user' => $olduserID )
+		);
+		$dbw->delete(
+			'user',
+			array( 'user_id' => $olduserID )
+		);
 		$this->getOutput()->addHTML(
 			$this->msg( 'usermerge-userdeleted', $olduser_text, $olduserID )->escaped() .
 			Html::element( 'br' ) . "\n"
@@ -191,7 +210,11 @@ class UserMerge extends SpecialPage {
 
 		wfRunHooks( 'DeleteAccount', array( &$objOldUser ) );
 
-		$users = $dbw->selectField( 'user', 'COUNT(*)', array() );
+		$users = $dbw->selectField(
+			'user',
+			'COUNT(*)',
+			array()
+		);
 		$dbw->update( 'site_stats',
 			array( 'ss_users' => $users ),
 			array( 'ss_row_id' => 1 )
@@ -243,21 +266,44 @@ class UserMerge extends SpecialPage {
 		$out = $this->getOutput();
 
 		foreach ( $idUpdateFields as $idUpdateField ) {
-			$dbw->update( $idUpdateField[0], array( $idUpdateField[1] => $newuserID ), array( $idUpdateField[1] => $olduserID ) );
-			$out->addHTML( $this->msg( 'usermerge-updating', $idUpdateField[0], $olduserID, $newuserID )->escaped() . "<br />\n" );
+			$dbw->update(
+				$idUpdateField[0],
+				array( $idUpdateField[1] => $newuserID ),
+				array( $idUpdateField[1] => $olduserID )
+			);
+			$out->addHTML(
+				$this->msg( 'usermerge-updating', $idUpdateField[0], $olduserID, $newuserID )->escaped() .
+				Html::element( 'br' ) . "\n"
+			);
 		}
 
 		foreach ( $textUpdateFields as $textUpdateField ) {
-			$dbw->update( $textUpdateField[0], array( $textUpdateField[1] => $newuser_text ), array( $textUpdateField[1] => $olduser_text ) );
-			$out->addHTML( $this->msg( 'usermerge-updating', $textUpdateField[0], $olduser_text, $newuser_text )->escaped() . "<br />\n" );
+			$dbw->update(
+				$textUpdateField[0],
+				array( $textUpdateField[1] => $newuser_text ),
+				array( $textUpdateField[1] => $olduser_text )
+			);
+			$out->addHTML(
+				$this->msg( 'usermerge-updating', $textUpdateField[0], $olduser_text, $newuser_text )->escaped() .
+				Html::element( 'br' ) . "\n"
+			);
 		}
 
 		$dbw->delete( 'user_newtalk', array( 'user_id' => $olduserID ) );
 
-		$out->addHTML( "<hr />\n" . $this->msg( 'usermerge-success', $olduser_text, $olduserID, $newuser_text, $newuserID )->escaped() . "\n<br />" );
+		$out->addHTML(
+			Html::element( 'hr' ) . "\n" .
+			$this->msg( 'usermerge-success', $olduser_text, $olduserID, $newuser_text, $newuserID )->escaped() .
+			Html::element( 'br' ) . "\n"
+		);
 
 		$log = new LogPage( 'usermerge' );
-		$log->addEntry( 'mergeuser', $this->getUser()->getUserPage(), '', array( $olduser_text, $olduserID, $newuser_text, $newuserID ) );
+		$log->addEntry(
+			'mergeuser',
+			$this->getUser()->getUserPage(),
+			'',
+			array( $olduser_text, $olduserID, $newuser_text, $newuserID )
+		);
 
 		wfRunHooks( 'MergeAccountFromTo', array( &$objOldUser, &$objNewUser ) );
 
@@ -281,20 +327,20 @@ class UserMerge extends SpecialPage {
 		$dbw = wfGetDB( DB_MASTER );
 
 		$olduserEdits  = $dbw->selectField( 
-					'user',
-					'user_editcount',
-					array( 'user_id' => $olduserID ),
-					__METHOD__
+			'user',
+			'user_editcount',
+			array( 'user_id' => $olduserID ),
+			__METHOD__
 		);
 		if ( $olduserEdits === false ) {
 			$olduserEdits = 0;
 		}
 
 		$newuserEdits  = $dbw->selectField( 
-					'user',
-					'user_editcount',
-					array( 'user_id' => $newuserID ),
-					__METHOD__
+			'user',
+			'user_editcount',
+			array( 'user_id' => $newuserID ),
+			__METHOD__
 		);
 		if ( $newuserEdits === false ) {
 			$newuserEdits = 0;
@@ -319,9 +365,12 @@ class UserMerge extends SpecialPage {
 			);
 		}
 
-		$this->getOutput()->addHTML( $this->msg( 'usermerge-editcount-merge-success', 
-			$olduserEdits, $olduserID, $newuserEdits, $newuserID, $totalEdits
-			)->escaped() . "<br />\n"
+		$this->getOutput()->addHTML(
+			$this->msg(
+				'usermerge-editcount-merge-success',
+				$olduserEdits, $olduserID, $newuserEdits, $newuserID, $totalEdits
+			)->escaped() .
+			Html::element( 'br' ) . "\n"
 		);
 
 		return true;
@@ -352,16 +401,22 @@ class UserMerge extends SpecialPage {
 		# select all user pages and sub-pages
 		$dbr = wfGetDB( DB_SLAVE );
 		$pages = $dbr->select( 'page',
-				array( 'page_namespace', 'page_title' ),
-				array( 'page_namespace IN (' . NS_USER . ',' . NS_USER_TALK . ')',
-					'page_title' . $dbr->buildLike( $oldusername->getDBkey() . '/', $dbr->anyString() )
-					. ' OR page_title = ' . $dbr->addQuotes( $oldusername->getDBkey() )
+			array( 'page_namespace', 'page_title' ),
+			array(
+				'page_namespace' => array( NS_USER, NS_USER_TALK ),
+				$dbr->makeList( array(
+					'page_title' => $dbr->buildLike( $oldusername->getDBkey() . '/', $dbr->anyString() ),
+					'page_title' => $oldusername->getDBkey()
+					),
+					LIST_OR
 				)
-			 );
+			)
+		 );
 
 		$output = '';
 
 		foreach ( $pages as $row ) {
+
 			$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
 			$newPage = Title::makeTitleSafe( $row->page_namespace,
 				preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
@@ -372,15 +427,25 @@ class UserMerge extends SpecialPage {
 					$oldPageArticle->doDeleteArticle( $this->msg( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
 
 					$oldLink = Linker::linkKnown( $oldPage );
-					$output .= '<li class="mw-renameuser-pe">' . $this->msg( 'usermerge-page-deleted' )->rawParams( $oldLink )->escaped() . '</li>';
+					$output .= Html::rawElement( 'li',
+						array( 'class' => 'mw-renameuser-pe' ),
+						$this->msg( 'usermerge-page-deleted' )->rawParams( $oldLink )->escaped()
+					);
+
 				}
-			} elseif ( $newPage->exists() && !$oldPage->isValidMoveTarget( $newPage ) && $newPage->getLength() > 0 ) { # delete old pages that can't be moved
+			} elseif ( $newPage->exists()
+				&& !$oldPage->isValidMoveTarget( $newPage )
+				&& $newPage->getLength() > 0 ) { # delete old pages that can't be moved
 
 				$oldPageArticle = new Article( $oldPage, 0 );
 				$oldPageArticle->doDeleteArticle( $this->msg( 'usermerge-autopagedelete' )->text() );
 
 				$link = Linker::linkKnown( $oldPage );
-				$output .= '<li class="mw-renameuser-pe">' . $this->msg( 'usermerge-page-deleted' )->rawParams( $link )->escaped() . '</li>';
+				$output .= Html::rawElement( 'li',
+					array( 'class' => 'mw-renameuser-pe' ),
+					$this->msg( 'usermerge-page-deleted' )->rawParams( $link )->escaped()
+				);
+
 			} else { # move content to new page
 				# delete target page if it exists and is blank
 				if ( $newPage->exists() ) {
@@ -406,13 +471,17 @@ class UserMerge extends SpecialPage {
 						array( 'redirect' => 'no' )
 					);
 					$newLink = Linker::linkKnown( $newPage );
-					$msg = $this->msg( 'usermerge-page-moved' )->rawParams( $oldLink, $newLink )->escaped();
-					$output .= '<li class="mw-renameuser-pm">' . $msg . '</li>';
+					$output .= Html::rawElement( 'li',
+						array( 'class' => 'mw-renameuser-pm' ),
+						$this->msg( 'usermerge-page-moved' )->rawParams( $oldLink, $newLink )->escaped()
+					);
 				} else {
 					$oldLink = Linker::linkKnown( $oldPage );
 					$newLink = Linker::linkKnown( $newPage );
-					$msg = $this->msg( 'usermerge-page-unmoved' )->rawParams( $oldLink, $newLink )->escaped();
-					$output .= '<li class="mw-renameuser-pu">' . $msg . '</li>';
+					$output .= Html::rawElement( 'li',
+						array( 'class' => 'mw-renameuser-pu' ),
+						$this->msg( 'usermerge-page-unmoved' )->rawParams( $oldLink, $newLink )->escaped()
+					);
 				}
 
 				# check if any pages link here
@@ -427,12 +496,19 @@ class UserMerge extends SpecialPage {
 					$oldPageArticle->doDeleteArticle( $this->msg( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
 				}
 			}
+
 		}
 
 		if ( $output ) {
-			$this->getOutput()->addHTML( '<ul>' . $output . '</ul>' );
+			$this->getOutput()->addHTML(
+				Html::rawElement( 'ul',
+					array(),
+					$output
+				)
+			);
 		}
 
 		return true;
 	}
+
 }

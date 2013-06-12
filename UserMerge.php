@@ -37,7 +37,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete',
 	'author'         => array( 'Tim Laqua', 'Thomas Gries', 'Matthew April' ),
 	'descriptionmsg' => 'usermerge-desc',
-	'version'        => '1.7.2'
+	'version'        => '1.7.3'
 );
 
 $wgAvailableRights[] = 'usermerge';
