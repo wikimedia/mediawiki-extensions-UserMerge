@@ -223,6 +223,83 @@ class UserMerge extends SpecialPage {
 	}
 
 	/**
+	 * Deduplicate watchlist entries
+	 * which old (merge-from) and new (merge-to) users are watching
+	 *
+	 * @param $oldUser User
+	 * @param $newUser User
+	 *
+	 * @return bool
+	 */
+	private function deduplicateWatchlistEntries( $oldUser, $newUser ) {
+
+		$dbw = wfGetDB( DB_MASTER );
+		$dbw->begin( __METHOD__ );
+
+		$res = $dbw->select(
+			array(
+				'w1' => 'watchlist',
+				'w2' => 'watchlist'
+			),
+			array(
+				'w2.wl_namespace',
+				'w2.wl_title'
+			),
+			array(
+				'w1.wl_user' => $newUser->getID(),
+				'w2.wl_user' => $oldUser->getID()
+			),
+			__METHOD__,
+			array( 'FOR UPDATE' ),
+			array(
+				'w2' => array(
+					'INNER JOIN',
+					array(
+						'w1.wl_namespace = w2.wl_namespace',
+						'w1.wl_title = w2.wl_title'
+					),
+				)
+			)
+		);
+
+		# Construct an array to delete all watched pages of the old user
+		# which the new user already watches
+		$conds = array();
+
+		foreach ( $res as $result ) {
+			$conds[] = $dbw->makeList(
+				array(
+					'wl_user' => $oldUser->getID(),
+					'wl_namespace' => $result->wl_namespace,
+					'wl_title' => $result->wl_title
+				),
+				LIST_AND
+			);
+		}
+
+		if ( empty( $conds ) ) {
+			$dbw->commit( __METHOD__ );
+			return true;
+		}
+
+		# Perform a multi-row delete
+
+		# requires
+		# MediaWiki database function with fixed https://bugzilla.wikimedia.org/50078
+		# i.e. MediaWiki core after 505dbb331e16a03d87cb4511ee86df12ea295c40 (20130625)
+		$dbw->delete(
+			'watchlist',
+			$dbw->makeList( $conds, LIST_OR ),
+			__METHOD__
+		);
+
+		$dbw->commit( __METHOD__ );
+
+		return true;
+	}
+
+
+	/**
 	 * Function to merge database references from one user to another user
 	 *
 	 * Merges database references from one user ID or username to another user ID or username
@@ -238,55 +315,58 @@ class UserMerge extends SpecialPage {
 	 * @return bool Always returns true - throws exceptions on failure.
 	 */
 	private function mergeUser( $objNewUser, $newuser_text, $newuserID, $objOldUser, $olduser_text, $olduserID ) {
-		$idUpdateFields = array(
-			array( 'archive', 'ar_user' ),
-			array( 'revision', 'rev_user' ),
-			array( 'filearchive', 'fa_user' ),
-			array( 'image', 'img_user' ),
-			array( 'oldimage', 'oi_user' ),
-			array( 'recentchanges', 'rc_user' ),
+		// Fields to update with the format:
+		// array( tableName, idField, textField )
+		$updateFields = array(
+			array( 'archive', 'ar_user', 'ar_user_text' ),
+			array( 'revision', 'rev_user', 'rev_user_text' ),
+			array( 'filearchive', 'fa_user', 'fa_user_text' ),
+			array( 'image', 'img_user', 'img_user_text' ),
+			array( 'oldimage', 'oi_user', 'oi_user_text' ),
+			array( 'recentchanges', 'rc_user', 'rc_user_text' ),
 			array( 'logging', 'log_user' ),
-			array( 'ipblocks', 'ipb_user' ),
-			array( 'ipblocks', 'ipb_by' ),
+			array( 'ipblocks', 'ipb_user', 'ipb_address' ),
+			array( 'ipblocks', 'ipb_by', 'ipb_by_text' ),
 			array( 'watchlist', 'wl_user' ),
-		);
-
-		$textUpdateFields = array(
-			array( 'archive', 'ar_user_text' ),
-			array( 'revision', 'rev_user_text' ),
-			array( 'filearchive', 'fa_user_text' ),
-			array( 'image', 'img_user_text' ),
-			array( 'oldimage', 'oi_user_text' ),
-			array( 'recentchanges', 'rc_user_text' ),
-			array( 'ipblocks', 'ipb_address' ),
-			array( 'ipblocks', 'ipb_by_text' ),
 		);
 
 		$dbw = wfGetDB( DB_MASTER );
 		$out = $this->getOutput();
 
-		foreach ( $idUpdateFields as $idUpdateField ) {
-			$dbw->update(
-				$idUpdateField[0],
-				array( $idUpdateField[1] => $newuserID ),
-				array( $idUpdateField[1] => $olduserID )
-			);
-			$out->addHTML(
-				$this->msg( 'usermerge-updating', $idUpdateField[0], $olduserID, $newuserID )->escaped() .
-				Html::element( 'br' ) . "\n"
-			);
-		}
+		$this->deduplicateWatchlistEntries( $objOldUser, $objNewUser );
 
-		foreach ( $textUpdateFields as $textUpdateField ) {
+		foreach ( $updateFields as $fieldInfo ) {
+			$tableName = array_shift( $fieldInfo );
+			$idField = array_shift( $fieldInfo );
+
 			$dbw->update(
-				$textUpdateField[0],
-				array( $textUpdateField[1] => $newuser_text ),
-				array( $textUpdateField[1] => $olduser_text )
+				$tableName,
+				array( $idField => $newuserID ) + array_fill_keys( $fieldInfo, $newuser_text ),
+				array( $idField => $olduserID ),
+				__METHOD__
 			);
+
 			$out->addHTML(
-				$this->msg( 'usermerge-updating', $textUpdateField[0], $olduser_text, $newuser_text )->escaped() .
+				$this->msg(
+					'usermerge-updating',
+					$tableName,
+					$olduserID,
+					$newuserID
+				)->escaped() .
 				Html::element( 'br' ) . "\n"
 			);
+
+			foreach ( $fieldInfo as $textField ) {
+				$out->addHTML(
+					$this->msg(
+						'usermerge-updating',
+						$tableName,
+						$olduser_text,
+						$newuser_text
+					)->escaped() .
+					Html::element( 'br' ) . "\n"
+				);
+			}
 		}
 
 		$dbw->delete( 'user_newtalk', array( 'user_id' => $olduserID ) );
