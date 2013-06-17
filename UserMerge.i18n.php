@@ -1299,7 +1299,7 @@ $messages['ja'] = array(
 	'usermerge-protectedgroup' => '利用者を統合できません: この利用者は被保護グループに属しています。',
 	'right-usermerge' => '利用者を統合',
 	'action-usermerge' => '利用者の統合',
-	'usermerge-editcount-merge-success' => '利用者 $2 の $1回の{{PLURAL:$1|編集}}を利用者 $4 の $3回の{{PLURAL:$3|編集}}へ追加（統合後は $5回の{{PLURAL:$5|編集}}）',
+	'usermerge-editcount-merge-success' => '利用者 $2 の $1 回の{{PLURAL:$1|編集}}を利用者 $4 の $3 回の{{PLURAL:$3|編集}}へ追加 (統合後は $5 回の{{PLURAL:$5|編集}})',
 	'usermerge-autopagedelete' => '利用者の統合と共に自動的に削除しました',
 	'usermerge-page-unmoved' => 'ページ「$1」を「$2」に移動できませんでした。',
 	'usermerge-page-moved' => 'ページ「$1」を「$2」に移動しました。',
@@ -2022,6 +2022,8 @@ Apasă "{{int:usermerge-submit}}" pentru a accepta.', # Fuzzy
  * @author Joetaras
  */
 $messages['roa-tara'] = array(
+	'usermerge' => 'Scuagghie e scangille le utinde',
+	'usermerge-desc' => "[[Special:UserMerge|Scuagghie le refereminde da 'n'utende a 'n'otre utende]] jndr'à 'u database de uicchi - avènene scangellate pure le vicchie utinde apprisse 'u scuagghiamende. A tenè le deritte de ''usermerge''",
 	'usermerge-badolduser' => 'Nome utende vecchije invalide',
 	'usermerge-badnewuser' => 'Nome utende nuève invalide',
 	'usermerge-noolduser' => "Vacande 'u nome utende vecchie.",
@@ -2030,6 +2032,13 @@ $messages['roa-tara'] = array(
 	'usermerge-newuser' => 'Utende nuève (da pigghià):',
 	'usermerge-deleteolduser' => 'Scangellate vecchie utende',
 	'usermerge-submit' => "Scuagghie l'utende",
+	'usermerge-badtoken' => 'Gettone de cangiamende invalide.',
+	'usermerge-userdeleted' => '$1 ($2) ha state scangellate.',
+	'usermerge-userdeleted-log' => 'Utende scangellate: $2 ($3)',
+	'usermerge-updating' => 'Stoche aggiorne $1 tabbelle ($2 a $3)',
+	'usermerge-logpage' => 'Archivije de le scuagghiaminde de le utinde',
+	'right-usermerge' => 'Scuagghie le utinde',
+	'action-usermerge' => 'scuagghie le utinde',
 	'usermerge-page-unmoved' => "'A pàgene $1 non ge pò essere spustate sus a $2.",
 	'usermerge-page-moved' => "'A pàgene $1 ha state spustete sus a $2.",
 	'usermerge-page-deleted' => 'Pàgene scangellate $1',
