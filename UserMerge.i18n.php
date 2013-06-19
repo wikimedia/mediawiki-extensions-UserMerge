@@ -2026,6 +2026,8 @@ $messages['roa-tara'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Scuagghie le refereminde da 'n'utende a 'n'otre utende]] jndr'à 'u database de uicchi - avènene scangellate pure le vicchie utinde apprisse 'u scuagghiamende. A tenè le deritte de ''usermerge''",
 	'usermerge-badolduser' => 'Nome utende vecchije invalide',
 	'usermerge-badnewuser' => 'Nome utende nuève invalide',
+	'usermerge-nonewuser' => 'Nome utende nuève vacande. Se decide de scuagghiarle jndr\'à "{{GENDER:$1|$1}}".<br />
+Cazze "{{int:usermerge-submit}}" pe accettà.',
 	'usermerge-noolduser' => "Vacande 'u nome utende vecchie.",
 	'usermerge-fieldset' => 'Nome utinde da scuagghià.',
 	'usermerge-olduser' => 'Utende vecchie (da scuagghià):',
@@ -2041,10 +2043,15 @@ $messages['roa-tara'] = array(
 	'usermerge-logpage' => 'Archivije de le scuagghiaminde de le utinde',
 	'usermerge-logpagetext' => "Quiste jè 'n'archivie de le aziune de scuagghiamende de l'utende.",
 	'usermerge-noselfdelete' => 'Non ge puà scangellarte o scuagghiarte da sule!',
+	'usermerge-unmergable' => "Non ge pozze scuagghià l'utende: L'ID o 'u nome ha state definite cumme none scuagghiabbile.",
+	'usermerge-protectedgroup' => "Non ge pozze scuagghia cu l'utende: L'utende ste jndr'à 'nu gruppe prutette.",
 	'right-usermerge' => 'Scuagghie le utinde',
 	'action-usermerge' => 'scuagghie le utinde',
+	'usermerge-editcount-merge-success' => "Stoche aggiunge $1 {{PLURAL:$1|'u cangiamende|le cangiaminde}} de l'utende $2 jndr'à $3 {{PLURAL:$3|'u cangiamende|le cangiaminde}} de l'utende $4 ($5 {{PLURAL:$5|'u cangiamende|le cangiaminde}} apprisse 'u scuagghiamende)",
+	'usermerge-autopagedelete' => 'Automaticamende scangellate quanne onne state scuagghiate le utinde',
 	'usermerge-page-unmoved' => "'A pàgene $1 non ge pò essere spustate sus a $2.",
 	'usermerge-page-moved' => "'A pàgene $1 ha state spustete sus a $2.",
+	'usermerge-move-log' => 'Automaticamende spustate \'a pàgene quanne ha state scuagghiate l\'utende "[[User:$1|$1]]" jndr\'à "[[User:$2|{{GENDER:$2|$2}}]]"',
 	'usermerge-page-deleted' => 'Pàgene scangellate $1',
 );
 
