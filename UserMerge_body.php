@@ -116,44 +116,128 @@ class UserMerge extends SpecialPage {
 			}
 		}
 
-		$out->addHTML(
-			Xml::openElement( 'form', array( 'method' => 'post', 'action' => $this->getTitle()->getLocalUrl(), 'id' => 'usermergeform' ) ) .
-			Xml::fieldset( $this->msg( 'usermerge-fieldset' )->text() ) .
-			Xml::openElement( 'table', array( 'id' => 'mw-usermerge-table' ) ) .
-			"<tr>
-				<td class='mw-label'>" .
-					Xml::label( $this->msg( 'usermerge-olduser' )->text(), 'olduser' ) .
-				"</td>
-				<td class='mw-input'>" .
-					Xml::input( 'olduser', 20, $olduser_text, array( 'type' => 'text', 'tabindex' => '1', 'onFocus' => "document.getElementById( 'olduser' ).select;" ) ) . ' ' .
-				"</td>
-			</tr>
-			<tr>
-				<td class='mw-label'>" .
-					Xml::label( $this->msg( 'usermerge-newuser' )->text(), 'newuser' ) .
-				"</td>
-				<td class='mw-input'>" .
-					Xml::input( 'newuser', 20, $newuser_text, array( 'type' => 'text', 'tabindex' => '2', 'onFocus' => "document.getElementById( 'newuser' ).select;" ) ) .
-				"</td>
-			</tr>
-			<tr>
-				<td>&#160;" .
-				"</td>
-				<td class='mw-input'>" .
-					Xml::checkLabel( $this->msg( 'usermerge-deleteolduser' )->text(), 'deleteuser', 'deleteuser', $deleteUserCheck, array( 'tabindex' => '3' ) ) .
-				"</td>
-			</tr>
-			<tr>
-				<td>&#160;
-				</td>
-				<td class='mw-submit'>" .
-					Xml::submitButton( $this->msg( 'usermerge-submit' )->text(), array( 'tabindex' => '4' ) ) .
-				"</td>
-			</tr>" .
-			Xml::closeElement( 'table' ) .
-			Xml::closeElement( 'fieldset' ) .
-			Html::Hidden( 'token', $user->getEditToken() ) .
-			Xml::closeElement( 'form' ) . "\n"
+		$out->addHtml(
+
+			Html::rawElement( 'form',
+
+				array(
+					'method' => 'post',
+					'action' => $this->getTitle()->getLocalUrl(),
+					'id' => 'usermergeform'
+				),
+
+				Html::rawElement( 'fieldset',
+
+					array(),
+					Html::element( 'legend',
+						array(),
+						$this->msg( 'usermerge-fieldset' )->text()
+					) .
+
+					Html::rawElement( 'table',
+
+						array( 'id' => 'mw-usermerge-table' ),
+						Html::rawElement( 'tr',
+
+							array(),
+							Html::rawElement( 'td',
+								array( 'class' => 'mw-label' ),
+								Html::element( 'label',
+									array( 'for' => 'olduser' ),
+									$this->msg( 'usermerge-olduser' )->text()
+								)
+							) .
+
+							Html::rawElement( 'td',
+								array( 'class' => 'mw-input' ),
+								Html::input(
+									'olduser',
+									$olduser_text,
+									'text',
+									array(
+										'tabindex' => '1',
+										'size' => '20',
+										'onFocus' => "document.getElementById( 'olduser' ).select;"
+									)
+								),
+								' '
+							)
+						) .
+
+						Html::rawElement( 'tr',
+
+							array(),
+							Html::rawElement( 'td',
+								array( 'class' => 'mw-label' ),
+								Html::element( 'label',
+									array( 'for' => 'newuser' ),
+									$this->msg( 'usermerge-newuser' )->text()
+								)
+							) .
+
+							Html::rawElement( 'td',
+								array( 'class' => 'mw-input' ),
+								Html::input(
+									'newuser',
+									$newuser_text,
+									'text',
+									array(
+										'tabindex' => '2',
+										'size' => '20',
+										'onFocus' => "document.getElementById( 'newuser' ).select;"
+									)
+								)
+						)
+
+						) .
+
+						Html::rawElement( 'tr',
+
+							array(),
+							Html::rawElement( 'td',
+								array(),
+								"&#160;"
+							) .
+
+							Html::rawElement( 'td',
+								array( 'class' => 'mw-input' ),
+								Xml::checkLabel(
+									$this->msg( 'usermerge-deleteolduser' )->text(),
+									'deleteuser',
+									'deleteuser',
+									$deleteUserCheck,
+									array( 'tabindex' => '3' )
+								)
+							)
+
+						) .
+
+						Html::rawElement( 'tr',
+
+							array(),
+							Html::rawElement( 'td',
+								array(),
+								"&#160;"
+							) .
+
+							Html::rawElement( 'td',
+								array( 'class' => 'mw-submit' ),
+								Xml::submitButton(
+									$this->msg( 'usermerge-submit' )->text(),
+									array( 'tabindex' => '4' )
+								)
+							)
+
+						)
+
+					)
+
+				) .
+
+				Html::Hidden( 'token', $user->getEditToken() )
+
+			) . "\n"
+
 		);
 
 		if ( $validNewUser && $validOldUser ) {
@@ -406,7 +490,7 @@ class UserMerge extends SpecialPage {
 	private function mergeEditcount( $newuserID, $olduserID ) {
 		$dbw = wfGetDB( DB_MASTER );
 
-		$olduserEdits  = $dbw->selectField( 
+		$olduserEdits = $dbw->selectField(
 			'user',
 			'user_editcount',
 			array( 'user_id' => $olduserID ),
@@ -416,7 +500,7 @@ class UserMerge extends SpecialPage {
 			$olduserEdits = 0;
 		}
 
-		$newuserEdits  = $dbw->selectField( 
+		$newuserEdits = $dbw->selectField(
 			'user',
 			'user_editcount',
 			array( 'user_id' => $newuserID ),
