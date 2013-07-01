@@ -55,7 +55,7 @@ $specialPageAliases['de'] = array(
 
 /** Zazaki (Zazaki) */
 $specialPageAliases['diq'] = array(
-	'UserMerge' => array( 'KarberaPêtewrke' ),
+	'UserMerge' => array( 'KarberaPétewrke' ),
 );
 
 /** Lower Sorbian (dolnoserbski) */
