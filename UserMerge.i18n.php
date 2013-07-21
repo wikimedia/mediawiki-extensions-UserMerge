@@ -1695,8 +1695,8 @@ $messages['nds-nl'] = array(
 	'usermerge-desc' => "Zet n [[Special:UserMerge|spesiale zied]] derbie um gebrukers samen te voegen en de ouwe gebruker(s) vort te doon (hierveur is t recht ''usermerge'' neudig)",
 	'usermerge-badolduser' => 'Ongeldige ouwe gebrukersnaam',
 	'usermerge-badnewuser' => 'Ongeldige nieje gebrukersnaam',
-	'usermerge-nonewuser' => 'De nieje gebrukersnaam is niet op-egeven - der wörden vanuut egaon dat der samengevoeg mut wörden naor $1.<br />
-Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.', # Fuzzy
+	'usermerge-nonewuser' => 'De nieje gebrukersnaam is niet op-egeven. Der wörden vanuut egaon dat der samenevoegd mut wörden naor "{{GENDER:$1|$1}}".<br />
+Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.',
 	'usermerge-noolduser' => 'Ouwe gebrukersnaam is niet op-egeven',
 	'usermerge-fieldset' => 'Gebrukersnamen die samenevoegen mutten wörden',
 	'usermerge-olduser' => 'Ouwe gebruker (samenvoegen van):',
@@ -1707,8 +1707,8 @@ Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.', # Fuzzy
 	'usermerge-userdeleted' => '$1 ($2) is vort-edaon.',
 	'usermerge-userdeleted-log' => 'Vort-edaone gebruker: $2 ($3)',
 	'usermerge-updating' => 'Tabel $1 an t biewarken ($2 naor $3)',
-	'usermerge-success' => 'Samenvoegen van $1 ($2) naor $3 ($4) is aoferond.', # Fuzzy
-	'usermerge-success-log' => 'Gebruker $2 ($3) samenevoeg naor $4 ($5)', # Fuzzy
+	'usermerge-success' => 'Samenvoegen van $1 ($2) naor {{GENDER:$3|$3}} ($4) is aoferond.',
+	'usermerge-success-log' => 'Gebruker $2 ($3) samenevoegd naor {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Logboek gebrukerssamenvoegingen',
 	'usermerge-logpagetext' => 'Dit is t logboek van gebrukerssamenvoegingen.',
 	'usermerge-noselfdelete' => 'Je kunnen je eigen niet vortdoon of samenvoegen!',
