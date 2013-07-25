@@ -1974,7 +1974,7 @@ Clique "{{int:usermerge-submit}}" para aceitar.', # Fuzzy
 	'usermerge-updating' => 'Atualizando tabela $1 ($2 para $3)',
 	'usermerge-success' => 'Fusão de $1 ($2) para $3 ($4) está completa.', # Fuzzy
 	'usermerge-success-log' => 'Utilizador $2 ($3) fundido com $4 ($5)', # Fuzzy
-	'usermerge-logpage' => 'Registo de fusão de utilizadores',
+	'usermerge-logpage' => 'Registro de fusão de utilizadores',
 	'usermerge-logpagetext' => 'Este é um registro de ações de fusão de utilizadores.',
 	'usermerge-noselfdelete' => 'Você não pode apagar ou fundir a partir de si próprio!',
 	'usermerge-unmergable' => 'Não foi possível fundir o utilizador - Nome ou ID foi definido para não ser fundido.',
