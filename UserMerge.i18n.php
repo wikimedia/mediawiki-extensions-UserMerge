@@ -1714,6 +1714,7 @@ Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.',
 	'usermerge-unmergable' => 'Disse gebruker kan niet samenevoeg wörden. De gebrukersnaam of t gebrukersnummer is in-esteld as niet samenvoegen.',
 	'usermerge-protectedgroup' => 'Kan de gebrukers niet samenvoegen. De gebruker zit in n bescharmde groep.',
 	'right-usermerge' => 'Gebrukers samenvoegen',
+	'action-usermerge' => 'gebrukers samenvoegen',
 );
 
 /** Dutch (Nederlands)
