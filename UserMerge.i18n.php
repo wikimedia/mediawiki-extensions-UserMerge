@@ -1715,6 +1715,12 @@ Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.',
 	'usermerge-protectedgroup' => 'Kan de gebrukers niet samenvoegen. De gebruker zit in n bescharmde groep.',
 	'right-usermerge' => 'Gebrukers samenvoegen',
 	'action-usermerge' => 'gebrukers samenvoegen',
+	'usermerge-editcount-merge-success' => '$1 {{PLURAL:$1|bewarking|bewarkingen}} van de gebruker $2 bie $3 {{PLURAL:$3|bewarking|bewarkingen}} van de gebruker $4 zetten ($5 {{PLURAL:$5|bewarking|bewarkingen}} nao samenvoegen)',
+	'usermerge-autopagedelete' => 'Automaties vortedaon bie t samenvoegen van gebrukers',
+	'usermerge-page-unmoved' => 'De zied $1 kon niet herneumd wörden naor $2.',
+	'usermerge-page-moved' => 'De zied $1 is herneumd naor $2.',
+	'usermerge-move-log' => 'Zied is automaties verplaotst bie t herneumen van de gebruker "[[User:$1|$1]]" naor "[[User:$2|$2]]"',
+	'usermerge-page-deleted' => 'Vortedaone zied $1',
 );
 
 /** Dutch (Nederlands)
