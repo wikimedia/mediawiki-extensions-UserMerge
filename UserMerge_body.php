@@ -91,6 +91,9 @@ class UserMerge extends SpecialPage {
 									$validNewUser = false;
 									$out->wrapWikiMsg( "<div class='error'>$1</div>", 'usermerge-badnewuser' );
 								}
+							} elseif( $olduserID == $newuserID ) {
+								$validNewUser = false;
+								$out->wrapWikiMsg( "<div class='error'>$1</div>", array( 'usermerge-same-old-and-new-user' ) );
 							} else {
 								// newuser looks good
 								$validNewUser = true;

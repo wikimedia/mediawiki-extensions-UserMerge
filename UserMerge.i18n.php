@@ -16,6 +16,7 @@ $messages['en'] = array(
 	'usermerge-nonewuser' 		=> 'Empty new username. Assuming merge to "{{GENDER:$1|$1}}".<br />
 Click "{{int:usermerge-submit}}" to accept.',
 	'usermerge-noolduser' 		=> 'Empty old username.',
+	'usermerge-same-old-and-new-user' => 'The old and new user names need to be distinct.',
 	'usermerge-fieldset'            => 'Usernames to merge',
 	'usermerge-olduser' 		=> 'Old user (merge from):',
 	'usermerge-newuser' 		=> 'New user (merge to):',
