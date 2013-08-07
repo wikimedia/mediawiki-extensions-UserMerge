@@ -56,10 +56,25 @@ Click "{{int:usermerge-submit}}" to accept.',
 $messages['qqq'] = array(
 	'usermerge' => '{{doc-special|UserMerge}}',
 	'usermerge-desc' => '{{desc|name=User Merge|url=http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete}}',
+	'usermerge-badolduser' => 'Used as error message.',
+	'usermerge-badnewuser' => 'Used as error message.',
 	'usermerge-nonewuser' => '{{doc-important|Do not translate <code><nowiki>{{int:usermerge-submit}}</nowiki></code>.}}
 Used as error message. Parameters:
 * $1 - username "Anonymous" (hard-coded)',
+	'usermerge-noolduser' => 'Used as warning when merging users.',
 	'usermerge-same-old-and-new-user' => 'Used as error message if the names of the users to be merged are equal which is not allowed, because it does not make sense.',
+	'usermerge-fieldset' => 'Used as fieldset label.
+
+Followed by labels and inputboxes for the old and the new usernames.',
+	'usermerge-olduser' => 'Used as label for the "Old username" inputbox.
+
+See also:
+* {{msg-mw|Usermerge-newuser}}',
+	'usermerge-newuser' => 'Used as label for the "New username" inputbox.
+
+See also:
+* {{msg-mw|Usermerge-olduser}}',
+	'usermerge-deleteolduser' => 'Used as label for the checkbox.',
 	'usermerge-submit' => '{{Identical|Merge user}}',
 	'usermerge-badtoken' => 'Used as error message if the Edit Token is invalid.',
 	'usermerge-userdeleted' => 'Status message. Parameters:
@@ -83,6 +98,10 @@ Used as error message. Parameters:
 * $4 is a user name (not linked) that the other user is merged into; can be used for GENDER
 * $5 is a user ID of the target user',
 	'usermerge-logpage' => '{{doc-logpage}}',
+	'usermerge-logpagetext' => 'Used as heading in [[Special:Log/usermerge]].',
+	'usermerge-noselfdelete' => 'Used as error message when merging users.',
+	'usermerge-unmergable' => 'Unused at this time.',
+	'usermerge-protectedgroup' => 'Used as error message when merging users.',
 	'right-usermerge' => '{{doc-right|usermerge}}
 {{Identical|Merge user}}',
 	'action-usermerge' => '{{doc-action|usermerge}}
@@ -93,6 +112,7 @@ Used as error message. Parameters:
 * $3 is the number of edits of user with ID $3 before merging
 * $4 is the user ID of the user that the user with ID $2 was merged into.
 * $5 is the combined edit count of users with ID $2 and with ID $4',
+	'usermerge-autopagedelete' => 'Used as reason for deleting page.',
 	'usermerge-page-unmoved' => 'Used as failure message when moving a page. Parameters:
 * $1 - old page title (with link)
 * $2 - new page title (with link)
@@ -524,6 +544,7 @@ $messages['de'] = array(
 	'usermerge-nonewuser' => 'Es wurde kein neuer Benutzername angegeben. Daher wird eine Zusammenführung mit „{{GENDER:$1|$1}}“ angenommen.<br />
 Zum Ausführen auf „{{int:usermerge-submit}}“ klicken.',
 	'usermerge-noolduser' => 'Es wurde kein neuer Benutzername angegeben.',
+	'usermerge-same-old-and-new-user' => 'Die alten und neuen Benutzernamen müssen unterschiedlich sein.',
 	'usermerge-fieldset' => 'Benutzernamen zum Zusammenführen',
 	'usermerge-olduser' => 'Alter Benutzername (zusammenführen von):',
 	'usermerge-newuser' => 'Neuer Benutzername (zusammenführen nach):',
@@ -824,6 +845,7 @@ $messages['fr'] = array(
 	'usermerge-nonewuser' => 'Nouveau nom d’utilisateur vide. Nous supposons que vous voulez fusionner dans "{{GENDER:$1|$1}}".<br />
 Cliquez sur "{{int:usermerge-submit}}" pour accepter.',
 	'usermerge-noolduser' => 'Ancien nom d’utilisateur vide',
+	'usermerge-same-old-and-new-user' => 'L’ancien et le nouveau nom de l’utilisateur doivent être différents.',
 	'usermerge-fieldset' => 'Noms d’utilisateur à fusionner',
 	'usermerge-olduser' => 'Ancien utilisateur (fusionner depuis) :',
 	'usermerge-newuser' => 'Nouvel utilisateur (fusionner avec) :',
@@ -1283,6 +1305,7 @@ $messages['ja'] = array(
 	'usermerge-nonewuser' => '新しい利用者名の欄が空です。「{{GENDER:$1|$1}}」への統合と見なします。<br />
 「{{int:usermerge-submit}}」をクリックして承認してください。',
 	'usermerge-noolduser' => '旧利用者名の欄が空です。',
+	'usermerge-same-old-and-new-user' => '旧利用者名と新利用者名は異なるものにしてください。',
 	'usermerge-fieldset' => '統合する利用者名',
 	'usermerge-olduser' => '旧利用者 (統合元):',
 	'usermerge-newuser' => '新利用者 (統合先):',
@@ -1574,12 +1597,14 @@ $messages['ml'] = array(
 
 /** Marathi (मराठी)
  * @author Kaustubh
+ * @author V.narsikar
  */
 $messages['mr'] = array(
 	'usermerge' => 'सदस्य एकत्रीकरण व वगळणे',
 	'usermerge-badolduser' => 'चुकीचे जुने सदस्यनाव',
 	'usermerge-badnewuser' => 'चुकीचे नवे सदस्यनाव',
 	'usermerge-noolduser' => 'रिकामे जुने सदस्यनाव',
+	'usermerge-same-old-and-new-user' => 'जूने व नविन सदस्यनाम हे एकमेकापेक्षा वेगळेच असावयास हवे.',
 	'usermerge-olduser' => 'जुना सदस्य (इथून एकत्र करा)', # Fuzzy
 	'usermerge-newuser' => 'नवीन सदस्य (मध्ये एकत्र करा)', # Fuzzy
 	'usermerge-deleteolduser' => 'जुना सदस्य वगळायचा का?', # Fuzzy
@@ -2033,6 +2058,7 @@ $messages['roa-tara'] = array(
 	'usermerge-nonewuser' => 'Nome utende nuève vacande. Se decide de scuagghiarle jndr\'à "{{GENDER:$1|$1}}".<br />
 Cazze "{{int:usermerge-submit}}" pe accettà.',
 	'usermerge-noolduser' => "Vacande 'u nome utende vecchie.",
+	'usermerge-same-old-and-new-user' => "'U nome de l'utende vecchie e nuève onna essere diverse.",
 	'usermerge-fieldset' => 'Nome utinde da scuagghià.',
 	'usermerge-olduser' => 'Utende vecchie (da scuagghià):',
 	'usermerge-newuser' => 'Utende nuève (da pigghià):',
