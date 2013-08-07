@@ -16,7 +16,7 @@ $messages['en'] = array(
 	'usermerge-nonewuser' 		=> 'Empty new username. Assuming merge to "{{GENDER:$1|$1}}".<br />
 Click "{{int:usermerge-submit}}" to accept.',
 	'usermerge-noolduser' 		=> 'Empty old username.',
-	'usermerge-same-old-and-new-user' => 'The old and new user names need to be distinct.',
+	'usermerge-same-old-and-new-user' => 'The old and new usernames need to be distinct.',
 	'usermerge-fieldset'            => 'Usernames to merge',
 	'usermerge-olduser' 		=> 'Old user (merge from):',
 	'usermerge-newuser' 		=> 'New user (merge to):',
@@ -59,6 +59,7 @@ $messages['qqq'] = array(
 	'usermerge-nonewuser' => '{{doc-important|Do not translate <code><nowiki>{{int:usermerge-submit}}</nowiki></code>.}}
 Used as error message. Parameters:
 * $1 - username "Anonymous" (hard-coded)',
+	'usermerge-same-old-and-new-user' => 'Used as error message if the names of the users to be merged are equal which is not allowed, because it does not make sense.',
 	'usermerge-submit' => '{{Identical|Merge user}}',
 	'usermerge-badtoken' => 'Used as error message if the Edit Token is invalid.',
 	'usermerge-userdeleted' => 'Status message. Parameters:
