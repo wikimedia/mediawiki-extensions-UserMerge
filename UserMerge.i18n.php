@@ -1419,6 +1419,7 @@ $messages['ko'] = array(
 	'usermerge-nonewuser' => '빈 새 사용자 이름입니다. "{{GENDER:$1|$1}}" 사용자로 가정하여 합칩니다.<br />
 동의하면 "{{int:usermerge-submit}}"을 클릭하세요.',
 	'usermerge-noolduser' => '이전 사용자 이름이 비어 있음',
+	'usermerge-same-old-and-new-user' => '이전과 새 사용자 이름은 달라야 합니다.',
 	'usermerge-fieldset' => '사용자 이름 합치기',
 	'usermerge-olduser' => '(합쳐질) 이전 사용자:',
 	'usermerge-newuser' => '(합칠) 새 사용자:',
@@ -1546,6 +1547,7 @@ $messages['mk'] = array(
 	'usermerge-nonewuser' => 'Празно ново корисничко име. Се подразбира спојување со „{{GENDER:$1|$1}}“.<br />
 Стиснете на „{{int:usermerge-submit}}“ за да прифатите.',
 	'usermerge-noolduser' => 'Празно старо корисничко име',
+	'usermerge-same-old-and-new-user' => 'Старото и новото корисничко име треба да се разликуваат.',
 	'usermerge-fieldset' => 'Кориснички имиња за спојување',
 	'usermerge-olduser' => 'Стар корисник (за спојување од):',
 	'usermerge-newuser' => 'Нов корисник (за спојување со):',
@@ -1580,6 +1582,7 @@ $messages['ml'] = array(
 	'usermerge-badolduser' => 'അസാധുവായ പഴയ ഉപയോക്തൃനാമം',
 	'usermerge-badnewuser' => 'അസാധുവായ പുതിയ ഉപയോക്തൃനാമം',
 	'usermerge-noolduser' => 'പഴയ ഉപയോക്തൃനാമം ശൂന്യമാക്കുക',
+	'usermerge-same-old-and-new-user' => 'പുതിയ ഉപയോക്തൃനാമം പഴയതിൽ നിന്നും വ്യത്യസ്തമായിരിക്കണം',
 	'usermerge-olduser' => 'പഴയ ഉപയോക്താവ് (ലയിപ്പിക്കാനുള്ളത്):',
 	'usermerge-newuser' => 'പുതിയ ഉപയോക്താവ് (ഇതിലേക്കു സം‌യോജിപ്പിക്കണം):',
 	'usermerge-deleteolduser' => 'പഴയ ഉപയോക്താവിനെ മായ്ക്കുക',
