@@ -1502,6 +1502,7 @@ $messages['lb'] = array(
 	'usermerge-nonewuser' => 'Eidelen neie Benotzernumm - wahrscheinlech eng Zesummeféierung mat "{{GENDER:$1|$1}}.<br />
 Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
 	'usermerge-noolduser' => 'Eidelen ale Benotzernumm',
+	'usermerge-same-old-and-new-user' => 'Den alen an den neie Benotzernumm musse verschidde sinn.',
 	'usermerge-fieldset' => 'Benotzernimm fir zesummenzeféieren',
 	'usermerge-olduser' => 'Ale Benotzer (zesummeféiere vun):',
 	'usermerge-newuser' => 'Neie Benotzer (zusammenféiere mat):',

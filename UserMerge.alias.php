@@ -48,6 +48,11 @@ $specialPageAliases['bxr'] = array(
 	'UserMerge' => array( 'Хэрэглэгшые_нэгэдхэхэ' ),
 );
 
+/** Min Dong Chinese (Mìng-dĕ̤ng-ngṳ̄) */
+$specialPageAliases['cdo'] = array(
+	'UserMerge' => array( '用戶合併' ),
+);
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = array(
 	'UserMerge' => array( 'Benutzerkonten_vereinigen' ),
