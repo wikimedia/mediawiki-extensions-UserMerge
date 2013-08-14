@@ -276,6 +276,7 @@ $messages['ast'] = array(
 	'usermerge-nonewuser' => 'Nome d\'usuariu nuevu baleru. Asumese la fusión en "{{GENDER:$1|$1}}".<br />
 Calque "{{int:usermerge-submit}}" p\'aceutar.',
 	'usermerge-noolduser' => "Nome d'usuariu antiguu baleru",
+	'usermerge-same-old-and-new-user' => "Los nomes d'usuariu antiguu y nuevu tienen de ser distintos.",
 	'usermerge-fieldset' => "Nomes d'usuariu a fusionar",
 	'usermerge-olduser' => 'Usuariu antiguu (fusionar dende):',
 	'usermerge-newuser' => 'Usuariu nuevu (fusionar en):',
@@ -2220,6 +2221,7 @@ $messages['sl'] = array(
 	'usermerge-nonewuser' => 'Prazno novo uporabniško ime. Predpostavljam združitev z »{{GENDER:$1|$1}}«.<br />
 Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 	'usermerge-noolduser' => 'Prazno staro uporabniško ime',
+	'usermerge-same-old-and-new-user' => 'Stara in nova uporabniška imena morajo biti različna.',
 	'usermerge-fieldset' => 'Uporabniška imena za spajanje',
 	'usermerge-olduser' => 'Stari uporabnik (spoji od):',
 	'usermerge-newuser' => 'Novi uporabnik (spoji do):',
