@@ -2630,6 +2630,7 @@ $messages['vi'] = array(
 	'usermerge-nonewuser' => 'Tên thành viên mới đã để trống. Có lẽ nên trộn với với “$1”.<br />
 Nhấn “{{int:usermerge-submit}}” để chấp nhận.',
 	'usermerge-noolduser' => 'Tên thành viên cũ trống',
+	'usermerge-same-old-and-new-user' => 'Các tên người dùng cũ và mới phải khác nhau.',
 	'usermerge-fieldset' => 'Các tên thành viên sẽ trộn',
 	'usermerge-olduser' => 'Thành viên cũ (trộn từ đây):',
 	'usermerge-newuser' => 'Thành viên mới (trộn đến đây):',
