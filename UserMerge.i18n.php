@@ -1836,8 +1836,8 @@ $messages['oc'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Fusiona las referéncias d'un utilizaire cap a un autre]] dins la banca de donadas wiki - suprimirà tanben las fusions d'utilizaires ancianas seguentas.",
 	'usermerge-badolduser' => "Nom d'utilizaire ancian invalid",
 	'usermerge-badnewuser' => "Nom d'utilizaire novèl invalid",
-	'usermerge-nonewuser' => "Nom d'utilizaire novèl void. Fasèm l'ipotèsi que volètz fusionar dins « $1 ».<br />
-Clicatz sus « {{int:usermerge-submit}} » per acceptar.", # Fuzzy
+	'usermerge-nonewuser' => 'Nom d\'utilizaire novèl void. Supausam que volètz fusionar dins  "{{GENDER:$1|$1}}".<br />
+Clicatz sus « {{int:usermerge-submit}} » per acceptar.',
 	'usermerge-noolduser' => "Nom d'utilizaire ancian void",
 	'usermerge-fieldset' => 'Noms d’utilizaires de fusionar',
 	'usermerge-olduser' => 'Utilizaire ancian (fusionar dempuèi) :',
@@ -1848,8 +1848,8 @@ Clicatz sus « {{int:usermerge-submit}} » per acceptar.", # Fuzzy
 	'usermerge-userdeleted' => '$1($2) es destruch.',
 	'usermerge-userdeleted-log' => 'Contributor escafat : $2($3)',
 	'usermerge-updating' => 'Mesa a jorn de la taula $1 (de $2 a $3)',
-	'usermerge-success' => 'La fusion de $1($2) a $3($4) es completada.', # Fuzzy
-	'usermerge-success-log' => 'Contributor $2($3) fusionat amb $4($5)', # Fuzzy
+	'usermerge-success' => 'La fusion de $1($2) a  {{GENDER:$3|$3}} ($4) es completada.',
+	'usermerge-success-log' => 'Contributor $2($3) fusionat amb {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Jornal de las fusions de contributors',
 	'usermerge-logpagetext' => 'Aquò es un jornal de las accions de fusions de contributors.',
 	'usermerge-noselfdelete' => 'Podètz pas, vos-meteis, vos suprimir ni vos fusionar !',
