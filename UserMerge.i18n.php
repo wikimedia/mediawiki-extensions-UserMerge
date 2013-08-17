@@ -2559,7 +2559,9 @@ $messages['ug-arab'] = array(
 
 /** Ukrainian (українська)
  * @author Ahonc
+ * @author Andriykopanytsia
  * @author Steve.rusyn
+ * @author SteveR
  * @author Ата
  */
 $messages['uk'] = array(
@@ -2570,6 +2572,7 @@ $messages['uk'] = array(
 	'usermerge-nonewuser' => "Порожнє ім'я користувача. Припускається злиття з «{{GENDER:$1|$1}}».<br />
 Натисніть «{{int:usermerge-submit}}», щоб підтвердити дію.",
 	'usermerge-noolduser' => "Порожнє старе ім'я користувача",
+	'usermerge-same-old-and-new-user' => 'Старі і нові імена користувачів повинні відрізнятися.',
 	'usermerge-fieldset' => "Облікові записи для об'єднання",
 	'usermerge-olduser' => "Старий обліковий запис (об'єднати з):",
 	'usermerge-newuser' => "Новий обліковий запис (об'єднати у):",
@@ -2588,8 +2591,7 @@ $messages['uk'] = array(
 	'usermerge-protectedgroup' => "Неможливо об'єднати користувачів — користувач належить до захищеної групи.",
 	'right-usermerge' => "об'єднання користувачів",
 	'action-usermerge' => "об'єднування користувачів",
-	'usermerge-editcount' => 'Додати лічильник редагувань?',
-	'usermerge-editcount-success' => 'Додавання лічильника редагувань ($1 і $2)',
+	'usermerge-editcount-merge-success' => 'Додавання $1 {{PLURAL:$1|редагування|редагувань}} користувача $2 до $3 {{PLURAL:$3|редагування|редагувань}} користувача $4 ($5 {{PLURAL:$5|edit|edits}} після злиття)',
 	'usermerge-autopagedelete' => "Автоматично видаляються при об'єднанні користувачів",
 	'usermerge-page-unmoved' => 'Сторінка $1 не може бути перейменована на $2.',
 	'usermerge-page-moved' => 'Сторінка $1 була перейменована на $2.',
