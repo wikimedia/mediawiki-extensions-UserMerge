@@ -533,12 +533,13 @@ Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.', # Fuzzy
  * @author Kghbln
  * @author Lukas9950
  * @author Metalhead64
+ * @author Purodha
  * @author Raimond Spekking
  * @author Umherirrender
  */
 $messages['de'] = array(
 	'usermerge' => 'Benutzerkonten zusammenführen und löschen',
-	'usermerge-desc' => 'Ergänzt eine [[Special:UserMerge|Spezialseite]] zum Zusammenführen von Benutzerkonten und der anschließenden Löschung des alten Benutzerkontos in der Datenbank des Wikis',
+	'usermerge-desc' => 'Fügt eine [[Special:UserMerge|Spezialseite]] zum Zusammenführen von Benutzerkonten und der anschließenden Löschung des alten Benutzerkontos in der Datenbank des Wikis hinzu',
 	'usermerge-badolduser' => 'Ungültiger alter Benutzername',
 	'usermerge-badnewuser' => 'Ungültiger neuer Benutzername',
 	'usermerge-nonewuser' => 'Es wurde kein neuer Benutzername angegeben. Daher wird eine Zusammenführung mit „{{GENDER:$1|$1}}“ angenommen.<br />
@@ -1264,6 +1265,7 @@ $messages['it'] = array(
 	'usermerge-nonewuser' => 'Nuovo nome utente vuoto - l\'unione verrà effettuata con l\'utente "{{GENDER:$1|$1}}".<br />
 Fare clic su "{{int:usermerge-submit}}" per accettare.',
 	'usermerge-noolduser' => 'Vecchio nome utente vuoto',
+	'usermerge-same-old-and-new-user' => 'Il vecchio ed il nuovo nome utente devono essere diversi.',
 	'usermerge-fieldset' => 'Nomi utente da unire',
 	'usermerge-olduser' => 'Vecchio utente (unisci da):',
 	'usermerge-newuser' => 'Nuovo utente (unisci a):',
