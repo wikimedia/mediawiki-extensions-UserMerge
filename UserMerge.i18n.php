@@ -2695,6 +2695,7 @@ $messages['yue'] = array(
  * @author Dimension
  * @author Gaoxuewei
  * @author Gzdavidwong
+ * @author Hzy980512
  * @author Liangent
  * @author Yfdyh000
  * @author 乌拉跨氪
@@ -2704,8 +2705,9 @@ $messages['zh-hans'] = array(
 	'usermerge-desc' => "将在wiki数据库中[[Special:UserMerge|合并一个用户到另一个用户]] - 合并后删除旧用户。需要''usermerge''权限",
 	'usermerge-badolduser' => '无效的旧用户名',
 	'usermerge-badnewuser' => '无效的新用户名',
-	'usermerge-nonewuser' => '清除新用户名 - 假设合并到$1。<br />点击<em>{{int:usermerge-submit}}</em>以接受。', # Fuzzy
+	'usermerge-nonewuser' => '新用户名为空 - 假设合并到$1。<br />点击<em>{{int:usermerge-submit}}</em>确定。',
 	'usermerge-noolduser' => '清除旧用户名',
+	'usermerge-same-old-and-new-user' => '新旧用户名不能相同。',
 	'usermerge-fieldset' => '使用者名称合并',
 	'usermerge-olduser' => '旧用户（合并自）：',
 	'usermerge-newuser' => '新用户（合并到）：',
@@ -2715,8 +2717,8 @@ $messages['zh-hans'] = array(
 	'usermerge-userdeleted' => '$1（$2） 已删除。',
 	'usermerge-userdeleted-log' => '已删除的用户： $2 （$3）',
 	'usermerge-updating' => '正在更新 $1 表格 （$2 到 $3）',
-	'usermerge-success' => '由 $1（$2） 到 $3（$4） 的合并已经完成。', # Fuzzy
-	'usermerge-success-log' => '用户 $2 （$3） 合并到 $4 （$5）', # Fuzzy
+	'usermerge-success' => '由$1（$2）到$3（$4）的合并已经完成。',
+	'usermerge-success-log' => '用户$2 （$3）已合并到$4（$5）',
 	'usermerge-logpage' => '用户合并日志',
 	'usermerge-logpagetext' => '这是一份用户合并动作的记录。',
 	'usermerge-noselfdelete' => '您不能将自己删除或者合并！',
@@ -2724,8 +2726,7 @@ $messages['zh-hans'] = array(
 	'usermerge-protectedgroup' => '无法完成用户合并 - 用户位于受保护组中。',
 	'right-usermerge' => '合并用户',
 	'action-usermerge' => '合并用户',
-	'usermerge-editcount' => '添加编辑计数吗？',
-	'usermerge-editcount-success' => '添加 $1 和 $2 的编辑计数吗',
+	'usermerge-editcount-merge-success' => '添加用户$2的$1个编辑量到用户$4的$3个编辑量中（合并后有$5个编辑）',
 	'usermerge-autopagedelete' => '合并用户时自动删除',
 	'usermerge-page-unmoved' => '页面$1无法被移动到$2。',
 	'usermerge-page-moved' => '页面$1已被移动到$2。',
