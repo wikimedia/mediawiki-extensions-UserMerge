@@ -1023,6 +1023,7 @@ $messages['he'] = array(
 	'usermerge-nonewuser' => 'שם המשתמש החדש ריק. כנראה שהמיזוג הוא אל "$1".<br />
 נא ללחוץ על "{{int:usermerge-submit}}" לאישור.',
 	'usermerge-noolduser' => 'שם המשתמש הישן ריק',
+	'usermerge-same-old-and-new-user' => 'השם הישן צריך להיות שונה מהשם החדש.',
 	'usermerge-fieldset' => 'שמות משתמש למיזוג',
 	'usermerge-olduser' => 'משתמש ישן (מיזוג מ):',
 	'usermerge-newuser' => 'משתמש חדש (מיזוג ל):',
@@ -1041,8 +1042,7 @@ $messages['he'] = array(
 	'usermerge-protectedgroup' => 'לא ניתן למזג ממשתמש זה - המשתמש נמצא בקבוצה מוגנת.',
 	'right-usermerge' => 'מיזוג משתמשים',
 	'action-usermerge' => 'למזג משתמשים',
-	'usermerge-editcount' => 'להוסיף מונה עריכות?',
-	'usermerge-editcount-success' => 'הוספת מונה עריכות של ($1&rlm;, $2)',
+	'usermerge-editcount-merge-success' => 'הוספת {{PLURAL:$1|עריכה אחת|$1 עריכות}} של החשבון $2 אל {{PLURAL:$3|עריכה אחת|$5 עריכות}} של החשבון $4 ({{PLURAL:$5|עריכה אחת|$3 עריכות}} אחרי מיזוג)',
 	'usermerge-autopagedelete' => 'נמחק אוטומטית בזמן מיזוג חשבונות',
 	'usermerge-page-unmoved' => 'לא ניתן להעביר את הדף $1 לשם $2.',
 	'usermerge-page-moved' => 'הדף $1 הועבר לשם $2.',
