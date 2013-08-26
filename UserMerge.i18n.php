@@ -926,6 +926,7 @@ $messages['gl'] = array(
 	'usermerge-nonewuser' => 'Nome de usuario baleiro. Asúmese que quere fusionalo con "{{GENDER:$1|$1}}".<br />
 Prema en "{{int:usermerge-submit}}" para aceptar.',
 	'usermerge-noolduser' => 'Antigo nome de usuario baleiro',
+	'usermerge-same-old-and-new-user' => 'O nome de usuario vello ten que ser distinto do novo.',
 	'usermerge-fieldset' => 'Nomes de usuario a fusionar',
 	'usermerge-olduser' => 'Usuario antigo (fusionar desde):',
 	'usermerge-newuser' => 'Usuario novo (fusionar con):',
