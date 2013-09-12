@@ -59,7 +59,11 @@ $messages['qqq'] = array(
 	'usermerge-badolduser' => 'Used as error message.',
 	'usermerge-badnewuser' => 'Used as error message.',
 	'usermerge-nonewuser' => '{{doc-important|Do not translate <code><nowiki>{{int:usermerge-submit}}</nowiki></code>.}}
-Used as error message. Parameters:
+Used as error message.
+
+Refers to {{msg-mw|Usermerge-submit}}.
+
+Parameters:
 * $1 - username "Anonymous" (hard-coded)',
 	'usermerge-noolduser' => 'Used as warning when merging users.',
 	'usermerge-same-old-and-new-user' => 'Used as error message if the names of the users to be merged are equal which is not allowed, because it does not make sense.',
@@ -75,7 +79,8 @@ See also:
 See also:
 * {{msg-mw|Usermerge-olduser}}',
 	'usermerge-deleteolduser' => 'Used as label for the checkbox.',
-	'usermerge-submit' => '{{Identical|Merge user}}',
+	'usermerge-submit' => 'Used in {{msg-mw|Usermerge-nonewuser}}.
+{{Identical|Merge user}}',
 	'usermerge-badtoken' => 'Used as error message if the Edit Token is invalid.',
 	'usermerge-userdeleted' => 'Status message. Parameters:
 * $1 is the name of a user that was deleted (not linked).
