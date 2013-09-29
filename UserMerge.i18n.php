@@ -1766,6 +1766,7 @@ Klik "{{int:usermerge-submit}}" um de haandeling uut te voeren.',
 /** Dutch (Nederlands)
  * @author SPQRobin
  * @author Siebrand
+ * @author Southparkfan
  */
 $messages['nl'] = array(
 	'usermerge' => 'Gebruikers samenvoegen en verwijderen',
@@ -1776,6 +1777,7 @@ $messages['nl'] = array(
 Er wordt aangenomen dat er samengevoegd moet worden naar "{{GENDER:$1|$1}}".<br />
 Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 	'usermerge-noolduser' => 'De oude gebruiker is niet opgegeven.',
+	'usermerge-same-old-and-new-user' => 'De oude en nieuwe gebruikersnamen moeten verschillend zijn.',
 	'usermerge-fieldset' => 'Samen te voegen gebruikersnamen',
 	'usermerge-olduser' => 'Oude gebruiker (samenvoegen van):',
 	'usermerge-newuser' => 'Nieuwe gebruiker (samenvoegen naar):',
@@ -1794,8 +1796,6 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 	'usermerge-protectedgroup' => 'Het is niet mogelijk de gebruikers samen te voegen. De gebruiker zit in een beschermde groep.',
 	'right-usermerge' => 'Gebruikers samenvoegen',
 	'action-usermerge' => 'gebruikers samenvoegen',
-	'usermerge-editcount' => 'Aantal bewerkingen toevoegen?',
-	'usermerge-editcount-success' => 'Bezig met het toevoegen van het aantal bewerkingen voor ($1 en $2)',
 	'usermerge-autopagedelete' => 'Automatisch verwijderd bij het samenvoegen van gebruikers',
 	'usermerge-page-unmoved' => 'De pagina $1 kon niet hernoemd worden naar $2.',
 	'usermerge-page-moved' => 'De pagina $1 is hernoemd naar $2.',
@@ -1951,7 +1951,7 @@ Ch\'a sgnaca "{{int:usermerge-submit}}" për aceté.',
  */
 $messages['ps'] = array(
 	'usermerge-badnewuser' => 'نوی کارن-نوم مو ناسم دی',
-	'usermerge-deleteolduser' => 'زوړ کارن ړنګول',
+	'usermerge-deleteolduser' => 'زوړ کارن ړنگول',
 );
 
 /** Portuguese (português)
@@ -2103,6 +2103,7 @@ Cazze "{{int:usermerge-submit}}" pe accettà.',
  * @author Ferrer
  * @author Illusion
  * @author Innv
+ * @author Okras
  * @author Ole Yves
  * @author Александр Сигачёв
  */
@@ -2111,8 +2112,8 @@ $messages['ru'] = array(
 	'usermerge-desc' => "[[Special:UserMerge|Переводит связи с одного участника на другого]] в базе данных вики, старые пользователи будут удаляться. Требует прав ''usermerge''",
 	'usermerge-badolduser' => 'Неправильное старое имя участника',
 	'usermerge-badnewuser' => 'Неправильное новое имя участника',
-	'usermerge-nonewuser' => 'Пустое новое имя участника — при слиянии с «$1».<br />
-Нажмите «{{int:usermerge-submit}}», чтобы подтвердить действие.', # Fuzzy
+	'usermerge-nonewuser' => 'Пустое новое имя участника — при слиянии с «{{GENDER:$1|$1}}».<br />
+Нажмите «{{int:usermerge-submit}}», чтобы подтвердить действие.',
 	'usermerge-noolduser' => 'Пустое старое имя участника',
 	'usermerge-fieldset' => 'Учётные записи для объединения',
 	'usermerge-olduser' => 'Старая учётная запись (объединить с):',
@@ -2123,20 +2124,18 @@ $messages['ru'] = array(
 	'usermerge-userdeleted' => '$1 ($2) был удалён.',
 	'usermerge-userdeleted-log' => 'Удалён участник $2 ($3)',
 	'usermerge-updating' => 'Обновление таблицы $1 ($2 из $3)',
-	'usermerge-success' => 'Объединение $1 ($2) с $3 ($4) выполнено.', # Fuzzy
-	'usermerge-success-log' => 'Участник $2 ($3) объединён в $4 ($5)', # Fuzzy
+	'usermerge-success' => 'Объединение $1 ($2) с {{GENDER:$3|$3}} ($4) выполнено.',
+	'usermerge-success-log' => 'Участник $2 ($3) объединён в {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Журнал объединения участников',
 	'usermerge-logpagetext' => 'Это журнал объединения учётных записей.',
 	'usermerge-noselfdelete' => 'Вы не можете удалять или объединять себя самого!',
 	'usermerge-unmergable' => 'Невозможно объединить участников — идентификатор или имя было определено как необъединяемое.',
 	'usermerge-protectedgroup' => 'Невозможно объединить участников — участник относится к защищённой группе.',
 	'right-usermerge' => 'объединение участников',
-	'usermerge-editcount' => 'Добавить счётчик правок?',
-	'usermerge-editcount-success' => 'Добавление счётчика правок ($1 и $2)',
 	'usermerge-autopagedelete' => 'Автоматически удаляются при объединении пользователей',
 	'usermerge-page-unmoved' => 'Страница $1 не может быть переименована в $2.',
 	'usermerge-page-moved' => 'Страница $1 была переименована в $2.',
-	'usermerge-move-log' => 'Автоматически переименовано во время объединения учетной записи "[[User:$1|$1]]" с "[[User:$2|$2]]"', # Fuzzy
+	'usermerge-move-log' => 'Автоматически переименовано во время объединения учетной записи «[[User:$1|$1]]» с «[[User:$2|{{GENDER:$2|$2}}]]»',
 	'usermerge-page-deleted' => 'Удалить страницу $1',
 );
 
