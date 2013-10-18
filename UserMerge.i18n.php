@@ -1048,8 +1048,13 @@ $messages['he'] = array(
 
 /** Hindi (हिन्दी)
  * @author Kaustubh
+ * @author Siddhartha Ghai
  */
 $messages['hi'] = array(
+	'usermerge' => 'सदस्य खाते विलय करें और हटाएँ',
+	'usermerge-desc' => "विकि डाटाबेस में [[Special:UserMerge|सदस्य खाते विलय करें]]। विलय के बाद पुराने खाते हटा दिए जाएँगे। ''usermerge'' अधिकार आवश्यक है।",
+	'usermerge-badolduser' => 'अमान्य पुराना सदस्यनाम।',
+	'usermerge-badnewuser' => 'अमान्य नया सदस्यनाम।',
 	'usermerge-badtoken' => 'गलत एडिट टोकन',
 );
 
