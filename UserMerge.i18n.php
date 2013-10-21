@@ -491,6 +491,7 @@ $messages['ca'] = array(
  */
 $messages['ce'] = array(
 	'usermerge-userdeleted' => '$1 ($2) дӀаяккхи.',
+	'action-usermerge' => 'декъашхой цхьаьнатохар',
 	'usermerge-page-moved' => 'АгӀона $1 цӀе хийцина оцу $2.',
 	'usermerge-page-deleted' => 'ДӀаяккха агӀо $1',
 );
