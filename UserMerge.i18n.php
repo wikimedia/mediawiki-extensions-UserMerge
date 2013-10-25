@@ -2328,6 +2328,7 @@ $messages['su'] = array(
 );
 
 /** Swedish (svenska)
+ * @author Jopparn
  * @author Lejonel
  * @author Lokal Profil
  * @author Martinwiss
@@ -2343,6 +2344,7 @@ $messages['sv'] = array(
 	'usermerge-nonewuser' => 'Tomt nytt användarnamn. Antar sammanslagning till "{{GENDER:$1|$1}}".<br />
 Klicka på "{{int:usermerge-submit}}" för att godkänna.',
 	'usermerge-noolduser' => 'Gammalt användarnamn tomt',
+	'usermerge-same-old-and-new-user' => 'De gamla och nya användarnamnen måste vara åtskilda.',
 	'usermerge-fieldset' => 'Användarnamn att förena',
 	'usermerge-olduser' => 'Gammalt användarnamn (slå ihop från)',
 	'usermerge-newuser' => 'Nytt användarnamn (slå ihop till)',
