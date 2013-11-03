@@ -1490,6 +1490,7 @@ $messages['ku-latn'] = array(
 /** Luxembourgish (Lëtzebuergesch)
  * @author Les Meloures
  * @author Robby
+ * @author Soued031
  */
 $messages['lb'] = array(
 	'usermerge' => 'Benotzerkonten zesummeféieren a läschen',
@@ -1518,7 +1519,7 @@ Klickt op "{{int:usermerge-submit}}" wann Dir d\'accord sidd.',
 	'usermerge-protectedgroup' => "D'Zesammenféierung ass net méiglech - De Benotzer ass an engem geschützte Grupp.",
 	'right-usermerge' => 'Benotzer zesummeféieren',
 	'action-usermerge' => 'Benotzer zesummeféieren',
-	'usermerge-editcount-merge-success' => '{{PLURAL:$1|Eng Ännerung|$1 Ännerunge}} vum Benotzer $2 bäi $3 {{PLURAL:$3|Eng Ännerung|$3 Ännerunge}} vum Benotzer $4 derbäigesat ($5 {{PLURAL:$1|Eng Ännerung|$1 Ännerungen}} nom Zesummeféieren)',
+	'usermerge-editcount-merge-success' => '{{PLURAL:$1|Eng Ännerung|$1 Ännerunge}} vum Benotzer $2 bei $3 {{PLURAL:$3|Eng Ännerung|$3 Ännerunge}} vum Benotzer $4 derbäigesat ($5 {{PLURAL:$1|Eng Ännerung|$1 Ännerungen}} nom Zesummeféieren)',
 	'usermerge-autopagedelete' => "Automatesch geläscht wéi d'Benotzer zesummegeluecht goufen",
 	'usermerge-page-unmoved' => "D'Säit $1 konnt net op $2 geréckelt ginn.",
 	'usermerge-page-moved' => "D'Säit $1 gouf op $2 geréckelt.",
