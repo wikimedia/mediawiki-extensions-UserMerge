@@ -767,6 +767,7 @@ $messages['eu'] = array(
 
 /** Persian (فارسی)
  * @author BlueDevil
+ * @author Ebraminio
  * @author Huji
  * @author Meisam
  * @author Mjbmr
@@ -778,9 +779,9 @@ $messages['fa'] = array(
 	'usermerge-badnewuser' => 'نام کاربری جدید نامعتبر',
 	'usermerge-noolduser' => 'نام کاربری قدیمی خالی',
 	'usermerge-fieldset' => 'نام‌های کاربری برای ادغام',
-	'usermerge-olduser' => 'کاربر قدیمی (ادغام از)', # Fuzzy
+	'usermerge-olduser' => 'کاربر قدیمی (ادغام از):',
 	'usermerge-newuser' => 'کاربر جدید (ادغام با):',
-	'usermerge-deleteolduser' => 'کاربر قدیمی حذف شود؟', # Fuzzy
+	'usermerge-deleteolduser' => 'پاک‌کردن کاربر قدیمی',
 	'usermerge-submit' => 'یکی کردن کاربر',
 	'usermerge-userdeleted' => '$1 ($2) پاک شد.',
 	'usermerge-logpage' => 'سیاههٔ ادغام کاربر',
