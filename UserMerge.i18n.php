@@ -794,6 +794,7 @@ $messages['fa'] = array(
  * @author Nike
  * @author Silvonen
  * @author Str4nd
+ * @author Stryn
  * @author VezonThunder
  * @author Vililikku
  */
@@ -813,8 +814,8 @@ Napsauta "{{int:usermerge-submit}}" hyväksyäksesi.', # Fuzzy
 	'usermerge-userdeleted' => '$1 ($2) on poistettu.',
 	'usermerge-userdeleted-log' => 'Poistettiin käyttäjä: $2 ($3)',
 	'usermerge-updating' => 'Päivitetään taulukko $1 ($2 arvoon $3)',
-	'usermerge-success' => 'Yhdistäminen tunnuksesta $1 ($2) tunnukseen $3 ($4) on suoritettu.', # Fuzzy
-	'usermerge-success-log' => 'Käyttäjä $2 ($3) yhdistettiin käyttäjään $4 ($5)', # Fuzzy
+	'usermerge-success' => 'Yhdistäminen tunnuksesta $1 ($2) tunnukseen {{GENDER:$3|$3}} ($4) on suoritettu.',
+	'usermerge-success-log' => 'Käyttäjä $2 ($3) yhdistettiin käyttäjään {{GENDER:$4|$4}} ($5)',
 	'usermerge-logpage' => 'Käyttäjien yhdistämisloki',
 	'usermerge-logpagetext' => 'Tämä on loki käyttäjätunnuksien yhdistämistoimista.',
 	'usermerge-noselfdelete' => 'Et voi poistaa tai yhdistää itseltäsi.',
@@ -823,7 +824,7 @@ Napsauta "{{int:usermerge-submit}}" hyväksyäksesi.', # Fuzzy
 	'usermerge-autopagedelete' => 'Poistettiin automaattisesti käyttäjien yhdistämisessä',
 	'usermerge-page-unmoved' => 'Sivua $1 ei voitu siirtää nimelle $2.',
 	'usermerge-page-moved' => 'Sivu $1 siirrettiin nimelle $2.',
-	'usermerge-move-log' => 'Sivu siirretty automaattisesti yhdistettäessä käyttäjä "[[User:$1|$1]]" käyttäjään "[[User:$2|$2]]"', # Fuzzy
+	'usermerge-move-log' => 'Sivu siirretty automaattisesti yhdistettäessä käyttäjä "[[User:$1|$1]]" käyttäjään "[[User:$2|{{GENDER:$2|$2}}]]"',
 	'usermerge-page-deleted' => 'Sivu $1 poistettiin',
 );
 
