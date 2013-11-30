@@ -2243,6 +2243,7 @@ Kliknite »{{int:usermerge-submit}}« za sprejetje.',
 );
 
 /** Serbian (Cyrillic script) (српски (ћирилица)‎)
+ * @author Milicevic01
  * @author Rancher
  * @author Жељко Тодоровић
  * @author Михајло Анђелковић
@@ -2262,7 +2263,7 @@ $messages['sr-ec'] = array(
 	'usermerge-updating' => 'Ажурирање $1 табеле ($2 на $3)',
 	'usermerge-success' => 'Спајање $1 ($2) са $3 ($4) је завршено.', # Fuzzy
 	'usermerge-success-log' => 'Корисник $2 ($3) је спојен са $4 ($5)', # Fuzzy
-	'usermerge-logpage' => 'Историја спајања корисника',
+	'usermerge-logpage' => 'Дневник спајања корисника',
 	'usermerge-logpagetext' => 'Ово је историја спајања корисника.',
 	'usermerge-noselfdelete' => 'Не можете да се обришете или спојите са другим налогом!',
 	'usermerge-protectedgroup' => 'Није могуђе спојити овог корисника са другим — налази се у заштићеној групи.',
@@ -2271,6 +2272,7 @@ $messages['sr-ec'] = array(
 
 /** Serbian (Latin script) (srpski (latinica)‎)
  * @author Michaello
+ * @author Milicevic01
  * @author Rancher
  */
 $messages['sr-el'] = array(
@@ -2288,7 +2290,7 @@ $messages['sr-el'] = array(
 	'usermerge-updating' => 'Ažuriranje $1 tabele ($2 na $3)',
 	'usermerge-success' => 'Spajanje $1 ($2) sa $3 ($4) je završeno.', # Fuzzy
 	'usermerge-success-log' => 'Korisnik $2 ($3) je spojen sa $4 ($5)', # Fuzzy
-	'usermerge-logpage' => 'Istorija spajanja korisnika',
+	'usermerge-logpage' => 'Dnevnik spajanja korisnika',
 	'usermerge-logpagetext' => 'Ovo je istorija spajanja korisnika.',
 	'usermerge-noselfdelete' => 'Ne možete da se obrišete ili spojite sa drugim nalogom!',
 	'usermerge-protectedgroup' => 'Nije moguđe spojiti ovog korisnika sa drugim — nalazi se u zaštićenoj grupi.',
