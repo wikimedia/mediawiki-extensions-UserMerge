@@ -503,7 +503,7 @@ $messages['ckb'] = array(
 	'usermerge-deleteolduser' => 'سڕینەوەی بەکارهێنەری کۆن',
 );
 
-/** Czech (česky)
+/** Czech (čeština)
  * @author Matěj Grabovský
  * @author Mormegil
  */
@@ -580,9 +580,16 @@ Zum Ausführen auf „{{int:usermerge-submit}}“ klicken.',
 
 /** Zazaki (Zazaki)
  * @author Erdemaslancan
+ * @author Marmase
  */
 $messages['diq'] = array(
+	'usermerge-submit' => 'Karbera zewkerden',
+	'usermerge-userdeleted' => '$1 ($2) besterna.',
+	'usermerge-userdeleted-log' => 'Karbero ke besteriya: $2 ($3)',
 	'usermerge-updating' => "Tabloy $1'i oyo ($2 ra hetê $3 ya) neweyêno",
+	'right-usermerge' => 'Karberan zewkerden',
+	'action-usermerge' => 'Karberan zewkerden',
+	'usermerge-page-deleted' => '$1 per besteriye',
 );
 
 /** Lower Sorbian (dolnoserbski)
@@ -1787,6 +1794,7 @@ Klik "{{int:usermerge-submit}}" om de handeling uit te voeren.',
 	'usermerge-protectedgroup' => 'Het is niet mogelijk de gebruikers samen te voegen. De gebruiker zit in een beschermde groep.',
 	'right-usermerge' => 'Gebruikers samenvoegen',
 	'action-usermerge' => 'gebruikers samen te voegen',
+	'usermerge-editcount-merge-success' => '$1 {{PLURAL:$1|bewerking|bewerkingen}} of van $2 aan het toevoegen aan $3 {{PLURAL:$3|bewerking|bewerkingen}} van gebruiker $4 ($5 {{PLURAL:$5|bewerking|bewerkingen}} na samenvoegen)',
 	'usermerge-autopagedelete' => 'Automatisch verwijderd bij het samenvoegen van gebruikers',
 	'usermerge-page-unmoved' => 'De pagina $1 kon niet hernoemd worden naar $2.',
 	'usermerge-page-moved' => 'De pagina $1 is hernoemd naar $2.',
