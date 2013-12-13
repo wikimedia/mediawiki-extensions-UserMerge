@@ -104,6 +104,11 @@ $specialPageAliases['frp'] = array(
 	'UserMerge' => array( 'Fusionar_los_usanciérs', 'FusionarLosUsanciérs' ),
 );
 
+/** Galician (galego) */
+$specialPageAliases['gl'] = array(
+	'UserMerge' => array( 'Fusionar_o_usuario', 'Fusionar_usuario', 'Fusionar_a_usuaria', 'Fusionar_usuaria' ),
+);
+
 /** Swiss German (Alemannisch) */
 $specialPageAliases['gsw'] = array(
 	'UserMerge' => array( 'Benutzer_zämmefiere' ),
