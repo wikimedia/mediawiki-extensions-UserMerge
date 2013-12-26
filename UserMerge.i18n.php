@@ -490,6 +490,7 @@ $messages['ca'] = array(
  * @author Умар
  */
 $messages['ce'] = array(
+	'usermerge-badtoken' => 'Нисдаран билгало нийса яц',
 	'usermerge-userdeleted' => '$1 ($2) дӀаяккхи.',
 	'action-usermerge' => 'декъашхой цхьаьнатохар',
 	'usermerge-page-moved' => 'АгӀона $1 цӀе хийцина оцу $2.',
