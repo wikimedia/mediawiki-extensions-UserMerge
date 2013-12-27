@@ -125,7 +125,7 @@ class UserMerge extends SpecialPage {
 
 				array(
 					'method' => 'post',
-					'action' => $this->getTitle()->getLocalUrl(),
+					'action' => $this->getPageTitle()->getLocalUrl(),
 					'id' => 'usermergeform'
 				),
 
