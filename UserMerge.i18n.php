@@ -779,6 +779,7 @@ $messages['eu'] = array(
  * @author Huji
  * @author Meisam
  * @author Mjbmr
+ * @author Reza1615
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
@@ -794,6 +795,8 @@ $messages['fa'] = array(
 	'usermerge-userdeleted' => '$1 ($2) پاک شد.',
 	'usermerge-logpage' => 'سیاههٔ ادغام کاربر',
 	'right-usermerge' => 'ادغام حساب‌های کاربری',
+	'usermerge-page-unmoved' => 'امکان انتقال صفحهٔ $1 به $2 وجود ندارد.',
+	'usermerge-page-moved' => 'صفحهٔ $1 به $2 انتقال داده شد.',
 );
 
 /** Finnish (suomi)
