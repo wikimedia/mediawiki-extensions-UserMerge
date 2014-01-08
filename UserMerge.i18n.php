@@ -783,7 +783,7 @@ $messages['eu'] = array(
  * @author ZxxZxxZ
  */
 $messages['fa'] = array(
-	'usermerge' => 'یکی کردن و حذف کردن کاربران',
+	'usermerge' => 'ادغام و حذف‌کردن کاربران',
 	'usermerge-badolduser' => 'نام کاربری قدیمی نامعتبر',
 	'usermerge-badnewuser' => 'نام کاربری جدید نامعتبر',
 	'usermerge-noolduser' => 'نام کاربری قدیمی خالی',
@@ -2102,6 +2102,7 @@ Cazze "{{int:usermerge-submit}}" pe accettà.',
  * @author Ferrer
  * @author Illusion
  * @author Innv
+ * @author Kaganer
  * @author Okras
  * @author Ole Yves
  * @author Александр Сигачёв
@@ -2133,7 +2134,7 @@ $messages['ru'] = array(
 	'usermerge-protectedgroup' => 'Невозможно объединить участников — участник относится к защищённой группе.',
 	'right-usermerge' => 'объединение участников',
 	'action-usermerge' => 'объединение участников',
-	'usermerge-editcount-merge-success' => 'Добавляем $1 {{PLURAL:$1|правка|правок|правки}} участника $2 к $3 {{PLURAL:$3|1=правке|правкам}} участника $4 ($5 {{PLURAL:$5|правка|правок|правки}} после слияния)', # Fuzzy
+	'usermerge-editcount-merge-success' => 'Добавляем $1 {{PLURAL:$1|правка|правок|правки}} участника $2 к $3 {{PLURAL:$3|правке|правкам}} участника $4 ($5 {{PLURAL:$5|правка|правок|правки}} после слияния)',
 	'usermerge-autopagedelete' => 'Автоматически удаляются при объединении пользователей',
 	'usermerge-page-unmoved' => 'Страница $1 не может быть переименована в $2.',
 	'usermerge-page-moved' => 'Страница $1 была переименована в $2.',
