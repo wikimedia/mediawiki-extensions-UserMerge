@@ -2614,7 +2614,7 @@ $messages['uk'] = array(
 $messages['uz'] = array(
 	'usermerge-userdeleted-log' => 'Foydalanuvchi $2 ($3) chetlatilgan',
 	'usermerge-success-log' => 'Foydalanuvchi $2 ($3) {{GENDER:$4|$4}} ($5) bilan birlashtirilgan',
-	'usermerge-logpage' => 'Ishtirokchilarni birlashtirish qaydlari',
+	'usermerge-logpage' => 'Foydalanuvchilarni birlashtirish qaydlari',
 	'usermerge-page-deleted' => '$1 sahifasini oʻchirish',
 );
 
