@@ -546,7 +546,7 @@ Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.', # Fuzzy
  */
 $messages['de'] = array(
 	'usermerge' => 'Benutzerkonten zusammenführen und löschen',
-	'usermerge-desc' => 'Fügt eine [[Special:UserMerge|Spezialseite]] zum Zusammenführen von Benutzerkonten und der anschließenden Löschung des alten Benutzerkontos in der Datenbank des Wikis hinzu',
+	'usermerge-desc' => 'Ergänzt eine [[Special:UserMerge|Spezialseite]] zum Zusammenführen von Benutzerkonten und der anschließenden Löschung des alten Benutzerkontos in der Datenbank des Wikis',
 	'usermerge-badolduser' => 'Ungültiger alter Benutzername',
 	'usermerge-badnewuser' => 'Ungültiger neuer Benutzername',
 	'usermerge-nonewuser' => 'Es wurde kein neuer Benutzername angegeben. Daher wird eine Zusammenführung mit „{{GENDER:$1|$1}}“ angenommen.<br />
