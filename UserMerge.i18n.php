@@ -776,6 +776,7 @@ $messages['eu'] = array(
 );
 
 /** Persian (فارسی)
+ * @author Armin1392
  * @author BlueDevil
  * @author Ebraminio
  * @author Huji
@@ -789,16 +790,21 @@ $messages['fa'] = array(
 	'usermerge-badolduser' => 'نام کاربری قدیمی نامعتبر',
 	'usermerge-badnewuser' => 'نام کاربری جدید نامعتبر',
 	'usermerge-noolduser' => 'نام کاربری قدیمی خالی',
+	'usermerge-same-old-and-new-user' => 'نیاز است نام‌های کاربری جدید و قدیمی از هم مجزا شوند.',
 	'usermerge-fieldset' => 'نام‌های کاربری برای ادغام',
 	'usermerge-olduser' => 'کاربر قدیمی (ادغام از):',
 	'usermerge-newuser' => 'کاربر جدید (ادغام با):',
 	'usermerge-deleteolduser' => 'پاک‌کردن کاربر قدیمی',
 	'usermerge-submit' => 'یکی کردن کاربر',
+	'usermerge-badtoken' => 'نشانهٔ ویرایش نامعتبر.',
 	'usermerge-userdeleted' => '$1 ($2) پاک شد.',
+	'usermerge-userdeleted-log' => 'کاربر حذف شده: $2 ($3)',
+	'usermerge-updating' => 'به روز رسانی جدول $1 ($2 به $3)',
 	'usermerge-logpage' => 'سیاههٔ ادغام کاربر',
 	'right-usermerge' => 'ادغام حساب‌های کاربری',
 	'usermerge-page-unmoved' => 'امکان انتقال صفحهٔ $1 به $2 وجود ندارد.',
 	'usermerge-page-moved' => 'صفحهٔ $1 به $2 انتقال داده شد.',
+	'usermerge-page-deleted' => 'صفحهٔ حذف شدهٔ $1',
 );
 
 /** Finnish (suomi)
