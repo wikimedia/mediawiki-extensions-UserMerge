@@ -546,7 +546,7 @@ Potvrdit můžete kliknutím na „{{int:usermerge-submit}}“.', # Fuzzy
  */
 $messages['de'] = array(
 	'usermerge' => 'Benutzerkonten zusammenführen und löschen',
-	'usermerge-desc' => 'Ergänzt eine [[Special:UserMerge|Spezialseite]] zum Zusammenführen von Benutzerkonten und der anschließenden Löschung des alten Benutzerkontos in der Datenbank des Wikis',
+	'usermerge-desc' => "Bietet eine [[Special:UserMerge|Spezialseite]] zum Zusammenführen von Benutzerkonten und der anschließenden Löschung des alten Benutzerkontos in der Datenbank des Wikis (Benötigt die ''usermerge''-Berechtigung)",
 	'usermerge-badolduser' => 'Ungültiger alter Benutzername',
 	'usermerge-badnewuser' => 'Ungültiger neuer Benutzername',
 	'usermerge-nonewuser' => 'Es wurde kein neuer Benutzername angegeben. Daher wird eine Zusammenführung mit „{{GENDER:$1|$1}}“ angenommen.<br />
@@ -2753,15 +2753,18 @@ $messages['zh-hans'] = array(
 
 /** Traditional Chinese (中文（繁體）‎)
  * @author Liangent
+ * @author Liuxinyu970226
  * @author Mark85296341
  * @author Wrightbus
  */
 $messages['zh-hant'] = array(
 	'usermerge' => '用戶合併和刪除',
+	'usermerge-desc' => "於wiki數據庫中[[Special:UserMerge|將參考文獻從一個用戶合併至另一用戶]]——亦將於合併時刪除舊用戶。需要''usermerge''特權",
 	'usermerge-badolduser' => '無效的舊用戶名',
 	'usermerge-badnewuser' => '無效的新用戶名',
-	'usermerge-nonewuser' => '清除新用戶名 - 假設合併到$1。<br />點擊<em>{{int:usermerge-submit}}</em>以接受。', # Fuzzy
+	'usermerge-nonewuser' => '清空新用戶名。假定合併到「{{GENDER:$1|$1}}」。<br />點擊{{int:usermerge-submit}}以接受。',
 	'usermerge-noolduser' => '清除舊用戶名',
+	'usermerge-same-old-and-new-user' => '新舊用戶名需截然不同。',
 	'usermerge-fieldset' => '使用者名稱合併',
 	'usermerge-olduser' => '舊用戶（合併自）：',
 	'usermerge-newuser' => '新用戶（合併到）：',
@@ -2771,14 +2774,21 @@ $messages['zh-hant'] = array(
 	'usermerge-userdeleted' => '$1（$2） 已刪除。',
 	'usermerge-userdeleted-log' => '已刪除的用戶： $2 （$3）',
 	'usermerge-updating' => '正在更新 $1 表格 （$2 到 $3）',
-	'usermerge-success' => '由 $1（$2） 到 $3（$4） 的合併已經完成。', # Fuzzy
-	'usermerge-success-log' => '用戶 $2 （$3） 合併到 $4 （$5）', # Fuzzy
+	'usermerge-success' => '由$1（$2）到{{GENDER:$3|$3}}（$4）的合併已經完成。',
+	'usermerge-success-log' => '用戶$2（$3）已合併至{{GENDER:$4|$4}}（$5）',
 	'usermerge-logpage' => '使用者合併記錄',
 	'usermerge-logpagetext' => '這是一份用戶合併動作的記錄。',
 	'usermerge-noselfdelete' => '您不能將自己刪除或者合併！',
 	'usermerge-unmergable' => '無法完成用戶合併 - ID 或者名稱被標記為不可合併。',
 	'usermerge-protectedgroup' => '無法完成用戶合併 - 用戶位於受保護群組中。',
 	'right-usermerge' => '合併使用者',
+	'action-usermerge' => '合併用戶',
+	'usermerge-editcount-merge-success' => '加入用戶$2的$1次編輯至$4的$3次編輯（合併后$5次編輯）',
+	'usermerge-autopagedelete' => '合併用戶時自動刪除',
+	'usermerge-page-unmoved' => '頁面$1無法移動至$2。',
+	'usermerge-page-moved' => '頁面$1已移動至$2。',
+	'usermerge-move-log' => '當合併用戶「[[User:$1|$1]]」至「[[User:$2|{{GENDER:$2|$2}}]]」時已自動移動頁面',
+	'usermerge-page-deleted' => '刪除頁面$1',
 );
 
 /** Chinese (Taiwan) (‪中文(台灣)‬)
