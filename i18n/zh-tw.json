@@ -1,0 +1,10 @@
+{
+    "@metadata": {
+        "authors": [
+            "Roc michael"
+        ]
+    },
+    "usermerge": "用戶合併及刪除",
+    "usermerge-badolduser": "無效的舊用戶名",
+    "usermerge-badnewuser": "無效的新用戶名"
+}

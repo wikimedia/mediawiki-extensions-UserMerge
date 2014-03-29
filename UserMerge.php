@@ -37,7 +37,7 @@ $wgExtensionCredits['specialpage'][] = array(
 	'url'            => 'https://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete',
 	'author'         => array( 'Tim Laqua', 'Thomas Gries', 'Matthew April' ),
 	'descriptionmsg' => 'usermerge-desc',
-	'version'        => '1.8.1'
+	'version'        => '1.9.0'
 );
 
 $wgAvailableRights[] = 'usermerge';
@@ -46,6 +46,7 @@ $wgAvailableRights[] = 'usermerge';
 $dir = __DIR__ . '/';
 $wgAutoloadClasses['UserMerge'] = $dir . 'UserMerge_body.php';
 
+$wgMessagesDirs['UserMerge'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['UserMerge'] = $dir . 'UserMerge.i18n.php';
 $wgExtensionMessagesFiles['UserMergeAlias'] = $dir . 'UserMerge.alias.php';
 $wgSpecialPages['UserMerge'] = 'UserMerge';

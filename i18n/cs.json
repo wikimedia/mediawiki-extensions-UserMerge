@@ -1,0 +1,31 @@
+{
+    "@metadata": {
+        "authors": [
+            "Matěj Grabovský",
+            "Mormegil"
+        ]
+    },
+    "usermerge": "Slučování a mazání uživatelů",
+    "usermerge-desc": "[[Special:UserMerge|Slučuje odkazy na jednoho uživatele na odkazy na druhého]] v databázi wiki; také následně smaže starého uživatele. Vyžaduje oprávnění ''usermerge''.",
+    "usermerge-badolduser": "Původní uživatelské jméno je neplatné",
+    "usermerge-badnewuser": "Neplatné nové uživatelské jmnéo",
+    "usermerge-nonewuser": "Nové uživatelské jméno je prázdné – předpokládá se sloučení do „$1“.<br />\nPotvrdit můžete kliknutím na „{{int:usermerge-submit}}“.",
+    "usermerge-noolduser": "Původní uživatelské jméno je prázdné",
+    "usermerge-fieldset": "Slučovaná uživatelská jména",
+    "usermerge-olduser": "Původní uživatel (odkud se slučuje):",
+    "usermerge-newuser": "Nový uživatel (kam se slučuje):",
+    "usermerge-deleteolduser": "Smazat původního uživatele",
+    "usermerge-submit": "Sloučit uživatele",
+    "usermerge-badtoken": "Neplatný editační token",
+    "usermerge-userdeleted": "$1 ($2) byl smazán.",
+    "usermerge-userdeleted-log": "Smazaný uživatel: $2 ($3)",
+    "usermerge-updating": "Aktualizuje se tabulka $1 ($2 na $3)",
+    "usermerge-success": "Sloučení z $1 ($2) do $3 ($4) je dokončeno.",
+    "usermerge-success-log": "Uživatel $2 ($3) byl sloučen do $4 ($5)",
+    "usermerge-logpage": "Kniha slučování uživatelů",
+    "usermerge-logpagetext": "Toto je záznam slučování uživatelů.",
+    "usermerge-noselfdelete": "Nemůžete smazat nebo sloučit svůj vlastní účet!",
+    "usermerge-unmergable": "Nebylo možné sloučit uživatele – zdrojové jméno nebo ID bylo definováno jako neslučitelné.",
+    "usermerge-protectedgroup": "Nebylo možné sloučit uvedeného uživatele – uživatel je v chráněné skupině.",
+    "right-usermerge": "Slučování uživatelů"
+}
