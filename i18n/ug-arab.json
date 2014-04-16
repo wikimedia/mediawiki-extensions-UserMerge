@@ -1,9 +1,9 @@
 {
-    "@metadata": {
-        "authors": [
-            "Sahran"
-        ]
-    },
-    "usermerge-page-unmoved": "$1 بەتنى $2 گە يۆتكىيەلمىدى.",
-    "usermerge-page-moved": "$1 بەت $2 گە يۆتكەلدى."
+	"@metadata": {
+		"authors": [
+			"Sahran"
+		]
+	},
+	"usermerge-page-unmoved": "$1 بەتنى $2 گە يۆتكىيەلمىدى.",
+	"usermerge-page-moved": "$1 بەت $2 گە يۆتكەلدى."
 }
