@@ -8,7 +8,8 @@
 			"Luckas",
 			"Malafaya",
 			"Sir Lestaty de Lioncourt",
-			"Waldir"
+			"Waldir",
+			"Vitorvicentevalente"
 		]
 	},
 	"usermerge": "Fusão e eliminação de utilizadores",
@@ -16,7 +17,7 @@
 	"usermerge-badolduser": "Nome antigo inválido",
 	"usermerge-badnewuser": "Nome novo inválido",
 	"usermerge-nonewuser": "O nome de utilizador novo está vazio - será assumida a fusão com $1.<br />\nClique \"{{int:usermerge-submit}}\" para aceitar.",
-	"usermerge-noolduser": "O nome de utilizador antigo está vazio",
+	"usermerge-noolduser": "O nome de utilizador antigo está vazio.",
 	"usermerge-fieldset": "Nomes de utilizadores a fundir",
 	"usermerge-olduser": "Utilizador antigo (fundir de):",
 	"usermerge-newuser": "Utilizador novo (fundir para):",
