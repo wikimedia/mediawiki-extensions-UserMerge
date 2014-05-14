@@ -35,6 +35,7 @@
 	"usermerge-unmergable": "Não foi possível fundir o utilizador - o nome ou ID está definido como não podendo ser fundido.",
 	"usermerge-protectedgroup": "Não é possível fundir este utilizador - o utilizador está num grupo protegido.",
 	"right-usermerge": "Fundir utilizadores",
+	"action-usermerge": "fundir utilizadores",
 	"usermerge-autopagedelete": "Eliminada automaticamente ao fundir utilizadores",
 	"usermerge-page-unmoved": "Não foi possível mover a página $1 para $2.",
 	"usermerge-page-moved": "A página $1 foi movida para $2.",
