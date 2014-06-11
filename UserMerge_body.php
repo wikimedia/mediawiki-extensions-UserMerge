@@ -297,15 +297,8 @@ class UserMerge extends SpecialPage {
 
 		wfRunHooks( 'DeleteAccount', array( &$objOldUser ) );
 
-		$users = $dbw->selectField(
-			'user',
-			'COUNT(*)',
-			array()
-		);
-		$dbw->update( 'site_stats',
-			array( 'ss_users' => $users ),
-			array( 'ss_row_id' => 1 )
-		);
+		DeferredUpdates::addUpdate( SiteStatsUpdate::factory( array( 'users' => -1 ) ) );
+
 		return true;
 	}
 
