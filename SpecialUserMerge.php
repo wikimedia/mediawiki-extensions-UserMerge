@@ -15,7 +15,7 @@
  *
  */
 
-class UserMerge extends SpecialPage {
+class SpecialUserMerge extends SpecialPage {
 	function __construct() {
 		parent::__construct( 'UserMerge', 'usermerge' );
 	}
@@ -672,3 +672,9 @@ class UserMerge extends SpecialPage {
 	}
 
 }
+
+/**
+ * Former class name, for backwards compatability
+ * @deprecated
+ */
+class UserMerge extends SpecialUserMerge {}

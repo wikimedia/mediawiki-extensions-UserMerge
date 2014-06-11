@@ -44,7 +44,9 @@ $wgAvailableRights[] = 'usermerge';
 # $wgGroupPermissions['bureaucrat']['usermerge'] = true;
 
 $dir = __DIR__ . '/';
-$wgAutoloadClasses['UserMerge'] = $dir . 'UserMerge_body.php';
+$wgAutoloadClasses['SpecialUserMerge'] = $dir . 'SpecialUserMerge.php';
+$wgAutoloadClasses['UserMerge'] = $dir . 'SpecialUserMerge.php'; // back-compat
+
 
 $wgMessagesDirs['UserMerge'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['UserMerge'] = $dir . 'UserMerge.i18n.php';
