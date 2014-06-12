@@ -15,255 +15,122 @@
  *
  */
 
-class SpecialUserMerge extends SpecialPage {
+class SpecialUserMerge extends FormSpecialPage {
 	function __construct() {
 		parent::__construct( 'UserMerge', 'usermerge' );
 	}
 
-	function execute( $par ) {
-		$this->setHeaders();
+	/**
+	 * @return array
+	 */
+	protected function getFormFields() {
+		$us = $this;
+		return array(
+			'olduser' => array(
+				'type' => 'text',
+				'label-message' => 'usermerge-olduser',
+				'required' => true,
+				'validation-callback' => function( $val ) use ( $us ) {
+					$key = $us->validateOldUser( $val );
+					if ( is_string( $key ) ) {
+						return $us->msg( $key )->escaped();
+					}
+					return true;
+				},
+			),
+			'newuser' => array(
+				'type' => 'text',
+				'required' => true,
+				'label-message' => 'usermerge-newuser',
+				'validation-callback' => function( $val ) use ( $us ) {
+					$key = $us->validateNewUser( $val );
+					if ( is_string( $key ) ) {
+						return $us->msg( $key )->escaped();
+					}
+					return true;
+				},
+			),
+			'delete' => array(
+				'type' => 'check',
+				'label-message' => 'usermerge-deleteolduser',
+			),
+		);
+	}
 
-		$user = $this->getUser();
-
-		if ( !$user->isAllowed( 'usermerge' ) ) {
-			throw new PermissionsError( 'usermerge' );
+	/**
+	 * @param $val user's input for username
+	 * @return bool|string true if valid, a string of the error's message key if validation failed
+	 */
+	public function validateOldUser( $val ) {
+		global $wgUserMergeProtectedGroups;
+		$oldUser = User::newFromName( $val );
+		if ( !$oldUser || $oldUser->getId() === 0 ) {
+			return 'usermerge-badolduser';
+		}
+		if ( $this->getUser()->getId() === $oldUser->getId() ) {
+			return 'usermerge-noselfdelete';
+		}
+		if ( count( array_intersect( $oldUser->getGroups(), $wgUserMergeProtectedGroups ) ) ) {
+			return 'usermerge-protectedgroup';
 		}
 
-		$out = $this->getOutput();
-		$request = $this->getRequest();
+		return true;
+	}
 
-		// init variables
-		$olduser_text = '';
-		$newuser_text = '';
-		$deleteUserCheck = false;
-		$validOldUser = false;
-		$validNewUser = false;
-
-		if ( strlen( $request->getText( 'olduser' ) . $request->getText( 'newuser' ) ) > 0 || $request->getText( 'deleteuser' ) ) {
-			// POST data found
-			$olduser = Title::newFromText( $request->getText( 'olduser' ) );
-			$olduser_text = is_object( $olduser ) ? $olduser->getText() : '';
-
-			$newuser = Title::newFromText( $request->getText( 'newuser' ) );
-			$newuser_text = is_object( $newuser ) ? $newuser->getText() : '';
-
-			if ( $request->getText( 'deleteuser' ) ) {
-				$deleteUserCheck = true;
-			}
-
-			if ( strlen( $olduser_text ) > 0 ) {
-				$objOldUser = User::newFromName( $olduser_text );
-				$olduserID = $objOldUser->idForName();
-
-				if ( !is_object( $objOldUser ) || $objOldUser->getID() == 0 ) {
-					$validOldUser = false;
-					$out->wrapWikiMsg( "<div class='error'>\n$1</div>", 'usermerge-badolduser' );
-				} elseif ( $olduserID == $user->getID() ) {
-					$validOldUser = false;
-					$out->wrapWikiMsg( "<div class='error'>\n$1</div>", 'usermerge-noselfdelete' );
-				} else {
-					global $wgUserMergeProtectedGroups;
-
-					$boolProtected = false;
-					foreach ( $objOldUser->getGroups() as $userGroup ) {
-						if ( in_array( $userGroup, $wgUserMergeProtectedGroups ) ) {
-							$boolProtected = true;
-						}
-					}
-
-					if ( $boolProtected ) {
-						$validOldUser = false;
-						$out->wrapWikiMsg( "<div class='error'>\n$1</div>", 'usermerge-protectedgroup' );
-					} else {
-						$validOldUser = true;
-
-						if ( strlen( $newuser_text ) > 0 ) {
-							$objNewUser = User::newFromName( $newuser_text );
-							$newuserID = $objNewUser->idForName();
-
-							if ( !is_object( $objNewUser ) || $newuserID === 0 ) {
-								if ( $newuser_text === 'Anonymous' ) {
-									// Merge to anonymous
-									$validNewUser = true;
-									$newuserID = 0;
-								} else {
-									// invalid newuser entered
-									$validNewUser = false;
-									$out->wrapWikiMsg( "<div class='error'>$1</div>", 'usermerge-badnewuser' );
-								}
-							} elseif( $olduserID == $newuserID ) {
-								$validNewUser = false;
-								$out->wrapWikiMsg( "<div class='error'>$1</div>", array( 'usermerge-same-old-and-new-user' ) );
-							} else {
-								// newuser looks good
-								$validNewUser = true;
-							}
-						} else {
-							// empty newuser string
-							$validNewUser = false;
-							$newuser_text = "Anonymous";
-							$out->wrapWikiMsg( "<div class='error'>$1</div>", array( 'usermerge-nonewuser', $newuser_text ) );
-						}
-					}
-				}
-			} else {
-				$validOldUser = false;
-				$out->addHTML(
-					Html::rawElement( 'span',
-						array( 'class' => 'warning' ),
-						$this->msg( 'usermerge-noolduser' )->escaped()
-					) .
-					Html::element( 'br' ) .
-					"\n"
-				);
-			}
+	/**
+	 * @param $val user's input for username
+	 * @return bool|string true if valid, a string of the error's message key if validation failed
+	 */
+	public function validateNewUser( $val ) {
+		if ( $val === 'Anonymous' ) {
+			return true; // Special case
+		}
+		$newUser = User::newFromName( $val );
+		if ( !$newUser || $newUser->getId() === 0 ) {
+			return 'usermerge-badnewuser';
 		}
 
-		$out->addHtml(
+		return true;
+	}
 
-			Html::rawElement( 'form',
+	/**
+	 * @param HTMLForm $form
+	 */
+	protected function alterForm( HTMLForm $form ) {
+		$form->setSubmitTextMsg( 'usermerge-submit' );
+		$form->setWrapperLegendMsg( 'usermerge-fieldset' );
+	}
 
-				array(
-					'method' => 'post',
-					'action' => $this->getPageTitle()->getLocalUrl(),
-					'id' => 'usermergeform'
-				),
+	/**
+	 * @param array $data
+	 * @return Status
+	 */
+	public function onSubmit( array $data ) {
+		// Most of the data has been validated using callbacks
+		// still need to check if the users are different
+		$newUser = User::newFromName( $data['newuser'] );
+		// Handle "Anonymous" as a special case for user deletion
+		if ( $data['newuser'] === 'Anonymous' ) {
+			$newUser->mId = 0;
+		}
 
-				Html::rawElement( 'fieldset',
+		$oldUser = User::newFromName( $data['olduser'] );
+		if ( $newUser->getName() === $oldUser->getName() ) {
+			return Status::newFatal( 'usermerge-same-old-and-new-user' );
+		}
 
-					array(),
-					Html::element( 'legend',
-						array(),
-						$this->msg( 'usermerge-fieldset' )->text()
-					) .
-
-					Html::rawElement( 'table',
-
-						array( 'id' => 'mw-usermerge-table' ),
-						Html::rawElement( 'tr',
-
-							array(),
-							Html::rawElement( 'td',
-								array( 'class' => 'mw-label' ),
-								Html::element( 'label',
-									array( 'for' => 'olduser' ),
-									$this->msg( 'usermerge-olduser' )->text()
-								)
-							) .
-
-							Html::rawElement( 'td',
-								array( 'class' => 'mw-input' ),
-								Html::input(
-									'olduser',
-									$olduser_text,
-									'text',
-									array(
-										'tabindex' => '1',
-										'size' => '20',
-										'onFocus' => "document.getElementById( 'olduser' ).select;"
-									)
-								),
-								' '
-							)
-						) .
-
-						Html::rawElement( 'tr',
-
-							array(),
-							Html::rawElement( 'td',
-								array( 'class' => 'mw-label' ),
-								Html::element( 'label',
-									array( 'for' => 'newuser' ),
-									$this->msg( 'usermerge-newuser' )->text()
-								)
-							) .
-
-							Html::rawElement( 'td',
-								array( 'class' => 'mw-input' ),
-								Html::input(
-									'newuser',
-									$newuser_text,
-									'text',
-									array(
-										'tabindex' => '2',
-										'size' => '20',
-										'onFocus' => "document.getElementById( 'newuser' ).select;"
-									)
-								)
-						)
-
-						) .
-
-						Html::rawElement( 'tr',
-
-							array(),
-							Html::rawElement( 'td',
-								array(),
-								"&#160;"
-							) .
-
-							Html::rawElement( 'td',
-								array( 'class' => 'mw-input' ),
-								Xml::checkLabel(
-									$this->msg( 'usermerge-deleteolduser' )->text(),
-									'deleteuser',
-									'deleteuser',
-									$deleteUserCheck,
-									array( 'tabindex' => '3' )
-								)
-							)
-
-						) .
-
-						Html::rawElement( 'tr',
-
-							array(),
-							Html::rawElement( 'td',
-								array(),
-								"&#160;"
-							) .
-
-							Html::rawElement( 'td',
-								array( 'class' => 'mw-submit' ),
-								Xml::submitButton(
-									$this->msg( 'usermerge-submit' )->text(),
-									array( 'tabindex' => '4' )
-								)
-							)
-
-						)
-
-					)
-
-				) .
-
-				Html::Hidden( 'token', $user->getEditToken() )
-
-			) . "\n"
-
+		$this->mergeEditcount( $newUser->getId(), $oldUser->getId() );
+		$this->mergeUser(
+			$newUser, $newUser->getName(), $newUser->getId(),
+			$oldUser, $oldUser->getName(), $oldUser->getId()
 		);
 
-		if ( $validNewUser && $validOldUser ) {
-			// go time, baby
-			if ( !$user->matchEditToken( $request->getVal( 'token' ) ) ) {
-				// bad editToken
-				$out->addHTML(
-					Html::rawElement( 'span',
-						array( 'class' => 'warning' ),
-						$this->msg( 'usermerge-badtoken' )->escaped()
-					) .
-					Html::element( 'br' ) . "\n"
-				);
-			} else {
-				// good editToken
-				$this->mergeEditcount( $newuserID, $olduserID );
-				$this->mergeUser( $objNewUser, $newuser_text, $newuserID, $objOldUser, $olduser_text, $olduserID );
-				if ( $request->getText( 'deleteuser' ) ) {
-					$this->movePages( $newuser_text, $olduser_text );
-					$this->deleteUser( $objOldUser, $olduserID, $olduser_text );
-				}
-			}
+		if ( $data['delete'] ) {
+			$this->movePages( $newUser->getName(), $oldUser->getName() );
+			$this->deleteUser( $oldUser, $oldUser->getId(), $oldUser->getName() );
 		}
+
+		return Status::newGood();
 	}
 
 	/**
