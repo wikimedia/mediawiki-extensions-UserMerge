@@ -341,43 +341,26 @@ class SpecialUserMerge extends FormSpecialPage {
 
 
 	/**
-	 * Function to add edit count
-	 *
 	 * Adds edit count of both users
 	 *
-	 * @param $newuserID int ID of user to merge references TO
-	 * @param $olduserID int ID of user to remove references FROM
+	 * @param $newuserID int ID of user we're merging into
+	 * @param $olduserID int ID of user we're merging from
 	 *
-	 * @return bool Always returns true - throws exceptions on failure.
-	 *
-	 * @author Matthew April <Matthew.April@tbs-sct.gc.ca>
+	 * @return bool
 	 */
 	private function mergeEditcount( $newuserID, $olduserID ) {
 		$dbw = wfGetDB( DB_MASTER );
 
-		$olduserEdits = $dbw->selectField(
+		$totalEdits = $dbw->selectField(
 			'user',
-			'user_editcount',
-			array( 'user_id' => $olduserID ),
+			'SUM(user_editcount)',
+			array( 'user_id' => array( $newuserID, $olduserID ) ),
 			__METHOD__
 		);
-		if ( $olduserEdits === false ) {
-			$olduserEdits = 0;
-		}
 
-		$newuserEdits = $dbw->selectField(
-			'user',
-			'user_editcount',
-			array( 'user_id' => $newuserID ),
-			__METHOD__
-		);
-		if ( $newuserEdits === false ) {
-			$newuserEdits = 0;
-		}
+		$totalEdits = intval( $totalEdits );
 
-		$totalEdits = $olduserEdits + $newuserEdits;
-
-		# don't run querys if neither user has any edits
+		# don't run queries if neither user has any edits
 		if ( $totalEdits > 0 ) {
 			# update new user with total edits
 			$dbw->update( 'user',
@@ -386,7 +369,7 @@ class SpecialUserMerge extends FormSpecialPage {
 				__METHOD__
 			);
 
-			# clear old users edits
+			# clear old user's edits
 			$dbw->update( 'user',
 				array( 'user_editcount' => 0 ),
 				array( 'user_id' => $olduserID ),
@@ -396,8 +379,8 @@ class SpecialUserMerge extends FormSpecialPage {
 
 		$this->getOutput()->addHTML(
 			$this->msg(
-				'usermerge-editcount-merge-success',
-				$olduserEdits, $olduserID, $newuserEdits, $newuserID, $totalEdits
+				'usermerge-editcount-merge-success2',
+				$olduserID, $newuserID, Message::numParam( $totalEdits )
 			)->escaped() .
 			Html::element( 'br' ) . "\n"
 		);

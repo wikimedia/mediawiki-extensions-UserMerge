@@ -27,7 +27,7 @@
     "usermerge-protectedgroup": "Unable to merge from user: User is in a protected group.",
     "right-usermerge": "Merge users",
     "action-usermerge": "merge users",
-    "usermerge-editcount-merge-success": "Adding $1 {{PLURAL:$1|edit|edits}} of user $2 to $3 {{PLURAL:$3|edit|edits}} of user $4 ($5 {{PLURAL:$5|edit|edits}} after merging)",
+    "usermerge-editcount-merge-success2": "Merged edit counts of $1 and $2 for a new total of $3 {{PLURAL:$3|edit|edits}}",
     "usermerge-autopagedelete": "Automatically deleted when merging users",
     "usermerge-page-unmoved": "The page $1 could not be moved to $2.",
     "usermerge-page-moved": "The page $1 has been moved to $2.",
