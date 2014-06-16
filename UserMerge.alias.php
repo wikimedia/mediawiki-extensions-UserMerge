@@ -121,7 +121,7 @@ $specialPageAliases['he'] = array(
 
 /** Upper Sorbian (hornjoserbsce) */
 $specialPageAliases['hsb'] = array(
-	'UserMerge' => array( 'Wužiwarjow zjednoćić' ),
+	'UserMerge' => array( 'Wužiwarjow_zjednoćić' ),
 );
 
 /** Haitian (Kreyòl ayisyen) */
