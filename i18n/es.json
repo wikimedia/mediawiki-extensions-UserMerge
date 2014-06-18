@@ -6,7 +6,8 @@
 			"Dferg",
 			"Imre",
 			"MarcoAurelio",
-			"Sanbec"
+			"Sanbec",
+			"Fitoschido"
 		]
 	},
 	"usermerge": "Fusionar y borrar usuarios",
@@ -32,6 +33,7 @@
 	"usermerge-unmergable": "Incapaz de fusionar desde el usuario - La identidad o el nombre ha sido definido como no fusionable.",
 	"usermerge-protectedgroup": "Imposible fusionar desde el usuario - el usuario está incluido en un grupo protegido.",
 	"right-usermerge": "Fusionar usuarios",
+	"action-usermerge": "fusionar usuarios",
 	"usermerge-autopagedelete": "Eliminado automáticamente al fusionar usuarios",
 	"usermerge-page-unmoved": "La página $1 no pudo ser trasladada a $2.",
 	"usermerge-page-moved": "La página $1 ha sido trasladada a $2.",
