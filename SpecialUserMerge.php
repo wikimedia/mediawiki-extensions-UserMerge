@@ -82,7 +82,8 @@ class SpecialUserMerge extends FormSpecialPage {
 	 * @return bool|string true if valid, a string of the error's message key if validation failed
 	 */
 	public function validateNewUser( $val ) {
-		if ( $val === 'Anonymous' ) {
+		global $wgUserMergeEnableDelete;
+		if ( $wgUserMergeEnableDelete && $val === 'Anonymous' ) {
 			return true; // Special case
 		}
 		$newUser = User::newFromName( $val );
@@ -106,11 +107,12 @@ class SpecialUserMerge extends FormSpecialPage {
 	 * @return Status
 	 */
 	public function onSubmit( array $data ) {
+		global $wgUserMergeEnableDelete;
 		// Most of the data has been validated using callbacks
 		// still need to check if the users are different
 		$newUser = User::newFromName( $data['newuser'] );
 		// Handle "Anonymous" as a special case for user deletion
-		if ( $data['newuser'] === 'Anonymous' ) {
+		if ( $wgUserMergeEnableDelete && $data['newuser'] === 'Anonymous' ) {
 			$newUser->mId = 0;
 		}
 

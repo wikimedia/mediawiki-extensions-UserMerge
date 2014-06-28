@@ -40,6 +40,18 @@ $wgExtensionCredits['specialpage'][] = array(
 	'version'        => '1.9.0'
 );
 
+// Configuration options:
+
+/**
+ * Whether to allow users to delete other users.
+ * If false, users with the "usermerge" right
+ * will only be able to merge other users.
+ *
+ * @var bool
+ */
+$wgUserMergeEnableDelete = true;
+
+
 $wgAvailableRights[] = 'usermerge';
 # $wgGroupPermissions['bureaucrat']['usermerge'] = true;
 
