@@ -5,7 +5,8 @@
 			"Derbeth",
 			"Masti",
 			"Sp5uhe",
-			"Wpedzich"
+			"Wpedzich",
+			"Alan ffm"
 		]
 	},
 	"usermerge": "Integruj i usuń użytkowników",
@@ -31,6 +32,7 @@
 	"usermerge-unmergable": "Nie można zintegrować użytkownika – identyfikator lub nazwa zostały zdefiniowane jako nieintegrowalne.",
 	"usermerge-protectedgroup": "Nie można zintegrować użytkownika – jest członkiem zabezpieczonej grupy.",
 	"right-usermerge": "Łączenie kont użytkowników",
+	"action-usermerge": "łączenie kont użytkowników",
 	"usermerge-autopagedelete": "Automatycznie usuwane podczas scalania użytkowników",
 	"usermerge-page-unmoved": "Strona $1 nie mogła zostać przeniesiona pod nazwę $2.",
 	"usermerge-page-moved": "Strona $1 została przeniesiona do $2.",
