@@ -279,6 +279,8 @@ class SpecialUserMerge extends FormSpecialPage {
 			array( 'watchlist', 'wl_user' ),
 		);
 
+		wfRunHooks( 'UserMergeAccountFields', array( &$updateFields ) );
+
 		$dbw = wfGetDB( DB_MASTER );
 		$out = $this->getOutput();
 
