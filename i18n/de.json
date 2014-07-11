@@ -35,7 +35,7 @@
 	"usermerge-protectedgroup": "Die Zusammenführung ist nicht möglich: Der Benutzer befindet sich in einer geschützten Gruppe.",
 	"right-usermerge": "Benutzerkonten zusammenführen",
 	"action-usermerge": "Benutzer zusammenzuführen",
-	"usermerge-editcount-merge-success": "{{PLURAL:$1|Eine Bearbeitung|$1 Bearbeitungen}} des Benutzers $2 zu {{PLURAL:$3|einer Bearbeitung|$3 Bearbeitungen}} des Benutzers $4 ({{PLURAL:$5|Eine Bearbeitung|$5 Bearbeitungen}} nach der Zusammenführung) wurden hinzugefügt",
+	"usermerge-editcount-merge-success2": "Bearbeitungszähler von $1 und $2 für eine neue Summe von {{PLURAL:$3|einer Bearbeitung|$3 Bearbeitungen}} zusammengeführt",
 	"usermerge-autopagedelete": "Automatisch während der Benutzerkontenzusammenführung gelöscht",
 	"usermerge-page-unmoved": "Die Seite „$1“ konnte nicht nach „$2“ verschoben werden.",
 	"usermerge-page-moved": "Die Seite „$1“ wurde nach „$2“ verschoben.",

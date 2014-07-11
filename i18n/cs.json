@@ -30,7 +30,7 @@
 	"usermerge-protectedgroup": "Nebylo možné sloučit uvedeného uživatele – uživatel je v chráněné skupině.",
 	"right-usermerge": "Slučování uživatelů",
 	"action-usermerge": "slučovat uživatele",
-	"usermerge-editcount-merge-success": "{{PLURAL:$1|Přidána $1 editace|Přidány $1 editace|Přidáno $1 editací}} {{GENDER:$2|uživatele|uživatelky}} $2 k $3 {{PLURAL:$3|editaci|editacím}} {{GENDER:$4|uživatele|uživatelky}} $4 (po sloučení $5 {{PLURAL:$5|editace|editace|editací}})",
+	"usermerge-editcount-merge-success2": "Počítadla editací uživatelů $1 a $2 sloučena, nový výsledný počet $3 {{PLURAL:$3|editace|editace|editací}}.",
 	"usermerge-autopagedelete": "Automaticky smazáno při sloučení uživatelů",
 	"usermerge-page-unmoved": "Stránku $1 nebylo možno přesunout na $2.",
 	"usermerge-page-moved": "Stránka $1 byla přesunuta na $2.",
