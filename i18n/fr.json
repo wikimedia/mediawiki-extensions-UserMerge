@@ -38,7 +38,7 @@
 	"usermerge-protectedgroup": "Impossible de fusionner l’utilisateur : l’utilisateur est dans un groupe protégé.",
 	"right-usermerge": "Fusionner des utilisateurs",
 	"action-usermerge": "fusionner les utilisateurs",
-	"usermerge-editcount-merge-success": "Ajout de $1 {{PLURAL:$1|modification|modifications}} de l’utilisateur $2 à $3 {{PLURAL:$3|modification|modifications}} de l’utilisateur $4 ($5 {{PLURAL:$5|modification|modifications}} après fusion)",
+	"usermerge-editcount-merge-success2": "Nombres de modifications fusionnées de $1 et $2 pour un nouveau total de $3 {{PLURAL:$3|modification|modifications}}",
 	"usermerge-autopagedelete": "Supprimé automatiquement lors de la fusion de utilisateurs",
 	"usermerge-page-unmoved": "Cette page $1 ne peut pas être déplacée vers $2.",
 	"usermerge-page-moved": "La page $1 a été déplacée vers $2.",
