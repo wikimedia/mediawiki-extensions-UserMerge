@@ -35,7 +35,7 @@
 	"usermerge-protectedgroup": "Kan inte sammanfoga det gamla kontot. Användaren är medlem i en skyddad användargrupp.",
 	"right-usermerge": "Slå ihop användarkonton",
 	"action-usermerge": "slå ihop användarkonton",
-	"usermerge-editcount-merge-success": "Lägger till $1 {{PLURAL:$1|redigering|redigeringar}} av användaren $2 till $3 {{PLURAL:$3|redigering|redigeringar}} av användaren $4 ($5 {{PLURAL:$5|redigering|redigeringar}} efter hopslagningen)",
+	"usermerge-editcount-merge-success2": "Slog samman antalet redigeringar för $1 och $2 för en ny summa på $3 {{PLURAL:$3|redigering|redigeringar}}",
 	"usermerge-autopagedelete": "Ta bort automatiskt när användare slås ihop",
 	"usermerge-page-unmoved": "Sidan $1 kan inte tas bort till $2",
 	"usermerge-page-moved": "Sidan $1 måste tas bort till $2",

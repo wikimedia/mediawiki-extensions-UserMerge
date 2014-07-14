@@ -4,7 +4,8 @@
 			"Crazymadlover",
 			"Eduardo.mps",
 			"Jorge Morais",
-			"Luckas"
+			"Luckas",
+			"Helder.wiki"
 		]
 	},
 	"usermerge": "Fusão e eliminação de utilizadores",
@@ -29,5 +30,5 @@
 	"usermerge-noselfdelete": "Você não pode apagar ou fundir a partir de si próprio!",
 	"usermerge-unmergable": "Não foi possível fundir o usuário - Nome ou ID foi definido para não ser fundido.",
 	"usermerge-protectedgroup": "Não é possível fundir este usuário: Usuário está em um grupo protegido.",
-	"right-usermerge": "Fundir utilizadores"
+	"right-usermerge": "Fundir usuários"
 }

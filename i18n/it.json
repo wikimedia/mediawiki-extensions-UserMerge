@@ -32,7 +32,7 @@
 	"usermerge-protectedgroup": "Impossibile unire da questo utente - l'utente fa parte di un gruppo protetto.",
 	"right-usermerge": "Unisce utenti",
 	"action-usermerge": "unire utenti",
-	"usermerge-editcount-merge-success": "$1 {{PLURAL:$1|contributo aggiunto|contributi aggiunti}} dell'utente $2 ai $3 {{PLURAL:$3|contributo|contributi}} dell'utente $4 ($5 {{PLURAL:$5|contributo|contributi}} dopo l'unione)",
+	"usermerge-editcount-merge-success2": "Uniti i contributi di $1 e $2 per un totale di $3 {{PLURAL:$3|modifica|modifiche}}",
 	"usermerge-autopagedelete": "Cancellata automaticamente quando si uniscono gli utenti",
 	"usermerge-page-unmoved": "La pagina $1 non può essere spostata a $2.",
 	"usermerge-page-moved": "La pagina $1 è stata spostata a $2.",

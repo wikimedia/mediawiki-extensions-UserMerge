@@ -30,7 +30,7 @@
 	"usermerge-protectedgroup": "Không thể trộn từ thành viên này: thành viên này thuộc nhóm được bảo vệ.",
 	"right-usermerge": "Trộn thành viên",
 	"action-usermerge": "trộn người dùng",
-	"usermerge-editcount-merge-success": "Đang thêm $1 sửa đổi của người dùng $2 vào $3 sửa đổi của người dùng $4 (tổng cộng $5 sửa đổi sau khi trộn xong)",
+	"usermerge-editcount-merge-success2": "Đã hợp nhất các sửa đổi của $1 và $2 thành tất cả $3 sửa đổi",
 	"usermerge-autopagedelete": "Được tự động xóa khi trộn người dùng",
 	"usermerge-page-unmoved": "Trang $1 không thể di chuyển đến $2.",
 	"usermerge-page-moved": "Trang $1 đã được di chuyển đến $2.",
