@@ -36,6 +36,7 @@
 	"usermerge-protectedgroup": "Não é possível fundir este utilizador - o utilizador está num grupo protegido.",
 	"right-usermerge": "Fundir utilizadores",
 	"action-usermerge": "fundir utilizadores",
+	"usermerge-editcount-merge-success2": "Fundidos os totais de edições de $1 e $2 para um novo total de $3 {{PLURAL:$3|edição|edições}}",
 	"usermerge-autopagedelete": "Eliminada automaticamente ao fundir utilizadores",
 	"usermerge-page-unmoved": "Não foi possível mover a página $1 para $2.",
 	"usermerge-page-moved": "A página $1 foi movida para $2.",
