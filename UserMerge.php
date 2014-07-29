@@ -58,6 +58,9 @@ $wgAvailableRights[] = 'usermerge';
 $dir = __DIR__ . '/';
 $wgAutoloadClasses['SpecialUserMerge'] = $dir . 'SpecialUserMerge.php';
 $wgAutoloadClasses['UserMerge'] = $dir . 'SpecialUserMerge.php'; // back-compat
+$wgAutoloadClasses['MergeUser'] = $dir . 'MergeUser.php';
+$wgAutoloadClasses['IUserMergeLogger'] = $dir . 'IUserMergeLogger.php';
+$wgAutoloadClasses['UserMergeLogger'] = $dir . 'UserMergeLogger.php';
 
 
 $wgMessagesDirs['UserMerge'] = __DIR__ . '/i18n';

@@ -17,20 +17,15 @@
     "usermerge-badtoken": "Invalid edit token.",
     "usermerge-userdeleted": "$1 ($2) has been deleted.",
     "usermerge-userdeleted-log": "Deleted user: $2 ($3)",
-    "usermerge-updating": "Updating $1 table ($2 to $3)",
     "usermerge-success": "Merge from $1 ($2) to {{GENDER:$3|$3}} ($4) is complete.",
     "usermerge-success-log": "User $2 ($3) merged to {{GENDER:$4|$4}} ($5)",
     "usermerge-logpage": "User merge log",
     "usermerge-logpagetext": "This is a log of user merge actions.",
     "usermerge-noselfdelete": "You cannot delete or merge from yourself!",
-    "usermerge-unmergable": "Unable to merge from user: ID or name has been defined as unmergable.",
     "usermerge-protectedgroup": "Unable to merge from user: User is in a protected group.",
     "right-usermerge": "Merge users",
     "action-usermerge": "merge users",
-    "usermerge-editcount-merge-success2": "Merged edit counts of $1 and $2 for a new total of $3 {{PLURAL:$3|edit|edits}}",
     "usermerge-autopagedelete": "Automatically deleted when merging users",
     "usermerge-page-unmoved": "The page $1 could not be moved to $2.",
-    "usermerge-page-moved": "The page $1 has been moved to $2.",
-    "usermerge-move-log": "Automatically moved page while merging the user \"[[User:$1|$1]]\" to \"[[User:$2|{{GENDER:$2|$2}}]]\"",
-    "usermerge-page-deleted": "Deleted page $1"
+    "usermerge-move-log": "Automatically moved page while merging the user \"[[User:$1|$1]]\" to \"[[User:$2|{{GENDER:$2|$2}}]]\""
 }
