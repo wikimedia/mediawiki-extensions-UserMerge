@@ -22,13 +22,11 @@
 	"usermerge-badtoken": "Token de edição inválida",
 	"usermerge-userdeleted": "$1 ($2) foi eliminado.",
 	"usermerge-userdeleted-log": "Usuário apagado: $2 ($3)",
-	"usermerge-updating": "Atualizando tabela $1 ($2 para $3)",
 	"usermerge-success": "Fusão de $1 ($2) para $3 ($4) está completa.",
 	"usermerge-success-log": "Usuário $2 ($3) fundido com {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Registro de fusão de utilizadores",
 	"usermerge-logpagetext": "Este é um registro de ações de fusão de utilizadores.",
 	"usermerge-noselfdelete": "Você não pode apagar ou fundir a partir de si próprio!",
-	"usermerge-unmergable": "Não foi possível fundir o usuário - Nome ou ID foi definido para não ser fundido.",
 	"usermerge-protectedgroup": "Não é possível fundir este usuário: Usuário está em um grupo protegido.",
 	"right-usermerge": "Fundir usuários"
 }
