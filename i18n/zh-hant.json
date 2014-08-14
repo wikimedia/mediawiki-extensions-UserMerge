@@ -5,17 +5,18 @@
 			"Liuxinyu970226",
 			"Mark85296341",
 			"Wrightbus",
-			"Cwlin0416"
+			"Cwlin0416",
+			"LNDDYL"
 		]
 	},
 	"usermerge": "合併並刪除使用者",
 	"usermerge-desc": "可 [[Special:UserMerge|合併一位使用者至另一位使用者]]，在合併之後會同時刪除舊使用者。 需要開啟 ''usermerge'' 權限",
-	"usermerge-badolduser": "無效的舊使用者名稱。",
-	"usermerge-badnewuser": "無效的新使用者名稱。",
+	"usermerge-badolduser": "無效的舊用戶名。",
+	"usermerge-badnewuser": "無效的新用戶名。",
 	"usermerge-nonewuser": "未填寫新使用者名稱。預設合併至 \"{{GENDER:$1|$1}}\"。<br />\n點選 {{int:usermerge-submit}} 繼續。",
-	"usermerge-noolduser": "未填寫舊使用者名稱。",
+	"usermerge-noolduser": "未填寫舊用戶名。",
 	"usermerge-same-old-and-new-user": "新舊使用者名稱必須不同。",
-	"usermerge-fieldset": "要合併的使用者名稱",
+	"usermerge-fieldset": "要合併的用戶名",
 	"usermerge-olduser": "舊使用者 (合併自)：",
 	"usermerge-newuser": "新使用者 (合併至)：",
 	"usermerge-deleteolduser": "刪除舊使用者",
