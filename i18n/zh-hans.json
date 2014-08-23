@@ -26,20 +26,15 @@
 	"usermerge-badtoken": "无效的编辑令牌。",
 	"usermerge-userdeleted": "$1（$2） 已删除。",
 	"usermerge-userdeleted-log": "已删除的用户： $2 （$3）",
-	"usermerge-updating": "正在更新 $1 表格 （$2 到 $3）",
 	"usermerge-success": "由$1（$2）到$3（$4）的合并已经完成。",
-	"usermerge-success-log": "用户$2 （$3）已合并到$4（$5）",
+	"usermerge-success-log": "用户$2 （$3）已合并到{{GENDER:$4|$4}}（$5）",
 	"usermerge-logpage": "用户合并日志",
 	"usermerge-logpagetext": "这是一份用户合并动作的记录。",
 	"usermerge-noselfdelete": "您不能将自己删除或者合并！",
-	"usermerge-unmergable": "无法完成用户合并 - ID或者名称被标记为不可合并。",
 	"usermerge-protectedgroup": "无法完成用户合并 - 用户位于受保护组中。",
 	"right-usermerge": "合并用户",
 	"action-usermerge": "合并用户",
-	"usermerge-editcount-merge-success2": "已合并$1和$2的编辑次数，总计$3次{{PLURAL:$3|编辑}}",
 	"usermerge-autopagedelete": "合并用户时自动删除",
 	"usermerge-page-unmoved": "页面$1无法被移动到$2。",
-	"usermerge-page-moved": "页面$1已被移动到$2。",
-	"usermerge-move-log": "合并用户“[[User:$1|$1]]”到“[[User:$2|{{GENDER:$2|$2}}]]”时自动移动页面",
-	"usermerge-page-deleted": "页面$1已删除"
+	"usermerge-move-log": "合并用户“[[User:$1|$1]]”到“[[User:$2|{{GENDER:$2|$2}}]]”时自动移动页面"
 }
