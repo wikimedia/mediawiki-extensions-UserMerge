@@ -8,7 +8,8 @@
 			"Meisam",
 			"Mjbmr",
 			"Reza1615",
-			"ZxxZxxZ"
+			"ZxxZxxZ",
+			"Alirezaaa"
 		]
 	},
 	"usermerge": "ادغام و حذف‌کردن کاربران",
@@ -20,26 +21,21 @@
 	"usermerge-same-old-and-new-user": "نیاز است نام‌های کاربری جدید و قدیمی از هم مجزا شوند.",
 	"usermerge-fieldset": "نام‌های کاربری برای ادغام",
 	"usermerge-olduser": "کاربر قدیمی (ادغام از):",
-	"usermerge-newuser": "کاربر جدید (ادغام با):",
+	"usermerge-newuser": "کاربر تازه (ادغام با):",
 	"usermerge-deleteolduser": "پاک‌کردن کاربر قدیمی",
 	"usermerge-submit": "یکی کردن کاربر",
 	"usermerge-badtoken": "نشانهٔ ویرایش نامعتبر.",
 	"usermerge-userdeleted": "$1 ($2) پاک شد.",
 	"usermerge-userdeleted-log": "کاربر حذف شده: $2 ($3)",
-	"usermerge-updating": "به روز رسانی جدول $1 ($2 به $3)",
 	"usermerge-success": "ادغام از $1 ($2) به {{GENDER:$3|$3}} ($4) کامل است.",
 	"usermerge-success-log": "کاربر $2 ($3) ادغام به {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "سیاههٔ ادغام کاربر",
 	"usermerge-logpagetext": "این سیاهه‌ی ادغام فعالیت‌های کاربر است.",
 	"usermerge-noselfdelete": "شما نمی‌توانید از خودتان حذف یا ادغام کنید!",
-	"usermerge-unmergable": "قادر به ادغام از کاربر نیستː شناسه یا نام به عنوان غیرقابل ادغام تعریف شده‌است.",
 	"usermerge-protectedgroup": "قادر به ادغام از کاربر نیستː کاربر در گروه محافظت شده‌است.",
 	"right-usermerge": "ادغام حساب‌های کاربری",
 	"action-usermerge": "ادغام کاربران",
-	"usermerge-editcount-merge-success": "افزودن $1 {{PLURAL:$1|ویرایش|ویرایش‌های}} کاربر $2 به $3 {{PLURAL:$3|ویرایش|ویرایش‌های}} کاربر $4 ($5 {{PLURAL:$5|ویرایش|ویرایش‌های}} پس از ادغام)",
 	"usermerge-autopagedelete": "حذف به طور خودکار هنگام ادغام کاربران",
 	"usermerge-page-unmoved": "امکان انتقال صفحهٔ $1 به $2 وجود ندارد.",
-	"usermerge-page-moved": "صفحهٔ $1 به $2 انتقال داده شد.",
-	"usermerge-move-log": "انتقال خودکار صفحه هنگام ادغام کاربر «[[User:$1|$1]]» به «[[User:$2|{{GENDER:$2|$2}}]]»",
-	"usermerge-page-deleted": "صفحهٔ حذف شدهٔ $1"
+	"usermerge-move-log": "انتقال خودکار صفحه هنگام ادغام کاربر «[[User:$1|$1]]» به «[[User:$2|{{GENDER:$2|$2}}]]»"
 }
