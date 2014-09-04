@@ -87,19 +87,19 @@ class MergeUser {
 	 */
 	private function mergeDatabaseTables() {
 		// Fields to update with the format:
-		// array( tableName, idField, textField, 'options' => array() )
-		// textField and options are optional
+		// array( tableName, idField, textField, 'batchKey' => unique field, 'options' => array() )
+		// textField, batchKey, and options are optional
 		$updateFields = array(
-			array( 'archive', 'ar_user', 'ar_user_text' ),
-			array( 'revision', 'rev_user', 'rev_user_text' ),
-			array( 'filearchive', 'fa_user', 'fa_user_text' ),
-			array( 'image', 'img_user', 'img_user_text' ),
-			array( 'oldimage', 'oi_user', 'oi_user_text' ),
-			array( 'recentchanges', 'rc_user', 'rc_user_text' ),
-			array( 'logging', 'log_user' ),
-			array( 'ipblocks', 'ipb_user', 'ipb_address' ),
-			array( 'ipblocks', 'ipb_by', 'ipb_by_text' ),
-			array( 'watchlist', 'wl_user' ),
+			array( 'archive', 'ar_user', 'ar_user_text', 'batchKey' => 'ar_id' ),
+			array( 'revision', 'rev_user', 'rev_user_text', 'batchKey' => 'rev_id' ),
+			array( 'filearchive', 'fa_user', 'fa_user_text', 'batchKey' => 'fa_id' ),
+			array( 'image', 'img_user', 'img_user_text', 'batchKey' => 'img_name' ),
+			array( 'oldimage', 'oi_user', 'oi_user_text', 'batchKey' => 'oi_archive_name' ),
+			array( 'recentchanges', 'rc_user', 'rc_user_text', 'batchKey' => 'rc_id' ),
+			array( 'logging', 'log_user', 'batchKey' =>'log_id' ),
+			array( 'ipblocks', 'ipb_user', 'ipb_address', 'batchKey' =>'ipb_id' ),
+			array( 'ipblocks', 'ipb_by', 'ipb_by_text', 'batchKey' =>'ipb_id' ),
+			array( 'watchlist', 'wl_user', 'batchKey' => 'wl_title' ),
 			array( 'user_groups', 'ug_user', 'options' => array( 'IGNORE' ) ),
 			array( 'user_properties', 'up_user', 'options' => array( 'IGNORE' ) ),
 			array( 'user_former_groups', 'ufg_user', 'options' => array( 'IGNORE' ) ),
@@ -116,13 +116,51 @@ class MergeUser {
 			unset( $fieldInfo['options'] );
 			$tableName = array_shift( $fieldInfo );
 			$idField = array_shift( $fieldInfo );
-			$dbw->update(
-				$tableName,
-				array( $idField => $this->newUser->getId() ) + array_fill_keys( $fieldInfo, $this->newUser->getName() ),
-				array( $idField => $this->oldUser->getId() ),
-				__METHOD__,
-				$options
-			);
+			$keyField = isset( $fieldInfo['batchKey'] ) ? $fieldInfo['batchKey'] : null;
+			unset( $fieldInfo['batchKey'] );
+
+			if ( $dbw->trxLevel() || $keyField === null ) {
+				// Can't batch/wait when in a transaction or when no batch key is given
+				$dbw->update(
+					$tableName,
+					array( $idField => $this->newUser->getId() )
+						+ array_fill_keys( $fieldInfo, $this->newUser->getName() ),
+					array( $idField => $this->oldUser->getId() ),
+					__METHOD__,
+					$options
+				);
+			} else {
+				$limit = 200;
+				do {
+					// Batch and wait for slaves (ORDER BY + LIMIT is not well supported)
+					$dbw->begin();
+					// Grab a batch of values on a mostly unique column for this user ID
+					$res = $dbw->select(
+						$tableName,
+						array( $keyField ),
+						array( $idField => $this->oldUser->getId() ),
+						__METHOD__,
+						array( 'LIMIT' => $limit )
+					);
+					$keyValues = array();
+					foreach ( $res as $row ) {
+						$keyValues[] = $row->$keyField;
+					}
+					// Update only those rows with the given column values
+					if ( count( $keyValues ) ) {
+						$dbw->update(
+							$tableName,
+							array( $idField => $this->newUser->getId() )
+								+ array_fill_keys( $fieldInfo, $this->newUser->getName() ),
+							array( $idField => $this->oldUser->getId(), $keyField => $keyValues ),
+							__METHOD__,
+							$options
+						);
+					}
+					$dbw->commit();
+					wfWaitForSlaves();
+				} while ( count( $keyValues ) >= $limit );
+			}
 		}
 
 		$dbw->delete( 'user_newtalk', array( 'user_id' => $this->oldUser->getId() ) );
