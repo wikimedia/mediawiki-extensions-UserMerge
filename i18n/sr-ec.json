@@ -18,7 +18,6 @@
 	"usermerge-submit": "Споји корисника",
 	"usermerge-userdeleted": "$1 ($2) је обрисан.",
 	"usermerge-userdeleted-log": "Обрисан корисник: $2 ($3)",
-	"usermerge-updating": "Ажурирање $1 табеле ($2 на $3)",
 	"usermerge-success": "Спајање $1 ($2) са $3 ($4) је завршено.",
 	"usermerge-success-log": "Корисник $2 ($3) је спојен са $4 ($5)",
 	"usermerge-logpage": "Дневник спајања корисника",
@@ -26,5 +25,6 @@
 	"usermerge-noselfdelete": "Не можете да се обришете или спојите са другим налогом!",
 	"usermerge-protectedgroup": "Није могуђе спојити овог корисника са другим — налази се у заштићеној групи.",
 	"right-usermerge": "спајање корисника",
-	"action-usermerge": "спајање корисника"
+	"action-usermerge": "спајање корисника",
+	"usermerge-move-log": "Аутоматско премештање странице због спајања корисника „[[User:$1|$1]]“ у „[[User:$2|{{GENDER:$2|$2}}]]“"
 }
