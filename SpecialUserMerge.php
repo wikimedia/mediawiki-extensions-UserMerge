@@ -32,7 +32,7 @@ class SpecialUserMerge extends FormSpecialPage {
 				'required' => true,
 				'validation-callback' => function( $val ) use ( $us ) {
 					$key = $us->validateOldUser( $val );
-					if ( is_string( $key ) ) {
+					if ( is_string( $key ) || is_array( $key ) ) {
 						return $us->msg( $key )->escaped();
 					}
 					return true;
@@ -68,10 +68,10 @@ class SpecialUserMerge extends FormSpecialPage {
 			return 'usermerge-badolduser';
 		}
 		if ( $this->getUser()->getId() === $oldUser->getId() ) {
-			return 'usermerge-noselfdelete';
+			return array( 'usermerge-noselfdelete', $this->getUser()->getName() );
 		}
 		if ( count( array_intersect( $oldUser->getGroups(), $wgUserMergeProtectedGroups ) ) ) {
-			return 'usermerge-protectedgroup';
+			return array( 'usermerge-protectedgroup', $oldUser->getName() );
 		}
 
 		return true;
