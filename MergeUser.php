@@ -87,7 +87,8 @@ class MergeUser {
 	 */
 	private function mergeDatabaseTables() {
 		// Fields to update with the format:
-		// array( tableName, idField, textField )
+		// array( tableName, idField, textField, 'options' => array() )
+		// textField and options are optional
 		$updateFields = array(
 			array( 'archive', 'ar_user', 'ar_user_text' ),
 			array( 'revision', 'rev_user', 'rev_user_text' ),
@@ -99,6 +100,9 @@ class MergeUser {
 			array( 'ipblocks', 'ipb_user', 'ipb_address' ),
 			array( 'ipblocks', 'ipb_by', 'ipb_by_text' ),
 			array( 'watchlist', 'wl_user' ),
+			array( 'user_groups', 'ug_user', 'options' => array( 'IGNORE' ) ),
+			array( 'user_properties', 'up_user', 'options' => array( 'IGNORE' ) ),
+			array( 'user_former_groups', 'ufg_user', 'options' => array( 'IGNORE' ) ),
 		);
 
 		wfRunHooks( 'UserMergeAccountFields', array( &$updateFields ) );
@@ -108,14 +112,16 @@ class MergeUser {
 		$this->deduplicateWatchlistEntries();
 
 		foreach ( $updateFields as $fieldInfo ) {
+			$options = isset( $fieldInfo['options'] ) ? $fieldInfo['options'] : array();
+			unset( $fieldInfo['options'] );
 			$tableName = array_shift( $fieldInfo );
 			$idField = array_shift( $fieldInfo );
-
 			$dbw->update(
 				$tableName,
 				array( $idField => $this->newUser->getId() ) + array_fill_keys( $fieldInfo, $this->newUser->getName() ),
 				array( $idField => $this->oldUser->getId() ),
-				__METHOD__
+				__METHOD__,
+				$options
 			);
 		}
 
@@ -289,20 +295,30 @@ class MergeUser {
 
 
 	/**
-	 * Function to delete users following a successful mergeUser call
+	 * Function to delete users following a successful mergeUser call.
 	 *
-	 * Removes user entries from the user table and the user_groups table
+	 * Removes rows from the user, user_groups, user_properties
+	 * and user_former_groups tables.
 	 */
 	private function deleteUser() {
 		$dbw = wfGetDB( DB_MASTER );
-		$dbw->delete(
-			'user_groups',
-			array( 'ug_user' => $this->oldUser->getId() )
+
+		$tablesToDelete = array(
+			'user_groups' => 'ug_user',
+			'user_properties' => 'up_user',
+			'user_former_groups' => 'ufg_user',
 		);
-		$dbw->delete(
-			'user',
-			array( 'user_id' => $this->oldUser->getId() )
-		);
+
+		wfRunHooks( 'UserMergeAccountDeleteTables', array( &$tablesToDelete ) );
+
+		$tablesToDelete['user'] = 'user_id'; // Make sure this always set and last
+
+		foreach ( $tablesToDelete as $table => $field ) {
+			$dbw->delete(
+				$table,
+				array( $field => $this->oldUser->getId() )
+			);
+		}
 
 		wfRunHooks( 'DeleteAccount', array( &$this->oldUser ) );
 
