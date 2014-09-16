@@ -79,6 +79,94 @@ class MergeUser {
 		}
 	}
 
+	private function mergeBlocks( DatabaseBase $dbw ) {
+		// Pull blocks directly from master
+		$rows = $dbw->select(
+			'ipblocks',
+			'*',
+			array(
+				'ipb_user' => array( $this->oldUser->getId(), $this->newUser->getId() ),
+			)
+		);
+
+		$newBlock = false;
+		$oldBlock = false;
+		foreach ( $rows as $row ) {
+			if ( $row->ipb_user == $this->oldUser->getId() ) {
+				$oldBlock = $row;
+			} elseif ( $row->ipb_user == $this->newUser->getId() ) {
+				$newBlock = $row;
+			}
+		}
+
+		if ( !$newBlock && !$oldBlock ) {
+			// No one is blocked, yaaay
+			return;
+		} elseif ( $newBlock && !$oldBlock ) {
+			// Only the new user is blocked, so nothing to do.
+			return;
+		} elseif ( $oldBlock && !$newBlock ) {
+			// Just move the old block to the new username
+			$dbw->update(
+				'ipblocks',
+				array( 'ipb_user' => $this->newUser->getId() ),
+				array( 'ipb_id' => $oldBlock->ipb_id ),
+				__METHOD__
+			);
+			return;
+		}
+
+		// Okay, lets pick the "strongest" block, and re-apply it to
+		// the new user.
+		$oldBlockObj = Block::newFromRow( $oldBlock );
+		$newBlockObj = Block::newFromRow( $newBlock );
+
+		$winner = $this->chooseBlock( $oldBlockObj, $newBlockObj );
+		if ( $winner->getId() === $newBlockObj->getId() ) {
+			$oldBlockObj->delete();
+		} else { // Old user block won
+			$newBlockObj->delete(); // Delete current new block
+			$dbw->update(
+				'ipblocks',
+				array( 'ipb_user' => $this->newUser->getId() ),
+				array( 'ipb_id' => $winner->getId() ).
+				__METHOD__
+			);
+		}
+	}
+
+	/**
+	 * @param Block $b1
+	 * @param Block $b2
+	 * @return Block
+	 */
+	private function chooseBlock( Block $b1, Block $b2 ) {
+		// First, see if one is longer than the other.
+		if ( $b1->getExpiry() !== $b2->getExpiry() ) {
+			// This works for infinite blocks because:
+			// "infinity" > "20141024234513"
+			if ( $b1->getExpiry() > $b2->getExpiry() ) {
+				return $b1;
+			} else {
+				return $b2;
+			}
+		}
+
+		// Next check what they block, in order
+		foreach ( array( 'createaccount', 'sendemail', 'editownusertalk' ) as $action ) {
+			if ( $b1->prevents( $action ) xor $b2->prevents( $action ) ) {
+				if ( $b1->prevents( $action ) ) {
+					return $b1;
+				} else {
+					return $b2;
+				}
+			}
+		}
+
+		// Give up, return the second one.
+		return $b2;
+	}
+
 	/**
 	 * Function to merge database references from one user to another user
 	 *
@@ -100,7 +188,6 @@ class MergeUser {
 			array( 'oldimage', 'oi_user', 'oi_user_text', 'batchKey' => 'oi_archive_name' ),
 			array( 'recentchanges', 'rc_user', 'rc_user_text', 'batchKey' => 'rc_id' ),
 			array( 'logging', 'log_user', 'batchKey' =>'log_id' ),
-			array( 'ipblocks', 'ipb_user', 'ipb_address', 'batchKey' =>'ipb_id' ),
 			array( 'ipblocks', 'ipb_by', 'ipb_by_text', 'batchKey' =>'ipb_id' ),
 			array( 'watchlist', 'wl_user', 'batchKey' => 'wl_title' ),
 			array( 'user_groups', 'ug_user', 'options' => array( 'IGNORE' ) ),
@@ -113,6 +200,7 @@ class MergeUser {
 		$dbw = wfGetDB( DB_MASTER );
 
 		$this->deduplicateWatchlistEntries();
+		$this->mergeBlocks( $dbw );
 
 		foreach ( $updateFields as $fieldInfo ) {
 			$options = isset( $fieldInfo['options'] ) ? $fieldInfo['options'] : array();
