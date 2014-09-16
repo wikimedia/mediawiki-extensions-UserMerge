@@ -3,7 +3,8 @@
 		"authors": [
 			"Amire80",
 			"Rotemliss",
-			"YaronSh"
+			"YaronSh",
+			"Guycn2"
 		]
 	},
 	"usermerge": "מיזוג ומחיקת משתמשים",
@@ -19,22 +20,17 @@
 	"usermerge-deleteolduser": "מחיקת משתמש ישן",
 	"usermerge-submit": "מיזוג משתמש",
 	"usermerge-badtoken": "אסימון עריכה שגוי.",
-	"usermerge-userdeleted": "$1 ($2) נמחק.",
+	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|נמחק|נמחקה}}.",
 	"usermerge-userdeleted-log": "המשתמש נמחק: $2 ($3)",
-	"usermerge-updating": "בתהליך עדכון הטבלה $1 ($2 ל$3)",
-	"usermerge-success": "המיזוג מהשם $1&rlm; ($2) אל $3&rlm; ($4) הושלם.",
-	"usermerge-success-log": "המשתמש $2&rlm; ($3) מוזג אל $4&rlm; ($5)",
+	"usermerge-success": "המיזוג מ־$1‏ ($2) ל־$3‏ ($4) בוצע בהצלחה.",
+	"usermerge-success-log": "ה{{GENDER:$2|משתמש|משתמשת}} $2 ($3) {{GENDER:$2|מוזג|מוזגה}} אל $4 ($5)",
 	"usermerge-logpage": "יומן מיזוג משתמשים",
 	"usermerge-logpagetext": "זהו יומן של פעולות מיזוג המשתמשים.",
-	"usermerge-noselfdelete": "לא ניתן למחוק או למזג מעצמך!",
-	"usermerge-unmergable": "לא ניתן למזג ממשתמש זה - מספר המשתמש או השם כבר מוגדר כבלתי ניתן למיזוג.",
-	"usermerge-protectedgroup": "לא ניתן למזג ממשתמש זה - המשתמש נמצא בקבוצה מוגנת.",
+	"usermerge-noselfdelete": "לא ניתן למחוק או למזג מ{{GENDER:$1|עצמך}}!",
+	"usermerge-protectedgroup": "לא ניתן למזג מה{{GENDER:$1|משתמש|משתמשת}}: ה{{GENDER:$1|משתמש נמצא|משתמשת נמצאת}} בקבוצה מוגנת.",
 	"right-usermerge": "מיזוג משתמשים",
 	"action-usermerge": "למזג משתמשים",
-	"usermerge-editcount-merge-success2": "מניין העריכות של $1 ו{{GRAMMAR:תחילית|$2}} מוזגו לסך כולל של {{PLURAL:$3|עריכה אחת|$3 עריכות}}",
 	"usermerge-autopagedelete": "נמחק אוטומטית בזמן מיזוג חשבונות",
 	"usermerge-page-unmoved": "לא ניתן להעביר את הדף $1 לשם $2.",
-	"usermerge-page-moved": "הדף $1 הועבר לשם $2.",
-	"usermerge-move-log": "הדף הועבר אוטומטית בזמן מיזוג חשבון \"[[User:$1|$1]]\" אל \"[[User:$2|$2]]\"",
-	"usermerge-page-deleted": "הדף $1 נמחק"
+	"usermerge-move-log": "הדף הועבר אוטומטית בזמן מיזוג חשבון \"[[User:$1|$1]]\" אל \"[[User:$2|$2]]\""
 }

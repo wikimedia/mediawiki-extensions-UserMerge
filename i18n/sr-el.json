@@ -15,14 +15,13 @@
 	"usermerge-newuser": "Novi korisnik (spajanje sa):",
 	"usermerge-deleteolduser": "Obriši starog korisnika",
 	"usermerge-submit": "Spoji korisnika",
-	"usermerge-userdeleted": "$1 ($2) je obrisan.",
+	"usermerge-userdeleted": "$1 ($2) je {{GENDER:$1|obrisan|obrisana}}.",
 	"usermerge-userdeleted-log": "Obrisan korisnik: $2 ($3)",
-	"usermerge-updating": "Ažuriranje $1 tabele ($2 na $3)",
-	"usermerge-success": "Spajanje $1 ($2) sa $3 ($4) je završeno.",
-	"usermerge-success-log": "Korisnik $2 ($3) je spojen sa $4 ($5)",
+	"usermerge-success": "Spajanje {{GENDER:$1|$1}} ($2) sa {{GENDER:$3|$3}} ($4) je završeno.",
+	"usermerge-success-log": "{{GENDER:$2|Korisnik|Korisnica}} $2 ($3) je {{GENDER:$2|spojen|spojena}} sa {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Dnevnik spajanja korisnika",
 	"usermerge-logpagetext": "Ovo je istorija spajanja korisnika.",
-	"usermerge-noselfdelete": "Ne možete da se obrišete ili spojite sa drugim nalogom!",
+	"usermerge-noselfdelete": "Ne možete da se obrišete ili spojite sa {{GENDER:$1|samim sobom}}!",
 	"usermerge-protectedgroup": "Nije moguđe spojiti ovog korisnika sa drugim — nalazi se u zaštićenoj grupi.",
 	"right-usermerge": "spajanje korisnika"
 }
