@@ -27,7 +27,7 @@
 	"usermerge-userdeleted": "{{GENDER:$1|$1}}（$2） 已删除。",
 	"usermerge-userdeleted-log": "已删除的用户： $2 （$3）",
 	"usermerge-success": "由{{GENDER:$1|$1}}（$2）到{{GENDER:$3|$3}}（$4）的合并已经完成。",
-	"usermerge-success-log": "用户$2 （$3）已合并到{{GENDER:$4|$4}}（$5）",
+	"usermerge-success-log": "用户{{GENDER:$2|$2}}（$3）已合并到{{GENDER:$4|$4}}（$5）",
 	"usermerge-logpage": "用户合并日志",
 	"usermerge-logpagetext": "这是一份用户合并动作的记录。",
 	"usermerge-noselfdelete": "您不能将{{GENDER:$1|自己}}删除或者合并！",

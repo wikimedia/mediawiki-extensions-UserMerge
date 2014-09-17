@@ -5,8 +5,6 @@
 		]
 	},
 	"usermerge-badtoken": "Нисдаран билгало нийса яц",
-	"usermerge-userdeleted": "$1 ($2) дӀаяккхи.",
-	"action-usermerge": "декъашхой цхьаьнатохар",
-	"usermerge-page-moved": "АгӀона $1 цӀе хийцина → $2.",
-	"usermerge-page-deleted": "ДӀаяккха агӀо $1"
+	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|дӀаяьккхина хилла}}.",
+	"action-usermerge": "декъашхой цхьаьнатохар"
 }
