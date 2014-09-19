@@ -9,14 +9,15 @@
 			"Malafaya",
 			"Sir Lestaty de Lioncourt",
 			"Waldir",
-			"Vitorvicentevalente"
+			"Vitorvicentevalente",
+			"Helder.wiki"
 		]
 	},
 	"usermerge": "Fusão e eliminação de utilizadores",
 	"usermerge-desc": "[[Special:UserMerge|Faz a fusão das referências a um utilizador com as de outro utilizador]] na base de dados da wiki - também apaga o utilizador antigo após a fusão. Requer o privilégio ''usermerge''",
 	"usermerge-badolduser": "Nome antigo inválido",
 	"usermerge-badnewuser": "Nome novo inválido",
-	"usermerge-nonewuser": "O nome de utilizador novo está vazio - será assumida a fusão com $1.<br />\nClique \"{{int:usermerge-submit}}\" para aceitar.",
+	"usermerge-nonewuser": "O nome de utilizador novo está vazio. Será assumida a fusão com {{GENDER:$1|$1}}.<br />\nClique \"{{int:usermerge-submit}}\" para aceitar.",
 	"usermerge-noolduser": "O nome de utilizador antigo está vazio.",
 	"usermerge-fieldset": "Nomes de utilizadores a fundir",
 	"usermerge-olduser": "Utilizador antigo (fundir de):",
@@ -36,5 +37,5 @@
 	"action-usermerge": "fundir utilizadores",
 	"usermerge-autopagedelete": "Eliminada automaticamente ao fundir utilizadores",
 	"usermerge-page-unmoved": "Não foi possível mover a página $1 para $2.",
-	"usermerge-move-log": "Página movida automaticamente ao fundir o utilizador \"[[User:$1|$1]]\" com \"[[User:$2|$2]]\""
+	"usermerge-move-log": "Página movida automaticamente ao fundir {{GENDER:$1|o utilizador|a utilizadora|o(a) utilizador(a)}} \"[[User:$1|$1]]\" com \"[[User:$2|$2]]\""
 }
