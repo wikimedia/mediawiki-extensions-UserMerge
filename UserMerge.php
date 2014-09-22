@@ -61,7 +61,9 @@ $wgAutoloadClasses['UserMerge'] = $dir . 'SpecialUserMerge.php'; // back-compat
 $wgAutoloadClasses['MergeUser'] = $dir . 'MergeUser.php';
 $wgAutoloadClasses['IUserMergeLogger'] = $dir . 'IUserMergeLogger.php';
 $wgAutoloadClasses['UserMergeLogger'] = $dir . 'UserMergeLogger.php';
+$wgAutoloadClasses['UserMergeHooks'] = $dir . 'UserMerge.hooks.php';
 
+$wgHooks['UnitTestsList'][] = 'UserMergeHooks::onUnitTestsList';
 
 $wgMessagesDirs['UserMerge'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['UserMerge'] = $dir . 'UserMerge.i18n.php';
