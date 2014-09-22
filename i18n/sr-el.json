@@ -10,6 +10,7 @@
 	"usermerge-badolduser": "Neispravno staro korisničko ime",
 	"usermerge-badnewuser": "Neispravno novo korisničko ime",
 	"usermerge-noolduser": "Isprazni staro korisničko ime",
+	"usermerge-same-old-and-new-user": "Staro i novo korisničko ime se moraju razlikovati.",
 	"usermerge-fieldset": "Korisnička imena za spajanje",
 	"usermerge-olduser": "Stari korisnik (spajanje od):",
 	"usermerge-newuser": "Novi korisnik (spajanje sa):",
@@ -23,5 +24,8 @@
 	"usermerge-logpagetext": "Ovo je istorija spajanja korisnika.",
 	"usermerge-noselfdelete": "Ne možete da se obrišete ili spojite sa {{GENDER:$1|samim sobom}}!",
 	"usermerge-protectedgroup": "Nije moguđe spojiti ovog korisnika sa drugim — nalazi se u zaštićenoj grupi.",
-	"right-usermerge": "spajanje korisnika"
+	"right-usermerge": "spajanje korisnika",
+	"action-usermerge": "spajanje korisnika",
+	"usermerge-autopagedelete": "Automatski obrisano zbog spajanja korisnika",
+	"usermerge-move-log": "Automatsko premeštanje stranice zbog spajanja korisnika „[[User:$1|$1]]“ u „[[User:$2|{{GENDER:$2|$2}}]]“"
 }
