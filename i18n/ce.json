@@ -6,5 +6,6 @@
 	},
 	"usermerge-badtoken": "Нисдаран билгало нийса яц",
 	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|дӀаяьккхина хилла}}.",
+	"usermerge-success-log": "{{GENDER:$2|Декъашхочун дӀаяздар}} $2 ($3) {{GENDER:$2|тоьхна}} {{GENDER:$4|$4}} ($5) тӀе",
 	"action-usermerge": "декъашхой цхьаьнатохар"
 }
