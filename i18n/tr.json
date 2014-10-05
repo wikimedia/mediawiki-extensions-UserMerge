@@ -3,7 +3,8 @@
 		"authors": [
 			"Joseph",
 			"Karduelis",
-			"Srhat"
+			"Srhat",
+			"Violetanka"
 		]
 	},
 	"usermerge": "Kullanıcıları birleştir ve sil",
@@ -18,15 +19,13 @@
 	"usermerge-deleteolduser": "Eski kullanıcıyı sil",
 	"usermerge-submit": "Kullanıcıyı birleştir",
 	"usermerge-badtoken": "Geçersiz değişiklik dizgeciği",
-	"usermerge-userdeleted": "$1 ($2) silindi.",
+	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) silindi.",
 	"usermerge-userdeleted-log": "Silinen kullanıcı: $2 ($3)",
-	"usermerge-updating": "$1 tablosu ($2 den $3 e) güncelleniyor",
-	"usermerge-success": "$1 ($2) kullanıcısından $3 ($4) kullanıcısına birleştirme tamamlandı.",
-	"usermerge-success-log": "$2 ($3) kullanıcısı $4 ($5) kullanıcısına birleştirildi",
+	"usermerge-success": "{{GENDER:$1|$1}} ($2) kullanıcısından {{GENDER:$3|$3}} ($4) kullanıcısına birleştirme tamamlandı.",
+	"usermerge-success-log": "{{GENDER:$2|$2}} ($3) kullanıcısı {{GENDER:$4|$4}} ($5) kullanıcısıyla birleştirildi",
 	"usermerge-logpage": "Kullanıcı birleştirme günlüğü",
 	"usermerge-logpagetext": "Bu bir kullanıcı birleştirme eylemleri günlüğüdür.",
-	"usermerge-noselfdelete": "Kendinizden birleştiremez ya da silemezsiniz!",
-	"usermerge-unmergable": "Kullanıcıdan birleştirilemiyor - ID ya da isim birleştirilemez olarak tanımlanmış.",
-	"usermerge-protectedgroup": "Kullanıcıdan birleştirilemiyor - kullanıcı korunan bir grupta bulunuyor.",
+	"usermerge-noselfdelete": "{{GENDER:$1|kendinizi}} birleştiremez ya da silemezsiniz!",
+	"usermerge-protectedgroup": "{{GENDER:$1|kullanıcısından}}:birleştirilemiyor: Kullanıcı korunan bir grupta bulunuyor.",
 	"right-usermerge": "Kullanıcıları birleştir"
 }
