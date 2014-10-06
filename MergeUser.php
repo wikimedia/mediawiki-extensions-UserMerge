@@ -87,8 +87,11 @@ class MergeUser {
 	 */
 	private function mergeDatabaseTables() {
 		// Fields to update with the format:
-		// array( tableName, idField, textField, 'batchKey' => unique field, 'options' => array() )
-		// textField, batchKey, and options are optional
+		// array(
+		//        tableName, idField, textField,
+		//        'batchKey' => unique field, 'options' => array(), 'db' => DatabaseBase
+		// );
+		// textField, batchKey, db, and options are optional
 		$updateFields = array(
 			array( 'archive', 'ar_user', 'ar_user_text', 'batchKey' => 'ar_id' ),
 			array( 'revision', 'rev_user', 'rev_user_text', 'batchKey' => 'rev_id' ),
@@ -114,14 +117,16 @@ class MergeUser {
 		foreach ( $updateFields as $fieldInfo ) {
 			$options = isset( $fieldInfo['options'] ) ? $fieldInfo['options'] : array();
 			unset( $fieldInfo['options'] );
+			$db = isset( $fieldInfo['db'] ) ? $fieldInfo['db'] : $dbw;
+			unset( $fieldInfo['db'] );
 			$tableName = array_shift( $fieldInfo );
 			$idField = array_shift( $fieldInfo );
 			$keyField = isset( $fieldInfo['batchKey'] ) ? $fieldInfo['batchKey'] : null;
 			unset( $fieldInfo['batchKey'] );
 
-			if ( $dbw->trxLevel() || $keyField === null ) {
+			if ( $db->trxLevel() || $keyField === null ) {
 				// Can't batch/wait when in a transaction or when no batch key is given
-				$dbw->update(
+				$db->update(
 					$tableName,
 					array( $idField => $this->newUser->getId() )
 						+ array_fill_keys( $fieldInfo, $this->newUser->getName() ),
@@ -133,9 +138,9 @@ class MergeUser {
 				$limit = 200;
 				do {
 					// Batch and wait for slaves (ORDER BY + LIMIT is not well supported)
-					$dbw->begin();
+					$db->begin();
 					// Grab a batch of values on a mostly unique column for this user ID
-					$res = $dbw->select(
+					$res = $db->select(
 						$tableName,
 						array( $keyField ),
 						array( $idField => $this->oldUser->getId() ),
@@ -148,7 +153,7 @@ class MergeUser {
 					}
 					// Update only those rows with the given column values
 					if ( count( $keyValues ) ) {
-						$dbw->update(
+						$db->update(
 							$tableName,
 							array( $idField => $this->newUser->getId() )
 								+ array_fill_keys( $fieldInfo, $this->newUser->getName() ),
@@ -157,7 +162,7 @@ class MergeUser {
 							$options
 						);
 					}
-					$dbw->commit();
+					$db->commit();
 					wfWaitForSlaves();
 				} while ( count( $keyValues ) >= $limit );
 			}
@@ -341,6 +346,12 @@ class MergeUser {
 	private function deleteUser() {
 		$dbw = wfGetDB( DB_MASTER );
 
+		/**
+		 * Format is: table => user_id column
+		 *
+		 * If you want it to use a different db object:
+		 * table => array( user_id colum, 'db' => DatabaseBase );
+		 */
 		$tablesToDelete = array(
 			'user_groups' => 'ug_user',
 			'user_properties' => 'up_user',
@@ -352,7 +363,14 @@ class MergeUser {
 		$tablesToDelete['user'] = 'user_id'; // Make sure this always set and last
 
 		foreach ( $tablesToDelete as $table => $field ) {
-			$dbw->delete(
+			// Check if a different database object was passed (Echo or Flow)
+			if ( is_array( $field ) ) {
+				$db = isset( $field['db'] ) ? $field['db'] : $dbw;
+				$field = $field[0];
+			} else {
+				$db = $dbw;
+			}
+			$db->delete(
 				$table,
 				array( $field => $this->oldUser->getId() )
 			);
