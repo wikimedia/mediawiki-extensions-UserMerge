@@ -7,7 +7,8 @@
 			"Sp5uhe",
 			"Wpedzich",
 			"Alan ffm",
-			"Chrumps"
+			"Chrumps",
+			"Michał Sobkowski"
 		]
 	},
 	"usermerge": "Integruj i usuń użytkowników",
@@ -21,7 +22,7 @@
 	"usermerge-newuser": "Nowy użytkownik (integruj z)",
 	"usermerge-deleteolduser": "Usuń dotychczasowego użytkownika",
 	"usermerge-submit": "Integruj użytkowników",
-	"usermerge-badtoken": "Nieprawidłowy żeton edycji",
+	"usermerge-badtoken": "Nieprawidłowy identyfikator edycji",
 	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|został usunięty|została usunięta}}.",
 	"usermerge-userdeleted-log": "usunął użytkownika „$2” ($3)",
 	"usermerge-success": "Integracja $1 ($2) z $3 ($4) zakończona.",
