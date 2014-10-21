@@ -137,6 +137,7 @@ class MergeUser {
 			} else {
 				$limit = 200;
 				do {
+					$checkSince = microtime( true );
 					// Batch and wait for slaves (ORDER BY + LIMIT is not well supported)
 					$db->begin();
 					// Grab a batch of values on a mostly unique column for this user ID
@@ -163,7 +164,7 @@ class MergeUser {
 						);
 					}
 					$db->commit();
-					wfWaitForSlaves();
+					wfWaitForSlaves( $checkSince, false, '*' );
 				} while ( count( $keyValues ) >= $limit );
 			}
 		}
