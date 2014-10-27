@@ -18,13 +18,11 @@
 	"usermerge-badtoken": "Token panyuntingan ora absah",
 	"usermerge-userdeleted": "$1 ($2) wis dibusak.",
 	"usermerge-userdeleted-log": "Panganggo dibusak: $2 ($3)",
-	"usermerge-updating": "Nganyari tabèl $1 ($2 menyang $3)",
 	"usermerge-success": "$1 ($2) wis rampung digabungaké menyang $3 ($4).",
 	"usermerge-success-log": "Panganggo $2 ($3) wis digabungaké menyang $4 ($5)",
 	"usermerge-logpage": "Log panggabungan panganggo",
 	"usermerge-logpagetext": "Iki sawijining log aksi panggabungan panganggo.",
 	"usermerge-noselfdelete": "Panjenengan ora bisa mbusak utawa nggabung saka panjenengan dhéwé!",
-	"usermerge-unmergable": "Ora bisa nggabungaké saka panganggo iki - nomer ID utawa jeneng akun iki wis ditandhani minangka akun sing ora bisa digabungaké.",
 	"usermerge-protectedgroup": "Ora bisa nggabungaké saka panganggo iki - panganggo ana jroning klompok kareksa.",
 	"right-usermerge": "Gabung panganggo"
 }

@@ -19,13 +19,11 @@
 	"usermerge-badtoken": "Token penyuntingan tidak sah",
 	"usermerge-userdeleted": "$1 ($2) telah dihapuskan.",
 	"usermerge-userdeleted-log": "Pengguna telah dihapuskan: $2 ($3)",
-	"usermerge-updating": "Memperbaharui tabel $1 ($2 hingga $3)",
 	"usermerge-success": "$1 ($2) telah selesai digabungkan ke $3 ($4).",
 	"usermerge-success-log": "Pengguna $2 ($3) telah digabungkan ke $4 ($5)",
 	"usermerge-logpage": "Log penggabungan pengguna",
 	"usermerge-logpagetext": "Ini adalah catatan tindakan penggabungan pengguna.",
 	"usermerge-noselfdelete": "Anda tidak dapat menghapus atau menggabungkan dari Anda sendiri!",
-	"usermerge-unmergable": "Tidak dapat menggabungkan dari pengguna ini - nomor ID atau nama akun ini telah ditandai sebagai akun yang tidak dapat digabungkan.",
 	"usermerge-protectedgroup": "Tidak dapat menggabungkan dari pengguna ini - pengguna ini termasuk dalam kelompok terproteksi.",
 	"right-usermerge": "Menggabungkan pengguna"
 }

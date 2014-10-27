@@ -11,6 +11,5 @@
 	"usermerge-submit": "合併用戶",
 	"usermerge-badtoken": "無效嘅編輯幣",
 	"usermerge-userdeleted": "$1($2) 已經刪除咗。",
-	"usermerge-updating": "更新緊 $1 表 ($2 到 $3)",
 	"usermerge-success": "由 $1($2) 到 $3($4) 嘅合併已經完成。"
 }

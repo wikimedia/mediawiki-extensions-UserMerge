@@ -18,13 +18,11 @@
 	"usermerge-badtoken": "Geton d'edicion invalid",
 	"usermerge-userdeleted": "$1($2) es destruch.",
 	"usermerge-userdeleted-log": "Contributor escafat : $2($3)",
-	"usermerge-updating": "Mesa a jorn de la taula $1 (de $2 a $3)",
 	"usermerge-success": "La fusion de $1($2) a  {{GENDER:$3|$3}} ($4) es completada.",
 	"usermerge-success-log": "Contributor $2($3) fusionat amb {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Jornal de las fusions de contributors",
 	"usermerge-logpagetext": "Aquò es un jornal de las accions de fusions de contributors.",
 	"usermerge-noselfdelete": "Podètz pas, vos-meteis, vos suprimir ni vos fusionar !",
-	"usermerge-unmergable": "Pòt pas fusionar a partir d'un utilizaire, d'un numèro d'identificacion o un nom que son estats definits coma non fusionables.",
 	"usermerge-protectedgroup": "Impossible de fusionar a partir d'un utilizaire - l'utilizaire se tròba dins un grop protegit.",
 	"right-usermerge": "Fusionar d'utilizaires"
 }

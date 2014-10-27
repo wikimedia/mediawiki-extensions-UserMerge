@@ -19,16 +19,12 @@
 	"usermerge-badtoken": "වලංගු නොවන සංස්කරණ සංඥාව",
 	"usermerge-userdeleted": "$1 ($2) මකනු ලැබ ඇත.",
 	"usermerge-userdeleted-log": "මකනු ලැබූ පරිශීලක: $2 ($3)",
-	"usermerge-updating": "$1 වගුව යාවත්කාලීන කිරීම ($2 ,$3ට )",
 	"usermerge-success": "$1 ($2) සිට $3 ($4) දක්වා මුසු කිරීම සම්පූර්ණ විය.",
 	"usermerge-success-log": "$2 ($3) පරිශීලකයා $4 ($5) ට මුසු කරන ලදී",
 	"usermerge-logpage": "පරිශීලක මුසු කිරීම් ලඝු සටහන",
 	"usermerge-logpagetext": "මෙය පරිශීලක මුසු කිරීම් කාර්යයන්වල ලඝු සටහනකි.",
 	"usermerge-noselfdelete": "ඔබ විසින්ම මැකීම හෝ මුසු කිරීම සිදු කරනු ලැබිය නොහැකිය!",
-	"usermerge-unmergable": "පරිශීලකයා මඟින් මුසු කළ නොහැකියි - ID හෝ නම හඳුන්වා දී තිබෙන්නේ මුසු කළ නොහැකි ලෙසයි.",
 	"usermerge-protectedgroup": "පරිශිලකයා මඟින් මුසු කළ නොහැකියි - පරිශීලකයා සිටින්නේ ආරක්ෂිත කණ්ඩායමකය.",
 	"right-usermerge": "පරිශීලකයින් මුසු කිරීම",
-	"usermerge-page-unmoved": "$1 පිටුව $2 වෙත ගෙනයා නොහැක.",
-	"usermerge-page-moved": "$1 පිටුව $2 වෙත ගෙනයන ලදි.",
-	"usermerge-page-deleted": "$1 මකාදැමූ පිටුව"
+	"usermerge-page-unmoved": "$1 පිටුව $2 වෙත ගෙනයා නොහැක."
 }

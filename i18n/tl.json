@@ -18,18 +18,14 @@
 	"usermerge-badtoken": "Hindi tanggap na pananda ng pagbabago",
 	"usermerge-userdeleted": "Nabura na ang $1 ($2).",
 	"usermerge-userdeleted-log": "Binurang tagagamit: $2 ($3)",
-	"usermerge-updating": "Isinasapanahon ang $1 na tabla ($2 hanggang $3)",
 	"usermerge-success": "Ganap na ang pagsanib mula sa $1 ($2) patungo sa $3 ($4).",
 	"usermerge-success-log": "Tagagamit na $2 ($3) isinanib sa $4 ($5)",
 	"usermerge-logpage": "Talaan ng pagsasanib ng tagagamit",
 	"usermerge-logpagetext": "Isa itong talaan ng mga galaw na pangpagsasanib ng tagagamit.",
 	"usermerge-noselfdelete": "Hindi ka maaaring magbura o sumanib mula sa sarili mo!",
-	"usermerge-unmergable": "Hindi naisanib mula sa tagagamit - nilarawan ang ID o pangalan bilang hindi mapagsasanib.",
 	"usermerge-protectedgroup": "Hindi naisanib mula sa tagagamit - nasa loob ng isang nakasanggalang na pangkat ang tagagamit.",
 	"right-usermerge": "Pagsanibin ang mga tagagamit",
 	"usermerge-autopagedelete": "Kusang nabubura kapag pinagsasanib ang mga tagagamit",
 	"usermerge-page-unmoved": "Hindi mailipat ang pahinang $1 papunta sa $2.",
-	"usermerge-page-moved": "Ang pahinang $1 ay nailipat papunta sa $2.",
-	"usermerge-move-log": "Kusang inilipat ang pahina habang pinagsasanib ang tagagamit na si \"[[User:$1|$1]]\" papunta sa \"[[User:$2|$2]]\"",
-	"usermerge-page-deleted": "Binura ang pahinang $1"
+	"usermerge-move-log": "Kusang inilipat ang pahina habang pinagsasanib ang tagagamit na si \"[[User:$1|$1]]\" papunta sa \"[[User:$2|$2]]\""
 }

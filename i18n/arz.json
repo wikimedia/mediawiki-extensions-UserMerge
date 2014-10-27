@@ -19,13 +19,11 @@
 	"usermerge-badtoken": "نص تعديل غير صحيح",
 	"usermerge-userdeleted": "$1($2) تم حذفه.",
 	"usermerge-userdeleted-log": "حذف اليوزر: $2($3)",
-	"usermerge-updating": "تحديث $1 جدول ($2 إلى $3)",
 	"usermerge-success": "الدمج من $1($2) إلى $3($4) اكتمل.",
 	"usermerge-success-log": "اليوزر $2($3) تم دمجه مع $4($5)",
 	"usermerge-logpage": "سجل دمج اليوزر",
 	"usermerge-logpagetext": "ده سجل بأفعال دمج اليوزرز.",
 	"usermerge-noselfdelete": "لا يمكنك حذف أو دمج من نفسك!",
-	"usermerge-unmergable": "مش قادر يدمج من يوزر - الرقم أو الاسم تم تعريفه على  انه مش  قابل للدمج.",
 	"usermerge-protectedgroup": "مش قادر  يدمج من اليوزر - اليوزر فى مجموعة محمية.",
 	"right-usermerge": "دمج اليوزرز"
 }

@@ -19,20 +19,15 @@
 	"usermerge-badtoken": "Token penyuntingan tidak sah",
 	"usermerge-userdeleted": "$1 ($2) telah dihapuskan.",
 	"usermerge-userdeleted-log": "Pengguna terhapus: $2 ($3)",
-	"usermerge-updating": "Mengemaskinikan jadual $1 ($2 kepada $3)",
 	"usermerge-success": "Penggabungan dari $1 ($2) kepada {{GENDER:$3|$3}} ($4) selesai.",
 	"usermerge-success-log": "Pengguna $2 ($3) digabungkan kepada {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Log penggabungan pengguna",
 	"usermerge-logpagetext": "Ini merupakan log tindakan menggabungkan pengguna.",
 	"usermerge-noselfdelete": "Anda tidak boleh menghapuskan atau menggabungkan diri anda sendiri!",
-	"usermerge-unmergable": "Tidak dapat menggabungkan pengguna - ID atau namanya telah ditakrifkan sebagai tidak boleh digabungkan.",
 	"usermerge-protectedgroup": "Tidak dapat menggabungkan pengguna - pengguna menganggotai kumpulan yang terlindung.",
 	"right-usermerge": "Menggabungkan pengguna",
 	"action-usermerge": "menggabungkan pengguna",
-	"usermerge-editcount-merge-success": "Menambahkan $1 {{PLURAL:$1|suntingan}} pengguna $2 kepada $3 {{PLURAL:$3|suntingan}} pengguna $4 ($5 {{PLURAL:$5|suntingan}} selepas penggabungan)",
 	"usermerge-autopagedelete": "Dihapuskan secara automatik apabila menggabungkan pengguna",
 	"usermerge-page-unmoved": "Halaman $1 tidak dapat dipindahkan ke $2.",
-	"usermerge-page-moved": "Halaman $1 telah dipindahkan ke $2.",
-	"usermerge-move-log": "Halaman dipindahkan secara automatik ketika menukar nama \"[[User:$1|$1]]\" menjadi \"[[User:$2|{{GENDER:$2|$2}}]]\"",
-	"usermerge-page-deleted": "Halaman $1 dipadamkan"
+	"usermerge-move-log": "Halaman dipindahkan secara automatik ketika menukar nama \"[[User:$1|$1]]\" menjadi \"[[User:$2|{{GENDER:$2|$2}}]]\""
 }

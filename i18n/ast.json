@@ -19,20 +19,15 @@
 	"usermerge-badtoken": "Pase d'edición inválidu",
 	"usermerge-userdeleted": "Desaniciáu l'usuariu $1 ($2).",
 	"usermerge-userdeleted-log": "Usuariu desaniciáu: $2 ($3)",
-	"usermerge-updating": "Actualizando la tabla $1 ($2 a $3)",
 	"usermerge-success": "La fusión dende $1 ($2) a {{GENDER:$3|$3}} ($4) ta completa.",
 	"usermerge-success-log": "Usuariu $2 ($3) fusionáu con {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Rexistru de fusión d'usuarios",
 	"usermerge-logpagetext": "Esti ye un rexistru d'aiciones de fusión d'usuarios.",
 	"usermerge-noselfdelete": "¡Nun pue desaniciase o fusionar dende sigo mesmu!",
-	"usermerge-unmergable": "Nun pue fusionar dende l'usuariu: La ID o'l nome definieronse como non fusionables.",
 	"usermerge-protectedgroup": "Nun pue fusionase dende l'usuariu: L'usuariu ta nun grupu protexíu.",
 	"right-usermerge": "Fusionar usuarios",
 	"action-usermerge": "fusionar usuarios",
-	"usermerge-editcount-merge-success": "Amestando $1 {{PLURAL:$1|edición|ediciones}} del usuariu $2 a $3 {{PLURAL:$3|edición|ediciones}} del usuariu $4 ($5 {{PLURAL:$5|edición|ediciones}} dempués de fusionar)",
 	"usermerge-autopagedelete": "Desaniciao automáticamente al fusionar usuarios",
 	"usermerge-page-unmoved": "La páxina $1 nun pudo treslladase a $2.",
-	"usermerge-page-moved": "La páxina $1 treslladóse a $2.",
-	"usermerge-move-log": "Treslladóse la páxina automáticamente al fusionar al usuariu \"[[User:$1|$1]]\" en \"[[User:$2|{{GENDER:$2|$2}}]]\"",
-	"usermerge-page-deleted": "Páxina \"$1\" desaniciada"
+	"usermerge-move-log": "Treslladóse la páxina automáticamente al fusionar al usuariu \"[[User:$1|$1]]\" en \"[[User:$2|{{GENDER:$2|$2}}]]\""
 }

@@ -18,13 +18,11 @@
 	"usermerge-badtoken": "Nevaljan token izmjene",
 	"usermerge-userdeleted": "$1 ($2) je obrisan.",
 	"usermerge-userdeleted-log": "Obrisani korisnik: $2 ($3)",
-	"usermerge-updating": "Ažuriram $1 tabelu ($2 do $3)",
 	"usermerge-success": "Spajanje sa $1 ($2) na $3 ($4) je završeno.",
 	"usermerge-success-log": "Korisnik $2 ($3) spojen na $4 ($5)",
 	"usermerge-logpage": "Zapisnik spajanja korisnika",
 	"usermerge-logpagetext": "Ovo je zapisnik akcija spajanja korisnika.",
 	"usermerge-noselfdelete": "Ne možete obrisati ili spajati od samog sebe!",
-	"usermerge-unmergable": "Ne može se spajati od korisnika - ID ili naziv je definisan kao nespojiv.",
 	"usermerge-protectedgroup": "Ne može se spajati od korisnika - korisnik je u zaštićenoj grupi.",
 	"right-usermerge": "Spajanje korisnika"
 }

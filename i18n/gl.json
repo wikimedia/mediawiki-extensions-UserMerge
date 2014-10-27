@@ -20,20 +20,15 @@
 	"usermerge-badtoken": "Sinal de edición non válido",
 	"usermerge-userdeleted": "$1 ($2) foi eliminado.",
 	"usermerge-userdeleted-log": "Usuario eliminado: $2 ($3)",
-	"usermerge-updating": "Actualizando táboa $1 ($2 a $3)",
 	"usermerge-success": "A fusión desde $1 ($2) a {{GENDER:$3|$3}} ($4) foi completada.",
 	"usermerge-success-log": "Usuario $2 ($3) fusionado con {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Rexistro de fusión de usuarios",
 	"usermerge-logpagetext": "Este é un rexistro das accións de fusión de usuarios.",
 	"usermerge-noselfdelete": "Non se pode eliminar ou fusionar a si mesmo!",
-	"usermerge-unmergable": "Non se pode fusionar o usuario (o ID ou o nome foron definidos como \"non fusionables\").",
 	"usermerge-protectedgroup": "Non se pode fusionar o usuario (o usuario está nun frupo protexido).",
 	"right-usermerge": "Fusionar usuarios",
 	"action-usermerge": "fusionar usuarios",
-	"usermerge-editcount-merge-success": "Engadindo $1 {{PLURAL:$1|edición|edicións}} do usuario $2 a $3 {{PLURAL:$3|edición|edicións}} do usuario $4 ($5 {{PLURAL:$5|edición|edicións}} despois da fusión)",
 	"usermerge-autopagedelete": "Borrada automaticamente ao fusionar os usuarios",
 	"usermerge-page-unmoved": "A páxina \"$1\" non pode ser movida a \"$2\".",
-	"usermerge-page-moved": "A páxina \"$1\" foi movida a \"$2\".",
-	"usermerge-move-log": "A páxina moveuse automaticamente cando se fusionou o usuario \"[[User:$1|$1]]\" con \"[[User:$2|{{GENDER:$2|$2}}]]\"",
-	"usermerge-page-deleted": "A páxina \"$1\" foi borrada"
+	"usermerge-move-log": "A páxina moveuse automaticamente cando se fusionou o usuario \"[[User:$1|$1]]\" con \"[[User:$2|{{GENDER:$2|$2}}]]\""
 }

@@ -18,13 +18,11 @@
 	"usermerge-badtoken": "Neplatný token úprav",
 	"usermerge-userdeleted": "$1($2) bol zmazaný.",
 	"usermerge-userdeleted-log": "Zmazaný používateľ: $2($3)",
-	"usermerge-updating": "Aktualizuje sa tabuľka $1 ($2 na $3)",
 	"usermerge-success": "Zlúčenie z $1($2) do $3($4) je dokončené.",
 	"usermerge-success-log": "Používateľ $2($3) bol zlúčený do $4($5)",
 	"usermerge-logpage": "Záznam zlúčení používateľov",
 	"usermerge-logpagetext": "Toto je záznam zlúčení používateľov.",
 	"usermerge-noselfdelete": "Nemôžete zmazať alebo zlúčiť svoj účet!",
-	"usermerge-unmergable": "Nebolo možné vykonať zlúčenie používateľa - zdrojové meno alebo ID bolo definované ako nezlúčiteľné.",
 	"usermerge-protectedgroup": "Nebolo možné zlúčiť uvedeného používateľa - používateľ je v chránenej skupine.",
 	"right-usermerge": "Zlučovať používateľov"
 }

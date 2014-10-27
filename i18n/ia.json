@@ -18,18 +18,14 @@
 	"usermerge-badtoken": "Indicio de modification invalide",
 	"usermerge-userdeleted": "$1 ($2) ha essite delite.",
 	"usermerge-userdeleted-log": "Usator delite: $2 ($3)",
-	"usermerge-updating": "Actualisa le tabella $1 (de $2 a $3)",
 	"usermerge-success": "Le fusion de $1 ($2) a $3 ($4) es complete.",
 	"usermerge-success-log": "Usator $2 ($3) fusionate con $4 ($5)",
 	"usermerge-logpage": "Registro de fusiones de usatores",
 	"usermerge-logpagetext": "Isto es un registro de actiones de fusion de usatores.",
 	"usermerge-noselfdelete": "Tu non pote deler o fusionar ab te mesme!",
-	"usermerge-unmergable": "Impossibile fusionar ab iste usator - le ID o nomine ha essite definite como non fusionabile.",
 	"usermerge-protectedgroup": "Impossibile fusionar ab iste usator - le usator es membro de un gruppo protegite.",
 	"right-usermerge": "Fusionar usatores",
 	"usermerge-autopagedelete": "Automaticamente delite durante le fusion de usatores",
 	"usermerge-page-unmoved": "Le pagina $1 non poteva esser renominate a $2.",
-	"usermerge-page-moved": "Le pagina $1 ha essite renominate a $2.",
-	"usermerge-move-log": "Le pagina ha essite automaticamente renominate con le fusion del usator \"[[User:$1|$1]]\" in \"[[User:$2|$2]]\"",
-	"usermerge-page-deleted": "Pagina $1 delite"
+	"usermerge-move-log": "Le pagina ha essite automaticamente renominate con le fusion del usator \"[[User:$1|$1]]\" in \"[[User:$2|$2]]\""
 }

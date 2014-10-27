@@ -18,13 +18,11 @@
 	"usermerge-badtoken": "Pavlefshme redakto shenjë",
 	"usermerge-userdeleted": "$1 ($2) është fshirë.",
 	"usermerge-userdeleted-log": "përdorues Deleted: $2 ($3)",
-	"usermerge-updating": "Tabela Përditësimi $1 ($2 në $3)",
 	"usermerge-success": "Merge nga $1 ($2) për $3 ($4), është i kompletuar.",
 	"usermerge-success-log": "User $2 ($3) bashkohen në $4 ($5)",
 	"usermerge-logpage": "Përdoruesi bashkojë log",
 	"usermerge-logpagetext": "Ky është një regjistër i përdoruesit bashkojë veprimet.",
 	"usermerge-noselfdelete": "Ju nuk mund të fshini ose përpuqni nga vetë!",
-	"usermerge-unmergable": "Në pamundësi për të bashkuar nga përdoruesit - ID ose emër është përcaktuar si unmergable.",
 	"usermerge-protectedgroup": "Në pamundësi për të bashkuar nga përdoruesi - user është në një grup të mbrojtura.",
 	"right-usermerge": "Merge përdoruesit"
 }

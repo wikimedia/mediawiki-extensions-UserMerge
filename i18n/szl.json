@@ -17,13 +17,11 @@
 	"usermerge-badtoken": "Ńyprowidłowy żetůn sprowjyńo",
 	"usermerge-userdeleted": "$1 ($2) zostoł wyćepany.",
 	"usermerge-userdeleted-log": "wyćepoł użytkowńika „$2” ($3)",
-	"usermerge-updating": "Uodśwjeżańy tabuli $1 ($2 do $3)",
 	"usermerge-success": "Kuplowańy $1 ($2) s $3 ($4) zakończůne.",
 	"usermerge-success-log": "skuplowoł użytkowńika „$2” ($3) do „$4” ($5)",
 	"usermerge-logpage": "Rejer kuplowańo użytkowńików",
 	"usermerge-logpagetext": "To je rejer uoperacyji kuplowańo użytkowńikůw.",
 	"usermerge-noselfdelete": "Ńy idźe wyćepać abo kuplować samygo śebje!",
-	"usermerge-unmergable": "Ńy idźe skuplować użytkowńika - identyfikator abo mjano uostoły zidentyfikowane kej ńykuplowalne.",
 	"usermerge-protectedgroup": "Ńy idźe skulować użytkowńika - je uůn człůnkym zabezpjeczůnyj grupy.",
 	"right-usermerge": "Kuplowańy użytkowńikůw"
 }

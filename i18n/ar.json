@@ -20,14 +20,11 @@
 	"usermerge-badtoken": "نص تعديل غير صحيح",
 	"usermerge-userdeleted": "$1($2) تم حذفه.",
 	"usermerge-userdeleted-log": "حذف المستخدم: $2($3)",
-	"usermerge-updating": "تحديث $1 جدول ($2 إلى $3)",
 	"usermerge-success": "الدمج من $1($2) إلى $3($4) اكتمل.",
 	"usermerge-success-log": "المستخدم $2($3) تم دمجه مع $4($5)",
 	"usermerge-logpage": "سجل دمج المستخدم",
 	"usermerge-logpagetext": "هذا سجل بأفعال دمج المستخدمين.",
 	"usermerge-noselfdelete": "لا يمكنك حذف أو دمج من نفسك!",
-	"usermerge-unmergable": "غير قادر على الدمج من مستخدم - الرقم أو الاسم تم تعريفه كغير قابل للدمج.",
 	"usermerge-protectedgroup": "غير قادر على الدمج من المستخدم - المستخدم في مجموعة محمية.",
-	"right-usermerge": "دمج المستخدمين",
-	"usermerge-page-deleted": "صفحة محذوفة $1"
+	"right-usermerge": "دمج المستخدمين"
 }

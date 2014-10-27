@@ -8,8 +8,6 @@
 	"usermerge-submit": "Karbera zewkerden",
 	"usermerge-userdeleted": "$1 ($2) besterna.",
 	"usermerge-userdeleted-log": "Karbero ke besteriya: $2 ($3)",
-	"usermerge-updating": "Tabloy $1'i oyo ($2 ra hetê $3 ya) neweyêno",
 	"right-usermerge": "Karberan zewkerden",
-	"action-usermerge": "Karberan zewkerden",
-	"usermerge-page-deleted": "$1 per besteriye"
+	"action-usermerge": "Karberan zewkerden"
 }

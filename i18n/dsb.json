@@ -19,20 +19,15 @@
 	"usermerge-badtoken": "Njepłaśiwy wobźěłowański token",
 	"usermerge-userdeleted": "$1 ($2) jo se wulašował.",
 	"usermerge-userdeleted-log": "Wulašowany wužywaŕ: $2 ($3)",
-	"usermerge-updating": "Aktualizěrujo se tabela $1 ($2 do $3)",
 	"usermerge-success": "Zjadnosénje wot $1 ($2) z {{GENDER:$3|$3}} ($4) jo skóńcone.",
 	"usermerge-success-log": "Wužywaŕ $2 ($3) jo se z {{GENDER:$4|$4}} ($5) zjadnośił",
 	"usermerge-logpage": "Protokol wužywarskich zjadnośenjow",
 	"usermerge-logpagetext": "To jo protokol akcijow wužywarskich zjadnośenjow.",
 	"usermerge-noselfdelete": "Njamóžoš se ze sobu zjadnośiś!",
-	"usermerge-unmergable": "Zjadnosénja wót wužywarja njemóžno - ID abo wužywarske mě jo se ako njezjadnośujobne definěrowane.",
 	"usermerge-protectedgroup": "Zjadnośenje wót wužywarja njemóžno - wužywaŕ jo w šćitanej kupce.",
 	"right-usermerge": "Wužywarjow zjadnośiś",
 	"action-usermerge": "wužywarjow zjadnośiś",
-	"usermerge-editcount-merge-success": "$1 {{PLURAL:$1|změna|změnje|změny|změnow}} wužywarja $2 {{PLURAL:$1|pśidawa|pśidawatej|pśidawaju|pśidawa}} se $3 {{PLURAL:$3|změnje|změnoma|změnam}} wužywarja $4 ($5 {{PLURAL:$5|změna|změnje|změny|změnow}} pó zjadnośenju)",
 	"usermerge-autopagedelete": "Pśi zjadnośenju wužywarjow awtomatiski wulašowany",
 	"usermerge-page-unmoved": "Bok $1 njejo se do $2 pśesunuś dał.",
-	"usermerge-page-moved": "Bok $1 jo se do $2 pśesunuł.",
-	"usermerge-move-log": "Bok za zjadnośenje wužywarja \"[[User:$1|$1]]\" z \"[[User:$2|{{GENDER:$2|$2}}]]\" awtomatiski pśesunjony",
-	"usermerge-page-deleted": "Bok $1 wulašowany"
+	"usermerge-move-log": "Bok za zjadnośenje wužywarja \"[[User:$1|$1]]\" z \"[[User:$2|{{GENDER:$2|$2}}]]\" awtomatiski pśesunjony"
 }

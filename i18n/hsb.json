@@ -19,20 +19,15 @@
 	"usermerge-badtoken": "Njepłaćiwe wobdźěłanske znamjo",
 	"usermerge-userdeleted": "$1($2) bu zničeny.",
 	"usermerge-userdeleted-log": "Wušmórnjeny wužiwar: $2($3)",
-	"usermerge-updating": "$1 tabela so aktualizuje ($2 do $3)",
 	"usermerge-success": "Zjednoćenje wot $1 ($2) do {{GENDER:$3|$3}} ($4) je dokónčene.",
 	"usermerge-success-log": "Wužiwar $2 ($3) je so z {{GENDER:$4|$4}} ($5) zjednoćił",
 	"usermerge-logpage": "Protokol wužiwarskich zjednoćenjow",
 	"usermerge-logpagetext": "To je protokol wužiwarskich zjednoćenjow.",
 	"usermerge-noselfdelete": "Njemóžeš sam wušmórnyć abo zjednoćić!",
-	"usermerge-unmergable": "Zjednoćenje wužiwarjow njemóžno - ID abo wužiwarske mjeno bu jako njezjednoćujomne definowane.",
 	"usermerge-protectedgroup": "Zjednoćenje wužiwarjow njemóžno - wužiwar je w škitanej skupinje",
 	"right-usermerge": "Wužiwarjow zjednoćić",
 	"action-usermerge": "wužiwarjow zjednoćić",
-	"usermerge-editcount-merge-success": "$1 {{PLURAL:$1|změna|změnje|změny|změnow}} wužiwarja $2 so $3 {{PLURAL:$3|změnje|změnomaj|změnam}} wužiwarja $4 {{PLURAL:$1|přidawa|přidawatej|přidawaja|přidawa}} ($5 {{PLURAL:$5|změna|změnje|změny|změnow}} po zjednoćenju)",
 	"usermerge-autopagedelete": "Při zjednoćenju wužiwarjow awtomatisce zhašany",
 	"usermerge-page-unmoved": "Strona $1 njeda so do $2 přesunyć.",
-	"usermerge-page-moved": "Strona $1 bu do $2 přesunjena.",
-	"usermerge-move-log": "Strona za zjednoćenje wužiwarja \"[[User:$1|$1]]\" z \"[[User:$2|{{GENDER:$2|$2}}]]\" awtomatisce přesunjena",
-	"usermerge-page-deleted": "Zhašana strona $1"
+	"usermerge-move-log": "Strona za zjednoćenje wužiwarja \"[[User:$1|$1]]\" z \"[[User:$2|{{GENDER:$2|$2}}]]\" awtomatisce přesunjena"
 }
