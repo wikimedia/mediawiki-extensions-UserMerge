@@ -6,7 +6,8 @@
 			"Jorge Morais",
 			"Luckas",
 			"Helder.wiki",
-			"He7d3r"
+			"He7d3r",
+			"Paladox"
 		]
 	},
 	"usermerge": "Fusão e eliminação de utilizadores",
@@ -21,10 +22,10 @@
 	"usermerge-deleteolduser": "Apagar usuário antigo",
 	"usermerge-submit": "Fundir usuário",
 	"usermerge-badtoken": "Token de edição inválida",
-	"usermerge-userdeleted": "$1 ($2) foi eliminado.",
+	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) foi eliminado.",
 	"usermerge-userdeleted-log": "Usuário apagado: $2 ($3)",
-	"usermerge-success": "Fusão de $1 ($2) para $3 ($4) está completa.",
-	"usermerge-success-log": "Usuário $2 ($3) fundido com {{GENDER:$4|$4}} ($5)",
+	"usermerge-success": "Fusão de {{GENDER:$1|$1}} ($2) para {{GENDER:$3|$3}} ($4) está completa.",
+	"usermerge-success-log": "Usuário {{GENDER:$2|$2}} ($3) fundido com {{GENDER:$4|}} ($5)",
 	"usermerge-logpage": "Registro de fusão de utilizadores",
 	"usermerge-logpagetext": "Este é um registro de ações de fusão de utilizadores.",
 	"usermerge-noselfdelete": "Você não pode apagar ou fundir a partir de si próprio!",
