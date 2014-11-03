@@ -5,8 +5,7 @@
 			"SPQRobin",
 			"Siebrand",
 			"Southparkfan",
-			"Sjoerddebruin",
-			"Paladox"
+			"Sjoerddebruin"
 		]
 	},
 	"usermerge": "Gebruikers samenvoegen en verwijderen",
@@ -24,12 +23,12 @@
 	"usermerge-badtoken": "Ongeldig bewerkingstoken",
 	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) is verwijderd.",
 	"usermerge-userdeleted-log": "Verwijderde gebruiker: $2 ($3)",
-	"usermerge-success": "Samenvoegen van {{GENDER:$1|$1}} ($2) naar {{GENDER:$3|$3}} ($4) is afgerond.",
+	"usermerge-success": "Samenvoegen van $1 ($2) naar {{GENDER:$3|$3}} ($4) is afgerond.",
 	"usermerge-success-log": "Gebruiker {{GENDER:$2|$2}} ($3) samengevoegd naar {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Logboek gebruikerssamenvoegingen",
 	"usermerge-logpagetext": "Dit is het logboek van gebruikerssamenvoegingen.",
-	"usermerge-noselfdelete": "U kunt niet verwijderen of samenvoegen van  {{GENDER:$1| jezelf}}!",
-	"usermerge-protectedgroup": "Niet in staat om samen te voegen van  {{GENDER:$1| gebruiker}}: gebruiker is in een beveiligde groep.",
+	"usermerge-noselfdelete": "U kunt uzelf niet verwijderen of samenvoegen!",
+	"usermerge-protectedgroup": "Het is niet mogelijk de gebruikers samen te voegen. De gebruiker zit in een beschermde groep.",
 	"right-usermerge": "Gebruikers samenvoegen",
 	"action-usermerge": "gebruikers samen te voegen",
 	"usermerge-autopagedelete": "Automatisch verwijderd bij het samenvoegen van gebruikers",

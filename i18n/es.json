@@ -7,15 +7,14 @@
 			"Imre",
 			"MarcoAurelio",
 			"Sanbec",
-			"Fitoschido",
-			"Paladox"
+			"Fitoschido"
 		]
 	},
 	"usermerge": "Fusionar y borrar usuarios",
 	"usermerge-desc": "[[Special:UserMerge|Fusiona referencias de un usuario a otro usuario]] en la base de datos wiki - también borrará los usuarios antiguos como consecuencia de la fusión. Se requieren los permisos de ''usermerge''",
 	"usermerge-badolduser": "Nombre de usuario antiguo inválido",
 	"usermerge-badnewuser": "Nombre de usuario nuevo inválido",
-	"usermerge-nonewuser": "Nuevo nombre de usuario vacío. Suponiendo que se fusionan \"{{GENDER:$1|$1}}\".<br />\nHaga clic en \"{{int:usermerge-presentar}}\" para aceptar.",
+	"usermerge-nonewuser": "Nuevo nombre de usuario vacío - asumiendo fusión en «$1».<br />\nHaga clic en «{{int:usermerge-submit}}» para aceptar.",
 	"usermerge-noolduser": "Nombre de usuario antiguo vacío",
 	"usermerge-fieldset": "Nombres de usuario a fusionar",
 	"usermerge-olduser": "Antiguo usuario (fusionar de):",
@@ -24,16 +23,16 @@
 	"usermerge-submit": "Fusionar usuario",
 	"usermerge-badtoken": "Ficha de edición inválida",
 	"usermerge-userdeleted": "Se borró {{GENDER:$1|el usuario|la usuaria}} $1 ($2).",
-	"usermerge-userdeleted-log": "borró la cuenta de usuario $2 ($3)",
-	"usermerge-success": "La fusión de {{GENDER:$1|$1}} ($2) a {{GENDER:$3|$3}} ($4) ha sido completada.",
-	"usermerge-success-log": "fusionó al usuario {{GENDER:$2|$2}} ($3) con el usuario {{GENDER:$4|$4}} ($5)",
+	"usermerge-userdeleted-log": "borró la cuenta de usuario «$2» ($3)",
+	"usermerge-success": "La fusión de $1 ($2) a $3 ($4) ha sido completada.",
+	"usermerge-success-log": "fusionó al usuario «$2» ($3) con el usuario «$4» ($5)",
 	"usermerge-logpage": "Registro de fusiones del usuario",
 	"usermerge-logpagetext": "Este es un registro de fusiones de cuentas de usuario.",
 	"usermerge-noselfdelete": "No puedes borrarte o fusionarte tú {{GENDER:$1|mismo|misma}}.",
-	"usermerge-protectedgroup": "Imposible fusionar desde {{GENDER:$1|user}}: Usuario está incluido en un grupo protegido.",
+	"usermerge-protectedgroup": "Imposible fusionar desde el usuario - el usuario está incluido en un grupo protegido.",
 	"right-usermerge": "Fusionar usuarios",
 	"action-usermerge": "fusionar usuarios",
 	"usermerge-autopagedelete": "Eliminado automáticamente al fusionar usuarios",
 	"usermerge-page-unmoved": "La página $1 no pudo ser trasladada a $2.",
-	"usermerge-move-log": "Movido automáticamente la página, mientras que la fusión de los usuarios \"[[User:$1|$1]]\" a \"[[User:$2|{{GENDER:$2|$2}}]]\""
+	"usermerge-move-log": "Página trasladada automáticamente al fusionar al usuario \"[[User:$1|$1]]\" con el usuario \"[[User:$2|$2]]\""
 }
