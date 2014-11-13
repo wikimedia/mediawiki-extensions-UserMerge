@@ -8,7 +8,8 @@
 			"MarcoAurelio",
 			"Sanbec",
 			"Fitoschido",
-			"Nemo bis"
+			"Nemo bis",
+			"Macofe"
 		]
 	},
 	"usermerge": "Fusionar y borrar usuarios",
@@ -30,7 +31,7 @@
 	"usermerge-logpage": "Registro de fusiones del usuario",
 	"usermerge-logpagetext": "Este es un registro de fusiones de cuentas de usuario.",
 	"usermerge-noselfdelete": "No puedes borrarte o fusionarte tú {{GENDER:$1|mismo|misma}}.",
-	"usermerge-protectedgroup": "Imposible fusionar desde el usuario - el usuario está incluido en un grupo protegido.",
+	"usermerge-protectedgroup": "Imposible fusionar desde {{GENDER:$1|el usuario|la usuaria}}: está en un grupo protegido.",
 	"right-usermerge": "Fusionar usuarios",
 	"action-usermerge": "fusionar usuarios",
 	"usermerge-autopagedelete": "Eliminado automáticamente al fusionar usuarios",
