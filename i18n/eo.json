@@ -3,7 +3,8 @@
 		"authors": [
 			"Melancholie",
 			"Michawiki",
-			"Yekrats"
+			"Yekrats",
+			"KuboF"
 		]
 	},
 	"usermerge": "Kunigi kaj forigi uzantojn",
@@ -24,5 +25,6 @@
 	"usermerge-logpagetext": "Jen protokolo de kunigadoj de uzantoj",
 	"usermerge-noselfdelete": "Vi ne povas forigi aŭ kunigi de vi mem!",
 	"usermerge-protectedgroup": "Ne eblis kunigi de uzanto - uzanto estas en protektita grupo.",
-	"right-usermerge": "Kunfandi uzantojn"
+	"right-usermerge": "Kunfandi uzantojn",
+	"usermerge-page-unmoved": "La paĝo $1 ne povas esti alinomita al $2."
 }
