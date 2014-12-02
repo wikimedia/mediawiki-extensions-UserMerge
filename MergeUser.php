@@ -363,6 +363,10 @@ class MergeUser {
 			)
 		);
 
+		$message = function( /* ... */ ) use ( $msg ) {
+			return call_user_func_array( $msg, func_get_args() );
+		};
+
 		// Need to set $wgUser to attribute log properly.
 		$oldUser = $wgUser;
 		$wgUser = $performer;
@@ -377,27 +381,27 @@ class MergeUser {
 			if ( $this->newUser->getName() === "Anonymous" ) { # delete ALL old pages
 				if ( $oldPage->exists() ) {
 					$oldPageArticle = new Article( $oldPage, 0 );
-					$oldPageArticle->doDeleteArticle( $msg( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
+					$oldPageArticle->doDeleteArticle( $message( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
 				}
 			} elseif ( $newPage->exists()
 				&& !$oldPage->isValidMoveTarget( $newPage )
 				&& $newPage->getLength() > 0 ) { # delete old pages that can't be moved
 
 				$oldPageArticle = new Article( $oldPage, 0 );
-				$oldPageArticle->doDeleteArticle( $msg( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
+				$oldPageArticle->doDeleteArticle( $message( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
 
 			} else { # move content to new page
 				# delete target page if it exists and is blank
 				if ( $newPage->exists() ) {
 					$newPageArticle = new Article( $newPage, 0 );
-					$newPageArticle->doDeleteArticle( $msg( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
+					$newPageArticle->doDeleteArticle( $message( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
 				}
 
 				# move to target location
 				$errors = $oldPage->moveTo(
 					$newPage,
 					false,
-					$msg(
+					$message(
 						'usermerge-move-log',
 						$oldusername->getText(),
 						$newusername->getText() )->inContentLanguage()->text()
@@ -415,7 +419,7 @@ class MergeUser {
 				if ( !$dbr->numRows( $res ) ) {
 					# nothing links here, so delete unmoved page/redirect
 					$oldPageArticle = new Article( $oldPage, 0 );
-					$oldPageArticle->doDeleteArticle( $msg( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
+					$oldPageArticle->doDeleteArticle( $message( 'usermerge-autopagedelete' )->inContentLanguage()->text() );
 				}
 			}
 		}
