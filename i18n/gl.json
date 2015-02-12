@@ -19,7 +19,7 @@
 	"usermerge-deleteolduser": "Borrar o usuario antigo",
 	"usermerge-submit": "Fusionar o usuario",
 	"usermerge-badtoken": "Sinal de edición non válido",
-	"usermerge-userdeleted": "$1 ($2) foi eliminado.",
+	"usermerge-userdeleted": "Borrouse {{GENDER:$1|o usuario|a usuaria}} $1 ($2).",
 	"usermerge-userdeleted-log": "Usuario eliminado: $2 ($3)",
 	"usermerge-success": "A fusión desde {{GENDER:$1|$1}} ($2) a {{GENDER:$3|$3}} ($4) foi completada.",
 	"usermerge-success-log": "Usuario {{GENDER:$2|$2}} ($3) fusionado con {{GENDER:$4|$4}} ($5)",
