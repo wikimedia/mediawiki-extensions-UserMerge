@@ -350,16 +350,13 @@ class MergeUser {
 
 		# select all user pages and sub-pages
 		$dbr = wfGetDB( DB_SLAVE );
-		$pages = $dbr->select( 'page',
+		$pages = $dbr->select(
+			'page',
 			array( 'page_namespace', 'page_title' ),
 			array(
 				'page_namespace' => array( NS_USER, NS_USER_TALK ),
-				$dbr->makeList( array(
-						'page_title' => $dbr->buildLike( $oldusername->getDBkey() . '/', $dbr->anyString() ),
-						'page_title' => $oldusername->getDBkey()
-					),
-					LIST_OR
-				)
+				'page_title' . $dbr->buildLike( $oldusername->getDBkey() . '/', $dbr->anyString() )
+					. ' OR page_title = ' . $dbr->addQuotes( $oldusername->getDBkey() ),
 			)
 		);
 
