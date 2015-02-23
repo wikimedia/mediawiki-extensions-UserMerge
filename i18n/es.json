@@ -35,6 +35,6 @@
 	"right-usermerge": "Fusionar usuarios",
 	"action-usermerge": "fusionar usuarios",
 	"usermerge-autopagedelete": "Eliminado automáticamente al fusionar usuarios",
-	"usermerge-page-unmoved": "La página $1 no pudo ser trasladada a $2.",
+	"usermerge-page-unmoved": "La página $1 no pudo trasladarse a $2.",
 	"usermerge-move-log": "Página trasladada automáticamente al fusionar al usuario \"[[User:$1|$1]]\" con el usuario \"[[User:$2|$2]]\""
 }
