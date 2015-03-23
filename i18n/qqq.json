@@ -13,7 +13,7 @@
 		]
 	},
 	"usermerge": "{{doc-special|UserMerge}}",
-	"usermerge-desc": "{{desc|name=User Merge|url=http://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete}}",
+	"usermerge-desc": "{{desc|name=User Merge|url=https://www.mediawiki.org/wiki/Extension:User_Merge_and_Delete}}",
 	"usermerge-badolduser": "Used as error message.",
 	"usermerge-badnewuser": "Used as error message.",
 	"usermerge-nonewuser": "{{doc-important|Do not translate <code><nowiki>{{int:usermerge-submit}}</nowiki></code>.}}\nUsed as error message.\n\nRefers to {{msg-mw|Usermerge-submit}}.\n\nParameters:\n* $1 - username \"Anonymous\" (hard-coded)",
