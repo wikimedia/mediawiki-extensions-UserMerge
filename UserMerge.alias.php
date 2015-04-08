@@ -29,6 +29,11 @@ $specialPageAliases['as'] = array(
 	'UserMerge' => array( 'সদস্য_একত্ৰীকৰণ_কৰক' ),
 );
 
+/** Western Balochi (بلوچی رخشانی) */
+$specialPageAliases['bgn'] = array(
+	'UserMerge' => array( 'کارمرزوکی_ادغام' ),
+);
+
 /** Banjar (Bahasa Banjar) */
 $specialPageAliases['bjn'] = array(
 	'UserMerge' => array( 'Panggabungan_pamakai' ),
