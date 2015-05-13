@@ -17,7 +17,7 @@
 	"usermerge-badnewuser": "Неправильное новое имя участника",
 	"usermerge-nonewuser": "Пустое новое имя участника — при слиянии с «{{GENDER:$1|$1}}».<br />\nНажмите «{{int:usermerge-submit}}», чтобы подтвердить действие.",
 	"usermerge-noolduser": "Пустое старое имя участника",
-	"usermerge-same-old-and-new-user": "Старое и новое имя пользователя должны быть различны.",
+	"usermerge-same-old-and-new-user": "Старое и новое имена учётных записей должны различаться.",
 	"usermerge-fieldset": "Учётные записи для объединения",
 	"usermerge-olduser": "Старая учётная запись (объединить с):",
 	"usermerge-newuser": "Новая учётная запись (объединить в):",
