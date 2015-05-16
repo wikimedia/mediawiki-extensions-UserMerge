@@ -70,7 +70,6 @@ $wgMessagesDirs['UserMerge'] = __DIR__ . '/i18n';
 $wgExtensionMessagesFiles['UserMerge'] = $dir . 'UserMerge.i18n.php';
 $wgExtensionMessagesFiles['UserMergeAlias'] = $dir . 'UserMerge.alias.php';
 $wgSpecialPages['UserMerge'] = 'UserMerge';
-$wgSpecialPageGroups['UserMerge'] = 'users';
 
 $wgUserMergeProtectedGroups = array( "sysop" );
 

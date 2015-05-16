@@ -159,6 +159,10 @@ class SpecialUserMerge extends FormSpecialPage {
 
 		return Status::newGood();
 	}
+
+	protected function getGroupName() {
+		return 'users';
+	}
 }
 
 /**
