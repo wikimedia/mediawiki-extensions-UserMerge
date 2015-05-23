@@ -7,7 +7,8 @@
 			"Luckas",
 			"Helder.wiki",
 			"He7d3r",
-			"Nemo bis"
+			"Nemo bis",
+			"Araceletorres"
 		]
 	},
 	"usermerge": "Fusão e eliminação de utilizadores",
@@ -30,5 +31,9 @@
 	"usermerge-logpagetext": "Este é um registro de ações de fusão de utilizadores.",
 	"usermerge-noselfdelete": "Você não pode apagar ou fundir a partir de si próprio!",
 	"usermerge-protectedgroup": "Não é possível fundir este usuário: Usuário está em um grupo protegido.",
-	"right-usermerge": "Fundir usuários"
+	"right-usermerge": "Fundir usuários",
+	"action-usermerge": "fundir usuários",
+	"usermerge-autopagedelete": "Excluída automaticamente ao fundir usuários",
+	"usermerge-page-unmoved": "Não foi possível mover a página $1 para $2.",
+	"usermerge-move-log": "Página movida automaticamente ao fundir {{GENDER:$1|o usuário|os usuários}} \"[[User:$1|$1]]\" com \"[[User:$2|$2]]\""
 }
