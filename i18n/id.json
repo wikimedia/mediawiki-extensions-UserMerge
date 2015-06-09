@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"IvanLanin",
-			"Rex"
+			"Rex",
+			"Bennylin"
 		]
 	},
 	"usermerge": "Penggabungan dan penghapusan Pengguna",
@@ -21,7 +22,7 @@
 	"usermerge-userdeleted-log": "Pengguna telah dihapuskan: $2 ($3)",
 	"usermerge-success": "$1 ($2) telah selesai digabungkan ke $3 ($4).",
 	"usermerge-success-log": "Pengguna $2 ($3) telah digabungkan ke $4 ($5)",
-	"usermerge-logpage": "Log penggabungan pengguna",
+	"usermerge-logpage": "Catatan penggabungan pengguna",
 	"usermerge-logpagetext": "Ini adalah catatan tindakan penggabungan pengguna.",
 	"usermerge-noselfdelete": "Anda tidak dapat menghapus atau menggabungkan dari Anda sendiri!",
 	"usermerge-protectedgroup": "Tidak dapat menggabungkan dari pengguna ini - pengguna ini termasuk dalam kelompok terproteksi.",
