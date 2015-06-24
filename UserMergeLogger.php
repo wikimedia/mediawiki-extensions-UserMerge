@@ -19,7 +19,8 @@ class UserMergeLogger implements IUserMergeLogger {
 			array(
 				$oldUser->getName(), $oldUser->getId(),
 				$newUser->getName(), $newUser->getId()
-			)
+			),
+			$performer
 		);
 	}
 
@@ -36,7 +37,8 @@ class UserMergeLogger implements IUserMergeLogger {
 			'deleteuser',
 			$perfomer->getUserPage(),
 			'',
-			array( $oldUser->getName(), $oldUser->getId() )
+			array( $oldUser->getName(), $oldUser->getId() ),
+			$perfomer
 		);
 	}
 }
