@@ -169,4 +169,5 @@ class SpecialUserMerge extends FormSpecialPage {
  * Former class name, for backwards compatability
  * @deprecated
  */
-class UserMerge extends SpecialUserMerge {}
+class UserMerge extends SpecialUserMerge {
+}
