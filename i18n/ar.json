@@ -3,7 +3,8 @@
 		"authors": [
 			"Meno25",
 			"OsamaK",
-			"روخو"
+			"روخو",
+			"محمد أحمد عبد الفتاح"
 		]
 	},
 	"usermerge": "دمج وحذف المستخدمين",
@@ -26,5 +27,7 @@
 	"usermerge-logpagetext": "هذا سجل بأفعال دمج المستخدمين.",
 	"usermerge-noselfdelete": "لا يمكنك حذف أو دمج من نفسك!",
 	"usermerge-protectedgroup": "غير قادر على الدمج من المستخدم - المستخدم في مجموعة محمية.",
-	"right-usermerge": "دمج المستخدمين"
+	"right-usermerge": "دمج المستخدمين",
+	"action-usermerge": "دمج المستخدمين",
+	"usermerge-page-unmoved": "تعذر نقل الصفحة $1 إلى $2."
 }
