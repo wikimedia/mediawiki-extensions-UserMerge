@@ -5,7 +5,6 @@
  *
  */
 class MergeUser {
-
 	/**
 	 * @var User
 	 */
@@ -16,16 +15,32 @@ class MergeUser {
 	 */
 	private $logger;
 
+	/** @var integer */
+	private $flags;
+
+	const USE_MULTI_COMMIT = 1; // allow begin/commit; useful for jobs
+
+	/**
+	 * @param User $oldUser
+	 * @param User $newUser
+	 * @param IUserMergeLogger $logger
+	 * @param int $flags Bitfield (Supports MergeUser::USE_*)
+	 */
 	public function __construct(
 		User $oldUser,
 		User $newUser,
-		IUserMergeLogger $logger
+		IUserMergeLogger $logger,
+		$flags = 0
 	) {
 		$this->newUser = $newUser;
 		$this->oldUser = $oldUser;
 		$this->logger = $logger;
+		$this->flags = $flags;
 	}
 
+	/**
+	 * @param User $performer
+	 */
 	public function merge( User $performer ) {
 		$this->mergeEditcount();
 		$this->mergeDatabaseTables();
@@ -51,6 +66,7 @@ class MergeUser {
 	 */
 	private function mergeEditcount() {
 		$dbw = wfGetDB( DB_MASTER );
+		$this->begin( $dbw );
 
 		$totalEdits = $dbw->selectField(
 			'user',
@@ -77,9 +93,13 @@ class MergeUser {
 				__METHOD__
 			);
 		}
+
+		$this->commit( $dbw );
 	}
 
 	private function mergeBlocks( DatabaseBase $dbw ) {
+		$this->begin( $dbw );
+
 		// Pull blocks directly from master
 		$rows = $dbw->select(
 			'ipblocks',
@@ -133,6 +153,8 @@ class MergeUser {
 				__METHOD__
 			);
 		}
+
+		$this->commit( $dbw );
 	}
 
 	/**
@@ -199,8 +221,13 @@ class MergeUser {
 
 		$dbw = wfGetDB( DB_MASTER );
 
-		$this->deduplicateWatchlistEntries();
+		$this->deduplicateWatchlistEntries( $dbw );
 		$this->mergeBlocks( $dbw );
+
+		// For readability, flush any trx (though mergeBlocks will manage this)
+		if ( $this->flags & self::USE_MULTI_COMMIT ) {
+			$dbw->commit( __METHOD__, 'flush' );
+		}
 
 		foreach ( $updateFields as $fieldInfo ) {
 			$options = isset( $fieldInfo['options'] ) ? $fieldInfo['options'] : array();
@@ -266,10 +293,8 @@ class MergeUser {
 	 * Deduplicate watchlist entries
 	 * which old (merge-from) and new (merge-to) users are watching
 	 */
-	private function deduplicateWatchlistEntries() {
-
-		$dbw = wfGetDB( DB_MASTER );
-		$dbw->begin( __METHOD__ );
+	private function deduplicateWatchlistEntries( $dbw ) {
+		$this->begin( $dbw );
 
 		$res = $dbw->select(
 			array(
@@ -312,19 +337,16 @@ class MergeUser {
 			);
 		}
 
-		if ( empty( $conds ) ) {
-			$dbw->commit( __METHOD__ );
-			return;
+		if ( count( $conds ) ) {
+			# Perform a multi-row delete
+			$dbw->delete(
+				'watchlist',
+				$dbw->makeList( $conds, LIST_OR ),
+				__METHOD__
+			);
 		}
 
-		# Perform a multi-row delete
-		$dbw->delete(
-			'watchlist',
-			$dbw->makeList( $conds, LIST_OR ),
-			__METHOD__
-		);
-
-		$dbw->commit( __METHOD__ );
+		$this->commit( $dbw );
 	}
 
 	/**
@@ -471,5 +493,15 @@ class MergeUser {
 		DeferredUpdates::addUpdate( SiteStatsUpdate::factory( array( 'users' => -1 ) ) );
 	}
 
+	private function begin( $dbw ) {
+		if ( $this->flags & self::USE_MULTI_COMMIT ) {
+			$dbw->begin( __METHOD__ );
+		}
+	}
 
+	private function commit( $dbw ) {
+		if ( $this->flags & self::USE_MULTI_COMMIT ) {
+			$dbw->commit( __METHOD__ );
+		}
+	}
 }
