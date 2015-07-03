@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"KlaudiuMihaila",
-			"Mihai"
+			"Mihai",
+			"XXN"
 		]
 	},
 	"usermerge": "Contopire și ștergere utilizatori",
@@ -14,11 +15,11 @@
 	"usermerge-fieldset": "Nume de utilizator de contopit",
 	"usermerge-olduser": "Utilizator vechi (redenumește din):",
 	"usermerge-newuser": "Utilizator nou (contopește în):",
-	"usermerge-deleteolduser": "Şterge contul de utilizator vechi",
+	"usermerge-deleteolduser": "Șterge contul de utilizator vechi",
 	"usermerge-submit": "Contopește utilizatorul",
 	"usermerge-badtoken": "Jetonul de modificare este invalid",
 	"usermerge-userdeleted": "$1 ($2) a fost șters.",
-	"usermerge-userdeleted-log": "Şterge utilizator: $2 ($3)",
+	"usermerge-userdeleted-log": "Șters utilizator: $2 ($3)",
 	"usermerge-success": "Contopirea din $1 ($2) în $3 ($4) este completă.",
 	"usermerge-success-log": "Utilizatorul $2 ($3) a fost contopit în $4 ($5)",
 	"usermerge-logpage": "Jurnal contopire utilizatori",
