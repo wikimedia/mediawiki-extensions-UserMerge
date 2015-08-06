@@ -217,7 +217,7 @@ class MergeUser {
 			array( 'user_former_groups', 'ufg_user', 'options' => array( 'IGNORE' ) ),
 		);
 
-		wfRunHooks( 'UserMergeAccountFields', array( &$updateFields ) );
+		Hooks::run( 'UserMergeAccountFields', array( &$updateFields ) );
 
 		$dbw = wfGetDB( DB_MASTER );
 
@@ -286,7 +286,7 @@ class MergeUser {
 
 		$dbw->delete( 'user_newtalk', array( 'user_id' => $this->oldUser->getId() ) );
 
-		wfRunHooks( 'MergeAccountFromTo', array( &$this->oldUser, &$this->newUser ) );
+		Hooks::run( 'MergeAccountFromTo', array( &$this->oldUser, &$this->newUser ) );
 	}
 
 	/**
@@ -470,7 +470,7 @@ class MergeUser {
 			'user_former_groups' => 'ufg_user',
 		);
 
-		wfRunHooks( 'UserMergeAccountDeleteTables', array( &$tablesToDelete ) );
+		Hooks::run( 'UserMergeAccountDeleteTables', array( &$tablesToDelete ) );
 
 		$tablesToDelete['user'] = 'user_id'; // Make sure this always set and last
 
@@ -488,7 +488,7 @@ class MergeUser {
 			);
 		}
 
-		wfRunHooks( 'DeleteAccount', array( &$this->oldUser ) );
+		Hooks::run( 'DeleteAccount', array( &$this->oldUser ) );
 
 		DeferredUpdates::addUpdate( SiteStatsUpdate::factory( array( 'users' => -1 ) ) );
 	}
