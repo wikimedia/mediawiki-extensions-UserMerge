@@ -149,7 +149,7 @@ class MergeUser {
 			$dbw->update(
 				'ipblocks',
 				array( 'ipb_user' => $this->newUser->getId() ),
-				array( 'ipb_id' => $winner->getId() ).
+				array( 'ipb_id' => $winner->getId() ),
 				__METHOD__
 			);
 		}
