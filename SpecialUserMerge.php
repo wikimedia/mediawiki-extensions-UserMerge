@@ -31,6 +31,9 @@ class SpecialUserMerge extends FormSpecialPage {
 				'label-message' => 'usermerge-olduser',
 				'required' => true,
 				'validation-callback' => function( $val ) use ( $us ) {
+					// only pass strings to User::newFromName
+					if ( !is_string( $val ) ) { return true; }
+
 					$key = $us->validateOldUser( $val );
 					if ( is_string( $key ) || is_array( $key ) ) {
 						return $us->msg( $key )->escaped();
@@ -43,6 +46,9 @@ class SpecialUserMerge extends FormSpecialPage {
 				'required' => true,
 				'label-message' => 'usermerge-newuser',
 				'validation-callback' => function( $val ) use ( $us ) {
+					// only pass strings to User::newFromName
+					if ( !is_string( $val ) ) { return true; }
+
 					$key = $us->validateNewUser( $val );
 					if ( is_string( $key ) ) {
 						return $us->msg( $key )->escaped();
