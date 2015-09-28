@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Kwj2772",
-			"아라"
+			"아라",
+			"Hwangjy9"
 		]
 	},
 	"usermerge": "사용자 합치기 및 삭제",
@@ -21,7 +22,7 @@
 	"usermerge-userdeleted": "$1 ($2) 사용자가 삭제되었습니다.",
 	"usermerge-userdeleted-log": "사용자가 $2 ($3) 사용자를 삭제했습니다",
 	"usermerge-success": "$1 ($2) 사용자를 {{GENDER:$3|$3}} ($4) 사용자에 합치는 것을 완료했습니다.",
-	"usermerge-success-log": "$2 ($3) 사용자를 {{GENDER:$4|$4}} ($5) 로 합쳤습니다",
+	"usermerge-success-log": "{{GENDER:$2|$2}} ($3) 사용자를 {{GENDER:$4|$4}} ($5) 로 합쳤습니다",
 	"usermerge-logpage": "사용자 병합 기록",
 	"usermerge-logpagetext": "사용자 병합 행위의 기록입니다.",
 	"usermerge-noselfdelete": "자신으로부터 삭제나 합치기를 할 수 없습니다!",
