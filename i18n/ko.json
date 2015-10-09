@@ -19,7 +19,7 @@
 	"usermerge-deleteolduser": "이전 사용자를 삭제하기",
 	"usermerge-submit": "사용자 합치기",
 	"usermerge-badtoken": "잘못된 편집 토큰",
-	"usermerge-userdeleted": "$1 ($2) 사용자가 삭제되었습니다.",
+	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) 사용자가 삭제되었습니다.",
 	"usermerge-userdeleted-log": "사용자가 $2 ($3) 사용자를 삭제했습니다",
 	"usermerge-success": "$1 ($2) 사용자를 {{GENDER:$3|$3}} ($4) 사용자에 합치는 것을 완료했습니다.",
 	"usermerge-success-log": "{{GENDER:$2|$2}} ($3) 사용자를 {{GENDER:$4|$4}} ($5) 로 합쳤습니다",
