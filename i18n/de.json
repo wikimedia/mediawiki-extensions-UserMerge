@@ -11,7 +11,7 @@
 		]
 	},
 	"usermerge": "Benutzerkonten zusammenführen und löschen",
-	"usermerge-desc": "Ergänzt eine [[Special:UserMerge|Spezialseite]] zum Zusammenführen von Benutzerkonten und der anschließenden Löschung des alten Benutzerkontos in der Datenbank des Wikis",
+	"usermerge-desc": "[[Special:UserMerge|Führt Referenzen von einem Benutzer zu einem anderen in der Wikidatenbank zusammen]] und löscht auch die folgende Zusammenführung alter Benutzer. Erfordert das ''usermerge''-Recht.",
 	"usermerge-badolduser": "Ungültiger alter Benutzername",
 	"usermerge-badnewuser": "Ungültiger neuer Benutzername",
 	"usermerge-nonewuser": "Es wurde kein neuer Benutzername angegeben. Daher wird eine Zusammenführung mit „{{GENDER:$1|$1}}“ angenommen.<br />\nZum Ausführen auf „{{int:usermerge-submit}}“ klicken.",
