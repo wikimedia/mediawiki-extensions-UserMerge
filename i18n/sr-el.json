@@ -21,7 +21,7 @@
 	"usermerge-success": "Spajanje {{GENDER:$1|$1}} ($2) sa {{GENDER:$3|$3}} ($4) je završeno.",
 	"usermerge-success-log": "{{GENDER:$2|Korisnik|Korisnica}} $2 ($3) je {{GENDER:$2|spojen|spojena}} sa {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Dnevnik spajanja korisnika",
-	"usermerge-logpagetext": "Ovo je istorija spajanja korisnika.",
+	"usermerge-logpagetext": "Ovo je dnevnik spajanja korisnika.",
 	"usermerge-noselfdelete": "Ne možete da se obrišete ili spojite sa {{GENDER:$1|samim sobom}}!",
 	"usermerge-protectedgroup": "Nije moguđe spojiti ovog korisnika sa drugim — nalazi se u zaštićenoj grupi.",
 	"right-usermerge": "spajanje korisnika",

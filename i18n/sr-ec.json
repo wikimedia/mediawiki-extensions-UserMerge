@@ -22,7 +22,7 @@
 	"usermerge-success": "Спајање {{GENDER:$1|$1}} ($2) са {{GENDER:$3|$3}} ($4) је завршено.",
 	"usermerge-success-log": "{{GENDER:$2|Корисник|Корисница}} $2 ($3) је {{GENDER:$2|спојен|спојена}} са {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Дневник спајања корисника",
-	"usermerge-logpagetext": "Ово је историја спајања корисника.",
+	"usermerge-logpagetext": "Ово је дневник спајања корисника.",
 	"usermerge-noselfdelete": "Не можете да се обришете или спојите са {{GENDER:$1|самим собом}}!",
 	"usermerge-protectedgroup": "Није могуће спојити овог {{GENDER:$1|корисника}} са другим — налази се у заштићеној групи.",
 	"right-usermerge": "спајање корисника",
