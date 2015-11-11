@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"CERminator"
+			"CERminator",
+			"Srdjan m"
 		]
 	},
 	"usermerge": "Spajanje i brisanje korisnika",
@@ -16,10 +17,10 @@
 	"usermerge-deleteolduser": "Obriši starog korisnika",
 	"usermerge-submit": "Spoji korisnika",
 	"usermerge-badtoken": "Nevaljan token izmjene",
-	"usermerge-userdeleted": "$1 ($2) je obrisan.",
+	"usermerge-userdeleted": "{{GENDER:$1|Korisnik|Korisnica}} $1 ($2) {{GENDER:$1|obrisan|obrisana}} je.",
 	"usermerge-userdeleted-log": "Obrisani korisnik: $2 ($3)",
 	"usermerge-success": "Spajanje sa $1 ($2) na $3 ($4) je završeno.",
-	"usermerge-success-log": "Korisnik $2 ($3) spojen na $4 ($5)",
+	"usermerge-success-log": "{{GENDER:$2|Korisnik|Korisnica}} $2 ($3) {{GENDER:$2|spojen|spojena}} je sa {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Zapisnik spajanja korisnika",
 	"usermerge-logpagetext": "Ovo je zapisnik akcija spajanja korisnika.",
 	"usermerge-noselfdelete": "Ne možete obrisati ili spajati od samog sebe!",
