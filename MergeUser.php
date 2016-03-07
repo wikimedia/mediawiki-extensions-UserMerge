@@ -112,9 +112,9 @@ class MergeUser {
 		$newBlock = false;
 		$oldBlock = false;
 		foreach ( $rows as $row ) {
-			if ( $row->ipb_user == $this->oldUser->getId() ) {
+			if ( (int)$row->ipb_user === $this->oldUser->getId() ) {
 				$oldBlock = $row;
-			} elseif ( $row->ipb_user == $this->newUser->getId() ) {
+			} elseif ( (int)$row->ipb_user === $this->newUser->getId() ) {
 				$newBlock = $row;
 			}
 		}
