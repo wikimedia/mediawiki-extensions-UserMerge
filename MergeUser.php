@@ -399,7 +399,7 @@ class MergeUser {
 			$newPage = Title::makeTitleSafe( $row->page_namespace,
 				preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
 
-			if ( $this->newUser->getName() === "Anonymous" ) { # delete ALL old pages
+			if ( $this->newUser->getName() === 'Anonymous' ) { # delete ALL old pages
 				if ( $oldPage->exists() ) {
 					$oldPageArticle = new Article( $oldPage, 0 );
 					$oldPageArticle->doDeleteArticle(
