@@ -58,8 +58,8 @@ class MergeUserTest extends MediaWikiTestCase {
 		$this->reallyClearInstanceCache( $user1 );
 		$this->reallyClearInstanceCache( $user2 );
 
-		$this->assertArrayEquals( array( 'group2' ), $user1->getGroups() );
-		$this->assertArrayEquals( array( 'group1', 'group2' ), $user2->getGroups() );
+		$this->assertArrayEquals( [ 'group2' ], $user1->getGroups() );
+		$this->assertArrayEquals( [ 'group1', 'group2' ], $user2->getGroups() );
 	}
 
 	public function testDeleteUser() {

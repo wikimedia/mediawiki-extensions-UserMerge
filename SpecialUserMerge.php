@@ -25,8 +25,8 @@ class SpecialUserMerge extends FormSpecialPage {
 	 */
 	protected function getFormFields() {
 		$us = $this;
-		return array(
-			'olduser' => array(
+		return [
+			'olduser' => [
 				'type' => 'text',
 				'label-message' => 'usermerge-olduser',
 				'required' => true,
@@ -42,8 +42,8 @@ class SpecialUserMerge extends FormSpecialPage {
 					}
 					return true;
 				},
-			),
-			'newuser' => array(
+			],
+			'newuser' => [
 				'type' => 'text',
 				'required' => true,
 				'label-message' => 'usermerge-newuser',
@@ -59,12 +59,12 @@ class SpecialUserMerge extends FormSpecialPage {
 					}
 					return true;
 				},
-			),
-			'delete' => array(
+			],
+			'delete' => [
 				'type' => 'check',
 				'label-message' => 'usermerge-deleteolduser',
-			),
-		);
+			],
+		];
 	}
 
 	/**
@@ -78,10 +78,10 @@ class SpecialUserMerge extends FormSpecialPage {
 			return 'usermerge-badolduser';
 		}
 		if ( $this->getUser()->getId() === $oldUser->getId() ) {
-			return array( 'usermerge-noselfdelete', $this->getUser()->getName() );
+			return [ 'usermerge-noselfdelete', $this->getUser()->getName() ];
 		}
 		if ( count( array_intersect( $oldUser->getGroups(), $wgUserMergeProtectedGroups ) ) ) {
-			return array( 'usermerge-protectedgroup', $oldUser->getName() );
+			return [ 'usermerge-protectedgroup', $oldUser->getName() ];
 		}
 
 		return true;
@@ -144,7 +144,7 @@ class SpecialUserMerge extends FormSpecialPage {
 		);
 
 		if ( $data['delete'] ) {
-			$failed = $um->delete( $this->getUser(), array( $this, 'msg' ) );
+			$failed = $um->delete( $this->getUser(), [ $this, 'msg' ] );
 			$out->addWikiMsg(
 				'usermerge-userdeleted', $oldUser->getName(), $oldUser->getId()
 			);
@@ -155,7 +155,7 @@ class SpecialUserMerge extends FormSpecialPage {
 				foreach ( $failed as $oldTitleText => $newTitle ) {
 					$oldTitle = Title::newFromText( $oldTitleText );
 					$out->addHTML(
-						Html::rawElement( 'li', array(),
+						Html::rawElement( 'li', [],
 							$this->msg( 'usermerge-page-unmoved' )->rawParams(
 								Linker::link( $oldTitle ),
 								Linker::link( $newTitle )

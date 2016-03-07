@@ -71,7 +71,7 @@ class MergeUser {
 		$totalEdits = $dbw->selectField(
 			'user',
 			'SUM(user_editcount)',
-			array( 'user_id' => array( $this->newUser->getId(), $this->oldUser->getId() ) ),
+			[ 'user_id' => [ $this->newUser->getId(), $this->oldUser->getId() ] ],
 			__METHOD__
 		);
 
@@ -81,15 +81,15 @@ class MergeUser {
 		if ( $totalEdits > 0 ) {
 			# update new user with total edits
 			$dbw->update( 'user',
-				array( 'user_editcount' => $totalEdits ),
-				array( 'user_id' => $this->newUser->getId() ),
+				[ 'user_editcount' => $totalEdits ],
+				[ 'user_id' => $this->newUser->getId() ],
 				__METHOD__
 			);
 
 			# clear old user's edits
 			$dbw->update( 'user',
-				array( 'user_editcount' => 0 ),
-				array( 'user_id' => $this->oldUser->getId() ),
+				[ 'user_editcount' => 0 ],
+				[ 'user_id' => $this->oldUser->getId() ],
 				__METHOD__
 			);
 		}
@@ -104,9 +104,9 @@ class MergeUser {
 		$rows = $dbw->select(
 			'ipblocks',
 			'*',
-			array(
-				'ipb_user' => array( $this->oldUser->getId(), $this->newUser->getId() ),
-			)
+			[
+				'ipb_user' => [ $this->oldUser->getId(), $this->newUser->getId() ],
+			]
 		);
 
 		$newBlock = false;
@@ -129,8 +129,8 @@ class MergeUser {
 			// Just move the old block to the new username
 			$dbw->update(
 				'ipblocks',
-				array( 'ipb_user' => $this->newUser->getId() ),
-				array( 'ipb_id' => $oldBlock->ipb_id ),
+				[ 'ipb_user' => $this->newUser->getId() ],
+				[ 'ipb_id' => $oldBlock->ipb_id ],
 				__METHOD__
 			);
 			return;
@@ -148,8 +148,8 @@ class MergeUser {
 			$newBlockObj->delete(); // Delete current new block
 			$dbw->update(
 				'ipblocks',
-				array( 'ipb_user' => $this->newUser->getId() ),
-				array( 'ipb_id' => $winner->getId() ),
+				[ 'ipb_user' => $this->newUser->getId() ],
+				[ 'ipb_id' => $winner->getId() ],
 				__METHOD__
 			);
 		}
@@ -175,7 +175,7 @@ class MergeUser {
 		}
 
 		// Next check what they block, in order
-		foreach ( array( 'createaccount', 'sendemail', 'editownusertalk' ) as $action ) {
+		foreach ( [ 'createaccount', 'sendemail', 'editownusertalk' ] as $action ) {
 			if ( $b1->prevents( $action ) xor $b2->prevents( $action ) ) {
 				if ( $b1->prevents( $action ) ) {
 					return $b1;
@@ -202,22 +202,22 @@ class MergeUser {
 		//        'batchKey' => unique field, 'options' => array(), 'db' => DatabaseBase
 		// );
 		// textField, batchKey, db, and options are optional
-		$updateFields = array(
-			array( 'archive', 'ar_user', 'ar_user_text', 'batchKey' => 'ar_id' ),
-			array( 'revision', 'rev_user', 'rev_user_text', 'batchKey' => 'rev_id' ),
-			array( 'filearchive', 'fa_user', 'fa_user_text', 'batchKey' => 'fa_id' ),
-			array( 'image', 'img_user', 'img_user_text', 'batchKey' => 'img_name' ),
-			array( 'oldimage', 'oi_user', 'oi_user_text', 'batchKey' => 'oi_archive_name' ),
-			array( 'recentchanges', 'rc_user', 'rc_user_text', 'batchKey' => 'rc_id' ),
-			array( 'logging', 'log_user', 'batchKey' =>'log_id' ),
-			array( 'ipblocks', 'ipb_by', 'ipb_by_text', 'batchKey' =>'ipb_id' ),
-			array( 'watchlist', 'wl_user', 'batchKey' => 'wl_title' ),
-			array( 'user_groups', 'ug_user', 'options' => array( 'IGNORE' ) ),
-			array( 'user_properties', 'up_user', 'options' => array( 'IGNORE' ) ),
-			array( 'user_former_groups', 'ufg_user', 'options' => array( 'IGNORE' ) ),
-		);
+		$updateFields = [
+			[ 'archive', 'ar_user', 'ar_user_text', 'batchKey' => 'ar_id' ],
+			[ 'revision', 'rev_user', 'rev_user_text', 'batchKey' => 'rev_id' ],
+			[ 'filearchive', 'fa_user', 'fa_user_text', 'batchKey' => 'fa_id' ],
+			[ 'image', 'img_user', 'img_user_text', 'batchKey' => 'img_name' ],
+			[ 'oldimage', 'oi_user', 'oi_user_text', 'batchKey' => 'oi_archive_name' ],
+			[ 'recentchanges', 'rc_user', 'rc_user_text', 'batchKey' => 'rc_id' ],
+			[ 'logging', 'log_user', 'batchKey' =>'log_id' ],
+			[ 'ipblocks', 'ipb_by', 'ipb_by_text', 'batchKey' =>'ipb_id' ],
+			[ 'watchlist', 'wl_user', 'batchKey' => 'wl_title' ],
+			[ 'user_groups', 'ug_user', 'options' => [ 'IGNORE' ] ],
+			[ 'user_properties', 'up_user', 'options' => [ 'IGNORE' ] ],
+			[ 'user_former_groups', 'ufg_user', 'options' => [ 'IGNORE' ] ],
+		];
 
-		Hooks::run( 'UserMergeAccountFields', array( &$updateFields ) );
+		Hooks::run( 'UserMergeAccountFields', [ &$updateFields ] );
 
 		$dbw = wfGetDB( DB_MASTER );
 
@@ -230,7 +230,7 @@ class MergeUser {
 		}
 
 		foreach ( $updateFields as $fieldInfo ) {
-			$options = isset( $fieldInfo['options'] ) ? $fieldInfo['options'] : array();
+			$options = isset( $fieldInfo['options'] ) ? $fieldInfo['options'] : [];
 			unset( $fieldInfo['options'] );
 			$db = isset( $fieldInfo['db'] ) ? $fieldInfo['db'] : $dbw;
 			unset( $fieldInfo['db'] );
@@ -243,9 +243,9 @@ class MergeUser {
 				// Can't batch/wait when in a transaction or when no batch key is given
 				$db->update(
 					$tableName,
-					array( $idField => $this->newUser->getId() )
+					[ $idField => $this->newUser->getId() ]
 						+ array_fill_keys( $fieldInfo, $this->newUser->getName() ),
-					array( $idField => $this->oldUser->getId() ),
+					[ $idField => $this->oldUser->getId() ],
 					__METHOD__,
 					$options
 				);
@@ -258,12 +258,12 @@ class MergeUser {
 					// Grab a batch of values on a mostly unique column for this user ID
 					$res = $db->select(
 						$tableName,
-						array( $keyField ),
-						array( $idField => $this->oldUser->getId() ),
+						[ $keyField ],
+						[ $idField => $this->oldUser->getId() ],
 						__METHOD__,
-						array( 'LIMIT' => $limit )
+						[ 'LIMIT' => $limit ]
 					);
-					$keyValues = array();
+					$keyValues = [];
 					foreach ( $res as $row ) {
 						$keyValues[] = $row->$keyField;
 					}
@@ -271,9 +271,9 @@ class MergeUser {
 					if ( count( $keyValues ) ) {
 						$db->update(
 							$tableName,
-							array( $idField => $this->newUser->getId() )
+							[ $idField => $this->newUser->getId() ]
 								+ array_fill_keys( $fieldInfo, $this->newUser->getName() ),
-							array( $idField => $this->oldUser->getId(), $keyField => $keyValues ),
+							[ $idField => $this->oldUser->getId(), $keyField => $keyValues ],
 							__METHOD__,
 							$options
 						);
@@ -284,9 +284,9 @@ class MergeUser {
 			}
 		}
 
-		$dbw->delete( 'user_newtalk', array( 'user_id' => $this->oldUser->getId() ) );
+		$dbw->delete( 'user_newtalk', [ 'user_id' => $this->oldUser->getId() ] );
 
-		Hooks::run( 'MergeAccountFromTo', array( &$this->oldUser, &$this->newUser ) );
+		Hooks::run( 'MergeAccountFromTo', [ &$this->oldUser, &$this->newUser ] );
 	}
 
 	/**
@@ -299,42 +299,42 @@ class MergeUser {
 		$this->begin( $dbw );
 
 		$res = $dbw->select(
-			array(
+			[
 				'w1' => 'watchlist',
 				'w2' => 'watchlist'
-			),
-			array(
+			],
+			[
 				'w2.wl_namespace',
 				'w2.wl_title'
-			),
-			array(
+			],
+			[
 				'w1.wl_user' => $this->newUser->getId(),
 				'w2.wl_user' => $this->oldUser->getId()
-			),
+			],
 			__METHOD__,
-			array( 'FOR UPDATE' ),
-			array(
-				'w2' => array(
+			[ 'FOR UPDATE' ],
+			[
+				'w2' => [
 					'INNER JOIN',
-					array(
+					[
 						'w1.wl_namespace = w2.wl_namespace',
 						'w1.wl_title = w2.wl_title'
-					),
-				)
-			)
+					],
+				]
+			]
 		);
 
 		# Construct an array to delete all watched pages of the old user
 		# which the new user already watches
-		$conds = array();
+		$conds = [];
 
 		foreach ( $res as $result ) {
 			$conds[] = $dbw->makeList(
-				array(
+				[
 					'wl_user' => $this->oldUser->getId(),
 					'wl_namespace' => $result->wl_namespace,
 					'wl_title' => $result->wl_title
-				),
+				],
 				LIST_AND
 			);
 		}
@@ -376,12 +376,12 @@ class MergeUser {
 		$dbr = wfGetDB( DB_SLAVE );
 		$pages = $dbr->select(
 			'page',
-			array( 'page_namespace', 'page_title' ),
-			array(
-				'page_namespace' => array( NS_USER, NS_USER_TALK ),
+			[ 'page_namespace', 'page_title' ],
+			[
+				'page_namespace' => [ NS_USER, NS_USER_TALK ],
 				'page_title' . $dbr->buildLike( $oldusername->getDBkey() . '/', $dbr->anyString() )
 					. ' OR page_title = ' . $dbr->addQuotes( $oldusername->getDBkey() ),
-			)
+			]
 		);
 
 		$message = function( /* ... */ ) use ( $msg ) {
@@ -392,7 +392,7 @@ class MergeUser {
 		$oldUser = $wgUser;
 		$wgUser = $performer;
 
-		$failedMoves = array();
+		$failedMoves = [];
 		foreach ( $pages as $row ) {
 
 			$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
@@ -440,7 +440,7 @@ class MergeUser {
 				# check if any pages link here
 				$res = $dbr->selectField( 'pagelinks',
 					'pl_title',
-					array( 'pl_title' => $this->oldUser->getName() ),
+					[ 'pl_title' => $this->oldUser->getName() ],
 					__METHOD__
 				);
 				if ( !$dbr->numRows( $res ) ) {
@@ -458,7 +458,6 @@ class MergeUser {
 		return $failedMoves;
 	}
 
-
 	/**
 	 * Function to delete users following a successful mergeUser call.
 	 *
@@ -474,13 +473,13 @@ class MergeUser {
 		 * If you want it to use a different db object:
 		 * table => array( user_id colum, 'db' => DatabaseBase );
 		 */
-		$tablesToDelete = array(
+		$tablesToDelete = [
 			'user_groups' => 'ug_user',
 			'user_properties' => 'up_user',
 			'user_former_groups' => 'ufg_user',
-		);
+		];
 
-		Hooks::run( 'UserMergeAccountDeleteTables', array( &$tablesToDelete ) );
+		Hooks::run( 'UserMergeAccountDeleteTables', [ &$tablesToDelete ] );
 
 		$tablesToDelete['user'] = 'user_id'; // Make sure this always set and last
 
@@ -494,13 +493,13 @@ class MergeUser {
 			}
 			$db->delete(
 				$table,
-				array( $field => $this->oldUser->getId() )
+				[ $field => $this->oldUser->getId() ]
 			);
 		}
 
-		Hooks::run( 'DeleteAccount', array( &$this->oldUser ) );
+		Hooks::run( 'DeleteAccount', [ &$this->oldUser ] );
 
-		DeferredUpdates::addUpdate( SiteStatsUpdate::factory( array( 'users' => -1 ) ) );
+		DeferredUpdates::addUpdate( SiteStatsUpdate::factory( [ 'users' => -1 ] ) );
 	}
 
 	/**
