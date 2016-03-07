@@ -308,8 +308,8 @@ class MergeUser {
 				'w2.wl_title'
 			),
 			array(
-				'w1.wl_user' => $this->newUser->getID(),
-				'w2.wl_user' => $this->oldUser->getID()
+				'w1.wl_user' => $this->newUser->getId(),
+				'w2.wl_user' => $this->oldUser->getId()
 			),
 			__METHOD__,
 			array( 'FOR UPDATE' ),
@@ -331,7 +331,7 @@ class MergeUser {
 		foreach ( $res as $result ) {
 			$conds[] = $dbw->makeList(
 				array(
-					'wl_user' => $this->oldUser->getID(),
+					'wl_user' => $this->oldUser->getId(),
 					'wl_namespace' => $result->wl_namespace,
 					'wl_title' => $result->wl_title
 				),
