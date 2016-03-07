@@ -292,6 +292,8 @@ class MergeUser {
 	/**
 	 * Deduplicate watchlist entries
 	 * which old (merge-from) and new (merge-to) users are watching
+	 *
+	 * @param DatabaseBase $dbw
 	 */
 	private function deduplicateWatchlistEntries( $dbw ) {
 		$this->begin( $dbw );
@@ -501,12 +503,18 @@ class MergeUser {
 		DeferredUpdates::addUpdate( SiteStatsUpdate::factory( array( 'users' => -1 ) ) );
 	}
 
+	/**
+	 * @param DatabaseBase $dbw
+	 */
 	private function begin( $dbw ) {
 		if ( $this->flags & self::USE_MULTI_COMMIT ) {
 			$dbw->begin( __METHOD__ );
 		}
 	}
 
+	/**
+	 * @param DatabaseBase $dbw
+	 */
 	private function commit( $dbw ) {
 		if ( $this->flags & self::USE_MULTI_COMMIT ) {
 			$dbw->commit( __METHOD__ );
