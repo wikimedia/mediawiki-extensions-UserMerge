@@ -75,7 +75,7 @@ class MergeUser {
 			__METHOD__
 		);
 
-		$totalEdits = intval( $totalEdits );
+		$totalEdits = (int)$totalEdits;
 
 		# don't run queries if neither user has any edits
 		if ( $totalEdits > 0 ) {
