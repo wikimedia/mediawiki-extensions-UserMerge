@@ -109,7 +109,6 @@ class SpecialUserMerge extends FormSpecialPage {
 	 */
 	protected function alterForm( HTMLForm $form ) {
 		$form->setSubmitTextMsg( 'usermerge-submit' );
-		$form->setWrapperLegendMsg( 'usermerge-fieldset' );
 	}
 
 	/**
@@ -169,6 +168,10 @@ class SpecialUserMerge extends FormSpecialPage {
 		}
 
 		return Status::newGood();
+	}
+
+	protected function getDisplayFormat() {
+		return 'ooui';
 	}
 
 	protected function getGroupName() {
