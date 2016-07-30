@@ -19,9 +19,9 @@
 	"usermerge-deleteolduser": "이전 사용자를 삭제하기",
 	"usermerge-submit": "사용자 합치기",
 	"usermerge-badtoken": "잘못된 편집 토큰",
-	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) 사용자가 삭제되었습니다.",
+	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2)님이 삭제되었습니다.",
 	"usermerge-userdeleted-log": "님이 사용자: $2 ($3) 계정을 삭제했습니다",
-	"usermerge-success": "{{GENDER:$1|$1}} ($2) 사용자를 {{GENDER:$3|$3}} ($4) 사용자에 합치는 것을 완료했습니다.",
+	"usermerge-success": "{{GENDER:$1|$1}} ($2)님을 {{GENDER:$3|$3}} ($4)에 합치는 것을 완료했습니다.",
 	"usermerge-success-log": "님이 {{GENDER:$2|$2}} ($3) 사용자를 {{GENDER:$4|$4}} ($5) 계정으로 합쳤습니다",
 	"usermerge-logpage": "사용자 병합 기록",
 	"usermerge-logpagetext": "사용자 병합 동작의 기록입니다.",
@@ -31,5 +31,5 @@
 	"action-usermerge": "사용자 합치기",
 	"usermerge-autopagedelete": "사용자를 합칠 때 자동으로 삭제했습니다",
 	"usermerge-page-unmoved": "$1 문서를 $2 문서로 이동하지 못했습니다.",
-	"usermerge-move-log": "\"[[User:$1|$1]]\" 사용자를 \"[[User:$2|{{GENDER:$2|$2}}]]\" 계정으로 합치면서 문서를 자동으로 이동했습니다"
+	"usermerge-move-log": "\"[[User:$1|$1]]\" 사용자를 \"[[User:$2|{{GENDER:$2|$2}}]]\"(으)로 합치면서 문서를 자동으로 이동했습니다"
 }
