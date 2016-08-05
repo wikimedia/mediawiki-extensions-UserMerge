@@ -42,13 +42,7 @@
 		"UserMerge": "SpecialUserMerge.php",
 		"MergeUser": "MergeUser.php",
 		"IUserMergeLogger": "IUserMergeLogger.php",
-		"UserMergeLogger": "UserMergeLogger.php",
-		"UserMergeHooks": "UserMerge.hooks.php"
-	},
-	"Hooks": {
-		"UnitTestsList": [
-			"UserMergeHooks::onUnitTestsList"
-		]
+		"UserMergeLogger": "UserMergeLogger.php"
 	},
 	"config": {
 		"UserMergeEnableDelete": true,
