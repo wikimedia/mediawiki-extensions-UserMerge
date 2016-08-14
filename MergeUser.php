@@ -18,7 +18,7 @@ class MergeUser {
 	/** @var integer */
 	private $flags;
 
-	const USE_MULTI_COMMIT = 1; // allow begin/commit; useful for jobs
+	const USE_MULTI_COMMIT = 1; // allow begin/commit; useful for jobs or CLI mode
 
 	/**
 	 * @param User $oldUser
@@ -66,7 +66,7 @@ class MergeUser {
 	 */
 	private function mergeEditcount() {
 		$dbw = wfGetDB( DB_MASTER );
-		$this->begin( $dbw );
+		$dbw->startAtomic( __METHOD__ );
 
 		$totalEdits = $dbw->selectField(
 			'user',
@@ -94,11 +94,11 @@ class MergeUser {
 			);
 		}
 
-		$this->commit( $dbw );
+		$dbw->endAtomic( __METHOD__ );
 	}
 
 	private function mergeBlocks( DatabaseBase $dbw ) {
-		$this->begin( $dbw );
+		$dbw->startAtomic( __METHOD__ );
 
 		// Pull blocks directly from master
 		$rows = $dbw->select(
@@ -121,9 +121,11 @@ class MergeUser {
 
 		if ( !$newBlock && !$oldBlock ) {
 			// No one is blocked, yaaay
+			$dbw->endAtomic( __METHOD__ );
 			return;
 		} elseif ( $newBlock && !$oldBlock ) {
 			// Only the new user is blocked, so nothing to do.
+			$dbw->endAtomic( __METHOD__ );
 			return;
 		} elseif ( $oldBlock && !$newBlock ) {
 			// Just move the old block to the new username
@@ -133,6 +135,7 @@ class MergeUser {
 				[ 'ipb_id' => $oldBlock->ipb_id ],
 				__METHOD__
 			);
+			$dbw->endAtomic( __METHOD__ );
 			return;
 		}
 
@@ -154,7 +157,7 @@ class MergeUser {
 			);
 		}
 
-		$this->commit( $dbw );
+		$dbw->endAtomic( __METHOD__ );
 	}
 
 	/**
@@ -220,13 +223,14 @@ class MergeUser {
 		Hooks::run( 'UserMergeAccountFields', [ &$updateFields ] );
 
 		$dbw = wfGetDB( DB_MASTER );
+		$lbFactory = wfGetLBFactory();
 
 		$this->deduplicateWatchlistEntries( $dbw );
 		$this->mergeBlocks( $dbw );
 
-		// For readability, flush any trx (though mergeBlocks will manage this)
 		if ( $this->flags & self::USE_MULTI_COMMIT ) {
-			$dbw->commit( __METHOD__, 'flush' );
+			// Flush prior writes; this actives the non-transaction path in the loop below.
+			$lbFactory->commitMasterChanges( __METHOD__ );
 		}
 
 		foreach ( $updateFields as $fieldInfo ) {
@@ -253,9 +257,8 @@ class MergeUser {
 				$limit = 200;
 				do {
 					$checkSince = microtime( true );
-					// Batch and wait for slaves (ORDER BY + LIMIT is not well supported)
-					$db->begin();
-					// Grab a batch of values on a mostly unique column for this user ID
+					// Note that UPDATE with ORDER BY + LIMIT is not well supported.
+					// Grab a batch of values on a mostly unique column for this user ID.
 					$res = $db->select(
 						$tableName,
 						[ $keyField ],
@@ -278,7 +281,7 @@ class MergeUser {
 							$options
 						);
 					}
-					$db->commit();
+					$lbFactory->commitMasterChanges( __METHOD__ );
 					wfWaitForSlaves( $checkSince, false, '*' );
 				} while ( count( $keyValues ) >= $limit );
 			}
@@ -296,7 +299,7 @@ class MergeUser {
 	 * @param DatabaseBase $dbw
 	 */
 	private function deduplicateWatchlistEntries( $dbw ) {
-		$this->begin( $dbw );
+		$dbw->startAtomic( __METHOD__ );
 
 		// Get all titles both watched by the old and new user accounts.
 		// Avoid using self-joins as this fails on temporary tables (e.g. unit tests).
@@ -350,7 +353,7 @@ class MergeUser {
 			);
 		}
 
-		$this->commit( $dbw );
+		$dbw->endAtomic( __METHOD__ );
 	}
 
 	/**
@@ -502,23 +505,5 @@ class MergeUser {
 		Hooks::run( 'DeleteAccount', [ &$this->oldUser ] );
 
 		DeferredUpdates::addUpdate( SiteStatsUpdate::factory( [ 'users' => -1 ] ) );
-	}
-
-	/**
-	 * @param DatabaseBase $dbw
-	 */
-	private function begin( $dbw ) {
-		if ( $this->flags & self::USE_MULTI_COMMIT ) {
-			$dbw->begin( __METHOD__ );
-		}
-	}
-
-	/**
-	 * @param DatabaseBase $dbw
-	 */
-	private function commit( $dbw ) {
-		if ( $this->flags & self::USE_MULTI_COMMIT ) {
-			$dbw->commit( __METHOD__ );
-		}
 	}
 }
