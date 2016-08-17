@@ -298,42 +298,44 @@ class MergeUser {
 	private function deduplicateWatchlistEntries( $dbw ) {
 		$this->begin( $dbw );
 
+		// Get all titles both watched by the old and new user accounts.
+		// Avoid using self-joins as this fails on temporary tables (e.g. unit tests).
+		// See https://bugs.mysql.com/bug.php?id=10327.
+		$titlesToDelete = [];
 		$res = $dbw->select(
-			[
-				'w1' => 'watchlist',
-				'w2' => 'watchlist'
-			],
-			[
-				'w2.wl_namespace',
-				'w2.wl_title'
-			],
-			[
-				'w1.wl_user' => $this->newUser->getId(),
-				'w2.wl_user' => $this->oldUser->getId()
-			],
+			'watchlist',
+			[ 'wl_namespace', 'wl_title' ],
+			[ 'wl_user' => $this->oldUser->getId() ],
 			__METHOD__,
-			[ 'FOR UPDATE' ],
-			[
-				'w2' => [
-					'INNER JOIN',
-					[
-						'w1.wl_namespace = w2.wl_namespace',
-						'w1.wl_title = w2.wl_title'
-					],
-				]
-			]
+			[ 'FOR UPDATE' ]
 		);
+		foreach ( $res as $row ) {
+			$titlesToDelete[$row->wl_namespace . "|" . $row->wl_title] = false;
+		}
+		$res = $dbw->select(
+			'watchlist',
+			[ 'wl_namespace', 'wl_title' ],
+			[ 'wl_user' => $this->newUser->getId() ],
+			__METHOD__,
+			[ 'FOR UPDATE' ]
+		);
+		foreach ( $res as $row ) {
+			$key = $row->wl_namespace . "|" . $row->wl_title;
+			if ( isset( $titlesToDelete[$key] ) ) {
+				$titlesToDelete[$key] = true;
+			}
+		}
+		$dbw->freeResult( $res );
+		$titlesToDelete = array_filter( $titlesToDelete );
 
-		# Construct an array to delete all watched pages of the old user
-		# which the new user already watches
 		$conds = [];
-
-		foreach ( $res as $result ) {
+		foreach ( $titlesToDelete as $tuple ) {
+			list( $ns, $dbKey ) = explode( "|", $tuple, 2 );
 			$conds[] = $dbw->makeList(
 				[
 					'wl_user' => $this->oldUser->getId(),
-					'wl_namespace' => $result->wl_namespace,
-					'wl_title' => $result->wl_title
+					'wl_namespace' => $ns,
+					'wl_title' => $dbKey
 				],
 				LIST_AND
 			);
