@@ -1,4 +1,5 @@
 <?php
+use MediaWiki\MediaWikiServices;
 
 /**
  * Contains the actual database backend logic for merging users
@@ -223,7 +224,8 @@ class MergeUser {
 		Hooks::run( 'UserMergeAccountFields', [ &$updateFields ] );
 
 		$dbw = wfGetDB( DB_MASTER );
-		$lbFactory = wfGetLBFactory();
+		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 
 		$this->deduplicateWatchlistEntries( $dbw );
 		$this->mergeBlocks( $dbw );
@@ -281,8 +283,9 @@ class MergeUser {
 							$options
 						);
 					}
-					$lbFactory->commitMasterChanges( __METHOD__ );
-					wfWaitForSlaves( $checkSince, false, '*' );
+					// Wait for replication to catch up
+					$opts = [ 'ifWritesSince' => $checkSince ];
+					$lbFactory->commitAndWaitForReplication( __METHOD__, $ticket, $opts );
 				} while ( count( $keyValues ) >= $limit );
 			}
 		}
