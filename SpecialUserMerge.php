@@ -133,7 +133,7 @@ class SpecialUserMerge extends FormSpecialPage {
 
 		// Validation passed, let's merge the user now.
 		$um = new MergeUser( $oldUser, $newUser, new UserMergeLogger() );
-		$um->merge( $this->getUser() );
+		$um->merge( $this->getUser(), __METHOD__ );
 
 		$out = $this->getOutput();
 

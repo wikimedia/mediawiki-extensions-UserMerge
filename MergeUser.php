@@ -40,10 +40,11 @@ class MergeUser {
 
 	/**
 	 * @param User $performer
+	 * @param string $fnameTrxOwner
 	 */
-	public function merge( User $performer ) {
+	public function merge( User $performer, $fnameTrxOwner = __METHOD__ ) {
 		$this->mergeEditcount();
-		$this->mergeDatabaseTables();
+		$this->mergeDatabaseTables( $fnameTrxOwner );
 		$this->logger->addMergeEntry( $performer, $this->oldUser, $this->newUser );
 	}
 
@@ -197,8 +198,10 @@ class MergeUser {
 	 *
 	 * Merges database references from one user ID or username to another user ID or username
 	 * to preserve referential integrity.
+	 *
+	 * @param string $fnameTrxOwner
 	 */
-	private function mergeDatabaseTables() {
+	private function mergeDatabaseTables( $fnameTrxOwner ) {
 		// Fields to update with the format:
 		// array(
 		//        tableName, idField, textField,
@@ -230,7 +233,7 @@ class MergeUser {
 
 		if ( $this->flags & self::USE_MULTI_COMMIT ) {
 			// Flush prior writes; this actives the non-transaction path in the loop below.
-			$lbFactory->commitMasterChanges( __METHOD__ );
+			$lbFactory->commitMasterChanges( $fnameTrxOwner );
 		}
 
 		foreach ( $updateFields as $fieldInfo ) {
