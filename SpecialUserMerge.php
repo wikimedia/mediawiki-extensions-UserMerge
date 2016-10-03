@@ -174,10 +174,3 @@ class SpecialUserMerge extends FormSpecialPage {
 		return 'users';
 	}
 }
-
-/**
- * Former class name, for backwards compatability
- * @deprecated
- */
-class UserMerge extends SpecialUserMerge {
-}

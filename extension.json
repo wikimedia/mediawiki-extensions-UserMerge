@@ -39,7 +39,6 @@
 	},
 	"AutoloadClasses": {
 		"SpecialUserMerge": "SpecialUserMerge.php",
-		"UserMerge": "SpecialUserMerge.php",
 		"MergeUser": "MergeUser.php",
 		"IUserMergeLogger": "IUserMergeLogger.php",
 		"UserMergeLogger": "UserMergeLogger.php"
