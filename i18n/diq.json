@@ -3,13 +3,14 @@
 		"authors": [
 			"Erdemaslancan",
 			"Marmase",
-			"Mirzali"
+			"Mirzali",
+			"Kumkumuk"
 		]
 	},
 	"usermerge-submit": "Karbera zewkerden",
 	"usermerge-userdeleted": "$1 ($2) besterna.",
 	"usermerge-userdeleted-log": "Karbero ke besteriya: $2 ($3)",
-	"usermerge-logpage": "Qeydê bestnayışê karberi",
+	"usermerge-logpage": "Qeydê jewbıyayışê karberi",
 	"right-usermerge": "Karberan zewkerden",
 	"action-usermerge": "Karberan zewkerden"
 }
