@@ -14,7 +14,7 @@
 		"usermerge"
 	],
 	"SpecialPages": {
-		"UserMerge": "UserMerge"
+		"UserMerge": "SpecialUserMerge"
 	},
 	"LogTypes": [
 		"usermerge"
