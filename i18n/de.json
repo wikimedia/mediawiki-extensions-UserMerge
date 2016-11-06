@@ -16,7 +16,7 @@
 	"usermerge-badnewuser": "Der neue Benutzername ist ungültig.",
 	"usermerge-nonewuser": "Es wurde kein neuer Benutzername angegeben. Daher wird eine Zusammenführung mit „{{GENDER:$1|$1}}“ angenommen.<br />\nZum Ausführen auf „{{int:usermerge-submit}}“ klicken.",
 	"usermerge-noolduser": "Es wurde kein neuer Benutzername angegeben.",
-	"usermerge-same-old-and-new-user": "Die alten und neuen Benutzername müssen unterschiedlich sein.",
+	"usermerge-same-old-and-new-user": "Die alten und neuen Benutzernamen müssen unterschiedlich sein.",
 	"usermerge-fieldset": "Benutzernamen zum Zusammenführen",
 	"usermerge-olduser": "Alter Benutzername (zusammenführen von):",
 	"usermerge-newuser": "Neuer Benutzername (zusammenführen nach):",
