@@ -26,5 +26,5 @@
 	"usermerge-noselfdelete": "Panjenengan ora bisa mbusak utawa nggabung saka panjenengan dhéwé!",
 	"usermerge-protectedgroup": "Ora bisa nggabungaké saka panganggo iki - panganggo ana jroning klompok kareksa.",
 	"right-usermerge": "Gabung panganggo",
-	"usermerge-move-log": "Otomatis ngalih kaca nalika nggabungaké naraguna \"[[User:$1|$1]]\" karo \"[[User:$2|{{GENDER:$2|$2}}]]\""
+	"usermerge-move-log": "Otomatis ngalih kaca nalika nggabungaké panganggo \"[[User:$1|$1]]\" karo \"[[User:$2|{{GENDER:$2|$2}}]]\""
 }
