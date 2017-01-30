@@ -7,7 +7,8 @@
 			"Southparkfan",
 			"Sjoerddebruin",
 			"Nemo bis",
-			"HanV"
+			"HanV",
+			"Mainframe98"
 		]
 	},
 	"usermerge": "Gebruikers samenvoegen en verwijderen",
@@ -30,7 +31,7 @@
 	"usermerge-logpage": "Logboek gebruikerssamenvoegingen",
 	"usermerge-logpagetext": "Dit is het logboek van gebruikerssamenvoegingen.",
 	"usermerge-noselfdelete": "U kunt niet verwijderen of samenvoegen van {{GENDER:$1|uzelf}}!",
-	"usermerge-protectedgroup": "Het is niet mogelijk de gebruikers samen te voegen. De gebruiker zit in een beschermde groep.",
+	"usermerge-protectedgroup": "Het is niet mogelijk de {{GENDER:$1|gebruiker}} samen te voegen. De gebruiker zit in een beschermde groep.",
 	"right-usermerge": "Gebruikers samenvoegen",
 	"action-usermerge": "gebruikers samen te voegen",
 	"usermerge-autopagedelete": "Automatisch verwijderd bij het samenvoegen van gebruikers",
