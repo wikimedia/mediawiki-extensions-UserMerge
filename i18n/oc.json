@@ -22,7 +22,7 @@
 	"usermerge-success-log": "{{GENDER:$2|Utilizator|Utilizatritz}} $2 ($3) fusiona{{GENDER:$2|t|da}} amb {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Jornal de las fusions de contributors",
 	"usermerge-logpagetext": "Aquò es un jornal de las accions de fusions de contributors.",
-	"usermerge-noselfdelete": "Podètz pas, vos-meteis, vos suprimir ni vos fusionar !",
+	"usermerge-noselfdelete": "Podètz pas, vos-{{GENDER:$1|meteis|meteissa}}, vos suprimir ni vos fusionar !",
 	"usermerge-protectedgroup": "Impossible de fusionar a partir d'un utilizaire - l'utilizaire se tròba dins un grop protegit.",
 	"right-usermerge": "Fusionar d'utilizaires"
 }
