@@ -9,7 +9,8 @@
 			"Sanbec",
 			"Fitoschido",
 			"Nemo bis",
-			"Macofe"
+			"Macofe",
+			"Dgstranz"
 		]
 	},
 	"usermerge": "Fusionar y borrar usuarios",
@@ -37,5 +38,5 @@
 	"action-usermerge": "fusionar usuarios",
 	"usermerge-autopagedelete": "Eliminado automáticamente al fusionar usuarios",
 	"usermerge-page-unmoved": "La página $1 no pudo trasladarse a $2.",
-	"usermerge-move-log": "Página trasladada automáticamente al fusionar al usuario \"[[User:$1|$1]]\" con el usuario \"[[User:$2|$2]]\""
+	"usermerge-move-log": "Página trasladada automáticamente al fusionar al usuario «[[User:$1|$1]]» con «[[User:$2|$2]]»"
 }
