@@ -6,7 +6,7 @@
 		]
 	},
 	"usermerge": "Spajanje i brisanje korisnika",
-	"usermerge-desc": "[[Special:UserMerge|Spajanje referenci sa jednog na drugog kornisnika]] u wiki bazi podataka - također će obrisaiti stare korisnike nakon spajanja. Zahtjeva ''usermerge'' privilegije.",
+	"usermerge-desc": "[[Special:UserMerge|Spaja doprinose jednog korisnika na drugog]] u bazi podataka wikija – obrisat će i stare korisnike po spajanju. Zahtijeva pravo ''usermerge''",
 	"usermerge-badolduser": "Nevaljano staro korisničko ime",
 	"usermerge-badnewuser": "Nevaljano novo korisničko ime",
 	"usermerge-nonewuser": "Upišite novo korisničko ime. Pretpostavljam da se spaja na \"{{GENDER:$1|$1}}\".<br />\nKliknite na \"{{int:usermerge-submit}}\" za prihvatanje.",
