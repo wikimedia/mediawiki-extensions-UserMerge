@@ -32,7 +32,7 @@ class SpecialUserMerge extends FormSpecialPage {
 				'type' => 'text',
 				'label-message' => 'usermerge-olduser',
 				'required' => true,
-				'validation-callback' => function( $val ) use ( $us ) {
+				'validation-callback' => function ( $val ) use ( $us ) {
 					// only pass strings to User::newFromName
 					if ( !is_string( $val ) ) {
 						return true;
@@ -49,7 +49,7 @@ class SpecialUserMerge extends FormSpecialPage {
 				'type' => 'text',
 				'required' => true,
 				'label-message' => 'usermerge-newuser',
-				'validation-callback' => function( $val ) use ( $us ) {
+				'validation-callback' => function ( $val ) use ( $us ) {
 					// only pass strings to User::newFromName
 					if ( !is_string( $val ) ) {
 						return true;

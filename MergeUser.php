@@ -204,10 +204,10 @@ class MergeUser {
 	 */
 	private function mergeDatabaseTables( $fnameTrxOwner ) {
 		// Fields to update with the format:
-		// array(
-		//        tableName, idField, textField,
-		//        'batchKey' => unique field, 'options' => array(), 'db' => DatabaseBase
-		// );
+		// [
+		// tableName, idField, textField,
+		// 'batchKey' => unique field, 'options' => array(), 'db' => DatabaseBase
+		// ];
 		// textField, batchKey, db, and options are optional
 		$updateFields = [
 			[ 'archive', 'ar_user', 'ar_user_text', 'batchKey' => 'ar_id' ],
@@ -395,7 +395,7 @@ class MergeUser {
 			]
 		);
 
-		$message = function( /* ... */ ) use ( $msg ) {
+		$message = function ( /* ... */ ) use ( $msg ) {
 			return call_user_func_array( $msg, func_get_args() );
 		};
 
@@ -405,7 +405,6 @@ class MergeUser {
 
 		$failedMoves = [];
 		foreach ( $pages as $row ) {
-
 			$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
 			$newPage = Title::makeTitleSafe( $row->page_namespace,
 				preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
@@ -419,8 +418,9 @@ class MergeUser {
 				}
 			} elseif ( $newPage->exists()
 				&& !$oldPage->isValidMoveTarget( $newPage )
-				&& $newPage->getLength() > 0 ) { # delete old pages that can't be moved
-
+				&& $newPage->getLength() > 0
+			) {
+				# delete old pages that can't be moved
 				$oldPageArticle = new Article( $oldPage, 0 );
 				$oldPageArticle->doDeleteArticle(
 					$message( 'usermerge-autopagedelete' )->inContentLanguage()->text()
