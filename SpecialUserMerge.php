@@ -15,8 +15,6 @@
  *
  */
 
-use MediaWiki\MediaWikiServices;
-
 class SpecialUserMerge extends FormSpecialPage {
 	public function __construct() {
 		parent::__construct( 'UserMerge', 'usermerge' );
@@ -154,7 +152,7 @@ class SpecialUserMerge extends FormSpecialPage {
 			if ( $failed ) {
 				// Output an error message for failed moves
 				$out->addHTML( Html::openElement( 'ul' ) );
-				$linkRenderer = MediaWikiServices::getInstance()->getLinkRenderer();
+				$linkRenderer = $this->getLinkRenderer();
 				foreach ( $failed as $oldTitleText => $newTitle ) {
 					$oldTitle = Title::newFromText( $oldTitleText );
 					$out->addHTML(

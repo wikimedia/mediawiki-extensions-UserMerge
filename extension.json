@@ -9,6 +9,9 @@
 	"url": "https://www.mediawiki.org/wiki/Extension:UserMerge",
 	"descriptionmsg": "usermerge-desc",
 	"license-name": "GPL-2.0+",
+	"requires": {
+		"MediaWiki": ">= 1.28.0"
+	},
 	"type": "specialpage",
 	"AvailableRights": [
 		"usermerge"
