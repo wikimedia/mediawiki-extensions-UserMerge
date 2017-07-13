@@ -19,7 +19,7 @@
 	"usermerge-newuser": "Nuovo utente (unisci a):",
 	"usermerge-deleteolduser": "Cancella vecchio utente",
 	"usermerge-submit": "Unisci utente",
-	"usermerge-badtoken": "Edit token non valido",
+	"usermerge-badtoken": "Token di modifica non valido.",
 	"usermerge-userdeleted": "$1 ($2) è {{GENDER:$1|stato cancellato|stata cancellata}}.",
 	"usermerge-userdeleted-log": "Utente cancellato: $2 ($3)",
 	"usermerge-success": "L'unione di {{GENDER:$1|$1}} ($2) a {{GENDER:$3|$3}} ($4) è completa.",
