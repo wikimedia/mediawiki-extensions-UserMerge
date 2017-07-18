@@ -38,6 +38,6 @@
 	"right-usermerge": "Fundir usuários",
 	"action-usermerge": "fundir usuários",
 	"usermerge-autopagedelete": "Excluída automaticamente ao fundir usuários",
-	"usermerge-page-unmoved": "Não foi possível mover a página $1 para $2.",
+	"usermerge-page-unmoved": "A página $1 não pode ser movida para $2.",
 	"usermerge-move-log": "Página movida automaticamente ao fundir {{GENDER:$1|o usuário|os usuários}} \"[[User:$1|$1]]\" com \"[[User:$2|$2]]\""
 }
