@@ -4,7 +4,8 @@
 			"Meno25",
 			"OsamaK",
 			"روخو",
-			"محمد أحمد عبد الفتاح"
+			"محمد أحمد عبد الفتاح",
+			"ديفيد"
 		]
 	},
 	"usermerge": "دمج وحذف المستخدمين",
@@ -19,14 +20,14 @@
 	"usermerge-deleteolduser": "حذف المستخدم القديم",
 	"usermerge-submit": "دمج المستخدم",
 	"usermerge-badtoken": "نص تعديل غير صحيح",
-	"usermerge-userdeleted": "$1($2) تم حذفه.",
+	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) تم حذفه.",
 	"usermerge-userdeleted-log": "حذف المستخدم: $2($3)",
-	"usermerge-success": "الدمج من $1($2) إلى $3($4) اكتمل.",
-	"usermerge-success-log": "المستخدم $2($3) تم دمجه مع $4($5)",
+	"usermerge-success": "الدمج من {{GENDER:$1|$1}} ($2) إلى{{GENDER:$3|$3}} ($4) اكتمل.",
+	"usermerge-success-log": "المستخدم {{GENDER:$2|$2}} ($3) تم دمجه مع {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "سجل دمج المستخدم",
 	"usermerge-logpagetext": "هذا سجل بأفعال دمج المستخدمين.",
-	"usermerge-noselfdelete": "لا يمكنك حذف أو دمج من نفسك!",
-	"usermerge-protectedgroup": "غير قادر على الدمج من المستخدم - المستخدم في مجموعة محمية.",
+	"usermerge-noselfdelete": "لا يمكنك حذف أو دمج {{GENDER:$1|نفسك}}!",
+	"usermerge-protectedgroup": "غير قادر على دمج {{GENDER:$1|المستخدم}}: المستخدم في مجموعة محمية.",
 	"right-usermerge": "دمج المستخدمين",
 	"action-usermerge": "دمج المستخدمين",
 	"usermerge-page-unmoved": "تعذر نقل الصفحة $1 إلى $2."
