@@ -3,7 +3,8 @@
 		"authors": [
 			"An13sa",
 			"Theklan",
-			"Xabier Armendaritz"
+			"Xabier Armendaritz",
+			"Mikel Ibaiba"
 		]
 	},
 	"usermerge-badolduser": "Baliogabeko lankide izen zaharra",
@@ -14,7 +15,7 @@
 	"usermerge-deleteolduser": "Ezabatu lankide zaharra",
 	"usermerge-submit": "Lankidea batu",
 	"usermerge-badtoken": "Aldaketa token ez baliagarria",
-	"usermerge-userdeleted": "$1 ($2) ezabatua izan da.",
+	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) ezabatua izan da.",
 	"usermerge-userdeleted-log": "Ezabatutako lankidea: $2 ($3)",
 	"usermerge-success": "$1(e)tik ($2) $3(e)ra ($4) batzea burutu da.",
 	"usermerge-success-log": "$2 ($3) lankidea $4 ($5) lankidera batu da",
