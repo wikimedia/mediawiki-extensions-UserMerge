@@ -384,7 +384,7 @@ class MergeUser {
 		$newusername = Title::makeTitleSafe( NS_USER, $wgContLang->ucfirst( $this->newUser->getName() ) );
 
 		# select all user pages and sub-pages
-		$dbr = wfGetDB( DB_SLAVE );
+		$dbr = wfGetDB( DB_REPLICA );
 		$pages = $dbr->select(
 			'page',
 			[ 'page_namespace', 'page_title' ],
