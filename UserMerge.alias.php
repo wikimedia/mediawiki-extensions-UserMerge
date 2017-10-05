@@ -263,6 +263,11 @@ $specialPageAliases['uk'] = [
 	'UserMerge' => [ 'Об\'єднання_користувачів' ],
 ];
 
+/** Urdu (اردو) */
+$specialPageAliases['ur'] = [
+	'UserMerge' => [ 'ضم_صارف' ],
+];
+
 /** Vietnamese (Tiếng Việt) */
 $specialPageAliases['vi'] = [
 	'UserMerge' => [ 'Hợp_nhất_người_dùng' ],
