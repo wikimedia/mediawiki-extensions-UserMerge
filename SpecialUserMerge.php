@@ -68,7 +68,7 @@ class SpecialUserMerge extends FormSpecialPage {
 	}
 
 	/**
-	 * @param $val user's input for username
+	 * @param string $val user's input for username
 	 * @return bool|string true if valid, a string of the error's message key if validation failed
 	 */
 	public function validateOldUser( $val ) {
@@ -88,7 +88,7 @@ class SpecialUserMerge extends FormSpecialPage {
 	}
 
 	/**
-	 * @param $val user's input for username
+	 * @param string $val user's input for username
 	 * @return bool|string true if valid, a string of the error's message key if validation failed
 	 */
 	public function validateNewUser( $val ) {
