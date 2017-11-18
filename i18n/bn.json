@@ -20,7 +20,7 @@
 	"usermerge-deleteolduser": "পুরনো ব্যবহারকারী অপসারণ করুন",
 	"usermerge-submit": "ব্যবহারকারী একত্রীত করুন",
 	"usermerge-badtoken": "সম্পাদনা টোকেন অবৈধ।",
-	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) মুছে ফেলা হয়েছে।",
+	"usermerge-userdeleted": "$1 ($2) মুছে ফেলা হয়েছে।",
 	"usermerge-userdeleted-log": "অপসারিত ব্যবহারকারী: $2 ($3)",
 	"usermerge-success": "{{GENDER:$1|$1}} ($2) থেকে {{GENDER:$3|$3}} ($4)-এ একত্রীকরণ সম্পন্ন হয়েছে।",
 	"usermerge-success-log": "ব্যবহারকারী {{GENDER:$2|$2}} ($3)-কে {{GENDER:$4|$4}} ($5)-এর সাথে একত্রিত করা হয়েছে",
@@ -32,5 +32,5 @@
 	"action-usermerge": "ব্যবহারকারী একত্রিত করার",
 	"usermerge-autopagedelete": "ব্যবহারকারী একত্রীত করার সময় স্বয়ংক্রিয়ভাবে অপসারিত",
 	"usermerge-page-unmoved": "$1 পাতাটি $2-এ সরিয়ে নেওয়া সম্ভব নয়।",
-	"usermerge-move-log": "ব্যবহারকারী \"[[User:$1|$1]]\" কে \"[[User:$2|{{GENDER:$2|$2}}]]\"-এ একত্রীত করার সময় স্বয়ংক্রিয়ভাবে পাতা স্থানান্তরিত"
+	"usermerge-move-log": "\"$1\" অ্যাকাউন্টটি \"[[User:$2|$2]]\"-এ একত্রীত করার সময় স্বয়ংক্রিয়ভাবে পাতা স্থানান্তরিত"
 }

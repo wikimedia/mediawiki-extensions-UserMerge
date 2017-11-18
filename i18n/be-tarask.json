@@ -21,7 +21,7 @@
 	"usermerge-deleteolduser": "Выдаліць стары рахунак удзельніка",
 	"usermerge-submit": "Аб'яднаць рахункі ўдзельнікаў",
 	"usermerge-badtoken": "Няслушны знак рэдагаваньня",
-	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|быў выдалены|была выдаленая}}.",
+	"usermerge-userdeleted": "$1 ($2) быў выдалены.",
 	"usermerge-userdeleted-log": "Выдалены рахунак удзельніка: $2 ($3)",
 	"usermerge-success": "Аб'яднаньне {{GENDER:$1|$1}} ($2) з {{GENDER:$3|$3}} ($4) скончанае.",
 	"usermerge-success-log": "{{GENDER:$2|Удзельнік|Удзельніца}} $2 ($3) {{GENDER:$2|аб’яднаны|аб’яднаная}} з $4 ($5)",

@@ -1,0 +1,13 @@
+{
+	"@metadata": {
+		"authors": [
+			"Zainab Meher"
+		]
+	},
+	"usermerge-userdeleted": "$1 ($2)حزف کیا جا چکا ہے۔",
+	"usermerge-userdeleted-log": "\"$2\" ($3)صارف کااکاؤنٹ حزف کر دیا گیا",
+	"usermerge-success": " $1 ($2)کا $3 ($4)میں حزف مکمل ہو گیا ہے۔",
+	"usermerge-success-log": " \"$2\" ($3) کا اکاؤنٹ   \"[[User:$4|$4]]\" ($5) میں ضم کر دیا گیا",
+	"usermerge-autopagedelete": "صارفین کو ضم کرتے ہوۓ صفحہ خودبخود حزف کر دیا گیا",
+	"usermerge-move-log": "\"$1\"اکاؤنٹ کو ضم کرنے کے دوران صفحے کو خودبخود \"[[User:$2|$2]]\"میں منتقل کر دیا گیا"
+}
