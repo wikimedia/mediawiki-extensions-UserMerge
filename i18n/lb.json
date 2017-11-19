@@ -20,7 +20,7 @@
 	"usermerge-submit": "Benotzerkonten zesummeféieren",
 	"usermerge-badtoken": "Ännerungs-Jeton net valabel",
 	"usermerge-userdeleted": "$1 ($2) gouf geläscht.",
-	"usermerge-userdeleted-log": "Geläschte Benotzer: $2($3)",
+	"usermerge-userdeleted-log": "huet de Benotzerkont \"$2\" ($3) geläscht",
 	"usermerge-success": "D'Zesummeféierung vum {{GENDER:$1|$1}} ($2) op {{GENDER:$3|$3}} ($4) ass net komplett.",
 	"usermerge-success-log": "huet de Benotzer \"$2\" ($3) zesummegeféiert mam \"[[User:$4|$4]]\" ($5)",
 	"usermerge-logpage": "Lëscht vun de Benotzerkonten déi zesummegeféiert goufen",

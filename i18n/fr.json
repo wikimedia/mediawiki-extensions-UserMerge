@@ -10,7 +10,8 @@
 			"PieRRoMaN",
 			"Seb35",
 			"Sherbrooke",
-			"Urhixidur"
+			"Urhixidur",
+			"Wladek92"
 		]
 	},
 	"usermerge": "Fusionner et supprimer des utilisateurs",
@@ -27,7 +28,7 @@
 	"usermerge-submit": "Fusionner l’utilisateur",
 	"usermerge-badtoken": "Jeton de modification invalide",
 	"usermerge-userdeleted": "$1 ($2) a été supprimé{{GENDER:$1||e}}.",
-	"usermerge-userdeleted-log": "Contributeur supprimé : $2 ($3)",
+	"usermerge-userdeleted-log": "contributeur supprimé : « $2 » ($3)",
 	"usermerge-success": "La fusion de {{GENDER:$1|$1}} ($2) avec {{GENDER:$3|$3}} ($4) est terminée.",
 	"usermerge-success-log": "{{GENDER:$2|Utilisateur|Utilisatrice}} $2 ($3) fusionné{{GENDER:$2||e}} avec {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Journal des fusions de comptes utilisateur",
