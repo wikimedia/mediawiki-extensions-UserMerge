@@ -32,5 +32,5 @@
 	"action-usermerge": "사용자 합치기",
 	"usermerge-autopagedelete": "사용자를 합치는 동안 자동으로 문서를 삭제했습니다",
 	"usermerge-page-unmoved": "$1 문서를 $2 문서로 이동하지 못했습니다.",
-	"usermerge-move-log": "\"[[User:$1|$1]]\" 사용자를 \"[[User:$2|{{GENDER:$2|$2}}]]\"(으)로 합치면서 문서를 자동으로 이동했습니다"
+	"usermerge-move-log": "\"$1\" 계정을 \"[[User:$2|$2]]\"(으)로 합치면서 문서를 자동으로 이동했습니다"
 }
