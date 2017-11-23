@@ -26,10 +26,10 @@
 	"usermerge-logpage": "Lëscht vun de Benotzerkonten déi zesummegeféiert goufen",
 	"usermerge-logpagetext": "Dëst ass eng Lëscht vun de Benotzerkonten, déi zesummegeféiert goufen.",
 	"usermerge-noselfdelete": "Dir kënnt {{GENDER:$1|Iech net selwer}} läschen oder mat {{GENDER:$1|Iech selwer}} zesummeféieren!",
-	"usermerge-protectedgroup": "D'Zesammenféierung vum {{GENDER:$1|Benotzer}} ass net méiglech: De Benotzer ass an engem geschützte Grupp.",
+	"usermerge-protectedgroup": "D'Zesummenféierung vum {{GENDER:$1|Benotzer}} ass net méiglech: De Benotzer ass an engem geschützte Grupp.",
 	"right-usermerge": "Benotzer zesummeféieren",
 	"action-usermerge": "Benotzer zesummeféieren",
 	"usermerge-autopagedelete": "Automatesch geläscht wéi d'Benotzer zesummegeluecht goufen",
 	"usermerge-page-unmoved": "D'Säit $1 konnt net op $2 geréckelt ginn.",
-	"usermerge-move-log": "D'Säit gouf automatesch geréckelt wéi de Benotzer \"[[User:$1|$1]]\" mam \"[[User:$2|$2{{GENDER:$2|$2}}]]\" zesummegeluecht gouf"
+	"usermerge-move-log": "D'Säit gouf automatesch geréckelt wéi de Benotzer \"$1\" mam \"[[User:$2|$2]]\" zesummegeluecht gouf"
 }
