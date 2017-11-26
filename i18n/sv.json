@@ -23,17 +23,17 @@
 	"usermerge-deleteolduser": "Ta bort den gamla användaren",
 	"usermerge-submit": "Förena konton",
 	"usermerge-badtoken": "Ogiltigt redigeringstecken",
-	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) har raderats.",
-	"usermerge-userdeleted-log": "Raderad användare: $2 ($3)",
-	"usermerge-success": "Sammanslagning från {{GENDER:$1|$1}} ($2) till {{GENDER:$3|$3}} ($4) är slutfört.",
-	"usermerge-success-log": "Användare {{GENDER:$2|$2}} ($3) slogs samman med {{GENDER:$4|$4}} ($5)",
+	"usermerge-userdeleted": "$1 ($2) har raderats.",
+	"usermerge-userdeleted-log": "raderade användarkontot \"$2\" ($3)",
+	"usermerge-success": "Sammanslagning från $1 ($2) till $3 ($4) har slutförts.",
+	"usermerge-success-log": "slog samman användare \"$2\" ($3) med \"[[User:$4|$4]]\" ($5)",
 	"usermerge-logpage": "Användarsammanslagningslogg",
 	"usermerge-logpagetext": "Det här är en logg över sammanslagningar av användarkonton.",
 	"usermerge-noselfdelete": "Du kan inte radera eller slå samman {{GENDER:$1|ditt}} eget konto!",
 	"usermerge-protectedgroup": "Kan inte sammanfoga från {{GENDER:$1|användaren}}: Användaren är medlem i en skyddad användargrupp.",
 	"right-usermerge": "Slå ihop användarkonton",
 	"action-usermerge": "slå ihop användarkonton",
-	"usermerge-autopagedelete": "Ta bort automatiskt när användare slås ihop",
+	"usermerge-autopagedelete": "Ta bort sida automatiskt när användare sammanfogas",
 	"usermerge-page-unmoved": "Sidan $1 kan inte tas bort till $2",
-	"usermerge-move-log": "Ta automatiskt bort sidan när du slår ihop användare \"[[User:$1|$1]]\" med \"[[User:$2|{{GENDER:$2|$2}}]]\""
+	"usermerge-move-log": "Ta automatiskt bort sidan när du slår ihop användare \"$1\" med \"[[User:$2|]]\""
 }
