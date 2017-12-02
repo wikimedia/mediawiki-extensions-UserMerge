@@ -21,7 +21,7 @@
 	"usermerge-submit": "사용자 합치기",
 	"usermerge-badtoken": "잘못된 편집 토큰",
 	"usermerge-userdeleted": "$1 ($2)님이 삭제되었습니다.",
-	"usermerge-userdeleted-log": "님이 $2 ($3) 사용자 계정을 삭제했습니다",
+	"usermerge-userdeleted-log": "님이 \"$2\" ($3) 사용자 계정을 삭제했습니다",
 	"usermerge-success": "$1 ($2)님을 $3 ($4)에 합치는 것을 완료했습니다.",
 	"usermerge-success-log": "님이 \"$2\" ($3) 계정을 \"[[User:$4|$4]]\" ($5) 계정으로 합쳤습니다",
 	"usermerge-logpage": "사용자 병합 기록",
