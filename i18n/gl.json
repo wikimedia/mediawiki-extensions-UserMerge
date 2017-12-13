@@ -26,7 +26,7 @@
 	"usermerge-logpage": "Rexistro de fusión de usuarios",
 	"usermerge-logpagetext": "Este é un rexistro das accións de fusión de usuarios.",
 	"usermerge-noselfdelete": "Non se pode eliminar ou fusionar a si {{GENDER:$1|mesmo|mesma}}!",
-	"usermerge-protectedgroup": "Non se pode fusionar {{GENDER:$1|o usuario|a usuaria}}: Está nun grupo protexido.",
+	"usermerge-protectedgroup": "Non se pode fusionar {{GENDER:$1|o usuario|a usuaria}}: está nun grupo protexido.",
 	"right-usermerge": "Fusionar usuarios",
 	"action-usermerge": "fusionar usuarios",
 	"usermerge-autopagedelete": "Borrada automaticamente ao fusionar os usuarios",
