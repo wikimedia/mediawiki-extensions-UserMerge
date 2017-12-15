@@ -3,7 +3,8 @@
 		"authors": [
 			"Alma",
 			"Toliño",
-			"Elisardojm"
+			"Elisardojm",
+			"Banjo"
 		]
 	},
 	"usermerge": "Fusionar e eliminar usuario",
@@ -19,17 +20,17 @@
 	"usermerge-deleteolduser": "Borrar o usuario antigo",
 	"usermerge-submit": "Fusionar o usuario",
 	"usermerge-badtoken": "Sinal de edición non válido",
-	"usermerge-userdeleted": "Borrouse {{GENDER:$1|o usuario|a usuaria}} $1 ($2).",
-	"usermerge-userdeleted-log": "Usuario eliminado: $2 ($3)",
-	"usermerge-success": "A fusión desde {{GENDER:$1|$1}} ($2) a {{GENDER:$3|$3}} ($4) foi completada.",
-	"usermerge-success-log": "Usuario {{GENDER:$2|$2}} ($3) fusionado con {{GENDER:$4|$4}} ($5)",
+	"usermerge-userdeleted": "$1 ($2) foi eliminado.",
+	"usermerge-userdeleted-log": "eliminouse a conta de usuario \"$2\" ($3)",
+	"usermerge-success": "Completouse a fusión desde $1 ($2) a $3 ($4).",
+	"usermerge-success-log": "Fusionouse a conta  \"$2\" ($3) con \"[[User:$4|$4]]\" ($5)",
 	"usermerge-logpage": "Rexistro de fusión de usuarios",
 	"usermerge-logpagetext": "Este é un rexistro das accións de fusión de usuarios.",
 	"usermerge-noselfdelete": "Non se pode eliminar ou fusionar a si {{GENDER:$1|mesmo|mesma}}!",
 	"usermerge-protectedgroup": "Non se pode fusionar {{GENDER:$1|o usuario|a usuaria}}: está nun grupo protexido.",
 	"right-usermerge": "Fusionar usuarios",
 	"action-usermerge": "fusionar usuarios",
-	"usermerge-autopagedelete": "Borrada automaticamente ao fusionar os usuarios",
+	"usermerge-autopagedelete": "Páxina borrada automaticamente ao fusionar os usuarios",
 	"usermerge-page-unmoved": "A páxina \"$1\" non pode ser movida a \"$2\".",
-	"usermerge-move-log": "A páxina moveuse automaticamente cando se fusionou o usuario \"[[User:$1|$1]]\" con \"[[User:$2|{{GENDER:$2|$2}}]]\""
+	"usermerge-move-log": "A páxina moveuse automaticamente cando se fusionou o usuario \"$1\" con \"[[User:$2|$2]]\""
 }
