@@ -1,5 +1,6 @@
 <?php
 use MediaWiki\MediaWikiServices;
+use Wikimedia\Rdbms\IDatabase;
 
 /**
  * Contains the actual database backend logic for merging users
@@ -99,7 +100,7 @@ class MergeUser {
 		$dbw->endAtomic( __METHOD__ );
 	}
 
-	private function mergeBlocks( DatabaseBase $dbw ) {
+	private function mergeBlocks( IDatabase $dbw ) {
 		$dbw->startAtomic( __METHOD__ );
 
 		// Pull blocks directly from master
@@ -206,7 +207,7 @@ class MergeUser {
 		// Fields to update with the format:
 		// [
 		// tableName, idField, textField,
-		// 'batchKey' => unique field, 'options' => array(), 'db' => DatabaseBase
+		// 'batchKey' => unique field, 'options' => array(), 'db' => IDatabase
 		// ];
 		// textField, batchKey, db, and options are optional
 		$updateFields = [
@@ -302,7 +303,7 @@ class MergeUser {
 	 * Deduplicate watchlist entries
 	 * which old (merge-from) and new (merge-to) users are watching
 	 *
-	 * @param DatabaseBase $dbw
+	 * @param IDatabase $dbw
 	 */
 	private function deduplicateWatchlistEntries( $dbw ) {
 		$dbw->startAtomic( __METHOD__ );
@@ -482,7 +483,7 @@ class MergeUser {
 		 * Format is: table => user_id column
 		 *
 		 * If you want it to use a different db object:
-		 * table => array( user_id colum, 'db' => DatabaseBase );
+		 * table => array( user_id colum, 'db' => IDatabase );
 		 */
 		$tablesToDelete = [
 			'user_groups' => 'ug_user',
