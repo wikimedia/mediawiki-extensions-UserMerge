@@ -8,7 +8,8 @@
 			"Str4nd",
 			"Stryn",
 			"VezonThunder",
-			"Vililikku"
+			"Vililikku",
+			"01miki10"
 		]
 	},
 	"usermerge": "Käyttäjätunnusten yhdistys ja poisto",
@@ -23,15 +24,16 @@
 	"usermerge-submit": "Yhdistä käyttäjä",
 	"usermerge-badtoken": "Virheellinen muokkauslipuke",
 	"usermerge-userdeleted": "$1 ($2) on poistettu.",
-	"usermerge-userdeleted-log": "Poistettiin käyttäjä: $2 ($3)",
-	"usermerge-success": "Yhdistäminen tunnuksesta $1 ($2) tunnukseen {{GENDER:$3|$3}} ($4) on suoritettu.",
-	"usermerge-success-log": "Käyttäjä $2 ($3) yhdistettiin käyttäjään {{GENDER:$4|$4}} ($5)",
+	"usermerge-userdeleted-log": "poisti käyttäjätunnuksen \"$2\" ($3)",
+	"usermerge-success": "Yhdistäminen tunnuksesta $1 ($2) tunnukseen $3 ($4) on suoritettu.",
+	"usermerge-success-log": "yhdisti käyttäjän \"$2\" ($3) käyttäjään \"[[User:$4|$4]]\" ($5)",
 	"usermerge-logpage": "Käyttäjien yhdistämisloki",
 	"usermerge-logpagetext": "Tämä on loki käyttäjätunnuksien yhdistämistoimista.",
-	"usermerge-noselfdelete": "Et voi poistaa tai yhdistää itseltäsi.",
+	"usermerge-noselfdelete": "Et voi poistaa tai yhdistää {{GENDER:$1|itseäsi}}!",
 	"usermerge-protectedgroup": "Ei voi yhdistää käyttäjänimestä - käyttäjänimi kuuluu suojattuun ryhmään.",
 	"right-usermerge": "Yhdistää käyttäjiä",
-	"usermerge-autopagedelete": "Poistettiin automaattisesti käyttäjien yhdistämisessä",
+	"action-usermerge": "yhdistää käyttäjiä",
+	"usermerge-autopagedelete": "Sivu poistettiin automaattisesti käyttäjien yhdistämisessä",
 	"usermerge-page-unmoved": "Sivua $1 ei voitu siirtää nimelle $2.",
-	"usermerge-move-log": "Sivu siirretty automaattisesti yhdistettäessä käyttäjä \"[[User:$1|$1]]\" käyttäjään \"[[User:$2|{{GENDER:$2|$2}}]]\""
+	"usermerge-move-log": "Sivu siirrettiin automaattisesti yhdistettäessä käyttäjä \"$1\" käyttäjään \"[[User:$2|$2]]\""
 }
