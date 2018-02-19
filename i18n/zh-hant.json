@@ -6,7 +6,8 @@
 			"Mark85296341",
 			"Wrightbus",
 			"Cwlin0416",
-			"LNDDYL"
+			"LNDDYL",
+			"Hello903hello"
 		]
 	},
 	"usermerge": "合併並刪除使用者",
@@ -22,17 +23,17 @@
 	"usermerge-deleteolduser": "刪除舊使用者",
 	"usermerge-submit": "合併使用者",
 	"usermerge-badtoken": "無效的編輯權杖。",
-	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) 已刪除。",
-	"usermerge-userdeleted-log": "已刪除使用者：$2 ($3)",
-	"usermerge-success": "已完成由 {{GENDER:$1|$1}} ($2) 至 {{GENDER:$3|$3}} ($4) 的合併。",
-	"usermerge-success-log": "使用者 {{GENDER:$2|$2}} ($3) 已合併至 {{GENDER:$4|$4}} ($5)",
+	"usermerge-userdeleted": "$1（$2）已刪除。",
+	"usermerge-userdeleted-log": "已刪除使用者賬戶「$2」（$3）",
+	"usermerge-success": "已完成由 $1（$2）至 $3（$4）的合併。",
+	"usermerge-success-log": "使用者賬戶「$2」（$3）已合併至「[[User:$4|$4]]」（$5）",
 	"usermerge-logpage": "使用者合併日誌",
 	"usermerge-logpagetext": "此頁為使用者合併動作的記錄。",
 	"usermerge-noselfdelete": "您無法刪除或合併{{GENDER:$1|自己}}！",
 	"usermerge-protectedgroup": "無法完成{{GENDER:$1|使用者}}合併：使用者屬於受保護群組成員。",
 	"right-usermerge": "合併使用者",
 	"action-usermerge": "合併使用者",
-	"usermerge-autopagedelete": "合併後自動刪除使用者",
+	"usermerge-autopagedelete": "合併使用者時自動刪除頁面",
 	"usermerge-page-unmoved": "頁面 $1 無法移動至 $2。",
-	"usermerge-move-log": "合併 \"[[User:$1|$1]]\" 至 \"[[User:$2|{{GENDER:$2|$2}}]]\" 時已自動移動頁面"
+	"usermerge-move-log": "合併賬戶「$1」到「[[User:$2|$2]]」時已自動移動頁面"
 }
