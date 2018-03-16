@@ -339,7 +339,7 @@ class MergeUser {
 		$titlesToDelete = array_filter( $titlesToDelete );
 
 		$conds = [];
-		foreach ( $titlesToDelete as $tuple ) {
+		foreach ( array_keys( $titlesToDelete ) as $tuple ) {
 			list( $ns, $dbKey ) = explode( "|", $tuple, 2 );
 			$conds[] = $dbw->makeList(
 				[
