@@ -29,14 +29,14 @@
 	"usermerge-userdeleted": "Se borró a $1 ($2).",
 	"usermerge-userdeleted-log": "borró la cuenta de usuario «$2» ($3)",
 	"usermerge-success": "Se completó la combinación de $1 ($2) a $3 ($4).",
-	"usermerge-success-log": "fusionó al usuario «$2» ($3) con el usuario «$4» ($5)",
+	"usermerge-success-log": "fusionó la cuenta «$2» ($3) con «[[User:$4|$4]]» ($5)",
 	"usermerge-logpage": "Registro de fusiones del usuario",
 	"usermerge-logpagetext": "Este es un registro de fusiones de cuentas de usuario.",
 	"usermerge-noselfdelete": "No puedes borrarte o fusionarte tú {{GENDER:$1|mismo|misma}}.",
-	"usermerge-protectedgroup": "Imposible fusionar desde {{GENDER:$1|el usuario|la usuaria}}: está en un grupo protegido.",
+	"usermerge-protectedgroup": "Imposible fusionar desde {{GENDER:$1|el usuario|la usuaria}}: la cuenta de usuario está en un grupo protegido.",
 	"right-usermerge": "Fusionar usuarios",
 	"action-usermerge": "fusionar usuarios",
-	"usermerge-autopagedelete": "Eliminado automáticamente al fusionar usuarios",
+	"usermerge-autopagedelete": "Borrada automáticamente al fusionar usuarios",
 	"usermerge-page-unmoved": "La página $1 no pudo trasladarse a $2.",
-	"usermerge-move-log": "Página trasladada automáticamente al fusionar al usuario «[[User:$1|$1]]» con «[[User:$2|$2]]»"
+	"usermerge-move-log": "Página trasladada automáticamente al fusionar la cuenta «$1» con «[[User:$2|$2]]»"
 }
