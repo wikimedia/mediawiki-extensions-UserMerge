@@ -69,7 +69,8 @@ class SpecialUserMerge extends FormSpecialPage {
 
 	/**
 	 * @param string $val user's input for username
-	 * @return bool|string true if valid, a string of the error's message key if validation failed
+	 * @return bool|string|string[] true if valid, a string or string[] of the error's message key
+	 *   if validation failed
 	 */
 	public function validateOldUser( $val ) {
 		global $wgUserMergeProtectedGroups;
