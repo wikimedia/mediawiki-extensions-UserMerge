@@ -9,7 +9,8 @@
 			"Mjbmr",
 			"Reza1615",
 			"ZxxZxxZ",
-			"Alirezaaa"
+			"Alirezaaa",
+			"Ladsgroup"
 		]
 	},
 	"usermerge": "ادغام و حذف‌کردن کاربران",
@@ -25,10 +26,10 @@
 	"usermerge-deleteolduser": "پاک‌کردن کاربر قدیمی",
 	"usermerge-submit": "یکی کردن کاربر",
 	"usermerge-badtoken": "نشانهٔ ویرایش نامعتبر.",
-	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) پاک شد.",
-	"usermerge-userdeleted-log": "کاربر حذف شده: $2 ($3)",
-	"usermerge-success": "یکی‌کردن از {{GENDER:$1|$1}} ($2) به {{GENDER:$3|$3}} ($4) کامل شد.",
-	"usermerge-success-log": "کاربر {{GENDER:$2|$2}} ($3) با {{GENDER:$4|$4}} ($5) یکی شد",
+	"usermerge-userdeleted": "$1 ($2) پاک شد.",
+	"usermerge-userdeleted-log": "کاربر «$2» حذف شد ($3)",
+	"usermerge-success": "یکی‌کردن از $1 ($2) به $3 ($4) کامل شد.",
+	"usermerge-success-log": "کاربر «$2» ($3) با «[[User:$4|$4]]» ($5) یکی شد",
 	"usermerge-logpage": "سیاههٔ ادغام کاربر",
 	"usermerge-logpagetext": "این سیاهه‌ی ادغام فعالیت‌های کاربر است.",
 	"usermerge-noselfdelete": "شما نمی‌توانید {{GENDER:$1|خودتان}} را یکی یا حذف کنید!",
@@ -37,5 +38,5 @@
 	"action-usermerge": "ادغام کاربران",
 	"usermerge-autopagedelete": "حذف به طور خودکار هنگام ادغام کاربران",
 	"usermerge-page-unmoved": "امکان انتقال صفحهٔ $1 به $2 وجود ندارد.",
-	"usermerge-move-log": "انتقال خودکار صفحه هنگام ادغام کاربر «[[User:$1|$1]]» به «[[User:$2|{{GENDER:$2|$2}}]]»"
+	"usermerge-move-log": "انتقال خودکار صفحه هنگام ادغام کاربر «$1» به «[[User:$2|$2]]»"
 }
