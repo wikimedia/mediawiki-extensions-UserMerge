@@ -16,6 +16,9 @@
 	"AvailableRights": [
 		"usermerge"
 	],
+	"APIModules": {
+		"usermerge": "ApiUserMerge"
+	},
 	"SpecialPages": {
 		"UserMerge": "SpecialUserMerge"
 	},
