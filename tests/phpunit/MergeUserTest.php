@@ -16,6 +16,7 @@ class MergeUserTest extends MediaWikiTestCase {
 		}
 		$user->setName( $name );
 		$user->addToDatabase();
+		SiteStatsUpdate::factory( [ 'users' => 1 ] )->doUpdate();
 		return $user;
 	}
 
