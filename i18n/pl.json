@@ -34,7 +34,7 @@
 	"usermerge-protectedgroup": "Nie można zintegrować {{GENDER:$1|użytkownika|użytkowniczki}} – jest członkiem zabezpieczonej grupy.",
 	"right-usermerge": "Łączenie kont użytkowników",
 	"action-usermerge": "łączenie kont użytkowników",
-	"usermerge-autopagedelete": "Automatycznie usuwane podczas scalania użytkowników",
+	"usermerge-autopagedelete": "Automatycznie usuwane strony podczas scalania użytkowników",
 	"usermerge-page-unmoved": "Strona $1 nie mogła zostać przeniesiona pod nazwę $2.",
 	"usermerge-move-log": "Automatyczne przeniesiono stronę po zmianie nazwy konta z \"[[User:$1|$1]]\" na \"[[User:$2|$2]]\""
 }
