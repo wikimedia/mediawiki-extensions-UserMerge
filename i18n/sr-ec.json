@@ -30,7 +30,7 @@
 	"usermerge-noselfdelete": "Не можете избрисати или објединити {{GENDER:$1|сами себе}}!",
 	"usermerge-protectedgroup": "Не могу да објединим налоге {{GENDER:$1|корисника|кориснице}} јер је у заштићеној групи.",
 	"right-usermerge": "обједињавање налога",
-	"action-usermerge": "обједињавање налога",
+	"action-usermerge": "спајате кориснике",
 	"usermerge-autopagedelete": "Аутоматски се брише при обједињавању налога.",
 	"usermerge-page-unmoved": "Не могу да преместим страницу $1 у $2.",
 	"usermerge-move-log": "Аутоматски премештено при обједињавању налога „[[User:$1|$1]]“ и „[[User:$2|$2]]“."
