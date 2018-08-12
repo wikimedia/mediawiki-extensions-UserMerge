@@ -20,7 +20,7 @@
 	"usermerge-newuser": "Нови налог:",
 	"usermerge-deleteolduser": "Избриши стари налог",
 	"usermerge-submit": "Обједини налоге",
-	"usermerge-badtoken": "Неисправан токен измене.",
+	"usermerge-badtoken": "Неважећи жетон измене.",
 	"usermerge-userdeleted": "$1 ($2) је {{GENDER:$1|избрисан|избрисана}}.",
 	"usermerge-userdeleted-log": "избрисан кориснички налог: „$2“ ($3)",
 	"usermerge-success": "Обједињавање корисника {{GENDER:$1|$1}} ($2) и {{GENDER:$3|$3}} ($4) је завршено.",
