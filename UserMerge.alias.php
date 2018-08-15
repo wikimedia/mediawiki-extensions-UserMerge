@@ -238,6 +238,16 @@ $specialPageAliases['sk'] = [
 	'UserMerge' => [ 'ZlúčeniePoužívateľov' ],
 ];
 
+/** Serbian (Cyrillic script) (српски (ћирилица)‎) */
+$specialPageAliases['sr-ec'] = [
+	'UserMerge' => [ 'СпајањеКорисника', 'Спајање_корисника' ],
+];
+
+/** Serbian (Latin script) (srpski (latinica)‎) */
+$specialPageAliases['sr-el'] = [
+	'UserMerge' => [ 'SpajanjeKorisnika', 'Spajanje_korisnika' ],
+];
+
 /** Telugu (తెలుగు) */
 $specialPageAliases['te'] = [
 	'UserMerge' => [ 'సభ్యునివిలీనం' ],
