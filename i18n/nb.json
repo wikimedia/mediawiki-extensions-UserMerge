@@ -18,7 +18,7 @@
 	"usermerge-newuser": "Nytt brukernavn (slå sammen til):",
 	"usermerge-deleteolduser": "Slett gammel bruker",
 	"usermerge-submit": "Slå sammen brukere",
-	"usermerge-badtoken": "Ugyldig redigeringstegn",
+	"usermerge-badtoken": "Ugyldig redigeringsnøkkel.",
 	"usermerge-userdeleted": "$1 ($2) har blitt slettet.",
 	"usermerge-userdeleted-log": "slettet brukerkontoen «$2» ($3)",
 	"usermerge-success": "Sammenslåing fra $1 ($2) til $3 ($4) er fullført.",
@@ -30,6 +30,6 @@
 	"right-usermerge": "Slå sammen kontoer",
 	"action-usermerge": "slå sammen brukere",
 	"usermerge-autopagedelete": "Siden ble automatisk slettet ved kontosammenslåing",
-	"usermerge-page-unmoved": "Side $1 kunne ikke flyttes til $2.",
+	"usermerge-page-unmoved": "Siden $1 kunne ikke flyttes til $2.",
 	"usermerge-move-log": "Flyttet siden automatisk i forbindelse med sammenslåing av kontoen «$1» til «[[User:$2|$2]]»"
 }
