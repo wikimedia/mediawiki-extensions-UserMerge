@@ -35,7 +35,7 @@
 	"usermerge-logpage": "Registro de fusão de usuários",
 	"usermerge-logpagetext": "Este é um registro de ações de fusão de utilizadores.",
 	"usermerge-noselfdelete": "Não pode apagar ou fundir a sua {{GENDER:$1|própria}} conta!",
-	"usermerge-protectedgroup": "Não é possível fundir a conta {{GENDER:$1|deste usuário|desta usuária}}: {{GENDER:$1|o utilizador|a utilizadora}} está num grupo protegido.",
+	"usermerge-protectedgroup": "Não é possível fundir a conta {{GENDER:$1|deste usuário|desta usuária}}: {{GENDER:$1|o usuário|a usuária}} está num grupo protegido.",
 	"right-usermerge": "Fundir usuários",
 	"action-usermerge": "fundir usuários",
 	"usermerge-autopagedelete": "Página eliminada automaticamente ao fundir usuários",
