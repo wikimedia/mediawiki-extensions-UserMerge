@@ -44,10 +44,10 @@
 		"UserMergeAlias": "UserMerge.alias.php"
 	},
 	"AutoloadClasses": {
-		"SpecialUserMerge": "SpecialUserMerge.php",
-		"MergeUser": "MergeUser.php",
-		"IUserMergeLogger": "IUserMergeLogger.php",
-		"UserMergeLogger": "UserMergeLogger.php"
+		"SpecialUserMerge": "includes/SpecialUserMerge.php",
+		"MergeUser": "includes/MergeUser.php",
+		"IUserMergeLogger": "includes/IUserMergeLogger.php",
+		"UserMergeLogger": "includes/UserMergeLogger.php"
 	},
 	"config": {
 		"UserMergeEnableDelete": true,

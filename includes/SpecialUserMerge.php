@@ -170,10 +170,16 @@ class SpecialUserMerge extends FormSpecialPage {
 		return Status::newGood();
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function getDisplayFormat() {
 		return 'ooui';
 	}
 
+	/**
+	 * @inheritDoc
+	 */
 	protected function getGroupName() {
 		return 'users';
 	}

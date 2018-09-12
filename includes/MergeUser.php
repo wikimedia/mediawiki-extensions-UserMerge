@@ -100,6 +100,12 @@ class MergeUser {
 		$dbw->endAtomic( __METHOD__ );
 	}
 
+	/**
+	 * @param IDatabase $dbw
+	 * @return void
+	 * @suppress PhanTypeMismatchArgument Phan thinks that $newBlock and $oldBlock are both null when
+	 *   Block::newFromRow is called, although the previous if/elseif returns if any of them is null.
+	 */
 	private function mergeBlocks( IDatabase $dbw ) {
 		$dbw->startAtomic( __METHOD__ );
 
@@ -112,8 +118,8 @@ class MergeUser {
 			]
 		);
 
-		$newBlock = false;
-		$oldBlock = false;
+		$newBlock = null;
+		$oldBlock = null;
 		foreach ( $rows as $row ) {
 			if ( (int)$row->ipb_user === $this->oldUser->getId() ) {
 				$oldBlock = $row;
@@ -142,7 +148,7 @@ class MergeUser {
 			return;
 		}
 
-		// Okay, lets pick the "strongest" block, and re-apply it to
+		// Okay, let's pick the "strongest" block, and re-apply it to
 		// the new user.
 		$oldBlockObj = Block::newFromRow( $oldBlock );
 		$newBlockObj = Block::newFromRow( $newBlock );
@@ -462,6 +468,7 @@ class MergeUser {
 	 * Deletes the old user page when the target user page exists
 	 *
 	 * @todo This code is a duplicate of Renameuser and GlobalRename
+	 * @suppress PhanParamTooMany Several calls to $message, which is a variadic closure
 	 *
 	 * @param User $performer
 	 * @param callable $msg Function that returns a Message object
