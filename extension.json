@@ -28,12 +28,14 @@
 	"LogHeaders": {
 		"usermerge": "usermerge-logpagetext"
 	},
-	"LogActions": {
-		"usermerge/mergeuser": "usermerge-success-log",
-		"usermerge/deleteuser": "usermerge-userdeleted-log"
+	"ActionFilteredLogs": {
+		"usermerge": {
+			"mergeuser": [ "mergeuser" ],
+			"deleteuser": [ "deleteuser" ]
+		}
 	},
 	"LogActionsHandlers": {
-		"usermerge/*": "WikitextLogFormatter"
+		"usermerge/*": "UserMergeLogFormatter"
 	},
 	"MessagesDirs": {
 		"UserMerge": [
@@ -47,7 +49,8 @@
 		"SpecialUserMerge": "includes/SpecialUserMerge.php",
 		"MergeUser": "includes/MergeUser.php",
 		"IUserMergeLogger": "includes/IUserMergeLogger.php",
-		"UserMergeLogger": "includes/UserMergeLogger.php"
+		"UserMergeLogger": "includes/UserMergeLogger.php",
+		"UserMergeLogFormatter": "includes/UserMergeLogFormatter.php"
 	},
 	"config": {
 		"UserMergeEnableDelete": true,
