@@ -26,9 +26,7 @@
 	"usermerge-submit": "Used in {{msg-mw|Usermerge-nonewuser}}.\n{{Identical|Merge user}}",
 	"usermerge-badtoken": "Used as error message if the Edit Token is invalid.",
 	"usermerge-userdeleted": "Status message. Parameters:\n* $1 is the name of a user that was deleted (not linked).\n* $2 is the ID of a user that was deleted.",
-	"usermerge-userdeleted-log": "Parameters:\n* $2 is a user name (not linked) of the deleted user\n* $3 is a user ID of the deleted user",
 	"usermerge-success": "Status message. Parameters:\n* $1 is a user name (not linked) that is merged into another user\n* $2 is a user ID of the source user\n* $3 is a user name (not linked) that the other user is merged into; can be used for GENDER\n* $4 is a user ID of the target user",
-	"usermerge-success-log": "Parameters:\n* $1 - (Unused)\n* $2 - a user name (not linked) that is merged into another user\n* $3 - a user ID of the source user\n* $4 - a user name (not linked) that the other user is merged into; can be used for GENDER\n* $5 - a user ID of the target user",
 	"usermerge-logpage": "{{doc-logpage}}",
 	"usermerge-logpagetext": "Used as heading in [[Special:Log/usermerge]].",
 	"usermerge-noselfdelete": "Used as error message when merging users. Parameters:\n* $1 - the current user's name, for GENDER",
@@ -37,5 +35,10 @@
 	"action-usermerge": "{{doc-action|usermerge}}\n{{Identical|Merge user}}",
 	"usermerge-autopagedelete": "Used as reason for deleting page.",
 	"usermerge-page-unmoved": "Used as failure message when moving a page. Parameters:\n* $1 - old page title (with link)\n* $2 - new page title (with link)\nSee also:\n* {{msg-mw|Usermerge-page-moved}}",
-	"usermerge-move-log": "Parameters:\n* $1 - old username\n* $2 - new username"
+	"usermerge-move-log": "Parameters:\n* $1 - old username\n* $2 - new username",
+	"logentry-usermerge-mergeuser": "Message template for Special:Log when a user was merged into another one. Parameters:\n* $1 - The performer of the merge as a user link with actions (talk, contribs, block)\n* $2 - The username of the performer as a plain string.\n* $3 - (unused)\n* $4 - The username of the merged user as a plain string.\n* $5 - The user id of the merged user.\n* $6 - The username of the target user as a user page link.\n* $7 - The user id of the target user.\n* $8 - The username of the target user as a plain string.",
+	"logentry-usermerge-deleteuser": "Message template for Special:Log when a user was deleted. Parameters:\n* $1 - The performer of the deletion as a user link with actions (talk, contribs, block)\n* $2 - The username of the performer as a plain string.\n* $3 - (unused)\n* $4 - The username of the deleted user as a plain string.\n* $5 - The user id of the deleted user.",
+	"log-action-filter-usermerge": "{{doc-log-action-filter-type|usermerge}}\n{{Related|Log-action-filter}}",
+	"log-action-filter-usermerge-mergeuser": "{{doc-log-action-filter-action|usermerge|mergeuser}}",
+	"log-action-filter-usermerge-deleteuser": "{{doc-log-action-filter-action|usermerge|deleteuser}}"
 }
