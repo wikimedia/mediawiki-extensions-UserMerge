@@ -509,9 +509,11 @@ class MergeUser {
 
 			if ( $this->newUser->getName() === 'Anonymous' ) { # delete ALL old pages
 				if ( $oldPage->exists() ) {
+					$error = '';
 					$oldPageArticle = new Article( $oldPage, 0 );
 					$oldPageArticle->doDeleteArticle(
-						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text()
+						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
+						false, null, null, $error, true
 					);
 				}
 			} elseif ( $newPage->exists()
@@ -519,17 +521,21 @@ class MergeUser {
 				&& $newPage->getLength() > 0
 			) {
 				# delete old pages that can't be moved
+				$error = '';
 				$oldPageArticle = new Article( $oldPage, 0 );
 				$oldPageArticle->doDeleteArticle(
-					$message( 'usermerge-autopagedelete' )->inContentLanguage()->text()
+					$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
+					false, null, null, $error, true
 				);
 
 			} else { # move content to new page
 				# delete target page if it exists and is blank
 				if ( $newPage->exists() ) {
+					$error = '';
 					$newPageArticle = new Article( $newPage, 0 );
 					$newPageArticle->doDeleteArticle(
-						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text()
+						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
+						false, null, null, $error, true
 					);
 				}
 
@@ -554,9 +560,11 @@ class MergeUser {
 				);
 				if ( !$dbr->numRows( $res ) ) {
 					# nothing links here, so delete unmoved page/redirect
+					$error = '';
 					$oldPageArticle = new Article( $oldPage, 0 );
 					$oldPageArticle->doDeleteArticle(
-						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text()
+						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
+						false, null, null, $error, true
 					);
 				}
 			}
