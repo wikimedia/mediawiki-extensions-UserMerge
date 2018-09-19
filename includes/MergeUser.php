@@ -201,6 +201,36 @@ class MergeUser {
 		return $b2;
 	}
 
+	private function stageNeedsUser( $stage ) {
+		if ( !defined( 'MIGRATION_NEW' ) ) {
+			return true;
+		}
+		if ( !class_exists( ActorMigration::class ) ) {
+			return false;
+		}
+
+		if ( defined( 'ActorMigration::MIGRATION_STAGE_SCHEMA_COMPAT' ) ) {
+			return (bool)( $stage & SCHEMA_COMPAT_WRITE_OLD );
+		} else {
+			return $stage < MIGRATION_NEW;
+		}
+	}
+
+	private function stageNeedsActor( $stage ) {
+		if ( !defined( 'MIGRATION_NEW' ) ) {
+			return false;
+		}
+		if ( !class_exists( ActorMigration::class ) ) {
+			return true;
+		}
+
+		if ( defined( 'ActorMigration::MIGRATION_STAGE_SCHEMA_COMPAT' ) ) {
+			return (bool)( $stage & SCHEMA_COMPAT_WRITE_NEW );
+		} else {
+			return $stage > MIGRATION_OLD;
+		}
+	}
+
 	/**
 	 * Function to merge database references from one user to another user
 	 *
@@ -212,19 +242,6 @@ class MergeUser {
 	private function mergeDatabaseTables( $fnameTrxOwner ) {
 		global $wgActorTableSchemaMigrationStage;
 
-		if ( defined( 'MIGRATION_NEW' ) ) {
-			$stage = isset( $wgActorTableSchemaMigrationStage )
-				? $wgActorTableSchemaMigrationStage
-				: ( is_callable( 'User', 'getActorId' ) ? MIGRATION_NEW : MIGRATION_OLD );
-			$needActors = $stage > MIGRATION_OLD;
-			// We still update user fields for MIGRATION_WRITE_NEW because
-			// reads might still be falling back.
-			$needUsers = $stage < MIGRATION_NEW;
-		} else {
-			$needActors = false;
-			$needUsers = true;
-		}
-
 		// Fields to update with the format:
 		// [
 		// tableName, idField, textField,
@@ -233,23 +250,32 @@ class MergeUser {
 		// ];
 		// textField, batchKey, db, and options are optional
 		$updateFields = [
-			[ 'archive', 'ar_user', 'ar_user_text', 'batchKey' => 'ar_id', 'actorId' => 'ar_actor' ],
-			[ 'revision', 'rev_user', 'rev_user_text', 'batchKey' => 'rev_id', 'actorId' => '' ],
-			[ 'filearchive', 'fa_user', 'fa_user_text', 'batchKey' => 'fa_id', 'actorId' => 'fa_actor' ],
-			[ 'image', 'img_user', 'img_user_text', 'batchKey' => 'img_name', 'actorId' => 'img_actor' ],
+			[ 'archive', 'ar_user', 'ar_user_text', 'batchKey' => 'ar_id', 'actorId' => 'ar_actor',
+				'actorStage' => $wgActorTableSchemaMigrationStage ],
+			[ 'revision', 'rev_user', 'rev_user_text', 'batchKey' => 'rev_id', 'actorId' => '',
+				'actorStage' => $wgActorTableSchemaMigrationStage ],
+			[ 'filearchive', 'fa_user', 'fa_user_text', 'batchKey' => 'fa_id', 'actorId' => 'fa_actor',
+				'actorStage' => $wgActorTableSchemaMigrationStage ],
+			[ 'image', 'img_user', 'img_user_text', 'batchKey' => 'img_name', 'actorId' => 'img_actor',
+				'actorStage' => $wgActorTableSchemaMigrationStage ],
 			[ 'oldimage', 'oi_user', 'oi_user_text', 'batchKey' => 'oi_archive_name',
-				'actorId' => 'oi_actor' ],
-			[ 'recentchanges', 'rc_user', 'rc_user_text', 'batchKey' => 'rc_id', 'actorId' => 'rc_actor' ],
-			[ 'logging', 'log_user', 'log_user_text', 'batchKey' => 'log_id', 'actorId' => 'log_actor' ],
-			[ 'ipblocks', 'ipb_by', 'ipb_by_text', 'batchKey' => 'ipb_id', 'actorId' => 'ipb_by_actor' ],
+				'actorId' => 'oi_actor', 'actorStage' => $wgActorTableSchemaMigrationStage ],
+			[ 'recentchanges', 'rc_user', 'rc_user_text', 'batchKey' => 'rc_id', 'actorId' => 'rc_actor',
+				'actorStage' => $wgActorTableSchemaMigrationStage ],
+			[ 'logging', 'log_user', 'log_user_text', 'batchKey' => 'log_id', 'actorId' => 'log_actor',
+				'actorStage' => $wgActorTableSchemaMigrationStage ],
+			[ 'ipblocks', 'ipb_by', 'ipb_by_text', 'batchKey' => 'ipb_id', 'actorId' => 'ipb_by_actor',
+				'actorStage' => $wgActorTableSchemaMigrationStage ],
 			[ 'watchlist', 'wl_user', 'batchKey' => 'wl_title' ],
 			[ 'user_groups', 'ug_user', 'options' => [ 'IGNORE' ] ],
 			[ 'user_properties', 'up_user', 'options' => [ 'IGNORE' ] ],
 			[ 'user_former_groups', 'ufg_user', 'options' => [ 'IGNORE' ] ],
 		];
-		if ( $needActors ) {
-			$updateFields[] =
-				[ 'revision_actor_temp', 'batchKey' => 'revactor_rev', 'actorId' => 'revactor_actor' ];
+		if ( $this->stageNeedsActor( $wgActorTableSchemaMigrationStage ) ) {
+			$updateFields[] = [
+				'revision_actor_temp', 'batchKey' => 'revactor_rev', 'actorId' => 'revactor_actor',
+				'actorStage' => $wgActorTableSchemaMigrationStage
+			];
 		}
 
 		Hooks::run( 'UserMergeAccountFields', [ &$updateFields ] );
@@ -281,10 +307,10 @@ class MergeUser {
 			$keyField = isset( $fieldInfo['batchKey'] ) ? $fieldInfo['batchKey'] : null;
 			unset( $fieldInfo['batchKey'] );
 
-			if ( isset( $fieldInfo['actorId'] ) && !$needUsers ) {
+			if ( isset( $fieldInfo['actorId'] ) && !$this->stageNeedsUser( $fieldInfo['actorStage'] ) ) {
 				continue;
 			}
-			unset( $fieldInfo['actorId'] );
+			unset( $fieldInfo['actorId'], $fieldInfo['actorStage'] );
 
 			if ( $db->trxLevel() || $keyField === null ) {
 				// Can't batch/wait when in a transaction or when no batch key is given
@@ -331,12 +357,14 @@ class MergeUser {
 			}
 		}
 
-		if ( $needActors && $this->oldUser->getActorId() ) {
+		if ( $this->stageNeedsActor( $wgActorTableSchemaMigrationStage ) &&
+			$this->oldUser->getActorId()
+		) {
 			$oldActorId = $this->oldUser->getActorId();
 			$newActorId = $this->newUser->getActorId( $db );
 
 			foreach ( $updateFields as $fieldInfo ) {
-				if ( empty( $fieldInfo['actorId'] ) ) {
+				if ( empty( $fieldInfo['actorId'] ) || !$this->stageNeedsActor( $fieldInfo['actorStage'] ) ) {
 					continue;
 				}
 
