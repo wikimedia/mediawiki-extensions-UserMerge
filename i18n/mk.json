@@ -18,17 +18,17 @@
 	"usermerge-deleteolduser": "Избриши стар корисник",
 	"usermerge-submit": "Спој го корисникот",
 	"usermerge-badtoken": "Погрешна шифра за уредување",
-	"usermerge-userdeleted": "$1 ($2) е {{GENDER:$1|избришан|избришана}}",
-	"usermerge-userdeleted-log": "Избришан корисник: $2 ($3)",
-	"usermerge-success": "Спојувањето на {{GENDER:$1|$1}} ($2) со {{GENDER:$3|$3}} ($4) е готово.",
-	"usermerge-success-log": "Корисникот {{GENDER:$2|$2}} ($3) е споен со {{GENDER:$4|$4}} ($5)",
+	"usermerge-userdeleted": "$1 ($2) е избришан.",
+	"usermerge-userdeleted-log": "избришана корисничката сметка: „$2“ ($3)",
+	"usermerge-success": "Спојувањето на $1 ($2) во $3 ($4) е готово.",
+	"usermerge-success-log": "споена сметката „$2“ ($3) во „[[User:$4|$4]]“ ($5)",
 	"usermerge-logpage": "Дневник на спојувања на кориснички сметки",
 	"usermerge-logpagetext": "Ова е дневник на спојувања на кориснички имиња.",
 	"usermerge-noselfdelete": "Не можете да се избришете или споите {{GENDER:$1|самите себеси}}!",
 	"usermerge-protectedgroup": "Не можам да ги спојам {{GENDER:$1|корисниците}}: корисникот е во заштитена група.",
 	"right-usermerge": "Спојување на корисници",
 	"action-usermerge": "спојување на корисници",
-	"usermerge-autopagedelete": "Се брише автоматски, при спојување на корисници",
+	"usermerge-autopagedelete": "Автоматски избришана страница при спојување на корисници",
 	"usermerge-page-unmoved": "Не моежев да ја преместам страницата $1 на $2.",
-	"usermerge-move-log": "Автоматско преместување на страница при припојувањето на корисникот „[[User:$1|$1]]“ кон „[[User:$2|{{GENDER:$2|$2}}]]“"
+	"usermerge-move-log": "Автоматски преместена страница при спојувањето на сметката „$1“ во „[[User:$2|$2]]“"
 }
