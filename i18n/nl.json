@@ -24,10 +24,10 @@
 	"usermerge-deleteolduser": "Oude gebruiker verwijderen",
 	"usermerge-submit": "Gebruiker samenvoegen",
 	"usermerge-badtoken": "Ongeldig bewerkingstoken",
-	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) is verwijderd.",
-	"usermerge-userdeleted-log": "Verwijderde gebruiker: $2 ($3)",
-	"usermerge-success": "Samenvoegen van {{GENDER:$1|$1}} ($2) naar {{GENDER:$3|$3}} ($4) is afgerond.",
-	"usermerge-success-log": "Gebruiker {{GENDER:$2|$2}} ($3) samengevoegd naar {{GENDER:$4|$4}} ($5)",
+	"usermerge-userdeleted": "$1 ($2) is verwijderd.",
+	"usermerge-userdeleted-log": "verwijderde de gebruiker: \"$2\" ($3)",
+	"usermerge-success": "Samenvoegen van $1 ($2) naar $3 ($4) is afgerond.",
+	"usermerge-success-log": "heeft \"$2\" ($3) samengevoegd naar \"[[User:$4|$4]]\" ($5)",
 	"usermerge-logpage": "Logboek gebruikerssamenvoegingen",
 	"usermerge-logpagetext": "Dit is het logboek van gebruikerssamenvoegingen.",
 	"usermerge-noselfdelete": "U kunt niet verwijderen of samenvoegen van {{GENDER:$1|uzelf}}!",
@@ -36,5 +36,5 @@
 	"action-usermerge": "gebruikers samen te voegen",
 	"usermerge-autopagedelete": "Automatisch verwijderd bij het samenvoegen van gebruikers",
 	"usermerge-page-unmoved": "De pagina $1 kon niet hernoemd worden naar $2.",
-	"usermerge-move-log": "Pagina automatisch hernoemd bij het samenvoegen van gebruiker \"[[User:$1|$1]]\" naar \"[[User:$2|{{GENDER:$2|$2}}]]\""
+	"usermerge-move-log": "Pagina automatisch hernoemd bij het samenvoegen van gebruiker \"$1\" naar \"[[User:$2|$2]]\""
 }
