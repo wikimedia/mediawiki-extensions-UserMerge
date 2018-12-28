@@ -5,40 +5,38 @@ class UserMergeLogger implements IUserMergeLogger {
 	/**
 	 * Adds a merge log entry
 	 *
-	 * @todo Stop using this deprecated format
 	 * @param User $performer
 	 * @param User $oldUser
 	 * @param User $newUser
 	 */
 	public function addMergeEntry( User $performer, User $oldUser, User $newUser ) {
-		$log = new LogPage( 'usermerge' );
-		$log->addEntry(
-			'mergeuser',
-			$performer->getUserPage(),
-			'',
-			[
-				$oldUser->getName(), $oldUser->getId(),
-				$newUser->getName(), $newUser->getId()
-			],
-			$performer
-		);
+		$logEntry = new ManualLogEntry( 'usermerge', 'mergeuser' );
+		$logEntry->setPerformer( $performer );
+		$logEntry->setTarget( $newUser->getUserPage() );
+		$logEntry->setParameters( [
+			'oldName' => $oldUser->getName(),
+			'oldId' => $oldUser->getId(),
+			'newName' => $newUser->getName(),
+			'newId' => $newUser->getId(),
+		] );
+		$logEntry->setRelations( [ 'oldname' => $oldUser->getName() ] );
+		$logEntry->insert();
 	}
 
 	/**
 	 * Adds a user deletion log entry
 	 *
-	 * @todo Stop using this deprecated format
-	 * @param User $perfomer
+	 * @param User $performer
 	 * @param User $oldUser
 	 */
-	public function addDeleteEntry( User $perfomer, User $oldUser ) {
-		$log = new LogPage( 'usermerge' );
-		$log->addEntry(
-			'deleteuser',
-			$perfomer->getUserPage(),
-			'',
-			[ $oldUser->getName(), $oldUser->getId() ],
-			$perfomer
-		);
+	public function addDeleteEntry( User $performer, User $oldUser ) {
+		$logEntry = new ManualLogEntry( 'usermerge', 'deleteuser' );
+		$logEntry->setPerformer( $performer );
+		$logEntry->setTarget( $oldUser->getUserPage() );
+		$logEntry->setParameters( [
+			'oldName' => $oldUser->getName(),
+			'oldId' => $oldUser->getId(),
+		] );
+		$logEntry->insert();
 	}
 }
