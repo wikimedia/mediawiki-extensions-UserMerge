@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"David1010",
-			"Otogi"
+			"Otogi",
+			"Mehman97"
 		]
 	},
 	"usermerge-badolduser": "არასწორი ძველი მომხმარებლის სახელი",
@@ -14,7 +15,7 @@
 	"usermerge-deleteolduser": "ძველი მომხმარებლის წაშლა",
 	"usermerge-submit": "მომხმარებლების გაერთიანება",
 	"usermerge-userdeleted": "მომხმარებელი {{GENDER:$1|$1}} ($2) წაიშალა.",
-	"usermerge-userdeleted-log": "წაშლილი მომხმარებელი: $2 ($3)",
 	"usermerge-logpage": "მომხმარებელთა შერწყმის ჟურნალი",
-	"right-usermerge": "მომხმარებლების გაერთიანება"
+	"right-usermerge": "მომხმარებლების გაერთიანება",
+	"log-action-filter-usermerge-deleteuser": "მომხმარებლის ანგარიშის წაშლა"
 }

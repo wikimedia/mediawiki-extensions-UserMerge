@@ -23,9 +23,7 @@
 	"usermerge-submit": "Обједини налоге",
 	"usermerge-badtoken": "Неважећи токен измене.",
 	"usermerge-userdeleted": "$1 ($2) је {{GENDER:$1|избрисан|избрисана}}.",
-	"usermerge-userdeleted-log": "избрисан кориснички налог: „$2“ ($3)",
 	"usermerge-success": "Обједињавање корисника $1 ($2) и $3 ($4) је завршено.",
-	"usermerge-success-log": "Налози корисника $2 ($3) и \"[[User:$4|$4]]\" ($5) су обједињени.",
 	"usermerge-logpage": "Дневник обједињавања налога",
 	"usermerge-logpagetext": "Ово је дневник радња обједињавања налога.",
 	"usermerge-noselfdelete": "Не можете избрисати или објединити {{GENDER:$1|сами себе}}!",
@@ -34,5 +32,10 @@
 	"action-usermerge": "обједињавање налога",
 	"usermerge-autopagedelete": "Аутоматски се брише при обједињавању налога.",
 	"usermerge-page-unmoved": "Не могу да преместим страницу $1 у $2.",
-	"usermerge-move-log": "Аутоматски премештено при обједињавању налога „$1“ и „[[User:$2|$2]]“."
+	"usermerge-move-log": "Аутоматски премештено при обједињавању налога „$1“ и „[[User:$2|$2]]“.",
+	"logentry-usermerge-mergeuser": "$1 је {{GENDER:$2|објединио|објединила}} кориснички налог „$4” ($5) у {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 је {{GENDER:$2|избрисао|избрисала}} кориснички налог „$4” ($5)",
+	"log-action-filter-usermerge": "Тип радње:",
+	"log-action-filter-usermerge-mergeuser": "Обједињавање корисничког налога",
+	"log-action-filter-usermerge-deleteuser": "Брисање корисничког налога"
 }

@@ -17,9 +17,7 @@
 	"usermerge-submit": "Fusionar usator",
 	"usermerge-badtoken": "Indicio de modification invalide",
 	"usermerge-userdeleted": "{{GENDER:$1|$1}} ($2) ha essite delite.",
-	"usermerge-userdeleted-log": "Usator delite: $2 ($3)",
 	"usermerge-success": "Le fusion de {{GENDER:$1|$1}} ($2) in {{GENDER:$3|$3}} ($4) ha succedite.",
-	"usermerge-success-log": "Le usator {{GENDER:$2|$2}} ($3) ha essite fusionate in {{GENDER:$4|$4}} ($5)",
 	"usermerge-logpage": "Registro de fusiones de usatores",
 	"usermerge-logpagetext": "Isto es un registro de actiones de fusion de usatores.",
 	"usermerge-noselfdelete": "Tu non pote deler o fusionar ab {{GENDER:$1|te mesme}}!",
@@ -27,5 +25,10 @@
 	"right-usermerge": "Fusionar usatores",
 	"usermerge-autopagedelete": "Automaticamente delite durante le fusion de usatores",
 	"usermerge-page-unmoved": "Le pagina $1 non poteva esser renominate a $2.",
-	"usermerge-move-log": "Le pagina ha essite automaticamente renominate durante le fusion del usator \"[[User:$1|$1]]\" in \"[[User:$2|{{GENDER:$2|$2}}]]\""
+	"usermerge-move-log": "Le pagina ha essite automaticamente renominate durante le fusion del usator \"[[User:$1|$1]]\" in \"[[User:$2|{{GENDER:$2|$2}}]]\"",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|fusionava}} le conto de usator \"$4\" ($5) in {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|deleva}} le conto de usator \"$4\" ($5)",
+	"log-action-filter-usermerge": "Typo de action:",
+	"log-action-filter-usermerge-mergeuser": "Fusion de contos de usator",
+	"log-action-filter-usermerge-deleteuser": "Deletion del conto de usator"
 }

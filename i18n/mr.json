@@ -17,8 +17,6 @@
 	"usermerge-submit": "सदस्य एकत्र करा",
 	"usermerge-badtoken": "चुकीचे एडीट टोकन",
 	"usermerge-userdeleted": "$1 ($2) ला वगळण्यात आलेले आहे.",
-	"usermerge-userdeleted-log": "सदस्य वगळला: $2 ($3)",
-	"usermerge-success-log": "सदस्य $2 ($3) ला $4 ($5) मध्ये एकत्र केले",
 	"usermerge-logpage": "सदस्य एकत्रीकरण नोंद",
 	"usermerge-logpagetext": "ही सदस्य एकत्रीकरणाची सूची आहे",
 	"usermerge-noselfdelete": "तुम्ही स्वत:लाच वगळू किंवा एकत्र करू शकत नाही.",

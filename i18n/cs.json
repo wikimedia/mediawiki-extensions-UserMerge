@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Matěj Grabovský",
-			"Mormegil"
+			"Mormegil",
+			"Matěj Suchánek"
 		]
 	},
 	"usermerge": "Slučování a mazání uživatelů",
@@ -18,17 +19,20 @@
 	"usermerge-deleteolduser": "Smazat původního uživatele",
 	"usermerge-submit": "Sloučit uživatele",
 	"usermerge-badtoken": "Neplatný editační token",
-	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|byl smazán|byla smazána}}.",
-	"usermerge-userdeleted-log": "Smazaný uživatel: $2 ($3)",
-	"usermerge-success": "Sloučení z {{GENDER:$1|$1}} ($2) do {{GENDER:$3|$3}} ($4) je dokončeno.",
-	"usermerge-success-log": "{{GENDER:$2|Uživatel|Uživatelka}} $2 ($3) {{GENDER:$2|byl sloučen|byla sloučena}} do {{GENDER:$4|uživatele|uživatelky}} $4 ($5)",
+	"usermerge-userdeleted": "Účet $1 ($2) byl smazán.",
+	"usermerge-success": "Sloučení účtu $1 ($2) do $3 ($4) je dokončeno.",
 	"usermerge-logpage": "Kniha slučování uživatelů",
 	"usermerge-logpagetext": "Toto je záznam slučování uživatelů.",
 	"usermerge-noselfdelete": "{{GENDER:$1|Nemůžete}} smazat nebo sloučit svůj vlastní účet!",
-	"usermerge-protectedgroup": "Nebylo možné sloučit {{GENDER:$1|uvedeného uživatele|uvedenou uživatelku}} – uživatel je v chráněné skupině.",
+	"usermerge-protectedgroup": "Nebylo možné sloučit {{GENDER:$1|uvedeného uživatele|uvedenou uživatelku}} – {{GENDER:$1|uživatel|uživatelka}} je v chráněné skupině.",
 	"right-usermerge": "Slučování uživatelů",
 	"action-usermerge": "slučovat uživatele",
-	"usermerge-autopagedelete": "Automaticky smazáno při sloučení uživatelů",
+	"usermerge-autopagedelete": "Automaticky smazaná stránka při sloučení uživatelů",
 	"usermerge-page-unmoved": "Stránku $1 nebylo možno přesunout na $2.",
-	"usermerge-move-log": "Automaticky přesunuto při sloučení {{GENDER:$1|uživatele|uživatelky}} „[[User:$1|$1]]“ do [[User:$2|$2]]“"
+	"usermerge-move-log": "Automaticky přesunutá stránka při sloučení účtu „$1“ do „[[User:$2|$2]]“",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|sloučil|sloučila}} účet „$4“ ($5) do {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|smazal|smazala}} účet „$4“ ($5)",
+	"log-action-filter-usermerge": "Typ akce:",
+	"log-action-filter-usermerge-mergeuser": "Sloučení uživatelského účtu",
+	"log-action-filter-usermerge-deleteuser": "Smazání uživatelského účtu"
 }

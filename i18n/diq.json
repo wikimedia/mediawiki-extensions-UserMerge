@@ -10,8 +10,10 @@
 	},
 	"usermerge-submit": "Karbera zewkerden",
 	"usermerge-userdeleted": "$1 ($2) besterna.",
-	"usermerge-userdeleted-log": "Karbero ke besteriya: $2 ($3)",
 	"usermerge-logpage": "Qeydê bestnayışê karberi",
 	"right-usermerge": "Karberan zewkerden",
-	"action-usermerge": "Karberan zewkerden"
+	"action-usermerge": "Karberan zewkerden",
+	"log-action-filter-usermerge": "Tipê fealiyeti:",
+	"log-action-filter-usermerge-mergeuser": "Pêrabestışê hesabê karberi",
+	"log-action-filter-usermerge-deleteuser": "Esterıtışê hesabê karberi"
 }

@@ -4,7 +4,8 @@
 			"Amire80",
 			"Rotemliss",
 			"YaronSh",
-			"Guycn2"
+			"Guycn2",
+			"Strayblues"
 		]
 	},
 	"usermerge": "מיזוג ומחיקת משתמשים",
@@ -21,9 +22,7 @@
 	"usermerge-submit": "מיזוג משתמש",
 	"usermerge-badtoken": "אסימון עריכה שגוי.",
 	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|נמחק|נמחקה}}.",
-	"usermerge-userdeleted-log": "מחק את החשבון \"$2\" ($3)",
 	"usermerge-success": "המיזוג של $1‏ ($2) לתוך $3‏ ($4) הושלם.",
-	"usermerge-success-log": "החשבון \"$2\" ($3) מוזג לתוך \"[[User:$4|$4]]\" ($5)",
 	"usermerge-logpage": "יומן מיזוג משתמשים",
 	"usermerge-logpagetext": "זהו יומן של פעולות מיזוג המשתמשים.",
 	"usermerge-noselfdelete": "לא ניתן למחוק או למזג מ{{GENDER:$1|עצמך}}!",
@@ -32,5 +31,7 @@
 	"action-usermerge": "למזג משתמשים",
 	"usermerge-autopagedelete": "הדף נמחק אוטומטית בזמן מיזוג חשבונות",
 	"usermerge-page-unmoved": "לא ניתן להעביר את הדף $1 לשם $2.",
-	"usermerge-move-log": "הדף הועבר אוטומטית בזמן מיזוג חשבון \"$1\" אל \"[[User:$2|$2]]\""
+	"usermerge-move-log": "הדף הועבר אוטומטית בזמן מיזוג חשבון \"$1\" אל \"[[User:$2|$2]]\"",
+	"log-action-filter-usermerge": "סוג הפעולה:",
+	"log-action-filter-usermerge-deleteuser": "מחיקת חשבון משתמש"
 }

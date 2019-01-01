@@ -24,9 +24,7 @@
 	"usermerge-submit": "Benutzerkonten zusammenführen",
 	"usermerge-badtoken": "Ungültiges Bearbeitungstoken",
 	"usermerge-userdeleted": "„$1“ ($2) wurde gelöscht.",
-	"usermerge-userdeleted-log": "hat das Benutzerkonto „$2“ ($3) gelöscht",
 	"usermerge-success": "Die Zusammenführung von „$1“ ($2) nach „$3“ ($4) war erfolgreich.",
-	"usermerge-success-log": "hat das Benutzerkonto „$2“ ($3) in „[[User:$4|$4]]“ ($5) zusammengeführt",
 	"usermerge-logpage": "Benutzerkontenzusammenführungs-Logbuch",
 	"usermerge-logpagetext": "Dies ist das Logbuch der Benutzerkontenzusammenführungen.",
 	"usermerge-noselfdelete": "Die Zusammenführung mit {{GENDER:$1|dem eigenen Benutzerkonto}} ist nicht möglich.",
@@ -35,5 +33,10 @@
 	"action-usermerge": "Benutzer zusammenzuführen",
 	"usermerge-autopagedelete": "Bei der Zusammenführung der Benutzer automatisch gelöschte Seite",
 	"usermerge-page-unmoved": "Die Seite „$1“ konnte nicht nach „$2“ verschoben werden.",
-	"usermerge-move-log": "Die Seite wurde während der Benutzerkontenzusammenführung von „$1“ nach „[[User:$2|$2]]“ automatisch verschoben"
+	"usermerge-move-log": "Die Seite wurde während der Benutzerkontenzusammenführung von „$1“ nach „[[User:$2|$2]]“ automatisch verschoben",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|führte}} das Benutzerkonto „$4“ ($5) in {{GENDER:$8|$6}} zusammen ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|löschte}} das Benutzerkonto „$4“ ($5)",
+	"log-action-filter-usermerge": "Aktionstyp:",
+	"log-action-filter-usermerge-mergeuser": "Benutzerkontenzusammenführung",
+	"log-action-filter-usermerge-deleteuser": "Benutzerkontenlöschung"
 }

@@ -30,9 +30,7 @@
 	"usermerge-submit": "Fundir utilizador",
 	"usermerge-badtoken": "Chave de edição inválida.",
 	"usermerge-userdeleted": "$1 ($2) foi eliminado.",
-	"usermerge-userdeleted-log": "apagou a conta do utilizador \"$2\" ($3)",
 	"usermerge-success": "A fusão de $1 ($2) com $3 ($4) está completa.",
-	"usermerge-success-log": "a conta \"$2\" ($3) foi fundida no utilizador \"[[User:$4|$4]]\" ($5)",
 	"usermerge-logpage": "Registo de fusão de utilizadores",
 	"usermerge-logpagetext": "Este é um registo de ações de fusão de utilizadores.",
 	"usermerge-noselfdelete": "Não pode apagar ou fundir a sua {{GENDER:$1|própria}} conta!",
@@ -41,5 +39,10 @@
 	"action-usermerge": "fundir utilizadores",
 	"usermerge-autopagedelete": "Página eliminada automaticamente ao fundir utilizadores",
 	"usermerge-page-unmoved": "Não foi possível mover a página $1 para $2.",
-	"usermerge-move-log": "Página movida automaticamente ao fundir a conta \"$1\" no utilizador \"[[User:$2|$2]]\""
+	"usermerge-move-log": "Página movida automaticamente ao fundir a conta \"$1\" no utilizador \"[[User:$2|$2]]\"",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|fundiu}} a conta de utilizador \"$4\" ($5) com {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|eliminou}} a conta de utilizador \"$4\" ($5)",
+	"log-action-filter-usermerge": "Tipo de operação:",
+	"log-action-filter-usermerge-mergeuser": "Fusão de conta de utilizador",
+	"log-action-filter-usermerge-deleteuser": "Eliminação de conta de utilizador"
 }

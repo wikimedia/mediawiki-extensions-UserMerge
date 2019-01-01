@@ -4,5 +4,7 @@
 			"Saederup92"
 		]
 	},
-	"usermerge-deleteolduser": "Slet gammel bruger"
+	"usermerge-deleteolduser": "Slet gammel bruger",
+	"log-action-filter-usermerge": "Handlingstype:",
+	"log-action-filter-usermerge-deleteuser": "Sletning af brugerkonto"
 }

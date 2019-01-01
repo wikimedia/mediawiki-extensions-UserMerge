@@ -17,7 +17,6 @@
 	"usermerge-submit": "Fuser usator",
 	"usermerge-badtoken": "Simbol de redaction ínvalid",
 	"usermerge-userdeleted": "$1 ($2) ha esset deletet.",
-	"usermerge-userdeleted-log": "Usator deletet: $2 ($3)",
 	"usermerge-success": "Fuser se de $1 ($2) por $3 ($4) es complet.",
 	"usermerge-logpage": "Diarium de fusion de usator",
 	"usermerge-logpagetext": "Ti es un diarium de actiones de fusion de usator.",

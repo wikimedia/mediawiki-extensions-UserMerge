@@ -21,9 +21,7 @@
 	"usermerge-submit": "사용자 합치기",
 	"usermerge-badtoken": "잘못된 편집 토큰",
 	"usermerge-userdeleted": "$1 ($2)님이 삭제되었습니다.",
-	"usermerge-userdeleted-log": "님이 \"$2\" ($3) 사용자 계정을 삭제했습니다",
 	"usermerge-success": "$1 ($2)님을 $3 ($4)에 합치는 것을 완료했습니다.",
-	"usermerge-success-log": "님이 \"$2\" ($3) 계정을 \"[[User:$4|$4]]\" ($5) 계정으로 합쳤습니다",
 	"usermerge-logpage": "사용자 병합 기록",
 	"usermerge-logpagetext": "사용자 병합 동작의 기록입니다.",
 	"usermerge-noselfdelete": "{{GENDER:$1|자신}}으로부터 삭제나 합치기를 할 수 없습니다!",
@@ -32,5 +30,9 @@
 	"action-usermerge": "사용자 합치기",
 	"usermerge-autopagedelete": "사용자를 합치는 동안 자동으로 문서를 삭제했습니다",
 	"usermerge-page-unmoved": "$1 문서를 $2 문서로 이동하지 못했습니다.",
-	"usermerge-move-log": "\"$1\" 계정을 \"[[User:$2|$2]]\"(으)로 합치면서 문서를 자동으로 이동했습니다"
+	"usermerge-move-log": "\"$1\" 계정을 \"[[User:$2|$2]]\"(으)로 합치면서 문서를 자동으로 이동했습니다",
+	"logentry-usermerge-deleteuser": "$1님이 \"$4\"($5) 사용자 계정을 {{GENDER:$2|삭제했습니다}}",
+	"log-action-filter-usermerge": "조치 유형:",
+	"log-action-filter-usermerge-mergeuser": "사용자 계정 병합",
+	"log-action-filter-usermerge-deleteuser": "사용자 계정 삭제"
 }

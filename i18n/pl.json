@@ -26,9 +26,7 @@
 	"usermerge-submit": "Integruj użytkowników",
 	"usermerge-badtoken": "Nieprawidłowy kod weryfikacyjny (token).",
 	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|został usunięty|została usunięta}}.",
-	"usermerge-userdeleted-log": "usunął użytkownika „$2” ($3)",
 	"usermerge-success": "Integracja {{GENDER:$1|$1}} ($2) z {{GENDER:$3|$3}} ($4) została zakończona.",
-	"usermerge-success-log": "zintegrował użytkownika „$2” ($3) do „$4” ($5)",
 	"usermerge-logpage": "Rejestr integracji użytkowników",
 	"usermerge-logpagetext": "To jest rejestr operacji integracji użytkowników.",
 	"usermerge-noselfdelete": "Nie możesz usunąć lub zintegrować {{GENDER:$1|samego|samej}} siebie!",
@@ -37,5 +35,6 @@
 	"action-usermerge": "łączenie kont użytkowników",
 	"usermerge-autopagedelete": "Automatycznie usuwane strony podczas scalania użytkowników",
 	"usermerge-page-unmoved": "Strona $1 nie mogła zostać przeniesiona pod nazwę $2.",
-	"usermerge-move-log": "Automatyczne przeniesiono stronę po zmianie nazwy konta z \"[[User:$1|$1]]\" na \"[[User:$2|$2]]\""
+	"usermerge-move-log": "Automatyczne przeniesiono stronę po zmianie nazwy konta z \"[[User:$1|$1]]\" na \"[[User:$2|$2]]\"",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|usunął|usunęła}} konto użytkownika „$4” ($5)"
 }

@@ -22,9 +22,7 @@
 	"usermerge-submit": "دمج المستخدم",
 	"usermerge-badtoken": "نص تعديل غير صحيح",
 	"usermerge-userdeleted": "$1 ($2) تم حذفه.",
-	"usermerge-userdeleted-log": "تم حذف حساب المستخدم: $2($3)",
 	"usermerge-success": "الدمج من $1 ($2) إلى $3 ($4) اكتمل.",
-	"usermerge-success-log": "تم دمج المستخدم \"$2\" ($3) إلى \"[[User:$4|$4]]\" ($5)",
 	"usermerge-logpage": "سجل دمج المستخدم",
 	"usermerge-logpagetext": "هذا سجل بأفعال دمج المستخدمين.",
 	"usermerge-noselfdelete": "لا يمكنك حذف أو دمج {{GENDER:$1|نفسك}}!",
@@ -33,5 +31,10 @@
 	"action-usermerge": "دمج المستخدمين",
 	"usermerge-autopagedelete": "تم حذف الصفحة تلقائيا أثناء دمج المستخدمين",
 	"usermerge-page-unmoved": "تعذر نقل الصفحة $1 إلى $2.",
-	"usermerge-move-log": "تم نقل الصفحة تلقائيا عند دمج الحساب \"$1\" إلى \"[[User:$2|$2]]\""
+	"usermerge-move-log": "تم نقل الصفحة تلقائيا عند دمج الحساب \"$1\" إلى \"[[User:$2|$2]]\"",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|دمج|دمجت}} حساب المستخدم \"$4\" ($5) إلى {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|حذف|حذفت}} حساب المستخدم \"$4\" ($5)",
+	"log-action-filter-usermerge": "نوع الفعل:",
+	"log-action-filter-usermerge-mergeuser": "دمج حساب المستخدم",
+	"log-action-filter-usermerge-deleteuser": "حذف حساب المستخدم"
 }
