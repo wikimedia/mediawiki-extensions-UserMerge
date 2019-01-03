@@ -27,5 +27,10 @@
 	"action-usermerge": "scuagghie le utinde",
 	"usermerge-autopagedelete": "Automaticamende pàgene scangellate quanne onne state scuagghiate le utinde",
 	"usermerge-page-unmoved": "'A pàgene $1 non ge pò essere spustate sus a $2.",
-	"usermerge-move-log": "Automaticamende spustate 'a pàgene quanne ha state scuagghiate l'utende \"$1\" jndr'à \"[[User:$2|$2]]\""
+	"usermerge-move-log": "Automaticamende spustate 'a pàgene quanne ha state scuagghiate l'utende \"$1\" jndr'à \"[[User:$2|$2]]\"",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|avevscuagghiate}} 'u cunde utende \"$4\" ($5) jndr'à {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|ave scangellate}} 'u cunde utende \"$4\" ($5)",
+	"log-action-filter-usermerge": "Tipe de azione:",
+	"log-action-filter-usermerge-mergeuser": "Scuagghiamende d'u cunde utende",
+	"log-action-filter-usermerge-deleteuser": "Scangellazzione d'u cunde utende"
 }

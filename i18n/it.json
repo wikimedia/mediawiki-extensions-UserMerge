@@ -30,5 +30,8 @@
 	"action-usermerge": "unire utenti",
 	"usermerge-autopagedelete": "Cancellata automaticamente durante l'unione di utenti",
 	"usermerge-page-unmoved": "La pagina $1 non può essere spostata a $2.",
-	"usermerge-move-log": "Spostata automaticamente la pagina durante l'unione dell'utente \"$1\" a \"[[User:$2|$2]]\""
+	"usermerge-move-log": "Spostata automaticamente la pagina durante l'unione dell'utente \"$1\" a \"[[User:$2|$2]]\"",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|ha unito}} l'utente \"$4\" ($5) in {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|ha cancellato}} l'utente \"$4\" ($5)",
+	"log-action-filter-usermerge": "Tipo di azione:"
 }
