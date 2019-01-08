@@ -32,6 +32,9 @@
 	"usermerge-autopagedelete": "הדף נמחק אוטומטית בזמן מיזוג חשבונות",
 	"usermerge-page-unmoved": "לא ניתן להעביר את הדף $1 לשם $2.",
 	"usermerge-move-log": "הדף הועבר אוטומטית בזמן מיזוג חשבון \"$1\" אל \"[[User:$2|$2]]\"",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|מיזג|מיזגה}} את חשבון המשתמש \"$4\" ($5) אל {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|מחק|מחקה}} את חשבון המשתמש \"$4\" ($5)",
 	"log-action-filter-usermerge": "סוג הפעולה:",
+	"log-action-filter-usermerge-mergeuser": "מיזוג חשבונות משתמש",
 	"log-action-filter-usermerge-deleteuser": "מחיקת חשבון משתמש"
 }
