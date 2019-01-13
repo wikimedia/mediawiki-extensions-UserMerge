@@ -5,7 +5,8 @@
 			"Andriykopanytsia",
 			"Steve.rusyn",
 			"SteveR",
-			"Ата"
+			"Ата",
+			"Piramidion"
 		]
 	},
 	"usermerge": "Об'єднання і вилучення облікових записів",
@@ -21,15 +22,20 @@
 	"usermerge-deleteolduser": "Вилучити старий обліковий запис",
 	"usermerge-submit": "Об'єднати користувачів",
 	"usermerge-badtoken": "Недійсний маркер редагування",
-	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|був вилучений|була вилучена}}.",
-	"usermerge-success": "Об'єднання {{GENDER:$1|$1}} ($2) з {{GENDER:$3|$3}} ($4) завершене.",
+	"usermerge-userdeleted": "$1 ($2) вилучено.",
+	"usermerge-success": "Приєднання $1 ($2) до $3 ($4) завершено.",
 	"usermerge-logpage": "Журнал об'єднання користувачів",
 	"usermerge-logpagetext": "Це журнал об'єднання облікових записів.",
 	"usermerge-noselfdelete": "Ви не можете вилучати або приєднувати {{GENDER:$1|самого себе|саму себе}}!",
-	"usermerge-protectedgroup": "Неможливо об'єднати {{GENDER:$1|користувача|користувачку}} — користувач належить до захищеної групи.",
+	"usermerge-protectedgroup": "Неможливо приєднати {{GENDER:$1|користувача|користувачку}}: {{GENDER:$1|користувач|користувачка}} належить до захищеної групи.",
 	"right-usermerge": "об'єднування користувачів",
 	"action-usermerge": "об'єднування користувачів",
-	"usermerge-autopagedelete": "Автоматично видаляються при об'єднанні користувачів",
+	"usermerge-autopagedelete": "Автоматичне вилучення сторінки при об'єднанні користувачів",
 	"usermerge-page-unmoved": "Сторінка $1 не може бути перейменована на $2.",
-	"usermerge-move-log": "Автоматичне перейменування сторінки при об'єднанні користувача «[[User:$1|$1]]» з «[[User:$2|{{GENDER:$2|$2}}]]»"
+	"usermerge-move-log": "Автоматичне перейменування сторінки при приєднанні облікового запису «$1» до «[[User:$2|$2]]»",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|приєднав|приєднала}} обліковий запис користувача «$4» ($5) до {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|вилучив|вилучила}} обліковий запис користувача «$4» ($5)",
+	"log-action-filter-usermerge": "Тип дії:",
+	"log-action-filter-usermerge-mergeuser": "Об'єднання облікових записів користувачів",
+	"log-action-filter-usermerge-deleteuser": "Вилучення облікових записів користувачів"
 }
