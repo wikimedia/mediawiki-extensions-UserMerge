@@ -10,7 +10,8 @@
 			"Fitoschido",
 			"Nemo bis",
 			"Macofe",
-			"Dgstranz"
+			"Dgstranz",
+			"Tiberius1701"
 		]
 	},
 	"usermerge": "Fusionar y borrar usuarios",
@@ -37,8 +38,8 @@
 	"usermerge-autopagedelete": "Borrada automáticamente al fusionar usuarios",
 	"usermerge-page-unmoved": "La página $1 no pudo trasladarse a $2.",
 	"usermerge-move-log": "Página trasladada automáticamente al fusionar la cuenta «$1» con «[[User:$2|$2]]»",
-	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|fusionó}} la cuenta de usuario \"$4\" ($5) en la cuenta {{GENDER:$8|$6}} ($7)",
-	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|borró}} la cuenta de usuario \"$4\" ($5)",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|fusionó}} la cuenta de usuario «$4» ($5) en la cuenta {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|borró}} la cuenta de usuario «$4» ($5)",
 	"log-action-filter-usermerge": "Tipo de acción:",
 	"log-action-filter-usermerge-mergeuser": "Fusiones de cuentas de usuario",
 	"log-action-filter-usermerge-deleteuser": "Borrado de cuentas de usuario"
