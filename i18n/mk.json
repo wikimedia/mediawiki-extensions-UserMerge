@@ -28,5 +28,10 @@
 	"action-usermerge": "спојување на корисници",
 	"usermerge-autopagedelete": "Автоматски избришана страница при спојување на корисници",
 	"usermerge-page-unmoved": "Не моежев да ја преместам страницата $1 на $2.",
-	"usermerge-move-log": "Автоматски преместена страница при спојувањето на сметката „$1“ во „[[User:$2|$2]]“"
+	"usermerge-move-log": "Автоматски преместена страница при спојувањето на сметката „$1“ во „[[User:$2|$2]]“",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|ја спои}} корисничката сметка „$4“ ($5) во {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|ја избриша}} корисничката сметка „$4“ ($5)",
+	"log-action-filter-usermerge": "Вид дејство:",
+	"log-action-filter-usermerge-mergeuser": "Спојување на корисничка сметка",
+	"log-action-filter-usermerge-deleteuser": "Бришење на корисничка сметка"
 }

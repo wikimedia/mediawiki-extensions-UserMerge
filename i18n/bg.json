@@ -24,5 +24,8 @@
 	"usermerge-noselfdelete": "Не е възможно да изтривате или сливате от {{GENDER:$1|себе си}}!",
 	"usermerge-protectedgroup": "Невъзможно е да се извърши сливане от {{GENDER:$1|потребител}}: потребителят е в защитена група.",
 	"right-usermerge": "Сливане на потребители",
-	"action-usermerge": "сливане на потребителски сметки"
+	"action-usermerge": "сливане на потребителски сметки",
+	"log-action-filter-usermerge": "Вид на действие:",
+	"log-action-filter-usermerge-mergeuser": "Сливане на потребителска сметка",
+	"log-action-filter-usermerge-deleteuser": "Изтриване на потребителска сметка"
 }
