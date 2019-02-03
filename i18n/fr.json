@@ -11,7 +11,8 @@
 			"Seb35",
 			"Sherbrooke",
 			"Urhixidur",
-			"Wladek92"
+			"Wladek92",
+			"DSwissK"
 		]
 	},
 	"usermerge": "Fusionner et supprimer des utilisateurs",
@@ -42,5 +43,5 @@
 	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|a supprimé}} le compte utilisateur « $4 » ($5)",
 	"log-action-filter-usermerge": "Type d'action :",
 	"log-action-filter-usermerge-mergeuser": "Fusion de compte utilisateur",
-	"log-action-filter-usermerge-deleteuser": "Supression de compte utilisateur"
+	"log-action-filter-usermerge-deleteuser": "Suppression de compte utilisateur"
 }
