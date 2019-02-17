@@ -25,7 +25,7 @@
 	"right-usermerge": "Fusionar usatores",
 	"usermerge-autopagedelete": "Pagina automaticamente delite durante le fusion de usatores",
 	"usermerge-page-unmoved": "Le pagina $1 non poteva esser renominate a $2.",
-	"usermerge-move-log": "Le pagina ha essite automaticamente renominate durante le fusion del usator \"[[User:$1|$1]]\" in \"[[User:$2|{{GENDER:$2|$2}}]]\"",
+	"usermerge-move-log": "Le pagina ha essite automaticamente renominate durante le fusion del usator \"$1\" in \"[[User:$2|$2]]\"",
 	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|fusionava}} le conto de usator \"$4\" ($5) in {{GENDER:$8|$6}} ($7)",
 	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|deleva}} le conto de usator \"$4\" ($5)",
 	"log-action-filter-usermerge": "Typo de action:",
