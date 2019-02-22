@@ -187,12 +187,21 @@ class MergeUser {
 		}
 
 		// Next check what they block, in order
+		$blockProps = [];
+		foreach ( [ $b1, $b2 ] as $block ) {
+			$blockProps[] = [
+				'block' => $block,
+				'createaccount' => $block->isCreateAccountBlocked(),
+				'sendemail' => $block->isEmailBlocked(),
+				'editownusertalk' => !$block->isUsertalkEditAllowed(),
+			];
+		}
 		foreach ( [ 'createaccount', 'sendemail', 'editownusertalk' ] as $action ) {
-			if ( $b1->prevents( $action ) xor $b2->prevents( $action ) ) {
-				if ( $b1->prevents( $action ) ) {
-					return $b1;
+			if ( $blockProps[0][$action] xor $blockProps[1][$action] ) {
+				if ( $blockProps[0][$action] ) {
+					return $blockProps[0]['block'];
 				} else {
-					return $b2;
+					return $blockProps[1]['block'];
 				}
 			}
 		}
