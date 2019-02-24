@@ -2,7 +2,6 @@
 node_modules/
 composer.lock
 vendor/
-tests/phan/issues/
 
 # Editors
 *.kate-swp

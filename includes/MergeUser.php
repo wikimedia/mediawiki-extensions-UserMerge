@@ -5,6 +5,7 @@ use Wikimedia\Rdbms\IDatabase;
 /**
  * Contains the actual database backend logic for merging users
  *
+ * @suppress PhanUndeclaredMagicConstant https://github.com/phan/phan/issues/2490
  */
 class MergeUser {
 	/**
@@ -210,7 +211,7 @@ class MergeUser {
 		}
 
 		if ( defined( 'ActorMigration::MIGRATION_STAGE_SCHEMA_COMPAT' ) ) {
-			return (bool)( $stage & SCHEMA_COMPAT_WRITE_OLD );
+			return (bool)( (int)$stage & SCHEMA_COMPAT_WRITE_OLD );
 		} else {
 			return $stage < MIGRATION_NEW;
 		}
