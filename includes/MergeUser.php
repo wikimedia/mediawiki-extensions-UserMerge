@@ -4,8 +4,6 @@ use Wikimedia\Rdbms\IDatabase;
 
 /**
  * Contains the actual database backend logic for merging users
- *
- * @suppress PhanUndeclaredMagicConstant https://github.com/phan/phan/issues/2490
  */
 class MergeUser {
 	/**
@@ -104,8 +102,6 @@ class MergeUser {
 	/**
 	 * @param IDatabase $dbw
 	 * @return void
-	 * @suppress PhanTypeMismatchArgument Phan thinks that $newBlock and $oldBlock are both null when
-	 *   Block::newFromRow is called, although the previous if/elseif returns if any of them is null.
 	 */
 	private function mergeBlocks( IDatabase $dbw ) {
 		$dbw->startAtomic( __METHOD__ );
@@ -308,13 +304,14 @@ class MergeUser {
 				continue;
 			}
 
-			$options = isset( $fieldInfo['options'] ) ? $fieldInfo['options'] : [];
+			$options = $fieldInfo['options'] ?? [];
 			unset( $fieldInfo['options'] );
-			$db = isset( $fieldInfo['db'] ) ? $fieldInfo['db'] : $dbw;
+			/** @phan-suppress-next-line PhanTypeInvalidDimOffset */
+			$db = $fieldInfo['db'] ?? $dbw;
 			unset( $fieldInfo['db'] );
 			$tableName = array_shift( $fieldInfo );
 			$idField = array_shift( $fieldInfo );
-			$keyField = isset( $fieldInfo['batchKey'] ) ? $fieldInfo['batchKey'] : null;
+			$keyField = $fieldInfo['batchKey'] ?? null;
 			unset( $fieldInfo['batchKey'] );
 
 			if ( isset( $fieldInfo['actorId'] ) && !$this->stageNeedsUser( $fieldInfo['actorStage'] ) ) {
@@ -378,11 +375,12 @@ class MergeUser {
 					continue;
 				}
 
-				$options = isset( $fieldInfo['options'] ) ? $fieldInfo['options'] : [];
-				$db = isset( $fieldInfo['db'] ) ? $fieldInfo['db'] : $dbw;
+				$options = $fieldInfo['options'] ?? [];
+				/** @phan-suppress-next-line PhanTypeInvalidDimOffset */
+				$db = $fieldInfo['db'] ?? $dbw;
 				$tableName = array_shift( $fieldInfo );
 				$idField = $fieldInfo['actorId'];
-				$keyField = isset( $fieldInfo['batchKey'] ) ? $fieldInfo['batchKey'] : null;
+				$keyField = $fieldInfo['batchKey'] ?? null;
 
 				if ( $db->trxLevel() || $keyField === null ) {
 					// Can't batch/wait when in a transaction or when no batch key is given
@@ -506,7 +504,6 @@ class MergeUser {
 	 * Deletes the old user page when the target user page exists
 	 *
 	 * @todo This code is a duplicate of Renameuser and GlobalRename
-	 * @suppress PhanParamTooMany Several calls to $message, which is a variadic closure
 	 *
 	 * @param User $performer
 	 * @param callable $msg Function that returns a Message object
@@ -645,7 +642,7 @@ class MergeUser {
 		foreach ( $tablesToDelete as $table => $field ) {
 			// Check if a different database object was passed (Echo or Flow)
 			if ( is_array( $field ) ) {
-				$db = isset( $field['db'] ) ? $field['db'] : $dbw;
+				$db = $field['db'] ?? $dbw;
 				$field = $field[0];
 			} else {
 				$db = $dbw;
