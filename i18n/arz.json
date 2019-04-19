@@ -21,7 +21,7 @@
 	"usermerge-success": "الدمج من $1($2) إلى $3($4) اكتمل.",
 	"usermerge-logpage": "سجل دمج اليوزر",
 	"usermerge-logpagetext": "ده سجل بأفعال دمج اليوزرز.",
-	"usermerge-noselfdelete": "لا يمكنك حذف أو دمج من نفسك!",
-	"usermerge-protectedgroup": "مش قادر  يدمج من اليوزر - اليوزر فى مجموعة محمية.",
+	"usermerge-noselfdelete": "لا يمكنك حذف أو دمج من {{GENDER:$1|نفسك}}!",
+	"usermerge-protectedgroup": "مش قادر  يدمج من {{GENDER:$1|ليوزر}}: اليوزر فى مجموعة محمية.",
 	"right-usermerge": "دمج اليوزرز"
 }
