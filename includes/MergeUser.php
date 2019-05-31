@@ -1,5 +1,7 @@
 <?php
+
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Block\DatabaseBlock;
 use Wikimedia\Rdbms\IDatabase;
 
 /**
@@ -147,8 +149,8 @@ class MergeUser {
 
 		// Okay, let's pick the "strongest" block, and re-apply it to
 		// the new user.
-		$oldBlockObj = Block::newFromRow( $oldBlock );
-		$newBlockObj = Block::newFromRow( $newBlock );
+		$oldBlockObj = DatabaseBlock::newFromRow( $oldBlock );
+		$newBlockObj = DatabaseBlock::newFromRow( $newBlock );
 
 		$winner = $this->chooseBlock( $oldBlockObj, $newBlockObj );
 		if ( $winner->getId() === $newBlockObj->getId() ) {
@@ -167,11 +169,11 @@ class MergeUser {
 	}
 
 	/**
-	 * @param Block $b1
-	 * @param Block $b2
-	 * @return Block
+	 * @param DatabaseBlock $b1
+	 * @param DatabaseBlock $b2
+	 * @return DatabaseBlock
 	 */
-	private function chooseBlock( Block $b1, Block $b2 ) {
+	private function chooseBlock( DatabaseBlock $b1, DatabaseBlock $b2 ) {
 		// First, see if one is longer than the other.
 		if ( $b1->getExpiry() !== $b2->getExpiry() ) {
 			// This works for infinite blocks because:
@@ -510,11 +512,12 @@ class MergeUser {
 	 * @return array Array of old name (string) => new name (Title) where the move failed
 	 */
 	private function movePages( User $performer, /* callable */ $msg ) {
-		global $wgContLang, $wgUser;
+		global $wgUser;
+		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
 		$oldusername = trim( str_replace( '_', ' ', $this->oldUser->getName() ) );
 		$oldusername = Title::makeTitle( NS_USER, $oldusername );
-		$newusername = Title::makeTitleSafe( NS_USER, $wgContLang->ucfirst( $this->newUser->getName() ) );
+		$newusername = Title::makeTitleSafe( NS_USER, $contLang->ucfirst( $this->newUser->getName() ) );
 
 		# select all user pages and sub-pages
 		$dbr = wfGetDB( DB_REPLICA );
