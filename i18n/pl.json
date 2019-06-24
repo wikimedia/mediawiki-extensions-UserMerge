@@ -19,6 +19,7 @@
 	"usermerge-badnewuser": "Nieprawidłowa nazwa nowego użytkownika",
 	"usermerge-nonewuser": "Pusta nazwa nowego użytkownika – nastąpi integracja z kontem $1.<br />\nKliknij „{{int:usermerge-submit}}”, aby zaakceptować.",
 	"usermerge-noolduser": "Pusta nazwa dotychczasowego użytkownika",
+	"usermerge-same-old-and-new-user": "Nowa nazwa użytkownika musi różnic się od starej.",
 	"usermerge-fieldset": "Nazwy kont użytkowników do integracji",
 	"usermerge-olduser": "Dotychczasowy użytkownik (do integracji)",
 	"usermerge-newuser": "Nowy użytkownik (integruj z)",
@@ -26,7 +27,7 @@
 	"usermerge-submit": "Integruj użytkowników",
 	"usermerge-badtoken": "Nieprawidłowy kod weryfikacyjny (token).",
 	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|został usunięty|została usunięta}}.",
-	"usermerge-success": "Integracja {{GENDER:$1|$1}} ($2) z {{GENDER:$3|$3}} ($4) została zakończona.",
+	"usermerge-success": "Integracja $1 ($2) z $3 ($4) została zakończona.",
 	"usermerge-logpage": "Rejestr integracji użytkowników",
 	"usermerge-logpagetext": "To jest rejestr operacji integracji użytkowników.",
 	"usermerge-noselfdelete": "Nie możesz usunąć lub zintegrować {{GENDER:$1|samego|samej}} siebie!",
@@ -35,6 +36,10 @@
 	"action-usermerge": "łączenie kont użytkowników",
 	"usermerge-autopagedelete": "Automatycznie usuwane strony podczas scalania użytkowników",
 	"usermerge-page-unmoved": "Strona $1 nie mogła zostać przeniesiona pod nazwę $2.",
-	"usermerge-move-log": "Automatyczne przeniesiono stronę po zmianie nazwy konta z \"[[User:$1|$1]]\" na \"[[User:$2|$2]]\"",
-	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|usunął|usunęła}} konto użytkownika „$4” ($5)"
+	"usermerge-move-log": "Automatyczne przeniesiono stronę po zintegrowaniu konta „$1” z „[[User:$2|$2]]”",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|zintegrował|zintegrowała}} konto „$4” ($5) z {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|usunął|usunęła}} konto użytkownika „$4” ($5)",
+	"log-action-filter-usermerge": "Rodzaj działania:",
+	"log-action-filter-usermerge-mergeuser": "Integracja konta",
+	"log-action-filter-usermerge-deleteuser": "Usuwanie konta"
 }
