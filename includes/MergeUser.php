@@ -111,12 +111,16 @@ class MergeUser {
 		$dbw->startAtomic( __METHOD__ );
 
 		// Pull blocks directly from master
+		$qi = Block::getQueryInfo();
 		$rows = $dbw->select(
-			'ipblocks',
-			'*',
+			$qi['tables'],
+			$qi['fields'],
 			[
 				'ipb_user' => [ $this->oldUser->getId(), $this->newUser->getId() ],
-			]
+			],
+			__METHOD__,
+			[],
+			$qi['joins']
 		);
 
 		$newBlock = null;
