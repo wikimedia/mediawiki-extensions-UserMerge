@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Onubadok"
+			"Onubadok",
+			"Paradox"
 		]
 	},
 	"log-action-filter-usermerge-deleteuser": "ব্যৱহাৰকাৰীৰ একাউণ্ট বিলোপন"
