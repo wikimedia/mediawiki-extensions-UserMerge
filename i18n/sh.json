@@ -4,5 +4,27 @@
 			"Vlad5250"
 		]
 	},
-	"usermerge-logpage": "Evidencija spajanja korisnika"
+	"usermerge": "Spajanje i brisanje korisnika",
+	"usermerge-badolduser": "Nevaljano staro korisničko ime",
+	"usermerge-badnewuser": "Nevaljano novo korisničko ime",
+	"usermerge-nonewuser": "Prazno novo korisničko ime. Pretpostavlja se spajanje na \"{{GENDER:$1|$1}}\".<br />\nKliknite na \"{{int:usermerge-submit}}\" za prihvatanje.",
+	"usermerge-noolduser": "Prazno staro korisničko ime",
+	"usermerge-same-old-and-new-user": "Staro i novo korisničko ime treba da se razlikovati.",
+	"usermerge-fieldset": "Korisnička imena za spajanje",
+	"usermerge-olduser": "Stari korisnik (za spajanje od):",
+	"usermerge-newuser": "Novi korisnik (za spajanje sa):",
+	"usermerge-deleteolduser": "Obriši starog korisnika",
+	"usermerge-submit": "Spoji korisnika",
+	"usermerge-badtoken": "Nevaljan token izmjene",
+	"usermerge-userdeleted": "$1 ($2) je obrisan.",
+	"usermerge-success": "Spajanje $1 ($2) u $3 ($4) je gotovo.",
+	"usermerge-logpage": "Evidencija spajanja korisnika",
+	"usermerge-logpagetext": "Ovo je evidencija spajanja korisničkih imena.",
+	"usermerge-noselfdelete": "Ne možete se obrisati niti spojiti {{GENDER:$1|sami sa sobom}}!",
+	"usermerge-protectedgroup": "Nije moguće spojiti {{GENDER:$1|korisnike}}: korisnik je u zaštićenoj grupi.",
+	"right-usermerge": "Spajanje korisnika",
+	"action-usermerge": "spajanje korisnika",
+	"usermerge-autopagedelete": "Automatski obrisana stranica prilikom spajanja korisnika",
+	"usermerge-page-unmoved": "Nisam moegao premjestiti stranicu $1 na $2.",
+	"log-action-filter-usermerge": "Vrsta radnje:"
 }
