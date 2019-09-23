@@ -4,7 +4,8 @@
 			"Kwj2772",
 			"아라",
 			"Hwangjy9",
-			"Ykhwong"
+			"Ykhwong",
+			"Nuevo Paso"
 		]
 	},
 	"usermerge": "사용자 합치기 및 삭제",
@@ -20,7 +21,7 @@
 	"usermerge-deleteolduser": "이전 사용자를 삭제하기",
 	"usermerge-submit": "사용자 합치기",
 	"usermerge-badtoken": "잘못된 편집 토큰",
-	"usermerge-userdeleted": "$1 ($2)님이 삭제되었습니다.",
+	"usermerge-userdeleted": "$1 ($2) 님이 삭제되었습니다.",
 	"usermerge-success": "$1 ($2)님을 $3 ($4)에 합치는 것을 완료했습니다.",
 	"usermerge-logpage": "사용자 병합 기록",
 	"usermerge-logpagetext": "사용자 병합 동작의 기록입니다.",
