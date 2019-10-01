@@ -4,7 +4,7 @@
 			"Servien"
 		]
 	},
-	"usermerge": "Gebrukers samenvoegen en vortdoon",
+	"usermerge": "Gebrukerskontos samenvogen en vordsmyten",
 	"usermerge-desc": "Zet n [[Special:UserMerge|spesiale zied]] derbie um gebrukers samen te voegen en de ouwe gebruker(s) vort te doon (hierveur is t recht ''usermerge'' neudig)",
 	"usermerge-badolduser": "Ongeldige ouwe gebrukersnaam",
 	"usermerge-badnewuser": "Ongeldige nieje gebrukersnaam",
@@ -13,7 +13,7 @@
 	"usermerge-fieldset": "Gebrukersnamen die samenevoegen mutten wörden",
 	"usermerge-olduser": "Ouwe gebruker (samenvoegen van):",
 	"usermerge-newuser": "Nieje gebruker (samenvoegen naor):",
-	"usermerge-deleteolduser": "Ouwe gebruker vortdoon",
+	"usermerge-deleteolduser": "Olde gebruker vordsmyten",
 	"usermerge-submit": "Gebruker samenvoegen",
 	"usermerge-badtoken": "Ongeldig bewarkingstoken",
 	"usermerge-userdeleted": "$1 ($2) is vort-edaon.",
