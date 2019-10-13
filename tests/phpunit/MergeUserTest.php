@@ -40,8 +40,8 @@ class MergeUserTest extends MediaWikiTestCase {
 		$user2 = $this->getNewTestUser();
 		$user2->addToDatabase();
 
-		$mu = new MergeUser( $user1, $user2, $this->getMock( 'UserMergeLogger' ) );
-		$mu->merge( $this->getMock( 'User' ) );
+		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
+		$mu->merge( $this->createMock( User::class ) );
 
 		$this->reallyClearInstanceCache( $user1 );
 		$this->reallyClearInstanceCache( $user2 );
@@ -59,8 +59,8 @@ class MergeUserTest extends MediaWikiTestCase {
 		$user2 = $this->getNewTestUser();
 		$user2->addGroup( 'group2' );
 
-		$mu = new MergeUser( $user1, $user2, $this->getMock( 'UserMergeLogger' ) );
-		$mu->merge( $this->getMock( 'User' ) );
+		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
+		$mu->merge( $this->createMock( User::class ) );
 
 		$this->reallyClearInstanceCache( $user1 );
 		$this->reallyClearInstanceCache( $user2 );
@@ -79,8 +79,8 @@ class MergeUserTest extends MediaWikiTestCase {
 		$this->reallyClearInstanceCache( $user1 );
 		$this->assertGreaterThan( 0, $user1->getId() );
 
-		$mu = new MergeUser( $user1, $user2, $this->getMock( 'UserMergeLogger' ) );
-		$mu->delete( $this->getMock( 'User' ), 'wfMessage' );
+		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
+		$mu->delete( $this->createMock( User::class ), 'wfMessage' );
 
 		$this->reallyClearInstanceCache( $user1 );
 		$this->assertEquals( 0, $user1->getId() );
@@ -100,8 +100,8 @@ class MergeUserTest extends MediaWikiTestCase {
 			$count++;
 		}
 
-		$mu = new MergeUser( $user1, $user2, $this->getMock( 'UserMergeLogger' ) );
-		$mu->merge( $this->getMock( 'User' ) );
+		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
+		$mu->merge( $this->createMock( User::class ) );
 
 		$this->reallyClearInstanceCache( $user1 );
 		$this->reallyClearInstanceCache( $user2 );
