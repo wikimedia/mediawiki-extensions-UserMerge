@@ -25,7 +25,7 @@
 	"usermerge-newuser": "Uusi käyttäjä (mihin yhdistetään)",
 	"usermerge-deleteolduser": "Poista vanha käyttäjä",
 	"usermerge-submit": "Yhdistä käyttäjä",
-	"usermerge-badtoken": "Virheellinen muokkauslipuke",
+	"usermerge-badtoken": "Virheellinen muokkauspoletti.",
 	"usermerge-userdeleted": "$1 ($2) on poistettu.",
 	"usermerge-success": "Yhdistäminen tunnuksesta $1 ($2) tunnukseen $3 ($4) on suoritettu.",
 	"usermerge-logpage": "Käyttäjien yhdistämisloki",
