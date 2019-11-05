@@ -307,7 +307,6 @@ class MergeUser {
 
 			$options = $fieldInfo['options'] ?? [];
 			unset( $fieldInfo['options'] );
-			/** @phan-suppress-next-line PhanTypeInvalidDimOffset */
 			$db = $fieldInfo['db'] ?? $dbw;
 			unset( $fieldInfo['db'] );
 			$tableName = array_shift( $fieldInfo );
@@ -375,7 +374,6 @@ class MergeUser {
 				}
 
 				$options = $fieldInfo['options'] ?? [];
-				/** @phan-suppress-next-line PhanTypeInvalidDimOffset */
 				$db = $fieldInfo['db'] ?? $dbw;
 				$tableName = array_shift( $fieldInfo );
 				$idField = $fieldInfo['actorId'];
