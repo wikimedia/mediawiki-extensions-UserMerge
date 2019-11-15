@@ -15,7 +15,7 @@
 	"usermerge-newuser": "Nove usator (fusionar con):",
 	"usermerge-deleteolduser": "Deler ancian usator",
 	"usermerge-submit": "Fusionar usator",
-	"usermerge-badtoken": "Indicio de modification invalide",
+	"usermerge-badtoken": "Token de modification invalide",
 	"usermerge-userdeleted": "$1 ($2) ha essite delite.",
 	"usermerge-success": "Le fusion de $1 ($2) in $3 ($4) ha succedite.",
 	"usermerge-logpage": "Registro de fusiones de usatores",

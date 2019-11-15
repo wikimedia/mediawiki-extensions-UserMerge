@@ -5,7 +5,8 @@
 			"아라",
 			"Hwangjy9",
 			"Ykhwong",
-			"Nuevo Paso"
+			"Nuevo Paso",
+			"렌즈"
 		]
 	},
 	"usermerge": "사용자 합치기 및 삭제",
@@ -32,6 +33,7 @@
 	"usermerge-autopagedelete": "사용자를 합치는 동안 자동으로 문서를 삭제했습니다",
 	"usermerge-page-unmoved": "$1 문서를 $2 문서로 이동하지 못했습니다.",
 	"usermerge-move-log": "\"$1\" 계정을 \"[[User:$2|$2]]\"(으)로 합치면서 문서를 자동으로 이동했습니다",
+	"logentry-usermerge-mergeuser": "$1님이 \"$4\" ($5) 계정을 {{GENDER:$8|$6}} ($7)으로 {{GENDER:$2|합쳤습니다}}",
 	"logentry-usermerge-deleteuser": "$1님이 \"$4\"($5) 사용자 계정을 {{GENDER:$2|삭제했습니다}}",
 	"log-action-filter-usermerge": "조치 유형:",
 	"log-action-filter-usermerge-mergeuser": "사용자 계정 병합",
