@@ -12,7 +12,8 @@
 			"Sherbrooke",
 			"Urhixidur",
 			"Wladek92",
-			"DSwissK"
+			"DSwissK",
+			"Thibaut120094"
 		]
 	},
 	"usermerge": "Fusionner et supprimer des utilisateurs",
@@ -32,7 +33,7 @@
 	"usermerge-success": "La fusion de $1 ($2) avec $3 ($4) est terminée.",
 	"usermerge-logpage": "Journal des fusions de comptes d’utilisateurs",
 	"usermerge-logpagetext": "Voici un journal des actions de fusions d’utilisateurs.",
-	"usermerge-noselfdelete": "Vous ne pouvez pas vous supprimer ou vous fusionner {{GENDER:$1|vous-même}} !",
+	"usermerge-noselfdelete": "Vous ne pouvez pas vous supprimer ou vous fusionner {{GENDER:$1|vous-même}} !",
 	"usermerge-protectedgroup": "Impossible de fusionner l’{{GENDER:$1|utilisateur|utilisatrice}} : l’{{GENDER:$1|il|elle}} est dans un groupe protégé.",
 	"right-usermerge": "Fusionner des utilisateurs",
 	"action-usermerge": "fusionner les utilisateurs",
