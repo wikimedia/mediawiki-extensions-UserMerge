@@ -1,7 +1,8 @@
 <?php
 
 /**
- * @todo this should use the Database group
+ * @todo this should better use the Database group
+ * @group Database
  */
 class MergeUserTest extends MediaWikiTestCase {
 
@@ -18,6 +19,15 @@ class MergeUserTest extends MediaWikiTestCase {
 		$user->addToDatabase();
 		SiteStatsUpdate::factory( [ 'users' => 1 ] )->doUpdate();
 		return $user;
+	}
+
+	public function setUp() : void {
+		parent::setUp();
+
+		$this->tablesUsed[] = 'page';
+		$this->tablesUsed[] = 'revision';
+		$this->tablesUsed[] = 'comment';
+		$this->tablesUsed[] = 'user';
 	}
 
 	/**
@@ -107,5 +117,26 @@ class MergeUserTest extends MediaWikiTestCase {
 		$this->reallyClearInstanceCache( $user2 );
 		$this->assertEquals( 0, $user1->getEditCount() );
 		$this->assertEquals( 21, $user2->getEditCount() );
+	}
+
+	/**
+	 * @covers MergeUser::movePages
+	 */
+	public function testMovePages() {
+		$user1 = $this->getNewTestUser();
+		$user1->addToDatabase();
+		$user2 = $this->getNewTestUser();
+		$user2->addToDatabase();
+
+		$userpage1 = $user1->getUserPage();
+		$this->getExistingTestPage( $userpage1 );
+
+		$userpage2 = $user2->getUserPage();
+		$this->assertFalse( $userpage2->exists( Title::READ_LATEST ) );
+
+		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
+		$mu->delete( $this->getTestSysop()->getUser(), 'wfMessage' );
+
+		$this->assertTrue( $userpage2->exists( Title::READ_LATEST ) );
 	}
 }
