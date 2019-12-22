@@ -131,15 +131,13 @@ class MergeUser {
 			}
 		}
 
-		if ( !$newBlock && !$oldBlock ) {
-			// No one is blocked, yaaay
-			$dbw->endAtomic( __METHOD__ );
-			return;
-		} elseif ( $newBlock && !$oldBlock ) {
+		if ( !$oldBlock ) {
+			// No one is blocked or
 			// Only the new user is blocked, so nothing to do.
 			$dbw->endAtomic( __METHOD__ );
 			return;
-		} elseif ( $oldBlock && !$newBlock ) {
+		}
+		if ( !$newBlock ) {
 			// Just move the old block to the new username
 			$dbw->update(
 				'ipblocks',
@@ -314,7 +312,9 @@ class MergeUser {
 			$keyField = $fieldInfo['batchKey'] ?? null;
 			unset( $fieldInfo['batchKey'] );
 
-			if ( isset( $fieldInfo['actorId'] ) && !$this->stageNeedsUser( $fieldInfo['actorStage'] ) ) {
+			if ( isset( $fieldInfo['actorId'] ) && isset( $fieldInfo['actorStage'] ) &&
+				!$this->stageNeedsUser( $fieldInfo['actorStage'] )
+			) {
 				continue;
 			}
 			unset( $fieldInfo['actorId'], $fieldInfo['actorStage'] );
@@ -369,7 +369,9 @@ class MergeUser {
 			$newActorId = $this->newUser->getActorId( $db );
 
 			foreach ( $updateFields as $fieldInfo ) {
-				if ( empty( $fieldInfo['actorId'] ) || !$this->stageNeedsActor( $fieldInfo['actorStage'] ) ) {
+				if ( empty( $fieldInfo['actorId'] ) || empty( $fieldInfo['actorStage'] ) ||
+					!$this->stageNeedsActor( $fieldInfo['actorStage'] )
+				) {
 					continue;
 				}
 
