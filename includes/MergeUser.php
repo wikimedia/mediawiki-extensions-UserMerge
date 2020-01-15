@@ -1,7 +1,7 @@
 <?php
 
-use MediaWiki\MediaWikiServices;
 use MediaWiki\Block\DatabaseBlock;
+use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\IDatabase;
 
 /**

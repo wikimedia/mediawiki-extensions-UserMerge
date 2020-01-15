@@ -45,7 +45,7 @@ class MergeUserTest extends MediaWikiTestCase {
 
 		$this->reallyClearInstanceCache( $user1 );
 		$this->reallyClearInstanceCache( $user2 );
-		$this->assertEquals( null, $user1->getOption( 'foo' ) );
+		$this->assertNull( $user1->getOption( 'foo' ) );
 		$this->assertEquals( 'baz', $user2->getOption( 'foo' ) );
 	}
 
@@ -83,7 +83,7 @@ class MergeUserTest extends MediaWikiTestCase {
 		$mu->delete( $this->createMock( User::class ), 'wfMessage' );
 
 		$this->reallyClearInstanceCache( $user1 );
-		$this->assertEquals( 0, $user1->getId() );
+		$this->assertSame( 0, $user1->getId() );
 	}
 
 	/**
@@ -105,7 +105,7 @@ class MergeUserTest extends MediaWikiTestCase {
 
 		$this->reallyClearInstanceCache( $user1 );
 		$this->reallyClearInstanceCache( $user2 );
-		$this->assertEquals( 0, $user1->getEditCount() );
+		$this->assertSame( 0, $user1->getEditCount() );
 		$this->assertEquals( 21, $user2->getEditCount() );
 	}
 }
