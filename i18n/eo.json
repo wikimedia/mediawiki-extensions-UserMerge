@@ -4,13 +4,14 @@
 			"Melancholie",
 			"Michawiki",
 			"Yekrats",
-			"KuboF"
+			"KuboF",
+			"Robin van der Vliet"
 		]
 	},
 	"usermerge": "Kunigi kaj forigi uzantojn",
-	"usermerge-badolduser": "Nevalida malnova salutnomo",
-	"usermerge-badnewuser": "Nevalida nova salutnomo",
-	"usermerge-noolduser": "Malplena malnova salutnomo",
+	"usermerge-badolduser": "Nevalida malnova uzantnomo",
+	"usermerge-badnewuser": "Nevalida nova uzantnomo",
+	"usermerge-noolduser": "Malplena malnova uzantnomo",
 	"usermerge-fieldset": "Kunigotaj salutnomoj",
 	"usermerge-olduser": "Malnova uzanto (kunigante de):",
 	"usermerge-newuser": "Nova uzanto (kunigante al):",
