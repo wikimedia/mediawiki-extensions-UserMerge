@@ -26,15 +26,11 @@ class SpecialUserMerge extends FormSpecialPage {
 	protected function getFormFields() {
 		return [
 			'olduser' => [
-				'type' => 'text',
+				'type' => 'user',
+				'exists' => true,
 				'label-message' => 'usermerge-olduser',
 				'required' => true,
 				'validation-callback' => function ( $val ) {
-					// only pass strings to User::newFromName
-					if ( !is_string( $val ) ) {
-						return true;
-					}
-
 					$key = $this->validateOldUser( $val );
 					if ( is_string( $key ) || is_array( $key ) ) {
 						return $this->msg( $key )->escaped();
@@ -43,7 +39,7 @@ class SpecialUserMerge extends FormSpecialPage {
 				},
 			],
 			'newuser' => [
-				'type' => 'text',
+				'type' => 'user',
 				'required' => true,
 				'label-message' => 'usermerge-newuser',
 				'validation-callback' => function ( $val ) {
@@ -73,9 +69,6 @@ class SpecialUserMerge extends FormSpecialPage {
 	 */
 	public function validateOldUser( $val ) {
 		$oldUser = User::newFromName( $val );
-		if ( !$oldUser || $oldUser->getId() === 0 ) {
-			return 'usermerge-badolduser';
-		}
 		if ( $this->getUser()->getId() === $oldUser->getId() ) {
 			return [ 'usermerge-noselfdelete', $this->getUser()->getName() ];
 		}
