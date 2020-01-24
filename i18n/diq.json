@@ -9,10 +9,10 @@
 			"1917 Ekim Devrimi"
 		]
 	},
-	"usermerge-badolduser": "Xırab namey kerberiyo kehan",
-	"usermerge-badnewuser": "Xırab namey kerberiyo neweyên",
-	"usermerge-noolduser": "Veng namey karberiyo kehan",
-	"usermerge-fieldset": "Namey karberanê ke yew bê",
+	"usermerge-badolduser": "Nameyê karberiyo kehano nêvêrde.",
+	"usermerge-badnewuser": "Nameyê kerberiyo neweyo nêvêrde.",
+	"usermerge-noolduser": "Nameyê karberiyo kehano veng.",
+	"usermerge-fieldset": "Nameyê karberanê ke yew bê",
 	"usermerge-olduser": "Karbero kehan (ra yew kerê):",
 	"usermerge-newuser": "Karbero newe (de biya pê):",
 	"usermerge-deleteolduser": "Karberê kehani bestere",
