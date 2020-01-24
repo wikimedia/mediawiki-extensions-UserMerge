@@ -575,15 +575,17 @@ class MergeUser {
 				}
 
 				# move to target location
-				$errors = $oldPage->moveTo(
-					$newPage,
-					false,
-					$message(
-						'usermerge-move-log',
-						$oldusername->getText(),
-						$newusername->getText() )->inContentLanguage()->text()
-				);
-				if ( $errors !== true ) {
+				$status = MediaWikiServices::getInstance()
+					->getMovePageFactory()
+					->newMovePage( $oldPage, $newPage )
+					->move(
+						$wgUser,
+						$message(
+							'usermerge-move-log',
+							$oldusername->getText(),
+							$newusername->getText() )->inContentLanguage()->text()
+					);
+				if ( !$status->isOk() ) {
 					$failedMoves[$oldPage->getPrefixedText()] = $newPage;
 				}
 
