@@ -9,7 +9,6 @@
 	},
 	"usermerge": "Unione e cancellazione utenti",
 	"usermerge-desc": "[[Special:UserMerge|Unisce i riferimenti di un utente con quelli di un altro]] nel database della wiki e inoltre cancellerà il vecchio utente dopo l'unione. Richiede privilegi ''usermerge''",
-	"usermerge-badolduser": "Vecchio nome utente non valido",
 	"usermerge-badnewuser": "Nuovo nome utente non valido",
 	"usermerge-nonewuser": "Nuovo nome utente vuoto - l'unione verrà effettuata con l'utente \"{{GENDER:$1|$1}}\".<br />\nFare clic su \"{{int:usermerge-submit}}\" per accettare.",
 	"usermerge-noolduser": "Vecchio nome utente vuoto",

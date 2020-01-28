@@ -13,7 +13,6 @@
 	},
 	"usermerge": "Gebruikers samenvoegen en verwijderen",
 	"usermerge-desc": "Voegt een [[Special:UserMerge|speciale pagina]] toe om gebruikers samen te voegen en de oude gebruiker(s) te verwijderen. Hiervoor is het recht ''usermerge'' nodig.",
-	"usermerge-badolduser": "Ongeldige oude gebruiker",
 	"usermerge-badnewuser": "Ongeldige nieuwe gebruiker",
 	"usermerge-nonewuser": "De nieuwe gebruikersnaam is niet opgegeven.\nEr wordt aangenomen dat er samengevoegd moet worden naar \"{{GENDER:$1|$1}}\".<br />\nKlik \"{{int:usermerge-submit}}\" om de handeling uit te voeren.",
 	"usermerge-noolduser": "De oude gebruiker is niet opgegeven.",

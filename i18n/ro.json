@@ -9,7 +9,6 @@
 	},
 	"usermerge": "Contopire și ștergere utilizatori",
 	"usermerge-desc": "[[Special:UserMerge|Contopește două conturi diferite de utilizatori]] totodată șterge din baza de date wiki contul de utilizator vechi ca urmare a contopirii. Necesită drepturi speciale (''usermerge'')",
-	"usermerge-badolduser": "Nume de utilizator vechi incorect",
 	"usermerge-badnewuser": "Nume de utilizator nou incorect",
 	"usermerge-nonewuser": "Nume de utilizator nou gol. Presupun fuziune cu „{{GENDER:$1|S1}}”<br />\nApasă „{{int:usermerge-submit}}” pentru a accepta.",
 	"usermerge-noolduser": "Nume de utilizator vechi gol",

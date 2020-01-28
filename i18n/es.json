@@ -16,7 +16,6 @@
 	},
 	"usermerge": "Fusionar y borrar usuarios",
 	"usermerge-desc": "[[Special:UserMerge|Fusiona referencias de un usuario a otro usuario]] en la base de datos wiki - también borrará los usuarios antiguos como consecuencia de la fusión. Se requieren los permisos de ''usermerge''",
-	"usermerge-badolduser": "El nombre de usuario anterior no es válido.",
 	"usermerge-badnewuser": "El nombre de usuario nuevo no es válido.",
 	"usermerge-nonewuser": "Nuevo nombre de usuario vacío - asumiendo fusión en «$1».<br />\nHaga clic en «{{int:usermerge-submit}}» para aceptar.",
 	"usermerge-noolduser": "Nombre de usuario antiguo vacío",

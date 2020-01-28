@@ -15,7 +15,6 @@
 	},
 	"usermerge": "Käyttäjätunnusten yhdistys ja poisto",
 	"usermerge-desc": "[[Special:UserMerge|Yhdistää viittaukset yhdestä käyttäjästä toiseen]] wikin tietokannassa - poistaa myös vanhat käyttäjät yhdistämisen jälkeen. Vaatii oikeuden ”usermerge”",
-	"usermerge-badolduser": "Vanha käyttäjätunnus ei kelpaa",
 	"usermerge-badnewuser": "Uusi käyttäjätunnus ei kelpaa",
 	"usermerge-nonewuser": "Uusi käyttäjätunnus -kenttä on tyhjä. Oletetaan yhdistäminen tunnukseen ”{{GENDER:$1|$1}}”. <br /> \nNapsauta \"{{int:usermerge-submit}}\" hyväksyäksesi.",
 	"usermerge-noolduser": "Vanha käyttäjätunnus ei voi olla tyhjä.",

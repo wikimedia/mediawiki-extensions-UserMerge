@@ -18,7 +18,6 @@
 	},
 	"usermerge": "Fusionner et supprimer des utilisateurs",
 	"usermerge-desc": "[[Special:UserMerge|Fusionne les références d’un utilisateur vers un autre]] dans la base de données wiki - supprimera aussi les anciens utilisateurs après la fusion. Nécessite le privilège ''usermerge''",
-	"usermerge-badolduser": "Ancien nom d’utilisateur invalide",
 	"usermerge-badnewuser": "Nouveau nom d’utilisateur invalide",
 	"usermerge-nonewuser": "Nouveau nom d’utilisateur vide. Nous supposons que vous voulez fusionner dans \"{{GENDER:$1|$1}}\".<br />\nCliquez sur \"{{int:usermerge-submit}}\" pour accepter.",
 	"usermerge-noolduser": "Ancien nom d’utilisateur vide",

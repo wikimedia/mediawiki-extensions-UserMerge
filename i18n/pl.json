@@ -16,7 +16,6 @@
 	},
 	"usermerge": "Integruj i usuń użytkowników",
 	"usermerge-desc": "[[Special:UserMerge|Integruje odwołania dla jednego użytkownika do drugiego]] w bazie danych wiki – usuwa również dotychczasowego użytkownika po integracji. Wymaga uprawnienia ''usermerge''",
-	"usermerge-badolduser": "Nieprawidłowa nazwa dotychczasowego użytkownika",
 	"usermerge-badnewuser": "Nieprawidłowa nazwa nowego użytkownika",
 	"usermerge-nonewuser": "Pusta nazwa nowego użytkownika – nastąpi integracja z kontem $1.<br />\nKliknij „{{int:usermerge-submit}}”, aby zaakceptować.",
 	"usermerge-noolduser": "Pusta nazwa dotychczasowego użytkownika",

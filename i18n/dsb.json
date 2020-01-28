@@ -6,7 +6,6 @@
 	},
 	"usermerge": "Wužywarjow zjadnośiś a wulašowaś",
 	"usermerge-desc": "[[Special:UserMerge|Zjadnośujo reference wót jadnogo wužywarja k drugemu wužywarjeju]] we wikijowej datowej bance - buźo teke wšych starych wužywarjow pó zjadnosénju lašowaś. Pomina se pšawa ''usermerge''",
-	"usermerge-badolduser": "Njepłaśiwe stare wužywarske mě",
 	"usermerge-badnewuser": "Njepłaśiwe nowe wužywarske mě",
 	"usermerge-nonewuser": "Prozne nowe wužywarske mě - góda se zjadnośenje k \"{{GENDER:$1|$1}}\".<br />\nKlikni na \"{{int:usermerge-submit}}\", aby akceptěrował.",
 	"usermerge-noolduser": "Prozne stare wužywarske mě",

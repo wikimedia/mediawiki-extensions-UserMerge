@@ -6,7 +6,6 @@
 	},
 	"usermerge": "Gebrukerskontos samenvogen en vordsmyten",
 	"usermerge-desc": "Zet n [[Special:UserMerge|spesiale zied]] derbie um gebrukers samen te voegen en de ouwe gebruker(s) vort te doon (hierveur is t recht ''usermerge'' neudig)",
-	"usermerge-badolduser": "Ongeldige ouwe gebrukersnaam",
 	"usermerge-badnewuser": "Ongeldige nieje gebrukersnaam",
 	"usermerge-nonewuser": "De nieje gebrukersnaam is niet op-egeven. Der wörden vanuut egaon dat der samenevoegd mut wörden naor \"{{GENDER:$1|$1}}\".<br />\nKlik \"{{int:usermerge-submit}}\" um de haandeling uut te voeren.",
 	"usermerge-noolduser": "Ouwe gebrukersnaam is niet op-egeven",

@@ -7,7 +7,6 @@
 	},
 	"usermerge": "Benutzerkonte zämmefiere un lesche",
 	"usermerge-desc": "[[Special:UserMerge|Fiert Benutzerkonte in dr Wiki-Datebank zämme]] - s alt Benutzerkonto wird no dr Zämmefierig glescht. Bruucht s ''usermerge''-Rächt.",
-	"usermerge-badolduser": "Uugiltiger alter Benutzername",
 	"usermerge-badnewuser": "Uugiltiger nejer Benutzername",
 	"usermerge-nonewuser": "Läärer nejer Benutzername - s wird e Zämmefierig mit „$1“ vermuetet.<br />\nKlick uf \"{{int:usermerge-submit}}\" go s Uusfiere.",
 	"usermerge-noolduser": "Läärer alter Benutzername",

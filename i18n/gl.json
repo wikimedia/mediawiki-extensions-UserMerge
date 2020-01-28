@@ -9,7 +9,6 @@
 	},
 	"usermerge": "Fusionar e eliminar usuario",
 	"usermerge-desc": "[[Special:UserMerge|Fusiona as referencias dun usuario noutro usuario]] na base de datos do wiki (tamén borrará as fusións vellas dos usuarios seguintes. Require privilexios ''usermerge'')",
-	"usermerge-badolduser": "Antigo nome de usuario non válido",
 	"usermerge-badnewuser": "Novo nome de usuario non válido",
 	"usermerge-nonewuser": "Nome de usuario baleiro. Asúmese que quere fusionalo con \"{{GENDER:$1|$1}}\".<br />\nPrema en \"{{int:usermerge-submit}}\" para aceptar.",
 	"usermerge-noolduser": "Antigo nome de usuario baleiro",

@@ -6,7 +6,6 @@
 	},
 	"usermerge": "Versmelt en verwyder gebruikers",
 	"usermerge-desc": "Maak 'n [[Special:UserMerge|spesiale bladsy]] beskikbaar om gebruikers te versmelt en die ou gebruiker(s) te verwyder (hiervoor is die ''usermerge''-reg nodig)",
-	"usermerge-badolduser": "Ongeldige ou gebruiker",
 	"usermerge-badnewuser": "Ongeldige nuwe gebruiker",
 	"usermerge-nonewuser": "Die nuwe gebruikersnaam is nie ingevoer nie - daar word aangeneem dat dit met $1 versmelt moet word.<br />\nKliek \"{{int:usermerge-submit}}\" om die handeling uit te voer.",
 	"usermerge-noolduser": "Ou gebruikersnaam is leeg",

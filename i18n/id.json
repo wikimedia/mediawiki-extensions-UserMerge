@@ -8,7 +8,6 @@
 	},
 	"usermerge": "Penggabungan dan penghapusan Pengguna",
 	"usermerge-desc": "[[Special:UserMerge|Menggabungkan rekam jejak dari suatu pengguna ke pengguna lain]] di basis data wiki - sekaligus menghapus pengguna lama setelah selesai digabungkan. Tindakan ini memerlukan hak ''usermerge''.",
-	"usermerge-badolduser": "Nama pengguna lama tidak sah",
 	"usermerge-badnewuser": "Nama pengguna baru tidak sah",
 	"usermerge-nonewuser": "Nama pengguna baru tidak dituliskan - diasumsikan akan digabungkan ke \"$1\".<br />\nKlik \"{{int:usermerge-submit}}\" untuk melanjutkan.",
 	"usermerge-noolduser": "Nama pengguna lama tidak diisi",

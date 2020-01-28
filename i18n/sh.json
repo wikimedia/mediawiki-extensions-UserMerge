@@ -5,7 +5,6 @@
 		]
 	},
 	"usermerge": "Spajanje i brisanje korisnika",
-	"usermerge-badolduser": "Nevaljano staro korisničko ime",
 	"usermerge-badnewuser": "Nevaljano novo korisničko ime",
 	"usermerge-nonewuser": "Prazno novo korisničko ime. Pretpostavlja se spajanje na \"{{GENDER:$1|$1}}\".<br />\nKliknite na \"{{int:usermerge-submit}}\" za prihvatanje.",
 	"usermerge-noolduser": "Prazno staro korisničko ime",

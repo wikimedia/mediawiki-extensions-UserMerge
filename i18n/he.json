@@ -10,7 +10,6 @@
 	},
 	"usermerge": "מיזוג ומחיקת משתמשים",
 	"usermerge-desc": "[[Special:UserMerge|מיזוג התייחסויות ממשתמש אחד לאחר]] בבסיס הנתונים של הוויקי, כולל מחיקת המשתמשים הישנים לאחר המיזוג. נדרשת הרשאת ''usermerge''",
-	"usermerge-badolduser": "שם המשתמש הישן אינו תקין",
 	"usermerge-badnewuser": "שם המשתמש החדש אינו תקין",
 	"usermerge-nonewuser": "שם המשתמש החדש ריק. כנראה שהמיזוג הוא אל \"$1\".<br />\nנא ללחוץ על \"{{int:usermerge-submit}}\" לאישור.",
 	"usermerge-noolduser": "שם המשתמש הישן ריק",

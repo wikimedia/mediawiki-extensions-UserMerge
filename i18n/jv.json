@@ -8,7 +8,6 @@
 	},
 	"usermerge": "Panggabungan lan pambusakan panganggo",
 	"usermerge-desc": "[[Special:UserMerge|Nggabungaké rèferènsi saka panganggo siji menyang liyané]] ing basis data wiki - bakal sekaligus mbusak panganggo lawas sawisé rampung panggabungan. Tindakan iki merlokaké hak ''usermerge''.",
-	"usermerge-badolduser": "Jeneng panganggo lawas ora sah",
 	"usermerge-badnewuser": "Jeneng panganggo anyar ora absah",
 	"usermerge-nonewuser": "Jeneng panganggo kothong - dianggep bakal digabungaké menyang $1.<br />\nKlik \"{{int:usermerge-submit}}\" kanggo nerusaké.",
 	"usermerge-noolduser": "Jeneng panganggo sing lawas kosong",

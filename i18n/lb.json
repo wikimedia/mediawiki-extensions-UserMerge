@@ -8,7 +8,6 @@
 	},
 	"usermerge": "Benotzerkonten zesummeféieren a läschen",
 	"usermerge-desc": "[[Special:UserMerge|Féiert Benotzerkonte vun engem Benotzer mat engem anere Benotzer]] an der Wiki-Datebank zesummen - déi al Benotzerkonte ginn no der Zesummeféierung och geläscht. Erfuedert ''usermerge''-Rechter.",
-	"usermerge-badolduser": "Ongëltegen ale Benotzernumm",
 	"usermerge-badnewuser": "Ongëltegen neie Benotzernumm",
 	"usermerge-nonewuser": "Eidelen neie Benotzernumm - wahrscheinlech eng Zesummeféierung mat \"{{GENDER:$1|$1}}.<br />\nKlickt op \"{{int:usermerge-submit}}\" wann Dir d'accord sidd.",
 	"usermerge-noolduser": "Eidelen ale Benotzernumm",

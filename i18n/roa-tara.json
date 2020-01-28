@@ -6,7 +6,6 @@
 	},
 	"usermerge": "Scuagghie e scangille le utinde",
 	"usermerge-desc": "[[Special:UserMerge|Scuagghie le refereminde da 'n'utende a 'n'otre utende]] jndr'à 'u database de uicchi - avènene scangellate pure le vicchie utinde apprisse 'u scuagghiamende. A tenè le deritte de ''usermerge''",
-	"usermerge-badolduser": "Nome utende vecchije invalide",
 	"usermerge-badnewuser": "Nome utende nuève invalide",
 	"usermerge-nonewuser": "Nome utende nuève vacande. Se decide de scuagghiarle jndr'à \"{{GENDER:$1|$1}}\".<br />\nCazze \"{{int:usermerge-submit}}\" pe accettà.",
 	"usermerge-noolduser": "Vacande 'u nome utende vecchie.",

@@ -1,7 +1,6 @@
 {
 	"@metadata": [],
 	"usermerge": "用戶合併同刪除",
-	"usermerge-badolduser": "無效嘅舊用戶名",
 	"usermerge-badnewuser": "無效嘅新用戶名",
 	"usermerge-nonewuser": "清除新用戶名 - 假設合併到$1。<br />撳<em>{{int:usermerge-submit}}</em>去接受。",
 	"usermerge-noolduser": "清除舊用戶名",

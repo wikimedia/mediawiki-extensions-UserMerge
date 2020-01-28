@@ -6,7 +6,6 @@
 	},
 	"usermerge": "Përziej dhe fshini përdoruesit",
 	"usermerge-desc": "[[Special:UserMerge|referencat bashkohet nga një user në një përdorues tjetër]] në bazën e të dhënave wiki - do të fshini gjithashtu përdoruesit e vjetër pas bashkohen. Kërkon''''usermerge privilegje",
-	"usermerge-badolduser": "emrin e pavlefshme të vjetra",
 	"usermerge-badnewuser": "emrin e pavlefshme të reja",
 	"usermerge-nonewuser": "Bosh emrin e re - duke supozuar të bashkohen për të \"\" $1 \". <br /> Kliko \"{{int:usermerge-submit}}\" për të pranuar.",
 	"usermerge-noolduser": "Bosh emrin e vjetër",

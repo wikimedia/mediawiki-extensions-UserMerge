@@ -13,7 +13,6 @@
 	},
 	"usermerge": "用户合并和删除",
 	"usermerge-desc": "将在wiki数据库中[[Special:UserMerge|合并一个用户到另一个用户]] - 合并后删除旧用户。需要''usermerge''权限",
-	"usermerge-badolduser": "无效的旧用户名",
 	"usermerge-badnewuser": "无效的新用户名",
 	"usermerge-nonewuser": "新用户名为空，将假设合并到{{GENDER:$1|$1}}，<br />点击“{{int:usermerge-submit}}”以确定。",
 	"usermerge-noolduser": "清除旧用户名",
