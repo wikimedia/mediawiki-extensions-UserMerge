@@ -366,7 +366,7 @@ class MergeUser {
 
 		if ( $this->oldUser->getActorId() ) {
 			$oldActorId = $this->oldUser->getActorId();
-			$newActorId = $this->newUser->getActorId( $db );
+			$newActorId = $this->newUser->getActorId( $dbw );
 
 			foreach ( $updateFields as $fieldInfo ) {
 				if ( empty( $fieldInfo['actorId'] ) || empty( $fieldInfo['actorStage'] ) ||
