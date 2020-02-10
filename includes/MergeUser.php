@@ -112,7 +112,7 @@ class MergeUser {
 		$qi = DatabaseBlock::getQueryInfo();
 		$rows = $dbw->select(
 			$qi['tables'],
-			$qi['fields'],
+			array_merge( $qi['fields'], [ 'ipb_user' ] ),
 			[
 				'ipb_user' => [ $this->oldUser->getId(), $this->newUser->getId() ],
 			],
