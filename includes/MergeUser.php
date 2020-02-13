@@ -552,7 +552,11 @@ class MergeUser {
 					);
 				}
 			} elseif ( $newPage->exists()
-				&& !$oldPage->isValidMoveTarget( $newPage )
+				&& !MediaWikiServices::getInstance()
+					->getMovePageFactory()
+					->newMovePage( $oldPage, $newPage )
+					->isValidMove()
+					->isOk()
 				&& $newPage->getLength() > 0
 			) {
 				# delete old pages that can't be moved
