@@ -16,7 +16,7 @@
 	"usermerge-deleteolduser": "Obriši starog korisnika",
 	"usermerge-submit": "Spoji korisnika",
 	"usermerge-badtoken": "Nevaljan token izmjene",
-	"usermerge-userdeleted": "{{GENDER:$1|Korisnik|Korisnica}} $1 ($2) {{GENDER:$1|obrisan|obrisana}} je.",
+	"usermerge-userdeleted": "{{GENDER:$1|Korisnik|Korisnica}} $1 ($2) {{GENDER:$1|izbrisan|izbrisana}} je.",
 	"usermerge-success": "Spajanje sa {{GENDER:$1|$1}} ($2) na {{GENDER:$3|$3}} ($4) je završeno.",
 	"usermerge-logpage": "Zapisnik spajanja korisnika",
 	"usermerge-logpagetext": "Ovo je zapisnik akcija spajanja korisnika.",
