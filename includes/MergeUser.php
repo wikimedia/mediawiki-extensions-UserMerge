@@ -545,10 +545,9 @@ class MergeUser {
 			if ( $this->newUser->getName() === 'Anonymous' ) { # delete ALL old pages
 				if ( $oldPage->exists() ) {
 					$error = '';
-					$oldPageArticle = new Article( $oldPage, 0 );
-					$oldPageArticle->doDeleteArticle(
+					WikiPage::factory( $oldPage )->doDeleteArticle(
 						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
-						false, null, null, $error, true
+						false, null, null, $error, $performer, true
 					);
 				}
 			} elseif ( $newPage->exists()
@@ -561,20 +560,18 @@ class MergeUser {
 			) {
 				# delete old pages that can't be moved
 				$error = '';
-				$oldPageArticle = new Article( $oldPage, 0 );
-				$oldPageArticle->doDeleteArticle(
+				WikiPage::factory( $oldPage )->doDeleteArticle(
 					$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
-					false, null, null, $error, true
+					false, null, null, $error, $performer, true
 				);
 
 			} else { # move content to new page
 				# delete target page if it exists and is blank
 				if ( $newPage->exists() ) {
 					$error = '';
-					$newPageArticle = new Article( $newPage, 0 );
-					$newPageArticle->doDeleteArticle(
+					WikiPage::factory( $newPage )->doDeleteArticle(
 						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
-						false, null, null, $error, true
+						false, null, null, $error, $performer, true
 					);
 				}
 
@@ -602,10 +599,9 @@ class MergeUser {
 				if ( !$dbr->numRows( $res ) ) {
 					# nothing links here, so delete unmoved page/redirect
 					$error = '';
-					$oldPageArticle = new Article( $oldPage, 0 );
-					$oldPageArticle->doDeleteArticle(
+					WikiPage::factory( $oldPage )->doDeleteArticle(
 						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
-						false, null, null, $error, true
+						false, null, null, $error, $performer, true
 					);
 				}
 			}
