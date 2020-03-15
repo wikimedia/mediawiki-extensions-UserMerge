@@ -509,7 +509,6 @@ class MergeUser {
 	 * @return array Array of old name (string) => new name (Title) where the move failed
 	 */
 	private function movePages( User $performer, /* callable */ $msg ) {
-		global $wgUser;
 		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
 		$oldusername = trim( str_replace( '_', ' ', $this->oldUser->getName() ) );
@@ -531,10 +530,6 @@ class MergeUser {
 		$message = function ( /* ... */ ) use ( $msg ) {
 			return call_user_func_array( $msg, func_get_args() );
 		};
-
-		// Need to set $wgUser to attribute log properly.
-		$oldUser = $wgUser;
-		$wgUser = $performer;
 
 		$failedMoves = [];
 		foreach ( $pages as $row ) {
@@ -580,7 +575,7 @@ class MergeUser {
 					->getMovePageFactory()
 					->newMovePage( $oldPage, $newPage )
 					->move(
-						$wgUser,
+						$performer,
 						$message(
 							'usermerge-move-log',
 							$oldusername->getText(),
@@ -606,8 +601,6 @@ class MergeUser {
 				}
 			}
 		}
-
-		$wgUser = $oldUser;
 
 		return $failedMoves;
 	}
