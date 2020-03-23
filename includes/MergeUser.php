@@ -539,11 +539,7 @@ class MergeUser {
 
 			if ( $this->newUser->getName() === 'Anonymous' ) { # delete ALL old pages
 				if ( $oldPage->exists() ) {
-					$error = '';
-					WikiPage::factory( $oldPage )->doDeleteArticle(
-						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
-						false, null, null, $error, $performer, true
-					);
+					$this->deletePage( $message, $performer, $oldPage );
 				}
 			} elseif ( $newPage->exists()
 				&& !MediaWikiServices::getInstance()
@@ -554,20 +550,11 @@ class MergeUser {
 				&& $newPage->getLength() > 0
 			) {
 				# delete old pages that can't be moved
-				$error = '';
-				WikiPage::factory( $oldPage )->doDeleteArticle(
-					$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
-					false, null, null, $error, $performer, true
-				);
-
+				$this->deletePage( $message, $performer, $oldPage );
 			} else { # move content to new page
 				# delete target page if it exists and is blank
 				if ( $newPage->exists() ) {
-					$error = '';
-					WikiPage::factory( $newPage )->doDeleteArticle(
-						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
-						false, null, null, $error, $performer, true
-					);
+					$this->deletePage( $message, $performer, $newPage );
 				}
 
 				# move to target location
@@ -593,16 +580,40 @@ class MergeUser {
 				);
 				if ( !$dbr->numRows( $res ) ) {
 					# nothing links here, so delete unmoved page/redirect
-					$error = '';
-					WikiPage::factory( $oldPage )->doDeleteArticle(
-						$message( 'usermerge-autopagedelete' )->inContentLanguage()->text(),
-						false, null, null, $error, $performer, true
-					);
+					$this->deletePage( $message, $performer, $oldPage );
 				}
 			}
 		}
 
 		return $failedMoves;
+	}
+
+	/**
+	 * Helper to delete pages
+	 *
+	 * @param callable $msg
+	 * @param User $user
+	 * @param Title $title
+	 */
+	private function deletePage( $msg, User $user, Title $title ) {
+		$wikipage = WikiPage::factory( $title );
+		$reason = $msg( 'usermerge-autopagedelete' )->inContentLanguage()->text();
+		$error = '';
+		if ( version_compare( MW_VERSION, '1.35', '<' ) ) {
+			$wikipage->doDeleteArticle( $reason, false, null, null, $error, $user, true );
+		} else {
+			$wikipage->doDeleteArticleReal(
+				$reason,
+				$user,
+				false,
+				null, // Unused
+				$error,
+				null, // Unused
+				[],
+				'delete',
+				true
+			);
+		}
 	}
 
 	/**
