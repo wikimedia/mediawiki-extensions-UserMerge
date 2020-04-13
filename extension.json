@@ -46,15 +46,22 @@
 			"i18n"
 		]
 	},
+	"Hooks": {
+		"UserGetReservedNames": "UserMergeHooks::onUserGetReservedNames"
+	},
 	"ExtensionMessagesFiles": {
 		"UserMergeAlias": "UserMerge.alias.php"
 	},
 	"AutoloadClasses": {
 		"SpecialUserMerge": "includes/SpecialUserMerge.php",
 		"MergeUser": "includes/MergeUser.php",
+		"UserMergeHooks": "includes/UserMergeHooks.php",
 		"IUserMergeLogger": "includes/IUserMergeLogger.php",
 		"UserMergeLogger": "includes/UserMergeLogger.php",
 		"UserMergeLogFormatter": "includes/UserMergeLogFormatter.php"
+	},
+	"ConfigRegistry": {
+		"usermerge": "GlobalVarConfig::newInstance"
 	},
 	"config": {
 		"UserMergeEnableDelete": {
