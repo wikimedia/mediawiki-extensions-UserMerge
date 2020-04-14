@@ -9,7 +9,8 @@
 			"Liuxinyu970226",
 			"Mark85296341",
 			"Winston Sung",
-			"Wrightbus"
+			"Wrightbus",
+			"Xiplus"
 		]
 	},
 	"usermerge": "合併並刪除使用者",
@@ -26,7 +27,7 @@
 	"usermerge-badtoken": "無效的編輯權杖。",
 	"usermerge-userdeleted": "$1（$2）已刪除。",
 	"usermerge-success": "已完成由 $1（$2）至 $3（$4）的合併。",
-	"usermerge-logpage": "使用者合併紀錄",
+	"usermerge-logpage": "使用者合併日誌",
 	"usermerge-logpagetext": "此頁為使用者合併動作的記錄。",
 	"usermerge-noselfdelete": "您無法刪除或合併{{GENDER:$1|自己}}！",
 	"usermerge-protectedgroup": "無法完成{{GENDER:$1|使用者}}合併：使用者屬於受保護群組成員。",
