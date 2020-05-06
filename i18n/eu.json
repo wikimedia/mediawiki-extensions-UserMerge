@@ -15,7 +15,7 @@
 	"usermerge-deleteolduser": "Ezabatu lankide zaharra",
 	"usermerge-submit": "Lankidea batu",
 	"usermerge-badtoken": "Aldaketa token ez baliagarria",
-	"usermerge-userdeleted": "$1 ($2) ezabatua izan da.",
+	"usermerge-userdeleted": "$1 ($2) ezabatu da.",
 	"usermerge-success": "$1(e)tik ($2) $3(e)ra ($4) batzea burutu da.",
 	"usermerge-logpage": "Lankide batze loga",
 	"usermerge-logpagetext": "Log hau lankide batze ekintzena da.",
