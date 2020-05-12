@@ -30,8 +30,12 @@
 	},
 	"ActionFilteredLogs": {
 		"usermerge": {
-			"mergeuser": [ "mergeuser" ],
-			"deleteuser": [ "deleteuser" ]
+			"mergeuser": [
+				"mergeuser"
+			],
+			"deleteuser": [
+				"deleteuser"
+			]
 		}
 	},
 	"LogActionsHandlers": {
@@ -53,10 +57,14 @@
 		"UserMergeLogFormatter": "includes/UserMergeLogFormatter.php"
 	},
 	"config": {
-		"UserMergeEnableDelete": true,
-		"UserMergeProtectedGroups": [
-			"sysop"
-		]
+		"UserMergeEnableDelete": {
+			"value": true
+		},
+		"UserMergeProtectedGroups": {
+			"value": [
+				"sysop"
+			]
+		}
 	},
-	"manifest_version": 1
+	"manifest_version": 2
 }
