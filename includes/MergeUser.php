@@ -426,6 +426,8 @@ class MergeUser {
 		}
 
 		$dbw->delete( 'user_newtalk', [ 'user_id' => $this->oldUser->getId() ] );
+		$this->oldUser->clearInstanceCache();
+		$this->newUser->clearInstanceCache();
 
 		Hooks::run( 'MergeAccountFromTo', [ &$this->oldUser, &$this->newUser ] );
 	}
