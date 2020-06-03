@@ -526,7 +526,8 @@ class MergeUser {
 				'page_namespace' => [ NS_USER, NS_USER_TALK ],
 				'page_title' . $dbr->buildLike( $oldusername->getDBkey() . '/', $dbr->anyString() )
 					. ' OR page_title = ' . $dbr->addQuotes( $oldusername->getDBkey() ),
-			]
+			],
+			__METHOD__
 		);
 
 		$message = function ( /* ... */ ) use ( $msg ) {
@@ -657,7 +658,8 @@ class MergeUser {
 			}
 			$db->delete(
 				$table,
-				[ $field => $this->oldUser->getId() ]
+				[ $field => $this->oldUser->getId() ],
+				__METHOD__
 			);
 		}
 
