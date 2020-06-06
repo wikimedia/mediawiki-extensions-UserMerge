@@ -425,7 +425,7 @@ class MergeUser {
 			}
 		}
 
-		$dbw->delete( 'user_newtalk', [ 'user_id' => $this->oldUser->getId() ] );
+		$dbw->delete( 'user_newtalk', [ 'user_id' => $this->oldUser->getId() ], __METHOD__ );
 		$this->oldUser->clearInstanceCache();
 		$this->newUser->clearInstanceCache();
 
