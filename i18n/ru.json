@@ -37,5 +37,9 @@
 	"usermerge-autopagedelete": "Автоматически удалённая страница при объединении участников",
 	"usermerge-page-unmoved": "Страница $1 не может быть переименована в $2.",
 	"usermerge-move-log": "Автоматически переименованная страница во время объединения учётной записи «$1» с «[[User:$2|$2]]»",
-	"log-action-filter-usermerge": "Тип действия:"
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|объединил|объединила}} учётную запись \"$4\" ($5) с {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|удалил|удалила}} учётную запись \"$4\" ($5)",
+	"log-action-filter-usermerge": "Тип действия:",
+	"log-action-filter-usermerge-mergeuser": "Объединение учётных записей",
+	"log-action-filter-usermerge-deleteuser": "Удаление учётной записи"
 }
