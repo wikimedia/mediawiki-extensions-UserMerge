@@ -5,6 +5,7 @@
 			"Joseph",
 			"Karduelis",
 			"Srhat",
+			"Uncitoyen",
 			"Violetanka"
 		]
 	},
@@ -31,7 +32,7 @@
 	"usermerge-autopagedelete": "Kullanıcıları birleştirirken otomatik olarak silinen sayfa",
 	"usermerge-page-unmoved": "$1 sayfası $2 taşınamadı.",
 	"usermerge-move-log": "\"$1\" hesabı \"[[User:$2|$2]]\" ile birleştirilirken otomatik olarak sayfa taşındı",
-	"logentry-usermerge-mergeuser": "$1 kullanıcı hesabını \"$4\" ($5) {{GENDER:$8|$6}} olarak ($7) {{GENDER:$2|birleştirildi}}",
+	"logentry-usermerge-mergeuser": "$1 \"$4\" ($5) kullanıcı hesabını {{GENDER:$8|$6}} ($7) kullanıcısıyla {{GENDER:$2|birleştirdi}}",
 	"logentry-usermerge-deleteuser": "$1 kullanıcı hesabı {{GENDER:$2|sildi}} \"$4\" ($5)",
 	"log-action-filter-usermerge": "Eylem türü:",
 	"log-action-filter-usermerge-mergeuser": "Kullanıcı hesabı birleştirme",
