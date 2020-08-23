@@ -20,7 +20,7 @@ class UserMergeLogger implements IUserMergeLogger {
 			'newId' => $newUser->getId(),
 		] );
 		$logEntry->setRelations( [ 'oldname' => $oldUser->getName() ] );
-		$logEntry->insert();
+		$logEntry->publish( $logEntry->insert() );
 	}
 
 	/**
@@ -37,6 +37,6 @@ class UserMergeLogger implements IUserMergeLogger {
 			'oldName' => $oldUser->getName(),
 			'oldId' => $oldUser->getId(),
 		] );
-		$logEntry->insert();
+		$logEntry->publish( $logEntry->insert() );
 	}
 }
