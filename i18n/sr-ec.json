@@ -34,7 +34,7 @@
 	"usermerge-move-log": "Аутоматски премештено при обједињавању налога „$1“ и „[[User:$2|$2]]“.",
 	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|објединио|објединила}} је кориснички налог „$4” ($5) у {{GENDER:$8|$6}} ($7)",
 	"logentry-usermerge-deleteuser": "$1 је {{GENDER:$2|избрисао|избрисала}} кориснички налог „$4” ($5)",
-	"log-action-filter-usermerge": "Тип радње:",
+	"log-action-filter-usermerge": "Врста радње:",
 	"log-action-filter-usermerge-mergeuser": "Обједињавање корисничког налога",
 	"log-action-filter-usermerge-deleteuser": "Брисање корисничког налога"
 }
