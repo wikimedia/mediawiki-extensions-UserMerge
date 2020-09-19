@@ -21,7 +21,8 @@ class MergeUser {
 	/** @var integer */
 	private $flags;
 
-	const USE_MULTI_COMMIT = 1; // allow begin/commit; useful for jobs or CLI mode
+	// allow begin/commit; useful for jobs or CLI mode
+	public const USE_MULTI_COMMIT = 1;
 
 	/**
 	 * @param User $oldUser
