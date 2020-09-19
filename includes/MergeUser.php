@@ -602,21 +602,17 @@ class MergeUser {
 		$wikipage = WikiPage::factory( $title );
 		$reason = $msg( 'usermerge-autopagedelete' )->inContentLanguage()->text();
 		$error = '';
-		if ( version_compare( MW_VERSION, '1.35', '<' ) ) {
-			$wikipage->doDeleteArticle( $reason, false, null, null, $error, $user, true );
-		} else {
-			$wikipage->doDeleteArticleReal(
-				$reason,
-				$user,
-				false,
-				null, // Unused
-				$error,
-				null, // Unused
-				[],
-				'delete',
-				true
-			);
-		}
+		$wikipage->doDeleteArticleReal(
+			$reason,
+			$user,
+			false,
+			null, // Unused
+			$error,
+			null, // Unused
+			[],
+			'delete',
+			true
+		);
 	}
 
 	/**
