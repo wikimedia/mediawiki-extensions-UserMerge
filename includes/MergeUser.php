@@ -58,7 +58,7 @@ class MergeUser {
 	 *
 	 * @return array Array of failed page moves, see MergeUser::movePages
 	 */
-	public function delete( User $performer, /* callable */ $msg ) {
+	public function delete( User $performer, $msg ) {
 		$failed = $this->movePages( $performer, $msg );
 		$this->deleteUser();
 		$this->logger->addDeleteEntry( $performer, $this->oldUser );
@@ -158,8 +158,10 @@ class MergeUser {
 		$winner = $this->chooseBlock( $oldBlockObj, $newBlockObj );
 		if ( $winner->getId() === $newBlockObj->getId() ) {
 			$oldBlockObj->delete();
-		} else { // Old user block won
-			$newBlockObj->delete(); // Delete current new block
+		} else {
+			// Old user block won
+			// Delete current new block
+			$newBlockObj->delete();
 			$dbw->update(
 				'ipblocks',
 				[ 'ipb_user' => $this->newUser->getId() ],
@@ -212,6 +214,11 @@ class MergeUser {
 		return $b2;
 	}
 
+	/**
+	 * @param int $stage
+	 *
+	 * @return bool
+	 */
 	private function stageNeedsUser( $stage ) {
 		if ( !defined( 'MIGRATION_NEW' ) ) {
 			return true;
@@ -227,6 +234,11 @@ class MergeUser {
 		}
 	}
 
+	/**
+	 * @param int $stage
+	 *
+	 * @return bool
+	 */
 	private function stageNeedsActor( $stage ) {
 		if ( !defined( 'MIGRATION_NEW' ) ) {
 			return false;
@@ -511,7 +523,7 @@ class MergeUser {
 	 * @param callable $msg Function that returns a Message object
 	 * @return array Array of old name (string) => new name (Title) where the move failed
 	 */
-	private function movePages( User $performer, /* callable */ $msg ) {
+	private function movePages( User $performer, $msg ) {
 		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
 		$oldusername = trim( str_replace( '_', ' ', $this->oldUser->getName() ) );
@@ -531,7 +543,7 @@ class MergeUser {
 			__METHOD__
 		);
 
-		$message = function ( /* ... */ ) use ( $msg ) {
+		$message = function () use ( $msg ) {
 			return call_user_func_array( $msg, func_get_args() );
 		};
 
@@ -541,7 +553,8 @@ class MergeUser {
 			$newPage = Title::makeTitleSafe( $row->page_namespace,
 				preg_replace( '!^[^/]+!', $newusername->getDBkey(), $row->page_title ) );
 
-			if ( $this->newUser->getName() === 'Anonymous' ) { # delete ALL old pages
+			if ( $this->newUser->getName() === 'Anonymous' ) {
+				# delete ALL old pages
 				if ( $oldPage->exists() ) {
 					$this->deletePage( $message, $performer, $oldPage );
 				}
@@ -555,7 +568,8 @@ class MergeUser {
 			) {
 				# delete old pages that can't be moved
 				$this->deletePage( $message, $performer, $oldPage );
-			} else { # move content to new page
+			} else {
+				# move content to new page
 				# delete target page if it exists and is blank
 				if ( $newPage->exists() ) {
 					$this->deletePage( $message, $performer, $newPage );
@@ -607,9 +621,11 @@ class MergeUser {
 			$reason,
 			$user,
 			false,
-			null, // Unused
+			// Unused
+			null,
 			$error,
-			null, // Unused
+			// Unused
+			null,
 			[],
 			'delete',
 			true

@@ -12,7 +12,8 @@ class MergeUserTest extends MediaWikiTestCase {
 		$this->counter++;
 		$name = __CLASS__ . (string)$this->counter;
 		$user = User::newFromName( $name );
-		if ( $user->getId() ) { // Already exists, try again.
+		if ( $user->getId() ) {
+			// Already exists, try again.
 			return $this->getNewTestUser();
 		}
 		$user->setName( $name );

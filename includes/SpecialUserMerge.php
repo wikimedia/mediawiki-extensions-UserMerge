@@ -87,7 +87,8 @@ class SpecialUserMerge extends FormSpecialPage {
 	public function validateNewUser( $val ) {
 		$enableDelete = $this->getConfig()->get( 'UserMergeEnableDelete' );
 		if ( $enableDelete && $val === 'Anonymous' ) {
-			return true; // Special case
+			// Special case
+			return true;
 		}
 		$newUser = User::newFromName( $val );
 		if ( !$newUser || $newUser->getId() === 0 ) {
