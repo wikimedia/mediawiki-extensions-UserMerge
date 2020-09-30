@@ -4,6 +4,7 @@
 			"Andrei Stroe",
 			"KlaudiuMihaila",
 			"Mihai",
+			"NGC 54",
 			"XXN"
 		]
 	},
@@ -24,5 +25,7 @@
 	"usermerge-logpagetext": "Acesta este jurnalul acțiunilor de contopire a conturilor de utilizator.",
 	"usermerge-noselfdelete": "Nu poate fi șters sau contopit {{GENDER:$1|contul propriu}}!",
 	"usermerge-protectedgroup": "Nu poate fi contopit utilizatorul - utilizatorul face parte dintr-un grup protejat.",
-	"right-usermerge": "Contopire conturi de utilizator"
+	"right-usermerge": "Contopire conturi de utilizator",
+	"logentry-usermerge-mergeuser": "$1 a {{GENDER:$2|contopit}} contul de utilizator „$4” ($5) în {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 a {{GENDER:$2|șters}} contul de utilizator „$4” ($5)"
 }
