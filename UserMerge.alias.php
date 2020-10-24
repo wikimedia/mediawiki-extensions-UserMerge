@@ -58,6 +58,11 @@ $specialPageAliases['cdo'] = [
 	'UserMerge' => [ '用戶合併' ],
 ];
 
+/** Czech (čeština) */
+$specialPageAliases['cs'] = [
+	'UserMerge' => [ 'Sloučení_uživatelů' ],
+];
+
 /** German (Deutsch) */
 $specialPageAliases['de'] = [
 	'UserMerge' => [ 'Benutzerkonten_vereinigen' ],
