@@ -6,7 +6,8 @@
 			"Karduelis",
 			"Srhat",
 			"Uncitoyen",
-			"Violetanka"
+			"Violetanka",
+			"Vito Genovese"
 		]
 	},
 	"usermerge": "Kullanıcıları birleştir ve sil",
@@ -22,11 +23,11 @@
 	"usermerge-submit": "Kullanıcıyı birleştir",
 	"usermerge-badtoken": "Geçersiz düzenleme anahtarı.",
 	"usermerge-userdeleted": "$1 ($2) silindi.",
-	"usermerge-success": "$1 ($2) kullanıcısından $3 ($4) kullanıcısına birleştirme tamamlandı.",
+	"usermerge-success": "$1 ($2) adlı kullanıcı ile $3 ($4) adlı kullanıcının birleştirme işlemi tamamlandı.",
 	"usermerge-logpage": "Kullanıcı birleştirme günlüğü",
 	"usermerge-logpagetext": "Bu bir kullanıcı birleştirme eylemleri günlüğüdür.",
 	"usermerge-noselfdelete": "{{GENDER:$1|kendinizi}} birleştiremez ya da silemezsiniz!",
-	"usermerge-protectedgroup": "{{GENDER:$1|Kullanıcısından}} birleştirilemiyor: kullanıcı korunan bir grupta bulunuyor.",
+	"usermerge-protectedgroup": "{{GENDER:$1|Kullanıcı}} ile birleştirme gerçekleştirilemiyor: Kullanıcı koruma altındaki bir grupta bulunuyor.",
 	"right-usermerge": "Kullanıcıları birleştir",
 	"action-usermerge": "kullanıcıları birleştir",
 	"usermerge-autopagedelete": "Kullanıcıları birleştirirken otomatik olarak silinen sayfa",
