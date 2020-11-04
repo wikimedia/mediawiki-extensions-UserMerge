@@ -18,7 +18,7 @@ class MergeUser {
 	 */
 	private $logger;
 
-	/** @var integer */
+	/** @var int */
 	private $flags;
 
 	// allow begin/commit; useful for jobs or CLI mode
