@@ -223,9 +223,6 @@ class MergeUser {
 		if ( !defined( 'MIGRATION_NEW' ) ) {
 			return true;
 		}
-		if ( !class_exists( ActorMigration::class ) ) {
-			return false;
-		}
 
 		if ( defined( 'ActorMigration::MIGRATION_STAGE_SCHEMA_COMPAT' ) ) {
 			return (bool)( (int)$stage & SCHEMA_COMPAT_WRITE_OLD );
@@ -242,9 +239,6 @@ class MergeUser {
 	private function stageNeedsActor( $stage ) {
 		if ( !defined( 'MIGRATION_NEW' ) ) {
 			return false;
-		}
-		if ( !class_exists( ActorMigration::class ) ) {
-			return true;
 		}
 
 		if ( defined( 'ActorMigration::MIGRATION_STAGE_SCHEMA_COMPAT' ) ) {
