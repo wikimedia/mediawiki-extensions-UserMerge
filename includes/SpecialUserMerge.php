@@ -32,7 +32,7 @@ class SpecialUserMerge extends FormSpecialPage {
 				'required' => true,
 				'validation-callback' => function ( $val ) {
 					$key = $this->validateOldUser( $val );
-					if ( is_string( $key ) || is_array( $key ) ) {
+					if ( is_array( $key ) ) {
 						return $this->msg( $key )->escaped();
 					}
 					return true;
@@ -64,7 +64,7 @@ class SpecialUserMerge extends FormSpecialPage {
 
 	/**
 	 * @param string $val user's input for username
-	 * @return bool|string|string[] true if valid, a string or string[] of the error's message key
+	 * @return true|string[] true if valid, a string[] of the error's message key and params
 	 *   if validation failed
 	 */
 	public function validateOldUser( $val ) {
@@ -82,7 +82,7 @@ class SpecialUserMerge extends FormSpecialPage {
 
 	/**
 	 * @param string $val user's input for username
-	 * @return bool|string true if valid, a string of the error's message key if validation failed
+	 * @return true|string true if valid, a string of the error's message key if validation failed
 	 */
 	public function validateNewUser( $val ) {
 		$enableDelete = $this->getConfig()->get( 'UserMergeEnableDelete' );

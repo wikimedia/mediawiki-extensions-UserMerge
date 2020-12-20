@@ -2,6 +2,7 @@
 
 class UserMergeLogFormatter extends LogFormatter {
 
+	/** @var int[] */
 	private static $mapLegacy = [
 		'oldName' => 0,
 		'oldId' => 1,

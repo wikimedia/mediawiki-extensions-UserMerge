@@ -11,7 +11,11 @@ class MergeUser {
 	/**
 	 * @var User
 	 */
-	private $oldUser, $newUser;
+	private $oldUser;
+	/**
+	 * @var User
+	 */
+	private $newUser;
 
 	/**
 	 * @var IUserMergeLogger
