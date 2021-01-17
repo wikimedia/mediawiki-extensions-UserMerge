@@ -6,6 +6,7 @@
  */
 class MergeUserTest extends MediaWikiTestCase {
 
+	/** @var int */
 	private $counter = 0;
 
 	private function getNewTestUser() {
@@ -34,7 +35,7 @@ class MergeUserTest extends MediaWikiTestCase {
 	/**
 	 * Clear all instance caches
 	 *
-	 * @param User $u
+	 * @param User &$u
 	 */
 	private function reallyClearInstanceCache( User &$u ) {
 		$u = User::newFromName( $u->getName() );
