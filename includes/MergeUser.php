@@ -377,7 +377,14 @@ class MergeUser {
 
 		if ( $this->oldUser->getActorId() ) {
 			$oldActorId = $this->oldUser->getActorId();
-			$newActorId = $this->newUser->getActorId( $dbw );
+			if ( interface_exists( '\MediaWiki\User\ActorNormalization' ) ) {
+				// MW 1.36+
+				$newActorId = MediaWikiServices::getInstance()
+					->getActorNormalization()
+					->acquireActorId( $this->newUser );
+			} else {
+				$newActorId = $this->newUser->getActorId( $dbw );
+			}
 
 			foreach ( $updateFields as $fieldInfo ) {
 				if ( empty( $fieldInfo['actorId'] ) || empty( $fieldInfo['actorStage'] ) ||
