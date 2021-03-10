@@ -13,7 +13,7 @@
 	"usermerge-newuser": "ახალი მომხმარებელი (გაერთიანება):",
 	"usermerge-deleteolduser": "ძველი მომხმარებლის წაშლა",
 	"usermerge-submit": "მომხმარებლების გაერთიანება",
-	"usermerge-userdeleted": "მომხმარებელი {{GENDER:$1|$1}} ($2) წაიშალა.",
+	"usermerge-userdeleted": "მომხმარებელი $1 ($2) წაიშალა.",
 	"usermerge-logpage": "მომხმარებელთა შერწყმის ჟურნალი",
 	"right-usermerge": "მომხმარებლების გაერთიანება",
 	"log-action-filter-usermerge-deleteuser": "მომხმარებლის ანგარიშის წაშლა"
