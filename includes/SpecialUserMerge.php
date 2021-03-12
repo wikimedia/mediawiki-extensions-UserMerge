@@ -15,9 +15,21 @@
  *
  */
 
+use MediaWiki\User\UserGroupManager;
+
 class SpecialUserMerge extends FormSpecialPage {
-	public function __construct() {
+
+	/** @var UserGroupManager */
+	private $userGroupManager;
+
+	/**
+	 * @param UserGroupManager $userGroupManager
+	 */
+	public function __construct(
+		UserGroupManager $userGroupManager
+	) {
 		parent::__construct( 'UserMerge', 'usermerge' );
+		$this->userGroupManager = $userGroupManager;
 	}
 
 	/**
@@ -73,7 +85,7 @@ class SpecialUserMerge extends FormSpecialPage {
 			return [ 'usermerge-noselfdelete', $this->getUser()->getName() ];
 		}
 		$protectedGroups = $this->getConfig()->get( 'UserMergeProtectedGroups' );
-		if ( count( array_intersect( $oldUser->getGroups(), $protectedGroups ) ) ) {
+		if ( array_intersect( $this->userGroupManager->getUserGroups( $oldUser ), $protectedGroups ) !== [] ) {
 			return [ 'usermerge-protectedgroup', $oldUser->getName() ];
 		}
 

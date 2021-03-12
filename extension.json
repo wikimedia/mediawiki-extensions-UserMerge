@@ -17,7 +17,12 @@
 		"usermerge"
 	],
 	"SpecialPages": {
-		"UserMerge": "SpecialUserMerge"
+		"UserMerge": {
+			"class": "SpecialUserMerge",
+			"services": [
+				"UserGroupManager"
+			]
+		}
 	},
 	"LogTypes": [
 		"usermerge"
