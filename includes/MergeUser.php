@@ -381,7 +381,7 @@ class MergeUser {
 				// MW 1.36+
 				$newActorId = MediaWikiServices::getInstance()
 					->getActorNormalization()
-					->acquireActorId( $this->newUser );
+					->acquireActorId( $this->newUser, $dbw );
 			} else {
 				$newActorId = $this->newUser->getActorId( $dbw );
 			}
