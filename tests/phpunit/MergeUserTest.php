@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\MediaWikiServices;
+
 /**
  * @todo this should better use the Database group
  * @group Database
@@ -47,8 +49,9 @@ class MergeUserTest extends MediaWikiTestCase {
 	public function testBasicMerge() {
 		$user1 = $this->getNewTestUser();
 		$user1->addToDatabase();
-		$user1->setOption( 'foo', 'baz' );
-		$user1->saveSettings();
+		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		$userOptionsManager->setOption( $user1, 'foo', 'baz' );
+		$userOptionsManager->saveOptions( $user1 );
 		$user2 = $this->getNewTestUser();
 		$user2->addToDatabase();
 
