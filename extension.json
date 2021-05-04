@@ -75,7 +75,8 @@
 		"UserMergeProtectedGroups": {
 			"value": [
 				"sysop"
-			]
+			],
+			"merge_strategy": "provide_default"
 		}
 	},
 	"manifest_version": 2
