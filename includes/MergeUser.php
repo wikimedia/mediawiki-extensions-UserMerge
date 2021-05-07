@@ -548,7 +548,7 @@ class MergeUser {
 			__METHOD__
 		);
 
-		$message = function () use ( $msg ) {
+		$message = static function () use ( $msg ) {
 			return call_user_func_array( $msg, func_get_args() );
 		};
 
