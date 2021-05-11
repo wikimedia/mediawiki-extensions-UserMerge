@@ -9,7 +9,7 @@
 	"usermerge-badnewuser": "Нийса йоцу декъашхочун керла цӀе",
 	"usermerge-nonewuser": "Декъашхочун керла цӀе йаьсса йу — вовшахтухучу хенахь «{{GENDER:$1|$1}}».<br />\nТӀетаӀае «{{int:usermerge-submit}}», дешдерг кхочушдан.",
 	"usermerge-noolduser": "Декъашхочун шира цӀе йаьсса йу",
-	"usermerge-same-old-and-new-user": "Шира а керла цӀе башха хела еза.",
+	"usermerge-same-old-and-new-user": "Шира а керла цӀе башха хела йеза.",
 	"usermerge-fieldset": "Вовшахтухуш долу декъашхойн дӀяздарш",
 	"usermerge-olduser": "Шира декъашхочун агӀо (вовшахтоха):",
 	"usermerge-newuser": "Керла декъашхочун агӀо (вовшахтоха):",
@@ -21,10 +21,10 @@
 	"usermerge-logpage": "Декъашхой вовшахтохаран тептар",
 	"usermerge-logpagetext": "ХӀара декъашхой вовшахтохаран тептар ду.",
 	"usermerge-noselfdelete": "{{GENDER:$1|Хьан декъашхочун агӀо}} дӀайаккха йа вовшахтоха хьа таро йац!",
-	"usermerge-protectedgroup": "{{GENDER:$1|Декъашхой}} вовшахтоха цало — декъашхо Ӏалашйина тобан юкъахь хилар бахьнехь.",
+	"usermerge-protectedgroup": "{{GENDER:$1|Декъашхой}} вовшахтоха цало — декъашхо Ӏалашйина тобан йукъахь хилар бахьнехь.",
 	"right-usermerge": "декъашхой вовшахтохар",
 	"action-usermerge": "декъашхой цхьаьнатохар",
-	"usermerge-autopagedelete": "Декъашхой вовшахтоьхча авто. дӀайохуш ю",
+	"usermerge-autopagedelete": "Декъашхой вовшахтоьхча авто. дӀайохуш йу",
 	"usermerge-page-unmoved": "АгӀона $1 цӀе → $2 хуьйцийла йац.",
 	"usermerge-move-log": "Авто цӀе хийцина декъашхочун агӀо вовшахтоьхна дела «[[User:$1|$1]]» → «[[User:$2|$2]]»"
 }
