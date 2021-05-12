@@ -1,12 +1,9 @@
 <?php
-
-use MediaWiki\MediaWikiServices;
-
 /**
  * @todo this should better use the Database group
  * @group Database
  */
-class MergeUserTest extends MediaWikiTestCase {
+class MergeUserTest extends MediaWikiIntegrationTestCase {
 
 	/** @var int */
 	private $counter = 0;
@@ -49,7 +46,7 @@ class MergeUserTest extends MediaWikiTestCase {
 	public function testBasicMerge() {
 		$user1 = $this->getNewTestUser();
 		$user1->addToDatabase();
-		$userOptionsManager = MediaWikiServices::getInstance()->getUserOptionsManager();
+		$userOptionsManager = $this->getServiceContainer()->getUserOptionsManager();
 		$userOptionsManager->setOption( $user1, 'foo', 'baz' );
 		$userOptionsManager->saveOptions( $user1 );
 		$user2 = $this->getNewTestUser();
@@ -69,10 +66,11 @@ class MergeUserTest extends MediaWikiTestCase {
 	 */
 	public function testMergeOfUserGroups() {
 		$user1 = $this->getNewTestUser();
-		$user1->addGroup( 'group1' );
-		$user1->addGroup( 'group2' );
+		$userGroupManager = $this->getServiceContainer()->getUserGroupManager();
+		$userGroupManager->addUserToGroup( $user1, 'group1' );
+		$userGroupManager->addUserToGroup( $user1, 'group2' );
 		$user2 = $this->getNewTestUser();
-		$user2->addGroup( 'group2' );
+		$userGroupManager->addUserToGroup( $user2, 'group2' );
 
 		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
 		$mu->merge( $this->createMock( User::class ) );
@@ -80,8 +78,8 @@ class MergeUserTest extends MediaWikiTestCase {
 		$this->reallyClearInstanceCache( $user1 );
 		$this->reallyClearInstanceCache( $user2 );
 
-		$this->assertArrayEquals( [ 'group2' ], $user1->getGroups() );
-		$this->assertArrayEquals( [ 'group1', 'group2' ], $user2->getGroups() );
+		$this->assertArrayEquals( [ 'group2' ], $userGroupManager->getUserGroups( $user1 ) );
+		$this->assertArrayEquals( [ 'group1', 'group2' ], $userGroupManager->getUserGroups( $user2 ) );
 	}
 
 	/**
