@@ -7,6 +7,7 @@
 			"Hzy980512",
 			"Liangent",
 			"Liuxinyu970226",
+			"Shizhao",
 			"Yfdyh000",
 			"乌拉跨氪"
 		]
@@ -33,5 +34,10 @@
 	"action-usermerge": "合并用户",
 	"usermerge-autopagedelete": "在合并用户时自动删除页面",
 	"usermerge-page-unmoved": "页面$1无法被移动到$2。",
-	"usermerge-move-log": "在合并账户“$1”到“[[User:$2|$2]]”时自动移动页面"
+	"usermerge-move-log": "在合并账户“$1”到“[[User:$2|$2]]”时自动移动页面",
+	"logentry-usermerge-mergeuser": "$1将用户帐户“$4”（$5）{{GENDER:$2|合并}}到{{GENDER:$8|$6}}（$7）",
+	"logentry-usermerge-deleteuser": "$1{{GENDER:$2|删除了}}用户帐户“$4”（$5）",
+	"log-action-filter-usermerge": "操作类型：",
+	"log-action-filter-usermerge-mergeuser": "用户账号合并",
+	"log-action-filter-usermerge-deleteuser": "用户账号删除"
 }
