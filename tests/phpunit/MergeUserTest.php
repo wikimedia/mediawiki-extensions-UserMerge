@@ -22,7 +22,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 		return $user;
 	}
 
-	public function setUp() : void {
+	public function setUp(): void {
 		parent::setUp();
 
 		$this->tablesUsed[] = 'page';
