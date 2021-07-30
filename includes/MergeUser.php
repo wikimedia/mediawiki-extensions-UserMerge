@@ -74,7 +74,7 @@ class MergeUser {
 	 * Adds edit count of both users
 	 */
 	private function mergeEditcount() {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$dbw->startAtomic( __METHOD__ );
 
 		$totalEdits = $dbw->selectField(
@@ -296,7 +296,7 @@ class MergeUser {
 
 		Hooks::run( 'UserMergeAccountFields', [ &$updateFields ] );
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
 		$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 
@@ -644,7 +644,7 @@ class MergeUser {
 	 * and user_former_groups tables.
 	 */
 	private function deleteUser() {
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_PRIMARY );
 
 		/**
 		 * Format is: table => user_id column
