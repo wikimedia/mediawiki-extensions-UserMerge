@@ -113,7 +113,7 @@ class MergeUser {
 	private function mergeBlocks( IDatabase $dbw ) {
 		$dbw->startAtomic( __METHOD__ );
 
-		// Pull blocks directly from master
+		// Pull blocks directly from primary
 		$qi = DatabaseBlock::getQueryInfo();
 		$rows = $dbw->select(
 			$qi['tables'],
@@ -305,7 +305,7 @@ class MergeUser {
 
 		if ( $this->flags & self::USE_MULTI_COMMIT ) {
 			// Flush prior writes; this actives the non-transaction path in the loop below.
-			$lbFactory->commitMasterChanges( $fnameTrxOwner );
+			$lbFactory->commitPrimaryChanges( $fnameTrxOwner );
 		}
 
 		foreach ( $updateFields as $fieldInfo ) {
