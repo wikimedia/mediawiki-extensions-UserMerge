@@ -1,6 +1,6 @@
 <?php
 
-class UserMergeHooksTest extends MediaWikiTestCase {
+class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @covers UserMergeHooks::onUserGetReservedNames
 	 */
