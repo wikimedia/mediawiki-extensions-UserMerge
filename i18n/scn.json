@@ -1,0 +1,16 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ajeje Brazorf"
+		]
+	},
+	"usermerge-badnewuser": "Novu nomu utenti nun vàlidu.",
+	"usermerge-fieldset": "Nomi utenti da jùnciri",
+	"usermerge-deleteolduser": "Cancella vecchiu utenti",
+	"usermerge-submit": "Junci utenti",
+	"usermerge-badtoken": "Token di canciamentu nun vàliddu.",
+	"usermerge-userdeleted": "$1 ($2) fu cancillatu.",
+	"right-usermerge": "Junci utenti",
+	"action-usermerge": "jùnciri utenti",
+	"log-action-filter-usermerge": "Tipu di azzioni:"
+}
