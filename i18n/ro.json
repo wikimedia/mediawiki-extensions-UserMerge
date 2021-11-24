@@ -5,7 +5,8 @@
 			"KlaudiuMihaila",
 			"Mihai",
 			"NGC 54",
-			"XXN"
+			"XXN",
+			"Strainu"
 		]
 	},
 	"usermerge": "Contopire și ștergere utilizatori",
@@ -13,6 +14,7 @@
 	"usermerge-badnewuser": "Nume de utilizator nou incorect",
 	"usermerge-nonewuser": "Nume de utilizator nou gol. Presupun fuziune cu „{{GENDER:$1|S1}}”<br />\nApasă „{{int:usermerge-submit}}” pentru a accepta.",
 	"usermerge-noolduser": "Nume de utilizator vechi gol",
+	"usermerge-same-old-and-new-user": "Numele de utilizator vechi și nou trebuie să difere.",
 	"usermerge-fieldset": "Nume de utilizator de contopit",
 	"usermerge-olduser": "Utilizator vechi (redenumește din):",
 	"usermerge-newuser": "Utilizator nou (contopește în):",
@@ -27,5 +29,7 @@
 	"usermerge-protectedgroup": "Nu poate fi contopit {{GENDER:$1|utilizatorul|utilizatoarea|utilizatorul}}: {{GENDER:$1|utilizatorul|utilizatoarea|utilizatorul}} face parte dintr-un grup protejat.",
 	"right-usermerge": "Contopire conturi de utilizator",
 	"logentry-usermerge-mergeuser": "$1 a {{GENDER:$2|contopit}} contul de utilizator „$4” ($5) în {{GENDER:$8|$6}} ($7)",
-	"logentry-usermerge-deleteuser": "$1 a {{GENDER:$2|șters}} contul de utilizator „$4” ($5)"
+	"logentry-usermerge-deleteuser": "$1 a {{GENDER:$2|șters}} contul de utilizator „$4” ($5)",
+	"log-action-filter-usermerge": "Tipul acțiunii:",
+	"log-action-filter-usermerge-deleteuser": "Ștergerea unui cont de utilizator"
 }
