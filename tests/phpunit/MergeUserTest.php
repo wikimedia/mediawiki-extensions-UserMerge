@@ -57,8 +57,8 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 
 		$this->reallyClearInstanceCache( $user1 );
 		$this->reallyClearInstanceCache( $user2 );
-		$this->assertNull( $user1->getOption( 'foo' ) );
-		$this->assertEquals( 'baz', $user2->getOption( 'foo' ) );
+		$this->assertNull( $userOptionsManager->getOption( $user1, 'foo' ) );
+		$this->assertEquals( 'baz', $userOptionsManager->getOption( $user2, 'foo' ) );
 	}
 
 	/**
