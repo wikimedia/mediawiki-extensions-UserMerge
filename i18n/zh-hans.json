@@ -8,16 +8,18 @@
 			"Liangent",
 			"Liuxinyu970226",
 			"Yfdyh000",
-			"乌拉跨氪"
+			"乌拉跨氪",
+			"Shizhao",
+			"Xzonn"
 		]
 	},
 	"usermerge": "用户合并和删除",
 	"usermerge-desc": "将在wiki数据库中[[Special:UserMerge|合并一个用户到另一个用户]] - 合并后删除旧用户。需要''usermerge''权限",
-	"usermerge-badnewuser": "无效的新用户名",
-	"usermerge-nonewuser": "新用户名为空，将假设合并到{{GENDER:$1|$1}}，<br />点击“{{int:usermerge-submit}}”以确定。",
-	"usermerge-noolduser": "清除旧用户名",
+	"usermerge-badnewuser": "无效的新用户名。",
+	"usermerge-nonewuser": "新用户名为空，将假设合并到“{{GENDER:$1|$1}}”。<br />点击“{{int:usermerge-submit}}”以确定。",
+	"usermerge-noolduser": "清除旧用户名。",
 	"usermerge-same-old-and-new-user": "新旧用户名不能相同。",
-	"usermerge-fieldset": "使用者名称合并",
+	"usermerge-fieldset": "要合并的用户名",
 	"usermerge-olduser": "旧用户（合并自）：",
 	"usermerge-newuser": "新用户（合并到）：",
 	"usermerge-deleteolduser": "删除旧用户",
@@ -33,5 +35,10 @@
 	"action-usermerge": "合并用户",
 	"usermerge-autopagedelete": "在合并用户时自动删除页面",
 	"usermerge-page-unmoved": "页面$1无法被移动到$2。",
-	"usermerge-move-log": "在合并账户“$1”到“[[User:$2|$2]]”时自动移动页面"
+	"usermerge-move-log": "在合并账户“$1”到“[[User:$2|$2]]”时自动移动页面",
+	"logentry-usermerge-mergeuser": "$1将用户帐户“$4”（$5）{{GENDER:$2|合并}}到{{GENDER:$8|$6}}（$7）",
+	"logentry-usermerge-deleteuser": "$1{{GENDER:$2|删除了}}用户帐户“$4”（$5）",
+	"log-action-filter-usermerge": "操作类型：",
+	"log-action-filter-usermerge-mergeuser": "用户账户合并",
+	"log-action-filter-usermerge-deleteuser": "用户账户删除"
 }
