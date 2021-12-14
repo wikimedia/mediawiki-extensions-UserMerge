@@ -619,7 +619,7 @@ class MergeUser {
 	 * @param Title $title
 	 */
 	private function deletePage( $msg, User $user, Title $title ) {
-		$wikipage = WikiPage::factory( $title );
+		$wikipage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
 		$reason = $msg( 'usermerge-autopagedelete' )->inContentLanguage()->text();
 		$error = '';
 		$wikipage->doDeleteArticleReal(
