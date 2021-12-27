@@ -2,6 +2,7 @@
 	"@metadata": {
 		"authors": [
 			"Bennylin",
+			"Daud I.F. Argana",
 			"IvanLanin",
 			"Rex"
 		]
@@ -9,19 +10,29 @@
 	"usermerge": "Penggabungan dan penghapusan Pengguna",
 	"usermerge-desc": "[[Special:UserMerge|Menggabungkan rekam jejak dari suatu pengguna ke pengguna lain]] di basis data wiki - sekaligus menghapus pengguna lama setelah selesai digabungkan. Tindakan ini memerlukan hak ''usermerge''.",
 	"usermerge-badnewuser": "Nama pengguna baru tidak sah",
-	"usermerge-nonewuser": "Nama pengguna baru tidak dituliskan - diasumsikan akan digabungkan ke \"$1\".<br />\nKlik \"{{int:usermerge-submit}}\" untuk melanjutkan.",
+	"usermerge-nonewuser": "Nama pengguna baru tidak dituliskan. Diasumsikan akan digabungkan ke \"{{GENDER:$1|$1}}.<br />\nKlik \"{{int:usermerge-submit}}\" untuk melanjutkan.",
 	"usermerge-noolduser": "Nama pengguna lama tidak diisi",
+	"usermerge-same-old-and-new-user": "Nama pengguna baru haruslah berbeda dengan nama pengguna lama.",
 	"usermerge-fieldset": "Akun-akun pengguna yang akan digabungkan",
 	"usermerge-olduser": "Pengguna lama (digabungkan dari):",
 	"usermerge-newuser": "Pengguna baru (digabungkan ke):",
 	"usermerge-deleteolduser": "Hapus pengguna lama",
 	"usermerge-submit": "Gabungkan pengguna",
 	"usermerge-badtoken": "Token penyuntingan tidak sah",
-	"usermerge-userdeleted": "$1 ($2) telah dihapuskan.",
+	"usermerge-userdeleted": "$1 ($2) telah dihapus.",
 	"usermerge-success": "$1 ($2) telah selesai digabungkan ke $3 ($4).",
 	"usermerge-logpage": "Catatan penggabungan pengguna",
 	"usermerge-logpagetext": "Ini adalah catatan tindakan penggabungan pengguna.",
-	"usermerge-noselfdelete": "Anda tidak dapat menghapus atau menggabungkan dari Anda sendiri!",
-	"usermerge-protectedgroup": "Tidak dapat menggabungkan dari pengguna ini - pengguna ini termasuk dalam kelompok terproteksi.",
-	"right-usermerge": "Menggabungkan pengguna"
+	"usermerge-noselfdelete": "Anda tidak dapat menghapus atau menggabungkan dari {{GENDER:$1|Anda}} sendiri!",
+	"usermerge-protectedgroup": "Tidak dapat menggabungkan dari {{GENDER:$1|pengguna}} ini: pengguna ini termasuk dalam kelompok terlindungi.",
+	"right-usermerge": "Menggabungkan pengguna",
+	"action-usermerge": "menggabungkan pengguna",
+	"usermerge-autopagedelete": "Secara otomatis menghapus halaman ketika menggabungkan pengguna",
+	"usermerge-page-unmoved": "Halaman $1 tidak dapat dipindahkan ke $2.",
+	"usermerge-move-log": "Secara otomatis memindahkan halaman ketika menggabungkan akun \"$1\" ke \"[[User:$2|$2]]\"",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|menggabungkan}} akun pengguna \"$4\" ($5) ke {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|menghapus}} akun pengguna \"$4\" ($5)",
+	"log-action-filter-usermerge": "Jenis tindakan:",
+	"log-action-filter-usermerge-mergeuser": "Penggabungan akun pengguna",
+	"log-action-filter-usermerge-deleteuser": "Penghapusan akun pengguna"
 }
