@@ -10,7 +10,8 @@
 			"Shizhao",
 			"Yfdyh000",
 			"乌拉跨氪",
-			"Xzonn"
+			"Xzonn",
+			"Tranve"
 		]
 	},
 	"usermerge": "用户合并和删除",
@@ -39,6 +40,6 @@
 	"logentry-usermerge-mergeuser": "$1将用户帐户“$4”（$5）{{GENDER:$2|合并}}到{{GENDER:$8|$6}}（$7）",
 	"logentry-usermerge-deleteuser": "$1{{GENDER:$2|删除了}}用户帐户“$4”（$5）",
 	"log-action-filter-usermerge": "操作类型：",
-	"log-action-filter-usermerge-mergeuser": "用户账户合并",
-	"log-action-filter-usermerge-deleteuser": "用户账户删除"
+	"log-action-filter-usermerge-mergeuser": "用户账号合并",
+	"log-action-filter-usermerge-deleteuser": "用户账号删除"
 }
