@@ -486,7 +486,6 @@ class MergeUser {
 				$titlesToDelete[$key] = true;
 			}
 		}
-		$dbw->freeResult( $res );
 		$titlesToDelete = array_filter( $titlesToDelete );
 
 		$conds = [];
@@ -601,7 +600,7 @@ class MergeUser {
 					[ 'pl_title' => $this->oldUser->getName() ],
 					__METHOD__
 				);
-				if ( !$dbr->numRows( $res ) ) {
+				if ( $res === false ) {
 					# nothing links here, so delete unmoved page/redirect
 					$this->deletePage( $message, $performer, $oldPage );
 				}
