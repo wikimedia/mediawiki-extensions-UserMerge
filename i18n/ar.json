@@ -22,7 +22,7 @@
 	"usermerge-badtoken": "نص تعديل غير صحيح",
 	"usermerge-userdeleted": "$1 ($2) تم حذفه.",
 	"usermerge-success": "الدمج من $1 ($2) إلى $3 ($4) اكتمل.",
-	"usermerge-logpage": "سجل دمج المستخدم",
+	"usermerge-logpage": "سجل دمج المستخدمين",
 	"usermerge-logpagetext": "هذا سجل بأفعال دمج المستخدمين.",
 	"usermerge-noselfdelete": "لا يمكنك حذف أو دمج {{GENDER:$1|نفسك}}!",
 	"usermerge-protectedgroup": "غير قادر على دمج {{GENDER:$1|المستخدم}}; المستخدم في مجموعة محمية.",
