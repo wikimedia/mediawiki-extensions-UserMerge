@@ -10,7 +10,8 @@
 			"Meisam",
 			"Mjbmr",
 			"Reza1615",
-			"ZxxZxxZ"
+			"ZxxZxxZ",
+			"Beginneruser"
 		]
 	},
 	"usermerge": "ادغام و حذف‌کردن کاربران",
@@ -23,17 +24,17 @@
 	"usermerge-olduser": "کاربر قدیمی (ادغام از):",
 	"usermerge-newuser": "کاربر تازه (ادغام با):",
 	"usermerge-deleteolduser": "پاک‌کردن کاربر قدیمی",
-	"usermerge-submit": "یکی کردن کاربر",
+	"usermerge-submit": "ادغام کاربر",
 	"usermerge-badtoken": "نشانهٔ ویرایش نامعتبر.",
 	"usermerge-userdeleted": "$1 ($2) پاک شد.",
-	"usermerge-success": "یکی‌کردن از $1 ($2) به $3 ($4) کامل شد.",
+	"usermerge-success": "ادغام از $1 ($2) به $3 ($4) کامل شد.",
 	"usermerge-logpage": "سیاههٔ ادغام کاربر",
 	"usermerge-logpagetext": "این سیاهه‌ی ادغام فعالیت‌های کاربر است.",
 	"usermerge-noselfdelete": "شما نمی‌توانید {{GENDER:$1|خودتان}} را یکی یا حذف کنید!",
-	"usermerge-protectedgroup": "ناتوان در یکی‌کردن از {{GENDER:$1|کاربر}}: کاربر در یک گروه حفاظت‌شده است.",
+	"usermerge-protectedgroup": "ناتوان در ادغام از {{GENDER:$1|کاربر}}: کاربر در یک گروه حفاظت‌شده است.",
 	"right-usermerge": "ادغام حساب‌های کاربری",
 	"action-usermerge": "ادغام کاربران",
-	"usermerge-autopagedelete": "حذف به طور خودکار هنگام ادغام کاربران",
+	"usermerge-autopagedelete": "صفحه به طور خودکار درهنگام ادغام کاربران حذف شد",
 	"usermerge-page-unmoved": "امکان انتقال صفحهٔ $1 به $2 وجود ندارد.",
-	"usermerge-move-log": "انتقال خودکار صفحه هنگام ادغام کاربر «$1» به «[[User:$2|$2]]»"
+	"usermerge-move-log": "انتقال خودکار صفحه هنگام ادغام حساب «$1» به «[[User:$2|$2]]»"
 }
