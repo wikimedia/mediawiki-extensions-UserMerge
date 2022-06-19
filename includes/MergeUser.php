@@ -291,7 +291,7 @@ class MergeUser {
 			[ 'user_properties', 'up_user', 'options' => [ 'IGNORE' ] ],
 			[ 'user_former_groups', 'ufg_user', 'options' => [ 'IGNORE' ] ],
 			[ 'revision_actor_temp', 'batchKey' => 'revactor_rev', 'actorId' => 'revactor_actor',
-				'actorStage' => SCHEMA_COMPAT_NEW ],
+				'actorStage' => SCHEMA_COMPAT_TEMP ],
 		];
 
 		Hooks::run( 'UserMergeAccountFields', [ &$updateFields ] );
