@@ -9,7 +9,8 @@
 			"Purodha",
 			"Shirayuki",
 			"Siebrand",
-			"Umherirrender"
+			"Umherirrender",
+			"Verdy p"
 		]
 	},
 	"usermerge": "{{doc-special|UserMerge}}",
@@ -37,7 +38,7 @@
 	"usermerge-move-log": "Parameters:\n* $1 - old username\n* $2 - new username",
 	"logentry-usermerge-mergeuser": "Message template for Special:Log when a user was merged into another one. Parameters:\n* $1 - The performer of the merge as a user link with actions (talk, contribs, block)\n* $2 - The username of the performer as a plain string.\n* $3 - (unused)\n* $4 - The username of the merged user as a plain string.\n* $5 - The user id of the merged user.\n* $6 - The username of the target user as a user page link.\n* $7 - The user id of the target user.\n* $8 - The username of the target user as a plain string.",
 	"logentry-usermerge-deleteuser": "Message template for Special:Log when a user was deleted. Parameters:\n* $1 - The performer of the deletion as a user link with actions (talk, contribs, block)\n* $2 - The username of the performer as a plain string.\n* $3 - (unused)\n* $4 - The username of the deleted user as a plain string.\n* $5 - The user id of the deleted user.",
-	"log-action-filter-usermerge": "{{doc-log-action-filter-type|usermerge}}\n{{Related|Log-action-filter}}",
+	"log-action-filter-usermerge": "{{Doc-log-action-filter-type|usermerge}}\n{{Identical|Type of action}}\n{{Related|Log-action-filter}}",
 	"log-action-filter-usermerge-mergeuser": "{{doc-log-action-filter-action|usermerge|mergeuser}}",
 	"log-action-filter-usermerge-deleteuser": "{{doc-log-action-filter-action|usermerge|deleteuser}}"
 }
