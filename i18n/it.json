@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ajeje Brazorf",
 			"Beta16",
 			"Darth Kule",
 			"Nemo bis",
@@ -11,7 +12,7 @@
 	"usermerge-desc": "[[Special:UserMerge|Unisce i riferimenti di un utente con quelli di un altro]] nel database della wiki e inoltre cancellerà il vecchio utente dopo l'unione. Richiede privilegi ''usermerge''",
 	"usermerge-badnewuser": "Nuovo nome utente non valido",
 	"usermerge-nonewuser": "Nuovo nome utente vuoto - l'unione verrà effettuata con l'utente \"{{GENDER:$1|$1}}\".<br />\nFare clic su \"{{int:usermerge-submit}}\" per accettare.",
-	"usermerge-noolduser": "Vecchio nome utente vuoto",
+	"usermerge-noolduser": "Vecchio nome utente vuoto.",
 	"usermerge-same-old-and-new-user": "Il vecchio ed il nuovo nome utente devono essere diversi.",
 	"usermerge-fieldset": "Nomi utente da unire",
 	"usermerge-olduser": "Vecchio utente (unisci da):",
