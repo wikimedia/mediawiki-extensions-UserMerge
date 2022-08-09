@@ -5,6 +5,7 @@
 		]
 	},
 	"usermerge-badnewuser": "Novu nomu utenti nun vàlidu.",
+	"usermerge-noolduser": "Vecchiu nomu utenti vacanti.",
 	"usermerge-fieldset": "Nomi utenti da jùnciri",
 	"usermerge-deleteolduser": "Cancella vecchiu utenti",
 	"usermerge-submit": "Junci utenti",
