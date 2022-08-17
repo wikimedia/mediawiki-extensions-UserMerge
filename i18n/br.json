@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Fohanno",
-			"Fulup"
+			"Fulup",
+			"Huñvreüs"
 		]
 	},
 	"usermerge": "Kendeuziñ an implijer ha diverkañ",
@@ -20,8 +21,8 @@
 	"usermerge-success": "Kendeuzadenn adal $1 ($2) davet $3 ($4) kaset da benn vat.",
 	"usermerge-logpage": "Marilh kendeuzadennoù an implijerien",
 	"usermerge-logpagetext": "Setu aze marilh kendeuzadennoù an implijerien.",
-	"usermerge-noselfdelete": "N'hallit ket diverkañ pe kendeuziñ adal pe davedoc'h hoc'h-unan",
-	"usermerge-protectedgroup": "Dibosupl kendeuziñ an implijer - emañ-eñ en ur strollad gwarezet",
+	"usermerge-noselfdelete": "N'hallit ket diverkañ pe kendeuziñ adal pe {{GENDER:$1|davedoc'h}} hoc'h-unan!",
+	"usermerge-protectedgroup": "Dibosupl kendeuziñ adal implijer{{GENDER:$1||ez}} - emañ en ur strollad gwarezet.",
 	"right-usermerge": "Kendeuziñ implijerien",
 	"action-usermerge": "kendeuziñ implijerien"
 }
