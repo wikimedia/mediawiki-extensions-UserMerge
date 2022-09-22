@@ -3,7 +3,8 @@
 		"authors": [
 			"Event",
 			"Jon Harald Søby",
-			"Nghtwlkr"
+			"Nghtwlkr",
+			"EdoAug"
 		]
 	},
 	"usermerge": "Brukersammenslåing og -sletting",
@@ -31,7 +32,7 @@
 	"usermerge-move-log": "Flyttet siden automatisk i forbindelse med sammenslåing av kontoen «$1» til «[[User:$2|$2]]»",
 	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|slo sammen}} brukerkontoen «$4» ($5) til {{GENDER:$8|$6}} ($7)",
 	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|slettet}} brukerkontoen «$4» ($5)",
-	"log-action-filter-usermerge": "Type handling:",
+	"log-action-filter-usermerge": "Handlingstype:",
 	"log-action-filter-usermerge-mergeuser": "Kontosammenslåing",
 	"log-action-filter-usermerge-deleteuser": "Kontosletting"
 }
