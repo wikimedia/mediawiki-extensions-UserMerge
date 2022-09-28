@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Dbc334"
+			"Dbc334",
+			"Eleassar"
 		]
 	},
 	"usermerge": "Spoji in izbriši uporabnike",
@@ -26,5 +27,7 @@
 	"action-usermerge": "spajanje uporabnikov",
 	"usermerge-autopagedelete": "Samodejno izbrisana stran med združevanjem uporabnikov",
 	"usermerge-page-unmoved": "Strani $1 ni bilo mogoče prestaviti na $2.",
-	"usermerge-move-log": "Samodejno prestavljena stran med združevanjem računa »$1« z »[[User:$2|$2]]«"
+	"usermerge-move-log": "Samodejno prestavljena stran med združevanjem računa »$1« z »[[User:$2|$2]]«",
+	"log-action-filter-usermerge-mergeuser": "Spojitev uporabniških računov",
+	"log-action-filter-usermerge-deleteuser": "Izbris uporabniškega računa"
 }
