@@ -26,5 +26,8 @@
 	"action-usermerge": "spajanje korisnika",
 	"usermerge-autopagedelete": "Automatski obrisana stranica prilikom spajanja korisnika",
 	"usermerge-page-unmoved": "Nisam moegao premjestiti stranicu $1 na $2.",
-	"log-action-filter-usermerge": "Vrsta radnje:"
+	"usermerge-move-log": "Automatski premješteno pri objedinjavanju računa „$1“ na „[[User:$2|$2]]“",
+	"log-action-filter-usermerge": "Vrsta radnje:",
+	"log-action-filter-usermerge-mergeuser": "Spajanje korisničkog računa",
+	"log-action-filter-usermerge-deleteuser": "Brisanje korisničkog računa"
 }
