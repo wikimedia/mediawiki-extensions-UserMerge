@@ -106,10 +106,11 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 		$user1 = $this->getNewTestUser();
 		$user2 = $this->getNewTestUser();
 		$count = 0;
-		$user1->incEditCount();
+		$userEditTracker = $this->getServiceContainer()->getUserEditTracker();
+		$userEditTracker->incrementUserEditCount( $user1 );
 		while ( $count < 10 ) {
-			$user1->incEditCount();
-			$user2->incEditCount();
+			$userEditTracker->incrementUserEditCount( $user1 );
+			$userEditTracker->incrementUserEditCount( $user2 );
 			$count++;
 		}
 
