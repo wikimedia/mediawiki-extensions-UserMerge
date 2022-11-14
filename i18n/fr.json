@@ -40,7 +40,7 @@
 	"usermerge-autopagedelete": "Page supprimée automatiquement lors de la fusion des utilisateurs",
 	"usermerge-page-unmoved": "Cette page $1 ne peut pas être déplacée vers $2.",
 	"usermerge-move-log": "Page renommée automatiquement lors de la fusion du compte d’utilisat{{GENDER:$1|eur|rice}} « $1 »  en « [[User:$2|]] »",
-	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|a fusionné}} le compte utilisateur « $4 » ($5) dans {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-mergeuser": "$1{{GENDER:$2|}} a fusionné le compte utilisateur « $4 » ($5) dans {{GENDER:$8|}}$6 ($7)",
 	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|a supprimé}} le compte utilisateur « $4 » ($5)",
 	"log-action-filter-usermerge": "Type d'action :",
 	"log-action-filter-usermerge-mergeuser": "Fusion de compte utilisateur",
