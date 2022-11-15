@@ -6,7 +6,7 @@
 		]
 	},
 	"usermerge": "Spoji in izbriši uporabnike",
-	"usermerge-desc": "[[Special:UserMerge|Združi sklice iz enega uporabnika na drugega]] v zbirki podatkov wikija – prav tako po združitvi izbriše stare uporabnika. Potrebuje pravico ''usermerge''",
+	"usermerge-desc": "[[Special:UserMerge|Združi sklice iz enega uporabnika na drugega]] v podatkovni zbirki vikija – prav tako po združitvi izbriše stare uporabnika. Zahteva pravico ''usermerge''",
 	"usermerge-badnewuser": "Neveljavno novo uporabniško ime",
 	"usermerge-nonewuser": "Prazno novo uporabniško ime. Predpostavljam združitev z »{{GENDER:$1|$1}}«.<br />\nKliknite »{{int:usermerge-submit}}« za sprejetje.",
 	"usermerge-noolduser": "Prazno staro uporabniško ime",
@@ -28,6 +28,9 @@
 	"usermerge-autopagedelete": "Samodejno izbrisana stran med združevanjem uporabnikov",
 	"usermerge-page-unmoved": "Strani $1 ni bilo mogoče prestaviti na $2.",
 	"usermerge-move-log": "Samodejno prestavljena stran med združevanjem računa »$1« z »[[User:$2|$2]]«",
+	"logentry-usermerge-mergeuser": "$1 je {{GENDER:$2|združil|združila|združil/a}} uporabniški račun »$4« ($5) v {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 je {{GENDER:$2|izbrisal|izbrisala|izbrisal/a}} uporabniški račun »$4« ($5)",
+	"log-action-filter-usermerge": "Vrsta dejanja:",
 	"log-action-filter-usermerge-mergeuser": "Spojitev uporabniških računov",
 	"log-action-filter-usermerge-deleteuser": "Izbris uporabniškega računa"
 }
