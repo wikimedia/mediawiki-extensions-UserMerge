@@ -29,9 +29,9 @@
 	"usermerge-autopagedelete": "Automatski se briše pri objedinjavanju naloga.",
 	"usermerge-page-unmoved": "Ne mogu da premestim stranicu $1 u $2.",
 	"usermerge-move-log": "Automatski premešteno pri objedinjavanju naloga „$1“ i „[[User:$2|$2]]“.",
-	"logentry-usermerge-mergeuser": "$1 je {{GENDER:$2|objedinio|objedinila}} korisnički nalog „$4” ($5) u {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|objedinio|objedinila}} je korisnički nalog „$4” ($5) u {{GENDER:$8|$6}} ($7)",
 	"logentry-usermerge-deleteuser": "$1 je {{GENDER:$2|izbrisao|izbrisala}} korisnički nalog „$4” ($5)",
-	"log-action-filter-usermerge": "Tip radnje:",
+	"log-action-filter-usermerge": "Vrsta radnje:",
 	"log-action-filter-usermerge-mergeuser": "Objedinjavanje korisničkog naloga",
 	"log-action-filter-usermerge-deleteuser": "Brisanje korisničkog naloga"
 }
