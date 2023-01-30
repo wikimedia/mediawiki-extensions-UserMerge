@@ -27,6 +27,8 @@
 	"usermerge-autopagedelete": "Automatski obrisana stranica prilikom spajanja korisnika",
 	"usermerge-page-unmoved": "Nisam moegao premjestiti stranicu $1 na $2.",
 	"usermerge-move-log": "Automatski premješteno pri objedinjavanju računa „$1“ na „[[User:$2|$2]]“",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|objedinio|objedinila}} je korisnički račun „$4” ($5) u {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 je {{GENDER:$2|izbrisao|izbrisala}} korisnički račun „$4” ($5)",
 	"log-action-filter-usermerge": "Vrsta radnje:",
 	"log-action-filter-usermerge-mergeuser": "Spajanje korisničkog računa",
 	"log-action-filter-usermerge-deleteuser": "Brisanje korisničkog računa"
