@@ -24,6 +24,8 @@
 	"usermerge-newuser": "Used as label for the \"New username\" inputbox.\n\nSee also:\n* {{msg-mw|Usermerge-olduser}}",
 	"usermerge-deleteolduser": "Used as label for the checkbox.",
 	"usermerge-submit": "Used in {{msg-mw|Usermerge-nonewuser}}.\n{{Identical|Merge user}}",
+	"usermerge-merge-linkoncontribs": "Link description used on [[Special:Contributions]] and [[Special:DeletedContributions]]. Only added if a user has rights to merge users. Parameters:\n* $1 - username, can be used for GENDER\n{{Identical|Merge user}}",
+	"usermerge-delete-linkoncontribs": "Link description used on [[Special:Contributions]] and [[Special:DeletedContributions]]. Only added if a user has rights to delete users. Parameters:\n* $1 - username, can be used for GENDER",
 	"usermerge-badtoken": "Used as error message if the Edit Token is invalid.",
 	"usermerge-userdeleted": "Status message. Parameters:\n* $1 is the name of a user that was deleted (not linked).\n* $2 is the ID of a user that was deleted.",
 	"usermerge-success": "Status message. Parameters:\n* $1 is a user name (not linked) that is merged into another user\n* $2 is a user ID of the source user\n* $3 is a user name (not linked) that the other user is merged into; can be used for GENDER\n* $4 is a user ID of the target user",
