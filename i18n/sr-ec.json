@@ -21,6 +21,8 @@
 	"usermerge-newuser": "Нови налог:",
 	"usermerge-deleteolduser": "Избриши стари налог",
 	"usermerge-submit": "Обједини налоге",
+	"usermerge-merge-linkoncontribs": "споји {{GENDER:$1|корисника|корисницу}}",
+	"usermerge-delete-linkoncontribs": "обриши {{GENDER:$1|корисника|корисницу}}",
 	"usermerge-badtoken": "Неважећи токен измене.",
 	"usermerge-userdeleted": "$1 ($2) је {{GENDER:$1|избрисан|избрисана}}.",
 	"usermerge-success": "Обједињавање корисника $1 ($2) и $3 ($4) је завршено.",

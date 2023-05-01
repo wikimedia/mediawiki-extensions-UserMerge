@@ -16,6 +16,8 @@
 	"usermerge-newuser": "Нов корисник (за спојување со):",
 	"usermerge-deleteolduser": "Избриши стар корисник",
 	"usermerge-submit": "Спој го корисникот",
+	"usermerge-merge-linkoncontribs": "спој {{GENDER:$1|корисник}}",
+	"usermerge-delete-linkoncontribs": "избриши {{GENDER:$1|корисник}}",
 	"usermerge-badtoken": "Погрешна шифра за уредување",
 	"usermerge-userdeleted": "$1 ($2) е избришан.",
 	"usermerge-success": "Спојувањето на $1 ($2) во $3 ($4) е готово.",

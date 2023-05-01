@@ -21,6 +21,8 @@
 	"usermerge-newuser": "Neuer Benutzername (zusammenführen nach):",
 	"usermerge-deleteolduser": "Alten Benutzernamen löschen",
 	"usermerge-submit": "Benutzerkonten zusammenführen",
+	"usermerge-merge-linkoncontribs": "{{GENDER:$1|Benutzer|Benutzerin}} zusammenführen",
+	"usermerge-delete-linkoncontribs": "{{GENDER:$1|Benutzer|Benutzerin}} löschen",
 	"usermerge-badtoken": "Ungültiges Bearbeitungstoken",
 	"usermerge-userdeleted": "„$1“ ($2) wurde gelöscht.",
 	"usermerge-success": "Die Zusammenführung von „$1“ ($2) nach „$3“ ($4) war erfolgreich.",
