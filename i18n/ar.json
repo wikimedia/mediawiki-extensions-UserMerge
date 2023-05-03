@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Alshamiri1",
 			"Meno25",
 			"OsamaK",
 			"ديفيد",
@@ -19,6 +20,8 @@
 	"usermerge-newuser": "مستخدم جديد (دمج إلى):",
 	"usermerge-deleteolduser": "حذف المستخدم القديم",
 	"usermerge-submit": "دمج المستخدم",
+	"usermerge-merge-linkoncontribs": "دمج {{GENDER:$1| مستخدم}}",
+	"usermerge-delete-linkoncontribs": "حذف {{GENDER:$1| مستخدم}}",
 	"usermerge-badtoken": "نص تعديل غير صحيح",
 	"usermerge-userdeleted": "$1 ($2) تم حذفه.",
 	"usermerge-success": "الدمج من $1 ($2) إلى $3 ($4) اكتمل.",
