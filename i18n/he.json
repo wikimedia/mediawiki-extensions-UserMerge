@@ -19,6 +19,8 @@
 	"usermerge-newuser": "משתמש חדש (מיזוג ל־):",
 	"usermerge-deleteolduser": "מחיקת משתמש ישן",
 	"usermerge-submit": "מיזוג משתמש",
+	"usermerge-merge-linkoncontribs": "מיזוג {{GENDER:$1|משתמש|משתמשת}}",
+	"usermerge-delete-linkoncontribs": "מחיקת {{GENDER:$1|משתמש|משתמשת}}",
 	"usermerge-badtoken": "אסימון עריכה שגוי.",
 	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|נמחק|נמחקה}}.",
 	"usermerge-success": "המיזוג של $1‏ ($2) לתוך $3‏ ($4) הושלם.",
