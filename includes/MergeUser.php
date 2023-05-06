@@ -294,7 +294,8 @@ class MergeUser {
 				'actorStage' => SCHEMA_COMPAT_TEMP ],
 		];
 
-		Hooks::run( 'UserMergeAccountFields', [ &$updateFields ] );
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$hookContainer->run( 'UserMergeAccountFields', [ &$updateFields ] );
 
 		$dbw = wfGetDB( DB_PRIMARY );
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
@@ -447,7 +448,7 @@ class MergeUser {
 		$this->oldUser->clearInstanceCache();
 		$this->newUser->clearInstanceCache();
 
-		Hooks::run( 'MergeAccountFromTo', [ &$this->oldUser, &$this->newUser ] );
+		$hookContainer->run( 'MergeAccountFromTo', [ &$this->oldUser, &$this->newUser ] );
 	}
 
 	/**
@@ -657,7 +658,8 @@ class MergeUser {
 			'user_former_groups' => 'ufg_user',
 		];
 
-		Hooks::run( 'UserMergeAccountDeleteTables', [ &$tablesToDelete ] );
+		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
+		$hookContainer->run( 'UserMergeAccountDeleteTables', [ &$tablesToDelete ] );
 
 		// Make sure these are always set and last
 		if ( $dbw->tableExists( 'actor', __METHOD__ ) ) {
@@ -680,7 +682,7 @@ class MergeUser {
 			);
 		}
 
-		Hooks::run( 'DeleteAccount', [ &$this->oldUser ] );
+		$hookContainer->run( 'DeleteAccount', [ &$this->oldUser ] );
 
 		DeferredUpdates::addUpdate( SiteStatsUpdate::factory( [ 'users' => -1 ] ) );
 	}
