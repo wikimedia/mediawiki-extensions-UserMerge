@@ -18,6 +18,8 @@
 	"usermerge-newuser": "Nytt brukernavn (slå sammen til):",
 	"usermerge-deleteolduser": "Slett gammel bruker",
 	"usermerge-submit": "Slå sammen brukere",
+	"usermerge-merge-linkoncontribs": "slå sammen {{GENDER:$1|bruker}}",
+	"usermerge-delete-linkoncontribs": "slett {{GENDER:$1|bruker}}",
 	"usermerge-badtoken": "Ugyldig redigeringsnøkkel.",
 	"usermerge-userdeleted": "$1 ($2) har blitt slettet.",
 	"usermerge-success": "Sammenslåing fra $1 ($2) til $3 ($4) er fullført.",
