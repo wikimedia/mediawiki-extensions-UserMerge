@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Adriendelucca",
 			"Fohanno",
 			"Fulup",
 			"Huñvreüs"
@@ -16,6 +17,7 @@
 	"usermerge-newuser": "Implijer nevez (kendeuziñ gant) :",
 	"usermerge-deleteolduser": "Diverkañ an implijer kozh",
 	"usermerge-submit": "Kendeuziñ implijer",
+	"usermerge-delete-linkoncontribs": "dilemel an {{GENDER:$1|implijer|implijerez|implijer}}",
 	"usermerge-badtoken": "Jedouer aozañ direizh",
 	"usermerge-userdeleted": "Diverket eo bet $1 ($2).",
 	"usermerge-success": "Kendeuzadenn adal $1 ($2) davet $3 ($4) kaset da benn vat.",
