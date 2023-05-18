@@ -272,7 +272,7 @@ class MergeUser {
 		$updateFields = [
 			[ 'archive', 'batchKey' => 'ar_id', 'actorId' => 'ar_actor',
 				'actorStage' => SCHEMA_COMPAT_NEW ],
-			[ 'revision', 'batchKey' => 'rev_id', 'actorId' => '',
+			[ 'revision', 'batchKey' => 'rev_id', 'actorId' => 'rev_actor',
 				'actorStage' => SCHEMA_COMPAT_NEW ],
 			[ 'filearchive', 'batchKey' => 'fa_id', 'actorId' => 'fa_actor',
 				'actorStage' => SCHEMA_COMPAT_NEW ],
