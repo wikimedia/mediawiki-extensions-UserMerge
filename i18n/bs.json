@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"CERminator",
-			"Srdjan m"
+			"Srdjan m",
+			"Srđan"
 		]
 	},
 	"usermerge": "Spajanje i brisanje korisnika",
@@ -22,5 +23,6 @@
 	"usermerge-logpagetext": "Ovo je zapisnik akcija spajanja korisnika.",
 	"usermerge-noselfdelete": "Ne možete se obrisati niti spojiti {{GENDER:$1|sami sa sobom}}!",
 	"usermerge-protectedgroup": "Ne mogu spojiti {{GENDER:$1|korisnika|korisnicu}} jer je u zaštićenoj grupi.",
-	"right-usermerge": "Spajanje korisnika"
+	"right-usermerge": "Spajanje korisnika",
+	"log-action-filter-usermerge": "Vrsta radnje:"
 }
