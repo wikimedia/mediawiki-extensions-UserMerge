@@ -24,6 +24,8 @@
 	"usermerge-newuser": "新使用者 (合併至)：",
 	"usermerge-deleteolduser": "刪除舊使用者",
 	"usermerge-submit": "合併使用者",
+	"usermerge-merge-linkoncontribs": "合併{{GENDER:$1|使用者}}",
+	"usermerge-delete-linkoncontribs": "刪除{{GENDER:$1|使用者}}",
 	"usermerge-badtoken": "無效的編輯權杖。",
 	"usermerge-userdeleted": "$1（$2）已刪除。",
 	"usermerge-success": "已完成由 $1（$2）至 $3（$4）的合併。",
