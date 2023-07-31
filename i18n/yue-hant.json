@@ -1,6 +1,8 @@
 {
 	"@metadata": {
-		"authors": []
+		"authors": [
+			"Winston Sung"
+		]
 	},
 	"usermerge": "用戶合併同刪除",
 	"usermerge-badnewuser": "無效嘅新用戶名",
