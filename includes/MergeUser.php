@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Block\DatabaseBlock;
+use MediaWiki\Extension\UserMerge\Hooks\HookRunner;
 use MediaWiki\MediaWikiServices;
 use Wikimedia\Rdbms\IDatabase;
 
@@ -294,8 +295,8 @@ class MergeUser {
 				'actorStage' => SCHEMA_COMPAT_TEMP ],
 		];
 
-		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
-		$hookContainer->run( 'UserMergeAccountFields', [ &$updateFields ] );
+		$hookRunner = new HookRunner( MediaWikiServices::getInstance()->getHookContainer() );
+		$hookRunner->onUserMergeAccountFields( $updateFields );
 
 		$dbw = wfGetDB( DB_PRIMARY );
 		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
@@ -448,7 +449,7 @@ class MergeUser {
 		$this->oldUser->clearInstanceCache();
 		$this->newUser->clearInstanceCache();
 
-		$hookContainer->run( 'MergeAccountFromTo', [ &$this->oldUser, &$this->newUser ] );
+		$hookRunner->onMergeAccountFromTo( $this->oldUser, $this->newUser );
 	}
 
 	/**
@@ -658,8 +659,8 @@ class MergeUser {
 			'user_former_groups' => 'ufg_user',
 		];
 
-		$hookContainer = MediaWikiServices::getInstance()->getHookContainer();
-		$hookContainer->run( 'UserMergeAccountDeleteTables', [ &$tablesToDelete ] );
+		$hookRunner = new HookRunner( MediaWikiServices::getInstance()->getHookContainer() );
+		$hookRunner->onUserMergeAccountDeleteTables( $tablesToDelete );
 
 		// Make sure these are always set and last
 		if ( $dbw->tableExists( 'actor', __METHOD__ ) ) {
@@ -682,7 +683,7 @@ class MergeUser {
 			);
 		}
 
-		$hookContainer->run( 'DeleteAccount', [ &$this->oldUser ] );
+		$hookRunner->onDeleteAccount( $this->oldUser );
 
 		DeferredUpdates::addUpdate( SiteStatsUpdate::factory( [ 'users' => -1 ] ) );
 	}

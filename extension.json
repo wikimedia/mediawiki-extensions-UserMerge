@@ -58,6 +58,9 @@
 	"ExtensionMessagesFiles": {
 		"UserMergeAlias": "UserMerge.alias.php"
 	},
+	"AutoloadNamespaces": {
+		"MediaWiki\\Extension\\UserMerge\\": "includes/"
+	},
 	"AutoloadClasses": {
 		"SpecialUserMerge": "includes/SpecialUserMerge.php",
 		"MergeUser": "includes/MergeUser.php",
