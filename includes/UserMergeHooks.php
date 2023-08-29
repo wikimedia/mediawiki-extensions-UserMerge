@@ -38,7 +38,7 @@ class UserMergeHooks {
 		}
 		$targetUser = User::newFromId( $id );
 		if ( array_intersect(
-			$targetUser->getGroups(),
+			MediaWikiServices::getInstance()->getUserGroupManager()->getUserGroups( $targetUser ),
 			$sp->getConfig()->get( 'UserMergeProtectedGroups' )
 		) ) {
 			return;
