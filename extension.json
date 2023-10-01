@@ -52,8 +52,13 @@
 		]
 	},
 	"Hooks": {
-		"UserGetReservedNames": "UserMergeHooks::onUserGetReservedNames",
-		"ContributionsToolLinks": "UserMergeHooks::onContributionsToolLinks"
+		"UserGetReservedNames": "main",
+		"ContributionsToolLinks": "main"
+	},
+	"HookHandlers": {
+		"main": {
+			"class": "UserMergeHooks"
+		}
 	},
 	"ExtensionMessagesFiles": {
 		"UserMergeAlias": "UserMerge.alias.php"

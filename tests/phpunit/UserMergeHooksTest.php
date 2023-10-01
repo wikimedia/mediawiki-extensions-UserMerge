@@ -10,7 +10,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 		] );
 
 		$usernames = [];
-		UserMergeHooks::onUserGetReservedNames( $usernames );
+		( new UserMergeHooks )->onUserGetReservedNames( $usernames );
 
 		$this->assertArrayEquals( [ 'Anonymous' ], $usernames );
 	}
@@ -24,7 +24,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 		] );
 
 		$usernames = [];
-		UserMergeHooks::onUserGetReservedNames( $usernames );
+		( new UserMergeHooks )->onUserGetReservedNames( $usernames );
 
 		$this->assertArrayEquals( [], $usernames );
 	}

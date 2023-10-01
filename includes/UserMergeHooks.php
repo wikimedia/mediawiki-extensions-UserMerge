@@ -1,14 +1,19 @@
 <?php
 
+use MediaWiki\Hook\ContributionsToolLinksHook;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\User\Hook\UserGetReservedNamesHook;
 
-class UserMergeHooks {
+class UserMergeHooks implements
+	UserGetReservedNamesHook,
+	ContributionsToolLinksHook
+{
 	/**
 	 * UserGetReservedNames hook handler
 	 *
 	 * @param string[] &$reservedUsernames Already registered reserved names
 	 */
-	public static function onUserGetReservedNames( array &$reservedUsernames ) {
+	public function onUserGetReservedNames( &$reservedUsernames ) {
 		$deleteEnabled = MediaWikiServices::getInstance()
 			->getConfigFactory()
 			->makeConfig( 'usermerge' )
@@ -27,8 +32,8 @@ class UserMergeHooks {
 	 * @param array &$tools
 	 * @param SpecialPage $sp for context
 	 */
-	public static function onContributionsToolLinks(
-		int $id, Title $nt, array &$tools, SpecialPage $sp
+	public function onContributionsToolLinks(
+		$id, Title $nt, array &$tools, SpecialPage $sp
 	) {
 		if ( $id === 0 || $id === $sp->getUser()->getId() ) {
 			return;
