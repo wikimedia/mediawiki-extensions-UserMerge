@@ -35,5 +35,8 @@
 	"usermerge-page-unmoved": "ページ「$1」を「$2」に移動できませんでした。",
 	"usermerge-move-log": "統合と共にアカウント「$1」を「[[User:$2|$2]]」へ自動的に移動しました",
 	"logentry-usermerge-mergeuser": "$1 が利用者アカウント \"$4\" ($5) を {{GENDER:$8|$6}} ($7) へ{{GENDER:$2|統合しました}}",
-	"logentry-usermerge-deleteuser": "$1 が利用者アカウント \"$4\" ($5) を{{GENDER:$2|削除しました}}"
+	"logentry-usermerge-deleteuser": "$1 が利用者アカウント \"$4\" ($5) を{{GENDER:$2|削除しました}}",
+	"log-action-filter-usermerge": "操作の種類:",
+	"log-action-filter-usermerge-mergeuser": "利用者アカウントの統合",
+	"log-action-filter-usermerge-deleteuser": "利用者アカウントの削除"
 }
