@@ -25,7 +25,7 @@
 	"usermerge-logpage": "Dnevnik spajanja uporabnikov",
 	"usermerge-logpagetext": "To je dnevnik dejanj spajanja uporabnikov.",
 	"usermerge-noselfdelete": "{{GENDER:$1|Sebe}} ne morete izbrisati ali spojiti!",
-	"usermerge-protectedgroup": "Ne morem spojiti {{GENDER:$1|uporabnika|uporabnice|uporabnika/ce}} – {{GENDER:$1|uporabnik|uporabnica|uporabnik/ca}} je v zaščiteni skupini.",
+	"usermerge-protectedgroup": "Ne morem spojiti {{GENDER:$1|uporabnika|uporabnice|uporabnika_ce}} – {{GENDER:$1|uporabnik|uporabnica|uporabnik_ca}} je v zaščiteni skupini.",
 	"right-usermerge": "Spajanje uporabnikov",
 	"action-usermerge": "spajanje uporabnikov",
 	"usermerge-autopagedelete": "Samodejno izbrisana stran med spajanjem uporabnikov",
