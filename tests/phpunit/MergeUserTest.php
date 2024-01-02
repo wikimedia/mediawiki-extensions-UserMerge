@@ -65,6 +65,9 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	 * @covers MergeUser::merge
 	 */
 	public function testMergeOfUserGroups() {
+		// Postgres does not support UPDATE IGNORE, resulting in duplicate keys here
+		$this->markTestSkippedIfDbType( 'postgres' );
+
 		$user1 = $this->getNewTestUser();
 		$userGroupManager = $this->getServiceContainer()->getUserGroupManager();
 		$userGroupManager->addUserToGroup( $user1, 'group1' );
