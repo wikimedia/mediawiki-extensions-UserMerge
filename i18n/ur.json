@@ -2,11 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"BukhariSaeed",
+			"Muhammad Shuaib",
 			"Zainab Meher"
 		]
 	},
 	"usermerge-userdeleted": "$1 ($2) حذف کیا جا چکا ہے۔",
 	"usermerge-success": " $1 ($2) کا $3 ($4) میں حذف مکمل ہو گیا ہے۔",
+	"usermerge-logpage": "نوشتہ انضمام صارف",
 	"usermerge-autopagedelete": "صارفین کو ضم کرنے کے دوران میں صفحہ خودکار طریقے سے حذف کر دیا گیا",
 	"usermerge-move-log": "\"$1\" کھاتے کو ضم کرنے کے دوران صفحے کو خودکار طور پر \"[[User:$2|$2]]\"میں منتقل کر دیا گیا"
 }
