@@ -3,7 +3,7 @@
 namespace MediaWiki\Extension\UserMerge\Hooks;
 
 use MediaWiki\HookContainer\HookContainer;
-use User;
+use MediaWiki\User\User;
 
 /**
  * This is a hook runner class, see docs/Hooks.md in core.

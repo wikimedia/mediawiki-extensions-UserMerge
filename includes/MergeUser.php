@@ -3,6 +3,7 @@
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\Extension\UserMerge\Hooks\HookRunner;
 use MediaWiki\MediaWikiServices;
+use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\IDatabase;
 
 /**

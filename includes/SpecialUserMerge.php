@@ -15,6 +15,7 @@
  *
  */
 
+use MediaWiki\Title\Title;
 use MediaWiki\User\UserGroupManager;
 
 class SpecialUserMerge extends FormSpecialPage {
