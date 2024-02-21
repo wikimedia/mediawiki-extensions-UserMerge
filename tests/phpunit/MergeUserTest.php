@@ -139,11 +139,11 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 		$this->getExistingTestPage( $userpage1 );
 
 		$userpage2 = $user2->getUserPage();
-		$this->assertFalse( $userpage2->exists( Title::READ_LATEST ) );
+		$this->assertFalse( $userpage2->exists( IDBAccessObject::READ_LATEST ) );
 
 		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
 		$mu->delete( $this->getTestSysop()->getUser(), 'wfMessage' );
 
-		$this->assertTrue( $userpage2->exists( Title::READ_LATEST ) );
+		$this->assertTrue( $userpage2->exists( IDBAccessObject::READ_LATEST ) );
 	}
 }
