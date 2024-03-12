@@ -487,7 +487,7 @@ class MergeUser {
 
 		$conds = [];
 		foreach ( array_keys( $titlesToDelete ) as $tuple ) {
-			list( $ns, $dbKey ) = explode( "|", $tuple, 2 );
+			[ $ns, $dbKey ] = explode( "|", $tuple, 2 );
 			$conds[] = $dbw->makeList(
 				[
 					'wl_user' => $this->oldUser->getId(),
