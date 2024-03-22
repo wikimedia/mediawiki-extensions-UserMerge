@@ -1,8 +1,28 @@
 {
 	"@metadata": {
 		"authors": [
+			"Ekminarin",
 			"Mopza"
 		]
 	},
-	"usermerge-logpage": "ปูมการรวมผู้ใช้"
+	"usermerge": "ผสานและลบผู้ใช้",
+	"usermerge-olduser": "ผู้ใช้เก่า (ผสานจาก):",
+	"usermerge-newuser": "ผู้ใช้ใหม่ (ผสานเข้ากับ):",
+	"usermerge-deleteolduser": "ลบผู้ใช้เก่า",
+	"usermerge-submit": "ผสานผู้ใช้",
+	"usermerge-merge-linkoncontribs": "ผสาน {{GENDER:$1|ผู้ใช้}}",
+	"usermerge-delete-linkoncontribs": "ลบ {{GENDER:$1|ผู้ใช้}}",
+	"usermerge-userdeleted": "$1 ($2) ถูกลบแล้ว",
+	"usermerge-success": "ผสานจาก $1 ($2) ไปยัง $3 ($4) เสร็จสมบูรณ์",
+	"usermerge-logpage": "ปูมการรวมผู้ใช้",
+	"right-usermerge": "ผสานผู้ใช้",
+	"action-usermerge": "ผสานผู้ใช้",
+	"usermerge-autopagedelete": "ลบหน้าโดยอัตโนมัติขณะผสานผู้ใช้",
+	"usermerge-page-unmoved": "ไม่สามารถย้ายหน้า $1 ไปที่ $2 ได้",
+	"usermerge-move-log": "ย้ายหน้าโดยอัตโนมัติขณะผสานบัญชี \"$1\" ไปที่ \"[[User:$2|$2]]\"",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|ผสาน}}บัญชีผู้ใช้ \"$4\" ($5) เข้ากับ {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|ลบ}}บัญชีผู้ใช้ \"$4\" ($5)",
+	"log-action-filter-usermerge": "ประเภทของการกระทำ:",
+	"log-action-filter-usermerge-mergeuser": "การผสานบัญชีผู้ใช้",
+	"log-action-filter-usermerge-deleteuser": "การลบบัญชีผู้ใช้"
 }
