@@ -75,7 +75,9 @@ class MergeUser {
 	 * Adds edit count of both users
 	 */
 	private function mergeEditcount() {
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()
+			->getConnectionProvider()
+			->getPrimaryDatabase();
 		$dbw->startAtomic( __METHOD__ );
 
 		$totalEdits = $dbw->selectField(
@@ -295,11 +297,12 @@ class MergeUser {
 				'actorStage' => SCHEMA_COMPAT_TEMP ],
 		];
 
-		$hookRunner = new HookRunner( MediaWikiServices::getInstance()->getHookContainer() );
+		$services = MediaWikiServices::getInstance();
+		$hookRunner = new HookRunner( $services->getHookContainer() );
 		$hookRunner->onUserMergeAccountFields( $updateFields );
 
-		$dbw = wfGetDB( DB_PRIMARY );
-		$lbFactory = MediaWikiServices::getInstance()->getDBLoadBalancerFactory();
+		$lbFactory = $services->getDBLoadBalancerFactory();
+		$dbw = $lbFactory->getPrimaryDatabase();
 		$ticket = $lbFactory->getEmptyTransactionTicket( __METHOD__ );
 
 		$this->deduplicateWatchlistEntries( $dbw );
@@ -532,7 +535,9 @@ class MergeUser {
 		$newusername = Title::makeTitleSafe( NS_USER, $contLang->ucfirst( $this->newUser->getName() ) );
 
 		# select all user pages and sub-pages
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = MediaWikiServices::getInstance()
+			->getConnectionProvider()
+			->getReplicaDatabase();
 		$pages = $dbr->select(
 			'page',
 			[ 'page_namespace', 'page_title' ],
@@ -640,7 +645,10 @@ class MergeUser {
 	 * and user_former_groups tables.
 	 */
 	private function deleteUser() {
-		$dbw = wfGetDB( DB_PRIMARY );
+		$dbw = MediaWikiServices::getInstance()
+			->getConnectionProvider()
+			->getPrimaryDatabase();
+		'@phan-var \Wikimedia\Rdbms\IMaintainableDatabase $dbw';
 
 		/**
 		 * Format is: table => user_id column
