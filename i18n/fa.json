@@ -29,7 +29,7 @@
 	"usermerge-userdeleted": "$1 ($2) پاک شد.",
 	"usermerge-success": "ادغام از $1 ($2) به $3 ($4) کامل شد.",
 	"usermerge-logpage": "سیاههٔ ادغام کاربر",
-	"usermerge-logpagetext": "این سیاهه‌ی ادغام فعالیت‌های کاربر است.",
+	"usermerge-logpagetext": "این سیاههٔ ادغام فعالیت‌های کاربر است.",
 	"usermerge-noselfdelete": "شما نمی‌توانید {{GENDER:$1|خودتان}} را یکی یا حذف کنید!",
 	"usermerge-protectedgroup": "ناتوان در ادغام از {{GENDER:$1|کاربر}}: کاربر در یک گروه حفاظت‌شده است.",
 	"right-usermerge": "ادغام حساب‌های کاربری",
