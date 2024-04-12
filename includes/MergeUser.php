@@ -92,18 +92,20 @@ class MergeUser {
 		# don't run queries if neither user has any edits
 		if ( $totalEdits > 0 ) {
 			# update new user with total edits
-			$dbw->update( 'user',
-				[ 'user_editcount' => $totalEdits ],
-				[ 'user_id' => $this->newUser->getId() ],
-				__METHOD__
-			);
+			$dbw->newUpdateQueryBuilder()
+				->update( 'user' )
+				->set( [ 'user_editcount' => $totalEdits ] )
+				->where( [ 'user_id' => $this->newUser->getId() ] )
+				->caller( __METHOD__ )
+				->execute();
 
 			# clear old user's edits
-			$dbw->update( 'user',
-				[ 'user_editcount' => 0 ],
-				[ 'user_id' => $this->oldUser->getId() ],
-				__METHOD__
-			);
+			$dbw->newUpdateQueryBuilder()
+				->update( 'user' )
+				->set( [ 'user_editcount' => 0 ] )
+				->where( [ 'user_id' => $this->oldUser->getId() ] )
+				->caller( __METHOD__ )
+				->execute();
 		}
 
 		$dbw->endAtomic( __METHOD__ );
@@ -147,12 +149,12 @@ class MergeUser {
 		}
 		if ( !$newBlock ) {
 			// Just move the old block to the new username
-			$dbw->update(
-				'ipblocks',
-				[ 'ipb_user' => $this->newUser->getId() ],
-				[ 'ipb_id' => $oldBlock->ipb_id ],
-				__METHOD__
-			);
+			$dbw->newUpdateQueryBuilder()
+				->update( 'ipblocks' )
+				->set( [ 'ipb_user' => $this->newUser->getId() ] )
+				->where( [ 'ipb_id' => $oldBlock->ipb_id ] )
+				->caller( __METHOD__ )
+				->execute();
 			$dbw->endAtomic( __METHOD__ );
 			return;
 		}
@@ -169,12 +171,12 @@ class MergeUser {
 			// Old user block won
 			// Delete current new block
 			$newBlockObj->delete();
-			$dbw->update(
-				'ipblocks',
-				[ 'ipb_user' => $this->newUser->getId() ],
-				[ 'ipb_id' => $winner->getId() ],
-				__METHOD__
-			);
+			$dbw->newUpdateQueryBuilder()
+				->update( 'ipblocks' )
+				->set( [ 'ipb_user' => $this->newUser->getId() ] )
+				->where( [ 'ipb_id' => $winner->getId() ] )
+				->caller( __METHOD__ )
+				->execute();
 		}
 
 		$dbw->endAtomic( __METHOD__ );
@@ -337,14 +339,14 @@ class MergeUser {
 
 			if ( $db->trxLevel() || $keyField === null ) {
 				// Can't batch/wait when in a transaction or when no batch key is given
-				$db->update(
-					$tableName,
-					[ $idField => $this->newUser->getId() ]
-						+ array_fill_keys( $fieldInfo, $this->newUser->getName() ),
-					[ $idField => $this->oldUser->getId() ],
-					__METHOD__,
-					$options
-				);
+				$db->newUpdateQueryBuilder()
+					->update( $tableName )
+					->set( [ $idField => $this->newUser->getId() ]
+						+ array_fill_keys( $fieldInfo, $this->newUser->getName() ) )
+					->where( [ $idField => $this->oldUser->getId() ] )
+					->options( $options )
+					->caller( __METHOD__ )
+					->execute();
 			} else {
 				$limit = 200;
 				do {
@@ -364,14 +366,14 @@ class MergeUser {
 					}
 					// Update only those rows with the given column values
 					if ( count( $keyValues ) ) {
-						$db->update(
-							$tableName,
-							[ $idField => $this->newUser->getId() ]
-								+ array_fill_keys( $fieldInfo, $this->newUser->getName() ),
-							[ $idField => $this->oldUser->getId(), $keyField => $keyValues ],
-							__METHOD__,
-							$options
-						);
+						$db->newUpdateQueryBuilder()
+							->update( $tableName )
+							->set( [ $idField => $this->newUser->getId() ]
+								+ array_fill_keys( $fieldInfo, $this->newUser->getName() ) )
+							->where( [ $idField => $this->oldUser->getId(), $keyField => $keyValues ] )
+							->options( $options )
+							->caller( __METHOD__ )
+							->execute();
 					}
 					// Wait for replication to catch up
 					$opts = [ 'ifWritesSince' => $checkSince ];
@@ -401,13 +403,13 @@ class MergeUser {
 
 				if ( $db->trxLevel() || $keyField === null ) {
 					// Can't batch/wait when in a transaction or when no batch key is given
-					$db->update(
-						$tableName,
-						[ $idField => $newActorId ],
-						[ $idField => $oldActorId ],
-						__METHOD__,
-						$options
-					);
+					$db->newUpdateQueryBuilder()
+						->update( $tableName )
+						->set( [ $idField => $newActorId ] )
+						->where( [ $idField => $oldActorId ] )
+						->options( $options )
+						->caller( __METHOD__ )
+						->execute();
 				} else {
 					$limit = 200;
 					do {
@@ -427,13 +429,13 @@ class MergeUser {
 						}
 						// Update only those rows with the given column values
 						if ( count( $keyValues ) ) {
-							$db->update(
-								$tableName,
-								[ $idField => $newActorId ],
-								[ $idField => $oldActorId, $keyField => $keyValues ],
-								__METHOD__,
-								$options
-							);
+							$db->newUpdateQueryBuilder()
+								->update( $tableName )
+								->set( [ $idField => $newActorId ] )
+								->where( [ $idField => $oldActorId, $keyField => $keyValues ] )
+								->options( $options )
+								->caller( __METHOD__ )
+								->execute();
 						}
 						// Wait for replication to catch up
 						$opts = [ 'ifWritesSince' => $checkSince ];
@@ -443,7 +445,11 @@ class MergeUser {
 			}
 		}
 
-		$dbw->delete( 'user_newtalk', [ 'user_id' => $this->oldUser->getId() ], __METHOD__ );
+		$dbw->newDeleteQueryBuilder()
+			->deleteFrom( 'user_newtalk' )
+			->where( [ 'user_id' => $this->oldUser->getId() ] )
+			->caller( __METHOD__ )
+			->execute();
 		$this->oldUser->clearInstanceCache();
 		$this->newUser->clearInstanceCache();
 
@@ -503,11 +509,11 @@ class MergeUser {
 
 		if ( count( $conds ) ) {
 			# Perform a multi-row delete
-			$dbw->delete(
-				'watchlist',
-				$dbw->makeList( $conds, LIST_OR ),
-				__METHOD__
-			);
+			$dbw->newDeleteQueryBuilder()
+				->deleteFrom( 'watchlist' )
+				->where( $dbw->makeList( $conds, LIST_OR ) )
+				->caller( __METHOD__ )
+				->execute();
 		}
 
 		$dbw->endAtomic( __METHOD__ );
@@ -679,11 +685,11 @@ class MergeUser {
 			} else {
 				$db = $dbw;
 			}
-			$db->delete(
-				$table,
-				[ $field => $this->oldUser->getId() ],
-				__METHOD__
-			);
+			$db->newDeleteQueryBuilder()
+				->deleteFrom( $table )
+				->where( [ $field => $this->oldUser->getId() ] )
+				->caller( __METHOD__ )
+				->execute();
 		}
 
 		$hookRunner->onDeleteAccount( $this->oldUser );
