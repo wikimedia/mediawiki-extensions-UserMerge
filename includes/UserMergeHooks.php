@@ -4,6 +4,7 @@ use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Hook\ContributionsToolLinksHook;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Hook\UserGetReservedNamesHook;
+use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserGroupManager;
 
 class UserMergeHooks implements
@@ -11,13 +12,16 @@ class UserMergeHooks implements
 	ContributionsToolLinksHook
 {
 	private ConfigFactory $configFactory;
+	private UserFactory $userFactory;
 	private UserGroupManager $userGroupManager;
 
 	public function __construct(
 		ConfigFactory $configFactory,
+		UserFactory $userFactory,
 		UserGroupManager $userGroupManager
 	) {
 		$this->configFactory = $configFactory;
+		$this->userFactory = $userFactory;
 		$this->userGroupManager = $userGroupManager;
 	}
 
@@ -53,7 +57,7 @@ class UserMergeHooks implements
 		if ( !$sp->getAuthority()->isAllowed( 'usermerge' ) ) {
 			return;
 		}
-		$targetUser = User::newFromId( $id );
+		$targetUser = $this->userFactory->newFromId( $id );
 		if ( array_intersect(
 			$this->userGroupManager->getUserGroups( $targetUser ),
 			$sp->getConfig()->get( 'UserMergeProtectedGroups' )

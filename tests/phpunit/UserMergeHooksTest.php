@@ -5,6 +5,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 		$services = $this->getServiceContainer();
 		return new UserMergeHooks(
 			$services->getConfigFactory(),
+			$services->getUserFactory(),
 			$services->getUserGroupManager()
 		);
 	}

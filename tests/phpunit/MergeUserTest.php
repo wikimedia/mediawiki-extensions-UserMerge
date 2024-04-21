@@ -11,7 +11,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	private function getNewTestUser() {
 		$this->counter++;
 		$name = __CLASS__ . (string)$this->counter;
-		$user = User::newFromName( $name );
+		$user = $this->getServiceContainer()->getUserFactory()->newFromName( $name );
 		if ( $user->getId() ) {
 			// Already exists, try again.
 			return $this->getNewTestUser();
@@ -37,7 +37,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	 * @param User &$u
 	 */
 	private function reallyClearInstanceCache( User &$u ) {
-		$u = User::newFromName( $u->getName() );
+		$u = $this->getServiceContainer()->getUserFactory()->newFromName( $u->getName() );
 	}
 
 	/**
