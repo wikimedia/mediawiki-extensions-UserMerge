@@ -1,21 +1,32 @@
 <?php
 
+use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Hook\ContributionsToolLinksHook;
-use MediaWiki\MediaWikiServices;
 use MediaWiki\User\Hook\UserGetReservedNamesHook;
+use MediaWiki\User\UserGroupManager;
 
 class UserMergeHooks implements
 	UserGetReservedNamesHook,
 	ContributionsToolLinksHook
 {
+	private ConfigFactory $configFactory;
+	private UserGroupManager $userGroupManager;
+
+	public function __construct(
+		ConfigFactory $configFactory,
+		UserGroupManager $userGroupManager
+	) {
+		$this->configFactory = $configFactory;
+		$this->userGroupManager = $userGroupManager;
+	}
+
 	/**
 	 * UserGetReservedNames hook handler
 	 *
 	 * @param string[] &$reservedUsernames Already registered reserved names
 	 */
 	public function onUserGetReservedNames( &$reservedUsernames ) {
-		$deleteEnabled = MediaWikiServices::getInstance()
-			->getConfigFactory()
+		$deleteEnabled = $this->configFactory
 			->makeConfig( 'usermerge' )
 			->get( 'UserMergeEnableDelete' );
 
@@ -43,7 +54,7 @@ class UserMergeHooks implements
 		}
 		$targetUser = User::newFromId( $id );
 		if ( array_intersect(
-			MediaWikiServices::getInstance()->getUserGroupManager()->getUserGroups( $targetUser ),
+			$this->userGroupManager->getUserGroups( $targetUser ),
 			$sp->getConfig()->get( 'UserMergeProtectedGroups' )
 		) ) {
 			return;
