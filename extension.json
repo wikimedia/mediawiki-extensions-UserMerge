@@ -57,7 +57,11 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "UserMergeHooks"
+			"class": "UserMergeHooks",
+			"services": [
+				"ConfigFactory",
+				"UserGroupManager"
+			]
 		}
 	},
 	"ExtensionMessagesFiles": {

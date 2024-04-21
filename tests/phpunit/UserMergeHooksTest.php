@@ -1,6 +1,14 @@
 <?php
 
 class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
+	private function newUserMergeHooks(): UserMergeHooks {
+		$services = $this->getServiceContainer();
+		return new UserMergeHooks(
+			$services->getConfigFactory(),
+			$services->getUserGroupManager()
+		);
+	}
+
 	/**
 	 * @covers UserMergeHooks::onUserGetReservedNames
 	 */
@@ -10,7 +18,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 		] );
 
 		$usernames = [];
-		( new UserMergeHooks )->onUserGetReservedNames( $usernames );
+		$this->newUserMergeHooks()->onUserGetReservedNames( $usernames );
 
 		$this->assertArrayEquals( [ 'Anonymous' ], $usernames );
 	}
@@ -24,7 +32,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 		] );
 
 		$usernames = [];
-		( new UserMergeHooks )->onUserGetReservedNames( $usernames );
+		$this->newUserMergeHooks()->onUserGetReservedNames( $usernames );
 
 		$this->assertArrayEquals( [], $usernames );
 	}
