@@ -13,9 +13,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 	 * @covers UserMergeHooks::onUserGetReservedNames
 	 */
 	public function testReservedUsernameWithDeleteEnabled() {
-		$this->setMwGlobals( [
-			'wgUserMergeEnableDelete' => true
-		] );
+		$this->overrideConfigValue( 'UserMergeEnableDelete', true );
 
 		$usernames = [];
 		$this->newUserMergeHooks()->onUserGetReservedNames( $usernames );
@@ -27,9 +25,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 	 * @covers UserMergeHooks::onUserGetReservedNames
 	 */
 	public function testReservedUsernameWithDeleteDisabled() {
-		$this->setMwGlobals( [
-			'wgUserMergeEnableDelete' => false
-		] );
+		$this->overrideConfigValue( 'UserMergeEnableDelete', false );
 
 		$usernames = [];
 		$this->newUserMergeHooks()->onUserGetReservedNames( $usernames );
