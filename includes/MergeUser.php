@@ -5,6 +5,8 @@ use MediaWiki\Extension\UserMerge\Hooks\HookRunner;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
 use Wikimedia\Rdbms\IDatabase;
+use Wikimedia\Rdbms\IExpression;
+use Wikimedia\Rdbms\LikeValue;
 
 /**
  * Contains the actual database backend logic for merging users
@@ -81,12 +83,12 @@ class MergeUser {
 			->getPrimaryDatabase();
 		$dbw->startAtomic( __METHOD__ );
 
-		$totalEdits = $dbw->selectField(
-			'user',
-			'SUM(user_editcount)',
-			[ 'user_id' => [ $this->newUser->getId(), $this->oldUser->getId() ] ],
-			__METHOD__
-		);
+		$totalEdits = $dbw->newSelectQueryBuilder()
+			->select( 'SUM(user_editcount)' )
+			->from( 'user' )
+			->where( [ 'user_id' => [ $this->newUser->getId(), $this->oldUser->getId() ] ] )
+			->caller( __METHOD__ )
+			->fetchField();
 
 		$totalEdits = (int)$totalEdits;
 
@@ -121,16 +123,14 @@ class MergeUser {
 
 		// Pull blocks directly from primary
 		$qi = DatabaseBlock::getQueryInfo();
-		$rows = $dbw->select(
-			$qi['tables'],
-			array_merge( $qi['fields'], [ 'ipb_user' ] ),
-			[
+		$rows = $dbw->newSelectQueryBuilder()
+			->queryInfo( $qi )
+			->select( 'ipb_user' )
+			->where( [
 				'ipb_user' => [ $this->oldUser->getId(), $this->newUser->getId() ],
-			],
-			__METHOD__,
-			[],
-			$qi['joins']
-		);
+			] )
+			->caller( __METHOD__ )
+			->fetchResultSet();
 
 		$newBlock = null;
 		$oldBlock = null;
@@ -354,13 +354,13 @@ class MergeUser {
 					$checkSince = microtime( true );
 					// Note that UPDATE with ORDER BY + LIMIT is not well supported.
 					// Grab a batch of values on a mostly unique column for this user ID.
-					$res = $db->select(
-						$tableName,
-						[ $keyField ],
-						[ $idField => $this->oldUser->getId() ],
-						__METHOD__,
-						[ 'LIMIT' => $limit ]
-					);
+					$res = $db->newSelectQueryBuilder()
+						->select( $keyField )
+						->from( $tableName )
+						->where( [ $idField => $this->oldUser->getId() ] )
+						->limit( $limit )
+						->caller( __METHOD__ )
+						->fetchResultSet();
 					$keyValues = [];
 					foreach ( $res as $row ) {
 						$keyValues[] = $row->$keyField;
@@ -417,13 +417,13 @@ class MergeUser {
 						$checkSince = microtime( true );
 						// Note that UPDATE with ORDER BY + LIMIT is not well supported.
 						// Grab a batch of values on a mostly unique column for this user ID.
-						$res = $db->select(
-							$tableName,
-							[ $keyField ],
-							[ $idField => $oldActorId ],
-							__METHOD__,
-							[ 'LIMIT' => $limit ]
-						);
+						$res = $db->newSelectQueryBuilder()
+							->select( $keyField )
+							->from( $tableName )
+							->where( [ $idField => $oldActorId ] )
+							->limit( $limit )
+							->caller( __METHOD__ )
+							->fetchResultSet();
 						$keyValues = [];
 						foreach ( $res as $row ) {
 							$keyValues[] = $row->$keyField;
@@ -470,23 +470,23 @@ class MergeUser {
 		// Avoid using self-joins as this fails on temporary tables (e.g. unit tests).
 		// See https://bugs.mysql.com/bug.php?id=10327.
 		$titlesToDelete = [];
-		$res = $dbw->select(
-			'watchlist',
-			[ 'wl_namespace', 'wl_title' ],
-			[ 'wl_user' => $this->oldUser->getId() ],
-			__METHOD__,
-			[ 'FOR UPDATE' ]
-		);
+		$res = $dbw->newSelectQueryBuilder()
+			->select( [ 'wl_namespace', 'wl_title' ] )
+			->from( 'watchlist' )
+			->where( [ 'wl_user' => $this->oldUser->getId() ] )
+			->forUpdate()
+			->caller( __METHOD__ )
+			->fetchResultSet();
 		foreach ( $res as $row ) {
 			$titlesToDelete[$row->wl_namespace . "|" . $row->wl_title] = false;
 		}
-		$res = $dbw->select(
-			'watchlist',
-			[ 'wl_namespace', 'wl_title' ],
-			[ 'wl_user' => $this->newUser->getId() ],
-			__METHOD__,
-			[ 'FOR UPDATE' ]
-		);
+		$res = $dbw->newSelectQueryBuilder()
+			->select( [ 'wl_namespace', 'wl_title' ] )
+			->from( 'watchlist' )
+			->where( [ 'wl_user' => $this->newUser->getId() ] )
+			->forUpdate()
+			->caller( __METHOD__ )
+			->fetchResultSet();
 		foreach ( $res as $row ) {
 			$key = $row->wl_namespace . "|" . $row->wl_title;
 			if ( isset( $titlesToDelete[$key] ) ) {
@@ -545,16 +545,17 @@ class MergeUser {
 		$dbr = MediaWikiServices::getInstance()
 			->getConnectionProvider()
 			->getReplicaDatabase();
-		$pages = $dbr->select(
-			'page',
-			[ 'page_namespace', 'page_title' ],
-			[
+		$pages = $dbr->newSelectQueryBuilder()
+			->select( [ 'page_namespace', 'page_title' ] )
+			->from( 'page' )
+			->where( [
 				'page_namespace' => [ NS_USER, NS_USER_TALK ],
-				'page_title' . $dbr->buildLike( $oldusername->getDBkey() . '/', $dbr->anyString() )
-					. ' OR page_title = ' . $dbr->addQuotes( $oldusername->getDBkey() ),
-			],
-			__METHOD__
-		);
+				$dbr->expr( 'page_title', IExpression::LIKE,
+					new LikeValue( $oldusername->getDBkey() . '/', $dbr->anyString() )
+				)->or( 'page_title', '=', $oldusername->getDBkey() ),
+			] )
+			->caller( __METHOD__ )
+			->fetchResultSet();
 
 		$message = static function () use ( $msg ) {
 			return call_user_func_array( $msg, func_get_args() );
@@ -604,11 +605,12 @@ class MergeUser {
 				}
 
 				# check if any pages link here
-				$res = $dbr->selectField( 'pagelinks',
-					'pl_title',
-					[ 'pl_title' => $this->oldUser->getName() ],
-					__METHOD__
-				);
+				$res = $dbr->newSelectQueryBuilder()
+					->select( 'pl_title' )
+					->from( 'pagelinks' )
+					->where( [ 'pl_title' => $this->oldUser->getName() ] )
+					->caller( __METHOD__ )
+					->fetchField();
 				if ( $res === false ) {
 					# nothing links here, so delete unmoved page/redirect
 					$this->deletePage( $message, $performer, $oldPage );
