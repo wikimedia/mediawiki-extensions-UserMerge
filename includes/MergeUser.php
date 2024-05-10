@@ -1,6 +1,7 @@
 <?php
 
 use MediaWiki\Block\DatabaseBlock;
+use MediaWiki\Block\DatabaseBlockStore;
 use MediaWiki\Extension\UserMerge\Hooks\HookRunner;
 use MediaWiki\MediaWikiServices;
 use MediaWiki\Title\Title;
@@ -26,6 +27,11 @@ class MergeUser {
 	 */
 	private $logger;
 
+	/**
+	 * @var DatabaseBlockStore
+	 */
+	private $blockStore;
+
 	/** @var int */
 	private $flags;
 
@@ -36,17 +42,20 @@ class MergeUser {
 	 * @param User $oldUser
 	 * @param User $newUser
 	 * @param IUserMergeLogger $logger
+	 * @param DatabaseBlockStore $blockStore
 	 * @param int $flags Bitfield (Supports MergeUser::USE_*)
 	 */
 	public function __construct(
 		User $oldUser,
 		User $newUser,
 		IUserMergeLogger $logger,
+		DatabaseBlockStore $blockStore,
 		$flags = 0
 	) {
 		$this->newUser = $newUser;
 		$this->oldUser = $oldUser;
 		$this->logger = $logger;
+		$this->blockStore = $blockStore;
 		$this->flags = $flags;
 	}
 
@@ -122,49 +131,34 @@ class MergeUser {
 		$dbw->startAtomic( __METHOD__ );
 
 		// Pull blocks directly from primary
-		$qi = DatabaseBlock::getQueryInfo();
-		$rows = $dbw->newSelectQueryBuilder()
-			->queryInfo( $qi )
-			->select( 'ipb_user' )
-			->where( [
-				'ipb_user' => [ $this->oldUser->getId(), $this->newUser->getId() ],
-			] )
-			->caller( __METHOD__ )
-			->fetchResultSet();
+		$oldBlocks = $this->blockStore->newListFromConds(
+			[ 'bt_user' => $this->oldUser->getId() ],
+			true, true
+		);
+		$newBlocks = $this->blockStore->newListFromConds(
+			[ 'bt_user' => $this->newUser->getId() ],
+			true, true
+		);
 
-		$newBlock = null;
-		$oldBlock = null;
-		foreach ( $rows as $row ) {
-			if ( (int)$row->ipb_user === $this->oldUser->getId() ) {
-				$oldBlock = $row;
-			} elseif ( (int)$row->ipb_user === $this->newUser->getId() ) {
-				$newBlock = $row;
-			}
-		}
-
-		if ( !$oldBlock ) {
+		if ( !$oldBlocks ) {
 			// No one is blocked or
 			// Only the new user is blocked, so nothing to do.
 			$dbw->endAtomic( __METHOD__ );
 			return;
 		}
-		if ( !$newBlock ) {
-			// Just move the old block to the new username
-			$dbw->newUpdateQueryBuilder()
-				->update( 'ipblocks' )
-				->set( [ 'ipb_user' => $this->newUser->getId() ] )
-				->where( [ 'ipb_id' => $oldBlock->ipb_id ] )
-				->caller( __METHOD__ )
-				->execute();
+		if ( !$newBlocks ) {
+			// Just move the old blocks to the new username
+			foreach ( $oldBlocks as $block ) {
+				$this->blockStore->updateTarget( $block, $this->newUser );
+			}
 			$dbw->endAtomic( __METHOD__ );
 			return;
 		}
 
 		// Okay, let's pick the "strongest" block, and re-apply it to
 		// the new user.
-		$oldBlockObj = DatabaseBlock::newFromRow( $oldBlock );
-		$newBlockObj = DatabaseBlock::newFromRow( $newBlock );
-
+		$oldBlockObj = reset( $oldBlocks );
+		$newBlockObj = reset( $newBlocks );
 		$winner = $this->chooseBlock( $oldBlockObj, $newBlockObj );
 		if ( $winner->getId() === $newBlockObj->getId() ) {
 			$oldBlockObj->delete();
@@ -172,12 +166,7 @@ class MergeUser {
 			// Old user block won
 			// Delete current new block
 			$newBlockObj->delete();
-			$dbw->newUpdateQueryBuilder()
-				->update( 'ipblocks' )
-				->set( [ 'ipb_user' => $this->newUser->getId() ] )
-				->where( [ 'ipb_id' => $winner->getId() ] )
-				->caller( __METHOD__ )
-				->execute();
+			$this->blockStore->updateTarget( $oldBlockObj, $this->newUser );
 		}
 
 		$dbw->endAtomic( __METHOD__ );
@@ -290,7 +279,7 @@ class MergeUser {
 				'actorStage' => SCHEMA_COMPAT_NEW ],
 			[ 'logging', 'batchKey' => 'log_id', 'actorId' => 'log_actor',
 				'actorStage' => SCHEMA_COMPAT_NEW ],
-			[ 'ipblocks', 'batchKey' => 'ipb_id', 'actorId' => 'ipb_by_actor',
+			[ 'block', 'batchKey' => 'bl_id', 'actorId' => 'bl_by_actor',
 				'actorStage' => SCHEMA_COMPAT_NEW ],
 			[ 'watchlist', 'wl_user', 'batchKey' => 'wl_title' ],
 			[ 'user_groups', 'ug_user', 'options' => [ 'IGNORE' ] ],

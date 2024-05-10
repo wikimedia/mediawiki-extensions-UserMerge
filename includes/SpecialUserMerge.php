@@ -15,6 +15,7 @@
  *
  */
 
+use MediaWiki\Block\DatabaseBlockStore;
 use MediaWiki\Title\Title;
 use MediaWiki\User\UserGroupManager;
 
@@ -23,14 +24,20 @@ class SpecialUserMerge extends FormSpecialPage {
 	/** @var UserGroupManager */
 	private $userGroupManager;
 
+	/** @var DatabaseBlockStore */
+	private $blockStore;
+
 	/**
 	 * @param UserGroupManager $userGroupManager
+	 * @param DatabaseBlockStore $blockStore
 	 */
 	public function __construct(
-		UserGroupManager $userGroupManager
+		UserGroupManager $userGroupManager,
+		DatabaseBlockStore $blockStore
 	) {
 		parent::__construct( 'UserMerge', 'usermerge' );
 		$this->userGroupManager = $userGroupManager;
+		$this->blockStore = $blockStore;
 	}
 
 	/**
@@ -138,7 +145,7 @@ class SpecialUserMerge extends FormSpecialPage {
 		}
 
 		// Validation passed, let's merge the user now.
-		$um = new MergeUser( $oldUser, $newUser, new UserMergeLogger() );
+		$um = new MergeUser( $oldUser, $newUser, new UserMergeLogger(), $this->blockStore );
 		$um->merge( $this->getUser(), __METHOD__ );
 
 		$out = $this->getOutput();

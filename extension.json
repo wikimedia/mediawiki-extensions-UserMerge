@@ -20,7 +20,8 @@
 		"UserMerge": {
 			"class": "SpecialUserMerge",
 			"services": [
-				"UserGroupManager"
+				"UserGroupManager",
+				"DatabaseBlockStore"
 			]
 		}
 	},

@@ -52,7 +52,10 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 		$user2 = $this->getNewTestUser();
 		$user2->addToDatabase();
 
-		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
+		$mu = new MergeUser( $user1, $user2,
+			$this->createMock( UserMergeLogger::class ),
+			$this->getServiceContainer()->getDatabaseBlockStore()
+		);
 		$mu->merge( $this->createMock( User::class ) );
 
 		$this->reallyClearInstanceCache( $user1 );
@@ -75,7 +78,9 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 		$user2 = $this->getNewTestUser();
 		$userGroupManager->addUserToGroup( $user2, 'group2' );
 
-		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
+		$mu = new MergeUser( $user1, $user2,
+			$this->createMock( UserMergeLogger::class ),
+			$this->getServiceContainer()->getDatabaseBlockStore() );
 		$mu->merge( $this->createMock( User::class ) );
 
 		$this->reallyClearInstanceCache( $user1 );
@@ -95,7 +100,9 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 		$this->reallyClearInstanceCache( $user1 );
 		$this->assertGreaterThan( 0, $user1->getId() );
 
-		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
+		$mu = new MergeUser( $user1, $user2,
+			$this->createMock( UserMergeLogger::class ),
+			$this->getServiceContainer()->getDatabaseBlockStore() );
 		$mu->delete( $this->createMock( User::class ), 'wfMessage' );
 
 		$this->reallyClearInstanceCache( $user1 );
@@ -117,7 +124,9 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 			$count++;
 		}
 
-		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
+		$mu = new MergeUser( $user1, $user2,
+			$this->createMock( UserMergeLogger::class ),
+			$this->getServiceContainer()->getDatabaseBlockStore() );
 		$mu->merge( $this->createMock( User::class ) );
 
 		$this->reallyClearInstanceCache( $user1 );
@@ -141,7 +150,9 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 		$userpage2 = $user2->getUserPage();
 		$this->assertFalse( $userpage2->exists( IDBAccessObject::READ_LATEST ) );
 
-		$mu = new MergeUser( $user1, $user2, $this->createMock( UserMergeLogger::class ) );
+		$mu = new MergeUser( $user1, $user2,
+			$this->createMock( UserMergeLogger::class ),
+			$this->getServiceContainer()->getDatabaseBlockStore() );
 		$mu->delete( $this->getTestSysop()->getUser(), 'wfMessage' );
 
 		$this->assertTrue( $userpage2->exists( IDBAccessObject::READ_LATEST ) );
