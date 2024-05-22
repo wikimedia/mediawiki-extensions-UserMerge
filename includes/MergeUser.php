@@ -646,7 +646,6 @@ class MergeUser {
 		$dbw = MediaWikiServices::getInstance()
 			->getConnectionProvider()
 			->getPrimaryDatabase();
-		'@phan-var \Wikimedia\Rdbms\IMaintainableDatabase $dbw';
 
 		/**
 		 * Format is: table => user_id column
@@ -663,10 +662,8 @@ class MergeUser {
 		$hookRunner = new HookRunner( MediaWikiServices::getInstance()->getHookContainer() );
 		$hookRunner->onUserMergeAccountDeleteTables( $tablesToDelete );
 
-		// Make sure these are always set and last
-		if ( $dbw->tableExists( 'actor', __METHOD__ ) ) {
-			$tablesToDelete['actor'] = 'actor_user';
-		}
+		// Make sure these are always set, and set last
+		$tablesToDelete['actor'] = 'actor_user';
 		$tablesToDelete['user'] = 'user_id';
 
 		foreach ( $tablesToDelete as $table => $field ) {
