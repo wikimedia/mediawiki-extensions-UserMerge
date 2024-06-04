@@ -197,4 +197,11 @@ class SpecialUserMerge extends FormSpecialPage {
 	protected function getGroupName() {
 		return 'users';
 	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function doesWrites() {
+		return true;
+	}
 }
