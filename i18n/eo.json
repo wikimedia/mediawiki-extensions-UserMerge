@@ -10,6 +10,7 @@
 	},
 	"usermerge": "Kunigi kaj forigi uzantojn",
 	"usermerge-badnewuser": "Nevalida nova uzantnomo",
+	"usermerge-badolduser": "Nevalida malnova uzantnomo",
 	"usermerge-noolduser": "Malplena malnova uzantnomo",
 	"usermerge-fieldset": "Kunigotaj uzantnomoj",
 	"usermerge-olduser": "Malnova uzanto (kunigante de):",

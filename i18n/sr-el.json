@@ -9,6 +9,7 @@
 	"usermerge": "Objedinjavanje i brisanje naloga",
 	"usermerge-desc": "[[Special:UserMerge|Objedinjava doprinose jednog korisnika na drugog]] u bazi podataka vikija — biće izbrisani i stari korisnici. Potrebno je pravo ''usermerge''.",
 	"usermerge-badnewuser": "Nevažeće novo korisničko ime.",
+	"usermerge-badolduser": "Nevažeće staro korisničko ime.",
 	"usermerge-nonewuser": "Novo korisničko ime je prazno. Pretpostavlja se da se objedinjava na „{{GENDER:$1|$1}}”.<br />\nKliknite na „{{int:usermerge-submit}}” da biste prihvatili.",
 	"usermerge-noolduser": "Staro korisničko ime je prazno.",
 	"usermerge-same-old-and-new-user": "Novo ime naloga se mora razlikovati od starog.",

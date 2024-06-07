@@ -6,6 +6,7 @@
 	},
 	"usermerge": "အသုံးပြုသူများကို ပေါင်းစပ်/ဖျက်ပစ်ရန်",
 	"usermerge-badnewuser": "မဆီလျော်သော အသုံးပြုသူအမည်သစ်။",
+	"usermerge-badolduser": "မဆီလျော်သော အသုံးပြုသူအမည်ဟောင်း။",
 	"usermerge-fieldset": "ပေါင်းစပ်ရန် အသုံးပြုသူအမည်များ",
 	"usermerge-submit": "အသုံးပြုသူ ပေါင်းစပ်ရန်",
 	"usermerge-userdeleted": "$1 ($2) ကို ဖျက်လိုက်ပြီ။",

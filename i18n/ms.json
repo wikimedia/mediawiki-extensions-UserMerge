@@ -7,6 +7,7 @@
 	"usermerge": "Gabungkan dan gugurkan pengguna",
 	"usermerge-desc": "[[Special:UserMerge|Menggabungkan rujukan daripada seorang pengguna kepada seorang pengguna yang lain]] di dalam pangkalan data wiki - juga akan menggugurkan pengguna-pengguna lama ekoran penggabungan. Memerlukan keistimewaan ''usermerge''",
 	"usermerge-badnewuser": "Nama pengguna baru tidak sah",
+	"usermerge-badolduser": "Nama pengguna lama tidak sah",
 	"usermerge-nonewuser": "Nama pengguna baru kosong, dianggap hendak digabungkan dengan \"{{GENDER:$1|$1}}\".<br />\n\nKlik \"{{int:usermerge-submit}}\" untuk menerima.",
 	"usermerge-noolduser": "Nama pengguna lama kosong",
 	"usermerge-same-old-and-new-user": "Nama pengguna baru haruslah berbeza dengan nama pengguna lama.",

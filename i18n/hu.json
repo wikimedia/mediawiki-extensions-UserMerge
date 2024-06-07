@@ -9,6 +9,7 @@
 	"usermerge": "Felhasználói fiókok összevonása és törlése",
 	"usermerge-desc": "[[Special:UserMerge|Beolvasztja egy felhasználó közreműködéseit egy másikéba]] a wiki adatbázisában, majd törli a beolvasztott felhasználói fiókot. ''Szerkesztők egyesítése'' jogosultság kell hozzá",
 	"usermerge-badnewuser": "Érvénytelen új felhasználói név",
+	"usermerge-badolduser": "Érvénytelen régi felhasználói név",
 	"usermerge-nonewuser": "Üres új felhasználónév. Feltételezett cél: „$1”<br />\nKattints a „{{int:usermerge-submit}}”-ra az elfogadáshoz.",
 	"usermerge-noolduser": "A régi felhasználói név üres",
 	"usermerge-same-old-and-new-user": "A régi és az új felhasználónévnek különbözőnek kell lennie.",

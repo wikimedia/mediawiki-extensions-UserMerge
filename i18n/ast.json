@@ -7,6 +7,7 @@
 	"usermerge": "Fusionar y desaniciar usuarios",
 	"usermerge-desc": "[[Special:UserMerge|Fusiona les referencies d'un usuariu n'otru usuariu]] na base de datos de la wiki (tamién desaniciará l'usuariu antiguu darréu de la fusión). Requier permisos d'''usermerge''",
 	"usermerge-badnewuser": "Nome d'usuariu nuevu inválidu",
+	"usermerge-badolduser": "Nome d'usuariu antiguu inválidu.",
 	"usermerge-nonewuser": "Nome d'usuariu nuevu baleru. Asumese la fusión en \"{{GENDER:$1|$1}}\".<br />\nCalque \"{{int:usermerge-submit}}\" p'aceutar.",
 	"usermerge-noolduser": "Nome d'usuariu antiguu baleru",
 	"usermerge-same-old-and-new-user": "Los nomes d'usuariu antiguu y nuevu tienen de ser distintos.",

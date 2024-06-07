@@ -10,6 +10,7 @@
 	"usermerge": "Slå saman og slett brukarar",
 	"usermerge-desc": "Gjev høve til å [[Special:UserMerge|slå saman kontoar]] ved at alle referansar til ein brukar vert bytta ut til ein annen brukar i databasen, for så å slette den eine kontoen. Krev rett til ''usermerge''.",
 	"usermerge-badnewuser": "Nytt brukernamn ugyldig",
+	"usermerge-badolduser": "Gammalt brukernamn ugyldig",
 	"usermerge-nonewuser": "Nytt brukarnamn tomt &ndash; går ut frå samanslåing til $1.<br />Klikk \"{{int:usermerge-submit}}\" for å godta",
 	"usermerge-noolduser": "Gammalt brukarnamn tomt",
 	"usermerge-fieldset": "Brukarnamn som skal verta slegne saman",

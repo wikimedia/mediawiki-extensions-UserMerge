@@ -13,6 +13,7 @@
 	"usermerge": "Kullanıcıları birleştir ve sil",
 	"usermerge-desc": "Viki veritabanında [[Special:UserMerge|referansları bir kullanıcıdan diğerine birleştirir]] - birleşmeyi mütakip eski kullanıcıları da siler. ''usermerge'' ayrıcalığı gerekir",
 	"usermerge-badnewuser": "Geçersiz yeni kullanıcı adı.",
+	"usermerge-badolduser": "Geçersiz eski kullanıcı adı",
 	"usermerge-nonewuser": "Boş yeni kullanıcı adı. \"{{GENDER:$1|$1}}\" şeklinde birleştirme varsayılıyor.<br />\nKabul etmek için \"{{int:usermerge-submit}}\" düğmesini tıklayın.",
 	"usermerge-noolduser": "Boş eski kullanıcı adı.",
 	"usermerge-same-old-and-new-user": "Eski ve yeni kullanıcı adlarının farklı olması gerekir.",

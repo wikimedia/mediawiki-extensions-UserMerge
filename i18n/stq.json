@@ -7,6 +7,7 @@
 	"usermerge": "Benutserkonten touhoopefiere un läskje",
 	"usermerge-desc": "[[Special:UserMerge|Fiert Benutserkonten in ju Wiki-Doatenbank touhoope]] - dät oolde Benutserkonto wäd ätter ju Touhoopefierenge läsked. Ärfoardert dät ''usermerge''-Gjucht.",
 	"usermerge-badnewuser": "Uungultigen näien Benutsernoome",
+	"usermerge-badolduser": "Uungultigen oolden Benutsernoome",
 	"usermerge-nonewuser": "Loosen näien Benutsernoome - der is ne Touhoopefierenge mäd „$1“ fermoudjen.<br />\nKlik ap  „{{int:usermerge-submit}}“ toun Uutfieren.",
 	"usermerge-noolduser": "Loosen oolden Benutsernoome",
 	"usermerge-olduser": "Oolden Benutsernoome (touhoopefieren fon):",

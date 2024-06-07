@@ -7,6 +7,7 @@
 		]
 	},
 	"usermerge-badnewuser": "Nom d'usuari nou no vàlid",
+	"usermerge-badolduser": "Nom d'usuari antic no vàlid",
 	"usermerge-noolduser": "Nom d'usuari antic sense especificar",
 	"usermerge-olduser": "Antic usuari (barreja des de):",
 	"usermerge-newuser": "Nou usuari (barreja a):",

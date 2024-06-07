@@ -8,6 +8,7 @@
 	"usermerge": "دمج وحذف اليوزرز",
 	"usermerge-desc": "[[Special:UserMerge|يدمج المراجع من يوزر ليوزر]] فى قاعدة بيانات الويكى - يحذف اليوزرز القدام بعد الدمج. يتطلب صلاحيات ''usermerge''",
 	"usermerge-badnewuser": "اسم اليوزر الجديد مش صحيح",
+	"usermerge-badolduser": "اسم اليوزر القديم مش صحيح",
 	"usermerge-nonewuser": "اسم يوزر جديد فارغ - افتراض الدمج إلى $1.<br />\nاضغط \"{{int:usermerge-submit}}\" للقبول.",
 	"usermerge-noolduser": "اسم اليوزر القديم فارغ",
 	"usermerge-fieldset": "أسماء اليوزرز للدمج",

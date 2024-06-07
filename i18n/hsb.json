@@ -7,6 +7,7 @@
 	"usermerge": "Wužiwarske konta zjednoćić a zničić",
 	"usermerge-desc": "[[Special:UserMerge|Zjednoća referency wužiwarjow]] we wikowej datowej bance - stare wužiwarske konto so po zjednoćenju wušmórnje. Žada sej prawa ''usermerge''.",
 	"usermerge-badnewuser": "Njepłaćiwe nowe wužiwarske mjeno",
+	"usermerge-badolduser": "Njepłaćiwe stare wužiwarske mjeno",
 	"usermerge-nonewuser": "Falowace nowe wužiwarske mjeno - najskerje zjednoćenje do \"{{GENDER:$1|$1}}\".<br />\nKlikń na \"{{int:usermerge-submit}}\", zo by akceptował.",
 	"usermerge-noolduser": "Falowace stare wužiwarske mjeno",
 	"usermerge-same-old-and-new-user": "Stare a nowe wužiwarske mjena dyrbja so rozeznawać.",

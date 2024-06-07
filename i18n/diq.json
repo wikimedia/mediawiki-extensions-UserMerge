@@ -12,6 +12,7 @@
 	"usermerge": "Karbera pêtewr kerê ya zi bıesternê",
 	"usermerge-desc": "Viki database de [[Special:UserMerge|referansan yew karberi ra ê bini tewr kerış]] - Tewr kerdışi dıme karberanê verênan zi esterneno. Bağseyiya ''karberapêtewrkerdış'' lazıma",
 	"usermerge-badnewuser": "Nameyê kerberiyo neweyo nêvêrde.",
+	"usermerge-badolduser": "Nameyê karberiyo kehano nêvêrde.",
 	"usermerge-nonewuser": "Veng namey karberiyo newe.  Zey \"{{GENDER:$1|$1}}\" pêtewr kerdış hesabêno.<br />\nSeba qebul kerdışi buttona \"{{int:usermerge-submit}}\" bıploğnê .",
 	"usermerge-noolduser": "Nameyê karberiyo kehano veng.",
 	"usermerge-same-old-and-new-user": "Namey karberê verêni u neweyêni wa ca bo",

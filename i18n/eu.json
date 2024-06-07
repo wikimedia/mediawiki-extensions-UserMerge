@@ -9,6 +9,7 @@
 		]
 	},
 	"usermerge-badnewuser": "Baliogabeko lankide izen berria",
+	"usermerge-badolduser": "Baliogabeko lankide izen zaharra",
 	"usermerge-noolduser": "Lankide izen zahar hutsa",
 	"usermerge-olduser": "Lankide zaharra (nondik batu):",
 	"usermerge-newuser": "Lankide berria (nora batu):",

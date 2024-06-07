@@ -7,6 +7,7 @@
 	"usermerge": "Metmaacher zosammelääje un fott schmiiße",
 	"usermerge-desc": "[[Special:UserMerge|Läät de Date fun einem Metmaacher met anem andere Metmaacher komplät zosamme]] en dem Wiki singe Datebank, un kann donoh och de övverhollte Metmaacher fottschmieße. Doför bruch mer et „{{int:right-usermerge}}“ Rääsch (<em lang=\"en\">usermerge</em>)",
 	"usermerge-badnewuser": "Dä neue Metmaachername es nit jöltesch",
+	"usermerge-badolduser": "Dä ahle Metmaachername es nit jöltesch",
 	"usermerge-nonewuser": "Keine neue Metmaachername aanjejovve. Mer vermoode, dat De {{GENDER:$1|mem|mem|med dämm Metmaacher|met dä|mem}} „$1“ zosamme lääje wells.<br />\nKleck op „{{int:usermerge-submit}}“ öm dat esu ze maache.",
 	"usermerge-noolduser": "Keine ahle Metmaachername aanjejovve",
 	"usermerge-same-old-and-new-user": "Dä ahle un der neue Nahme för dä Metmaacher möße onejahl sin.",

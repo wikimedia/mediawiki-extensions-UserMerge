@@ -11,6 +11,7 @@
 	"usermerge": "Panggabungan lan pambusakan naraguna",
 	"usermerge-desc": "[[Special:UserMerge|Nggabungaké rèferènsi saka naraguna siji menyang liyané]] ing basis data wiki - bakal sekaligus mbusak naraguna lawas sawisé rampung panggabungan. Tindakan iki merlokaké hak ''usermerge''.",
 	"usermerge-badnewuser": "Jeneng naraguna anyar ora absah",
+	"usermerge-badolduser": "Jeneng naraguna lawas ora sah",
 	"usermerge-nonewuser": "Jeneng panganggo kothong - dianggep bakal digabungaké menyang $1.<br />\nKlik \"{{int:usermerge-submit}}\" kanggo nerusaké.",
 	"usermerge-noolduser": "Jeneng naraguna sing lawas kosong",
 	"usermerge-olduser": "Naraguna lawas (digabungaké saka):",

@@ -7,6 +7,7 @@
 	},
 	"usermerge": "Идгом ва ҳафзи корбар",
 	"usermerge-badnewuser": "Номи корбарии ҷадидӣ номӯътабар",
+	"usermerge-badolduser": "Номи корбарии кӯҳнаи номӯътабар",
 	"usermerge-noolduser": "Номи корбарии куҳнаи холӣ.",
 	"usermerge-olduser": "Корбари куҳна (идғом аз)",
 	"usermerge-newuser": "Корбари ҷадид (идғом ба)",

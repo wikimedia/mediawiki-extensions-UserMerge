@@ -8,6 +8,7 @@
 	"usermerge": "Trộn và xóa thành viên",
 	"usermerge-desc": "[[Special:UserMerge|Trộn các tham chiếu từ thành viên này sang một thành viên khác]] trong cơ sở dữ liệu wiki – đồng thời xóa thành viên cũ sau khi trộn. Cần phải có quyền ''usermerge''",
 	"usermerge-badnewuser": "Tên thành viên mới không hợp lệ",
+	"usermerge-badolduser": "Tên thành viên cũ không hợp lệ",
 	"usermerge-nonewuser": "Tên thành viên mới đã để trống. Có lẽ nên trộn với với “$1”.<br />\nNhấn “{{int:usermerge-submit}}” để chấp nhận.",
 	"usermerge-noolduser": "Tên thành viên cũ trống",
 	"usermerge-same-old-and-new-user": "Các tên người dùng cũ và mới phải khác nhau.",

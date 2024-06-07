@@ -9,6 +9,7 @@
 	"usermerge": "Mete ansanm ak efase kont itilizatè yo",
 	"usermerge-desc": "[[Special:UserMerge|Mèt ansanm referans yo depi yon itilizatè nan referans yon lòt itilizatè]] nan baz done wiki a - l ap efase tou vye non itilizatè yo apre fizyon fin fèt. Ou bezwen genyen dwa ''usermerge'' pou fè fizyon sa.",
 	"usermerge-badnewuser": "Nouvo non itilizatè a pa bon.",
+	"usermerge-badolduser": "Ansyen non itilizatè a pa bon.",
 	"usermerge-nonewuser": "Nouvo non itilizatè ki vid. Nou kwè ou vle mete l ansanm ak $1.<br />\nKlike \"{{int:usermerge-submit}}\" pou aksepte operasyon an.",
 	"usermerge-noolduser": "Ansyen non itilizatè a vid",
 	"usermerge-olduser": "Ansyen non itilizatè (mete ansanm depi)",

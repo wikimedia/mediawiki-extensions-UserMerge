@@ -19,6 +19,7 @@
 	"usermerge": "Fusão e eliminação de utilizadores",
 	"usermerge-desc": "[[Special:UserMerge|Faz a fusão das referências a um utilizador com as de outro utilizador]] na base de dados da wiki - também apaga o utilizador antigo após a fusão. Requer o privilégio ''usermerge''",
 	"usermerge-badnewuser": "Nome novo inválido.",
+	"usermerge-badolduser": "Nome antigo inválido.",
 	"usermerge-nonewuser": "O nome de utilizador novo está vazio. Será assumida a fusão com {{GENDER:$1|$1}}.<br />\nClique \"{{int:usermerge-submit}}\" para aceitar.",
 	"usermerge-noolduser": "O nome de utilizador antigo está vazio.",
 	"usermerge-same-old-and-new-user": "O nome de utilizador(a) antigo e novo têm de ser distintos.",

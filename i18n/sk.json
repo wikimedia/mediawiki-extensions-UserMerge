@@ -8,6 +8,7 @@
 	"usermerge": "Zlúčenie a zmazanie používateľov",
 	"usermerge-desc": "[[Special:UserMerge|Zlučuje odkazy na jedného používateľa na odkazy na druhého]] v databáze wiki; tiež následne zmaže starého používateľa. Vyžaduje oprávnenie ''usermerge''.",
 	"usermerge-badnewuser": "Neplatné nové používateľské meno",
+	"usermerge-badolduser": "Neplatné staré používateľské meno",
 	"usermerge-nonewuser": "Nové používateľské meno je prázdne. Predpokladá sa zlúčenie do „$1“.<br />\nPotvrdiť môžete kliknutím na „{{int:usermerge-submit}}“.",
 	"usermerge-noolduser": "Prázdne staré používateľské meno",
 	"usermerge-fieldset": "Zlúčiť používateľov",

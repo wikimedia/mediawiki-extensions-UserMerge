@@ -14,6 +14,7 @@
 	"usermerge": "Sammanfoga och radera användarkonton",
 	"usermerge-desc": "Ger möjlighet att [[Special:UserMerge|sammanfoga användarkonton]] genom att alla referenser till en användare byts ut till en annan användare i databasen, samt att efter sammanfogning radera gamla konton. Kräver behörigheten ''usermerge''.",
 	"usermerge-badnewuser": "Ogiltigt nytt användarnamn",
+	"usermerge-badolduser": "Ogiltigt gammalt användarnamn",
 	"usermerge-nonewuser": "Tomt nytt användarnamn. Antar sammanfogning till \"{{GENDER:$1|$1}}\".<br />\nKlicka på \"{{int:usermerge-submit}}\" för att godkänna.",
 	"usermerge-noolduser": "Gammalt användarnamn tomt",
 	"usermerge-same-old-and-new-user": "De gamla och nya användarnamnen måste vara åtskilda.",

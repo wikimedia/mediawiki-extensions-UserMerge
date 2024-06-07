@@ -6,6 +6,7 @@
 	},
 	"usermerge": "સભ્યોને ભેળવો અને રદ કરો",
 	"usermerge-badnewuser": "અમાન્ય નવું સભ્યનામ",
+	"usermerge-badolduser": "અમાન્ય જુનું સભ્યનામ",
 	"usermerge-noolduser": "જુનું સભ્યનામ ખાલી કરો",
 	"usermerge-fieldset": "ભેળવવા માટેનાં સભ્યનામો",
 	"usermerge-submit": "સભ્ય ભેળવો",

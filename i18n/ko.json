@@ -12,6 +12,7 @@
 	"usermerge": "사용자 합치기 및 삭제",
 	"usermerge-desc": "위키 데이터베이스에서 [[Special:UserMerge|참고한 한 사용자에서 다른 사용자로 합치며]], 합치고 나서 이에 따라 이전 사용자는 삭제됩니다. '''usermerge''' 권한 필요",
 	"usermerge-badnewuser": "잘못된 새 사용자 이름입니다.",
+	"usermerge-badolduser": "잘못된 이전 사용자 이름입니다.",
 	"usermerge-nonewuser": "빈 새 사용자 이름입니다. \"{{GENDER:$1|$1}}\"(으)로 가정하여 합칩니다.<br />\n동의하면 \"{{int:usermerge-submit}}\"을 클릭하세요.",
 	"usermerge-noolduser": "이전 사용자 이름이 비어 있음",
 	"usermerge-same-old-and-new-user": "이전과 새 사용자 이름은 달라야 합니다.",

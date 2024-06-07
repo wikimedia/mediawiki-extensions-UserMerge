@@ -9,6 +9,7 @@
 	"usermerge": "Spoji in izbriši uporabnike",
 	"usermerge-desc": "[[Special:UserMerge|Združi sklice iz enega uporabnika na drugega]] v podatkovni zbirki vikija – prav tako po spojitvi izbriše stare uporabnike. Zahteva pravico ''usermerge''.",
 	"usermerge-badnewuser": "Neveljavno novo uporabniško ime",
+	"usermerge-badolduser": "Neveljavno staro uporabniško ime",
 	"usermerge-nonewuser": "Prazno novo uporabniško ime. Predpostavljam spojitev z »{{GENDER:$1|$1}}«.<br />\nKliknite »{{int:usermerge-submit}}« za sprejetje.",
 	"usermerge-noolduser": "Prazno staro uporabniško ime",
 	"usermerge-same-old-and-new-user": "Stara in nova uporabniška imena morajo biti različna.",

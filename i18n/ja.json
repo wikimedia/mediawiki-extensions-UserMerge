@@ -14,6 +14,7 @@
 	"usermerge": "利用者の統合と削除",
 	"usermerge-desc": "ウィキデータベース上における[[Special:UserMerge|ある利用者を別の利用者へ統合し]]、また統合元の利用者を削除する (「{{int:right-usermerge}}」できる権限 ''usermerge'' が必要)",
 	"usermerge-badnewuser": "新利用者名が無効です。",
+	"usermerge-badolduser": "旧利用者名が無効です。",
 	"usermerge-nonewuser": "新しい利用者名の欄が空です。「{{GENDER:$1|$1}}」への統合と見なします。<br />\n「{{int:usermerge-submit}}」をクリックして承認してください。",
 	"usermerge-noolduser": "旧利用者名の欄が空です。",
 	"usermerge-same-old-and-new-user": "旧利用者名と新利用者名は異なるものにしてください。",

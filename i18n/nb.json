@@ -10,6 +10,7 @@
 	"usermerge": "Brukersammenslåing og -sletting",
 	"usermerge-desc": "Gir muligheten til  å [[Special:UserMerge|slå sammen kontoer]] ved at alle referanser til en bruker byttes ut til en annen bruker i databasen, for så å slette den ene kontoen. Trenger rettigheten ''usermerge''.",
 	"usermerge-badnewuser": "Nytt brukernavn ugyldig",
+	"usermerge-badolduser": "Gammelt brukernavn ugyldig",
 	"usermerge-nonewuser": "Nytt brukernavn tomt &ndash; antar sammenslåing til «{{GENDER:$1|$1}}».<br />\nKlikk «{{int:usermerge-submit}}» for å godta.",
 	"usermerge-noolduser": "Gammelt brukernavn tomt",
 	"usermerge-same-old-and-new-user": "Det gamle og det nye brukernavnet må være forskjellige.",

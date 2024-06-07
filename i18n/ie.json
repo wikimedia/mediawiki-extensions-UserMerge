@@ -7,6 +7,7 @@
 	"usermerge": "Fuser se e deleter usatores",
 	"usermerge-desc": "[[Special:UserMerge|Referenties de fusion de un usator por altri usator]] in li funde de data del wiki - anc va deleter usatores antiqui succedent fusion. Exige avantages de ''fusion de usator''",
 	"usermerge-badnewuser": "Nov nómine de usator ínvalid",
+	"usermerge-badolduser": "Antiqui nómine de usator ínvalid",
 	"usermerge-nonewuser": "Nov nómine de usator vacui - acceptant fusion por \"$1\".<br />\nClacca \"{{int:usermerge-submit}}\" por acceptar.",
 	"usermerge-noolduser": "Antiqui nómine de usator vacui",
 	"usermerge-fieldset": "Nómines de usator por fusion",

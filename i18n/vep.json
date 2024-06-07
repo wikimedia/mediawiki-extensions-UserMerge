@@ -5,6 +5,7 @@
 		]
 	},
 	"usermerge-badnewuser": "Vär uz' kävutajan nimi",
+	"usermerge-badolduser": "Vär vanh kävutajan nimi",
 	"usermerge-deleteolduser": "Čuta poiš vanh kävutajan nimi",
 	"right-usermerge": "Ühtenzoitta kävutajid"
 }
