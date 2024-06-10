@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Casserium"
+		]
+	},
+	"usermerge": "Қатысушыларды біріктіру және жою",
+	"usermerge-badnewuser": "Жарамсыз жаңа қатысушы есімі.",
+	"usermerge-badolduser": "Жарамсыз ескі қатысушы есімі.",
+	"usermerge-noolduser": "Бос ескі қатысушы есімі.",
+	"usermerge-same-old-and-new-user": "Ескі және жаңа қатысушы есімдері бір-біріне ұқсамауы керек.",
+	"usermerge-fieldset": "Біріктірілетін қатысушы есімдері",
+	"usermerge-olduser": "Ескі қатысушы (біріктірілетін):",
+	"usermerge-newuser": "Жаңа қатысушы (біріктіретін):",
+	"usermerge-deleteolduser": "Ескі қатысушыны жою",
+	"usermerge-submit": "Қатысушыны біріктіру",
+	"usermerge-merge-linkoncontribs": "қатысушыны біріктіру",
+	"usermerge-delete-linkoncontribs": "қатысушыны жою",
+	"usermerge-badtoken": "Жарамсыз өңдеу маркері.",
+	"usermerge-userdeleted": "$1 ($2) өшірілген.",
+	"usermerge-logpage": "Қатысушыны біріктіру журналы",
+	"usermerge-logpagetext": "Бұл тіркелгілерді біріктіру журналы.",
+	"right-usermerge": "Қатысушыларды біріктіру",
+	"action-usermerge": "қатысушыларды біріктіру",
+	"usermerge-page-unmoved": "$1 деген бет $2 дегенге жылжытылмайды.",
+	"log-action-filter-usermerge": "Әрекет түрі:",
+	"log-action-filter-usermerge-mergeuser": "Қатысушы тіркелгісін біріктіру",
+	"log-action-filter-usermerge-deleteuser": "Қатысушы тіркелгісін жою"
+}
