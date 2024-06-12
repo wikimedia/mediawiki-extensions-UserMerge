@@ -1,4 +1,8 @@
 <?php
+
+use MediaWiki\Deferred\SiteStatsUpdate;
+use MediaWiki\User\User;
+
 /**
  * @todo this should better use the Database group
  * @group Database

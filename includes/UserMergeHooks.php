@@ -2,6 +2,7 @@
 
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Hook\ContributionsToolLinksHook;
+use MediaWiki\SpecialPage\SpecialPage;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Hook\UserGetReservedNamesHook;
 use MediaWiki\User\UserFactory;
