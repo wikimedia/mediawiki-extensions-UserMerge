@@ -490,21 +490,18 @@ class MergeUser {
 		$conds = [];
 		foreach ( array_keys( $titlesToDelete ) as $tuple ) {
 			[ $ns, $dbKey ] = explode( "|", $tuple, 2 );
-			$conds[] = $dbw->makeList(
-				[
-					'wl_user' => $this->oldUser->getId(),
-					'wl_namespace' => $ns,
-					'wl_title' => $dbKey
-				],
-				LIST_AND
-			);
+			$conds[] = $dbw->andExpr( [
+				'wl_user' => $this->oldUser->getId(),
+				'wl_namespace' => $ns,
+				'wl_title' => $dbKey
+			] );
 		}
 
 		if ( count( $conds ) ) {
 			# Perform a multi-row delete
 			$dbw->newDeleteQueryBuilder()
 				->deleteFrom( 'watchlist' )
-				->where( $dbw->makeList( $conds, LIST_OR ) )
+				->where( $dbw->orExpr( $conds ) )
 				->caller( __METHOD__ )
 				->execute();
 		}
