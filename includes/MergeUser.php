@@ -597,13 +597,8 @@ class MergeUser {
 				}
 
 				# check if any pages link here
-				$res = $dbr->newSelectQueryBuilder()
-					->select( 'pl_title' )
-					->from( 'pagelinks' )
-					->where( [ 'pl_title' => $this->oldUser->getName() ] )
-					->caller( __METHOD__ )
-					->fetchField();
-				if ( $res === false ) {
+				$res = $oldPage->getLinksTo( [ 'limit' => 1 ] );
+				if ( !$res ) {
 					# nothing links here, so delete unmoved page/redirect
 					$this->deletePage( $message, $performer, $oldPage );
 				}
