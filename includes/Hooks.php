@@ -1,5 +1,7 @@
 <?php
 
+namespace MediaWiki\Extension\UserMerge;
+
 use MediaWiki\Config\ConfigFactory;
 use MediaWiki\Hook\ContributionsToolLinksHook;
 use MediaWiki\SpecialPage\SpecialPage;
@@ -8,7 +10,7 @@ use MediaWiki\User\Hook\UserGetReservedNamesHook;
 use MediaWiki\User\UserFactory;
 use MediaWiki\User\UserGroupManager;
 
-class UserMergeHooks implements
+class Hooks implements
 	UserGetReservedNamesHook,
 	ContributionsToolLinksHook
 {

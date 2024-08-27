@@ -15,6 +15,8 @@
  *
  */
 
+namespace MediaWiki\Extension\UserMerge;
+
 use MediaWiki\Block\DatabaseBlockStore;
 use MediaWiki\Html\Html;
 use MediaWiki\HTMLForm\HTMLForm;

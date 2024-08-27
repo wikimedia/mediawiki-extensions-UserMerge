@@ -18,7 +18,7 @@
 	],
 	"SpecialPages": {
 		"UserMerge": {
-			"class": "SpecialUserMerge",
+			"class": "MediaWiki\\Extension\\UserMerge\\SpecialUserMerge",
 			"services": [
 				"UserFactory",
 				"UserGroupManager",
@@ -46,7 +46,7 @@
 		}
 	},
 	"LogActionsHandlers": {
-		"usermerge/*": "UserMergeLogFormatter"
+		"usermerge/*": "MediaWiki\\Extension\\UserMerge\\UserMergeLogFormatter"
 	},
 	"MessagesDirs": {
 		"UserMerge": [
@@ -59,7 +59,7 @@
 	},
 	"HookHandlers": {
 		"main": {
-			"class": "UserMergeHooks",
+			"class": "MediaWiki\\Extension\\UserMerge\\Hooks",
 			"services": [
 				"ConfigFactory",
 				"UserFactory",
@@ -74,12 +74,12 @@
 		"MediaWiki\\Extension\\UserMerge\\": "includes/"
 	},
 	"AutoloadClasses": {
-		"SpecialUserMerge": "includes/SpecialUserMerge.php",
 		"MergeUser": "includes/MergeUser.php",
-		"UserMergeHooks": "includes/UserMergeHooks.php",
+		"MediaWiki\\Extension\\UserMerge\\MergeUser": "includes/MergeUser.php",
 		"IUserMergeLogger": "includes/IUserMergeLogger.php",
+		"MediaWiki\\Extension\\UserMerge\\IUserMergeLogger": "includes/IUserMergeLogger.php",
 		"UserMergeLogger": "includes/UserMergeLogger.php",
-		"UserMergeLogFormatter": "includes/UserMergeLogFormatter.php"
+		"MediaWiki\\Extension\\UserMerge\\UserMergeLogger": "includes/UserMergeLogger.php"
 	},
 	"ConfigRegistry": {
 		"usermerge": "GlobalVarConfig::newInstance"

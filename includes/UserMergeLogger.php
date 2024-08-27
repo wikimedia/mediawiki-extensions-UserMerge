@@ -1,5 +1,7 @@
 <?php
 
+namespace MediaWiki\Extension\UserMerge;
+
 use MediaWiki\Logging\ManualLogEntry;
 use MediaWiki\User\User;
 
@@ -43,3 +45,6 @@ class UserMergeLogger implements IUserMergeLogger {
 		$logEntry->publish( $logEntry->insert() );
 	}
 }
+
+/** @deprecated class alias since 1.45 */
+class_alias( UserMergeLogger::class, 'UserMergeLogger' );

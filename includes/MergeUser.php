@@ -1,5 +1,7 @@
 <?php
 
+namespace MediaWiki\Extension\UserMerge;
+
 use MediaWiki\Block\DatabaseBlock;
 use MediaWiki\Block\DatabaseBlockStore;
 use MediaWiki\Deferred\DeferredUpdates;
@@ -685,3 +687,6 @@ class MergeUser {
 		DeferredUpdates::addUpdate( SiteStatsUpdate::factory( [ 'users' => -1 ] ) );
 	}
 }
+
+/** @deprecated class alias since 1.45 */
+class_alias( MergeUser::class, 'MergeUser' );

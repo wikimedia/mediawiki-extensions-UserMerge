@@ -1,6 +1,8 @@
 <?php
 
 use MediaWiki\Deferred\SiteStatsUpdate;
+use MediaWiki\Extension\UserMerge\MergeUser;
+use MediaWiki\Extension\UserMerge\UserMergeLogger;
 use MediaWiki\User\User;
 use Wikimedia\Rdbms\IDBAccessObject;
 
@@ -37,7 +39,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers MergeUser::merge
+	 * @covers \MediaWiki\Extension\UserMerge\MergeUser::merge
 	 */
 	public function testBasicMerge() {
 		$user1 = $this->getNewTestUser();
@@ -61,7 +63,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers MergeUser::merge
+	 * @covers \MediaWiki\Extension\UserMerge\MergeUser::merge
 	 */
 	public function testMergeOfUserGroups() {
 		// Postgres does not support UPDATE IGNORE, resulting in duplicate keys here
@@ -87,7 +89,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers MergeUser::delete
+	 * @covers \MediaWiki\Extension\UserMerge\MergeUser::delete
 	 */
 	public function testDeleteUser() {
 		$user1 = $this->getNewTestUser();
@@ -106,7 +108,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers MergeUser::mergeEditcount
+	 * @covers \MediaWiki\Extension\UserMerge\MergeUser::mergeEditcount
 	 */
 	public function testMergeEditcount() {
 		$user1 = $this->getNewTestUser();
@@ -132,7 +134,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers MergeUser::movePages
+	 * @covers \MediaWiki\Extension\UserMerge\MergeUser::movePages
 	 */
 	public function testMovePages() {
 		$user1 = $this->getNewTestUser();

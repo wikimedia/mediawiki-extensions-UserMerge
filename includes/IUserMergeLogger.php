@@ -1,5 +1,7 @@
 <?php
 
+namespace MediaWiki\Extension\UserMerge;
+
 use MediaWiki\User\User;
 
 interface IUserMergeLogger {
@@ -21,3 +23,6 @@ interface IUserMergeLogger {
 	 */
 	public function addDeleteEntry( User $performer, User $oldUser );
 }
+
+/** @deprecated class alias since 1.45 */
+class_alias( IUserMergeLogger::class, 'IUserMergeLogger' );

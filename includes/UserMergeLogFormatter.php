@@ -1,5 +1,7 @@
 <?php
 
+namespace MediaWiki\Extension\UserMerge;
+
 use MediaWiki\Logging\LogFormatter;
 
 class UserMergeLogFormatter extends LogFormatter {

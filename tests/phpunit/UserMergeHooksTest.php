@@ -1,9 +1,11 @@
 <?php
 
+use MediaWiki\Extension\UserMerge\Hooks;
+
 class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
-	private function newUserMergeHooks(): UserMergeHooks {
+	private function newUserMergeHooks(): Hooks {
 		$services = $this->getServiceContainer();
-		return new UserMergeHooks(
+		return new Hooks(
 			$services->getConfigFactory(),
 			$services->getUserFactory(),
 			$services->getUserGroupManager()
@@ -11,7 +13,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers UserMergeHooks::onUserGetReservedNames
+	 * @covers \MediaWiki\Extension\UserMerge\Hooks::onUserGetReservedNames
 	 */
 	public function testReservedUsernameWithDeleteEnabled() {
 		$this->overrideConfigValue( 'UserMergeEnableDelete', true );
@@ -23,7 +25,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 	}
 
 	/**
-	 * @covers UserMergeHooks::onUserGetReservedNames
+	 * @covers \MediaWiki\Extension\UserMerge\Hooks::onUserGetReservedNames
 	 */
 	public function testReservedUsernameWithDeleteDisabled() {
 		$this->overrideConfigValue( 'UserMergeEnableDelete', false );
