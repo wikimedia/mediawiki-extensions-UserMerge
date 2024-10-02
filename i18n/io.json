@@ -6,5 +6,6 @@
 	},
 	"usermerge-noolduser": "Anciena uzeronomo vakua.",
 	"usermerge-userdeleted": "$1 ($2) efacesis.",
-	"usermerge-page-unmoved": "La pagino $1 ne povas rinomizesar \"$2\"."
+	"usermerge-page-unmoved": "La pagino $1 ne povas rinomizesar \"$2\".",
+	"log-action-filter-usermerge": "Tipo di agado:"
 }
