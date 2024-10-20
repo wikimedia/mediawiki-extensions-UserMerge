@@ -2,6 +2,7 @@
 
 use MediaWiki\Deferred\SiteStatsUpdate;
 use MediaWiki\User\User;
+use Wikimedia\Rdbms\IDBAccessObject;
 
 /**
  * @todo this should better use the Database group
