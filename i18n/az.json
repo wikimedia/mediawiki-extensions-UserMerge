@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"NMW03"
+			"NMW03",
+			"Nemoralis"
 		]
 	},
 	"usermerge-move-log": "\"$1\" hesabını \"[[User:$2|$2]]\" hesabına birləşdirərkən səhifənin adı avtomatik olaraq dəyişdirildi"
