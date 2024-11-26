@@ -3,7 +3,8 @@
 		"authors": [
 			"Les Meloures",
 			"Robby",
-			"Soued031"
+			"Soued031",
+			"Volvox"
 		]
 	},
 	"usermerge": "Benotzerkonten zesummeféieren a läschen",
@@ -21,7 +22,7 @@
 	"usermerge-badtoken": "Ännerungs-Jeton net valabel",
 	"usermerge-userdeleted": "$1 ($2) gouf geläscht.",
 	"usermerge-success": "D'Zesummeféierung vum {{GENDER:$1|$1}} ($2) op {{GENDER:$3|$3}} ($4) ass net komplett.",
-	"usermerge-logpage": "Lëscht vun de Benotzerkonten déi zesummegeféiert goufen",
+	"usermerge-logpage": "Lëscht vun de Benotzerkonten, déi zesummegeféiert goufen",
 	"usermerge-logpagetext": "Dëst ass eng Lëscht vun de Benotzerkonten, déi zesummegeféiert goufen.",
 	"usermerge-noselfdelete": "Dir kënnt {{GENDER:$1|Iech net selwer}} läschen oder mat {{GENDER:$1|Iech selwer}} zesummeféieren!",
 	"usermerge-protectedgroup": "D'Zesummenféierung vum {{GENDER:$1|Benotzer}} ass net méiglech: De Benotzer ass an engem geschützte Grupp.",
