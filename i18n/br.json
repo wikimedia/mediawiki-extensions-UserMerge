@@ -21,7 +21,7 @@
 	"usermerge-delete-linkoncontribs": "dilemel an {{GENDER:$1|implijer|implijerez|implijer}}",
 	"usermerge-badtoken": "Jedouer aozañ direizh",
 	"usermerge-userdeleted": "Diverket eo bet $1 ($2).",
-	"usermerge-success": "Kendeuzadenn adal $1 ($2) davet $3 ($4) kaset da benn vat.",
+	"usermerge-success": "Kendeuzadenn adal $1 ($2) da $3 ($4) kaset da benn vat.",
 	"usermerge-logpage": "Marilh kendeuzadennoù an implijerien",
 	"usermerge-logpagetext": "Setu aze marilh kendeuzadennoù an implijerien.",
 	"usermerge-noselfdelete": "N'hallit ket diverkañ pe kendeuziñ adal pe {{GENDER:$1|davedoc'h}} hoc'h-unan!",
