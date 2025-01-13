@@ -5,6 +5,7 @@
 			"Cimon Avaro",
 			"Crt",
 			"Nike",
+			"Samoasambia",
 			"Silvonen",
 			"Str4nd",
 			"Stryn",
@@ -18,7 +19,7 @@
 	"usermerge-desc": "[[Special:UserMerge|Yhdistää viittaukset yhdestä käyttäjästä toiseen]] wikin tietokannassa - poistaa myös vanhat käyttäjät yhdistämisen jälkeen. Vaatii oikeuden ”usermerge”",
 	"usermerge-badnewuser": "Uusi käyttäjänimi ei kelpaa",
 	"usermerge-badolduser": "Vanha käyttäjänimi ei kelpaa",
-	"usermerge-nonewuser": "Uusi käyttäjänimi -kenttä on tyhjä. Oletetaan yhdistäminen tunnukseen ”{{GENDER:$1|$1}}”. <br /> \nNapsauta \"{{int:usermerge-submit}}\" hyväksyäksesi.",
+	"usermerge-nonewuser": "Uusi käyttäjänimi -kenttä on tyhjä. Oletetaan yhdistäminen tunnukseen ”{{GENDER:$1|$1}}”. <br /> \nNapsauta ”{{int:usermerge-submit}}” hyväksyäksesi.",
 	"usermerge-noolduser": "Vanha käyttäjänimi ei voi olla tyhjä.",
 	"usermerge-same-old-and-new-user": "Vanhan ja uuden käyttäjänimen on oltava eroavat.",
 	"usermerge-fieldset": "Yhdistettävät käyttäjänimet",
@@ -26,6 +27,8 @@
 	"usermerge-newuser": "Uusi käyttäjä (mihin yhdistetään)",
 	"usermerge-deleteolduser": "Poista vanha käyttäjä",
 	"usermerge-submit": "Yhdistä käyttäjä",
+	"usermerge-merge-linkoncontribs": "yhdistä {{GENDER:$1|käyttäjä}}",
+	"usermerge-delete-linkoncontribs": "poista {{GENDER:$1|käyttäjä}}",
 	"usermerge-badtoken": "Virheellinen muokkauspoletti.",
 	"usermerge-userdeleted": "$1 ($2) on poistettu.",
 	"usermerge-success": "Yhdistäminen tunnuksesta $1 ($2) tunnukseen $3 ($4) on suoritettu.",
@@ -37,5 +40,10 @@
 	"action-usermerge": "yhdistää käyttäjiä",
 	"usermerge-autopagedelete": "Sivu poistettiin automaattisesti käyttäjien yhdistämisessä",
 	"usermerge-page-unmoved": "Sivua $1 ei voitu siirtää nimelle $2.",
-	"usermerge-move-log": "Sivu siirrettiin automaattisesti yhdistettäessä käyttäjä ”$1” käyttäjään ”[[User:$2|$2]]”"
+	"usermerge-move-log": "Sivu siirrettiin automaattisesti yhdistettäessä käyttäjä ”$1” käyttäjään ”[[User:$2|$2]]”",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|yhdisti}} käyttäjätunnuksen ”$4” ($5) käyttäjätunnukseen {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|poisti}} käyttäjätunnuksen ”$4” ($5)",
+	"log-action-filter-usermerge": "Toiminnon tyyppi:",
+	"log-action-filter-usermerge-mergeuser": "Käyttäjätunnuksen yhdistäminen",
+	"log-action-filter-usermerge-deleteuser": "Käyttäjätunnuksen poisto"
 }
