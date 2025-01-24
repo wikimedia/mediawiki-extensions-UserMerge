@@ -546,10 +546,6 @@ class MergeUser {
 			->caller( __METHOD__ )
 			->fetchResultSet();
 
-		$message = static function () use ( $msg ) {
-			return call_user_func_array( $msg, func_get_args() );
-		};
-
 		$failedMoves = [];
 		foreach ( $pages as $row ) {
 			$oldPage = Title::makeTitleSafe( $row->page_namespace, $row->page_title );
@@ -559,7 +555,7 @@ class MergeUser {
 			if ( $this->newUser->getName() === 'Anonymous' ) {
 				# delete ALL old pages
 				if ( $oldPage->exists() ) {
-					$this->deletePage( $message, $performer, $oldPage );
+					$this->deletePage( $msg, $performer, $oldPage );
 				}
 			} elseif ( $newPage->exists()
 				&& !MediaWikiServices::getInstance()
@@ -570,12 +566,12 @@ class MergeUser {
 				&& $newPage->getLength() > 0
 			) {
 				# delete old pages that can't be moved
-				$this->deletePage( $message, $performer, $oldPage );
+				$this->deletePage( $msg, $performer, $oldPage );
 			} else {
 				# move content to new page
 				# delete target page if it exists and is blank
 				if ( $newPage->exists() ) {
-					$this->deletePage( $message, $performer, $newPage );
+					$this->deletePage( $msg, $performer, $newPage );
 				}
 
 				# move to target location
@@ -584,7 +580,7 @@ class MergeUser {
 					->newMovePage( $oldPage, $newPage )
 					->move(
 						$performer,
-						$message(
+						$msg(
 							'usermerge-move-log',
 							$oldusername->getText(),
 							$newusername->getText() )->inContentLanguage()->text()
@@ -597,7 +593,7 @@ class MergeUser {
 				$res = $oldPage->getLinksTo( [ 'limit' => 1 ] );
 				if ( !$res ) {
 					# nothing links here, so delete unmoved page/redirect
-					$this->deletePage( $message, $performer, $oldPage );
+					$this->deletePage( $msg, $performer, $oldPage );
 				}
 			}
 		}
