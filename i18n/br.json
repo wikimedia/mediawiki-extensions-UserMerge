@@ -11,7 +11,7 @@
 	"usermerge-desc": "[[Special:UserMerge|Kendeuziñ a ra daveennoù un implijer gant re unan bennak all]] e diaz titouroù ar wiki - diverkañ a raio ivez ar c'hendeuzadennoù implijer kozh da zont. Rekis eo kaout aotreoù ''kendeuziñ''",
 	"usermerge-badnewuser": "Anv implijer nevez direizh",
 	"usermerge-badolduser": "Anv implijer kozh direizh",
-	"usermerge-nonewuser": "Anv implijer nevez goullo - soñjal a ra deomp e fell deoc'h kendeuziñ davet \"$1\".<br />\nKlikañ war \"{{int:usermerge-submit}}\" evit asantiñ.",
+	"usermerge-nonewuser": "Anv implijer nevez goullo. Moarvat e fell deoc'h kendeuziñ davet \"{{GENDER:$1|$1}}.<br />\nKlikit war \"{{int:usermerge-submit}}\" evit asantiñ.",
 	"usermerge-noolduser": "Anv implijer kozh goullo",
 	"usermerge-fieldset": "Anvioù implijer da gendeuziñ",
 	"usermerge-olduser": "Implijer kozh (kendeuziñ adal) :",
