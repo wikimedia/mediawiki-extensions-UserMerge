@@ -6,7 +6,8 @@
 			"Erdemaslancan",
 			"Kumkumuk",
 			"Marmase",
-			"Mirzali"
+			"Mirzali",
+			"GolyatGeri"
 		]
 	},
 	"usermerge": "Karbera pêtewr kerê ya zi bıesternê",
@@ -20,6 +21,8 @@
 	"usermerge-newuser": "Karbero newe (de biya pê):",
 	"usermerge-deleteolduser": "Karberê kehani bestere",
 	"usermerge-submit": "Karbera zewkerden",
+	"usermerge-merge-linkoncontribs": "{{GENDER:$1|karber}} apêarden",
+	"usermerge-delete-linkoncontribs": "{{GENDER:$1|karber}} esternen",
 	"usermerge-badtoken": "Ratnoğe xırab vırnayışi",
 	"usermerge-userdeleted": "$1 ($2) esteriya .",
 	"usermerge-success": "Karberê $1 ($2) ra hetê  $3 ($4) ra kerber biyo tewr.",
