@@ -1,5 +1,7 @@
 <?php
 
+use MediaWiki\Logging\LogFormatter;
+
 class UserMergeLogFormatter extends LogFormatter {
 
 	/** @var int[] */

@@ -1,5 +1,6 @@
 <?php
 
+use MediaWiki\Logging\ManualLogEntry;
 use MediaWiki\User\User;
 
 class UserMergeLogger implements IUserMergeLogger {
