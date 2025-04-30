@@ -43,10 +43,7 @@ class SpecialUserMerge extends FormSpecialPage {
 		$this->blockStore = $blockStore;
 	}
 
-	/**
-	 * @return array
-	 */
-	protected function getFormFields() {
+	protected function getFormFields(): array {
 		return [
 			'olduser' => [
 				'type' => 'user',
@@ -90,7 +87,7 @@ class SpecialUserMerge extends FormSpecialPage {
 	 * @return true|string[] true if valid, a string[] of the error's message key and params
 	 *   if validation failed
 	 */
-	public function validateOldUser( $val ) {
+	public function validateOldUser( string $val ) {
 		$oldUser = $this->userFactory->newFromName( $val );
 		if ( !$oldUser ) {
 			return [ 'usermerge-badolduser' ];
@@ -110,7 +107,7 @@ class SpecialUserMerge extends FormSpecialPage {
 	 * @param string $val user's input for username
 	 * @return true|string true if valid, a string of the error's message key if validation failed
 	 */
-	public function validateNewUser( $val ) {
+	public function validateNewUser( string $val ) {
 		$enableDelete = $this->getConfig()->get( 'UserMergeEnableDelete' );
 		if ( $enableDelete && $val === 'Anonymous' ) {
 			// Special case
@@ -124,18 +121,11 @@ class SpecialUserMerge extends FormSpecialPage {
 		return true;
 	}
 
-	/**
-	 * @param HTMLForm $form
-	 */
-	protected function alterForm( HTMLForm $form ) {
+	protected function alterForm( HTMLForm $form ): void {
 		$form->setSubmitTextMsg( 'usermerge-submit' );
 	}
 
-	/**
-	 * @param array $data
-	 * @return Status
-	 */
-	public function onSubmit( array $data ) {
+	public function onSubmit( array $data ): Status {
 		$enableDelete = $this->getConfig()->get( 'UserMergeEnableDelete' );
 		// Most of the data has been validated using callbacks
 		// still need to check if the users are different
@@ -199,21 +189,21 @@ class SpecialUserMerge extends FormSpecialPage {
 	/**
 	 * @inheritDoc
 	 */
-	protected function getDisplayFormat() {
+	protected function getDisplayFormat(): string {
 		return 'ooui';
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	protected function getGroupName() {
+	protected function getGroupName(): string {
 		return 'users';
 	}
 
 	/**
 	 * @inheritDoc
 	 */
-	public function doesWrites() {
+	public function doesWrites(): bool {
 		return true;
 	}
 }

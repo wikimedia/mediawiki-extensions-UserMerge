@@ -19,27 +19,11 @@ use Wikimedia\Rdbms\LikeValue;
  * Contains the actual database backend logic for merging users
  */
 class MergeUser {
-	/**
-	 * @var User
-	 */
-	private $oldUser;
-	/**
-	 * @var User
-	 */
-	private $newUser;
-
-	/**
-	 * @var IUserMergeLogger
-	 */
-	private $logger;
-
-	/**
-	 * @var DatabaseBlockStore
-	 */
-	private $blockStore;
-
-	/** @var int */
-	private $flags;
+	private User $oldUser;
+	private User $newUser;
+	private IUserMergeLogger $logger;
+	private DatabaseBlockStore $blockStore;
+	private int $flags;
 
 	// allow begin/commit; useful for jobs or CLI mode
 	public const USE_MULTI_COMMIT = 1;
@@ -56,7 +40,7 @@ class MergeUser {
 		User $newUser,
 		IUserMergeLogger $logger,
 		DatabaseBlockStore $blockStore,
-		$flags = 0
+		int $flags = 0
 	) {
 		$this->newUser = $newUser;
 		$this->oldUser = $oldUser;
@@ -65,11 +49,7 @@ class MergeUser {
 		$this->flags = $flags;
 	}
 
-	/**
-	 * @param User $performer
-	 * @param string $fnameTrxOwner
-	 */
-	public function merge( User $performer, $fnameTrxOwner = __METHOD__ ) {
+	public function merge( User $performer, string $fnameTrxOwner = __METHOD__ ): void {
 		$this->mergeEditcount();
 		$this->mergeDatabaseTables( $fnameTrxOwner );
 		$this->logger->addMergeEntry( $performer, $this->oldUser, $this->newUser );
@@ -81,7 +61,7 @@ class MergeUser {
 	 *
 	 * @return array Array of failed page moves, see MergeUser::movePages
 	 */
-	public function delete( User $performer, $msg ) {
+	public function delete( User $performer, $msg ): array {
 		$failed = $this->movePages( $performer, $msg );
 		$this->deleteUser();
 		$this->logger->addDeleteEntry( $performer, $this->oldUser );
@@ -92,7 +72,7 @@ class MergeUser {
 	/**
 	 * Adds edit count of both users
 	 */
-	private function mergeEditcount() {
+	private function mergeEditcount(): void {
 		$dbw = MediaWikiServices::getInstance()
 			->getConnectionProvider()
 			->getPrimaryDatabase();
@@ -129,11 +109,7 @@ class MergeUser {
 		$dbw->endAtomic( __METHOD__ );
 	}
 
-	/**
-	 * @param IDatabase $dbw
-	 * @return void
-	 */
-	private function mergeBlocks( IDatabase $dbw ) {
+	private function mergeBlocks( IDatabase $dbw ): void {
 		$dbw->startAtomic( __METHOD__ );
 
 		// Pull blocks directly from primary
@@ -178,12 +154,7 @@ class MergeUser {
 		$dbw->endAtomic( __METHOD__ );
 	}
 
-	/**
-	 * @param DatabaseBlock $b1
-	 * @param DatabaseBlock $b2
-	 * @return DatabaseBlock
-	 */
-	private function chooseBlock( DatabaseBlock $b1, DatabaseBlock $b2 ) {
+	private function chooseBlock( DatabaseBlock $b1, DatabaseBlock $b2 ): DatabaseBlock {
 		// First, see if one is longer than the other.
 		if ( $b1->getExpiry() !== $b2->getExpiry() ) {
 			// This works for infinite blocks because:
@@ -219,21 +190,11 @@ class MergeUser {
 		return $b2;
 	}
 
-	/**
-	 * @param int $stage
-	 *
-	 * @return bool
-	 */
-	private function stageNeedsUser( $stage ) {
-		return (bool)( (int)$stage & SCHEMA_COMPAT_WRITE_OLD );
+	private function stageNeedsUser( int $stage ): bool {
+		return (bool)( $stage & SCHEMA_COMPAT_WRITE_OLD );
 	}
 
-	/**
-	 * @param int $stage
-	 *
-	 * @return bool
-	 */
-	private function stageNeedsActor( $stage ) {
+	private function stageNeedsActor( int $stage ): bool {
 		return (bool)( $stage & SCHEMA_COMPAT_WRITE_NEW );
 	}
 
@@ -242,10 +203,8 @@ class MergeUser {
 	 *
 	 * Merges database references from one user ID or username to another user ID or username
 	 * to preserve referential integrity.
-	 *
-	 * @param string $fnameTrxOwner
 	 */
-	private function mergeDatabaseTables( $fnameTrxOwner ) {
+	private function mergeDatabaseTables( string $fnameTrxOwner ): void {
 		// Fields to update with the format:
 		// [
 		// tableName, idField, textField,
@@ -462,10 +421,8 @@ class MergeUser {
 	/**
 	 * Deduplicate watchlist entries
 	 * which old (merge-from) and new (merge-to) users are watching
-	 *
-	 * @param IDatabase $dbw
 	 */
-	private function deduplicateWatchlistEntries( $dbw ) {
+	private function deduplicateWatchlistEntries( IDatabase $dbw ): void {
 		$dbw->startAtomic( __METHOD__ );
 
 		// Get all titles both watched by the old and new user accounts.
@@ -533,7 +490,7 @@ class MergeUser {
 	 * @param callable $msg Function that returns a Message object
 	 * @return array Array of old name (string) => new name (Title) where the move failed
 	 */
-	private function movePages( User $performer, $msg ) {
+	private function movePages( User $performer, $msg ): array {
 		$contLang = MediaWikiServices::getInstance()->getContentLanguage();
 
 		$oldusername = trim( str_replace( '_', ' ', $this->oldUser->getName() ) );
@@ -618,7 +575,7 @@ class MergeUser {
 	 * @param User $user
 	 * @param Title $title
 	 */
-	private function deletePage( $msg, User $user, Title $title ) {
+	private function deletePage( $msg, User $user, Title $title ): void {
 		$wikipage = MediaWikiServices::getInstance()->getWikiPageFactory()->newFromTitle( $title );
 		$reason = $msg( 'usermerge-autopagedelete' )->inContentLanguage()->text();
 		$error = '';
@@ -643,7 +600,7 @@ class MergeUser {
 	 * Removes rows from the user, user_groups, user_properties
 	 * and user_former_groups tables.
 	 */
-	private function deleteUser() {
+	private function deleteUser(): void {
 		$dbw = MediaWikiServices::getInstance()
 			->getConnectionProvider()
 			->getPrimaryDatabase();

@@ -14,10 +14,7 @@ class UserMergeLogFormatter extends LogFormatter {
 		'newId' => 3,
 	];
 
-	/**
-	 * @return string
-	 */
-	protected function getMessageKey() {
+	protected function getMessageKey(): string {
 		if ( $this->entry->getSubtype() === 'deleteuser' ) {
 			return 'logentry-usermerge-deleteuser';
 		} else {
@@ -29,7 +26,7 @@ class UserMergeLogFormatter extends LogFormatter {
 	 * @param string $param
 	 * @return mixed
 	 */
-	private function getParameter( $param ) {
+	private function getParameter( string $param ) {
 		$parameters = $this->entry->getParameters();
 		if ( $this->entry->isLegacy() ) {
 			$param = self::$mapLegacy[$param];
@@ -37,10 +34,7 @@ class UserMergeLogFormatter extends LogFormatter {
 		return $parameters[$param];
 	}
 
-	/**
-	 * @return array
-	 */
-	protected function extractParameters() {
+	protected function extractParameters(): array {
 		$params = [];
 		// 0-2 are set in LogFormatter::getMessageParameters()
 		$params[3] = $this->getParameter( 'oldName' );

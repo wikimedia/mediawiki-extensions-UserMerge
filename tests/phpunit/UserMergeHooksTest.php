@@ -15,7 +15,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @covers \MediaWiki\Extension\UserMerge\Hooks::onUserGetReservedNames
 	 */
-	public function testReservedUsernameWithDeleteEnabled() {
+	public function testReservedUsernameWithDeleteEnabled(): void {
 		$this->overrideConfigValue( 'UserMergeEnableDelete', true );
 
 		$usernames = [];
@@ -27,7 +27,7 @@ class UserMergeHooksTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @covers \MediaWiki\Extension\UserMerge\Hooks::onUserGetReservedNames
 	 */
-	public function testReservedUsernameWithDeleteDisabled() {
+	public function testReservedUsernameWithDeleteDisabled(): void {
 		$this->overrideConfigValue( 'UserMergeEnableDelete', false );
 
 		$usernames = [];

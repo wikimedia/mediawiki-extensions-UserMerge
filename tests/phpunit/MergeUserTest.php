@@ -12,10 +12,9 @@ use Wikimedia\Rdbms\IDBAccessObject;
  */
 class MergeUserTest extends MediaWikiIntegrationTestCase {
 
-	/** @var int */
-	private $counter = 0;
+	private int $counter = 0;
 
-	private function getNewTestUser() {
+	private function getNewTestUser(): User {
 		$this->counter++;
 		$name = __CLASS__ . (string)$this->counter;
 		$user = $this->getServiceContainer()->getUserFactory()->newFromName( $name );
@@ -31,17 +30,15 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 
 	/**
 	 * Clear all instance caches
-	 *
-	 * @param User &$u
 	 */
-	private function reallyClearInstanceCache( User &$u ) {
+	private function reallyClearInstanceCache( User &$u ): void {
 		$u = $this->getServiceContainer()->getUserFactory()->newFromName( $u->getName() );
 	}
 
 	/**
 	 * @covers \MediaWiki\Extension\UserMerge\MergeUser::merge
 	 */
-	public function testBasicMerge() {
+	public function testBasicMerge(): void {
 		$user1 = $this->getNewTestUser();
 		$user1->addToDatabase();
 		$userOptionsManager = $this->getServiceContainer()->getUserOptionsManager();
@@ -65,7 +62,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @covers \MediaWiki\Extension\UserMerge\MergeUser::merge
 	 */
-	public function testMergeOfUserGroups() {
+	public function testMergeOfUserGroups(): void {
 		// Postgres does not support UPDATE IGNORE, resulting in duplicate keys here
 		$this->markTestSkippedIfDbType( 'postgres' );
 
@@ -91,7 +88,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @covers \MediaWiki\Extension\UserMerge\MergeUser::delete
 	 */
-	public function testDeleteUser() {
+	public function testDeleteUser(): void {
 		$user1 = $this->getNewTestUser();
 		$user2 = $this->getNewTestUser();
 
@@ -110,7 +107,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @covers \MediaWiki\Extension\UserMerge\MergeUser::mergeEditcount
 	 */
-	public function testMergeEditcount() {
+	public function testMergeEditcount(): void {
 		$user1 = $this->getNewTestUser();
 		$user2 = $this->getNewTestUser();
 		$count = 0;
@@ -136,7 +133,7 @@ class MergeUserTest extends MediaWikiIntegrationTestCase {
 	/**
 	 * @covers \MediaWiki\Extension\UserMerge\MergeUser::movePages
 	 */
-	public function testMovePages() {
+	public function testMovePages(): void {
 		$user1 = $this->getNewTestUser();
 		$user1->addToDatabase();
 		$user2 = $this->getNewTestUser();
