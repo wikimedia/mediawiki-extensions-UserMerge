@@ -26,6 +26,8 @@
 	"usermerge-newuser": "Новая учётная запись (объединить в):",
 	"usermerge-deleteolduser": "Удалить старую учётную запись",
 	"usermerge-submit": "Объединить участников",
+	"usermerge-merge-linkoncontribs": "объединить {{GENDER:$1|участника|участницу}}",
+	"usermerge-delete-linkoncontribs": "удалить {{GENDER:$1|участника|участницу}}",
 	"usermerge-badtoken": "Недействительный маркер правки",
 	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|был удалён|была удалена}}.",
 	"usermerge-success": "Объединение $1 ($2) с $3 ($4) завершено.",
