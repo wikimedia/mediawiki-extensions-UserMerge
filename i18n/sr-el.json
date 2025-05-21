@@ -18,6 +18,8 @@
 	"usermerge-newuser": "Novi nalog:",
 	"usermerge-deleteolduser": "Izbriši stari nalog",
 	"usermerge-submit": "Objedini naloge",
+	"usermerge-merge-linkoncontribs": "spoji {{GENDER:$1|korisnika|korisnicu}}",
+	"usermerge-delete-linkoncontribs": "obriši {{GENDER:$1|korisnika|korisnicu}}",
 	"usermerge-badtoken": "Nevažeći token izmene.",
 	"usermerge-userdeleted": "$1 ($2) je {{GENDER:$1|izbrisan|izbrisana}}.",
 	"usermerge-success": "Objedinjavanje korisnika $1 ($2) i $3 ($4) je završeno.",
