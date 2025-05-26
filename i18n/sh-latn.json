@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Winston Sung"
+			"Winston Sung",
+			"Vlad5250"
 		]
 	},
 	"usermerge": "Spajanje i brisanje korisnika",
@@ -18,7 +19,7 @@
 	"usermerge-badtoken": "Nevaljan token izmjene",
 	"usermerge-userdeleted": "$1 ($2) je obrisan.",
 	"usermerge-success": "Spajanje $1 ($2) u $3 ($4) je gotovo.",
-	"usermerge-logpage": "Evidencija spajanja korisnika",
+	"usermerge-logpage": "Dnevnik spajanja korisnika",
 	"usermerge-logpagetext": "Ovo je evidencija spajanja korisničkih imena.",
 	"usermerge-noselfdelete": "Ne možete se obrisati niti spojiti {{GENDER:$1|sami sa sobom}}!",
 	"usermerge-protectedgroup": "Nije moguće spojiti {{GENDER:$1|korisnike}}: korisnik je u zaštićenoj grupi.",
