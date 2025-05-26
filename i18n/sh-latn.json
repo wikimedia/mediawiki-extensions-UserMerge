@@ -1,6 +1,7 @@
 {
 	"@metadata": {
 		"authors": [
+			"Aca",
 			"Vlad5250",
 			"Winston Sung"
 		]
@@ -17,8 +18,8 @@
 	"usermerge-newuser": "Novi korisnik (za spajanje sa):",
 	"usermerge-deleteolduser": "Obriši starog korisnika",
 	"usermerge-submit": "Spoji korisnika",
-	"usermerge-merge-linkoncontribs": "spoji {{GENDER:$1|korisnika|korisnicu}}",
-	"usermerge-delete-linkoncontribs": "obriši {{GENDER:$1|korisnika|korisnicu}}",
+	"usermerge-merge-linkoncontribs": "spoji {{GENDER:$1|korisnika|korisnicu|korisnika/korisnicu}}",
+	"usermerge-delete-linkoncontribs": "izbriši {{GENDER:$1|korisnika|korisnicu|korisnika/korisnicu}}",
 	"usermerge-badtoken": "Nevaljan token izmjene",
 	"usermerge-userdeleted": "$1 ($2) je obrisan.",
 	"usermerge-success": "Spajanje $1 ($2) u $3 ($4) je gotovo.",
