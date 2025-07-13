@@ -10,6 +10,7 @@ use MediaWiki\Title\Title;
 use MediaWiki\User\User;
 use Wikimedia\Rdbms\IDatabase;
 use Wikimedia\Rdbms\IExpression;
+use Wikimedia\Rdbms\IMaintainableDatabase;
 use Wikimedia\Rdbms\LikeValue;
 
 /**
@@ -316,6 +317,9 @@ class MergeUser {
 
 			$options = $fieldInfo['options'] ?? [];
 			unset( $fieldInfo['options'] );
+			/**
+			 * @var IMaintainableDatabase
+			 */
 			$db = $fieldInfo['db'] ?? $dbw;
 			unset( $fieldInfo['db'] );
 			$tableName = array_shift( $fieldInfo );
@@ -329,6 +333,16 @@ class MergeUser {
 				continue;
 			}
 			unset( $fieldInfo['actorId'], $fieldInfo['actorStage'] );
+
+			if (
+				$db instanceof IMaintainableDatabase &&
+				(
+					!$db->tableExists( $tableName, __METHOD__ ) ||
+					!$db->fieldExists( $tableName, $idField, __METHOD__ )
+				)
+			) {
+				continue;
+			}
 
 			if ( $db->trxLevel() || $keyField === null ) {
 				// Can't batch/wait when in a transaction or when no batch key is given
@@ -393,6 +407,16 @@ class MergeUser {
 				$tableName = array_shift( $fieldInfo );
 				$idField = $fieldInfo['actorId'];
 				$keyField = $fieldInfo['batchKey'] ?? null;
+
+				if (
+					$db instanceof IMaintainableDatabase &&
+					(
+						!$db->tableExists( $tableName, __METHOD__ ) ||
+						!$db->fieldExists( $tableName, $idField, __METHOD__ )
+					)
+				) {
+					continue;
+				}
 
 				if ( $db->trxLevel() || $keyField === null ) {
 					// Can't batch/wait when in a transaction or when no batch key is given
