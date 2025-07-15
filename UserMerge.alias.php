@@ -293,6 +293,11 @@ $specialPageAliases['yi'] = [
 	'UserMerge' => [ 'צונויפגיסן_באניצער' ],
 ];
 
+/** Chinese (中文）) */
+$specialPageAliases['zh'] = [
+	'UserMerge' => [ 'UserMerge' ],
+];
+
 /** Simplified Chinese (中文（简体）) */
 $specialPageAliases['zh-hans'] = [
 	'UserMerge' => [ '合并用户' ],
@@ -301,4 +306,9 @@ $specialPageAliases['zh-hans'] = [
 /** Traditional Chinese (中文（繁體）) */
 $specialPageAliases['zh-hant'] = [
 	'UserMerge' => [ '合併使用者' ],
+];
+
+/** Chinese (Hong Kong) (中文（香港）) */
+$specialPageAliases['zh-hk'] = [
+	'UserMerge' => [ '合併用戶' ],
 ];
