@@ -223,15 +223,7 @@ class MergeUser {
 	 * @return bool
 	 */
 	private function stageNeedsUser( $stage ) {
-		if ( !defined( 'MIGRATION_NEW' ) ) {
-			return true;
-		}
-
-		if ( defined( 'ActorMigration::MIGRATION_STAGE_SCHEMA_COMPAT' ) ) {
-			return (bool)( (int)$stage & SCHEMA_COMPAT_WRITE_OLD );
-		} else {
-			return $stage < MIGRATION_NEW;
-		}
+		return (bool)( (int)$stage & SCHEMA_COMPAT_WRITE_OLD );
 	}
 
 	/**
@@ -240,15 +232,7 @@ class MergeUser {
 	 * @return bool
 	 */
 	private function stageNeedsActor( $stage ) {
-		if ( !defined( 'MIGRATION_NEW' ) ) {
-			return false;
-		}
-
-		if ( defined( 'ActorMigration::MIGRATION_STAGE_SCHEMA_COMPAT' ) ) {
-			return (bool)( $stage & SCHEMA_COMPAT_WRITE_NEW );
-		} else {
-			return $stage > MIGRATION_OLD;
-		}
+		return (bool)( $stage & SCHEMA_COMPAT_WRITE_NEW );
 	}
 
 	/**
