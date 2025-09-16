@@ -20,7 +20,7 @@
 	"usermerge-submit": "Spoji uporabnika",
 	"usermerge-merge-linkoncontribs": "združi {{GENDER:$1|uporabnika|uporabnico|uporabnika_co}}",
 	"usermerge-delete-linkoncontribs": "izbriši {{GENDER:$1|uporabnika|uporabnico|uporabnika_co}}",
-	"usermerge-badtoken": "Neveljavni žeton urejanja",
+	"usermerge-badtoken": "Neveljaven žeton urejanja",
 	"usermerge-userdeleted": "$1 ($2) smo izbrisali.",
 	"usermerge-success": "Spojitev iz $1 ($2) v $3 ($4) je končana.",
 	"usermerge-logpage": "Dnevnik spajanja uporabnikov",
