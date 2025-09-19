@@ -1,9 +1,15 @@
 {
 	"@metadata": {
 		"authors": [
+			"Gadir",
 			"NMW03",
 			"Nemoralis"
 		]
 	},
-	"usermerge-move-log": "\"$1\" hesabını \"[[User:$2|$2]]\" hesabına birləşdirərkən səhifənin adı avtomatik olaraq dəyişdirildi"
+	"usermerge-logpage": "İstifadəçi hesabı birləşdirmə jurnalı",
+	"usermerge-logpagetext": "Bu, istifadəçi hesabı birləşdirmə əməliyyatlarının jurnalıdır.",
+	"usermerge-move-log": "\"$1\" hesabını \"[[User:$2|$2]]\" hesabına birləşdirərkən səhifənin adı avtomatik olaraq dəyişdirildi",
+	"log-action-filter-usermerge": "Əməliyyat növü:",
+	"log-action-filter-usermerge-mergeuser": "İstifadəçi hesabı birləşdirmə",
+	"log-action-filter-usermerge-deleteuser": "İstifadəçi hesabı silmə"
 }
