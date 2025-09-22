@@ -17,7 +17,7 @@
 	"usermerge-newuser": "Novi uporabnik (spoji do):",
 	"usermerge-deleteolduser": "Izbriši starega uporabnika",
 	"usermerge-submit": "Spoji uporabnika",
-	"usermerge-badtoken": "Neveljavni žeton urejanja",
+	"usermerge-badtoken": "Neveljaven žeton urejanja",
 	"usermerge-userdeleted": "$1 ($2) smo izbrisali.",
 	"usermerge-success": "Spojitev iz $1 ($2) v $3 ($4) je končana.",
 	"usermerge-logpage": "Dnevnik spajanja uporabnikov",
