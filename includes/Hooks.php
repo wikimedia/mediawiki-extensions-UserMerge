@@ -14,18 +14,11 @@ class Hooks implements
 	UserGetReservedNamesHook,
 	ContributionsToolLinksHook
 {
-	private ConfigFactory $configFactory;
-	private UserFactory $userFactory;
-	private UserGroupManager $userGroupManager;
-
 	public function __construct(
-		ConfigFactory $configFactory,
-		UserFactory $userFactory,
-		UserGroupManager $userGroupManager
+		private readonly ConfigFactory $configFactory,
+		private readonly UserFactory $userFactory,
+		private readonly UserGroupManager $userGroupManager,
 	) {
-		$this->configFactory = $configFactory;
-		$this->userFactory = $userFactory;
-		$this->userGroupManager = $userGroupManager;
 	}
 
 	/**

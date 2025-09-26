@@ -28,19 +28,12 @@ use MediaWiki\User\UserGroupManager;
 
 class SpecialUserMerge extends FormSpecialPage {
 
-	private UserFactory $userFactory;
-	private UserGroupManager $userGroupManager;
-	private DatabaseBlockStore $blockStore;
-
 	public function __construct(
-		UserFactory $userFactory,
-		UserGroupManager $userGroupManager,
-		DatabaseBlockStore $blockStore
+		private readonly UserFactory $userFactory,
+		private readonly UserGroupManager $userGroupManager,
+		private readonly DatabaseBlockStore $blockStore,
 	) {
 		parent::__construct( 'UserMerge', 'usermerge' );
-		$this->userFactory = $userFactory;
-		$this->userGroupManager = $userGroupManager;
-		$this->blockStore = $blockStore;
 	}
 
 	protected function getFormFields(): array {

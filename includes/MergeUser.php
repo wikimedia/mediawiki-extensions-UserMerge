@@ -19,12 +19,6 @@ use Wikimedia\Rdbms\LikeValue;
  * Contains the actual database backend logic for merging users
  */
 class MergeUser {
-	private User $oldUser;
-	private User $newUser;
-	private IUserMergeLogger $logger;
-	private DatabaseBlockStore $blockStore;
-	private int $flags;
-
 	// allow begin/commit; useful for jobs or CLI mode
 	public const USE_MULTI_COMMIT = 1;
 
@@ -36,17 +30,12 @@ class MergeUser {
 	 * @param int $flags Bitfield (Supports MergeUser::USE_*)
 	 */
 	public function __construct(
-		User $oldUser,
-		User $newUser,
-		IUserMergeLogger $logger,
-		DatabaseBlockStore $blockStore,
-		int $flags = 0
+		private readonly User $oldUser,
+		private readonly User $newUser,
+		private readonly IUserMergeLogger $logger,
+		private readonly DatabaseBlockStore $blockStore,
+		private readonly int $flags = 0,
 	) {
-		$this->newUser = $newUser;
-		$this->oldUser = $oldUser;
-		$this->logger = $logger;
-		$this->blockStore = $blockStore;
-		$this->flags = $flags;
 	}
 
 	public function merge( User $performer, string $fnameTrxOwner = __METHOD__ ): void {
