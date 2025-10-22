@@ -11,7 +11,8 @@
 			"MarcoAurelio",
 			"Nemo bis",
 			"Sanbec",
-			"Tiberius1701"
+			"Tiberius1701",
+			"No se"
 		]
 	},
 	"usermerge": "Fusionar y borrar usuarios",
@@ -26,6 +27,8 @@
 	"usermerge-newuser": "Nuevo usuario (fusionar a):",
 	"usermerge-deleteolduser": "Borrar antiguo usuario",
 	"usermerge-submit": "Fusionar usuario",
+	"usermerge-merge-linkoncontribs": "fusionar usuari{{GENDER:$1|o|a}}",
+	"usermerge-delete-linkoncontribs": "eliminar usuari{{GENDER:$1|o|a}}",
 	"usermerge-badtoken": "Ficha de edición inválida",
 	"usermerge-userdeleted": "Se borró a $1 ($2).",
 	"usermerge-success": "Se completó la combinación de $1 ($2) a $3 ($4).",
