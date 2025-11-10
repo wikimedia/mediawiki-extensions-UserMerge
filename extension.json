@@ -82,7 +82,7 @@
 		"MediaWiki\\Extension\\UserMerge\\UserMergeLogger": "includes/UserMergeLogger.php"
 	},
 	"ConfigRegistry": {
-		"usermerge": "GlobalVarConfig::newInstance"
+		"usermerge": "MediaWiki\\Config\\GlobalVarConfig::newInstance"
 	},
 	"config": {
 		"UserMergeEnableDelete": {
