@@ -1,9 +1,39 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ahmed-Najib-Biabani-Ibrahimkhel"
+			"Ahmed-Najib-Biabani-Ibrahimkhel",
+			"شاه زمان پټان"
 		]
 	},
+	"usermerge": "کارنان اخږل او ړنگول",
+	"usermerge-desc": "په ويکي توک‌بنسټ کې [[Special:UserMerge|د يو کارن سرچينې بل کارن ته اخږل]] سره به د زړو کارنانو اخږنې هم ړنگې شي. ''کارن‌اخږل'' امتياز ته اړتيا لري",
 	"usermerge-badnewuser": "نوی کارن-نوم مو ناسم دی",
-	"usermerge-deleteolduser": "زوړ کارن ړنگول"
+	"usermerge-badolduser": "ناچله زوړ کارن‌نوم.",
+	"usermerge-nonewuser": "نوی کارن‌نوم تش دی. فرضاً \"{{GENDER:$1|$1}}\" سره يې واخږئ.<br />\nد منلو لپاره يې په \"{{int:usermerge-submit}}\" کليک وکړئ.",
+	"usermerge-noolduser": "تش زوړ کارن‌نوم.",
+	"usermerge-same-old-and-new-user": "زاړه او نوي کارن‌نومونه بايد توپير ولري.",
+	"usermerge-fieldset": "کارن‌نومونه چې بايد واخږل شي",
+	"usermerge-olduser": "زوړ کارن (اخږل شوی له):",
+	"usermerge-newuser": "نوی کارن (بايد واخږل شي له):",
+	"usermerge-deleteolduser": "زوړ کارن ړنگول",
+	"usermerge-submit": "کارن اخږل",
+	"usermerge-merge-linkoncontribs": "{{GENDER:$1|کارن}} اخږل",
+	"usermerge-delete-linkoncontribs": "{{GENDER:$1|کارن}} ړنگول",
+	"usermerge-badtoken": "ناچله سمون نښه.",
+	"usermerge-userdeleted": "$1 ($2) ړنگ شوی دی.",
+	"usermerge-success": "$1 ($2) له $3 ($4) سره اخږل بشپړ شول.",
+	"usermerge-logpage": "د کارن اخږلو يادښت",
+	"usermerge-logpagetext": "دا د کارن اخږلو چارو يو يادښت دی.",
+	"usermerge-noselfdelete": "تاسو نشئ کولای چې {{GENDER:$1|خپل ځان}} ړنگ يا و اخږئ!",
+	"usermerge-protectedgroup": "{{GENDER:$1|کارن}} نشي اخږل کېدای: کارن په ژغورل شوې ډله کې دی.",
+	"right-usermerge": "کارنان اخږل",
+	"action-usermerge": "کارنان اخږل",
+	"usermerge-autopagedelete": "د کارنان د اخږلو پرمهال په خپلکاري ډول مخ ړنگ کړئ",
+	"usermerge-page-unmoved": "$1 مخ $2 ته نشي لېږدول کېدای.",
+	"usermerge-move-log": "کله چې \"$1\" گڼون \"[[User:$2|$2]]\" سره اخږئ؛ نو مخ په خپلکاري ډول ولېږدوئ",
+	"logentry-usermerge-mergeuser": "$1 په {{GENDER:$8|$6}} ($7) کې د \"$4\" ($5) کارن گڼون {{GENDER:$2|واخږه}}",
+	"logentry-usermerge-deleteuser": "$1 د \"$4\" ($5) کارن گڼون {{GENDER:$2|ړنگ کړ}}",
+	"log-action-filter-usermerge": "د چارې ډول:",
+	"log-action-filter-usermerge-mergeuser": "کارن گڼون اخږل",
+	"log-action-filter-usermerge-deleteuser": "کارن گڼون ړنگول"
 }
