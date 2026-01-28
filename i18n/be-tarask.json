@@ -6,7 +6,8 @@
 			"Jim-by",
 			"Red Winged Duck",
 			"Renessaince",
-			"Wizardist"
+			"Wizardist",
+			"Ucukor"
 		]
 	},
 	"usermerge": "Аб'яднаньне і выдаленьне рахункаў удзельнікаў",
@@ -20,7 +21,7 @@
 	"usermerge-olduser": "Стары ўдзельнік (аб’яднаць з):",
 	"usermerge-newuser": "Новы ўдзельнік (аб’яднаць з):",
 	"usermerge-deleteolduser": "Выдаліць стары ўліковы запіс удзельніка",
-	"usermerge-submit": "Аб’яднаць уліковыя запісы ўдзельнікаў",
+	"usermerge-submit": "Аб’яднаць карыстальнікаў",
 	"usermerge-badtoken": "Няслушны знак рэдагаваньня",
 	"usermerge-userdeleted": "$1 ($2) быў выдалены.",
 	"usermerge-success": "Аб’яднаньне $1 ($2) з $3 ($4) завершанае.",
