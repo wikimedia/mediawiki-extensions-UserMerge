@@ -11,11 +11,12 @@
 			"Rail",
 			"Railfail536",
 			"Sp5uhe",
+			"Woytecr",
 			"Wpedzich"
 		]
 	},
 	"usermerge": "Integruj i usuń użytkowników",
-	"usermerge-desc": "[[Special:UserMerge|Integruje odwołania dla jednego użytkownika do drugiego]] w bazie danych wiki – usuwa również dotychczasowego użytkownika po integracji. Wymaga uprawnienia ''usermerge''",
+	"usermerge-desc": "[[Special:UserMerge|Integruje odwołania do jednego użytkownika z drugim]] w bazie danych wiki – usuwa również dotychczasowego użytkownika po integracji. Wymaga uprawnienia ''usermerge''",
 	"usermerge-badnewuser": "Nieprawidłowa nazwa nowego użytkownika",
 	"usermerge-badolduser": "Nieprawidłowa nazwa dotychczasowego użytkownika",
 	"usermerge-nonewuser": "Pusta nazwa nowego użytkownika – nastąpi integracja z kontem $1.<br />\nKliknij „{{int:usermerge-submit}}”, aby zaakceptować.",
@@ -26,6 +27,8 @@
 	"usermerge-newuser": "Nowy użytkownik (integruj z)",
 	"usermerge-deleteolduser": "Usuń dotychczasowego użytkownika",
 	"usermerge-submit": "Integruj użytkowników",
+	"usermerge-merge-linkoncontribs": "połącz konta {{GENDER:$1|użytkownika|użytkowniczki}}",
+	"usermerge-delete-linkoncontribs": "usuń konto {{GENDER:$1|użytkownika|użytkowniczki}}",
 	"usermerge-badtoken": "Nieprawidłowy kod weryfikacyjny (token).",
 	"usermerge-userdeleted": "$1 ($2) {{GENDER:$1|został usunięty|została usunięta}}.",
 	"usermerge-success": "Integracja $1 ($2) z $3 ($4) została zakończona.",
