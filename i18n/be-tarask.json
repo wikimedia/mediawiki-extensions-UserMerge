@@ -20,7 +20,7 @@
 	"usermerge-fieldset": "Імёны ўдзельнікаў для зьяднаньня",
 	"usermerge-olduser": "Стары ўдзельнік (аб’яднаць з):",
 	"usermerge-newuser": "Новы ўдзельнік (зьяднаць у):",
-	"usermerge-deleteolduser": "Выдаліць стары ўліковы запіс удзельніка",
+	"usermerge-deleteolduser": "Выдаліць старога карыстальніка",
 	"usermerge-submit": "Зьяднаць карыстальнікаў",
 	"usermerge-badtoken": "Няслушны знак рэдагаваньня",
 	"usermerge-userdeleted": "$1 ($2) быў выдалены.",
