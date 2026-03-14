@@ -132,11 +132,11 @@ class MergeUser {
 		$newBlockObj = reset( $newBlocks );
 		$winner = $this->chooseBlock( $oldBlockObj, $newBlockObj );
 		if ( $winner->getId() === $newBlockObj->getId() ) {
-			$oldBlockObj->delete();
+			$this->blockStore->deleteBlock( $oldBlockObj );
 		} else {
 			// Old user block won
 			// Delete current new block
-			$newBlockObj->delete();
+			$this->blockStore->deleteBlock( $newBlockObj );
 			$this->blockStore->updateTarget( $oldBlockObj, $this->newUser );
 		}
 
