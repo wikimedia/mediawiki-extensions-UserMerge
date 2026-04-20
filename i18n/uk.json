@@ -4,6 +4,7 @@
 			"Ahonc",
 			"Andriykopanytsia",
 			"Piramidion",
+			"Repakr",
 			"Steve.rusyn",
 			"SteveR",
 			"Ата"
@@ -21,6 +22,8 @@
 	"usermerge-newuser": "Новий обліковий запис (об'єднати у):",
 	"usermerge-deleteolduser": "Вилучити старий обліковий запис",
 	"usermerge-submit": "Об'єднати користувачів",
+	"usermerge-merge-linkoncontribs": "об'єднати {{GENDER:$1|користувача|користувачку}}",
+	"usermerge-delete-linkoncontribs": "видалити {{GENDER:$1|користувача|користувачку}}",
 	"usermerge-badtoken": "Недійсний маркер редагування",
 	"usermerge-userdeleted": "$1 ($2) вилучено.",
 	"usermerge-success": "Приєднання $1 ($2) до $3 ($4) завершено.",
