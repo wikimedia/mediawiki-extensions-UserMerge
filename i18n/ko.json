@@ -4,6 +4,7 @@
 			"Hwangjy9",
 			"Kwj2772",
 			"Nuevo Paso",
+			"Tensama0415",
 			"Ykhwong",
 			"렌즈",
 			"아라"
@@ -21,6 +22,8 @@
 	"usermerge-newuser": "(합칠) 새 사용자:",
 	"usermerge-deleteolduser": "이전 사용자를 삭제하기",
 	"usermerge-submit": "사용자 합치기",
+	"usermerge-merge-linkoncontribs": "{{GENDER:$1|사용자}} 합치기",
+	"usermerge-delete-linkoncontribs": "{{GENDER:$1|사용자}} 삭제",
 	"usermerge-badtoken": "잘못된 편집 토큰",
 	"usermerge-userdeleted": "$1 ($2) 님이 삭제되었습니다.",
 	"usermerge-success": "$1 ($2)님을 $3 ($4)에 합치는 것을 완료했습니다.",
