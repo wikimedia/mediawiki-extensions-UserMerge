@@ -33,7 +33,7 @@ class SpecialUserMerge extends FormSpecialPage {
 		private readonly UserGroupManager $userGroupManager,
 		private readonly DatabaseBlockStore $blockStore,
 	) {
-		parent::__construct( 'UserMerge', 'usermerge' );
+		parent::__construct( 'UserMerge' );
 	}
 
 	protected function getFormFields(): array {
@@ -198,5 +198,12 @@ class SpecialUserMerge extends FormSpecialPage {
 	 */
 	public function doesWrites(): bool {
 		return true;
+	}
+
+	/**
+	 * @inheritDoc
+	 */
+	public function getRestriction(): string {
+		return 'usermerge';
 	}
 }
