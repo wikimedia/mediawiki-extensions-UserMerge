@@ -26,7 +26,7 @@
 	"usermerge-submit": "Gebruiker samenvoegen",
 	"usermerge-merge-linkoncontribs": "gebruik{{GENDER:$1||st}}er samenvoegen",
 	"usermerge-delete-linkoncontribs": "gebruik{{GENDER:$1||st}}er verwijderen",
-	"usermerge-badtoken": "Ongeldig bewerkingstoken",
+	"usermerge-badtoken": "Onjuist bewerkingstoken",
 	"usermerge-userdeleted": "$1 ($2) is verwijderd.",
 	"usermerge-success": "Samenvoegen van $1 ($2) naar $3 ($4) is afgerond.",
 	"usermerge-logpage": "Logboek gebruikerssamenvoegingen",
