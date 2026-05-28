@@ -28,7 +28,7 @@
 	"usermerge-userdeleted": "$1 ($2) 님이 삭제되었습니다.",
 	"usermerge-success": "$1 ($2)님을 $3 ($4)에 합치는 것을 완료했습니다.",
 	"usermerge-logpage": "사용자 병합 기록",
-	"usermerge-logpagetext": "사용자 병합 동작의 기록입니다.",
+	"usermerge-logpagetext": "사용자 병합 작업의 기록입니다.",
 	"usermerge-noselfdelete": "{{GENDER:$1|자신}}으로부터 삭제나 합치기를 할 수 없습니다!",
 	"usermerge-protectedgroup": "{{GENDER:$1|사용자}}로부터 합칠 수 없습니다: 사용자는 보호된 그룹에 있습니다.",
 	"right-usermerge": "사용자 합치기",
@@ -38,7 +38,7 @@
 	"usermerge-move-log": "\"$1\" 계정을 \"[[User:$2|$2]]\"(으)로 합치면서 문서를 자동으로 이동했습니다",
 	"logentry-usermerge-mergeuser": "$1님이 \"$4\" ($5) 계정을 {{GENDER:$8|$6}} ($7)으로 {{GENDER:$2|합쳤습니다}}",
 	"logentry-usermerge-deleteuser": "$1님이 \"$4\"($5) 사용자 계정을 {{GENDER:$2|삭제했습니다}}",
-	"log-action-filter-usermerge": "조치 유형:",
+	"log-action-filter-usermerge": "작업 유형:",
 	"log-action-filter-usermerge-mergeuser": "사용자 계정 병합",
 	"log-action-filter-usermerge-deleteuser": "사용자 계정 삭제"
 }
