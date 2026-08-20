@@ -1,0 +1,38 @@
+{
+	"@metadata": {
+		"authors": [
+			"AhmedG612"
+		]
+	},
+	"usermerge": "Isku dar oo tirtir isticmaalayaasha",
+	"usermerge-desc": "[[Special:UserMerge|Waxay tixraacyada hal isticmaale ugu gudbisaa isticmaale kale]] ee ku jira kaydka xogta wiki-ga — sidoo kale waxay tirtirtaa isticmaalayaashii hore marka isku-darka la dhammeeyo. Waxay u baahan tahay mudnaanta ''usermerge''",
+	"usermerge-badnewuser": "Magaca cusub ee isticmaalaha ma saxna.",
+	"usermerge-badolduser": "Magaca hore ee isticmaalaha ma saxna.",
+	"usermerge-nonewuser": "Magaca cusub ee isticmaalaha waa madhan. Waxaa loo qaadanayaa in lagu darayo \"{{GENDER:$1|$1}}\".<br />\nGuji \"{{int:usermerge-submit}}\" si aad u aqbasho.",
+	"usermerge-noolduser": "Magaca hore ee isticmaalaha waa madhan.",
+	"usermerge-same-old-and-new-user": "Magacyada hore iyo kuwa cusub ee isticmaalayaashu waa inay kala duwanaadaan.",
+	"usermerge-fieldset": "Magacyada isticmaalayaasha la isku darayo",
+	"usermerge-olduser": "Isticmaalaha hore (laga soo rarayo):",
+	"usermerge-newuser": "Isticmaalaha cusub (loogu rarayo):",
+	"usermerge-deleteolduser": "Tirtir isticmaalihii hore",
+	"usermerge-submit": "Isku dar isticmaalaha",
+	"usermerge-merge-linkoncontribs": "isku dar {{GENDER:$1|isticmaale}}",
+	"usermerge-delete-linkoncontribs": "Tirtir {{GENDER:$1|isticmaalaha}}",
+	"usermerge-badtoken": "Calaamadda wax ka beddelka ma saxna.",
+	"usermerge-userdeleted": "$1 ($2) waa la tirtiray.",
+	"usermerge-success": "Isku darka $1 ($2) iyo $3 ($4) waa la dhammaystiray.",
+	"usermerge-logpage": "Diiwaanka Isku darka Isticmaalaha",
+	"usermerge-logpagetext": "Kani waa diiwaanka ficillada isku darka isticmaalayaasha.",
+	"usermerge-noselfdelete": "Ma tirtiri kartid ama iskuma dari kartid {{GENDER:$1|naftaada}}!",
+	"usermerge-protectedgroup": "Lama isku dari karo {{GENDER:$1|isticmaalaha}}: isticmaaluhu wuxuu ku jiraa koox la ilaaliyo.",
+	"right-usermerge": "Isku dar isticmaalayaasha",
+	"action-usermerge": "isku dar isticmaalayaasha",
+	"usermerge-autopagedelete": "Bogga si otomaatig ah ayaa loo tirtiray intii isticmaalayaasha la isku darayay",
+	"usermerge-page-unmoved": "Bogga $1 looma wareejin karin $2.",
+	"usermerge-move-log": "Bogga si otomaatig ah ayaa loo wareejiyay intii akoonka \"$1\" lagu darayay \"[[User:$2|$2]]\"",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|isku daray}} akoonka isticmaalaha \"$4\" ($5) iyo {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|tirtiray}} akoonka isticmaalaha \"$4\" ($5)",
+	"log-action-filter-usermerge": "Nooca ficilka:",
+	"log-action-filter-usermerge-mergeuser": "Isku darka akoonk isticmaalaha",
+	"log-action-filter-usermerge-deleteuser": "Tirtiridda akoonka isticmaalaha"
+}
