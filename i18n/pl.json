@@ -12,7 +12,8 @@
 			"Railfail536",
 			"Sp5uhe",
 			"Wpedzich",
-			"Woytecr"
+			"Woytecr",
+			"PanWor"
 		]
 	},
 	"usermerge": "Integruj i usuń użytkowników",
@@ -42,7 +43,7 @@
 	"usermerge-page-unmoved": "Strona $1 nie mogła zostać przeniesiona pod nazwę $2.",
 	"usermerge-move-log": "Automatyczne przeniesiono stronę po zintegrowaniu konta „$1” z „[[User:$2|$2]]”",
 	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|zintegrował|zintegrowała|zintegrował(a)}} konto „$4” ($5) z {{GENDER:$8|$6}} ($7)",
-	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|usunął|usunęła}} konto użytkownika „$4” ($5)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|usunął|usunęła|usunął(-ęła)}} konto użytkownika „$4” ($5)",
 	"log-action-filter-usermerge": "Rodzaj działania:",
 	"log-action-filter-usermerge-mergeuser": "Integracja konta",
 	"log-action-filter-usermerge-deleteuser": "Usuwanie konta"
