@@ -3,8 +3,8 @@
 namespace MediaWiki\Extension\UserMerge;
 
 use MediaWiki\Config\ConfigFactory;
-use MediaWiki\Hook\ContributionsToolLinksHook;
 use MediaWiki\SpecialPage\SpecialPage;
+use MediaWiki\Specials\Hook\ContributionsToolLinksHook;
 use MediaWiki\Title\Title;
 use MediaWiki\User\Hook\UserGetReservedNamesHook;
 use MediaWiki\User\UserFactory;
