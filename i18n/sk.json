@@ -2,7 +2,8 @@
 	"@metadata": {
 		"authors": [
 			"Helix84",
-			"Luky001"
+			"Luky001",
+			"Wizzard"
 		]
 	},
 	"usermerge": "Zlúčenie a zmazanie používateľov",
@@ -11,11 +12,14 @@
 	"usermerge-badolduser": "Neplatné staré používateľské meno",
 	"usermerge-nonewuser": "Nové používateľské meno je prázdne. Predpokladá sa zlúčenie do „$1“.<br />\nPotvrdiť môžete kliknutím na „{{int:usermerge-submit}}“.",
 	"usermerge-noolduser": "Prázdne staré používateľské meno",
+	"usermerge-same-old-and-new-user": "Staré a nové používateľské meno musia byť rôzne.",
 	"usermerge-fieldset": "Zlúčiť používateľov",
 	"usermerge-olduser": "Starý používateľ (zlúčiť odtiaľto)",
 	"usermerge-newuser": "Nový používateľ (zlúčiť sem)",
 	"usermerge-deleteolduser": "Zmazať starého používateľa",
 	"usermerge-submit": "Zlúčiť používateľov",
+	"usermerge-merge-linkoncontribs": "zlúčiť {{GENDER:$1|používateľa|používateľku}}",
+	"usermerge-delete-linkoncontribs": "zmazať {{GENDER:$1|používateľa|používateľku}}",
 	"usermerge-badtoken": "Neplatný token úprav",
 	"usermerge-userdeleted": "Účet $1 ($2) bol zmazaný.",
 	"usermerge-success": "Zlúčenie účtu $1 ($2) do $3 ($4) je dokončené.",
@@ -23,5 +27,14 @@
 	"usermerge-logpagetext": "Toto je záznam zlúčení používateľov.",
 	"usermerge-noselfdelete": "{{GENDER:$1|Nemôžete}} zmazať alebo zlúčiť svoj účet!",
 	"usermerge-protectedgroup": "Nebolo možné zlúčiť {{GENDER:$1|uvedeného používateľa|uvedenú používateľku}}: {{GENDER:$1|používateľ|používateľka}} je v chránenej skupine.",
-	"right-usermerge": "Zlučovať používateľov"
+	"right-usermerge": "Zlučovať používateľov",
+	"action-usermerge": "zlučovať používateľov",
+	"usermerge-autopagedelete": "Stránka bola automaticky zmazaná pri zlučovaní používateľov",
+	"usermerge-page-unmoved": "Stránku $1 sa nepodarilo presunúť na $2.",
+	"usermerge-move-log": "Stránka bola automaticky presunutá pri zlučovaní účtu „$1“ do „[[User:$2|$2]]“",
+	"logentry-usermerge-mergeuser": "$1 {{GENDER:$2|zlúčil|zlúčila}} používateľský účet „$4“ ($5) do {{GENDER:$8|$6}} ($7)",
+	"logentry-usermerge-deleteuser": "$1 {{GENDER:$2|zmazal|zmazala}} používateľský účet „$4“ ($5)",
+	"log-action-filter-usermerge": "Typ akcie:",
+	"log-action-filter-usermerge-mergeuser": "Zlúčenie používateľského účtu",
+	"log-action-filter-usermerge-deleteuser": "Zmazanie používateľského účtu"
 }
