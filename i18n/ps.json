@@ -2,12 +2,13 @@
 	"@metadata": {
 		"authors": [
 			"Ahmed-Najib-Biabani-Ibrahimkhel",
-			"شاه زمان پټان"
+			"شاه زمان پټان",
+			"باران"
 		]
 	},
 	"usermerge": "کارنان اخږل او ړنگول",
 	"usermerge-desc": "په ويکي توک‌بنسټ کې [[Special:UserMerge|د يو کارن سرچينې بل کارن ته اخږل]] سره به د زړو کارنانو اخږنې هم ړنگې شي. ''کارن‌اخږل'' امتياز ته اړتيا لري",
-	"usermerge-badnewuser": "نوی کارن-نوم مو ناسم دی",
+	"usermerge-badnewuser": "نوی کارن‌نوم مو ناسم دی",
 	"usermerge-badolduser": "ناچله زوړ کارن‌نوم.",
 	"usermerge-nonewuser": "نوی کارن‌نوم تش دی. فرضاً \"{{GENDER:$1|$1}}\" سره يې واخږئ.<br />\nد منلو لپاره يې په \"{{int:usermerge-submit}}\" کليک وکړئ.",
 	"usermerge-noolduser": "تش زوړ کارن‌نوم.",
